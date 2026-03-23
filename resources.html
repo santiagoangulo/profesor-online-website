@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-es="Recursos | Profesor Online de Matemáticas y Ciencias" data-en="Resources | Online Math & Science Teacher">Recursos | Profesor Online de Matemáticas y Ciencias</title>
+  <meta name="description" content="Recursos gratuitos de Matemáticas, Física y Química: formularios, apuntes, videos y ejercicios para estudiantes.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./base.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./inner-pages.css">
+</head>
+<body>
+
+<header class="site-header" id="site-header">
+  <div class="container">
+    <nav class="nav">
+      <a href="./index.html" class="nav-logo" aria-label="Inicio">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+          <rect width="36" height="36" rx="9" fill="var(--color-primary)"/>
+          <path d="M10 26 L10 10 L18 10 C22 10 25 13 25 17 C25 21 22 24 18 24 L14 24 L14 26 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M14 17 L18 17" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="26" cy="26" r="4" fill="var(--color-accent)"/>
+          <path d="M25 26 L27 26 M26 25 L26 27" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <div class="nav-logo-text">
+          <span data-es="Matemáticas & Ciencias" data-en="Math & Science">Matemáticas & Ciencias</span>
+          <span data-es="Clases online" data-en="Online tutoring">Clases online</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="./index.html" data-es="Inicio" data-en="Home">Inicio</a></li>
+        <li><a href="./services.html" data-es="Servicios" data-en="Services">Servicios</a></li>
+        <li><a href="./booking.html" data-es="Reservar clase" data-en="Book a class">Reservar clase</a></li>
+        <li><a href="./testimonials.html" data-es="Testimonios" data-en="Testimonials">Testimonios</a></li>
+        <li><a href="./resources.html" class="active" data-es="Recursos" data-en="Resources">Recursos</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button id="lang-es" class="active" onclick="setLang('es')">ES</button>
+          <button id="lang-en" onclick="setLang('en')">EN</button>
+        </div>
+        <button class="theme-toggle" data-theme-toggle aria-label="Cambiar tema">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a href="./booking.html" class="btn btn-primary btn-cta-nav" data-es="Reservar clase" data-en="Book a class">Reservar clase</a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero-content reveal">
+      <span class="section-label" data-es="Recursos gratuitos" data-en="Free resources">Recursos gratuitos</span>
+      <h1 data-es="Material de estudio para todos" data-en="Study materials for everyone">Material de estudio para todos</h1>
+      <p data-es="Apuntes, formularios, videos y ejercicios de Matemáticas, Física y Química. Gratuitos para todos." data-en="Notes, formulas, videos and exercises in Math, Physics, and Chemistry. Free for everyone.">Apuntes, formularios, videos y ejercicios de Matemáticas, Física y Química. Gratuitos para todos.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FILTER TABS + RESOURCES -->
+<section class="section">
+  <div class="container">
+    <!-- Filter tabs -->
+    <div class="resource-tabs" role="tablist" aria-label="Filtrar recursos">
+      <button class="rtab active" role="tab" aria-selected="true" onclick="filterResources('all')" data-es="Todos" data-en="All">Todos</button>
+      <button class="rtab" role="tab" onclick="filterResources('math')" data-es="Matemáticas" data-en="Mathematics">Matemáticas</button>
+      <button class="rtab" role="tab" onclick="filterResources('physics')" data-es="Física" data-en="Physics">Física</button>
+      <button class="rtab" role="tab" onclick="filterResources('chemistry')" data-es="Química" data-en="Chemistry">Química</button>
+      <button class="rtab" role="tab" onclick="filterResources('exam')" data-es="Preparación PAU" data-en="Exam prep">Preparación PAU</button>
+    </div>
+
+    <div class="resources-grid" id="resources-grid">
+
+      <!-- MATH RESOURCES -->
+      <div class="resource-card card reveal" data-category="math">
+        <div class="rc-type rc-type-pdf">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/></svg>
+          PDF
+        </div>
+        <h3 data-es="Formulario Matemáticas Bachillerato" data-en="High School Math Formula Sheet">Formulario Matemáticas Bachillerato</h3>
+        <p data-es="Todas las fórmulas esenciales de Matemáticas II: álgebra, análisis, geometría y estadística." data-en="All essential Math II formulas: algebra, analysis, geometry and statistics.">Todas las fórmulas esenciales de Matemáticas II: álgebra, análisis, geometría y estadística.</p>
+        <div class="rc-meta">
+          <span class="rc-tag" data-es="Bachillerato" data-en="High school">Bachillerato</span>
+          <span class="rc-tag">Matemáticas</span>
+        </div>
+        <a href="#" class="btn btn-outline rc-btn" target="_blank" rel="noopener noreferrer" data-es="Descargar PDF" data-en="Download PDF">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7,10 12,15 17,10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Descargar PDF
+        </a>
+      </div>
+
+      <div class="resource-card card reveal" data-category="math">
+        <div class="rc-type rc-type-video">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5,3 19,12 5,21 5,3"/></svg>
+          Video
+        </div>
+        <h3 data-es="Límites y continuidad — Guía completa" data-en="Limits and continuity — Complete guide">Límites y continuidad — Guía completa</h3>
+        <p data-es="Serie de videos explicando límites, indeterminaciones y continuidad de funciones desde cero." data-en="Video series explaining limits, indeterminate forms and function continuity from scratch.">Serie de videos explicando límites, indeterminaciones y continuidad de funciones desde cero.</p>
+        <div class="rc-meta">
+          <span class="rc-tag">Cálculo</span>
+          <span class="rc-tag" data-es="Bachillerato / 1º Uni" data-en="High school / 1st year">Bachillerato / 1º Uni</span>
+        </div>
+        <a href="https://www.youtube.com" class="btn btn-outline rc-btn" target="_blank" rel="noopener noreferrer" data-es="Ver en YouTube" data-en="Watch on YouTube">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5,3 19,12 5,21 5,3"/></svg>
+          Ver en YouTube
+        </a>
+      </div>
+
+      <div class="resource-card card reveal" data-category="math">
+        <div class="rc-type rc-type-exercises">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+          Ejercicios
+        </div>
+        <h3 data-es="50 ejercicios de derivadas con soluciones" data-en="50 derivative exercises with solutions">50 ejercicios de derivadas con soluciones</h3>
+        <p data-es="Colección de ejercicios de derivadas, ordenados por dificultad creciente, con solución paso a paso." data-en="Collection of derivative exercises, sorted by increasing difficulty, with step-by-step solutions.">Colección de ejercicios de derivadas, ordenados por dificultad creciente, con solución paso a paso.</p>
+        <div class="rc-meta">
+          <span class="rc-tag">Derivadas</span>
+          <span class="rc-tag">Bachillerato</span>
+        </div>
+        <a href="#" class="btn btn-outline rc-btn" target="_blank" rel="noopener noreferrer" data-es="Descargar PDF" data-en="Download PDF">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7,10 12,15 17,10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Descargar PDF
+        </a>
+      </div>
+
+      <!-- PHYSICS RESOURCES -->
+      <div class="resource-card card reveal" data-category="physics">
+        <div class="rc-type rc-type-pdf">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/></svg>
+          PDF
+        </div>
+        <h3 data-es="Formulario Física Bachillerato" data-en="High School Physics Formula Sheet">Formulario Física Bachillerato</h3>
+        <p data-es="Formulario completo de Física II: cinemática, dinámica, termodinámica, electromagnetismo y óptica." data-en="Complete Physics II formula sheet: kinematics, dynamics, thermodynamics, electromagnetism, and optics.">Formulario completo de Física II: cinemática, dinámica, termodinámica, electromagnetismo y óptica.</p>
+        <div class="rc-meta">
+          <span class="rc-tag">Física</span>
+          <span class="rc-tag">Bachillerato</span>
+        </div>
+        <a href="#" class="btn btn-outline rc-btn" target="_blank" rel="noopener noreferrer" data-es="Descargar PDF" data-en="Download PDF">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7,10 12,15 17,10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Descargar PDF
+        </a>
+      </div>
+
+      <div class="resource-card card reveal" data-category="physics">
+        <div class="rc-type rc-type-video">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5,3 19,12 5,21 5,3"/></svg>
+          Video
+        </div>
+        <h3 data-es="Electromagnetismo desde cero" data-en="Electromagnetism from scratch">Electromagnetismo desde cero</h3>
+        <p data-es="Playlist de 12 videos explicando el campo eléctrico, potencial eléctrico y campo magnético." data-en="12-video playlist explaining electric field, electric potential, and magnetic field.">Playlist de 12 videos explicando el campo eléctrico, potencial eléctrico y campo magnético.</p>
+        <div class="rc-meta">
+          <span class="rc-tag">Electromagnetismo</span>
+          <span class="rc-tag">Bachillerato</span>
+        </div>
+        <a href="https://www.youtube.com" class="btn btn-outline rc-btn" target="_blank" rel="noopener noreferrer" data-es="Ver playlist" data-en="Watch playlist">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5,3 19,12 5,21 5,3"/></svg>
+          Ver playlist
+        </a>
+      </div>
+
+      <!-- CHEMISTRY RESOURCES -->
+      <div class="resource-card card reveal" data-category="chemistry">
+        <div class="rc-type rc-type-pdf">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/></svg>
+          PDF
+        </div>
+        <h3 data-es="Tabla periódica ampliada" data-en="Extended periodic table">Tabla periódica ampliada</h3>
+        <p data-es="Tabla periódica con configuraciones electrónicas, electronegatividades, radios atónicos y grupos funcionales frecuentes." data-en="Periodic table with electron configurations, electronegativities, atomic radii and common functional groups.">Tabla periódica con configuraciones electrónicas, electronegatividades, radios atónicos y grupos funcionales frecuentes.</p>
+        <div class="rc-meta">
+          <span class="rc-tag">Química</span>
+          <span class="rc-tag" data-es="Todos los niveles" data-en="All levels">Todos los niveles</span>
+        </div>
+        <a href="#" class="btn btn-outline rc-btn" target="_blank" rel="noopener noreferrer" data-es="Descargar PDF" data-en="Download PDF">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7,10 12,15 17,10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Descargar PDF
+        </a>
+      </div>
+
+      <div class="resource-card card reveal" data-category="chemistry">
+        <div class="rc-type rc-type-exercises">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+          Ejercicios
+        </div>
+        <h3 data-es="Ejercicios de estequiometría resueltos" data-en="Solved stoichiometry exercises">Ejercicios de estequiometría resueltos</h3>
+        <p data-es="30 ejercicios de estequiometría con solución detallada: masas molares, reactivo limitante y rendimiento." data-en="30 stoichiometry exercises with detailed solutions: molar masses, limiting reagent, and yield.">30 ejercicios de estequiometría con solución detallada: masas molares, reactivo limitante y rendimiento.</p>
+        <div class="rc-meta">
+          <span class="rc-tag">Estequiometría</span>
+          <span class="rc-tag">Bachillerato</span>
+        </div>
+        <a href="#" class="btn btn-outline rc-btn" target="_blank" rel="noopener noreferrer" data-es="Descargar PDF" data-en="Download PDF">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7,10 12,15 17,10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Descargar PDF
+        </a>
+      </div>
+
+      <!-- EXAM PREP -->
+      <div class="resource-card card reveal" data-category="exam">
+        <div class="rc-type rc-type-pdf">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/></svg>
+          PDF
+        </div>
+        <h3 data-es="Exámenes PAU Matemáticas — Últimos 5 años" data-en="PAU Math Exams — Last 5 years">Exámenes PAU Matemáticas — Últimos 5 años</h3>
+        <p data-es="Recopilación de exámenes de selectividad de Matemáticas de todas las comunidades autónomas, con soluciones." data-en="Collection of university entrance Math exams from all Spanish regions, with solutions.">Recopilación de exámenes de selectividad de Matemáticas de todas las comunidades autónomas, con soluciones.</p>
+        <div class="rc-meta">
+          <span class="rc-tag">PAU</span>
+          <span class="rc-tag">Selectividad</span>
+        </div>
+        <a href="#" class="btn btn-outline rc-btn" target="_blank" rel="noopener noreferrer" data-es="Descargar ZIP" data-en="Download ZIP">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7,10 12,15 17,10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Descargar ZIP
+        </a>
+      </div>
+
+      <div class="resource-card card reveal" data-category="exam">
+        <div class="rc-type rc-type-guide">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          Guía
+        </div>
+        <h3 data-es="Guía de estrategia para el examen PAU" data-en="PAU exam strategy guide">Guía de estrategia para el examen PAU</h3>
+        <p data-es="Cómo gestionar el tiempo, qué ejercicios hacer primero y cómo presentar los desarrollos para maximizar la puntuación." data-en="How to manage time, which exercises to tackle first, and how to present solutions to maximize your score.">Cómo gestionar el tiempo, qué ejercicios hacer primero y cómo presentar los desarrollos para maximizar la puntuación.</p>
+        <div class="rc-meta">
+          <span class="rc-tag">PAU</span>
+          <span class="rc-tag" data-es="Estrategia" data-en="Strategy">Estrategia</span>
+        </div>
+        <a href="#" class="btn btn-outline rc-btn" target="_blank" rel="noopener noreferrer" data-es="Descargar guía" data-en="Download guide">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7,10 12,15 17,10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Descargar guía
+        </a>
+      </div>
+
+    </div><!-- /resources-grid -->
+
+    <p id="no-results" class="no-results-msg" style="display:none;" data-es="No hay recursos en esta categoría aún. ¡Más próximamente!" data-en="No resources in this category yet. More coming soon!">No hay recursos en esta categoría aún. ¡Más próximamente!</p>
+  </div>
+</section>
+
+<!-- RESOURCES COMING SOON / NEWSLETTER -->
+<section class="section" style="background: var(--color-surface);">
+  <div class="container container--narrow">
+    <div class="section-header centered">
+      <span class="section-label" data-es="Próximamente" data-en="Coming soon">Próximamente</span>
+      <h2 class="section-title" data-es="Nuevos recursos cada semana" data-en="New resources every week">Nuevos recursos cada semana</h2>
+      <p class="section-subtitle" data-es="Apúntate para recibir nuevos apuntes, videos y ejercicios directamente en tu email." data-en="Sign up to receive new notes, videos, and exercises directly in your email.">Apúntate para recibir nuevos apuntes, videos y ejercicios directamente en tu email.</p>
+    </div>
+    <form class="newsletter-form reveal" onsubmit="handleNewsletterSubmit(event)">
+      <input type="email" placeholder="tu@email.com" required aria-label="Email" class="newsletter-input">
+      <button type="submit" class="btn btn-primary" data-es="Suscribirme" data-en="Subscribe">Suscribirme</button>
+    </form>
+    <p id="newsletter-success" class="newsletter-success" style="display:none;" data-es="¡Gracias! Te avisaremos con nuevos recursos." data-en="Thank you! We'll notify you of new resources.">¡Gracias! Te avisaremos con nuevos recursos.</p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="./index.html" class="nav-logo" style="margin-bottom: var(--space-3);" aria-label="Inicio">
+          <svg width="32" height="32" viewBox="0 0 36 36" fill="none">
+            <rect width="36" height="36" rx="9" fill="var(--color-primary)"/>
+            <path d="M10 26 L10 10 L18 10 C22 10 25 13 25 17 C25 21 22 24 18 24 L14 24 L14 26 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M14 17 L18 17" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="26" cy="26" r="4" fill="var(--color-accent)"/>
+            <path d="M25 26 L27 26 M26 25 L26 27" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <span class="nav-logo-text" data-es="Matemáticas & Ciencias" data-en="Math & Science">Matemáticas & Ciencias</span>
+        </a>
+        <p data-es="Clases online personalizadas de Matemáticas, Física y Química." data-en="Personalized online classes in Math, Physics, and Chemistry.">Clases online personalizadas de Matemáticas, Física y Química.</p>
+      </div>
+      <div class="footer-col">
+        <h4 data-es="Navegación" data-en="Navigation">Navegación</h4>
+        <ul role="list">
+          <li><a href="./index.html" data-es="Inicio" data-en="Home">Inicio</a></li>
+          <li><a href="./services.html" data-es="Servicios" data-en="Services">Servicios</a></li>
+          <li><a href="./booking.html" data-es="Reservar clase" data-en="Book a class">Reservar clase</a></li>
+          <li><a href="./testimonials.html" data-es="Testimonios" data-en="Testimonials">Testimonios</a></li>
+          <li><a href="./resources.html" data-es="Recursos" data-en="Resources">Recursos</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-es="Materias" data-en="Subjects">Materias</h4>
+        <ul role="list">
+          <li><a href="./services.html">Matemáticas</a></li>
+          <li><a href="./services.html">Física</a></li>
+          <li><a href="./services.html">Química</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-es="Contacto" data-en="Contact">Contacto</h4>
+        <ul role="list">
+          <li><a href="mailto:hola@profeonline.com">hola@profeonline.com</a></li>
+          <li><a href="./booking.html" data-es="Reservar clase" data-en="Book a class">Reservar clase</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span data-es="© 2026 Profesor Online. Todos los derechos reservados." data-en="© 2026 Online Teacher. All rights reserved.">© 2026 Profesor Online. Todos los derechos reservados.</span>
+      <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
+    </div>
+  </div>
+</footer>
+
+<script src="./app.js"></script>
+<script>
+function filterResources(category) {
+  // Update tabs
+  document.querySelectorAll('.rtab').forEach(btn => btn.classList.remove('active'));
+  event.target.classList.add('active');
+  // Filter cards
+  const cards = document.querySelectorAll('.resource-card');
+  let visible = 0;
+  cards.forEach(card => {
+    const show = category === 'all' || card.dataset.category === category;
+    card.style.display = show ? '' : 'none';
+    if (show) visible++;
+  });
+  const noResults = document.getElementById('no-results');
+  noResults.style.display = visible === 0 ? 'block' : 'none';
+}
+function handleNewsletterSubmit(e) {
+  e.preventDefault();
+  const form = e.target;
+  form.style.display = 'none';
+  document.getElementById('newsletter-success').style.display = 'block';
+}
+</script>
+</body>
+</html>
