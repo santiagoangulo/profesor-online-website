@@ -26,7 +26,7 @@
 })();
 
 // ── Language toggle (ES/EN) ──────────────────
-let currentLang = 'es';
+let currentLang = localStorage.getItem('lang') || 'es';
 function setLang(lang) {
   currentLang = lang;
   document.querySelectorAll('[data-es], [data-en]').forEach(el => {
@@ -41,6 +41,8 @@ function setLang(lang) {
     const v = titleEl.getAttribute('data-' + lang);
     if (v) titleEl.textContent = v;
   }
+  // Persist choice across pages
+  localStorage.setItem('lang', lang);
   // Update lang button states
   document.querySelectorAll('.lang-toggle button').forEach(btn => {
     btn.classList.remove('active');
@@ -48,6 +50,8 @@ function setLang(lang) {
   const active = document.getElementById('lang-' + lang);
   if (active) active.classList.add('active');
 }
+// Apply persisted language on load
+if (currentLang !== 'es') setLang(currentLang);
 window.setLang = setLang;
 
 // ── Mobile menu ──────────────────────────────
