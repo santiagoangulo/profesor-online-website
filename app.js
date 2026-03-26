@@ -26,7 +26,8 @@
 })();
 
 // ── Language toggle (ES/EN) ──────────────────
-let currentLang = localStorage.getItem('lang') || 'es';
+const browserLang = navigator.language && navigator.language.toLowerCase().startsWith('es') ? 'es' : 'en';
+let currentLang = localStorage.getItem('lang') || browserLang;
 function setLang(lang) {
   currentLang = lang;
   document.querySelectorAll('[data-es], [data-en]').forEach(el => {
