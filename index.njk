@@ -1,0 +1,289 @@
+---
+layout: layouts/base.njk
+title: "Profesor Online Matemáticas | Clases por Google Meet"
+description: "Clases online de Matemáticas con profesor particular. Google Meet, método personalizado. Bachillerato, PAU y Universidad."
+navActive: "home"
+section: "root"
+permalink: "./index.html"
+extrastyles:
+  - "./base.css"
+  - "./style.css"
+  - "./home.css"
+---
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="hero-grid"></div>
+    <div class="hero-blob hero-blob-1"></div>
+    <div class="hero-blob hero-blob-2"></div>
+  </div>
+  <div class="container">
+    <div class="hero-layout">
+      <div class="hero-content reveal">
+        <div class="hero-pills">
+          <span class="formula-pill">E = mc²</span>
+          <span class="formula-pill">∫ f(x)dx</span>
+          <span class="formula-pill">F = ma</span>
+        </div>
+        <h1 class="hero-title">
+          <span data-es="Aprende" data-en="Master">Aprende</span>
+          <em data-es="Matemáticas" data-en="Mathematics">Matemáticas</em>
+          <span data-es="con confianza" data-en="with confidence">con confianza</span>
+        </h1>
+        <p class="hero-subtitle" data-es="Clases online personalizadas de Matemáticas via Google Meet. Método paso a paso, explicaciones claras y seguimiento continuo." data-en="Personalized online classes in Mathematics via Google Meet. Step-by-step method, clear explanations, and continuous progress tracking.">
+          Clases online personalizadas de Matemáticas via Google Meet. Método paso a paso, explicaciones claras y seguimiento continuo.
+        </p>
+        <div class="hero-actions">
+          <a href="./booking.html" class="btn btn-accent btn-lg" data-es="Reservar clase" data-en="Book a class">Reservar clase</a>
+          <a href="./services.html" class="btn btn-outline btn-lg" data-es="Ver servicios" data-en="View services">Ver servicios</a>
+        </div>
+        <div class="hero-trust">
+          <div class="meet-badge">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M16 8L20 5V19L16 16V8Z" fill="#00897B"/>
+              <rect x="2" y="5" width="14" height="14" rx="2.5" fill="#00BFA5"/>
+            </svg>
+            <span data-es="Clases via Google Meet" data-en="Classes via Google Meet">Clases via Google Meet</span>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <strong>150+</strong>
+              <span data-es="alumnos" data-en="students">alumnos</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="hero-stat">
+              <strong>98%</strong>
+              <span data-es="satisfacción" data-en="satisfaction">satisfacción</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="hero-stat">
+              <strong>5⭐</strong>
+              <span data-es="valoración" data-en="rating">valoración</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="hero-card-stack">
+          <!-- Floating session card -->
+          <div class="floating-card card-session">
+            <div class="fc-icon fc-icon-meet">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M16 8L20 5V19L16 16V8Z" fill="#00897B"/>
+                <rect x="2" y="5" width="14" height="14" rx="2.5" fill="#00BFA5"/>
+              </svg>
+            </div>
+            <div class="fc-body">
+              <p class="fc-label" data-es="Próxima sesión" data-en="Next session">Próxima sesión</p>
+              <p class="fc-value">Hoy · 18:00</p>
+            </div>
+            <span class="fc-badge" data-es="Hoy" data-en="Today">Hoy</span>
+          </div>
+          <!-- Main visual -->
+          <div class="hero-board">
+            <div class="board-header">
+              <div class="board-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="board-title" data-es="Sesión en curso" data-en="Session in progress">Sesión en curso</span>
+            </div>
+            <div class="board-content">
+              <div class="board-equation">
+                <div class="eq-line">
+                  <span class="eq-step">1.</span>
+                  <span class="eq-text">y = ax² + bx + c</span>
+                </div>
+                <div class="eq-line">
+                  <span class="eq-step">2.</span>
+                  <span class="eq-text">x = (-b ± √(b²-4ac)) / 2a</span>
+                </div>
+                <div class="eq-line eq-highlight">
+                  <span class="eq-step">✓</span>
+                  <span class="eq-text">x₁ = 3, x₂ = -1</span>
+                </div>
+              </div>
+              <div class="board-graph">
+                <svg viewBox="0 0 180 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="10" y1="90" x2="170" y2="90" stroke="var(--color-border)" stroke-width="1"/>
+                  <line x1="90" y1="10" x2="90" y2="90" stroke="var(--color-border)" stroke-width="1"/>
+                  <path d="M 20 90 Q 55 20 90 55 Q 125 90 160 30" stroke="var(--color-primary)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                  <circle cx="50" cy="62" r="3" fill="var(--color-accent)"/>
+                  <circle cx="130" cy="58" r="3" fill="var(--color-accent)"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <!-- Floating progress card -->
+          <div class="floating-card card-progress">
+            <p class="fc-label" data-es="Progreso del alumno" data-en="Student progress">Progreso del alumno</p>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" style="width:78%"></div>
+            </div>
+            <p class="fc-value">78% <span data-es="completado" data-en="completed">completado</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SUBJECTS STRIP -->
+<section class="subjects-strip section">
+  <div class="container">
+    <div class="subjects-grid">
+      <div class="subject-item reveal">
+        <div class="subject-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <circle cx="14" cy="14" r="12" stroke="var(--color-primary)" stroke-width="2"/>
+            <path d="M9 18 Q14 8 19 18" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" fill="none"/>
+            <line x1="9" y1="18" x2="19" y2="18" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3 data-es="Matemáticas" data-en="Mathematics">Matemáticas</h3>
+        <p data-es="Álgebra, cálculo, geometría y estadística" data-en="Algebra, calculus, geometry and statistics">Álgebra, cálculo, geometría y estadística</p>
+      </div>
+      <div class="subject-item reveal">
+        <div class="subject-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <rect x="5" y="6" width="18" height="16" rx="3" stroke="var(--color-primary)" stroke-width="2"/>
+            <line x1="5" y1="11" x2="23" y2="11" stroke="var(--color-primary)" stroke-width="1.5"/>
+            <circle cx="8.5" cy="8.5" r="1" fill="var(--color-accent)"/>
+            <circle cx="12" cy="8.5" r="1" fill="var(--color-accent)"/>
+            <path d="M9 15 L12 17 L19 14" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3 data-es="Preparación de exámenes" data-en="Exam prep">Preparación de exámenes</h3>
+        <p data-es="PAU, selectividad, EBAU y pruebas de acceso" data-en="University entrance exams and access tests">PAU, selectividad, EBAU y pruebas de acceso</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT / METHOD -->
+<section class="section about-section">
+  <div class="container">
+    <div class="about-layout">
+      <div class="about-visual reveal">
+        <div class="about-image-wrap">
+          <div class="about-image-bg"></div>
+          <div class="about-stats-float">
+            <div class="ast-item">
+              <strong>8+</strong>
+              <span data-es="años de experiencia" data-en="years experience">años de experiencia</span>
+            </div>
+            <div class="ast-item">
+              <strong>500+</strong>
+              <span data-es="horas de clase" data-en="hours taught">horas de clase</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-content reveal">
+        <span class="section-label" data-es="Método" data-en="Method">Método</span>
+        <h2 class="section-title" data-es="Enseñanza que realmente funciona" data-en="Teaching that actually works">Enseñanza que realmente funciona</h2>
+        <p class="section-subtitle" data-es="No memorizar, sino entender. Trabajo cada concepto desde la base para que el alumno construya una comprensión sólida y duradera, no solo para el examen." data-en="Not memorizing, but understanding. I work each concept from the ground up so the student builds solid, lasting comprehension — not just for the exam.">
+          No memorizar, sino entender. Trabajo cada concepto desde la base para que el alumno construya una comprensión sólida y duradera, no solo para el examen.
+        </p>
+        <div class="method-steps">
+          <div class="method-step">
+            <div class="ms-num">01</div>
+            <div>
+              <h4 data-es="Diagnóstico inicial" data-en="Initial assessment">Diagnóstico inicial</h4>
+              <p data-es="Sesión de diagnóstico para detectar puntos débiles y diseñar el plan de estudio." data-en="Diagnostic session to identify weak points and design a personalized study plan.">Sesión de diagnóstico para detectar puntos débiles y diseñar el plan de estudio.</p>
+            </div>
+          </div>
+          <div class="method-step">
+            <div class="ms-num">02</div>
+            <div>
+              <h4 data-es="Plan personalizado" data-en="Personalized plan">Plan personalizado</h4>
+              <p data-es="Material adaptado, ejercicios progresivos y ritmo ajustado al alumno." data-en="Adapted material, progressive exercises, and pace adjusted to the student.">Material adaptado, ejercicios progresivos y ritmo ajustado al alumno.</p>
+            </div>
+          </div>
+          <div class="method-step">
+            <div class="ms-num">03</div>
+            <div>
+              <h4 data-es="Seguimiento continuo" data-en="Continuous follow-up">Seguimiento continuo</h4>
+              <p data-es="Resolución de dudas entre sesiones, informes de progreso y ajustes cuando sea necesario." data-en="Doubt resolution between sessions, progress reports, and adjustments when needed.">Resolución de dudas entre sesiones, informes de progreso y ajustes cuando sea necesario.</p>
+            </div>
+          </div>
+        </div>
+        <a href="./services.html" class="btn btn-primary" data-es="Ver todos los servicios" data-en="View all services">Ver todos los servicios</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS PREVIEW -->
+<section class="section testimonials-preview" style="background: var(--color-surface);">
+  <div class="container">
+    <div class="section-header centered">
+      <span class="section-label" data-es="Testimonios" data-en="Testimonials">Testimonios</span>
+      <h2 class="section-title" data-es="Lo que dicen los alumnos" data-en="What students say">Lo que dicen los alumnos</h2>
+    </div>
+    <div class="testimonials-row">
+      <div class="testi-card card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <blockquote data-es="&ldquo;Suspendía Matemáticas todos los años. Con estas clases pasé a sacar 8 en la PAU. El método es increíble.&rdquo;" data-en="&ldquo;I failed Math every year. With these classes I scored 8 on my university entrance exam. The method is incredible.&rdquo;">&ldquo;Suspendía Matemáticas todos los años. Con estas clases pasé a sacar 8 en la PAU. El método es increíble.&rdquo;</blockquote>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background: var(--color-primary);">A</div>
+          <div>
+            <strong>Ana García</strong>
+            <span data-es="Bachillerato · Sevilla" data-en="High school · Seville">Bachillerato · Sevilla</span>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <blockquote data-es="&ldquo;Clases muy dinámicas. Explica con mucha claridad y siempre está disponible para dudas fuera de horario. En 2 meses noté un cambio enorme en Cálculo.&rdquo;" data-en="&ldquo;Very dynamic classes. Explains with great clarity and is always available for questions outside of class hours. In 2 months I noticed a huge change in Calculus.&rdquo;">&ldquo;Clases muy dinámicas. Explica con mucha claridad y siempre está disponible para dudas fuera de horario. En 2 meses noté un cambio enorme en Cálculo.&rdquo;</blockquote>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background: var(--color-accent);">M</div>
+          <div>
+            <strong>Miguel Torres</strong>
+            <span data-es="1º Ingeniería · Madrid" data-en="1st year Engineering · Madrid">1º Ingeniería · Madrid</span>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <blockquote data-es="&ldquo;Mi hijo mejoró más en 3 meses que en todo el año anterior. Lo recomiendo sin dudarlo.&rdquo;" data-en="&ldquo;My son improved more in 3 months than in the entire previous year. I recommend it without hesitation.&rdquo;">&ldquo;Mi hijo mejoró más en 3 meses que en todo el año anterior. Lo recomiendo sin dudarlo.&rdquo;</blockquote>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background: var(--color-success);">C</div>
+          <div>
+            <strong>Carmen Ruiz</strong>
+            <span data-es="Madre de alumno · Valencia" data-en="Student's parent · Valencia">Madre de alumno · Valencia</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top: var(--space-10);">
+      <a href="./testimonials.html" class="btn btn-outline" data-es="Ver todos los testimonios" data-en="See all testimonials">Ver todos los testimonios</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA SECTION -->
+<section class="section cta-section">
+  <div class="container container--narrow">
+    <div class="cta-box reveal">
+      <div class="cta-bg" aria-hidden="true"></div>
+      <div class="cta-content">
+        <span class="section-label" style="color: var(--color-accent-highlight);" data-es="¿Listo para empezar?" data-en="Ready to start?">¿Listo para empezar?</span>
+        <h2 class="section-title" style="color: #fff;" data-es="Primera clase de diagnóstico" data-en="First diagnostic class">Primera clase de diagnóstico</h2>
+        <p style="color: color-mix(in oklab, white 75%, var(--color-primary)); max-width: 46ch;" data-es="Reserva tu sesión de diagnóstico y descubre el plan de aprendizaje ideal para ti." data-en="Book your diagnostic session and discover the ideal learning plan for you.">
+          Reserva tu sesión de diagnóstico y descubre el plan de aprendizaje ideal para ti.
+        </p>
+        <div class="cta-actions">
+          <a href="./booking.html" class="btn btn-accent btn-lg" data-es="Reservar ahora" data-en="Book now">Reservar ahora</a>
+          <div class="meet-badge" style="border-color: rgba(255,255,255,0.2); color: rgba(255,255,255,0.8);">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M16 8L20 5V19L16 16V8Z" fill="#00897B"/>
+              <rect x="2" y="5" width="14" height="14" rx="2.5" fill="#00BFA5"/>
+            </svg>
+            <span data-es="via Google Meet" data-en="via Google Meet">via Google Meet</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

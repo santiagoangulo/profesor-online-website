@@ -1,0 +1,13 @@
+{
+  "name": "profesor-online-website",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Profesor Online - Static site built with 11ty",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve --watch"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

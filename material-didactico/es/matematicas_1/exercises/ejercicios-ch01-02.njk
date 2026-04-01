@@ -1,0 +1,277 @@
+---
+layout: layouts/base.njk
+title: "Matemáticas II — Ejercicios: Capítulos 1-2 | Profesor Online"
+permalink: "./material-didactico/es/matematicas_1/exercises/ejercicios-ch01-02.html"
+section: material-didactico
+depth: 4
+---
+
+<section class="content-header">
+    <div class="container">
+      <a href="../matematicas_2/index.html" class="back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Volver al índice de Matemáticas II
+      </a>
+      <h1>Ejercicios: Capítulos 1-2 — Matrices y Determinantes</h1>
+      <p>Ejercicios resueltos paso a paso con soluciones detalladas. Incluye problemas de nivel básico, intermedio, estilo EVAU y test de opción múltiple.</p>
+      <div class="course-meta">
+        <span>2.º Bachillerato — Ciencias y Tecnología</span>
+        <span>Comunidad de Madrid</span>
+        <span>Decreto 64/2022 (LOMLOE)</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-page">
+    <div class="container">
+
+      <div class="chapter" id="cap1">
+        <h2>Capítulo 1 — Matrices</h2>
+
+        <div class="subsection">
+          <h3>1.1.1 Definición de matriz. Elementos, orden y notación</h3>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto</h4>
+            <p>Sea la matriz $A = \begin{pmatrix} 2 & -1 & 5 \\ 0 & 3 & -4 \end{pmatrix}$. Indica su orden, el elemento $a_{12}$, el elemento $a_{23}$ y la traspuesta $A^T$.</p>
+            <div class="solution">
+              <p><strong>Resolución:</strong> Orden: $2 \times 3$. Elemento $a_{12} = -1$. Elemento $a_{23} = -4$. Traspuesta: $A^T = \begin{pmatrix} 2 & 0 \\ -1 & 3 \\ 5 & -4 \end{pmatrix}$</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel Básico</span>
+          <div class="exercise-block">
+            <p><strong>Ejercicio 1:</strong> Dada la matriz $B = \begin{pmatrix} 1 & 4 \\ -2 & 7 \\ 0 & 3 \end{pmatrix}$, indica su orden y los elementos $b_{21}$, $b_{32}$.</p>
+            <div class="solution">
+              <p><strong>Solución:</strong> $B$ es de orden $3 \times 2$. El elemento $b_{21} = -2$. El elemento $b_{32} = 3$.</p>
+            </div>
+          </div>
+
+          <div class="test-grid">
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>¿Cuál es el orden de la matriz $\begin{pmatrix} 1 & 0 & 2 & -1 \\ 3 & 5 & -4 & 7 \end{pmatrix}$?</p>
+              <ul>
+                <li data-letter="a">$4 \times 2$</li>
+                <li data-letter="b">$2 \times 4$</li>
+                <li data-letter="c">$4 \times 4$</li>
+                <li data-letter="d">$2 \times 2$</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: b) $2 \times 4$</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>1.1.2 Tipos de matrices</h3>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto</h4>
+            <p>Clasifica las siguientes matrices: $P = \begin{pmatrix} 0 & 0 \\ 0 & 0 \end{pmatrix}$ (matriz nula), $Q = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix}$ (identidad), $S = \begin{pmatrix} 0 & 1 & -2 \\ -1 & 0 & 3 \\ 2 & -3 & 0 \end{pmatrix}$ (antisimétrica).</p>
+            <div class="solution">
+              <p><strong>Solución:</strong> $P$ es matriz nula, también cuadrada, diagonal, triangular y simétrica. $Q$ es la matriz identidad $I_3$. $S$ verifica $S^T = -S$, por lo que es antisimétrica (diagonal cero).</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel Intermedio</span>
+          <div class="exercise-block">
+            <p><strong>Ejercicio 3:</strong> Descompón $A = \begin{pmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \end{pmatrix}$ como suma de una matriz simétrica $S$ y una antisimétrica $K$.</p>
+            <div class="solution">
+              <p><strong>Solución:</strong> $S = \frac{A + A^T}{2} = \begin{pmatrix}1&3&5\\3&5&7\\5&7&9\end{pmatrix}$, $K = \frac{A - A^T}{2} = \begin{pmatrix}0&-1&-2\\1&0&-1\\2&1&0\end{pmatrix}$. Se verifica $S + K = A$.</p>
+            </div>
+          </div>
+
+          <div class="test-grid">
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>Una matriz antisimétrica de orden $3 \times 3$ cumple necesariamente que:</p>
+              <ul>
+                <li data-letter="a">Todos sus elementos son cero</li>
+                <li data-letter="b">Los elementos de la diagonal principal son cero</li>
+                <li data-letter="c">Es igual a su traspuesta</li>
+                <li data-letter="d">Solo puede tener elementos positivos fuera de la diagonal</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: b)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>1.2.3 Producto de matrices</h3>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto</h4>
+            <p>Calcula el producto $AB$ siendo $A = \begin{pmatrix}1&2&-1\\3&0&2\end{pmatrix}$ y $B = \begin{pmatrix}2&1\\-1&0\\3&4\end{pmatrix}$.</p>
+            <div class="solution">
+              <p><strong>Resolución:</strong> $A$ es $2\times3$, $B$ es $3\times2$, el producto existe y es $2\times2$. Calculando: $c_{11} = -3$, $c_{12} = -3$, $c_{21} = 12$, $c_{22} = 11$. Resultado: $AB = \begin{pmatrix}-3 & -3 \\ 12 & 11\end{pmatrix}$</p>
+            </div>
+          </div>
+
+          <div class="test-grid">
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>El producto $\begin{pmatrix}1\\2\\3\end{pmatrix}\begin{pmatrix}1&2&3\end{pmatrix}$ es:</p>
+              <ul>
+                <li data-letter="a">Un escalar igual a $14$</li>
+                <li data-letter="b">Una matriz $3\times3$</li>
+                <li data-letter="c">No está definido</li>
+                <li data-letter="d">Una matriz $1\times1$</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: b) Una matriz $3\times3$</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>1.3.1 Potencias de matrices</h3>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto</h4>
+            <p>Sea $A = \begin{pmatrix}1&1\\0&2\end{pmatrix}$. Calcula $A^0$, $A^1$, $A^2$ y $A^3$.</p>
+            <div class="solution">
+              <p><strong>Resolución:</strong> $A^0 = I = \begin{pmatrix}1&0\\0&1\end{pmatrix}$. $A^1 = A$. $A^2 = \begin{pmatrix}1&3\\0&4\end{pmatrix}$. $A^3 = \begin{pmatrix}1&7\\0&8\end{pmatrix}$.</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel EVAU</span>
+          <div class="exercise-block">
+            <p><strong>Ejercicio 5:</strong> Sea $A = \begin{pmatrix}2&1\\0&2\end{pmatrix}$. Usando el desarrollo binomial $A = 2I + N$ con $N$ nilpotente, calcula $A^3$.</p>
+            <div class="solution">
+              <p><strong>Solución:</strong> $N = \begin{pmatrix}0&1\\0&0\end{pmatrix}$, $N^2 = O$. $A^3 = 8I + 12N = \begin{pmatrix}8&12\\0&8\end{pmatrix}$.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>1.3.3 Potencias cíclicas</h3>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto</h4>
+            <p>Sea $A = \begin{pmatrix}0&1\\-1&0\end{pmatrix}$. Calcula $A^2$, $A^3$, $A^4$ y deduce $A^{2025}$.</p>
+            <div class="solution">
+              <p><strong>Resolución:</strong> $A^2 = -I$, $A^3 = -A$, $A^4 = I$. El ciclo tiene período 4. Como $2025 = 4 \times 506 + 1$, resulta $A^{2025} = A = \begin{pmatrix}0&1\\-1&0\end{pmatrix}$.</p>
+            </div>
+          </div>
+
+          <div class="test-grid">
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>Si $A^4 = I$ y queremos calcular $A^{101}$, el exponente equivalente es:</p>
+              <ul>
+                <li data-letter="a">$4$</li>
+                <li data-letter="b">$1$</li>
+                <li data-letter="c">$3$</li>
+                <li data-letter="d">$0$</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: b) $1$ ($101 = 4 \times 25 + 1$)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chapter" id="cap2">
+        <h2>Capítulo 2 — Determinantes</h2>
+
+        <div class="subsection">
+          <h3>2.1.1 Determinante de una matriz 2×2</h3>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto</h4>
+            <p>Calcula el determinante de $A = \begin{pmatrix}3&-1\\2&5\end{pmatrix}$.</p>
+            <div class="solution">
+              <p><strong>Resolución:</strong> $|A| = 3 \cdot 5 - (-1) \cdot 2 = 15 + 2 = 17$.</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel Básico</span>
+          <div class="exercise-block">
+            <p><strong>Ejercicio 1:</strong> Calcula $|B|$ siendo $B = \begin{pmatrix}4&2\\-1&3\end{pmatrix}$.</p>
+            <div class="solution">
+              <p><strong>Solución:</strong> $|B| = 4 \cdot 3 - 2 \cdot (-1) = 12 + 2 = 14$.</p>
+            </div>
+          </div>
+
+          <div class="test-grid">
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>Si $|A| = 0$, la matriz $A$ es:</p>
+              <ul>
+                <li data-letter="a">Invertible</li>
+                <li data-letter="b">Singular (no invertible)</li>
+                <li data-letter="c">La identidad</li>
+                <li data-letter="d">Triangular</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: b) Singular</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>2.1.2 Regla de Sarrus para matrices 3×3</h3>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto</h4>
+            <p>Calcula $|A|$ siendo $A = \begin{pmatrix}2&1&3\\-1&0&2\\4&1&-1\end{pmatrix}$.</p>
+            <div class="solution">
+              <p><strong>Resolución:</strong> Por Sarrus: $|A| = 2(0\cdot(-1)-2\cdot1) - 1((-1)\cdot(-1)-2\cdot4) + 3((-1)\cdot1-0\cdot4) = 2(-2) - 1(1-8) + 3(-1-0) = -4 + 7 - 3 = 0$.</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel Intermedio</span>
+          <div class="exercise-block">
+            <p><strong>Ejercicio 3:</strong> Calcula el determinante de $\begin{pmatrix}1&2&3\\0&4&5\\0&0&6\end{pmatrix}$.</p>
+            <div class="solution">
+              <p><strong>Solución:</strong> Como es triangular superior, el determinante es el producto de la diagonal: $1 \cdot 4 \cdot 6 = 24$.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>2.2.1 Propiedades de los determinantes</h3>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto</h4>
+            <p>¿Cuánto vale $|A|$ si una fila de $A$ es combinación lineal de las demás?</p>
+            <div class="solution">
+              <p><strong>Resolución:</strong> El determinante es cero. Si una fila es combinación lineal de las demás, las filas son linealmente dependientes y $|A| = 0$.</p>
+            </div>
+          </div>
+
+          <div class="test-grid">
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>Si $|A| = 3$ y $|B| = 2$, ¿cuánto vale $|AB|$?</p>
+              <ul>
+                <li data-letter="a">$5$</li>
+                <li data-letter="b">$6$</li>
+                <li data-letter="c">$1$</li>
+                <li data-letter="d">No se puede saber</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: b) $6$ (propiedad $|AB| = |A| \cdot |B|$)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>2.3.1 Matriz inversa mediante adjuntos</h3>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto</h4>
+            <p>Calcula $A^{-1}$ si $A = \begin{pmatrix}2&1\\3&2\end{pmatrix}$.</p>
+            <div class="solution">
+              <p><strong>Resolución:</strong> $|A| = 4 - 3 = 1 \neq 0$, invertible. Adjuntos: $A^{-1} = \begin{pmatrix}2&-1\\-3&2\end{pmatrix}$.</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel EVAU</span>
+          <div class="exercise-block">
+            <p><strong>Ejercicio 5:</strong> Sea $A = \begin{pmatrix}1&0&2\\-1&1&0\\0&2&1\end{pmatrix}$. Calcula $|A|$ y determina si es invertible.</p>
+            <div class="solution">
+              <p><strong>Solución:</strong> $|A| = 1(1-0) - 0(-1-0) + 2(-2-0) = 1 - 4 = -3 \neq 0$. Es invertible.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>

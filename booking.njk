@@ -1,0 +1,143 @@
+---
+layout: layouts/base.njk
+title: "Reservar Clase Online | Matemáticas por Google Meet"
+description: "Reserva tu clase online de Matemáticas. Sesiones desde 29€. Diagnóstico personalizado, 方法 paso a paso y seguimiento continuo. Elige tu horario."
+navActive: "booking"
+section: "root"
+permalink: "./booking.html"
+extrastyles:
+  - "./base.css"
+  - "./style.css"
+  - "./inner-pages.css"
+---
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero-content reveal">
+      <span class="section-label" data-es="Reserva" data-en="Booking">Reserva</span>
+      <h1 data-es="Elige tu horario y empieza" data-en="Choose your time and start">Elige tu horario y empieza</h1>
+      <p data-es="Sesión de diagnóstico personalizada. Recibirás el enlace de Google Meet automáticamente al reservar." data-en="Personalized diagnostic session. You'll receive the Google Meet link automatically when you book.">Sesión de diagnóstico personalizada. Recibirás el enlace de Google Meet automáticamente al reservar.</p>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING LAYOUT -->
+<section class="section">
+  <div class="container">
+    <div class="booking-layout">
+      <!-- Info sidebar -->
+      <aside class="booking-sidebar">
+        <div class="booking-info-card card reveal">
+          <h3 data-es="¿Qué incluye la primera clase?" data-en="What's included in the first class?">¿Qué incluye la primera clase?</h3>
+          <ul class="info-list" role="list">
+            <li>
+              <span class="info-icon" style="color: var(--color-success);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              </span>
+              <span data-es="Sesión de 60 minutos" data-en="60-minute session">Sesión de 60 minutos</span>
+            </li>
+            <li>
+              <span class="info-icon" style="color: var(--color-success);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              </span>
+              <span data-es="Diagnóstico del nivel actual" data-en="Assessment of current level">Diagnóstico del nivel actual</span>
+            </li>
+            <li>
+              <span class="info-icon" style="color: var(--color-success);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              </span>
+              <span data-es="Plan de aprendizaje personalizado" data-en="Personalized learning plan">Plan de aprendizaje personalizado</span>
+            </li>
+            <li>
+              <span class="info-icon" style="color: var(--color-success);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              </span>
+              <span data-es="Sin tarjeta de crédito" data-en="No credit card required">Sin tarjeta de crédito</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Meet info -->
+        <div class="meet-info-card card reveal">
+          <div class="meet-header">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" style="flex-shrink:0">
+              <rect width="36" height="36" rx="8" fill="#e8f5e9"/>
+              <path d="M22 13L28 9V27L22 23V13Z" fill="#00897B"/>
+              <rect x="6" y="9" width="16" height="18" rx="3" fill="#00BFA5"/>
+            </svg>
+            <div>
+              <h4>Google Meet</h4>
+              <p data-es="Plataforma de videoconferencia" data-en="Video conferencing platform">Plataforma de videoconferencia</p>
+            </div>
+          </div>
+          <p class="meet-desc" data-es="Al confirmar la reserva recibirás un enlace de Google Meet por email. No necesitas instalar nada: funciona desde el navegador." data-en="When you confirm your booking, you'll receive a Google Meet link by email. No installation needed — works directly in the browser.">
+            Al confirmar la reserva recibirás un enlace de Google Meet por email. No necesitas instalar nada: funciona desde el navegador.
+          </p>
+          <div class="meet-features">
+            <div class="mf-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <span data-es="Seguro y privado" data-en="Safe and private">Seguro y privado</span>
+            </div>
+            <div class="mf-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+              <span data-es="Grabación disponible" data-en="Recording available">Grabación disponible</span>
+            </div>
+            <div class="mf-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              <span data-es="Pizarra compartida" data-en="Shared whiteboard">Pizarra compartida</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Availability note -->
+        <div class="availability-note reveal">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+          <p data-es="Horario disponible: Lunes a Sábado, de 9:00 a 21:00 (hora peninsular)." data-en="Available hours: Monday to Saturday, 9:00 AM to 9:00 PM (Spain time).">Horario disponible: Lunes a Sábado, de 9:00 a 21:00 (hora peninsular).</p>
+        </div>
+      </aside>
+
+      <!-- Calendly embed -->
+      <div class="booking-main reveal">
+        <div class="calendly-wrap">
+          <!-- Calendly inline widget begin -->
+          <div class="calendly-inline-widget" data-url="https://calendly.com/santi-maths-teacher" style="min-width:320px;height:700px;"></div>
+          <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+          <!-- Calendly inline widget end -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" style="background: var(--color-surface);">
+  <div class="container container--narrow">
+    <div class="section-header centered">
+      <span class="section-label" data-es="FAQ" data-en="FAQ">FAQ</span>
+      <h2 class="section-title" data-es="Preguntas frecuentes" data-en="Frequently asked questions">Preguntas frecuentes</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item reveal">
+<summary data-es="¿Cómo funciona la primera sesión?" data-en="How does the first session work?">¿Cómo funciona la primera sesión?</summary>
+          <p data-es="La primera sesión es una sesión de diagnóstico de 60 minutos. Detectamos tus puntos débiles y diseñamos un plan de aprendizaje personalizado." data-en="The first session is a 60-minute diagnostic session. We identify your weak points and design a personalized learning plan.">La primera sesión es una sesión de diagnóstico de 60 minutos. Detectamos tus puntos débiles y diseñamos un plan de aprendizaje personalizado.</p>
+      </details>
+      <details class="faq-item reveal">
+        <summary data-es="¿Qué necesito para la clase online?" data-en="What do I need for the online class?">¿Qué necesito para la clase online?</summary>
+        <p data-es="Solo un ordenador o tablet con conexión a internet y micrófono/cámara. Google Meet funciona desde el navegador, sin instalar nada. Tendrás el enlace en el email de confirmación." data-en="Just a computer or tablet with internet connection and microphone/camera. Google Meet works from the browser, no installation needed. You'll have the link in your confirmation email.">Solo un ordenador o tablet con conexión a internet y micrófono/cámara. Google Meet funciona desde el navegador, sin instalar nada. Tendrás el enlace en el email de confirmación.</p>
+      </details>
+      <details class="faq-item reveal">
+        <summary data-es="¿Puedo cancelar o cambiar la fecha?" data-en="Can I cancel or reschedule?">¿Puedo cancelar o cambiar la fecha?</summary>
+        <p data-es="Sí, con 24 horas de antelación puedes cancelar o reprogramar cualquier sesión sin coste adicional, directamente desde el enlace de tu confirmación de Calendly." data-en="Yes, with 24 hours notice you can cancel or reschedule any session at no extra cost, directly from the link in your Calendly confirmation email.">Sí, con 24 horas de antelación puedes cancelar o reprogramar cualquier sesión sin coste adicional, directamente desde el enlace de tu confirmación de Calendly.</p>
+      </details>
+      <details class="faq-item reveal">
+        <summary data-es="¿Se graban las clases?" data-en="Are classes recorded?">¿Se graban las clases?</summary>
+        <p data-es="Sí, previa solicitud. Puedes pedir la grabación de cualquier sesión para repasar los conceptos cuando quieras." data-en="Yes, upon request. You can ask for a recording of any session to review concepts whenever you like.">Sí, previa solicitud. Puedes pedir la grabación de cualquier sesión para repasar los conceptos cuando quieras.</p>
+      </details>
+      <details class="faq-item reveal">
+        <summary data-es="¿Doy clases en zonas horarias distintas a España?" data-en="Do you teach in time zones outside Spain?">¿Doy clases en zonas horarias distintas a España?</summary>
+        <p data-es="Sí, el calendario de reservas muestra la disponibilidad en tu zona horaria local automáticamente." data-en="Yes, the booking calendar automatically shows availability in your local time zone.">Sí, el calendario de reservas muestra la disponibilidad en tu zona horaria local automáticamente.</p>
+      </details>
+    </div>
+  </div>
+</section>

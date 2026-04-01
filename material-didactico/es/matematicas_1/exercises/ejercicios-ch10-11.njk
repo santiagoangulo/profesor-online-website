@@ -1,0 +1,360 @@
+---
+layout: layouts/base.njk
+title: "Matemáticas II — Ejercicios: Capítulos 10-11 | Profesor Online"
+permalink: "./material-didactico/es/matematicas_1/exercises/ejercicios-ch10-11.html"
+section: material-didactico
+depth: 4
+---
+
+<section class="content-header">
+    <div class="container">
+      <a href="../matematicas_2/index.html" class="back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Volver al índice de Matemáticas II
+      </a>
+      <h1>Ejercicios — Capítulos 10 y 11: Probabilidad y Distribuciones de Probabilidad</h1>
+      <p>Ejercicios resueltos paso a paso sobre probabilidad, técnicas de conteo, probabilidad condicionada, teorema de Bayes, distribuciones binomial y normal, e inferencia elemental.</p>
+      <div class="course-meta">
+        <span>2.º Bachillerato — Ciencias y Tecnología</span>
+        <span>Comunidad de Madrid</span>
+        <span>Decreto 64/2022 (LOMLOE)</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-page">
+    <div class="container">
+      <nav class="toc-nav">
+        <a href="#probabilidad">Capítulo 10: Probabilidad</a>
+        <a href="#distribuciones">Capítulo 11: Distribuciones de Probabilidad</a>
+      </nav>
+
+      <div class="chapter" id="probabilidad">
+        <h2>10. Probabilidad</h2>
+
+        <div class="subsection">
+          <h3>10.1 Fundamentos de probabilidad</h3>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto</h4>
+            <p>Se lanza un dado de seis caras. Describe el experimento aleatorio, escribe el espacio muestral y define los siguientes sucesos: $A$ = "obtener un número par", $B$ = "obtener un número mayor que 4", $A \cap B$, $A \cup B$ y $\bar{A}$.</p>
+            <div class="solution">
+              <p><strong>Resolución:</strong> <strong>Paso 1 – Experimento aleatorio.</strong> Lanzar un dado de seis caras es un experimento aleatorio porque el resultado no puede predecirse con certeza antes de realizarlo.</p>
+              <p><strong>Paso 2 – Espacio muestral.</strong> $$\Omega = \{1, 2, 3, 4, 5, 6\}$$</p>
+              <p><strong>Paso 3 – Definir los sucesos.</strong> $A$ = "obtener número par" $= \{2, 4, 6\}$; $B$ = "obtener número mayor que 4" $= \{5, 6\}$.</p>
+              <p><strong>Paso 4 – Operaciones con sucesos.</strong> $A \cap B = \{2,4,6\} \cap \{5,6\} = \{6\}$ (números pares y mayores que 4); $A \cup B = \{2,4,5,6\}$ (números pares o mayores que 4, o ambos); $\bar{A} = \Omega \setminus A = \{1,3,5\}$ (números impares).</p>
+              <p><strong>Paso 5 – Verificación.</strong> $|A \cup B| = |A| + |B| - |A \cap B| = 3 + 2 - 1 = 4$.</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel Básico</span>
+          <div class="exercise-block">
+            <p><strong>Ejercicio 1:</strong> Se extrae una carta de una baraja española de 40 cartas. Escribe el espacio muestral reducido por palos y define: $A$ = "carta de oros", $B$ = "carta con número ≤ 3". Calcula $A \cap B$ y $A \cup B$.</p>
+            <div class="solution">
+              <p><strong>Solución:</strong> El espacio muestral tiene 40 elementos (10 cartas × 4 palos). Usando representación compacta: $A = \{1_\text{or}, 2_\text{or}, 3_\text{or}, 4_\text{or}, 5_\text{or}, 6_\text{or}, 7_\text{or}, 8_\text{or}, 9_\text{or}, 10_\text{or}\}$ (10 elementos); $B$ contiene las cartas 1, 2 y 3 de cada palo, es decir 12 elementos. $A \cap B = \{1_\text{or}, 2_\text{or}, 3_\text{or}\}$ (3 elementos, oros con número ≤ 3). $A \cup B$ tiene $10 + 12 - 3 = 19$ elementos.</p>
+            </div>
+          </div>
+
+          <div class="test-grid">
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>Se lanza un dado de 6 caras. El sucesos $A$ = "número par" y $B$ = "número mayor que 3". ¿Cuántos elementos tiene $A \cup B$?</p>
+              <ul>
+                <li data-letter="a">3</li>
+                <li data-letter="b">4</li>
+                <li data-letter="c">5</li>
+                <li data-letter="d">6</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: b) $A = \{2,4,6\}$, $B = \{4,5,6\}$. $A \cup B = \{2,4,5,6\}$, que tiene 4 elementos.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>10.2 Técnicas de conteo</h3>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto</h4>
+            <p>Un menú de restaurante ofrece 3 primeros platos, 4 segundos y 2 postres. ¿De cuántas formas distintas puede elegirse un menú completo (un primero, un segundo y un postre)?</p>
+            <div class="solution">
+              <p><strong>Resolución:</strong> Por el <strong>principio multiplicativo</strong>: si una tarea se realiza en etapas independientes con $n_1$, $n_2$, ..., $n_k$ formas respectivamente, el total de formas de completar todas las etapas es $n_1 \cdot n_2 \cdots n_k$.</p>
+              <p>Etapas: Elección de primer plato: 3 formas; Elección de segundo plato: 4 formas; Elección de postre: 2 formas.</p>
+              <p>Total: $3 \times 4 \times 2 = \mathbf{24}$ menús distintos.</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel Intermedio</span>
+          <div class="exercise-block">
+            <p><strong>Ejercicio 3:</strong> Un código de seguridad tiene 4 dígitos del 0 al 9. ¿Cuántos códigos hay (a) con repetición y (b) sin repetición? ¿Qué porcentaje supone la diferencia?</p>
+            <div class="solution">
+              <p><strong>Solución:</strong> (a) Con repetición: $10^4 = 10\,000$. (b) Sin repetición: $10 \times 9 \times 8 \times 7 = 5\,040$. Diferencia: $10\,000 - 5\,040 = 4\,960$, que supone el $\dfrac{4960}{10000} = 49{,}6\%$ del total.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>10.3 Probabilidad condicionada e independencia</h3>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto</h4>
+            <p>En una fábrica, el 2% de las piezas tiene defecto de tipo $A$, el 3% tiene defecto de tipo $B$ y el 0,5% tiene ambos defectos. Calcula la probabilidad de que una pieza tenga defecto $A$ sabiendo que ya se sabe que tiene defecto $B$.</p>
+            <div class="solution">
+              <p><strong>Resolución:</strong> Datos: $P(A) = 0{,}02$, $P(B) = 0{,}03$, $P(A \cap B) = 0{,}005$.</p>
+              <p><strong>Fórmula de probabilidad condicionada:</strong> $$P(A \mid B) = \frac{P(A \cap B)}{P(B)}$$</p>
+              <p>Sustituyendo: $$P(A \mid B) = \frac{0{,}005}{0{,}03} = \frac{5}{30} = \frac{1}{6} \approx \mathbf{0{,}1\overline{6}}$$</p>
+              <p><strong>Interpretación:</strong> Si sabemos que la pieza tiene defecto $B$, la probabilidad de que también tenga defecto $A$ aumenta del 2% al 16,7%, lo que indica una cierta correlación entre ambos defectos.</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel EVAU</span>
+          <div class="exercise-block">
+            <p><strong>Ejercicio 5:</strong> Una urna contiene 4 bolas rojas y 6 bolas blancas. Se extraen 2 bolas <strong>sin reemplazamiento</strong>.</p>
+            <p>a) ¿Cuál es la probabilidad de que la primera bola sea roja?<br>
+            b) Dado que la primera bola fue roja, ¿cuál es la probabilidad de que la segunda también sea roja?<br>
+            c) Calcula la probabilidad de que las dos bolas sean rojas.<br>
+            d) ¿Cambia el resultado del apartado (c) si la extracción es con reemplazamiento?</p>
+            <div class="solution">
+              <p><strong>Solución:</strong><br>
+              a) $P(R_1) = \dfrac{4}{10} = 0{,}4$.<br>
+              b) $P(R_2 \mid R_1) = \dfrac{3}{9} = \dfrac{1}{3} \approx 0{,}333$ (quedan 3 rojas entre 9).<br>
+              c) $P(R_1 \cap R_2) = P(R_1) \cdot P(R_2 \mid R_1) = \dfrac{4}{10} \cdot \dfrac{3}{9} = \dfrac{12}{90} = \dfrac{2}{15} \approx 0{,}133$.<br>
+              d) Con reemplazamiento: $P(R_1 \cap R_2) = \dfrac{4}{10} \cdot \dfrac{4}{10} = \dfrac{16}{100} = 0{,}16$. Sí cambia (ligeramente mayor porque no se "agota" la urna).</p>
+            </div>
+          </div>
+
+          <div class="test-grid">
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>Si $P(B) = 0{,}4$ y $P(A \cap B) = 0{,}12$, entonces $P(A \mid B)$ vale:</p>
+              <ul>
+                <li data-letter="a">0,048</li>
+                <li data-letter="b">0,3</li>
+                <li data-letter="c">0,52</li>
+                <li data-letter="d">0,12</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: b) $P(A \mid B) = \dfrac{0{,}12}{0{,}4} = 0{,}3$.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>10.4 Diagramas de árbol y tablas de contingencia</h3>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto</h4>
+            <p>En una encuesta a 500 personas se pregunta sobre género (Hombre/Mujer) y preferencia de transporte (Coche/Transporte público). Los resultados son: 180 hombres prefieren el coche, 70 hombres prefieren el transporte público, 100 mujeres prefieren el coche y 150 mujeres prefieren el transporte público. Construye la tabla de contingencia completa.</p>
+            <div class="solution">
+              <p><strong>Resolución:</strong></p>
+              <table>
+                <tr><th></th><th>Coche</th><th>T. Público</th><th>Total</th></tr>
+                <tr><td>Hombre</td><td>180</td><td>70</td><td><strong>250</strong></td></tr>
+                <tr><td>Mujer</td><td>100</td><td>150</td><td><strong>250</strong></td></tr>
+                <tr><td><strong>Total</strong></td><td><strong>280</strong></td><td><strong>220</strong></td><td><strong>500</strong></td></tr>
+              </table>
+              <p>Verificación: $180+70 = 250$, $100+150 = 250$, $180+100 = 280$, $70+150 = 220$. Total: $280+220 = 500$.</p>
+              <p>Probabilidades: $P(\text{Hombre}) = 250/500 = 0{,}5$; $P(\text{Coche}) = 280/500 = 0{,}56$; $P(\text{Hombre y Coche}) = 180/500 = 0{,}36$.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>10.5 Probabilidad total y teorema de Bayes</h3>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto</h4>
+            <p>Una empresa tiene tres líneas de producción $L_1$, $L_2$ y $L_3$ que producen el 50%, 30% y 20% de las piezas respectivamente. La tasa de defectos de cada línea es 2%, 4% y 6%. Calcula la probabilidad de que una pieza elegida al azar sea defectuosa.</p>
+            <div class="solution">
+              <p><strong>Resolución:</strong><br>
+              <strong>Datos:</strong> $P(L_1)=0{,}5,\quad P(L_2)=0{,}3,\quad P(L_3)=0{,}2$; $P(D \mid L_1)=0{,}02,\quad P(D \mid L_2)=0{,}04,\quad P(D \mid L_3)=0{,}06$.</p>
+              <p><strong>Teorema de la probabilidad total:</strong> $$P(D) = P(D \mid L_1) \cdot P(L_1) + P(D \mid L_2) \cdot P(L_2) + P(D \mid L_3) \cdot P(L_3)$$</p>
+              <p>$$P(D) = 0{,}02 \times 0{,}5 + 0{,}04 \times 0{,}3 + 0{,}06 \times 0{,}2 = 0{,}010 + 0{,}012 + 0{,}012 = \mathbf{0{,}034}$$</p>
+              <p>La probabilidad de defecto es el 3,4%.</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel EVAU</span>
+          <div class="exercise-block">
+            <p><strong>Ejercicio 5:</strong> Un laboratorio farmacéutico fabrica un fármaco en dos plantas: la planta $A$ produce el 60% de los lotes y la planta $B$ el 40%. La probabilidad de que un lote de la planta $A$ no supere el control de calidad es 0,03; en la planta $B$ es 0,06.</p>
+            <p>a) Calcula la probabilidad de que un lote elegido al azar no supere el control.<br>
+            b) Un lote no supera el control. Calcula la probabilidad de que provenga de cada planta.<br>
+            c) ¿Qué planta contribuye más a los lotes rechazados? ¿Y cuál tiene mayor tasa de rechazo?</p>
+            <div class="solution">
+              <p><strong>Solución:</strong><br>
+              a) $P(R) = 0{,}03 \times 0{,}60 + 0{,}06 \times 0{,}40 = 0{,}018 + 0{,}024 = \mathbf{0{,}042}$.<br>
+              b) $P(A \mid R) = \dfrac{0{,}018}{0{,}042} = \dfrac{3}{7} \approx \mathbf{0{,}429}$. $P(B \mid R) = \dfrac{0{,}024}{0{,}042} = \dfrac{4}{7} \approx \mathbf{0{,}571}$.<br>
+              c) La planta $B$ contribuye más a los rechazos (57,1% de los lotes rechazados vienen de $B$), y también tiene mayor tasa de rechazo (6% vs 3%).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chapter" id="distribuciones">
+        <h2>11. Distribuciones de Probabilidad</h2>
+
+        <div class="subsection">
+          <h3>11.1 Variables aleatorias</h3>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto</h4>
+            <p>Se lanza un dado de 4 caras (con valores 1, 2, 3, 4) y se define $X$ = valor obtenido. Construye la tabla de la función de masa $P(X=k)$ y la función de distribución $F(x) = P(X \leq x)$.</p>
+            <div class="solution">
+              <p><strong>Resolución:</strong> Como el dado es equilibrado, $P(X=k) = 1/4$ para $k = 1,2,3,4$.</p>
+              <p><strong>Función de masa:</strong></p>
+              <table>
+                <tr><th>$k$</th><th>1</th><th>2</th><th>3</th><th>4</th></tr>
+                <tr><td>$P(X=k)$</td><td>1/4</td><td>1/4</td><td>1/4</td><td>1/4</td></tr>
+              </table>
+              <p><strong>Función de distribución:</strong> $$F(x) = \begin{cases} 0 & \text{si } x < 1 \\ 1/4 & \text{si } 1 \leq x < 2 \\ 2/4 = 1/2 & \text{si } 2 \leq x < 3 \\ 3/4 & \text{si } 3 \leq x < 4 \\ 1 & \text{si } x \geq 4 \end{cases}$$</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel Intermedio</span>
+          <div class="exercise-block">
+            <p><strong>Ejercicio 3:</strong> Sea $f(x) = \frac{3}{8}x^2$ para $0 \leq x \leq 2$. Calcula $F(x)$, $P(1 \leq X \leq 2)$ y el valor de $m$ (mediana) tal que $P(X \leq m) = 0{,}5$.</p>
+            <div class="solution">
+              <p><strong>Solución:</strong> $F(x) = \int_0^x \frac{3t^2}{8}\,dt = \dfrac{x^3}{8}$ (para $0 \leq x \leq 2$). $P(1 \leq X \leq 2) = F(2)-F(1) = 1 - 1/8 = \mathbf{7/8}$. Mediana: $m^3/8 = 0{,}5 \Rightarrow m^3 = 4 \Rightarrow m = \sqrt[3]{4} \approx \mathbf{1{,}587}$.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>11.2 Distribución binomial</h3>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto</h4>
+            <p>Sea $X \sim B(6,\; 0{,}3)$. Calcula $P(X=2)$, $P(X=0)$ y $P(X=6)$.</p>
+            <div class="solution">
+              <p><strong>Resolución:</strong> La función de masa de la binomial es: $$P(X=k) = \binom{n}{k} p^k (1-p)^{n-k}, \quad k = 0,1,\ldots,n$$</p>
+              <p>Con $n=6$ y $p=0{,}3$ ($q=0{,}7$):</p>
+              <p><strong>$P(X=2)$:</strong> $$P(X=2) = \binom{6}{2}(0{,}3)^2(0{,}7)^4 = 15 \times 0{,}09 \times 0{,}2401 = 15 \times 0{,}021609 = \mathbf{0{,}3241}$$</p>
+              <p><strong>$P(X=0)$:</strong> $$P(X=0) = \binom{6}{0}(0{,}3)^0(0{,}7)^6 = 1 \times 1 \times 0{,}117649 = \mathbf{0{,}1176}$$</p>
+              <p><strong>$P(X=6)$:</strong> $$P(X=6) = \binom{6}{6}(0{,}3)^6(0{,}7)^0 = 1 \times 0{,}000729 \times 1 = \mathbf{0{,}0007}$$</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel EVAU</span>
+          <div class="exercise-block">
+            <p><strong>Ejercicio 5:</strong> En una prueba de diagnóstico médico, la probabilidad de que el test dé positivo cuando el paciente está sano (falso positivo) es del 8%. Se hacen 5 pruebas independientes en pacientes sanos.</p>
+            <p>a) Define $X$ y su distribución.<br>
+            b) Calcula $P(X=1)$ (exactamente un falso positivo).<br>
+            c) Calcula $P(X \geq 1)$ usando el complementario.</p>
+            <div class="solution">
+              <p><strong>Solución:</strong><br>
+              a) $X$ = número de falsos positivos en 5 pruebas; $X \sim B(5,\;0{,}08)$.<br>
+              b) $P(X=1) = \binom{5}{1}(0{,}08)^1(0{,}92)^4 = 5 \times 0{,}08 \times 0{,}71639 = \mathbf{0{,}2866}$.<br>
+              c) $P(X \geq 1) = 1 - P(X=0) = 1 - (0{,}92)^5 = 1 - 0{,}65908 = \mathbf{0{,}3409}$.</p>
+            </div>
+          </div>
+
+          <div class="test-grid">
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>Si $X \sim B(3,\; 0{,}4)$, entonces $P(X=3)$ vale:</p>
+              <ul>
+                <li data-letter="a">0,064</li>
+                <li data-letter="b">0,288</li>
+                <li data-letter="c">0,432</li>
+                <li data-letter="d">0,216</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: a) $P(X=3) = (0{,}4)^3 = 0{,}064$.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>11.3 Distribución normal</h3>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto</h4>
+            <p>Sea $X \sim N(70, 10)$. Tipifica la variable y calcula $P(X \leq 85)$ y $P(X \geq 55)$ expresando los resultados en términos de la normal estándar.</p>
+            <div class="solution">
+              <p><strong>Resolución:</strong> <strong>Tipificación:</strong> Si $X \sim N(\mu, \sigma)$, la variable tipificada es: $$Z = \frac{X - \mu}{\sigma} \sim N(0, 1)$$</p>
+              <p>Con $\mu = 70$, $\sigma = 10$:</p>
+              <p><strong>$P(X \leq 85)$:</strong> $$P(X \leq 85) = P\!\left(Z \leq \frac{85-70}{10}\right) = P(Z \leq 1{,}5) = \Phi(1{,}5)$$ De tabla: $\Phi(1{,}5) = \mathbf{0{,}9332}$.</p>
+              <p><strong>$P(X \geq 55)$:</strong> $$P(X \geq 55) = P\!\left(Z \geq \frac{55-70}{10}\right) = P(Z \geq -1{,}5) = P(Z \leq 1{,}5) = \Phi(1{,}5) = \mathbf{0{,}9332}$$ (Por simetría: $P(Z \geq -a) = P(Z \leq a)$.)</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel Básico</span>
+          <div class="exercise-block">
+            <p><strong>Ejercicio 1:</strong> Transforma los siguientes valores de $X \sim N(100, 20)$ a puntuaciones $Z$: $x_1 = 100$, $x_2 = 120$, $x_3 = 80$, $x_4 = 140$.</p>
+            <div class="solution">
+              <p><strong>Solución:</strong> $z_1 = (100-100)/20 = \mathbf{0}$; $z_2 = (120-100)/20 = \mathbf{1}$; $z_3 = (80-100)/20 = \mathbf{-1}$; $z_4 = (140-100)/20 = \mathbf{2}$.</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel EVAU</span>
+          <div class="exercise-block">
+            <p><strong>Ejercicio 5 (Tipo EVAU Madrid):</strong> La masa de los paquetes de harina de una empresa sigue una distribución normal $N(1000, 15)$ g. Se considera que un paquete está fuera de especificación si pesa menos de 975 g o más de 1030 g.</p>
+            <p>a) Calcula la probabilidad de que un paquete pese menos de 975 g. [$\Phi(1{,}67)=0{,}9525$]<br>
+            b) Calcula la probabilidad de que un paquete pese más de 1030 g. [$\Phi(2)=0{,}9772$]<br>
+            c) Calcula la probabilidad de que un paquete esté dentro de especificación.<br>
+            d) En un lote de 500 paquetes, ¿cuántos se espera que estén fuera de especificación?</p>
+            <div class="solution">
+              <p><strong>Solución:</strong><br>
+              a) $z=(975-1000)/15=-25/15\approx-1{,}67$. $P(X<975)=\Phi(-1{,}67)=1-0{,}9525=\mathbf{0{,}0475}$.<br>
+              b) $z=(1030-1000)/15=30/15=2$. $P(X>1030)=1-\Phi(2)=1-0{,}9772=\mathbf{0{,}0228}$.<br>
+              c) $P(975 \leq X \leq 1030)=1-0{,}0475-0{,}0228=\mathbf{0{,}9297}$ (92,97%).<br>
+              d) $500 \times (1-0{,}9297) = 500 \times 0{,}0703 \approx \mathbf{35{,}15} \approx 35$ paquetes.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>11.4 Aproximación de la binomial a la normal</h3>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto</h4>
+            <p>Sea $X \sim B(100,\; 0{,}4)$. Usa la aproximación normal con corrección de Yates para calcular $P(X = 40)$, $P(X \leq 38)$ y $P(X \geq 45)$.</p>
+            <div class="solution">
+              <p><strong>Resolución:</strong> <strong>Distribución aproximante:</strong> $\mu = 100\times0{,}4=40$; $\sigma=\sqrt{100\times0{,}4\times0{,}6}=\sqrt{24}\approx4{,}899$.</p>
+              <p><strong>Corrección de Yates:</strong> $P(X = k) \approx P(k-0{,}5 \leq Y \leq k+0{,}5)$; $P(X \leq k) \approx P(Y \leq k+0{,}5)$; $P(X \geq k) \approx P(Y \geq k-0{,}5)$.</p>
+              <p><strong>$P(X=40)$:</strong> $P(X=40) \approx P(39{,}5 \leq Y \leq 40{,}5)$. $z_1 = -0{,}102$, $z_2 = 0{,}102$. $P \approx 2\Phi(0{,}102)-1 \approx \mathbf{0{,}0812}$.</p>
+              <p><strong>$P(X \leq 38)$:</strong> $P(X \leq 38) \approx P(Y \leq 38{,}5)$. $z = -0{,}306$. $P \approx \Phi(-0{,}306) \approx \mathbf{0{,}3797}$.</p>
+              <p><strong>$P(X \geq 45)$:</strong> $P(X \geq 45) \approx P(Y \geq 44{,}5)$. $z = 0{,}919$. $P \approx 1-\Phi(0{,}919) \approx \mathbf{0{,}1788}$.</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel EVAU</span>
+          <div class="exercise-block">
+            <p><strong>Ejercicio 5 (Tipo EVAU Madrid):</strong> En una ciudad, el 22% de los jóvenes de entre 18 y 25 años practica deporte de forma regular al menos 3 días a la semana. Se selecciona aleatoriamente a 250 jóvenes de ese rango de edad.</p>
+            <p>a) Define $X$ y su distribución exacta; comprueba las condiciones de aproximación.<br>
+            b) Escribe la distribución normal aproximante con sus parámetros.<br>
+            c) Con corrección de Yates, calcula $P(X \leq 50)$. [$\Phi(0{,}19)\approx0{,}5753$]<br>
+            d) Con corrección de Yates, calcula $P(X \geq 60)$. [$\Phi(1{,}64)\approx0{,}9495$]</p>
+            <div class="solution">
+              <p><strong>Solución:</strong><br>
+              a) $X$ = número de jóvenes que practican deporte regularmente. $X \sim B(250,\;0{,}22)$. $np=55\geq5$ ✓; $n(1-p)=195\geq5$ ✓. Aproximación válida.<br>
+              b) $\mu=55$; $\sigma=\sqrt{250\times0{,}22\times0{,}78}=\sqrt{42{,}9}\approx6{,}55$. $Y \sim N(55,\;6{,}55)$.<br>
+              c) $P(X\leq50)\approx P(Y\leq50{,}5)$. $z\approx-0{,}687$. $P\approx\Phi(-0{,}69)=\mathbf{0{,}2451}$.<br>
+              d) $P(X\geq60)\approx P(Y\geq59{,}5)$. $z\approx0{,}687$. $P\approx1-\Phi(0{,}69)=\mathbf{0{,}2451}$.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>11.5 Inferencia elemental y uso de tecnología</h3>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto</h4>
+            <p>En un instituto de 1200 alumnos se quiere estudiar el tiempo diario dedicado a redes sociales. Se selecciona una muestra aleatoria simple de 60 alumnos. Los resultados (en minutos) muestran una media muestral de $\bar{x} = 95$ min y una desviación típica muestral de $s = 22$ min. Explica los conceptos de población, muestra, parámetro y estadístico en este contexto.</p>
+            <div class="solution">
+              <p><strong>Resolución:</strong> <strong>Población:</strong> Todos los 1200 alumnos del instituto. <strong>Muestra:</strong> Los 60 alumnos seleccionados.</p>
+              <p><strong>Parámetros poblacionales</strong> (desconocidos): $\mu$: media real del tiempo en redes sociales de todos los alumnos; $\sigma$: desviación típica real de esa misma variable en la población.</p>
+              <p><strong>Estadísticos muestrales</strong> (calculados a partir de la muestra): $\bar{x} = 95$ min: estimación puntual de $\mu$; $s = 22$ min: estimación puntual de $\sigma$.</p>
+              <p><strong>Muestra representativa:</strong> Una muestra es representativa si refleja fielmente las características de la población. Para ello debe ser: aleatoria (cada elemento tiene la misma probabilidad de ser elegido), suficientemente grande, y sin sesgos sistemáticos.</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel Intermedio</span>
+          <div class="exercise-block">
+            <p><strong>Ejercicio 3:</strong> En una encuesta sobre horas de sueño a 12 estudiantes se obtiene: 7, 6, 8, 5, 7, 9, 6, 7, 8, 6, 7, 8. Calcula $\bar{x}$, $s$ y el coeficiente de variación ($CV = s/\bar{x} \times 100\%$). Interpreta el CV.</p>
+            <div class="solution">
+              <p><strong>Solución:</strong> $\bar{x}=84/12=\mathbf{7}$ horas. Desviaciones al cuadrado: $14$. $s^2=14/11\approx1{,}273$; $s\approx\mathbf{1{,}13}$ horas. $CV=(1{,}13/7)\times100\approx\mathbf{16{,}1\%}$. Un CV del 16% indica dispersión moderada alrededor de la media.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>

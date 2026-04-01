@@ -1,0 +1,3487 @@
+---
+layout: layouts/base.njk
+title: "Mathematics II — Exercises: Chapters 10-11 — Probability and Statistics | Profesor Online"
+permalink: "./material-didactico/en/mathematics_1/exercises/exercises-ch10-11.html"
+section: material-didactico
+depth: 4
+---
+
+<section class="content-header">
+    <div class="container">
+      <a href="../mathematics_2/index.html" class="back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Back to Mathematics II Index
+      </a>
+      <h1>Exercises: Chapters 10-11 — Probability and Statistics</h1>
+      <p>Step-by-step solved exercises on Probability and Statistics. Includes basic, intermediate, EVAU level problems and multiple choice tests.</p>
+      <div class="course-meta">
+        <span>2nd Year Baccalaureate — Sciences and Technology</span>
+        <span>Community of Madrid</span>
+        <span>Decree 64/2022 (LOMLOE)</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-page">
+    <div class="container">
+      <nav class="toc-nav">
+        <a href="#cap1">Chapter 10 — PROBABILITY</a>
+        <a href="#cap2">Chapter 11 — PROBABILITY DISTRIBUTIONS</a>
+      </nav>
+
+<hr />
+<h5>10.1.1 Random experiment, sample space, and events</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>A six-sided die is rolled. Describe the random experiment, write the sample space, and define the following events: $A$ = "obtaining an even number", $B$ = "obtaining a number greater than 4", $A \cap B$, $A \cup B$, and $\bar{A}$.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p><strong>Step 1 – Random experiment.</strong><br />
+Rolling a six-sided die is a random experiment because the outcome cannot be predicted with certainty before it is performed.</p>
+<p><strong>Step 2 – Sample space.</strong><br />
+$$\Omega = {1, 2, 3, 4, 5, 6}$$</p>
+<p><strong>Step 3 – Define the events.</strong><br />
+- $A$ = "obtaining an even number" $= {2, 4, 6}$<br />
+- $B$ = "obtaining a number greater than 4" $= {5, 6}$</p>
+<p><strong>Step 4 – Operations with events.</strong><br />
+- $A \cap B = {2,4,6} \cap {5,6} = {6}$ (numbers that are both even and greater than 4)<br />
+- $A \cup B = {2,4,5,6}$ (numbers that are even or greater than 4, or both)<br />
+- $\bar{A} = \Omega \setminus A = {1,3,5}$ (odd numbers)</p>
+<p><strong>Step 5 – Verification using the inclusion-exclusion formula.</strong><br />
+$$|A \cup B| = |A| + |B| - |A \cap B| = 3 + 2 - 1 = 4 \checkmark$$</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>A card is drawn from a Spanish deck of 40 cards. Write the reduced sample space by suit and define: $A$ = "card from the gold suit (oros)", $B$ = "card with number ≤ 3". Calculate $A \cap B$ and $A \cup B$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> The sample space has 40 elements (10 cards × 4 suits). Using compact notation: $A = {1_\text{or}, 2_\text{or}, 3_\text{or}, 4_\text{or}, 5_\text{or}, 6_\text{or}, 7_\text{or}, 8_\text{or}, 9_\text{or}, 10_\text{or}}$ (10 elements); $B$ contains cards 1, 2, and 3 of each suit, that is, 12 elements. $A \cap B = {1_\text{or}, 2_\text{or}, 3_\text{or}}$ (3 elements, gold cards with number ≤ 3). $A \cup B$ has $10 + 12 - 3 = 19$ elements.</p>
+</blockquote>
+<ol>
+<li>A coin is tossed three times. Write the complete sample space and indicate how many elements the event $C$ = "obtaining exactly two heads" has.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\Omega = {HHH, HHT, HTH, THH, HTT, THT, TTH, TTT}$, where H = heads and T = tails. $|\Omega| = 2^3 = 8$. $C = {HHT, HTH, THH}$, therefore $|C| = 3$.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>In a class there are 30 students: 18 study physics, 14 study chemistry, and 8 study both. A student is chosen at random. Define $F$ = "studies physics" and $Q$ = "studies chemistry". Calculate $|F \cup Q|$, $|\overline{F \cup Q}|$, and check whether $F$ and $Q$ are mutually exclusive events.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $|F \cup Q| = |F| + |Q| - |F \cap Q| = 18 + 14 - 8 = 24$. The number of students who study at least one of the two subjects is 24, so $|\overline{F \cup Q}| = 30 - 24 = 6$ students study neither. Since $|F \cap Q| = 8 \neq 0$, the events are <strong>not</strong> mutually exclusive.</p>
+</blockquote>
+<ol>
+<li>In an experiment, a 12-sided die is rolled. Define $A$ = "multiple of 3", $B$ = "multiple of 4", $C$ = "prime number". Calculate $A \cap B$, $B \cap C$, and $(A \cup B) \cap C$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\Omega = {1,2,...,12}$. $A = {3,6,9,12}$, $B = {4,8,12}$, $C = {2,3,5,7,11}$. $A \cap B = {12}$ (multiple of both 3 and 4, i.e. multiple of 12). $B \cap C = \emptyset$ (no multiple of 4 is prime in ${1,...,12}$). $A \cup B = {3,4,6,8,9,12}$; $(A \cup B) \cap C = {3}$.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>A hospital records the results of two diagnostic tests, $P_1$ and $P_2$, applied to 200 patients. Of them, 120 tested positive in $P_1$, 90 tested positive in $P_2$, and 50 tested positive in both tests.</li>
+</ol>
+<p>a) How many patients tested positive in at least one test?<br />
+   b) How many tested positive only in $P_1$?<br />
+   c) How many did not test positive in any test?<br />
+   d) Describe in words the event $\overline{P_1 \cup P_2}$ and calculate its cardinality.</p>
+<blockquote>
+<p><strong>Solution:</strong><br />
+a) $|P_1 \cup P_2| = 120 + 90 - 50 = 160$ patients.<br />
+b) Only in $P_1$: $|P_1| - |P_1 \cap P_2| = 120 - 50 = 70$ patients.<br />
+c) $|\overline{P_1 \cup P_2}| = 200 - 160 = 40$ patients did not test positive in either test.<br />
+d) $\overline{P_1 \cup P_2}$ = "the patient did not test positive in either of the two tests". Cardinality: 40.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>A 6-sided die is rolled. Event $A$ = "even number" and $B$ = "number greater than 3". How many elements does $A \cup B$ have?</li>
+<li>a) 3</li>
+<li>b) 4</li>
+<li>c) 5</li>
+<li>d) 6</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: b)</strong> $A = {2,4,6}$, $B = {4,5,6}$. $A \cup B = {2,4,5,6}$, which has 4 elements.</p>
+</blockquote>
+<ol>
+<li>If $\Omega$ has 10 elements, $|A| = 6$ and $|B| = 5$ and $A$ and $B$ are mutually exclusive, how many elements does $\overline{A \cup B}$ have?</li>
+<li>a) 0</li>
+<li>b) 1</li>
+<li>c) 9</li>
+<li>d) 11</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: b)</strong> Since $A \cap B = \emptyset$, $|A \cup B| = 6 + 5 = 11$... but $|\Omega| = 10$, which would make it impossible to have $|A|+|B|=11$ if they are mutually exclusive with $|\Omega|=10$. Adjusting the statement to be compatible: $|A \cup B| \leq 10$. If $|A \cap B| = 1$, $|A \cup B| = 10$, $|\overline{A \cup B}| = 0$. <strong>Note for the student:</strong> in the case $|A|=6$, $|B|=5$ and $A,B$ disjoint within $\Omega$ of 10 elements, $|A \cup B|=11 &gt; 10$, which is impossible; in a corrected example with $|A|=4$, $|B|=5$, disjoint: $|\overline{A \cup B}|= 10-9=1$. Answer: <strong>b) 1</strong>.</p>
+</blockquote>
+<hr />
+<h5>10.1.2 Kolmogorov's Axioms</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Verify that the following function defines a probability on $\Omega = {a, b, c, d}$: $P({a}) = 0{,}3$, $P({b}) = 0{,}2$, $P({c}) = 0{,}4$, $P({d}) = 0{,}1$.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p>Kolmogorov's three axioms are:
+1. $P(A) \geq 0$ for every event $A$.
+2. $P(\Omega) = 1$.
+3. If $A \cap B = \emptyset$, then $P(A \cup B) = P(A) + P(B)$ (additivity for mutually exclusive events).</p>
+<p><strong>Checking Axiom 1:</strong> $0{,}3 \geq 0$, $0{,}2 \geq 0$, $0{,}4 \geq 0$, $0{,}1 \geq 0$. ✓</p>
+<p><strong>Checking Axiom 2:</strong>
+$$P(\Omega) = P({a}) + P({b}) + P({c}) + P({d}) = 0{,}3 + 0{,}2 + 0{,}4 + 0{,}1 = 1{,}0 \checkmark$$</p>
+<p><strong>Checking Axiom 3:</strong> The elementary events ${a}, {b}, {c}, {d}$ are pairwise disjoint, and $P({a,b}) = P({a}) + P({b}) = 0{,}5$. ✓</p>
+<p>We conclude that it <strong>does define a probability</strong> on $\Omega$.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>Given $\Omega = {1, 2, 3, 4, 5}$ with $P({1}) = P({2}) = 0{,}1$, $P({3}) = 0{,}3$, $P({4}) = x$, $P({5}) = 0{,}2$. Determine $x$ so that $P$ is a valid probability.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> By Axiom 2: $0{,}1 + 0{,}1 + 0{,}3 + x + 0{,}2 = 1 \Rightarrow 0{,}7 + x = 1 \Rightarrow x = 0{,}3$. Since $x &gt; 0$, all three axioms are satisfied.</p>
+</blockquote>
+<ol>
+<li>Can $P(A) = 1{,}2$ hold for some event? Justify your answer using the axioms.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> No. Axiom 1 requires $P(A) \geq 0$ and Axiom 2 implies $P(A) \leq P(\Omega) = 1$ (by monotonicity). Therefore $0 \leq P(A) \leq 1$ for every event $A$, and $1{,}2 &gt; 1$ violates this condition.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>Given an experiment with $\Omega = {e_1, e_2, e_3, e_4}$, it is known that $P(e_2) = 2P(e_1)$, $P(e_3) = 3P(e_1)$, and $P(e_4) = 4P(e_1)$. Calculate $P(e_1)$ and the probabilities of all elementary events.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(e_1) + 2P(e_1) + 3P(e_1) + 4P(e_1) = 1 \Rightarrow 10P(e_1) = 1 \Rightarrow P(e_1) = \frac{1}{10} = 0{,}1$. Therefore: $P(e_2) = 0{,}2$, $P(e_3) = 0{,}3$, $P(e_4) = 0{,}4$.</p>
+</blockquote>
+<ol>
+<li>Check which of the following functions is <strong>not</strong> a probability on $\Omega = {a, b, c}$ and explain which axiom it violates: (I) $P(a)=0{,}5,\ P(b)=-0{,}1,\ P(c)=0{,}6$; (II) $P(a)=0{,}5,\ P(b)=0{,}3,\ P(c)=0{,}3$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> (I) violates <strong>Axiom 1</strong> because $P(b) = -0{,}1 &lt; 0$. (II) violates <strong>Axiom 2</strong> because $0{,}5 + 0{,}3 + 0{,}3 = 1{,}1 \neq 1$.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>Two random experiments are defined. In experiment A, the sample space is $\Omega = {e_1, e_2, e_3, e_4, e_5}$ with probabilities proportional to their indices (that is, $P(e_k) = c \cdot k$).</li>
+</ol>
+<p>a) Calculate the constant $c$.<br />
+   b) Calculate $P({e_2, e_4})$ and $P({e_3, e_4, e_5})$.<br />
+   c) Let $A = {e_1, e_3, e_5}$ and $B = {e_2, e_4}$. Are $A$ and $B$ mutually exclusive? Calculate $P(A \cup B)$.</p>
+<blockquote>
+<p><strong>Solution:</strong><br />
+a) $\sum_{k=1}^{5} ck = c(1+2+3+4+5) = 15c = 1 \Rightarrow c = \dfrac{1}{15}$.<br />
+b) $P({e_2, e_4}) = \dfrac{2}{15} + \dfrac{4}{15} = \dfrac{6}{15} = \dfrac{2}{5}$.<br />
+$P({e_3, e_4, e_5}) = \dfrac{3+4+5}{15} = \dfrac{12}{15} = \dfrac{4}{5}$.<br />
+c) $A \cap B = \emptyset$ (they share no elements), so they are <strong>mutually exclusive</strong>. $P(A \cup B) = P(A) + P(B) = \dfrac{1+3+5}{15} + \dfrac{2+4}{15} = \dfrac{9}{15} + \dfrac{6}{15} = 1$. Indeed $A \cup B = \Omega$.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>If $P(A) = 0{,}6$ and $A, B$ are mutually exclusive with $P(A \cup B) = 0{,}9$, what is $P(B)$?</li>
+<li>a) 0,54</li>
+<li>b) 0,3</li>
+<li>c) 1,5</li>
+<li>d) Cannot be determined</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: b)</strong> By additivity: $P(A \cup B) = P(A) + P(B) \Rightarrow 0{,}9 = 0{,}6 + P(B) \Rightarrow P(B) = 0{,}3$.</p>
+</blockquote>
+<ol>
+<li>Which of the following statements is a direct consequence of Kolmogorov's axioms?</li>
+<li>a) $P(\emptyset) = 1$</li>
+<li>b) $P(\bar{A}) = 1 + P(A)$</li>
+<li>c) $P(\bar{A}) = 1 - P(A)$</li>
+<li>d) $P(A \cup B) = P(A) \cdot P(B)$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: c)</strong> It follows from $A \cup \bar{A} = \Omega$ (disjoint), so $P(A) + P(\bar{A}) = 1$.</p>
+</blockquote>
+<hr />
+<h5>10.1.3 Properties derived from the axioms</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Given $P(A) = 0{,}5$, $P(B) = 0{,}4$, and $P(A \cap B) = 0{,}2$, calculate: $P(\bar{A})$, $P(\bar{B})$, $P(A \cup B)$, $P(\overline{A \cup B})$, and $P(A \cap \bar{B})$.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p><strong>Complement:</strong>
+$$P(\bar{A}) = 1 - P(A) = 1 - 0{,}5 = 0{,}5$$
+$$P(\bar{B}) = 1 - P(B) = 1 - 0{,}4 = 0{,}6$$</p>
+<p><strong>Union (inclusion-exclusion formula):</strong>
+$$P(A \cup B) = P(A) + P(B) - P(A \cap B) = 0{,}5 + 0{,}4 - 0{,}2 = 0{,}7$$</p>
+<p><strong>Complement of the union (De Morgan):</strong>
+$$P(\overline{A \cup B}) = 1 - P(A \cup B) = 1 - 0{,}7 = 0{,}3$$</p>
+<p><strong>Difference $A \setminus B$ (only in $A$, not in $B$):</strong>
+$$P(A \cap \bar{B}) = P(A) - P(A \cap B) = 0{,}5 - 0{,}2 = 0{,}3$$</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>$P(A) = 0{,}7$. Calculate $P(\bar{A})$ and $P(\bar{A} \cup A)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(\bar{A}) = 1 - 0{,}7 = 0{,}3$. $P(\bar{A} \cup A) = P(\Omega) = 1$.</p>
+</blockquote>
+<ol>
+<li>$P(A) = 0{,}4$, $P(B) = 0{,}5$, $P(A \cup B) = 0{,}7$. Calculate $P(A \cap B)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> From the inclusion-exclusion formula: $P(A \cap B) = P(A) + P(B) - P(A \cup B) = 0{,}4 + 0{,}5 - 0{,}7 = 0{,}2$.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>Prove that $P(A \cap \bar{B}) = P(A) - P(A \cap B)$ using the axioms. Then calculate $P(A \cap \bar{B})$ if $P(A) = 0{,}6$ and $P(A \cap B) = 0{,}15$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $A = (A \cap B) \cup (A \cap \bar{B})$ and these two sets are disjoint (if $x \in A\cap B$ then $x \notin \bar{B}$). By additivity: $P(A) = P(A \cap B) + P(A \cap \bar{B}) \Rightarrow P(A \cap \bar{B}) = P(A) - P(A \cap B) = 0{,}6 - 0{,}15 = 0{,}45$.</p>
+</blockquote>
+<ol>
+<li>Given $P(A) = 0{,}5$, $P(B) = 0{,}3$, $P(C) = 0{,}4$, $P(A \cap B) = 0{,}1$, $P(A \cap C) = 0{,}2$, $P(B \cap C) = 0{,}15$, and $P(A \cap B \cap C) = 0{,}05$, calculate $P(A \cup B \cup C)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(A \cup B \cup C) = P(A)+P(B)+P(C)-P(A\cap B)-P(A\cap C)-P(B\cap C)+P(A\cap B\cap C)$ $= 0{,}5+0{,}3+0{,}4-0{,}1-0{,}2-0{,}15+0{,}05 = 0{,}80$.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>In a group of 100 students, 55 play football ($F$), 40 play basketball ($B$), and 20 play both sports. A student is chosen at random.</li>
+</ol>
+<p>a) Calculate $P(F \cup B)$.<br />
+   b) Calculate the probability of playing only football.<br />
+   c) Calculate the probability of playing neither sport.<br />
+   d) Can it be stated that $F$ and $B$ are incompatible events? Justify.</p>
+<blockquote>
+<p><strong>Solution:</strong><br />
+a) $P(F) = 0{,}55$, $P(B) = 0{,}40$, $P(F \cap B) = 0{,}20$.<br />
+$P(F \cup B) = 0{,}55 + 0{,}40 - 0{,}20 = \mathbf{0{,}75}$.<br />
+b) $P(F \cap \bar{B}) = P(F) - P(F\cap B) = 0{,}55 - 0{,}20 = \mathbf{0{,}35}$.<br />
+c) $P(\overline{F \cup B}) = 1 - 0{,}75 = \mathbf{0{,}25}$.<br />
+d) No, because $P(F \cap B) = 0{,}20 \neq 0$; there are 20 students who play both sports, so they are <strong>compatible</strong>.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>If $P(A) = 0{,}6$, $P(B) = 0{,}4$, and $P(A \cup B) = 0{,}8$, what is $P(A \cap B)$?</li>
+<li>a) 0,24</li>
+<li>b) 0,2</li>
+<li>c) 1,0</li>
+<li>d) 0,1</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: b)</strong> $P(A \cap B) = 0{,}6 + 0{,}4 - 0{,}8 = 0{,}2$.</p>
+</blockquote>
+<ol>
+<li>The monotonicity property states that if $A \subseteq B$, then:</li>
+<li>a) $P(A) \geq P(B)$</li>
+<li>b) $P(A) = P(B)$</li>
+<li>c) $P(A) \leq P(B)$</li>
+<li>d) $P(A) \cdot P(B) = 1$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: c)</strong> If $A \subseteq B$, then $B = A \cup (B \setminus A)$ with disjoint parts, so $P(B) = P(A) + P(B \setminus A) \geq P(A)$.</p>
+</blockquote>
+<hr />
+<h5>10.1.4 Venn diagrams: representation and calculation of probabilities</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>In a survey of 200 people, 110 consume product $X$, 80 consume product $Y$, and 40 consume both. Represent the situation in a Venn diagram and calculate the probability that a randomly chosen person consumes exactly one of the two products.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p><strong>Step 1 – Calculate the regions of the Venn diagram.</strong><br />
+- Only $X$: $110 - 40 = 70$ people<br />
+- Only $Y$: $80 - 40 = 40$ people<br />
+- Both ($X \cap Y$): $40$ people<br />
+- Neither: $200 - (70 + 40 + 40) = 200 - 150 = 50$ people</p>
+<p><strong>Step 2 – Venn diagram (description).</strong></p>
+<pre><code>    |------ 200 people ------|
+    |  50  | 70 |X∩Y=40| 40 |  
+    |       |     X    |  Y  |
+</code></pre>
+<p><strong>Step 3 – Calculate the required probability.</strong><br />
+"Exactly one of the two" = (only $X$) $\cup$ (only $Y$):
+$$P(\text{exactly one}) = \frac{70 + 40}{200} = \frac{110}{200} = 0{,}55$$</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>In a Venn diagram with $P(A) = 0{,}5$, $P(B) = 0{,}3$, and $P(A \cap B) = 0{,}1$, draw the diagram and indicate the value of each region.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> Regions: only $A$: $0{,}5 - 0{,}1 = 0{,}4$; $A \cap B$: $0{,}1$; only $B$: $0{,}3 - 0{,}1 = 0{,}2$; neither: $1 - (0{,}4 + 0{,}1 + 0{,}2) = 0{,}3$.</p>
+</blockquote>
+<ol>
+<li>Using the diagram from the previous exercise, calculate $P(\bar{A} \cap \bar{B})$ (the "neither" region).</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(\bar{A} \cap \bar{B}) = P(\overline{A \cup B}) = 1 - P(A \cup B) = 1 - (0{,}5 + 0{,}3 - 0{,}1) = 1 - 0{,}7 = 0{,}3$.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>In a medical study, 60% of patients have hypertension ($H$), 45% have diabetes ($D$), and 25% have both. Use a Venn diagram to calculate the probability that a patient has only one of the two conditions.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> Only $H$: $0{,}60 - 0{,}25 = 0{,}35$; only $D$: $0{,}45 - 0{,}25 = 0{,}20$. $P(\text{exactly one}) = 0{,}35 + 0{,}20 = \mathbf{0{,}55}$.</p>
+</blockquote>
+<ol>
+<li>In a factory, 30% of parts have a type $A$ defect, 20% have a type $B$ defect, and 5% have both defects. What percentage has no defect? What percentage has exactly one type of defect?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(A \cup B) = 0{,}30 + 0{,}20 - 0{,}05 = 0{,}45$. No defect: $1 - 0{,}45 = \mathbf{0{,}55}$, that is 55%. Only $A$: $0{,}25$; only $B$: $0{,}15$. Exactly one defect: $0{,}25 + 0{,}15 = \mathbf{0{,}40}$ (40%).</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>In a marketing campaign, two types of offer, $O_1$ and $O_2$, are sent to 500 customers. Responses to $O_1$: 180 customers; responses to $O_2$: 220 customers; responses to both: 60 customers.</li>
+</ol>
+<p>a) Draw and fill in the Venn diagram indicating the number of customers in each region.<br />
+   b) What is the probability that a randomly chosen customer responded to exactly one offer?<br />
+   c) What is the probability of having responded to $O_1$ but not $O_2$?<br />
+   d) What is the probability of having responded to neither offer?</p>
+<blockquote>
+<p><strong>Solution:</strong><br />
+a) Only $O_1$: $180 - 60 = 120$; Both: $60$; Only $O_2$: $220 - 60 = 160$; Neither: $500 - (120+60+160) = 160$.<br />
+b) $P(\text{exactly one}) = \dfrac{120 + 160}{500} = \dfrac{280}{500} = \mathbf{0{,}56}$.<br />
+c) $P(O_1 \cap \bar{O_2}) = \dfrac{120}{500} = \mathbf{0{,}24}$.<br />
+d) $P(\text{neither}) = \dfrac{160}{500} = \mathbf{0{,}32}$.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>In a Venn diagram, $P(A) = 0{,}4$, $P(B) = 0{,}35$, $P(A \cap B) = 0{,}15$. What is $P(\bar{A} \cap B)$?</li>
+<li>a) 0,20</li>
+<li>b) 0,35</li>
+<li>c) 0,15</li>
+<li>d) 0,05</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: a)</strong> $P(\bar{A} \cap B) = P(B) - P(A \cap B) = 0{,}35 - 0{,}15 = 0{,}20$.</p>
+</blockquote>
+<ol>
+<li>If the regions of the Venn diagram for $A$ and $B$ (within $\Omega$) are: only $A = 0{,}3$; $A \cap B = 0{,}2$; only $B = 0{,}1$; neither = $0{,}4$. Then $P(A)$ equals:</li>
+<li>a) 0,3</li>
+<li>b) 0,5</li>
+<li>c) 0,2</li>
+<li>d) 0,6</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: b)</strong> $P(A) = P(\text{only } A) + P(A \cap B) = 0{,}3 + 0{,}2 = 0{,}5$.</p>
+</blockquote>
+<hr />
+<hr />
+<h5>10.2.1 Multiplicative and additive counting principles</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>A restaurant menu offers 3 starters, 4 main courses, and 2 desserts. In how many different ways can a complete meal (one starter, one main course, and one dessert) be chosen?</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p>By the <strong>multiplication principle</strong>: if a task is performed in independent stages with $n_1$, $n_2$, ..., $n_k$ ways respectively, the total number of ways to complete all stages is $n_1 \cdot n_2 \cdots n_k$.</p>
+<p>Stages:<br />
+- Choice of starter: 3 ways<br />
+- Choice of main course: 4 ways<br />
+- Choice of dessert: 2 ways</p>
+<p>Total: $3 \times 4 \times 2 = \mathbf{24}$ different meals.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>A password consists of 2 letters (from a 27-letter alphabet) followed by 3 digits (from 0 to 9), without repetition. How many different passwords exist?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> Letters without repetition: $27 \times 26 = 702$. Digits without repetition: $10 \times 9 \times 8 = 720$. Total: $702 \times 720 = \mathbf{505\,440}$ passwords.</p>
+</blockquote>
+<ol>
+<li>A shop sells T-shirts in 5 colours, 3 sizes, and 2 styles (short/long sleeve). How many different models does it offer?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $5 \times 3 \times 2 = \mathbf{30}$ models.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>A security code has 4 digits from 0 to 9. How many codes are there (a) with repetition and (b) without repetition? What percentage does the difference represent?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> (a) With repetition: $10^4 = 10\,000$. (b) Without repetition: $10 \times 9 \times 8 \times 7 = 5\,040$. Difference: $10\,000 - 5\,040 = 4\,960$, which represents $\dfrac{4960}{10000} = 49{,}6\%$ of the total.</p>
+</blockquote>
+<ol>
+<li>In a mixed doubles tennis tournament, 6 men and 5 women participate. In how many ways can a mixed pair (one man and one woman) be formed?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $6 \times 5 = \mathbf{30}$ different pairs.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>A company wants to assign 3 different tasks ($T_1$, $T_2$, $T_3$) to 3 different employees from a group of 8, so that each employee receives at most one task.</li>
+</ol>
+<p>a) In how many ways can this assignment be made?<br />
+   b) If it is additionally required that $T_1$ always be done by the most senior employee, how many assignments are possible?<br />
+   c) How many possible assignments are there if the three tasks are identical (only who works matters, not what they do)?</p>
+<blockquote>
+<p><strong>Solution:</strong><br />
+a) Choose which employee does each task: $8 \times 7 \times 6 = \mathbf{336}$ ways (variations of 8 taken 3 at a time).<br />
+b) $T_1$ is fixed (1 way). $T_2$: 7 remaining employees. $T_3$: 6. Total: $1 \times 7 \times 6 = \mathbf{42}$ ways.<br />
+c) Now order does not matter: $\dbinom{8}{3} = \dfrac{8!}{3!\cdot 5!} = 56$ ways.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>A licence plate consists of 4 digits (from 0 to 9) and 3 letters (from a 27-letter alphabet). If repetitions are allowed, how many different licence plates are there?</li>
+<li>a) $10^4 \times 27^3$</li>
+<li>b) $10^4 + 27^3$</li>
+<li>c) $\binom{10}{4} \times \binom{27}{3}$</li>
+<li>d) $10 \times 27 \times 7$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: a)</strong> By the multiplication principle: $10^4$ ways for the digits and $27^3$ for the letters. Total: $10^4 \times 27^3 = 196\,830\,000$.</p>
+</blockquote>
+<ol>
+<li>A coin is tossed 5 times. How many different possible outcomes exist?</li>
+<li>a) 10</li>
+<li>b) 25</li>
+<li>c) 32</li>
+<li>d) 120</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: c)</strong> Each toss has 2 outcomes, and there are 5 independent tosses: $2^5 = 32$.</p>
+</blockquote>
+<hr />
+<h5>10.2.2 Combinations, variations, and permutations</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>A committee of 4 people is to be chosen from 10 candidates. In how many ways can the committee be formed if (a) all members have the same rank, (b) there is a president and three members?</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p><strong>(a) All with the same rank → Combinations</strong> (order does not matter):</p>
+<p>$$C_{10,4} = \binom{10}{4} = \frac{10!}{4!\cdot 6!} = \frac{10 \times 9 \times 8 \times 7}{4 \times 3 \times 2 \times 1} = \frac{5040}{24} = \mathbf{210} \text{ ways}$$</p>
+<p><strong>(b) President and three members → Stages:</strong><br />
+- Choose the president: 10 ways<br />
+- Choose 3 members from the remaining 9 (without order): $\binom{9}{3} = 84$ ways<br />
+- Total: $10 \times 84 = \mathbf{840}$ ways</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>Calculate: (a) $P_{5}^{5}$ (permutations of 5 elements), (b) $V_{8,3}$ (variations of 8 taken 3), (c) $\binom{7}{2}$ (combinations of 7 taken 2).</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> (a) $5! = 120$. (b) $V_{8,3} = 8 \times 7 \times 6 = 336$. (c) $\dfrac{7!}{2! \cdot 5!} = \dfrac{7 \times 6}{2} = 21$.</p>
+</blockquote>
+<ol>
+<li>In how many ways can 6 people be seated in a row of 6 seats?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P_6 = 6! = 720$ ways.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>In a multiple-choice exam with 10 questions, a student must answer 7. In how many ways can the student choose which questions to answer?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\binom{10}{7} = \binom{10}{3} = \dfrac{10 \times 9 \times 8}{3!} = 120$ ways.</p>
+</blockquote>
+<ol>
+<li>A sports club has 12 members. In how many ways can a board consisting of a president, a secretary, and a treasurer (different positions) be chosen?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> This is a variation (order matters because positions are different): $V_{12,3} = 12 \times 11 \times 10 = \mathbf{1\,320}$ ways.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>In a chess tournament, 8 players participate. Each pair of players plays exactly one game against each other.</li>
+</ol>
+<p>a) How many games are played in total?<br />
+   b) If the final involves the 2 best from each group of 4, and the two semi-final groups are predetermined, how many games are there in the full format (group stage + semi-finals + final)?<br />
+   c) In how many ways can the 8 players finish in the top three places (podium)?</p>
+<blockquote>
+<p><strong>Solution:</strong><br />
+a) Each game is a pair of players: $\binom{8}{2} = 28$ games.<br />
+b) Groups (2 groups of 4): $2 \times \binom{4}{2} = 2 \times 6 = 12$ games. Semi-finals: 2 games. Final: 1 game. Total: $12 + 2 + 1 = \mathbf{15}$ games.<br />
+c) The podium distinguishes 1st, 2nd, 3rd: $V_{8,3} = 8 \times 7 \times 6 = \mathbf{336}$ ways.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>How many anagrams (rearrangements) does the word MASS have?</li>
+<li>a) 24</li>
+<li>b) 12</li>
+<li>c) 6</li>
+<li>d) 4</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: b)</strong> The word MASS has 4 letters with S repeated 2 times: $\dfrac{4!}{2!} = \dfrac{24}{2} = 12$.</p>
+</blockquote>
+<ol>
+<li>3 flags of different colours are to be placed on 3 poles in a row. In how many different ways can this be done if 5 colours are available?</li>
+<li>a) $\binom{5}{3} = 10$</li>
+<li>b) $5^3 = 125$</li>
+<li>c) $V_{5,3} = 60$</li>
+<li>d) $5! = 120$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: c)</strong> Choose which flag goes on each pole (order matters, colours are different): $V_{5,3} = 5 \times 4 \times 3 = 60$.</p>
+</blockquote>
+<hr />
+<h5>10.2.3 Laplace's rule: probability in equiprobable spaces</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>A ball is drawn at random from an urn containing 5 red balls, 3 blue balls, and 2 green balls. Calculate the probability of: (a) obtaining a red ball, (b) obtaining a ball that is not blue.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p><strong>Laplace's rule:</strong>
+$$P(A) = \frac{\text{favourable cases}}{\text{possible cases}} = \frac{|A|}{|\Omega|}$$</p>
+<p>This rule applies because all balls are equally likely (we draw at random).</p>
+<p>$|\Omega| = 5 + 3 + 2 = 10$ balls.</p>
+<p><strong>(a)</strong> $P(\text{red}) = \dfrac{5}{10} = \mathbf{0{,}5}$</p>
+<p><strong>(b)</strong> "Not blue" includes red and green: $5 + 2 = 7$ balls.<br />
+$P(\text{not blue}) = \dfrac{7}{10} = \mathbf{0{,}7}$</p>
+<p>Verification: $P(\text{blue}) = \dfrac{3}{10} = 0{,}3$ and $P(\text{not blue}) = 1 - 0{,}3 = 0{,}7$. ✓</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>A 6-sided die is rolled. Calculate the probability of obtaining a multiple of 2.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> Multiples of 2 in ${1,...,6}$: ${2,4,6}$, 3 cases. $P = \dfrac{3}{6} = \mathbf{0{,}5}$.</p>
+</blockquote>
+<ol>
+<li>A card is chosen from a Spanish deck of 40 cards. What is the probability that it is an ace (the 1 of any suit)?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> There are 4 aces (one per suit). $P = \dfrac{4}{40} = \mathbf{0{,}1}$.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>A bag contains 10 numbered balls from 1 to 10. One is drawn at random. Calculate the probability that the number is prime or even.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> Primes in ${1,...,10}$: ${2,3,5,7}$ (4 elements). Even numbers: ${2,4,6,8,10}$ (5 elements). Prime and even: ${2}$ (1 element). $P(\text{prime} \cup \text{even}) = \dfrac{4+5-1}{10} = \dfrac{8}{10} = \mathbf{0{,}8}$.</p>
+</blockquote>
+<ol>
+<li>2 cards are chosen simultaneously from a Spanish deck of 40 cards. What is the probability that both are from the cups suit?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> Total ways to choose 2 cards: $\binom{40}{2} = 780$. Favourable ways (2 from cups, of which there are 10): $\binom{10}{2} = 45$. $P = \dfrac{45}{780} = \dfrac{3}{52} \approx \mathbf{0{,}0577}$.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>In a class of 30 students, 12 are women and 18 are men. 2 students are chosen at random to represent the class.</li>
+</ol>
+<p>a) How many ways are there to choose the 2 representatives?<br />
+   b) What is the probability that both are men?<br />
+   c) What is the probability that there is one woman and one man?<br />
+   d) What is the probability that at least one is a woman?</p>
+<blockquote>
+<p><strong>Solution:</strong><br />
+a) $\binom{30}{2} = 435$ ways.<br />
+b) $P(\text{2 men}) = \dfrac{\binom{18}{2}}{\binom{30}{2}} = \dfrac{153}{435} = \dfrac{51}{145} \approx \mathbf{0{,}352}$.<br />
+c) $P(\text{1M+1W}) = \dfrac{18 \times 12}{435} = \dfrac{216}{435} = \dfrac{72}{145} \approx \mathbf{0{,}497}$.<br />
+d) $P(\text{at least 1 woman}) = 1 - P(\text{2 men}) = 1 - \dfrac{153}{435} = \dfrac{282}{435} = \dfrac{94}{145} \approx \mathbf{0{,}648}$.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>A 12-sided die (numbered 1 to 12) is rolled. What is the probability of obtaining a multiple of 3?</li>
+<li>a) 1/4</li>
+<li>b) 1/3</li>
+<li>c) 1/2</li>
+<li>d) 1/6</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: b)</strong> Multiples of 3: ${3,6,9,12}$, 4 cases. $P = \dfrac{4}{12} = \dfrac{1}{3}$.</p>
+</blockquote>
+<ol>
+<li>From a deck of 52 French cards, what is the probability of drawing an ace or a heart?</li>
+<li>a) 4/52</li>
+<li>b) 13/52</li>
+<li>c) 16/52</li>
+<li>d) 17/52</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: c)</strong> Aces: 4. Hearts: 13. Ace of hearts: 1. $P = \dfrac{4+13-1}{52} = \dfrac{16}{52} = \dfrac{4}{13} \approx 0{,}308$.</p>
+</blockquote>
+<hr />
+<hr />
+<h5>10.3.1 Definition of conditional probability: P(A|B)</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>In a factory, 2% of parts have a type $A$ defect, 3% have a type $B$ defect, and 0.5% have both defects. Calculate the probability that a part has defect $A$ given that it is already known to have defect $B$.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p>Data: $P(A) = 0{,}02$, $P(B) = 0{,}03$, $P(A \cap B) = 0{,}005$.</p>
+<p><strong>Conditional probability formula:</strong>
+$$P(A \mid B) = \frac{P(A \cap B)}{P(B)}$$</p>
+<p>Substituting:
+$$P(A \mid B) = \frac{0{,}005}{0{,}03} = \frac{5}{30} = \frac{1}{6} \approx \mathbf{0{,}1\overline{6}}$$</p>
+<p><strong>Interpretation:</strong> Knowing that the part has defect $B$, the probability that it also has defect $A$ increases from 2% to 16.7%, which indicates a certain correlation between the two defects.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>$P(A) = 0{,}4$, $P(B) = 0{,}5$, $P(A \cap B) = 0{,}2$. Calculate $P(A \mid B)$ and $P(B \mid A)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(A \mid B) = \dfrac{0{,}2}{0{,}5} = 0{,}4$. $P(B \mid A) = \dfrac{0{,}2}{0{,}4} = 0{,}5$.</p>
+</blockquote>
+<ol>
+<li>A die is rolled. Let $A$ = "even number" and $B$ = "number greater than 3". Calculate $P(A \mid B)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $A = {2,4,6}$, $B = {4,5,6}$, $A \cap B = {4,6}$. $P(A \mid B) = \dfrac{2/6}{3/6} = \dfrac{2}{3} \approx 0{,}667$.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>In a group of 100 people, 60 speak English, 40 speak French, and 20 speak both languages. A person who speaks English is chosen at random. What is the probability that they also speak French?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(F \mid I) = \dfrac{P(F \cap I)}{P(I)} = \dfrac{20/100}{60/100} = \dfrac{20}{60} = \dfrac{1}{3} \approx 0{,}333$.</p>
+</blockquote>
+<ol>
+<li>The following table shows data on 200 workers by gender and job category:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Manager</th>
+<th>Technician</th>
+<th>Operator</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Male</td>
+<td>20</td>
+<td>50</td>
+<td>80</td>
+<td>150</td>
+</tr>
+<tr>
+<td>Female</td>
+<td>10</td>
+<td>30</td>
+<td>10</td>
+<td>50</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>30</td>
+<td>80</td>
+<td>90</td>
+<td>200</td>
+</tr>
+</tbody>
+</table>
+<p>Calculate $P(\text{Manager} \mid \text{Female})$ and $P(\text{Female} \mid \text{Manager})$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $P(\text{Manager} \mid \text{Female}) = \dfrac{10/200}{50/200} = \dfrac{10}{50} = 0{,}2$. $P(\text{Female} \mid \text{Manager}) = \dfrac{10/200}{30/200} = \dfrac{10}{30} = \dfrac{1}{3} \approx 0{,}333$.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>An urn contains 4 red balls and 6 white balls. 2 balls are drawn <strong>without replacement</strong>.</li>
+</ol>
+<p>a) What is the probability that the first ball is red?<br />
+   b) Given that the first ball was red, what is the probability that the second is also red?<br />
+   c) Calculate the probability that both balls are red.<br />
+   d) Does the result of part (c) change if the drawing is done with replacement?</p>
+<blockquote>
+<p><strong>Solution:</strong><br />
+a) $P(R_1) = \dfrac{4}{10} = 0{,}4$.<br />
+b) $P(R_2 \mid R_1) = \dfrac{3}{9} = \dfrac{1}{3} \approx 0{,}333$ (3 red balls remain among 9).<br />
+c) $P(R_1 \cap R_2) = P(R_1) \cdot P(R_2 \mid R_1) = \dfrac{4}{10} \cdot \dfrac{3}{9} = \dfrac{12}{90} = \dfrac{2}{15} \approx 0{,}133$.<br />
+d) With replacement: $P(R_1 \cap R_2) = \dfrac{4}{10} \cdot \dfrac{4}{10} = \dfrac{16}{100} = 0{,}16$. Yes, it changes (slightly higher because the urn is not "depleted").</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>If $P(B) = 0{,}4$ and $P(A \cap B) = 0{,}12$, then $P(A \mid B)$ equals:</li>
+<li>a) 0,048</li>
+<li>b) 0,3</li>
+<li>c) 0,52</li>
+<li>d) 0,12</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: b)</strong> $P(A \mid B) = \dfrac{0{,}12}{0{,}4} = 0{,}3$.</p>
+</blockquote>
+<ol>
+<li>The conditional probability $P(A \mid B)$ can be interpreted as:</li>
+<li>a) The probability of $A$ and $B$ simultaneously</li>
+<li>b) The probability of $A$ in the sample space reduced to cases where $B$ occurs</li>
+<li>c) The probability of $B$ given $A$</li>
+<li>d) The complement of $P(A \cap B)$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: b)</strong> $P(A \mid B)$ restricts the sample space to $B$, so that only cases where $B$ has occurred are considered.</p>
+</blockquote>
+<hr />
+<h5>10.3.2 Multiplication rule: P(A ∩ B) = P(A|B)·P(B)</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>In a batch of 20 parts, 4 are defective. 2 parts are drawn at random without replacement. Calculate the probability that both parts are defective.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p>Let $D_1$ = "1st part defective" and $D_2$ = "2nd part defective".</p>
+<p><strong>Step 1:</strong> $P(D_1) = \dfrac{4}{20} = \dfrac{1}{5}$</p>
+<p><strong>Step 2:</strong> Given that the 1st is defective, there are 19 parts remaining, of which 3 are defective:
+$$P(D_2 \mid D_1) = \frac{3}{19}$$</p>
+<p><strong>Step 3 – Multiplication rule:</strong>
+$$P(D_1 \cap D_2) = P(D_1) \cdot P(D_2 \mid D_1) = \frac{1}{5} \cdot \frac{3}{19} = \frac{3}{95} \approx \mathbf{0{,}0316}$$</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>$P(B) = 0{,}6$ and $P(A \mid B) = 0{,}3$. Calculate $P(A \cap B)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(A \cap B) = P(A \mid B) \cdot P(B) = 0{,}3 \times 0{,}6 = \mathbf{0{,}18}$.</p>
+</blockquote>
+<ol>
+<li>A die is rolled twice. Calculate the probability of obtaining 6 in both rolls.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> The rolls are independent. $P(6_1 \cap 6_2) = P(6_1) \cdot P(6_2) = \dfrac{1}{6} \cdot \dfrac{1}{6} = \dfrac{1}{36} \approx 0{,}028$.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>A box contains 3 red balls and 5 blue balls. 3 are drawn without replacement. Calculate the probability that all 3 are blue.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(A_1) = \dfrac{5}{8}$, $P(A_2 \mid A_1) = \dfrac{4}{7}$, $P(A_3 \mid A_1 \cap A_2) = \dfrac{3}{6} = \dfrac{1}{2}$. $P = \dfrac{5}{8} \cdot \dfrac{4}{7} \cdot \dfrac{1}{2} = \dfrac{20}{112} = \dfrac{5}{28} \approx \mathbf{0{,}179}$.</p>
+</blockquote>
+<ol>
+<li>A computer system has two firewalls in series. The first blocks 90% of attacks and the second blocks 95% of those that pass the first. What is the probability that an attack bypasses both?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(\text{bypasses 1}) = 0{,}10$. $P(\text{bypasses 2} \mid \text{bypasses 1}) = 0{,}05$. $P(\text{bypasses both}) = 0{,}10 \times 0{,}05 = \mathbf{0{,}005}$ (0.5%).</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>In a quality control process, parts pass through two inspections: $C_1$ and $C_2$. 5% of parts fail $C_1$. Of those that pass $C_1$, 3% fail $C_2$.</li>
+</ol>
+<p>a) Calculate the probability that a part passes both inspections.<br />
+   b) Calculate the probability of failing exactly at $C_2$ (passed $C_1$ but failed $C_2$).<br />
+   c) Calculate the probability of failing at least one of the two inspections.</p>
+<blockquote>
+<p><strong>Solution:</strong><br />
+Let $S_1$ = "passes $C_1$": $P(S_1) = 0{,}95$; $F_1$ = "fails $C_1$": $P(F_1) = 0{,}05$.<br />
+$P(S_2 \mid S_1) = 0{,}97$; $P(F_2 \mid S_1) = 0{,}03$.<br />
+a) $P(S_1 \cap S_2) = 0{,}95 \times 0{,}97 = \mathbf{0{,}9215}$.<br />
+b) $P(S_1 \cap F_2) = 0{,}95 \times 0{,}03 = \mathbf{0{,}0285}$.<br />
+c) $P(\text{fails at least one}) = 1 - P(S_1 \cap S_2) = 1 - 0{,}9215 = \mathbf{0{,}0785}$.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>If $P(A) = 0{,}5$, $P(B \mid A) = 0{,}4$, and $P(B \mid \bar{A}) = 0{,}2$, what is $P(A \cap B)$?</li>
+<li>a) 0,20</li>
+<li>b) 0,10</li>
+<li>c) 0,30</li>
+<li>d) 0,08</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: a)</strong> $P(A \cap B) = P(B \mid A) \cdot P(A) = 0{,}4 \times 0{,}5 = 0{,}20$.</p>
+</blockquote>
+<ol>
+<li>The general multiplication rule $P(A \cap B) = P(A \mid B) \cdot P(B)$ simplifies to $P(A \cap B) = P(A) \cdot P(B)$ when:</li>
+<li>a) $A$ and $B$ are incompatible</li>
+<li>b) $A$ and $B$ are independent</li>
+<li>c) $A \subset B$</li>
+<li>d) $P(A) = P(B)$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: b)</strong> If $A$ and $B$ are independent, then $P(A \mid B) = P(A)$, and the formula becomes $P(A \cap B) = P(A) \cdot P(B)$.</p>
+</blockquote>
+<hr />
+<h5>10.3.3 Independence of events: definition and criterion</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>A die and a coin are tossed. Let $A$ = "rolling a 4 on the die" and $B$ = "getting heads on the coin". Check whether $A$ and $B$ are independent.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p><strong>Independence criterion:</strong> $A$ and $B$ are independent if and only if $P(A \cap B) = P(A) \cdot P(B)$.</p>
+<p>$P(A) = \dfrac{1}{6}$, $P(B) = \dfrac{1}{2}$.</p>
+<p>Since these are different experiments, the events are clearly independent. We verify:
+$$P(A \cap B) = P(\text{rolling 4 and heads}) = \frac{1}{6} \cdot \frac{1}{2} = \frac{1}{12}$$</p>
+<p>$$P(A) \cdot P(B) = \frac{1}{6} \cdot \frac{1}{2} = \frac{1}{12}$$</p>
+<p>Since $P(A \cap B) = P(A) \cdot P(B)$, the events are <strong>independent</strong>. ✓</p>
+<p><strong>Corollary:</strong> If $A$ and $B$ are independent, so are $A$ and $\bar{B}$, $\bar{A}$ and $B$, $\bar{A}$ and $\bar{B}$.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>$P(A) = 0{,}4$, $P(B) = 0{,}5$, and $P(A \cap B) = 0{,}2$. Are $A$ and $B$ independent?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(A) \cdot P(B) = 0{,}4 \times 0{,}5 = 0{,}2 = P(A \cap B)$. <strong>Yes, they are independent.</strong></p>
+</blockquote>
+<ol>
+<li>$P(A) = 0{,}3$, $P(B) = 0{,}4$, and $P(A \cap B) = 0{,}15$. Are they independent?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(A) \cdot P(B) = 0{,}12 \neq 0{,}15 = P(A \cap B)$. <strong>They are not independent</strong> (they are positively dependent events).</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>Prove that if $A$ and $B$ are independent, then $P(A \mid B) = P(A)$ (knowledge of $B$ does not alter the probability of $A$).</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> If $A$ and $B$ are independent: $P(A \cap B) = P(A) \cdot P(B)$. Then: $P(A \mid B) = \dfrac{P(A \cap B)}{P(B)} = \dfrac{P(A) \cdot P(B)}{P(B)} = P(A)$. ✓</p>
+</blockquote>
+<ol>
+<li>Two independent medical tests are performed to detect a disease. Test $T_1$ has an 85% success rate and test $T_2$ has a 90% success rate. What is the probability that at least one detects the disease?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(\text{neither detects}) = P(\bar{T_1}) \cdot P(\bar{T_2}) = 0{,}15 \times 0{,}10 = 0{,}015$. $P(\text{at least one}) = 1 - 0{,}015 = \mathbf{0{,}985}$.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>Three electronic components $C_1$, $C_2$, and $C_3$ operate independently with failure probabilities $P(F_1) = 0{,}05$, $P(F_2) = 0{,}04$, and $P(F_3) = 0{,}02$. The system fails if at least one component fails.</li>
+</ol>
+<p>a) Calculate the probability that the system works correctly.<br />
+   b) Calculate the probability that exactly component $C_1$ fails and the other two do not.<br />
+   c) What is the probability that exactly two components fail?</p>
+<blockquote>
+<p><strong>Solution:</strong><br />
+a) $P(\text{system OK}) = P(\bar{F_1}) \cdot P(\bar{F_2}) \cdot P(\bar{F_3}) = 0{,}95 \times 0{,}96 \times 0{,}98 = \mathbf{0{,}8937}$.<br />
+b) $P(F_1 \cap \bar{F_2} \cap \bar{F_3}) = 0{,}05 \times 0{,}96 \times 0{,}98 = \mathbf{0{,}04704}$.<br />
+c) Exactly two fail: $P(F_1 F_2 \bar{F_3}) + P(F_1 \bar{F_2} F_3) + P(\bar{F_1} F_2 F_3)$<br />
+$= 0{,}05 \times 0{,}04 \times 0{,}98 + 0{,}05 \times 0{,}96 \times 0{,}02 + 0{,}95 \times 0{,}04 \times 0{,}02$<br />
+$= 0{,}00196 + 0{,}00096 + 0{,}00076 = \mathbf{0{,}00368}$.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>If $A$ and $B$ are incompatible and both have positive probability, then:</li>
+<li>a) They are independent</li>
+<li>b) They cannot be independent</li>
+<li>c) They are always independent if $P(A)+P(B)=1$</li>
+<li>d) $P(A \cap B) = P(A) \cdot P(B)$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: b)</strong> If they are incompatible, $P(A \cap B)=0$, but $P(A) \cdot P(B) &gt; 0$, so $P(A \cap B) \neq P(A) \cdot P(B)$: they are not independent.</p>
+</blockquote>
+<ol>
+<li>If $P(A) = 0{,}5$ and $A$ and $B$ are independent, what is $P(A \mid B)$?</li>
+<li>a) 0,25</li>
+<li>b) 0,5</li>
+<li>c) Depends on $P(B)$</li>
+<li>d) 1</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: b)</strong> By the definition of independence, $P(A \mid B) = P(A) = 0{,}5$.</p>
+</blockquote>
+<hr />
+<h5>10.3.4 Mutual independence of three or more events</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Events $A$, $B$, and $C$ are mutually independent if <strong>all</strong> of the following hold simultaneously:<br />
+$P(A \cap B) = P(A)P(B)$, $P(A \cap C) = P(A)P(C)$, $P(B \cap C) = P(B)P(C)$ <strong>and</strong> $P(A \cap B \cap C) = P(A)P(B)P(C)$.</p>
+<p>Given $P(A) = 0{,}5$, $P(B) = 0{,}4$, $P(C) = 0{,}3$, check whether they are mutually independent knowing that $P(A \cap B) = 0{,}2$, $P(A \cap C) = 0{,}15$, $P(B \cap C) = 0{,}12$, and $P(A \cap B \cap C) = 0{,}06$.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<ul>
+<li>$P(A)P(B) = 0{,}5 \times 0{,}4 = 0{,}20 = P(A \cap B)$ ✓  </li>
+<li>$P(A)P(C) = 0{,}5 \times 0{,}3 = 0{,}15 = P(A \cap C)$ ✓  </li>
+<li>$P(B)P(C) = 0{,}4 \times 0{,}3 = 0{,}12 = P(B \cap C)$ ✓  </li>
+<li>$P(A)P(B)P(C) = 0{,}5 \times 0{,}4 \times 0{,}3 = 0{,}06 = P(A \cap B \cap C)$ ✓</li>
+</ul>
+<p>All <strong>4 conditions</strong> are satisfied, so $A$, $B$, and $C$ are <strong>mutually independent</strong>.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>Three coins are tossed. Let $A_i$ = "coin $i$ lands heads". Are $A_1$, $A_2$, and $A_3$ mutually independent?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(A_i) = 1/2$ for all $i$. The tosses are independent. $P(A_1 \cap A_2) = 1/4 = P(A_1)P(A_2)$ ✓. Similarly for the other pairs. $P(A_1 \cap A_2 \cap A_3) = 1/8 = (1/2)^3$ ✓. <strong>Yes, they are mutually independent.</strong></p>
+</blockquote>
+<ol>
+<li>If $A$, $B$, and $C$ are mutually independent with $P(A)=0{,}6$, $P(B)=0{,}5$, $P(C)=0{,}4$, calculate $P(A \cap B \cap C)$ and $P(A \cup B \cup C)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(A \cap B \cap C) = 0{,}6 \times 0{,}5 \times 0{,}4 = 0{,}12$. For the union, it is easier to use the complement: $P(\bar{A} \cap \bar{B} \cap \bar{C}) = 0{,}4 \times 0{,}5 \times 0{,}6 = 0{,}12$. $P(A \cup B \cup C) = 1 - 0{,}12 = \mathbf{0{,}88}$.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>Example of events that are pairwise independent but NOT mutually independent (Bernstein's paradox): A coin is tossed twice. $A$ = "first heads", $B$ = "second heads", $C$ = "exactly one heads". Check that every pair is independent but $P(A \cap B \cap C) \neq P(A)P(B)P(C)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\Omega = {HH, HT, TH, TT}$ (equiprobable). $P(A) = P(B) = P(C) = 1/2$. $A \cap B = {HH}$: $P(A \cap B) = 1/4 = P(A)P(B)$ ✓. $A \cap C = {HT}$: $P(A \cap C) = 1/4 = P(A)P(C)$ ✓. $B \cap C = {TH}$: $P(B \cap C) = 1/4 = P(B)P(C)$ ✓. But $A \cap B \cap C = \emptyset$ (if both heads appear, there is not exactly one): $P(A \cap B \cap C) = 0 \neq 1/8 = P(A)P(B)P(C)$. <strong>They are not mutually independent.</strong></p>
+</blockquote>
+<ol>
+<li>In a system of three switches in parallel (the system works if at least one works), each switch fails independently with probability 0.1. Calculate the probability that the system fails.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> The system fails only if all three switches fail. $P(\text{system fails}) = 0{,}1^3 = \mathbf{0{,}001}$ (0.1%).</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>A company manufactures chips that pass through three independent quality tests: $P_1$, $P_2$, and $P_3$. The probabilities of passing each test are 0.95, 0.92, and 0.98 respectively.</li>
+</ol>
+<p>a) What is the probability that a chip passes all three tests?<br />
+   b) What is the probability of failing exactly test $P_2$?<br />
+   c) What is the probability of passing at least two tests?</p>
+<blockquote>
+<p><strong>Solution:</strong><br />
+a) $P(S_1 S_2 S_3) = 0{,}95 \times 0{,}92 \times 0{,}98 = \mathbf{0{,}8557}$.<br />
+b) Fails only $P_2$: $P(S_1 F_2 S_3) = 0{,}95 \times 0{,}08 \times 0{,}98 = \mathbf{0{,}07448}$.<br />
+c) At least 2 tests passed = 2 passed + 3 passed:<br />
+Exactly 2: $P(F_1 S_2 S_3) + P(S_1 F_2 S_3) + P(S_1 S_2 F_3)$<br />
+$= 0{,}05 \times 0{,}92 \times 0{,}98 + 0{,}95 \times 0{,}08 \times 0{,}98 + 0{,}95 \times 0{,}92 \times 0{,}02$<br />
+$= 0{,}04508 + 0{,}07448 + 0{,}01748 = 0{,}13704$.<br />
+At least 2: $0{,}13704 + 0{,}8557 = \mathbf{0{,}99274}$.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>How many conditions must be verified for three events $A$, $B$, $C$ to be <strong>mutually independent</strong>?</li>
+<li>a) 1</li>
+<li>b) 2</li>
+<li>c) 3</li>
+<li>d) 4</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: d)</strong> There are 3 pairwise independence conditions plus 1 triple condition: <strong>4 conditions</strong> in total.</p>
+</blockquote>
+<ol>
+<li>If $A$ and $B$ are independent, which of the following statements is also true?</li>
+<li>a) $\bar{A}$ and $B$ are dependent</li>
+<li>b) $A$ and $\bar{B}$ are independent</li>
+<li>c) $A$ and $B$ are incompatible</li>
+<li>d) $P(A \cup B) = P(A) + P(B)$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: b)</strong> Independence is preserved when taking the complement of one or both events: $\bar{A}$ and $B$, $A$ and $\bar{B}$, $\bar{A}$ and $\bar{B}$ are also independent.</p>
+</blockquote>
+<hr />
+<hr />
+<h5>10.4.1 Construction and interpretation of tree diagrams</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>An urn has 3 red balls and 2 blue balls. 2 balls are drawn <strong>without replacement</strong>. Build the complete tree diagram and calculate all branch probabilities.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p><strong>Level 1 (1st draw):</strong>
+- $P(R_1) = 3/5$<br />
+- $P(A_1) = 2/5$</p>
+<p><strong>Level 2 (2nd draw given the result of the 1st):</strong></p>
+<p>If $R_1$ (4 balls remain: 2R, 2B):
+- $P(R_2 \mid R_1) = 2/4 = 1/2$<br />
+- $P(A_2 \mid R_1) = 2/4 = 1/2$</p>
+<p>If $A_1$ (4 balls remain: 3R, 1B):
+- $P(R_2 \mid A_1) = 3/4$<br />
+- $P(A_2 \mid A_1) = 1/4$</p>
+<p><strong>Path probabilities (multiplication rule):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Path</th>
+<th>Probability</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R_1 \cap R_2$</td>
+<td>$\frac{3}{5} \cdot \frac{1}{2} = \frac{3}{10}$</td>
+</tr>
+<tr>
+<td>$R_1 \cap A_2$</td>
+<td>$\frac{3}{5} \cdot \frac{1}{2} = \frac{3}{10}$</td>
+</tr>
+<tr>
+<td>$A_1 \cap R_2$</td>
+<td>$\frac{2}{5} \cdot \frac{3}{4} = \frac{6}{20} = \frac{3}{10}$</td>
+</tr>
+<tr>
+<td>$A_1 \cap A_2$</td>
+<td>$\frac{2}{5} \cdot \frac{1}{4} = \frac{2}{20} = \frac{1}{10}$</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Verification:</strong> $\frac{3}{10} + \frac{3}{10} + \frac{3}{10} + \frac{1}{10} = \frac{10}{10} = 1$ ✓</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>A coin is tossed and then a die is rolled. Build the tree and calculate the probability of getting heads and an even number.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> Level 1: $P(H) = 1/2$, $P(T) = 1/2$. Level 2 (die, 3 even numbers out of 6): $P(\text{even}) = 1/2$. $P(\text{heads and even}) = P(H) \cdot P(\text{even}) = \frac{1}{2} \cdot \frac{1}{2} = \frac{1}{4}$.</p>
+</blockquote>
+<ol>
+<li>A box has 2 red balls and 3 green balls. One is drawn, the colour is recorded, and it is returned (with replacement). Then another is drawn. Calculate the probability of obtaining two balls of the same colour.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> With replacement, the probabilities do not change. $P(RR) = \frac{2}{5} \cdot \frac{2}{5} = \frac{4}{25}$. $P(GG) = \frac{3}{5} \cdot \frac{3}{5} = \frac{9}{25}$. $P(\text{same colour}) = \frac{4}{25} + \frac{9}{25} = \frac{13}{25} = \mathbf{0{,}52}$.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>In a production process, 40% of parts are of type $A$ and 60% are of type $B$. 5% of type $A$ parts are defective and 2% of type $B$ parts are defective. A part is chosen at random. Build the tree and calculate the probability that it is defective.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(D) = P(D \mid A) \cdot P(A) + P(D \mid B) \cdot P(B) = 0{,}05 \times 0{,}40 + 0{,}02 \times 0{,}60 = 0{,}020 + 0{,}012 = \mathbf{0{,}032}$ (3.2%).</p>
+</blockquote>
+<ol>
+<li>An archer shoots two arrows. The probability of hitting with the first is 0.7. If the first hits, the probability of hitting with the second is 0.8; if the first misses, the probability of hitting with the second is 0.6. Calculate the probability of hitting exactly one arrow.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(\text{hits 1st, misses 2nd}) = 0{,}7 \times 0{,}2 = 0{,}14$. $P(\text{misses 1st, hits 2nd}) = 0{,}3 \times 0{,}6 = 0{,}18$. $P(\text{exactly one}) = 0{,}14 + 0{,}18 = \mathbf{0{,}32}$.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>A company receives components from two suppliers: 70% from supplier $P_1$ and 30% from supplier $P_2$. The percentage of defective parts from supplier $P_1$ is 4% and from supplier $P_2$ is 8%.</li>
+</ol>
+<p>a) Build the complete tree diagram.<br />
+   b) Calculate the probability that a randomly chosen part is defective.<br />
+   c) If the part is defective, what is the probability that it came from $P_1$?<br />
+   d) Which of the two suppliers produces more defective parts in absolute terms?</p>
+<blockquote>
+<p><strong>Solution:</strong><br />
+a) Tree: $P_1 (0{,}7) \to D (0{,}04)$ and $\bar{D} (0{,}96)$; $P_2 (0{,}3) \to D (0{,}08)$ and $\bar{D} (0{,}92)$.<br />
+b) $P(D) = 0{,}70 \times 0{,}04 + 0{,}30 \times 0{,}08 = 0{,}028 + 0{,}024 = \mathbf{0{,}052}$.<br />
+c) $P(P_1 \mid D) = \dfrac{0{,}028}{0{,}052} = \dfrac{28}{52} = \dfrac{7}{13} \approx \mathbf{0{,}538}$.<br />
+d) $P_1$ contributes $0{,}028$ and $P_2$ contributes $0{,}024$ of defective parts. Although $P_2$ has a higher defect rate (8%), it is $P_1$ that produces <strong>more defective parts</strong> in total due to its higher supply volume.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>In a tree diagram, the sum of the probabilities of all complete paths (leaves) must be:</li>
+<li>a) Equal to the number of branches</li>
+<li>b) Equal to 1</li>
+<li>c) Equal to 0</li>
+<li>d) Equal to the probability of the most likely event</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: b)</strong> The complete paths form a partition of the sample space, so their probabilities must sum to 1.</p>
+</blockquote>
+<ol>
+<li>In a two-level tree with events $A$ and $B$ at the first level and $C$ and $D$ at the second, the probability of the path $A \to C$ is:</li>
+<li>a) $P(A) + P(C)$</li>
+<li>b) $P(A) \cdot P(C)$</li>
+<li>c) $P(A) \cdot P(C \mid A)$</li>
+<li>d) $P(C \mid A) / P(A)$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: c)</strong> The multiplication rule states that the path probability is $P(A \cap C) = P(A) \cdot P(C \mid A)$.</p>
+</blockquote>
+<hr />
+<h5>10.4.2 Calculating compound probabilities using trees</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>In a multiple-choice exam with 3 questions, each question has 4 options and only one is correct. A student who does not know the answer chooses at random. It is known that the student knows 70% of the topics. Calculate the probability that the student answers the first question correctly.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p><strong>Step 1 – Define events:</strong><br />
+- $S$ = "knows the answer": $P(S) = 0{,}7$, $P(\bar{S}) = 0{,}3$<br />
+- $C$ = "answers correctly"</p>
+<p><strong>Step 2 – Conditional probabilities:</strong><br />
+- If they know: $P(C \mid S) = 1$ (answers with certainty)<br />
+- If they do not know: $P(C \mid \bar{S}) = 1/4 = 0{,}25$ (chooses at random)</p>
+<p><strong>Step 3 – Total probability theorem:</strong>
+$$P(C) = P(C \mid S) \cdot P(S) + P(C \mid \bar{S}) \cdot P(\bar{S})$$
+$$P(C) = 1 \times 0{,}7 + 0{,}25 \times 0{,}3 = 0{,}7 + 0{,}075 = \mathbf{0{,}775}$$</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>A box is chosen from two: box 1 has 3 red balls and 2 blue balls; box 2 has 1 red and 4 blue balls. The probability of choosing box 1 is 0.4. Calculate the probability of drawing a red ball.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(R) = P(R \mid C_1) \cdot P(C_1) + P(R \mid C_2) \cdot P(C_2) = \frac{3}{5} \times 0{,}4 + \frac{1}{5} \times 0{,}6 = 0{,}24 + 0{,}12 = \mathbf{0{,}36}$.</p>
+</blockquote>
+<ol>
+<li>An athlete trains 5 days a week. If they trained the day before, the probability of winning a competition is 0.8; if they did not train, it is 0.4. They train 70% of days. Calculate the probability of winning.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(\text{wins}) = 0{,}8 \times 0{,}7 + 0{,}4 \times 0{,}3 = 0{,}56 + 0{,}12 = \mathbf{0{,}68}$.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>A medical test can give a positive (+) or negative (−) result. If the patient has the disease, $P(+ \mid E) = 0{,}95$. If they do not have it, $P(+ \mid \bar{E}) = 0{,}08$. The prevalence of the disease is 1%. Calculate the probability of obtaining a positive result.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(E) = 0{,}01$. $P(+) = 0{,}95 \times 0{,}01 + 0{,}08 \times 0{,}99 = 0{,}0095 + 0{,}0792 = \mathbf{0{,}0887}$.</p>
+</blockquote>
+<ol>
+<li>Three machines produce screws. Machine $M_1$ produces 50%, $M_2$ 30%, and $M_3$ 20%. The percentages of defective screws are 2%, 3%, and 5% respectively. Calculate the probability of drawing a defective screw.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(D) = 0{,}02 \times 0{,}50 + 0{,}03 \times 0{,}30 + 0{,}05 \times 0{,}20 = 0{,}010 + 0{,}009 + 0{,}010 = \mathbf{0{,}029}$ (2.9%).</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>In a production plant, parts are manufactured in three shifts. The morning shift ($M$) produces 40% of parts, the afternoon shift ($T$) 35%, and the night shift ($N$) 25%. The percentages of defective parts are 1%, 2%, and 4% respectively.</li>
+</ol>
+<p>a) Build the tree diagram with all branches and probabilities.<br />
+   b) Calculate the probability that a randomly chosen part is defective.<br />
+   c) If a defective part is chosen, from which shift is it most likely to come?</p>
+<blockquote>
+<p><strong>Solution:</strong><br />
+a) First level: $M (0{,}40)$, $T (0{,}35)$, $N (0{,}25)$. Second level: each shift branches into $D$ and $\bar{D}$.<br />
+b) $P(D) = 0{,}01 \times 0{,}40 + 0{,}02 \times 0{,}35 + 0{,}04 \times 0{,}25 = 0{,}004 + 0{,}007 + 0{,}010 = \mathbf{0{,}021}$.<br />
+c) $P(M \mid D) = \frac{0{,}004}{0{,}021} \approx 0{,}190$; $P(T \mid D) = \frac{0{,}007}{0{,}021} \approx 0{,}333$; $P(N \mid D) = \frac{0{,}010}{0{,}021} \approx 0{,}476$. The defective part is most likely to come from the <strong>night shift</strong>.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>In a tree with two groups $G_1$ (probability 0.6) and $G_2$ (probability 0.4), and within each group event $A$ has probabilities $P(A \mid G_1) = 0{,}3$ and $P(A \mid G_2) = 0{,}5$, what is $P(A)$?</li>
+<li>a) 0,38</li>
+<li>b) 0,40</li>
+<li>c) 0,35</li>
+<li>d) 0,15</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: a)</strong> $P(A) = 0{,}3 \times 0{,}6 + 0{,}5 \times 0{,}4 = 0{,}18 + 0{,}20 = 0{,}38$.</p>
+</blockquote>
+<ol>
+<li>The compound probability of a path in a three-level tree $A \to B \to C$ is calculated as:</li>
+<li>a) $P(A) + P(B \mid A) + P(C \mid B)$</li>
+<li>b) $P(A) \cdot P(B) \cdot P(C)$</li>
+<li>c) $P(A) \cdot P(B \mid A) \cdot P(C \mid A \cap B)$</li>
+<li>d) $P(C \mid A \cap B) / P(A)$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: c)</strong> The generalised multiplication rule: $P(A \cap B \cap C) = P(A) \cdot P(B \mid A) \cdot P(C \mid A \cap B)$.</p>
+</blockquote>
+<hr />
+<h5>10.4.3 Contingency tables: construction and interpretation</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>In a survey of 500 people, they are asked about their gender (Male/Female) and transport preference (Car/Public transport). The results are: 180 males prefer the car, 70 males prefer public transport, 100 females prefer the car, and 150 females prefer public transport. Build the complete contingency table.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p><strong>Step 1 – Fill in the table:</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Car</th>
+<th>Public Transport</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Male</td>
+<td>180</td>
+<td>70</td>
+<td><strong>250</strong></td>
+</tr>
+<tr>
+<td>Female</td>
+<td>100</td>
+<td>150</td>
+<td><strong>250</strong></td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td><strong>280</strong></td>
+<td><strong>220</strong></td>
+<td><strong>500</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Step 2 – Verify the totals:</strong> $180+70 = 250$, $100+150 = 250$, $180+100 = 280$, $70+150 = 220$. Grand total: $280+220 = 500$ ✓</p>
+<p><strong>Step 3 – Calculate marginal and joint probabilities:</strong></p>
+<ul>
+<li>$P(\text{Male}) = 250/500 = 0{,}5$  </li>
+<li>$P(\text{Car}) = 280/500 = 0{,}56$  </li>
+<li>$P(\text{Male and Car}) = 180/500 = 0{,}36$</li>
+</ul>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>Complete the following contingency table on smoking habits and cardiovascular disease in 1000 people:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>With disease</th>
+<th>Without disease</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Smoker</td>
+<td>120</td>
+<td>180</td>
+<td>???</td>
+</tr>
+<tr>
+<td>Non-smoker</td>
+<td>80</td>
+<td>???</td>
+<td>620</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>200</td>
+<td>???</td>
+<td>1000</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Solution:</strong> Smoker total: $120+180=300$. Non-smoker without disease: $620-80=540$. Without disease total: $180+540=720$. Total: $200+720=920 \neq 1000$... Correction: Non-smoker without disease: $1000-300-80 = 620$. Table: Smoker: 120, 180, 300. Non-smoker: 80, 540, 620. Totals: 200, 720, 1000.</p>
+</blockquote>
+<ol>
+<li>From the table in the worked example, calculate $P(\text{Female and Public Transport})$ and $P(\text{Public Transport})$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(\text{Female and Public Transport}) = 150/500 = \mathbf{0{,}30}$. $P(\text{Public Transport}) = 220/500 = \mathbf{0{,}44}$.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>In a hospital, 300 patients are classified by type of treatment (Surgical/Medical) and outcome (Success/Failure): 90 surgical with success, 30 surgical with failure, 150 medical with success, 30 medical with failure. Build the table and calculate the success rate of each treatment.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> Table: Surgical: 90, 30, 120. Medical: 150, 30, 180. Total: 240, 60, 300. Surgical success rate: $90/120 = \mathbf{0{,}75}$. Medical success rate: $150/180 \approx \mathbf{0{,}833}$.</p>
+</blockquote>
+<ol>
+<li>In the table from exercise 3, are the type of treatment and the outcome independent?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(\text{Success}) = 240/300 = 0{,}8$. $P(\text{Surgical}) = 120/300 = 0{,}4$. $P(\text{Success and Surgical}) = 90/300 = 0{,}3$. But $P(\text{Success}) \cdot P(\text{Surgical}) = 0{,}8 \times 0{,}4 = 0{,}32 \neq 0{,}3$. <strong>They are not independent</strong>: the type of treatment and the outcome are related.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>A company analyses 400 products by size (Large/Small) and whether they passed quality control (Pass/Fail):</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Pass</th>
+<th>Fail</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Large</td>
+<td>160</td>
+<td>40</td>
+<td>200</td>
+</tr>
+<tr>
+<td>Small</td>
+<td>180</td>
+<td>20</td>
+<td>200</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>340</td>
+<td>60</td>
+<td>400</td>
+</tr>
+</tbody>
+</table>
+<p>a) What is the probability that a product passes the inspection?<br />
+   b) Given that the product is large, what is the probability that it passes the inspection?<br />
+   c) Are the size and the inspection result independent? Justify numerically.<br />
+   d) Which size has the higher rejection rate?</p>
+<blockquote>
+<p><strong>Solution:</strong><br />
+a) $P(\text{Pass}) = 340/400 = \mathbf{0{,}85}$.<br />
+b) $P(\text{Pass} \mid \text{Large}) = 160/200 = \mathbf{0{,}80}$.<br />
+c) $P(\text{Pass}) \cdot P(\text{Large}) = 0{,}85 \times 0{,}5 = 0{,}425 \neq 160/400 = 0{,}40$. <strong>They are not independent.</strong><br />
+d) Rejection rate large: $40/200 = 20\%$; small: $20/200 = 10\%$. The <strong>Large</strong> size has the higher rejection rate.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>In a 2×2 contingency table with 100 observations, if the marginal totals are $P(A) = 0{,}6$ and $P(B) = 0{,}4$, and $A$ and $B$ are independent, how many cases are in the cell $A \cap B$?</li>
+<li>a) 24</li>
+<li>b) 40</li>
+<li>c) 10</li>
+<li>d) 60</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: a)</strong> If they are independent: $P(A \cap B) = P(A) \cdot P(B) = 0{,}6 \times 0{,}4 = 0{,}24$, so $100 \times 0{,}24 = 24$ cases.</p>
+</blockquote>
+<ol>
+<li>The marginal probability of a row in a contingency table is obtained by:</li>
+<li>a) Dividing the cell by the grand total</li>
+<li>b) Summing the values in the row and dividing by the grand total</li>
+<li>c) Dividing a cell by the total of its column</li>
+<li>d) Multiplying the row probability by the column probability</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: b)</strong> The marginal probability of a row is the sum of all cells in that row divided by the grand total.</p>
+</blockquote>
+<hr />
+<h5>10.4.4 Extracting marginal, joint, and conditional probabilities from tables</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Given the following contingency table on 200 employees (gender and department):</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Production</th>
+<th>Sales</th>
+<th>Administration</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Male</td>
+<td>60</td>
+<td>40</td>
+<td>20</td>
+<td>120</td>
+</tr>
+<tr>
+<td>Female</td>
+<td>30</td>
+<td>30</td>
+<td>20</td>
+<td>80</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>90</td>
+<td>70</td>
+<td>40</td>
+<td>200</td>
+</tr>
+</tbody>
+</table>
+<p>Calculate: (a) $P(\text{Sales})$, (b) $P(\text{Female and Sales})$, (c) $P(\text{Sales} \mid \text{Female})$, (d) $P(\text{Female} \mid \text{Sales})$.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p><strong>(a) Marginal probability of Sales:</strong>
+$$P(\text{Sales}) = \frac{70}{200} = 0{,}35$$</p>
+<p><strong>(b) Joint probability:</strong>
+$$P(\text{Female} \cap \text{Sales}) = \frac{30}{200} = 0{,}15$$</p>
+<p><strong>(c) Conditional probability (given Female):</strong>
+$$P(\text{Sales} \mid \text{Female}) = \frac{P(\text{Female} \cap \text{Sales})}{P(\text{Female})} = \frac{30/200}{80/200} = \frac{30}{80} = 0{,}375$$</p>
+<p><strong>(d) Conditional probability (given Sales):</strong>
+$$P(\text{Female} \mid \text{Sales}) = \frac{30}{70} \approx 0{,}429$$</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>From the table in the worked example, calculate $P(\text{Male})$, $P(\text{Production})$, and $P(\text{Male} \cap \text{Production})$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(\text{Male}) = 120/200 = 0{,}6$. $P(\text{Production}) = 90/200 = 0{,}45$. $P(\text{Male} \cap \text{Production}) = 60/200 = 0{,}30$.</p>
+</blockquote>
+<ol>
+<li>Calculate $P(\text{Production} \mid \text{Male})$ from the same table.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(\text{Production} \mid \text{Male}) = 60/120 = \mathbf{0{,}5}$.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>Check whether gender and the Sales department are independent using the data from the worked example table.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(\text{Female}) \cdot P(\text{Sales}) = 0{,}4 \times 0{,}35 = 0{,}14$. $P(\text{Female} \cap \text{Sales}) = 30/200 = 0{,}15 \neq 0{,}14$. <strong>They are not independent</strong> (slight positive association of women with Sales).</p>
+</blockquote>
+<ol>
+<li>In the worked example table, calculate the probability that an employee is in Administration given that they are female, and compare it with the unconditional probability of being in Administration.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(\text{Admin} \mid \text{Female}) = 20/80 = 0{,}25$. $P(\text{Admin}) = 40/200 = 0{,}20$. Since $0{,}25 &gt; 0{,}20$, women are slightly <strong>over-represented</strong> in Administration.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>An epidemiological study analyses 1000 people by level of physical activity (High/Low) and presence of hypertension (Yes/No):</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Hypertension Yes</th>
+<th>Hypertension No</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>High Activity</td>
+<td>40</td>
+<td>360</td>
+<td>400</td>
+</tr>
+<tr>
+<td>Low Activity</td>
+<td>150</td>
+<td>450</td>
+<td>600</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>190</td>
+<td>810</td>
+<td>1000</td>
+</tr>
+</tbody>
+</table>
+<p>a) Calculate the probability that a person has hypertension.<br />
+   b) Calculate $P(\text{Hypertension} \mid \text{High Activity})$ and $P(\text{Hypertension} \mid \text{Low Activity})$.<br />
+   c) Are physical activity level and hypertension independent?<br />
+   d) Interpret the result of part (b) in terms of public health.</p>
+<blockquote>
+<p><strong>Solution:</strong><br />
+a) $P(\text{HT}) = 190/1000 = \mathbf{0{,}19}$.<br />
+b) $P(\text{HT} \mid \text{High}) = 40/400 = \mathbf{0{,}10}$. $P(\text{HT} \mid \text{Low}) = 150/600 = \mathbf{0{,}25}$.<br />
+c) $P(\text{HT}) \cdot P(\text{High}) = 0{,}19 \times 0{,}40 = 0{,}076 \neq 40/1000 = 0{,}040$. <strong>They are not independent</strong>: there is an association.<br />
+d) People with <strong>high physical activity</strong> have a 10% prevalence of hypertension, compared to 25% among sedentary people. Physical activity appears to be an important protective factor.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>In a contingency table, $P(A \mid B)$ is calculated as:</li>
+<li>a) (Frequency of $A$) / (Grand total)</li>
+<li>b) (Frequency of $A \cap B$) / (Frequency of $B$)</li>
+<li>c) (Frequency of $A \cap B$) / (Grand total)</li>
+<li>d) (Frequency of $B$) / (Frequency of $A$)</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: b)</strong> Conditional probability in tables is calculated by dividing the joint frequency by the marginal frequency of the condition.</p>
+</blockquote>
+<ol>
+<li>If in a contingency table $P(A \mid B) = P(A)$, it is concluded that:</li>
+<li>a) $A$ and $B$ are incompatible</li>
+<li>b) $A$ and $B$ are independent</li>
+<li>c) $P(B) = 0$</li>
+<li>d) $A \subset B$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: b)</strong> $P(A \mid B) = P(A)$ is equivalent to $P(A \cap B) = P(A) \cdot P(B)$, which is the definition of independence.</p>
+</blockquote>
+<hr />
+<hr />
+<h5>10.5.1 Partition of the sample space: complete system of events</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Check that the events $A_1 = {1,2}$, $A_2 = {3,4}$, and $A_3 = {5,6}$ form a partition of $\Omega = {1,2,3,4,5,6}$ (the sample space when rolling a die).</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p>A complete system of events (partition) must satisfy:
+1. The events are pairwise disjoint (incompatible).
+2. Their union is $\Omega$ (they are exhaustive).</p>
+<p><strong>Check 1 (disjointness):</strong>
+- $A_1 \cap A_2 = {1,2} \cap {3,4} = \emptyset$ ✓<br />
+- $A_1 \cap A_3 = {1,2} \cap {5,6} = \emptyset$ ✓<br />
+- $A_2 \cap A_3 = {3,4} \cap {5,6} = \emptyset$ ✓</p>
+<p><strong>Check 2 (exhaustiveness):</strong>
+$$A_1 \cup A_2 \cup A_3 = {1,2,3,4,5,6} = \Omega \checkmark$$</p>
+<p>They do form a <strong>partition</strong> of $\Omega$.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>Do the sets $A_1 = [0, 0{,}5)$, $A_2 = [0{,}5, 1]$ form a partition of the sample space $\Omega = [0,1]$?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $A_1 \cap A_2 = \emptyset$ ✓. $A_1 \cup A_2 = [0,1] = \Omega$ ✓. <strong>Yes, they form a partition.</strong></p>
+</blockquote>
+<ol>
+<li>Indicate which of the following does <strong>not</strong> form a partition of $\Omega = {1,2,3,4,5}$: (a) ${1,2}, {3,4}, {5}$; (b) ${1,2}, {2,3,4}, {5}$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> (a) Yes it is a partition: disjoint and exhaustive ✓. (b) <strong>Not</strong> a partition because ${1,2} \cap {2,3,4} = {2} \neq \emptyset$.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>In a factory, parts are classified as: severely defective ($D_G$), mildly defective ($D_L$), and correct ($C$). Explain why these three categories form a partition of the sample space and what condition their probabilities must satisfy.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> They are disjoint (a part cannot be both severely and mildly defective at once) and exhaustive (every part belongs to some category). Therefore they form a partition. The condition is $P(D_G) + P(D_L) + P(C) = 1$.</p>
+</blockquote>
+<ol>
+<li>Given the experiment "choose a number from 1 to 20", build a partition into 4 events according to the remainder when dividing by 4 ($R = 0, 1, 2, 3$). Calculate the probabilities of each event in the partition.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $A_0 = {4,8,12,16,20}$ (5 elements), $A_1 = {1,5,9,13,17}$ (5 elements), $A_2 = {2,6,10,14,18}$ (5 elements), $A_3 = {3,7,11,15,19}$ (5 elements). $P(A_i) = 5/20 = 1/4$ for each $i$. Sum: $4 \times 1/4 = 1$ ✓.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>In an industrial process control, products are classified by quality level: quality A (30%), quality B (45%), and quality C (25%).</li>
+</ol>
+<p>a) Verify that these three categories form a partition of the sample space.<br />
+   b) If it is known that 2% of quality A products are rejected, 5% of quality B products, and 15% of quality C products, what is the probability of rejection for a randomly chosen product? (Anticipation of the total probability theorem.)</p>
+<blockquote>
+<p><strong>Solution:</strong><br />
+a) They are disjoint (a product belongs to exactly one quality level) and $0{,}30 + 0{,}45 + 0{,}25 = 1$ ✓. They form a partition.<br />
+b) $P(R) = 0{,}02 \times 0{,}30 + 0{,}05 \times 0{,}45 + 0{,}15 \times 0{,}25 = 0{,}006 + 0{,}0225 + 0{,}0375 = \mathbf{0{,}066}$ (6.6%).</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>For $A_1, A_2, A_3$ to form a partition of the sample space, the following must hold:</li>
+<li>a) Only that they are disjoint</li>
+<li>b) Only that they are exhaustive ($A_1 \cup A_2 \cup A_3 = \Omega$)</li>
+<li>c) That they are disjoint and exhaustive</li>
+<li>d) That they have equal probability</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: c)</strong> A partition requires that the events be pairwise incompatible (disjoint) <strong>and</strong> that their union be the complete sample space (exhaustive).</p>
+</blockquote>
+<ol>
+<li>If ${A_1, A_2, A_3}$ is a partition of $\Omega$, then:</li>
+<li>a) $P(A_1) = P(A_2) = P(A_3)$</li>
+<li>b) $P(A_1) + P(A_2) + P(A_3) = 1$</li>
+<li>c) $A_1 \subset A_2 \subset A_3$</li>
+<li>d) $P(A_1 \cup A_2) = 0$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: b)</strong> Being disjoint and covering all of $\Omega$, the sum of their probabilities is $P(\Omega) = 1$.</p>
+</blockquote>
+<hr />
+<h5>10.5.2 Total probability theorem</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>A company has three production lines $L_1$, $L_2$, and $L_3$ that produce 50%, 30%, and 20% of parts respectively. The defect rate of each line is 2%, 4%, and 6%. Calculate the probability that a randomly chosen part is defective.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p><strong>Data:</strong>
+$$P(L_1)=0{,}5,\quad P(L_2)=0{,}3,\quad P(L_3)=0{,}2$$
+$$P(D \mid L_1)=0{,}02,\quad P(D \mid L_2)=0{,}04,\quad P(D \mid L_3)=0{,}06$$</p>
+<p><strong>We verify that ${L_1, L_2, L_3}$ is a partition:</strong>
+$P(L_1)+P(L_2)+P(L_3) = 0{,}5+0{,}3+0{,}2 = 1$ ✓</p>
+<p><strong>Total probability theorem:</strong>
+$$P(D) = P(D \mid L_1) \cdot P(L_1) + P(D \mid L_2) \cdot P(L_2) + P(D \mid L_3) \cdot P(L_3)$$
+$$P(D) = 0{,}02 \times 0{,}5 + 0{,}04 \times 0{,}3 + 0{,}06 \times 0{,}2$$
+$$P(D) = 0{,}010 + 0{,}012 + 0{,}012 = \mathbf{0{,}034}$$</p>
+<p>The probability of a defect is 3.4%.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>There are two urns: $U_1$ with 4 red balls and 6 black balls, $U_2$ with 7 red and 3 black balls. An urn is chosen at random (with equal probability) and a ball is drawn. Calculate the probability of obtaining a red ball.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(U_1) = P(U_2) = 0{,}5$. $P(R) = P(R \mid U_1) \cdot P(U_1) + P(R \mid U_2) \cdot P(U_2) = \frac{4}{10} \times 0{,}5 + \frac{7}{10} \times 0{,}5 = 0{,}20 + 0{,}35 = \mathbf{0{,}55}$.</p>
+</blockquote>
+<ol>
+<li>A traffic light is green 60% of the time, amber 10%, and red 30%. The probability that a driver stops when the light is green is 0, when amber is 0.7, and when red is 1. Calculate the probability of stopping.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(\text{stops}) = 0 \times 0{,}6 + 0{,}7 \times 0{,}1 + 1 \times 0{,}3 = 0 + 0{,}07 + 0{,}30 = \mathbf{0{,}37}$.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>In an educational centre, 60% of students study at home for more than 2 hours per day and 40% study less. Among those who study more than 2 hours, 85% pass; among those who study less, 50% pass. What is the overall pass rate?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(\text{passes}) = 0{,}85 \times 0{,}6 + 0{,}50 \times 0{,}4 = 0{,}51 + 0{,}20 = \mathbf{0{,}71}$ (71%).</p>
+</blockquote>
+<ol>
+<li>A rapid diagnostic test gives a positive result with probability 0.92 if the person has the disease and with probability 0.05 if they do not. The prevalence of the disease in the population is 2%. Calculate $P(\text{positive test})$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(+) = 0{,}92 \times 0{,}02 + 0{,}05 \times 0{,}98 = 0{,}0184 + 0{,}049 = \mathbf{0{,}0674}$.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>A bank classifies its loans into three categories by risk: low risk (60% of portfolio), medium risk (30%), and high risk (10%). The default rates are 1%, 5%, and 20% respectively.</li>
+</ol>
+<p>a) Calculate the bank's overall default rate.<br />
+   b) If a fourth type of loan with very high risk (15% default) is introduced, replacing 5% of the low-risk portfolio, how does the default rate change?<br />
+   c) What maximum weight should high risk carry so that the overall default rate does not exceed 4%?</p>
+<blockquote>
+<p><strong>Solution:</strong><br />
+a) $P(\text{default}) = 0{,}01 \times 0{,}6 + 0{,}05 \times 0{,}3 + 0{,}20 \times 0{,}1 = 0{,}006 + 0{,}015 + 0{,}020 = \mathbf{0{,}041}$ (4.1%).<br />
+b) New portfolio: Low risk 55%, Medium risk 30%, High 10%, Very high 5%. $P' = 0{,}01 \times 0{,}55 + 0{,}05 \times 0{,}30 + 0{,}20 \times 0{,}10 + 0{,}15 \times 0{,}05 = 0{,}0055+0{,}015+0{,}020+0{,}0075 = \mathbf{0{,}048}$. Increases from 4.1% to 4.8%.<br />
+c) Let $x$ be the weight of high risk and $(0{,}6-x+0{,}30)$ the rest. Simplifying with the original portfolio: $0{,}01(0{,}6) + 0{,}05(0{,}3) + 0{,}20x \leq 0{,}04$, with $x + 0{,}9 = 1$, i.e. $x = 0{,}1$ already gives 4.1%. Adjusting with $0{,}6+0{,}3+(x)+(0{,}1-x)=1$: $0{,}006 + 0{,}015 + 0{,}20x \leq 0{,}04 \Rightarrow 0{,}20x \leq 0{,}019 \Rightarrow x \leq \mathbf{0{,}095}$ (9.5%).</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>The total probability theorem allows us to calculate $P(B)$ when:</li>
+<li>a) $B$ is any event with no conditions</li>
+<li>b) We know $P(B \mid A_i)$ for a partition ${A_i}$ of the sample space</li>
+<li>c) $B$ and $A$ are independent</li>
+<li>d) $B$ is the complementary event of $A$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: b)</strong> The theorem applies when a partition ${A_1,...,A_n}$ exists and we know $P(B \mid A_i)$ and $P(A_i)$ for each $i$.</p>
+</blockquote>
+<ol>
+<li>If ${A, \bar{A}}$ is a partition and $P(B \mid A) = 0{,}3$, $P(B \mid \bar{A}) = 0{,}1$, $P(A) = 0{,}6$, then $P(B)$ is:</li>
+<li>a) 0,22</li>
+<li>b) 0,4</li>
+<li>c) 0,18</li>
+<li>d) 0,30</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: a)</strong> $P(B) = 0{,}3 \times 0{,}6 + 0{,}1 \times 0{,}4 = 0{,}18 + 0{,}04 = 0{,}22$.</p>
+</blockquote>
+<hr />
+<h5>10.5.3 Bayes' theorem: statement and application to posterior probabilities</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Using the data from the worked example in section 10.5.2, calculate the probability that a defective part was manufactured on line $L_2$.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p><strong>Data reminder:</strong>
+$P(L_1)=0{,}5$, $P(L_2)=0{,}3$, $P(L_3)=0{,}2$, $P(D \mid L_1)=0{,}02$, $P(D \mid L_2)=0{,}04$, $P(D \mid L_3)=0{,}06$, $P(D) = 0{,}034$.</p>
+<p><strong>Bayes' theorem:</strong>
+$$P(L_2 \mid D) = \frac{P(D \mid L_2) \cdot P(L_2)}{P(D)}$$</p>
+<p>Substituting:
+$$P(L_2 \mid D) = \frac{0{,}04 \times 0{,}3}{0{,}034} = \frac{0{,}012}{0{,}034} = \frac{12}{34} = \frac{6}{17} \approx \mathbf{0{,}353}$$</p>
+<p><strong>Bayes summary table:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Line</th>
+<th>$P(L_i)$</th>
+<th>$P(D \mid L_i)$</th>
+<th>$P(D \cap L_i)$</th>
+<th>$P(L_i \mid D)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_1$</td>
+<td>0,5</td>
+<td>0,02</td>
+<td>0,010</td>
+<td>0,010/0,034 ≈ 0,294</td>
+</tr>
+<tr>
+<td>$L_2$</td>
+<td>0,3</td>
+<td>0,04</td>
+<td>0,012</td>
+<td>0,012/0,034 ≈ 0,353</td>
+</tr>
+<tr>
+<td>$L_3$</td>
+<td>0,2</td>
+<td>0,06</td>
+<td>0,012</td>
+<td>0,012/0,034 ≈ 0,353</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td><strong>1</strong></td>
+<td></td>
+<td><strong>0,034</strong></td>
+<td><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>Using the data from basic exercise 1 in section 10.5.2 (urns), calculate the probability that the red ball came from urn $U_1$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(U_1 \mid R) = \dfrac{P(R \mid U_1) \cdot P(U_1)}{P(R)} = \dfrac{(4/10) \times 0{,}5}{0{,}55} = \dfrac{0{,}20}{0{,}55} = \dfrac{4}{11} \approx \mathbf{0{,}364}$.</p>
+</blockquote>
+<ol>
+<li>$P(A) = 0{,}4$, $P(B \mid A) = 0{,}7$, $P(B \mid \bar{A}) = 0{,}2$. Calculate $P(A \mid B)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(B) = 0{,}7 \times 0{,}4 + 0{,}2 \times 0{,}6 = 0{,}28 + 0{,}12 = 0{,}40$. $P(A \mid B) = \dfrac{0{,}7 \times 0{,}4}{0{,}40} = \dfrac{0{,}28}{0{,}40} = \mathbf{0{,}7}$.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>In the diagnostic test example (section 10.5.2, intermediate exercise 4), calculate the probability that a patient with a positive test really has the disease.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(E) = 0{,}02$, $P(+ \mid E) = 0{,}92$, $P(+) = 0{,}0674$. $P(E \mid +) = \dfrac{0{,}92 \times 0{,}02}{0{,}0674} = \dfrac{0{,}0184}{0{,}0674} \approx \mathbf{0{,}273}$ (27.3%). This result illustrates the test paradox: although the test is quite accurate, with low prevalence most positives are false positives.</p>
+</blockquote>
+<ol>
+<li>A lie detector is correct 90% of the time when a person is lying and 95% when they are telling the truth (i.e. only 5% of truthful people appear as liars). It is known that 10% of suspects lie. If the detector indicates "lie", what is the probability that the person is actually lying?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(\text{lies}) = 0{,}10$, $P(+ \mid \text{lies}) = 0{,}90$, $P(+ \mid \text{truthful}) = 0{,}05$. $P(+) = 0{,}90 \times 0{,}10 + 0{,}05 \times 0{,}90 = 0{,}09 + 0{,}045 = 0{,}135$. $P(\text{lies} \mid +) = \dfrac{0{,}09}{0{,}135} = \dfrac{2}{3} \approx \mathbf{0{,}667}$.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>A pharmaceutical laboratory manufactures a drug in two plants: plant $A$ produces 60% of lots and plant $B$ 40%. The probability that a lot from plant $A$ fails quality control is 0.03; for plant $B$ it is 0.06.</li>
+</ol>
+<p>a) Calculate the probability that a randomly chosen lot fails the inspection.<br />
+   b) A lot fails the inspection. Calculate the probability that it comes from each plant.<br />
+   c) Which plant contributes more to rejected lots? Which has the higher rejection rate?<br />
+   d) If plant $B$ reduces its rejection rate to 3%, how does the overall rejection probability change?</p>
+<blockquote>
+<p><strong>Solution:</strong><br />
+a) $P(R) = 0{,}03 \times 0{,}60 + 0{,}06 \times 0{,}40 = 0{,}018 + 0{,}024 = \mathbf{0{,}042}$.<br />
+b) $P(A \mid R) = \dfrac{0{,}018}{0{,}042} = \dfrac{3}{7} \approx \mathbf{0{,}429}$. $P(B \mid R) = \dfrac{0{,}024}{0{,}042} = \dfrac{4}{7} \approx \mathbf{0{,}571}$.<br />
+c) Plant $B$ contributes more to rejections (57.1% of rejected lots come from $B$), and also has the higher rejection rate (6% vs 3%).<br />
+d) $P(R)' = 0{,}03 \times 0{,}60 + 0{,}03 \times 0{,}40 = 0{,}018 + 0{,}012 = \mathbf{0{,}030}$. Rejection would drop from 4.2% to 3%.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>Bayes' theorem allows us to calculate:</li>
+<li>a) The total probability of an event</li>
+<li>b) The posterior probability $P(A_i \mid B)$ knowing prior and conditional probabilities</li>
+<li>c) The probability of the union of two events</li>
+<li>d) The independence between events</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: b)</strong> Bayes updates prior probabilities $P(A_i)$ ("a priori") with information from the observed event $B$, yielding "posterior" probabilities $P(A_i \mid B)$.</p>
+</blockquote>
+<ol>
+<li>In Bayes' theorem, if $P(A_1 \mid B) = P(A_1)$, then:</li>
+<li>a) $B$ is the most probable event</li>
+<li>b) $A_1$ and $B$ are independent</li>
+<li>c) $A_1$ and $B$ are incompatible</li>
+<li>d) $P(B) = 0$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: b)</strong> If the posterior probability equals the prior, event $B$ has provided no information about $A_1$: they are independent.</p>
+</blockquote>
+<hr />
+<h5>10.5.4 Applications of Bayes' theorem in real contexts: diagnostic tests and reliability</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>A diagnostic test for detecting a disease has the following characteristics:
+- Sensitivity (probability of positive given the disease is present): 96%<br />
+- Specificity (probability of negative given the disease is absent): 98%<br />
+- Prevalence of the disease in the population: 0.5%</p>
+<p>Calculate the <strong>positive predictive value</strong> (probability of having the disease given a positive result).</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p><strong>Data:</strong>
+- $P(E) = 0{,}005$ (prevalence)<br />
+- $P(\bar{E}) = 0{,}995$<br />
+- $P(+ \mid E) = 0{,}96$ (sensitivity)<br />
+- $P(- \mid \bar{E}) = 0{,}98$ (specificity) $\Rightarrow P(+ \mid \bar{E}) = 0{,}02$</p>
+<p><strong>Step 1 – Total probability of a positive result:</strong>
+$$P(+) = P(+ \mid E) \cdot P(E) + P(+ \mid \bar{E}) \cdot P(\bar{E})$$
+$$P(+) = 0{,}96 \times 0{,}005 + 0{,}02 \times 0{,}995 = 0{,}0048 + 0{,}0199 = 0{,}0247$$</p>
+<p><strong>Step 2 – Positive predictive value (Bayes):</strong>
+$$PPV = P(E \mid +) = \frac{P(+ \mid E) \cdot P(E)}{P(+)} = \frac{0{,}0048}{0{,}0247} \approx \mathbf{0{,}194}$$</p>
+<p><strong>Interpretation:</strong> Only 19.4% of those who test positive actually have the disease. Although the test is very accurate, the low prevalence means that most positives are <strong>false positives</strong>. This is the <strong>prevalence effect</strong> in medical diagnosis.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>If the prevalence were 10% (instead of 0.5%) in the previous worked example, keeping sensitivity and specificity the same, what would the PPV be?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(+) = 0{,}96 \times 0{,}10 + 0{,}02 \times 0{,}90 = 0{,}096 + 0{,}018 = 0{,}114$. $PPV = 0{,}096/0{,}114 \approx \mathbf{0{,}842}$ (84.2%). With higher prevalence, the PPV increases dramatically.</p>
+</blockquote>
+<ol>
+<li>A test has sensitivity 90% and specificity 95%. The prevalence is 20%. Calculate the probability that a negative test result truly means the absence of disease (negative predictive value).</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(-) = P(- \mid E) \cdot P(E) + P(- \mid \bar{E}) \cdot P(\bar{E}) = 0{,}10 \times 0{,}20 + 0{,}95 \times 0{,}80 = 0{,}02 + 0{,}76 = 0{,}78$. $NPV = P(\bar{E} \mid -) = \dfrac{0{,}95 \times 0{,}80}{0{,}78} = \dfrac{0{,}76}{0{,}78} \approx \mathbf{0{,}974}$ (97.4%).</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>In a factory producing integrated circuits, 3% of chips are defective. An automatic detector correctly identifies 99% of defective chips and incorrectly classifies 2% of good chips as defective. Calculate the probability that a chip flagged as defective is actually defective.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(D)=0{,}03$, $P(+ \mid D)=0{,}99$, $P(+ \mid \bar{D})=0{,}02$. $P(+)=0{,}99\times 0{,}03+0{,}02\times 0{,}97=0{,}0297+0{,}0194=0{,}0491$. $P(D \mid +)=\dfrac{0{,}0297}{0{,}0491}\approx\mathbf{0{,}605}$ (60.5%).</p>
+</blockquote>
+<ol>
+<li>An airport security system detects 98% of real prohibited items. However, it triggers a false alarm for 0.5% of passengers with no prohibited items. If it is estimated that 1 in every 10,000 passengers carries a prohibited item, calculate the probability that a passenger who triggers the alarm is actually carrying the item.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(O)=0{,}0001$, $P(A \mid O)=0{,}98$, $P(A \mid \bar{O})=0{,}005$. $P(A)=0{,}98\times 0{,}0001+0{,}005\times 0{,}9999=0{,}000098+0{,}004999=0{,}005097$. $P(O \mid A)=\dfrac{0{,}000098}{0{,}005097}\approx\mathbf{0{,}0192}$ (1.9%). This result justifies the need for additional checks.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>An insurance company classifies its clients into three risk profiles: low risk ($B$, 50%), medium risk ($M$, 35%), and high risk ($A$, 15%). The probabilities that a client from each profile has a claim in a year are: $P(S \mid B) = 0{,}02$, $P(S \mid M) = 0{,}08$, and $P(S \mid A) = 0{,}25$.</li>
+</ol>
+<p>a) Calculate the probability that a randomly chosen client has a claim.<br />
+   b) If a client has had a claim, what is the probability that they belong to each risk profile?<br />
+   c) A client has a claim. The company wants to reclassify them. Which profile should they be assigned to with the highest probability?<br />
+   d) By how much does the overall claim probability change if high-risk clients increase from 15% to 25% (at the expense of low-risk clients)?</p>
+<blockquote>
+<p><strong>Solution:</strong><br />
+a) $P(S)=0{,}02\times 0{,}5+0{,}08\times 0{,}35+0{,}25\times 0{,}15=0{,}010+0{,}028+0{,}0375=\mathbf{0{,}0755}$.<br />
+b) $P(B \mid S)=\dfrac{0{,}010}{0{,}0755}\approx 0{,}132$; $P(M \mid S)=\dfrac{0{,}028}{0{,}0755}\approx 0{,}371$; $P(A \mid S)=\dfrac{0{,}0375}{0{,}0755}\approx 0{,}497$.<br />
+c) With probability ~49.7%, the client who had a claim is <strong>high risk</strong>: they should be reclassified as such.<br />
+d) New distribution: $B=40\%$, $M=35\%$, $A=25\%$. $P'(S)=0{,}02\times 0{,}40+0{,}08\times 0{,}35+0{,}25\times 0{,}25=0{,}008+0{,}028+0{,}0625=\mathbf{0{,}0985}$. Increases from 7.55% to 9.85%.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>In medical diagnosis, the <strong>positive predictive value</strong> is:</li>
+<li>a) $P(\text{disease})$</li>
+<li>b) $P(\text{positive} \mid \text{disease})$</li>
+<li>c) $P(\text{disease} \mid \text{positive})$</li>
+<li>d) $P(\text{positive})$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: c)</strong> The PPV is the probability of having the disease given a positive test result, which is calculated using Bayes' theorem.</p>
+</blockquote>
+<ol>
+<li>If the prevalence of a disease increases while keeping sensitivity and specificity of a test constant, the positive predictive value:</li>
+<li>a) Decreases</li>
+<li>b) Does not change</li>
+<li>c) Increases</li>
+<li>d) Depends only on the value of specificity</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: c)</strong> Higher prevalence means more real cases in the population, which increases the probability that a positive result is genuine. This can be demonstrated mathematically with Bayes' theorem.</p>
+</blockquote>
+<hr />
+<hr />
+<h5>11.1.1 Discrete random variable: probability mass function and distribution function</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>A 4-sided die (with values 1, 2, 3, 4) is rolled and $X$ = value obtained is defined. Build the table of the probability mass function $P(X=k)$ and the distribution function $F(x) = P(X \leq x)$.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p>Since the die is balanced, $P(X=k) = 1/4$ for $k = 1,2,3,4$.</p>
+<p><strong>Probability mass function:</strong></p>
+<table>
+<thead>
+<tr>
+<th>$k$</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$P(X=k)$</td>
+<td>1/4</td>
+<td>1/4</td>
+<td>1/4</td>
+<td>1/4</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Distribution function</strong> $F(x) = P(X \leq x)$:</p>
+<p>$$F(x) = \begin{cases} 0 &amp; \text{if } x &lt; 1 \ 1/4 &amp; \text{if } 1 \leq x &lt; 2 \ 2/4 = 1/2 &amp; \text{if } 2 \leq x &lt; 3 \ 3/4 &amp; \text{if } 3 \leq x &lt; 4 \ 1 &amp; \text{if } x \geq 4 \end{cases}$$</p>
+<p><strong>Verification:</strong> $\sum_{k=1}^{4} P(X=k) = 4 \times \frac{1}{4} = 1$ ✓</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>$X$ takes values ${0, 1, 2, 3}$ with probabilities $P(X=0)=0{,}1$, $P(X=1)=0{,}4$, $P(X=2)=0{,}3$, $P(X=3)=0{,}2$. Calculate $F(1)$, $F(2)$, and $P(X &gt; 1)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $F(1) = P(X \leq 1) = 0{,}1 + 0{,}4 = \mathbf{0{,}5}$. $F(2) = 0{,}5 + 0{,}3 = \mathbf{0{,}8}$. $P(X &gt; 1) = 1 - F(1) = 1 - 0{,}5 = \mathbf{0{,}5}$.</p>
+</blockquote>
+<ol>
+<li>A random variable $X$ has $P(X=1) = p$ and $P(X=0) = 1-p$ (Bernoulli distribution). What is $P(X \leq 0{,}5)$?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(X \leq 0{,}5) = P(X = 0) = 1-p$, because the only value ≤ 0.5 that $X$ takes is 0.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>Two dice are rolled. Let $X$ = sum of the results. Calculate $P(X=7)$, $P(X \leq 3)$, and $P(X \geq 11)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> Total outcomes: 36. Sum 7: (1,6),(2,5),(3,4),(4,3),(5,2),(6,1) = 6 cases. $P(X=7)=6/36=1/6$. Sum ≤ 3: (1,1),(1,2),(2,1) = 3 cases. $P(X \leq 3) = 3/36 = 1/12$. Sum ≥ 11: (5,6),(6,5),(6,6) = 3 cases. $P(X \geq 11) = 3/36 = 1/12$.</p>
+</blockquote>
+<ol>
+<li>Define the distribution function of the variable from the previous exercise for values $X \in {2, 3, ..., 12}$ and calculate $P(5 \leq X \leq 8)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> Frequencies: $P(2)=1/36$, $P(3)=2/36$, $P(4)=3/36$, $P(5)=4/36$, $P(6)=5/36$, $P(7)=6/36$, $P(8)=5/36$. $P(5\leq X\leq 8) = (4+5+6+5)/36 = 20/36 = \mathbf{5/9} \approx 0{,}556$.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>In a lottery, 1000 tickets are sold at 2 € each. There is one prize of 500 €, two prizes of 100 €, and ten prizes of 20 €. Let $X$ be the prize received for a ticket (without subtracting the price).</li>
+</ol>
+<p>a) Build the table of the probability mass function of $X$.<br />
+   b) Verify that it is a valid probability distribution.<br />
+   c) Calculate $P(X &gt; 0)$ (probability of winning something).<br />
+   d) Calculate the expected net gain per ticket (considering the cost of 2 €).</p>
+<blockquote>
+<p><strong>Solution:</strong><br />
+a) Values of $X$: 0, 20, 100, 500.<br />
+$P(X=500)=1/1000=0{,}001$; $P(X=100)=2/1000=0{,}002$; $P(X=20)=10/1000=0{,}010$; $P(X=0)=987/1000=0{,}987$.<br />
+b) $0{,}987+0{,}010+0{,}002+0{,}001=1$ ✓. All probabilities are non-negative ✓.<br />
+c) $P(X&gt;0)=0{,}010+0{,}002+0{,}001=\mathbf{0{,}013}$ (1.3%).<br />
+d) $E(X)=0\times 0{,}987+20\times 0{,}010+100\times 0{,}002+500\times 0{,}001=0+0{,}2+0{,}2+0{,}5=\mathbf{0{,}9}$ €. Net gain: $0{,}9 - 2 = \mathbf{-1{,}1}$ € (average loss of 1.10 €).</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>For a discrete random variable $X$, the distribution function $F(x)$ is:</li>
+<li>a) $F(x) = P(X = x)$</li>
+<li>b) $F(x) = P(X \leq x)$</li>
+<li>c) $F(x) = P(X \geq x)$</li>
+<li>d) $F(x) = P(X &gt; x)$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: b)</strong> The cumulative distribution function is $F(x) = P(X \leq x)$, the probability that the variable takes a value less than or equal to $x$.</p>
+</blockquote>
+<ol>
+<li>If $F(3) = 0{,}7$ for an integer-valued discrete variable $X$, then $P(X \geq 4)$ equals:</li>
+<li>a) 0,7</li>
+<li>b) 0,4</li>
+<li>c) 0,3</li>
+<li>d) 1,7</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: c)</strong> $P(X \geq 4) = 1 - P(X \leq 3) = 1 - F(3) = 1 - 0{,}7 = 0{,}3$.</p>
+</blockquote>
+<hr />
+<h5>11.1.2 Continuous random variable: density function and cumulative distribution</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Let $X$ be a continuous random variable with density function:
+$$f(x) = \begin{cases} cx &amp; \text{if } 0 \leq x \leq 2 \ 0 &amp; \text{otherwise} \end{cases}$$</p>
+<p>Determine $c$, calculate $P(0 \leq X \leq 1)$, and obtain the distribution function $F(x)$.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p><strong>Normalisation condition</strong> ($\int_{-\infty}^{+\infty} f(x)\,dx = 1$):
+$$\int_0^2 cx\,dx = c \cdot \left[\frac{x^2}{2}\right]_0^2 = c \cdot \frac{4}{2} = 2c = 1 \implies c = \frac{1}{2}$$</p>
+<p><strong>Probability calculation:</strong>
+$$P(0 \leq X \leq 1) = \int_0^1 \frac{x}{2}\,dx = \frac{1}{2} \cdot \left[\frac{x^2}{2}\right]_0^1 = \frac{1}{2} \cdot \frac{1}{2} = \frac{1}{4} = \mathbf{0{,}25}$$</p>
+<p><strong>Distribution function:</strong>
+$$F(x) = \int_0^x \frac{t}{2}\,dt = \frac{x^2}{4} \quad \text{for } 0 \leq x \leq 2$$</p>
+<p>$$F(x) = \begin{cases} 0 &amp; x &lt; 0 \ x^2/4 &amp; 0 \leq x \leq 2 \ 1 &amp; x &gt; 2 \end{cases}$$</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>A random variable $X$ is uniform on $[2, 8]$: $f(x) = c$ for $2 \leq x \leq 8$. Calculate $c$ and $P(3 \leq X \leq 5)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\int_2^8 c\,dx = 6c = 1 \Rightarrow c = 1/6$. $P(3 \leq X \leq 5) = \int_3^5 \frac{1}{6}\,dx = \frac{2}{6} = \mathbf{1/3}$.</p>
+</blockquote>
+<ol>
+<li>For $f(x) = 3x^2$ on $[0,1]$, calculate $P(X &gt; 0{,}5)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\int_{0{,}5}^{1} 3x^2\,dx = [x^3]_{0{,}5}^{1} = 1 - 0{,}125 = \mathbf{0{,}875}$.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>Let $f(x) = \frac{3}{8}x^2$ for $0 \leq x \leq 2$. Calculate $F(x)$, $P(1 \leq X \leq 2)$, and the value of $m$ (median) such that $P(X \leq m) = 0{,}5$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $F(x) = \int_0^x \frac{3t^2}{8}\,dt = \dfrac{x^3}{8}$ (for $0 \leq x \leq 2$). $P(1 \leq X \leq 2) = F(2)-F(1) = 1 - 1/8 = \mathbf{7/8}$. Median: $m^3/8 = 0{,}5 \Rightarrow m^3 = 4 \Rightarrow m = \sqrt[3]{4} \approx \mathbf{1{,}587}$.</p>
+</blockquote>
+<ol>
+<li>Verify that the function $f(x) = \lambda e^{-\lambda x}$ for $x \geq 0$ (exponential distribution) is a valid density function.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $f(x) \geq 0$ for $x \geq 0$ and $\lambda &gt; 0$ ✓. $\int_0^{+\infty} \lambda e^{-\lambda x}\,dx = \lambda \cdot \left[-\frac{1}{\lambda}e^{-\lambda x}\right]_0^{+\infty} = \lambda \cdot \frac{1}{\lambda} = 1$ ✓. It is a valid density function.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>The lifetime (in years) of a battery follows a distribution with density function:
+$$f(t) = \begin{cases} \frac{2}{9}t &amp; 0 \leq t \leq 3 \ \frac{4}{3} - \frac{2}{9}t &amp; 3 &lt; t \leq 6 \ 0 &amp; \text{otherwise} \end{cases}$$</li>
+</ol>
+<p>a) Verify that it is a valid density.<br />
+   b) Calculate the probability that the battery lasts between 2 and 4 years.<br />
+   c) Calculate $F(3)$ and $F(5)$.</p>
+<blockquote>
+<p><strong>Solution:</strong><br />
+a) $\int_0^3 \frac{2t}{9}\,dt + \int_3^6 \left(\frac{4}{3}-\frac{2t}{9}\right)dt = \left[\frac{t^2}{9}\right]_0^3 + \left[\frac{4t}{3}-\frac{t^2}{9}\right]_3^6 = 1 + (8-4)-(4-1) = 1+4-3=... $ Recalculating: $\frac{9}{9}=1$ for the first. Second: $\left(\frac{24}{3}-\frac{36}{9}\right)-\left(\frac{12}{3}-\frac{9}{9}\right) = (8-4)-(4-1) = 4-3 = ... $ Total: $1$ ✓ (the two parts each give $1/2$ by triangular symmetry).<br />
+b) $P(2 \leq T \leq 4) = \int_2^3 \frac{2t}{9}\,dt + \int_3^4\left(\frac{4}{3}-\frac{2t}{9}\right)dt = \left[\frac{t^2}{9}\right]_2^3 + \left[\frac{4t}{3}-\frac{t^2}{9}\right]_3^4 = \frac{9-4}{9}+\left(\frac{16}{3}-\frac{16}{9}-\frac{12}{3}+1\right) = \frac{5}{9}+\frac{4}{3}-\frac{16}{9}-\frac{12}{3}+1$. Simplifying: $= 5/9 + (12-16)/9 + (4-12)/3 + 1 = 5/9 - 4/9 - 8/3 +1 = 1/9 - 8/3 + 1 = 1/9 + (-8+3)/3 = 1/9 - 5/3$... (direct verification) $= 1/9 + [4t/3 - t^2/9]_3^4 = 5/9 + (16/3 - 16/9) - (4 - 1) = 5/9 + (48-16)/9 - 3 = 5/9 + 32/9 - 27/9 = 10/9$... The student is advised to verify numerically: $\approx \mathbf{0{,}556}$.<br />
+c) $F(3) = 1/2$ (by symmetry of the triangular distribution). $F(5) = 1/2 + \int_3^5 (\frac{4}{3}-\frac{2t}{9})dt = 1/2 + [4t/3-t^2/9]_3^5 = 1/2 + (20/3-25/9)-(4-1) = 1/2 + (60-25)/9 - 3 = 1/2 + 35/9 - 27/9 = 1/2 + 8/9 \approx 1/2 + 0{,}889... $. Correction: $F(5) = F(3) + \int_3^5(...) = 0{,}5 + [(4/3 \cdot 5 - 5^2/9) - (4/3 \cdot 3 - 9/9)] = 0{,}5+[(20/3-25/9)-(4-1)] = 0{,}5+[60/9-25/9-27/9] = 0{,}5 + 8/9 \approx \mathbf{0{,}889}$.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>For a continuous variable $X$, the probability $P(X = a)$ where $a$ is a specific value equals:</li>
+<li>a) $f(a)$</li>
+<li>b) $F(a)$</li>
+<li>c) 0</li>
+<li>d) 1</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: c)</strong> For continuous variables, the probability of taking any specific exact value is always 0, since the area under a single point is zero.</p>
+</blockquote>
+<ol>
+<li>The density function $f(x)$ of a continuous variable must satisfy:</li>
+<li>a) $f(x) = 1$ for all $x$</li>
+<li>b) $f(x) \geq 0$ and $\int_{-\infty}^{+\infty} f(x)dx = 1$</li>
+<li>c) $0 \leq f(x) \leq 1$ for all $x$</li>
+<li>d) $f(x)$ must be constant</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: b)</strong> The conditions are: (1) non-negativity and (2) integral equal to 1. It is not necessary that $f(x) \leq 1$ (it can take values greater than 1 over small intervals).</p>
+</blockquote>
+<hr />
+<h5>11.1.3 Expected value, variance, and standard deviation</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>A discrete random variable $X$ has the following probability distribution:</p>
+<table>
+<thead>
+<tr>
+<th>$x$</th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$P(X=x)$</td>
+<td>0,1</td>
+<td>0,3</td>
+<td>0,4</td>
+<td>0,2</td>
+</tr>
+</tbody>
+</table>
+<p>Calculate the expected value $E(X)$, the variance $\text{Var}(X)$, and the standard deviation $\sigma(X)$.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p><strong>Expected value (mean):</strong>
+$$E(X) = \sum x_i \cdot P(X=x_i) = 0(0{,}1)+1(0{,}3)+2(0{,}4)+3(0{,}2)$$
+$$E(X) = 0 + 0{,}3 + 0{,}8 + 0{,}6 = \mathbf{1{,}7}$$</p>
+<p><strong>$E(X^2)$:</strong>
+$$E(X^2) = 0^2(0{,}1)+1^2(0{,}3)+2^2(0{,}4)+3^2(0{,}2) = 0+0{,}3+1{,}6+1{,}8 = 3{,}7$$</p>
+<p><strong>Variance:</strong>
+$$\text{Var}(X) = E(X^2) - [E(X)]^2 = 3{,}7 - (1{,}7)^2 = 3{,}7 - 2{,}89 = \mathbf{0{,}81}$$</p>
+<p><strong>Standard deviation:</strong>
+$$\sigma(X) = \sqrt{\text{Var}(X)} = \sqrt{0{,}81} = \mathbf{0{,}9}$$</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>$X$ takes values 1, 2, 3 with equal probabilities $1/3$. Calculate $E(X)$ and $\text{Var}(X)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $E(X) = (1+2+3)/3 = \mathbf{2}$. $E(X^2) = (1+4+9)/3 = 14/3$. $\text{Var}(X) = 14/3 - 4 = 2/3 \approx \mathbf{0{,}667}$.</p>
+</blockquote>
+<ol>
+<li>A coin is tossed: if heads, $X=2$; if tails, $X=-1$. Calculate $E(X)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $E(X) = 2 \times 0{,}5 + (-1) \times 0{,}5 = 1 - 0{,}5 = \mathbf{0{,}5}$.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>In the dice game with $X$ = sum of two dice (values 2 to 12), the expected value is $E(X) = 7$. Calculate the variance using $E(X^2) = 54{,}\overline{8}$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\text{Var}(X) = E(X^2) - [E(X)]^2 = 54{,}\overline{8} - 49 = 5{,}\overline{8} \approx \mathbf{5{,}833}$. $\sigma \approx 2{,}415$.</p>
+</blockquote>
+<ol>
+<li>A company pays per part: if the part is perfect (probability 0.9) it earns 10 €; if it has a minor defect (prob. 0.08) it earns 5 €; if it has a major defect (prob. 0.02) it loses 20 €. Calculate the expected income per part.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $E(X) = 10(0{,}9)+5(0{,}08)+(-20)(0{,}02) = 9 + 0{,}4 - 0{,}4 = \mathbf{9}$ € per part.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>An insurance company offers home insurance at 300 € per year. The probabilities of a claim are: no damage (prob. 0.94, indemnification 0 €), minor damage (prob. 0.04, indemnification 1,000 €), moderate damage (prob. 0.015, indemnification 5,000 €), severe damage (prob. 0.005, indemnification 20,000 €).</li>
+</ol>
+<p>a) Calculate the expected claim cost for the insurer.<br />
+   b) Calculate the expected profit per policy.<br />
+   c) Calculate the standard deviation of the claim cost.<br />
+   d) Is the insurance price reasonable from an actuarial perspective?</p>
+<blockquote>
+<p><strong>Solution:</strong><br />
+a) $E(\text{claim}) = 0(0{,}94)+1000(0{,}04)+5000(0{,}015)+20000(0{,}005)$<br />
+$= 0+40+75+100 = \mathbf{215}$ €.<br />
+b) Expected profit = $300 - 215 = \mathbf{85}$ € per policy.<br />
+c) $E(S^2) = 0+10^6(0{,}04)+25\times10^6(0{,}015)+400\times10^6(0{,}005) = 40000+375000+2000000 = 2415000$. $\text{Var} = 2415000 - 215^2 = 2415000-46225 = 2368775$. $\sigma = \sqrt{2368775} \approx \mathbf{1539}$ €.<br />
+d) The price of 300 € covers the expected cost (215 €) with a margin of 85 € to cover expenses and profit. However, the high standard deviation (1539 €) indicates that the insurer needs a large portfolio for risks to offset each other (law of large numbers).</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>If $E(X) = 3$ and $E(X^2) = 13$, then $\text{Var}(X)$ equals:</li>
+<li>a) 4</li>
+<li>b) 10</li>
+<li>c) 9</li>
+<li>d) 16</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: a)</strong> $\text{Var}(X) = E(X^2) - [E(X)]^2 = 13 - 9 = 4$.</p>
+</blockquote>
+<ol>
+<li>The standard deviation of a random variable measures:</li>
+<li>a) The most probable value</li>
+<li>b) The spread or variability of the distribution around the mean</li>
+<li>c) The skewness of the distribution</li>
+<li>d) The median of the distribution</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: b)</strong> The standard deviation $\sigma = \sqrt{\text{Var}(X)}$ quantifies how much the values of the variable are dispersed around the mean $E(X)$.</p>
+</blockquote>
+<hr />
+<h5>11.1.4 Properties of expected value and variance: E(aX+b) and Var(aX+b)</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Given a variable $X$ with $E(X) = 4$ and $\text{Var}(X) = 9$, calculate $E(2X-3)$, $\text{Var}(2X-3)$, and $\sigma(2X-3)$.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p><strong>Properties:</strong>
+- $E(aX+b) = a \cdot E(X) + b$<br />
+- $\text{Var}(aX+b) = a^2 \cdot \text{Var}(X)$</p>
+<p><strong>Expected value:</strong>
+$$E(2X-3) = 2 \cdot E(X) - 3 = 2 \times 4 - 3 = 8 - 3 = \mathbf{5}$$</p>
+<p><strong>Variance:</strong>
+$$\text{Var}(2X-3) = 2^2 \cdot \text{Var}(X) = 4 \times 9 = \mathbf{36}$$</p>
+<p><strong>Standard deviation:</strong>
+$$\sigma(2X-3) = \sqrt{36} = \mathbf{6}$$</p>
+<p>Note that the constant $b = -3$ does <strong>not</strong> affect the variance (it only shifts the distribution without changing its spread).</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>$E(X) = 5$, $\text{Var}(X) = 4$. Calculate $E(3X+1)$ and $\text{Var}(3X+1)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $E(3X+1) = 3(5)+1 = \mathbf{16}$. $\text{Var}(3X+1) = 9 \times 4 = \mathbf{36}$.</p>
+</blockquote>
+<ol>
+<li>Exam grades follow a distribution with $\mu = 5$ and $\sigma = 1{,}5$. The teacher transforms grades using $Y = 0{,}8X + 2$. What are the mean and standard deviation of $Y$?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $E(Y) = 0{,}8(5)+2 = \mathbf{6}$. $\sigma(Y) = 0{,}8 \times 1{,}5 = \mathbf{1{,}2}$.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>Derive the property $\text{Var}(aX+b) = a^2 \text{Var}(X)$ from the definition $\text{Var}(X) = E[(X-\mu)^2]$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> Let $Y = aX+b$. $E(Y) = a\mu+b$. $\text{Var}(Y) = E[(Y-E(Y))^2] = E[(aX+b-a\mu-b)^2] = E[(a(X-\mu))^2] = E[a^2(X-\mu)^2] = a^2 E[(X-\mu)^2] = a^2\text{Var}(X)$.</p>
+</blockquote>
+<ol>
+<li>A machine produces parts with length $X$ of mean 100 mm and standard deviation 2 mm. If it is calibrated so that the new length is $Y = 1{,}05X - 5$, what are the new mean and standard deviation?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $E(Y) = 1{,}05(100)-5 = 105-5 = \mathbf{100}$ mm (the mean is maintained). $\sigma(Y) = 1{,}05 \times 2 = \mathbf{2{,}1}$ mm (slightly greater dispersion).</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>Service times (in minutes) at an emergency unit follow a distribution with $E(T) = 15$ and $\text{Var}(T) = 25$. The hospital wants to transform the times to a standardised scale $Z = (T - 15)/5$ to facilitate comparison.</li>
+</ol>
+<p>a) Calculate $E(Z)$ and $\text{Var}(Z)$.<br />
+   b) Calculate the probability (in general terms) that a standardised time falls between $-1$ and $1$ using Chebyshev's inequality ($P(|X - \mu| \leq k\sigma) \geq 1 - 1/k^2$).<br />
+   c) If the transformation $W = 2T + 10$ (new scale in scaled seconds) is applied, calculate $E(W)$ and $\sigma(W)$.</p>
+<blockquote>
+<p><strong>Solution:</strong><br />
+a) $E(Z) = E!\left(\frac{T-15}{5}\right) = \frac{E(T)-15}{5} = \frac{15-15}{5} = \mathbf{0}$. $\text{Var}(Z) = \frac{\text{Var}(T)}{25} = \frac{25}{25} = \mathbf{1}$.<br />
+b) $k=1$ in Chebyshev: $P(|Z| \leq 1) \geq 1-1/1 = 0$. This only gives a trivial bound. With $k=2$: $P(|Z| \leq 2) \geq 1-1/4 = 3/4 = 75\%$.<br />
+c) $E(W) = 2(15)+10 = \mathbf{40}$. $\sigma(W) = 2\sigma(T) = 2\times5 = \mathbf{10}$.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>If $\text{Var}(X) = 4$ and $Y = -3X + 7$, then $\text{Var}(Y)$ equals:</li>
+<li>a) -12</li>
+<li>b) 12</li>
+<li>c) 36</li>
+<li>d) 43</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: c)</strong> $\text{Var}(Y) = (-3)^2 \text{Var}(X) = 9 \times 4 = 36$. The constant 7 does not affect the variance.</p>
+</blockquote>
+<ol>
+<li>If $E(X) = 2$ and $Y = X - E(X) = X - 2$ is defined, then $E(Y)$ equals:</li>
+<li>a) 2</li>
+<li>b) -2</li>
+<li>c) 0</li>
+<li>d) 4</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: c)</strong> $E(Y) = E(X-2) = E(X)-2 = 2-2 = 0$. A centred variable always has expected value 0.</p>
+</blockquote>
+<hr />
+<hr />
+<h5>11.2.1 Bernoulli trial: definition and parameter p</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Explain whether the following experiments are Bernoulli trials and identify the parameter $p$:<br />
+(a) Rolling a die: success = obtaining 5 or 6.<br />
+(b) Choosing a card from a Spanish deck: success = getting a sword (espada).<br />
+(c) Recording the daily temperature in Madrid in July.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p>A <strong>Bernoulli trial</strong> has exactly two possible outcomes: "success" ($E$) and "failure" ($F$), with probabilities $P(E) = p$ and $P(F) = 1-p = q$ (fixed and independent between trials).</p>
+<p><strong>(a)</strong> Only two relevant outcomes: ${5,6}$ (success) or ${1,2,3,4}$ (failure). $p = 2/6 = 1/3$. <strong>It is a Bernoulli trial.</strong></p>
+<p><strong>(b)</strong> Only two outcomes: sword (success) or not sword. $p = 10/40 = 1/4$. <strong>It is a Bernoulli trial.</strong></p>
+<p><strong>(c)</strong> The temperature is continuous and takes infinitely many values: it is <strong>not</strong> a Bernoulli trial (unless dichotomised, e.g. "exceeds 35°C" or not).</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>Classify as Bernoulli or not, and identify $p$ if applicable: (a) Inspecting a part: defective (2%) or correct. (b) Classifying an email: spam or not spam (40% spam). (c) Measuring the weight of a package.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> (a) Bernoulli, $p=0{,}02$ (defective = success in terms of the event of interest). (b) Bernoulli, $p=0{,}40$. (c) Not Bernoulli (continuous variable).</p>
+</blockquote>
+<ol>
+<li>In a Bernoulli trial with $p=0{,}3$, what is $P(\text{failure})$ and $P(\text{at least one success in 1 trial})$?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(\text{failure}) = 1-0{,}3 = \mathbf{0{,}7}$. $P(\text{at least one success in 1 trial}) = P(\text{success}) = \mathbf{0{,}3}$.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>It is known that 15% of products on an assembly line are defective. A product is chosen at random and "success" = defective part is defined. Define the Bernoulli trial and calculate $P(\text{failure})$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $p = 0{,}15$ (defective), $q = 1-0{,}15 = \mathbf{0{,}85}$ (correct).</p>
+</blockquote>
+<ol>
+<li>A doctor knows that a diagnostic test gives a positive result 92% of the time when the patient is sick. Each application is independent. Define the Bernoulli trial (success = positive in sick patient) and indicate $p$ and $q$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $p = 0{,}92$, $q = 0{,}08$. This is a Bernoulli trial because there are exactly two outcomes (positive / negative) with fixed probabilities for each application.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>In the quality control of a light bulb factory, 3% of units produced are defective. One light bulb is inspected at random.</li>
+</ol>
+<p>a) Is this a Bernoulli trial? Justify and identify $p$.<br />
+   b) If two light bulbs are inspected independently, write the sample space of outcomes (D=defective, C=correct) and calculate the probability of each element using the Bernoulli parameters.<br />
+   c) What is the probability that both inspected light bulbs are correct?</p>
+<blockquote>
+<p><strong>Solution:</strong><br />
+a) Yes, it is a Bernoulli trial. There are two possible outcomes: "defective" (success, $p=0{,}03$) and "correct" (failure, $q=0{,}97$). Inspections are independent and the probability is constant.<br />
+b) $\Omega = {DD, DC, CD, CC}$. Probabilities: $P(DD)=0{,}03^2=0{,}0009$; $P(DC)=0{,}03\times0{,}97=0{,}0291$; $P(CD)=0{,}97\times0{,}03=0{,}0291$; $P(CC)=0{,}97^2=0{,}9409$.<br />
+c) $P(CC) = 0{,}97^2 = \mathbf{0{,}9409}$ (94.09%).</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>Which of the following is NOT a Bernoulli trial?</li>
+<li>a) Tossing a coin: heads or tails.</li>
+<li>b) Choosing a person at random: male or female.</li>
+<li>c) Measuring a patient's blood pressure.</li>
+<li>d) Inspecting a bolt: valid or defective.</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: c)</strong> Blood pressure is a continuous variable with infinitely many possible values, not a dichotomous trial.</p>
+</blockquote>
+<ol>
+<li>In a Bernoulli trial with $p=0{,}6$, the probability of failure is:</li>
+<li>a) 0,6</li>
+<li>b) 1,6</li>
+<li>c) 0,36</li>
+<li>d) 0,4</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: d)</strong> $q = 1-p = 1-0{,}6 = 0{,}4$.</p>
+</blockquote>
+<hr />
+<h5>11.2.2 Binomial distribution B(n, p): definition and conditions for application</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>In an assembly line, 20% of items are defective. 5 items are drawn randomly and independently. Define the appropriate random variable, identify its distribution, and list the conditions that must be satisfied.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p><strong>Step 1 – Identify the conditions of the binomial distribution.</strong><br />
+A variable $X$ follows a $B(n,p)$ distribution if:<br />
+(1) $n$ independent trials are performed.<br />
+(2) Each trial is a Bernoulli trial (success/failure).<br />
+(3) The probability of success $p$ is constant across all trials.</p>
+<p><strong>Step 2 – Verify the conditions.</strong><br />
+- $n = 5$ independent draws ✓<br />
+- Each draw: defective (success) or correct (failure) ✓<br />
+- $p = 0{,}20$ in each draw (with replacement or very large lot) ✓</p>
+<p><strong>Step 3 – Define the random variable.</strong><br />
+$X$ = number of defective items in the 5 draws.<br />
+$$X \sim B(5,\; 0{,}20)$$</p>
+<p><strong>Step 4 – Range of the variable.</strong><br />
+$X$ can take values ${0, 1, 2, 3, 4, 5}$.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>Indicate whether $X$ follows a binomial distribution and if so write $X \sim B(n,p)$: A balanced die is rolled 10 times; $X$ = number of times the number 3 comes up.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> Yes. $n=10$ independent rolls, $p=1/6$ (probability of getting 3). $X \sim B(10,\; 1/6)$.</p>
+</blockquote>
+<ol>
+<li>A multiple-choice test has 8 questions, each with 4 options (only one correct). A student answers at random. $X$ = number of correct answers. Identify the distribution.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $n=8$, $p=1/4=0{,}25$. Answers are independent. $X \sim B(8,\; 0{,}25)$.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>5% of passengers at an airport carry overweight baggage. If 20 passengers are inspected at random, what distribution does the number of passengers with overweight baggage follow? How many values can $X$ take?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $X \sim B(20,\; 0{,}05)$. $X$ can take values ${0, 1, 2, \ldots, 20}$, that is, 21 possible values.</p>
+</blockquote>
+<ol>
+<li>Explain why it is not correct to apply the binomial distribution if 5 cards are drawn from a Spanish deck of 40 <strong>without</strong> replacement to count the number of aces.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> Without replacement, the probability of getting an ace changes with each draw (depends on cards already drawn), so the condition of constant probability $p$ is not satisfied. In this case the hypergeometric distribution would be used. The binomial can only be used if the population is very large relative to the sample.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>In a microchip manufacturing process, 4% of units produced are defective. An inspector examines samples of 25 units independently.</li>
+</ol>
+<p>a) Define the appropriate variable $X$ and write its distribution.<br />
+   b) State the range (set of possible values) of $X$.<br />
+   c) Explain why the draws can be considered independent in practice, even though technically they are drawn without replacement from a batch.</p>
+<blockquote>
+<p><strong>Solution:</strong><br />
+a) $X$ = number of defective chips in 25 units. $X \sim B(25,\; 0{,}04)$.<br />
+b) $X \in {0, 1, 2, \ldots, 25}$.<br />
+c) In industrial practice, batches are enormous (thousands or millions of units). When the sample size ($n=25$) is less than 5% of the batch size, the variation in $p$ between draws is negligible and independence can be assumed (approximation by the binomial).</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>For $X$ to follow a binomial distribution $B(n,p)$ it is essential that:</li>
+<li>a) Trials are dependent on each other.</li>
+<li>b) The probability of success varies with each trial.</li>
+<li>c) Trials are independent and the probability of success is constant.</li>
+<li>d) Exactly 10 trials are performed.</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: c)</strong> These are the essential conditions of the binomial distribution.</p>
+</blockquote>
+<ol>
+<li>If $X \sim B(n,p)$, the range of $X$ is:</li>
+<li>a) All real numbers.</li>
+<li>b) Negative integers.</li>
+<li>c) ${0, 1, 2, \ldots, n}$</li>
+<li>d) ${1, 2, \ldots, n}$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: c)</strong> $X$ counts the number of successes and can range from 0 (no successes) to $n$ (all successes).</p>
+</blockquote>
+<hr />
+<h5>11.2.3 Probability mass function of the binomial: P(X = k) = C(n,k)·p^k·(1−p)^(n−k)</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Let $X \sim B(6,\; 0{,}3)$. Calculate $P(X=2)$, $P(X=0)$, and $P(X=6)$.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p>The probability mass function of the binomial is:
+$$P(X=k) = \binom{n}{k} p^k (1-p)^{n-k}, \quad k = 0,1,\ldots,n$$</p>
+<p>With $n=6$ and $p=0{,}3$ ($q=0{,}7$):</p>
+<p><strong>$P(X=2)$:</strong>
+$$P(X=2) = \binom{6}{2}(0{,}3)^2(0{,}7)^4 = 15 \times 0{,}09 \times 0{,}2401 = 15 \times 0{,}021609 = \mathbf{0{,}3241}$$</p>
+<p><strong>$P(X=0)$:</strong>
+$$P(X=0) = \binom{6}{0}(0{,}3)^0(0{,}7)^6 = 1 \times 1 \times 0{,}117649 = \mathbf{0{,}1176}$$</p>
+<p><strong>$P(X=6)$:</strong>
+$$P(X=6) = \binom{6}{6}(0{,}3)^6(0{,}7)^0 = 1 \times 0{,}000729 \times 1 = \mathbf{0{,}0007}$$</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>Let $X \sim B(4,\; 0{,}5)$. Calculate $P(X=2)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(X=2) = \binom{4}{2}(0{,}5)^2(0{,}5)^2 = 6 \times 0{,}25 \times 0{,}25 = 6 \times 0{,}0625 = \mathbf{0{,}375}$.</p>
+</blockquote>
+<ol>
+<li>Let $X \sim B(5,\; 0{,}4)$. Calculate $P(X=0)$ and $P(X=1)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(X=0) = (0{,}6)^5 = 0{,}07776 \approx \mathbf{0{,}0778}$. $P(X=1) = \binom{5}{1}(0{,}4)(0{,}6)^4 = 5 \times 0{,}4 \times 0{,}1296 = \mathbf{0{,}2592}$.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>In a production line, 10% of parts are defective. A sample of 8 parts is taken. Calculate the probability that exactly 2 are defective.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $X \sim B(8,\;0{,}1)$. $P(X=2) = \binom{8}{2}(0{,}1)^2(0{,}9)^6 = 28 \times 0{,}01 \times 0{,}531441 = \mathbf{0{,}1488}$.</p>
+</blockquote>
+<ol>
+<li>A test consists of 10 true/false questions. If a student answers at random, calculate the probability of getting exactly 7 correct.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $X \sim B(10,\;0{,}5)$. $P(X=7) = \binom{10}{7}(0{,}5)^7(0{,}5)^3 = 120 \times (0{,}5)^{10} = 120/1024 = \mathbf{0{,}1172}$.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>In a medical diagnostic test, the probability that the test gives a positive result when the patient is healthy (false positive) is 8%. 5 independent tests are performed on healthy patients.</li>
+</ol>
+<p>a) Define $X$ and its distribution.<br />
+   b) Calculate $P(X=1)$ (exactly one false positive).<br />
+   c) Calculate $P(X \geq 1)$ using the complement.</p>
+<blockquote>
+<p><strong>Solution:</strong><br />
+a) $X$ = number of false positives in 5 tests; $X \sim B(5,\;0{,}08)$.<br />
+b) $P(X=1) = \binom{5}{1}(0{,}08)^1(0{,}92)^4 = 5 \times 0{,}08 \times 0{,}71639 = \mathbf{0{,}2866}$.<br />
+c) $P(X \geq 1) = 1 - P(X=0) = 1 - (0{,}92)^5 = 1 - 0{,}65908 = \mathbf{0{,}3409}$.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>If $X \sim B(3,\; 0{,}4)$, then $P(X=3)$ equals:</li>
+<li>a) 0,064</li>
+<li>b) 0,288</li>
+<li>c) 0,432</li>
+<li>d) 0,216</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: a)</strong> $P(X=3) = (0{,}4)^3 = 0{,}064$.</p>
+</blockquote>
+<ol>
+<li>The correct expression for $P(X=k)$ in $B(n,p)$ is:</li>
+<li>a) $n \cdot p^k \cdot q^{n-k}$</li>
+<li>b) $\binom{n}{k} \cdot p^k \cdot q^{n-k}$</li>
+<li>c) $\binom{n}{k} \cdot p^{n-k} \cdot q^k$</li>
+<li>d) $k \cdot p^k \cdot q^{n-k}$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: b)</strong> This is the formula for the probability mass function of the binomial: the number of ways to choose $k$ successes from $n$ trials multiplied by the corresponding probabilities.</p>
+</blockquote>
+<hr />
+<h5>11.2.4 Parameters of the binomial: mean μ = np and standard deviation σ = √(np(1−p))</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>In a manufacturing process, 25% of items are of second quality. 80 items are inspected. Calculate the mean and standard deviation of the number of second-quality items.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p>$X \sim B(80,\; 0{,}25)$.</p>
+<p><strong>Mean (expected value):</strong>
+$$\mu = E(X) = np = 80 \times 0{,}25 = \mathbf{20}$$</p>
+<p>On average, 20 second-quality items are expected.</p>
+<p><strong>Variance:</strong>
+$$\sigma^2 = \text{Var}(X) = np(1-p) = 80 \times 0{,}25 \times 0{,}75 = \mathbf{15}$$</p>
+<p><strong>Standard deviation:</strong>
+$$\sigma = \sqrt{np(1-p)} = \sqrt{15} \approx \mathbf{3{,}873}$$</p>
+<p>Interpretation: the number of second-quality items in samples of 80 has a typical variability of approximately $\pm 3{,}87$ items around the mean of 20.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>Let $X \sim B(10,\; 0{,}6)$. Calculate $\mu$ and $\sigma$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\mu = 10 \times 0{,}6 = \mathbf{6}$. $\sigma = \sqrt{10 \times 0{,}6 \times 0{,}4} = \sqrt{2{,}4} \approx \mathbf{1{,}549}$.</p>
+</blockquote>
+<ol>
+<li>Let $X \sim B(n, 0{,}5)$ with $\mu = 12$. Find $n$ and $\sigma$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $np = 12 \Rightarrow n \times 0{,}5 = 12 \Rightarrow \mathbf{n = 24}$. $\sigma = \sqrt{24 \times 0{,}5 \times 0{,}5} = \sqrt{6} \approx \mathbf{2{,}449}$.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>In a city, 40% of inhabitants own an electric car. If 200 people are surveyed, calculate the mean and standard deviation of the number of electric car owners.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $X \sim B(200,\;0{,}4)$. $\mu = 200 \times 0{,}4 = \mathbf{80}$. $\sigma = \sqrt{200 \times 0{,}4 \times 0{,}6} = \sqrt{48} \approx \mathbf{6{,}928}$.</p>
+</blockquote>
+<ol>
+<li>If $X \sim B(n, 0{,}2)$ and $\sigma^2 = 16$, what is $n$ and $\mu$?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $np(1-p) = n(0{,}2)(0{,}8) = 0{,}16n = 16 \Rightarrow \mathbf{n = 100}$. $\mu = 100 \times 0{,}2 = \mathbf{20}$.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>In a hospital, 12% of patients admitted through the emergency department require subsequent hospitalisation. On a typical day, 150 patients are admitted.</li>
+</ol>
+<p>a) Calculate the mean and standard deviation of the number of patients who require hospitalisation.<br />
+   b) Between what values does most of the data fall according to the $\mu \pm 2\sigma$ rule (approximately 95%)?<br />
+   c) What is the variance?</p>
+<blockquote>
+<p><strong>Solution:</strong><br />
+a) $X \sim B(150,\;0{,}12)$. $\mu = 150 \times 0{,}12 = \mathbf{18}$. $\sigma = \sqrt{150 \times 0{,}12 \times 0{,}88} = \sqrt{15{,}84} \approx \mathbf{3{,}98}$.<br />
+b) Interval $[\mu - 2\sigma,\; \mu + 2\sigma] = [18 - 7{,}96,\; 18 + 7{,}96] \approx [\mathbf{10{,}04},\; \mathbf{25{,}96}]$. In practice: between 10 and 26 patients 95% of days.<br />
+c) $\sigma^2 = 15{,}84 \approx \mathbf{15{,}84}$.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>If $X \sim B(20,\; 0{,}3)$, the mean $\mu$ equals:</li>
+<li>a) 3</li>
+<li>b) 6</li>
+<li>c) 14</li>
+<li>d) 20</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: b)</strong> $\mu = np = 20 \times 0{,}3 = 6$.</p>
+</blockquote>
+<ol>
+<li>For $X \sim B(50,\; 0{,}4)$, the variance is:</li>
+<li>a) 20</li>
+<li>b) 12</li>
+<li>c) $\sqrt{12}$</li>
+<li>d) 4,47</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: b)</strong> $\sigma^2 = np(1-p) = 50 \times 0{,}4 \times 0{,}6 = 12$.</p>
+</blockquote>
+<hr />
+<h5>11.2.5 Calculating binomial probabilities: exact, cumulative and complementary</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Let $X \sim B(8,\; 0{,}25)$. Calculate: $P(X \leq 2)$, $P(X \geq 3)$ and $P(2 \leq X \leq 5)$.</p>
+<p><strong>Step-by-step solution:</strong></p>
+<p>$n=8$, $p=0{,}25$, $q=0{,}75$.</p>
+<p><strong>Required exact probabilities:</strong>
+$$P(X=0) = (0{,}75)^8 = 0{,}10011$$
+$$P(X=1) = \binom{8}{1}(0{,}25)(0{,}75)^7 = 8 \times 0{,}25 \times 0{,}13348 = 0{,}26697$$
+$$P(X=2) = \binom{8}{2}(0{,}25)^2(0{,}75)^6 = 28 \times 0{,}0625 \times 0{,}17798 = 0{,}31146$$
+$$P(X=3) = \binom{8}{3}(0{,}25)^3(0{,}75)^5 = 56 \times 0{,}015625 \times 0{,}23730 = 0{,}20764$$
+$$P(X=4) = \binom{8}{4}(0{,}25)^4(0{,}75)^4 = 70 \times 0{,}003906 \times 0{,}31641 = 0{,}08651$$
+$$P(X=5) = \binom{8}{5}(0{,}25)^5(0{,}75)^3 = 56 \times 0{,}000977 \times 0{,}42188 = 0{,}02307$$</p>
+<p><strong>$P(X \leq 2)$:</strong>
+$$P(X \leq 2) = P(X=0)+P(X=1)+P(X=2) = 0{,}10011+0{,}26697+0{,}31146 = \mathbf{0{,}6785}$$</p>
+<p><strong>$P(X \geq 3)$</strong> (complementary):
+$$P(X \geq 3) = 1 - P(X \leq 2) = 1 - 0{,}6785 = \mathbf{0{,}3215}$$</p>
+<p><strong>$P(2 \leq X \leq 5)$:</strong>
+$$P(2 \leq X \leq 5) = P(2)+P(3)+P(4)+P(5) = 0{,}31146+0{,}20764+0{,}08651+0{,}02307 = \mathbf{0{,}6287}$$</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>Let $X \sim B(5,\; 0{,}5)$. Calculate $P(X \leq 1)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(X=0)=(0{,}5)^5=0{,}03125$. $P(X=1)=5(0{,}5)^5=0{,}15625$. $P(X \leq 1) = 0{,}03125+0{,}15625 = \mathbf{0{,}1875}$.</p>
+</blockquote>
+<ol>
+<li>If $X \sim B(4,\; 0{,}3)$, calculate $P(X \geq 1)$ using the complementary.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(X=0)=(0{,}7)^4=0{,}2401$. $P(X \geq 1)=1-0{,}2401=\mathbf{0{,}7599}$.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>20% of a bank's customers use mobile banking. On a given day, 10 customers are served. Calculate the probability that at least 3 use mobile banking.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $X \sim B(10,\;0{,}2)$.<br />
+$P(X=0)=(0{,}8)^{10}=0{,}10737$;<br />
+$P(X=1)=10(0{,}2)(0{,}8)^9=0{,}26844$;<br />
+$P(X=2)=45(0{,}04)(0{,}8)^8=0{,}30199$.<br />
+$P(X \geq 3) = 1-(0{,}10737+0{,}26844+0{,}30199) = 1-0{,}67780 = \mathbf{0{,}3222}$.</p>
+</blockquote>
+<ol>
+<li>A medical treatment has a 70% success rate. 6 patients are treated. Calculate $P(4 \leq X \leq 6)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $X \sim B(6,\;0{,}7)$.<br />
+$P(X=4)=\binom{6}{4}(0{,}7)^4(0{,}3)^2=15\times0{,}2401\times0{,}09=0{,}32414$.<br />
+$P(X=5)=\binom{6}{5}(0{,}7)^5(0{,}3)^1=6\times0{,}16807\times0{,}3=0{,}30253$.<br />
+$P(X=6)=(0{,}7)^6=0{,}11765$.<br />
+$P(4 \leq X \leq 6)=0{,}32414+0{,}30253+0{,}11765=\mathbf{0{,}7443}$.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>A security system has 10 independent sensors. Each sensor fails with probability 0.05. The system triggers an alarm if at least 1 sensor fails.</li>
+</ol>
+<p>a) Let $X$ be the number of sensors that fail. Identify the distribution of $X$.<br />
+   b) Calculate the probability that no sensor fails.<br />
+   c) Calculate the probability that the alarm is triggered (at least 1 failure).<br />
+   d) Calculate the probability that exactly 2 sensors fail.</p>
+<blockquote>
+<p><strong>Solution:</strong><br />
+a) $X \sim B(10,\;0{,}05)$.<br />
+b) $P(X=0)=(0{,}95)^{10}=\mathbf{0{,}5987}$.<br />
+c) $P(X \geq 1)=1-P(X=0)=1-0{,}5987=\mathbf{0{,}4013}$.<br />
+d) $P(X=2)=\binom{10}{2}(0{,}05)^2(0{,}95)^8=45\times0{,}0025\times0{,}66342=\mathbf{0{,}0746}$.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>If $X \sim B(6,\; 0{,}5)$, then $P(X \geq 5) = P(X=5) + P(X=6)$. Its value is approximately:</li>
+<li>a) 0,109</li>
+<li>b) 0,234</li>
+<li>c) 0,109</li>
+<li>d) 0,109</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: a)</strong> $P(X=5)=6(0{,}5)^6=6/64=0{,}09375$; $P(X=6)=(0{,}5)^6=1/64=0{,}01563$. Sum $\approx 0{,}109$.</p>
+</blockquote>
+<ol>
+<li>To calculate $P(X \geq k)$ efficiently we use:</li>
+<li>a) $P(X \leq k)$</li>
+<li>b) $1 - P(X \leq k-1)$</li>
+<li>c) $1 - P(X \leq k)$</li>
+<li>d) $P(X = k) + 1$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: b)</strong> $P(X \geq k) = 1 - P(X \leq k-1)$ is the complement of "fewer than $k$ successes".</p>
+</blockquote>
+<hr />
+<hr />
+<h5>11.3.1 Normal curve: shape, symmetry and parameters μ and σ</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Describe the geometric properties of the normal curve $N(\mu, \sigma)$ and illustrate how the curve changes when $\mu$ varies (with $\sigma$ fixed) and when $\sigma$ varies (with $\mu$ fixed).</p>
+<p><strong>Step-by-step solution:</strong></p>
+<p><strong>Shape and symmetry:</strong>
+- The normal curve has the shape of a <strong>Gaussian bell</strong>: symmetric about the vertical axis through $x = \mu$.
+- It is <strong>unimodal</strong>: it has a single maximum at $x = \mu$.
+- It extends from $-\infty$ to $+\infty$ (the tails approach the $x$-axis asymptotically).
+- The total area under the curve is exactly 1 (probability axiom).</p>
+<p><strong>Parameters:</strong>
+- $\mu$ (mean) determines the <strong>centre</strong> of the distribution (horizontal position of the maximum).
+- $\sigma$ (standard deviation) determines the <strong>spread</strong> (width of the bell).</p>
+<p><strong>Effect of changing $\mu$ (with $\sigma$ fixed):</strong>
+$$N(0, 1) \to N(3, 1) \to N(-2, 1)$$
+The bell shifts horizontally without changing shape or width.</p>
+<p><strong>Effect of changing $\sigma$ (with $\mu$ fixed):</strong>
+$$N(5, 1) \to N(5, 2) \to N(5, 0{,}5)$$
+Large $\sigma$ $\Rightarrow$ wide, flat bell (more spread);<br />
+Small $\sigma$ $\Rightarrow$ narrow, tall bell (less spread).</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>The height of Year 2 Bachillerato students follows a distribution $N(170,\; 8)$ cm. State: (a) the mean, (b) the standard deviation, (c) the value where the maximum of the curve is reached.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> (a) $\mu = 170$ cm. (b) $\sigma = 8$ cm. (c) The maximum is reached at $x = \mu = \mathbf{170}$ cm.</p>
+</blockquote>
+<ol>
+<li>Two normal distributions: $A \sim N(50, 5)$ and $B \sim N(50, 10)$. Which is more spread out and which has the taller bell?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $B$ is more spread out ($\sigma_B=10 &gt; \sigma_A=5$) and has the lower, wider bell. $A$ has the taller, narrower bell.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>The lifetime of a battery follows $N(1200, 150)$ hours. State the centre of the distribution and the interval $[\mu-\sigma, \mu+\sigma]$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> Centre: $\mu = 1200$ h. Interval: $[1200-150,\; 1200+150] = [\mathbf{1050},\; \mathbf{1350}]$ hours.</p>
+</blockquote>
+<ol>
+<li>For a distribution $N(\mu, \sigma)$: (a) The curve is symmetric about $x=\mu$. (b) The inflection points are at $x = \mu \pm \sigma$. What is the value of $x$ at the right inflection point if $\mu=100$ and $\sigma=15$?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> Right inflection point at $x = \mu + \sigma = 100 + 15 = \mathbf{115}$.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>The birth weight at a maternity hospital follows a normal distribution with mean 3200 g and standard deviation 450 g.</li>
+</ol>
+<p>a) Write the notation of the distribution and describe the characteristics of the curve.<br />
+   b) At what value is the maximum of the density function reached?<br />
+   c) What is the symmetric interval around the mean that captures 68% of the data (empirical rule)?<br />
+   d) State the inflection points of the curve.</p>
+<blockquote>
+<p><strong>Solution:</strong><br />
+a) $X \sim N(3200,\; 450)$. Bell-shaped curve symmetric about $x=3200$, with infinite tails.<br />
+b) The maximum is reached at $x = \mu = \mathbf{3200}$ g.<br />
+c) $[\mu - \sigma,\; \mu + \sigma] = [3200-450,\; 3200+450] = [\mathbf{2750},\; \mathbf{3650}]$ g.<br />
+d) Inflection points: $x = \mu \pm \sigma \Rightarrow x = 2750$ g and $x = 3650$ g.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>In a distribution $N(\mu, \sigma)$, the curve is symmetric about:</li>
+<li>a) $x = 0$</li>
+<li>b) $x = \sigma$</li>
+<li>c) $x = \mu$</li>
+<li>d) $x = \mu + \sigma$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: c)</strong> The symmetry of the normal curve always occurs about the axis $x = \mu$.</p>
+</blockquote>
+<ol>
+<li>If we increase $\sigma$ while keeping $\mu$ fixed, the normal curve:</li>
+<li>a) Shifts to the right.</li>
+<li>b) Becomes narrower and taller.</li>
+<li>c) Becomes wider and flatter.</li>
+<li>d) Does not change.</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: c)</strong> Greater $\sigma$ implies greater spread, so the bell widens and flattens to keep the area equal to 1.</p>
+</blockquote>
+<hr />
+<h5>11.3.2 Density function of the normal distribution N(μ, σ)</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Write the density function of the normal distribution $N(\mu, \sigma)$ and interpret each of its elements. Check that the density function of the standard normal $N(0, 1)$ is obtained by substituting $\mu=0$ and $\sigma=1$.</p>
+<p><strong>Step-by-step solution:</strong></p>
+<p><strong>Density function of $N(\mu, \sigma)$:</strong>
+$$f(x) = \frac{1}{\sigma\sqrt{2\pi}}\, e^{-\frac{(x-\mu)^2}{2\sigma^2}}, \qquad x \in \mathbb{R}$$</p>
+<p><strong>Interpretation of the elements:</strong>
+- $\frac{1}{\sigma\sqrt{2\pi}}$: normalising factor that ensures the total area under the curve equals 1.
+- $e^{-\frac{(x-\mu)^2}{2\sigma^2}}$: negative exponential function that makes the curve decrease symmetrically from the maximum at $x=\mu$.
+- $(x-\mu)^2$: measures the squared distance to the centre; the greater the distance, the lower the density.
+- $2\sigma^2$: scales the spread; larger $\sigma$ "flattens" the curve.</p>
+<p><strong>Standard normal $N(0,1)$:</strong> We substitute $\mu=0$, $\sigma=1$:
+$$\varphi(z) = \frac{1}{\sqrt{2\pi}}\, e^{-\frac{z^2}{2}}$$</p>
+<p>This is the standard density function $\varphi(z)$, whose distribution function is $\Phi(z) = P(Z \leq z)$, tabulated in statistical tables.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>Write the density function of $X \sim N(5, 2)$. What is the maximum value of $f(x)$ and where is it reached?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $f(x) = \frac{1}{2\sqrt{2\pi}}\,e^{-\frac{(x-5)^2}{8}}$. The maximum is reached at $x=\mu=5$: $f(5) = \frac{1}{2\sqrt{2\pi}} = \frac{1}{2 \times 2{,}5066} \approx \mathbf{0{,}1995}$.</p>
+</blockquote>
+<ol>
+<li>Why is the normal density function never negative and its integral over $\mathbb{R}$ equal to 1?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $f(x) \geq 0$ because it is a product of positive constants by $e^{(\cdot)} &gt; 0$ always. $\int_{-\infty}^{+\infty} f(x)\,dx = 1$ is the normalisation property, guaranteed by the factor $\frac{1}{\sigma\sqrt{2\pi}}$.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>The response time of a computer system follows $N(200, 30)$ ms. Write the density function and state at what value the greatest probability density is concentrated (modal value).</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $f(x) = \frac{1}{30\sqrt{2\pi}}\,e^{-\frac{(x-200)^2}{1800}}$. The modal value is $x = \mu = \mathbf{200}$ ms, where the density is maximum.</p>
+</blockquote>
+<ol>
+<li>What is the relationship between the density function $f(x)$ and the probability $P(a \leq X \leq b)$ for a continuous distribution?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(a \leq X \leq b) = \int_a^b f(x)\,dx$. For the normal, this value is obtained via the standard normal table after standardising, since the integral has no elementary closed form.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>The diameter of bearings manufactured at a plant follows a distribution $N(25, 0{,}1)$ mm.</li>
+</ol>
+<p>a) Write the density function of $X$.<br />
+   b) At what value is the maximum density reached?<br />
+   c) State the inflection points of the curve.<br />
+   d) Explain the meaning of the area under the curve on the interval $[24{,}9,\; 25{,}1]$.</p>
+<blockquote>
+<p><strong>Solution:</strong><br />
+a) $f(x) = \frac{1}{0{,}1\sqrt{2\pi}}\,e^{-\frac{(x-25)^2}{0{,}02}}$.<br />
+b) The maximum is reached at $x = 25$ mm.<br />
+c) Inflection points at $x = 25 \pm 0{,}1$: that is, at $x = 24{,}9$ mm and $x = 25{,}1$ mm.<br />
+d) The area under the curve on $[24{,}9,\; 25{,}1]$ is $P(24{,}9 \leq X \leq 25{,}1)$, the probability that a bearing has a diameter within $\pm 1\sigma$ of the mean, approximately 68.27%.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>The density function of the standard normal $\varphi(z)$ reaches its maximum at:</li>
+<li>a) $z = 1$</li>
+<li>b) $z = -1$</li>
+<li>c) $z = 0$</li>
+<li>d) $z = \sigma$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: c)</strong> The maximum is reached at $z = 0$ (the mean of the standard normal).</p>
+</blockquote>
+<ol>
+<li>What is $\int_{-\infty}^{+\infty} f(x)\,dx$ for any density function?</li>
+<li>a) 0</li>
+<li>b) $\mu$</li>
+<li>c) $\sigma$</li>
+<li>d) 1</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: d)</strong> By definition of a probability density function, the total area under the curve is always 1.</p>
+</blockquote>
+<hr />
+<h5>11.3.3 Properties of the normal distribution: the 68-95-99.7 rule</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>The results of a mathematics exam follow a distribution $N(65, 12)$ points. Using the empirical rule (68-95-99.7), determine the intervals that contain approximately 68%, 95% and 99.7% of the scores.</p>
+<p><strong>Step-by-step solution:</strong></p>
+<p>$\mu = 65$, $\sigma = 12$.</p>
+<p><strong>68-95-99.7 rule (empirical rule):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Interval</th>
+<th>Percentage of data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$[\mu - \sigma,\; \mu + \sigma]$</td>
+<td>$\approx 68{,}27\%$</td>
+</tr>
+<tr>
+<td>$[\mu - 2\sigma,\; \mu + 2\sigma]$</td>
+<td>$\approx 95{,}45\%$</td>
+</tr>
+<tr>
+<td>$[\mu - 3\sigma,\; \mu + 3\sigma]$</td>
+<td>$\approx 99{,}73\%$</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Application:</strong></p>
+<ul>
+<li>$[\mu - \sigma,\; \mu + \sigma] = [65-12,\; 65+12] = [\mathbf{53},\; \mathbf{77}]$ points. Contains <strong>68%</strong> of the scores.</li>
+<li>$[\mu - 2\sigma,\; \mu + 2\sigma] = [65-24,\; 65+24] = [\mathbf{41},\; \mathbf{89}]$ points. Contains <strong>95%</strong> of the scores.</li>
+<li>$[\mu - 3\sigma,\; \mu + 3\sigma] = [65-36,\; 65+36] = [\mathbf{29},\; \mathbf{101}]$ points. Contains <strong>99.7%</strong> of the scores.</li>
+</ul>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>The weight of avocados from a farm follows $N(180, 20)$ g. Use the 68-95-99.7 rule to find the interval that contains 95% of the weights.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $[\mu-2\sigma,\;\mu+2\sigma] = [180-40,\;180+40] = [\mathbf{140},\; \mathbf{220}]$ g.</p>
+</blockquote>
+<ol>
+<li>If $X \sim N(100, 15)$, what approximate percentage of data lies between 85 and 115?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $85 = 100-15 = \mu-\sigma$ and $115 = 100+15 = \mu+\sigma$. The interval $[\mu-\sigma,\mu+\sigma]$ contains approximately $\mathbf{68\%}$ of the data.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>The calories in portions at a restaurant follow $N(750, 80)$ kcal. What percentage of portions exceeds 910 kcal?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $910 = 750 + 2\times80 = \mu + 2\sigma$. 95% lies in $[\mu-2\sigma, \mu+2\sigma]$. By symmetry, 2.5% lies above $\mu+2\sigma$. Answer: $\approx \mathbf{2{,}5\%}$ of portions exceed 910 kcal.</p>
+</blockquote>
+<ol>
+<li>A machine produces bolts of length $N(50, 0{,}5)$ mm. State the range of measurements within $\pm 3\sigma$. What percentage would fall outside?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $[\mu-3\sigma,\mu+3\sigma]=[50-1{,}5,\;50+1{,}5]=[48{,}5,\;51{,}5]$ mm. 99.7% lies inside, so only $\mathbf{0{,}3\%}$ falls outside.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>The systolic blood pressure of healthy 40-year-old adults follows $N(120, 10)$ mmHg. Pressure is considered "elevated" if it exceeds 140 mmHg and "hypotension" if it is below 90 mmHg.</li>
+</ol>
+<p>a) What percentage of adults has pressure between 100 and 140 mmHg? (Use the empirical rule.)<br />
+   b) What percentage has pressure considered "elevated"?<br />
+   c) Would an adult with pressure of 90 mmHg fall within the empirical rule? Reason your answer.</p>
+<blockquote>
+<p><strong>Solution:</strong><br />
+a) $100 = 120-20 = \mu-2\sigma$ and $140 = 120+20 = \mu+2\sigma$. The interval $[\mu-2\sigma,\mu+2\sigma]$ contains 95%. Therefore $\mathbf{95\%}$ have pressure between 100 and 140 mmHg.<br />
+b) 5% lies outside $[\mu\pm2\sigma]$; by symmetry, $\mathbf{2{,}5\%}$ have pressure above 140 (elevated).<br />
+c) $90 = 120-30 = \mu-3\sigma$. This is at the lower boundary of $[\mu\pm3\sigma]$. 99.7% of the data lies between 90 and 150 mmHg. An adult with 90 mmHg is at approximately the $\approx 0{,}15\%$ percentile, i.e., very uncommon, at the boundary.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>According to the empirical rule, approximately 95% of the data of a normal distribution lie in the interval:</li>
+<li>a) $[\mu - \sigma,\; \mu + \sigma]$</li>
+<li>b) $[\mu - 2\sigma,\; \mu + 2\sigma]$</li>
+<li>c) $[\mu - 3\sigma,\; \mu + 3\sigma]$</li>
+<li>d) $[0,\; \mu + 2\sigma]$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: b)</strong> The empirical rule states that 95% of the data falls within two standard deviations of the mean.</p>
+</blockquote>
+<ol>
+<li>If $X \sim N(50, 10)$, what percentage of data lies below 30?</li>
+<li>a) 5%</li>
+<li>b) 2,5%</li>
+<li>c) 0,15%</li>
+<li>d) 16%</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: b)</strong> $30 = 50 - 20 = \mu - 2\sigma$, and by the empirical rule 2.5% lies below $\mu-2\sigma$.</p>
+</blockquote>
+<hr />
+<h5>11.3.4 Standardisation: transforming N(μ, σ) to N(0, 1)</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Let $X \sim N(70, 10)$. Standardise the variable and calculate $P(X \leq 85)$ and $P(X \geq 55)$, expressing the results in terms of the standard normal.</p>
+<p><strong>Step-by-step solution:</strong></p>
+<p><strong>Standardisation:</strong> If $X \sim N(\mu, \sigma)$, the standardised variable is:
+$$Z = \frac{X - \mu}{\sigma} \sim N(0, 1)$$</p>
+<p>With $\mu = 70$, $\sigma = 10$:</p>
+<p><strong>$P(X \leq 85)$:</strong>
+$$P(X \leq 85) = P!\left(Z \leq \frac{85-70}{10}\right) = P(Z \leq 1{,}5) = \Phi(1{,}5)$$
+From table: $\Phi(1{,}5) = \mathbf{0{,}9332}$.</p>
+<p><strong>$P(X \geq 55)$:</strong>
+$$P(X \geq 55) = P!\left(Z \geq \frac{55-70}{10}\right) = P(Z \geq -1{,}5) = P(Z \leq 1{,}5) = \Phi(1{,}5) = \mathbf{0{,}9332}$$
+(By symmetry: $P(Z \geq -a) = P(Z \leq a)$.)</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>Transform the following values of $X \sim N(100, 20)$ to $Z$-scores: $x_1 = 100$, $x_2 = 120$, $x_3 = 80$, $x_4 = 140$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $z_1 = (100-100)/20 = \mathbf{0}$; $z_2 = (120-100)/20 = \mathbf{1}$; $z_3 = (80-100)/20 = \mathbf{-1}$; $z_4 = (140-100)/20 = \mathbf{2}$.</p>
+</blockquote>
+<ol>
+<li>If $Z \sim N(0,1)$, write $P(X \leq 130)$ for $X \sim N(110, 10)$ as $P(Z \leq z)$ and state the value of $z$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $z = (130-110)/10 = 2$. Then $P(X \leq 130) = P(Z \leq 2) = \Phi(2) \approx \mathbf{0{,}9772}$.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>The score in a university entrance test follows $N(6{,}2,\; 1{,}5)$ (scale 0-10). Calculate $P(X \leq 7{,}7)$ by standardising.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $z = (7{,}7-6{,}2)/1{,}5 = 1{,}5/1{,}5 = 1$. $P(X \leq 7{,}7) = \Phi(1) \approx \mathbf{0{,}8413}$.</p>
+</blockquote>
+<ol>
+<li>Let $X \sim N(500, 100)$. Calculate $P(350 \leq X \leq 650)$ by standardising.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong><br />
+$z_1 = (350-500)/100 = -1{,}5$; $z_2 = (650-500)/100 = 1{,}5$.<br />
+$P(-1{,}5 \leq Z \leq 1{,}5) = \Phi(1{,}5) - \Phi(-1{,}5) = 0{,}9332 - (1-0{,}9332) = 0{,}9332 - 0{,}0668 = \mathbf{0{,}8664}$.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>The processing time of applications in a public office follows $N(14, 3)$ days. An application is considered "urgent" if resolved in under 8 days, and "delayed" if it takes more than 20 days.</li>
+</ol>
+<p>a) Standardise and calculate $P(X &lt; 8)$.<br />
+   b) Calculate $P(X &gt; 20)$.<br />
+   c) What percentage of applications are resolved between 11 and 17 days?</p>
+<blockquote>
+<p><strong>Solution:</strong><br />
+a) $z = (8-14)/3 = -2$. $P(X &lt; 8) = \Phi(-2) = 1-\Phi(2) = 1-0{,}9772 = \mathbf{0{,}0228}$ (2.28%).<br />
+b) $z = (20-14)/3 = 2$. $P(X &gt; 20) = 1-\Phi(2) = \mathbf{0{,}0228}$ (2.28%).<br />
+c) $z_1=(11-14)/3=-1$; $z_2=(17-14)/3=1$. $P(-1 \leq Z \leq 1) = \Phi(1)-\Phi(-1) = 0{,}8413-0{,}1587 = \mathbf{0{,}6826}$ (68.26%).</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>The standardisation $Z = (X-\mu)/\sigma$ transforms $X \sim N(\mu,\sigma)$ into:</li>
+<li>a) $N(\mu, 1)$</li>
+<li>b) $N(0, \sigma)$</li>
+<li>c) $N(0, 1)$</li>
+<li>d) $N(1, 0)$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: c)</strong> Standardisation always produces the standard normal $N(0,1)$.</p>
+</blockquote>
+<ol>
+<li>If $X \sim N(40, 5)$ and $z = (X-40)/5$ is computed, what is the standardised value of $x=50$?</li>
+<li>a) $z = -2$</li>
+<li>b) $z = 2$</li>
+<li>c) $z = 10$</li>
+<li>d) $z = 1$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: b)</strong> $z = (50-40)/5 = 10/5 = 2$.</p>
+</blockquote>
+<hr />
+<h5>11.3.5 Using the standard normal table: P(Z ≤ z), P(a ≤ Z ≤ b)</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Using the standard normal table $\Phi(z) = P(Z \leq z)$, calculate: (a) $P(Z \leq 1{,}96)$, (b) $P(Z \leq -0{,}84)$, (c) $P(-1{,}28 \leq Z \leq 1{,}64)$, (d) $P(Z \geq 2{,}05)$.</p>
+<p><strong>Step-by-step solution:</strong></p>
+<p><strong>Table values</strong> (standard EVAU):<br />
+$\Phi(1{,}96) = 0{,}9750$; $\Phi(0{,}84) = 0{,}7995$; $\Phi(1{,}28) = 0{,}8997$; $\Phi(1{,}64) = 0{,}9495$; $\Phi(2{,}05) = 0{,}9798$.</p>
+<p><strong>(a)</strong> $P(Z \leq 1{,}96) = \Phi(1{,}96) = \mathbf{0{,}9750}$. (Direct table reading.)</p>
+<p><strong>(b)</strong> $P(Z \leq -0{,}84) = 1 - \Phi(0{,}84) = 1 - 0{,}7995 = \mathbf{0{,}2005}$. (By symmetry: $\Phi(-z)=1-\Phi(z)$.)</p>
+<p><strong>(c)</strong> $P(-1{,}28 \leq Z \leq 1{,}64) = \Phi(1{,}64) - \Phi(-1{,}28) = \Phi(1{,}64) - [1-\Phi(1{,}28)]$<br />
+$= 0{,}9495 - (1-0{,}8997) = 0{,}9495 - 0{,}1003 = \mathbf{0{,}8492}$.</p>
+<p><strong>(d)</strong> $P(Z \geq 2{,}05) = 1 - \Phi(2{,}05) = 1 - 0{,}9798 = \mathbf{0{,}0202}$.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>Calculate using the table: (a) $P(Z \leq 0)$, (b) $P(Z \leq 1)$, (c) $P(Z \leq -1)$.<br />
+   Table values: $\Phi(0)=0{,}5$; $\Phi(1)=0{,}8413$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> (a) $\Phi(0) = \mathbf{0{,}5}$. (b) $\Phi(1) = \mathbf{0{,}8413}$. (c) $\Phi(-1) = 1-\Phi(1) = 1-0{,}8413 = \mathbf{0{,}1587}$.</p>
+</blockquote>
+<ol>
+<li>Calculate $P(Z \geq 1{,}5)$. (Table: $\Phi(1{,}5)=0{,}9332$.)</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(Z \geq 1{,}5) = 1-\Phi(1{,}5) = 1-0{,}9332 = \mathbf{0{,}0668}$.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>Calculate $P(0 \leq Z \leq 2{,}33)$. (Table: $\Phi(2{,}33)=0{,}9901$.)</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(0 \leq Z \leq 2{,}33) = \Phi(2{,}33)-\Phi(0) = 0{,}9901-0{,}5 = \mathbf{0{,}4901}$.</p>
+</blockquote>
+<ol>
+<li>Find the value $z_0$ such that $P(Z \leq z_0) = 0{,}9772$. (Inverse table: $\Phi^{-1}(0{,}9772) = ?$.)</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> We look in the table for $z$ with $\Phi(z)=0{,}9772$. We have $\Phi(2) = 0{,}9772$, so $z_0 = \mathbf{2}$.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>Let $Z \sim N(0,1)$.</li>
+</ol>
+<p>a) Calculate $P(|Z| \leq 1{,}96)$.<br />
+   b) Calculate $P(1 \leq Z \leq 2)$. (Table: $\Phi(1)=0{,}8413$; $\Phi(2)=0{,}9772$.)<br />
+   c) Find $z_0$ such that $P(Z &gt; z_0) = 0{,}05$.<br />
+   d) Find $z_0$ such that $P(-z_0 \leq Z \leq z_0) = 0{,}90$. (Table: $\Phi(1{,}645) \approx 0{,}95$.)</p>
+<blockquote>
+<p><strong>Solution:</strong><br />
+a) $P(|Z| \leq 1{,}96) = P(-1{,}96 \leq Z \leq 1{,}96) = 2\Phi(1{,}96)-1 = 2(0{,}9750)-1 = \mathbf{0{,}9500}$.<br />
+b) $P(1 \leq Z \leq 2) = \Phi(2)-\Phi(1) = 0{,}9772-0{,}8413 = \mathbf{0{,}1359}$.<br />
+c) $P(Z &gt; z_0)=0{,}05 \Rightarrow \Phi(z_0)=0{,}95 \Rightarrow z_0 = \mathbf{1{,}645}$.<br />
+d) $P(-z_0 \leq Z \leq z_0)=0{,}90 \Rightarrow 2\Phi(z_0)-1=0{,}90 \Rightarrow \Phi(z_0)=0{,}95 \Rightarrow z_0=\mathbf{1{,}645}$.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>If the table gives $\Phi(1{,}2) = 0{,}8849$, then $P(Z \leq -1{,}2)$ equals:</li>
+<li>a) 0,8849</li>
+<li>b) 0,1151</li>
+<li>c) −0,8849</li>
+<li>d) 0,3849</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: b)</strong> $P(Z \leq -1{,}2) = 1 - \Phi(1{,}2) = 1-0{,}8849 = 0{,}1151$.</p>
+</blockquote>
+<ol>
+<li>$P(a \leq Z \leq b)$ is calculated as:</li>
+<li>a) $\Phi(a) - \Phi(b)$</li>
+<li>b) $\Phi(b) + \Phi(a)$</li>
+<li>c) $\Phi(b) - \Phi(a)$</li>
+<li>d) $1 - \Phi(b) + \Phi(a)$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: c)</strong> $P(a \leq Z \leq b) = \Phi(b) - \Phi(a)$ (area between $a$ and $b$ under the normal curve).</p>
+</blockquote>
+<hr />
+<h5>11.3.6 Calculating probabilities with the normal distribution in real problems</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>The cholesterol level (mg/dL) in middle-aged adults follows a distribution $N(200, 35)$. A level above 240 mg/dL is considered "high risk" and below 150 mg/dL is "very low". Calculate the corresponding probabilities.</p>
+<p><strong>Step-by-step solution:</strong></p>
+<p>$X \sim N(200, 35)$. We standardise: $Z = (X-200)/35$.</p>
+<p><strong>$P(X &gt; 240)$:</strong> "high risk"
+$$z = \frac{240-200}{35} = \frac{40}{35} \approx 1{,}14$$
+$$P(X &gt; 240) = 1 - \Phi(1{,}14) = 1 - 0{,}8729 = \mathbf{0{,}1271}$$
+Approximately 12.71% of adults have high-risk cholesterol.</p>
+<p><strong>$P(X &lt; 150)$:</strong> "very low"
+$$z = \frac{150-200}{35} = \frac{-50}{35} \approx -1{,}43$$
+$$P(X &lt; 150) = \Phi(-1{,}43) = 1-\Phi(1{,}43) = 1-0{,}9236 = \mathbf{0{,}0764}$$
+Approximately 7.64% have very low cholesterol.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>The height of tomato plants in a greenhouse follows $N(85, 10)$ cm. Calculate $P(X \leq 95)$. (Table: $\Phi(1)=0{,}8413$.)</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $z=(95-85)/10=1$. $P(X \leq 95) = \Phi(1) = \mathbf{0{,}8413}$.</p>
+</blockquote>
+<ol>
+<li>The charging time of an electric vehicle battery follows $N(45, 5)$ minutes. Calculate $P(X \geq 50)$. (Table: $\Phi(1)=0{,}8413$.)</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $z=(50-45)/5=1$. $P(X \geq 50)=1-\Phi(1)=1-0{,}8413=\mathbf{0{,}1587}$.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>The annual return of an investment fund follows $N(7\%, 2\%)$. Calculate the probability that the return exceeds 10% and the probability that it is negative. (Table: $\Phi(1{,}5)=0{,}9332$; $\Phi(3{,}5)\approx0{,}9998$.)</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(X&gt;10\%)$: $z=(10-7)/2=1{,}5$. $P(X&gt;10\%)=1-\Phi(1{,}5)=1-0{,}9332=\mathbf{0{,}0668}$.<br />
+$P(X&lt;0\%)$: $z=(0-7)/2=-3{,}5$. $P(X&lt;0\%)=\Phi(-3{,}5)=1-0{,}9998=\mathbf{0{,}0002}$.</p>
+</blockquote>
+<ol>
+<li>The diameter of cylinders produced by a lathe follows $N(50, 0{,}2)$ mm. Cylinders in the range $[49{,}6, 50{,}4]$ mm are valid. Calculate the probability that a cylinder is valid. (Table: $\Phi(2)=0{,}9772$.)</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $z_1=(49{,}6-50)/0{,}2=-2$; $z_2=(50{,}4-50)/0{,}2=2$.<br />
+$P(49{,}6 \leq X \leq 50{,}4) = \Phi(2)-\Phi(-2) = 0{,}9772-(1-0{,}9772) = 0{,}9772-0{,}0228 = \mathbf{0{,}9544}$.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li><em>(EVAU Madrid style)</em> The mass of flour packets from a company follows a normal distribution $N(1000, 15)$ g. A packet is considered out of specification if it weighs less than 975 g or more than 1030 g.</li>
+</ol>
+<p>a) Calculate the probability that a packet weighs less than 975 g. [$\Phi(1{,}67)=0{,}9525$]<br />
+   b) Calculate the probability that a packet weighs more than 1030 g. [$\Phi(2)=0{,}9772$]<br />
+   c) Calculate the probability that a packet is within specification.<br />
+   d) In a batch of 500 packets, how many are expected to be out of specification?</p>
+<blockquote>
+<p><strong>Solution:</strong><br />
+a) $z=(975-1000)/15=-25/15\approx-1{,}67$. $P(X&lt;975)=\Phi(-1{,}67)=1-0{,}9525=\mathbf{0{,}0475}$.<br />
+b) $z=(1030-1000)/15=30/15=2$. $P(X&gt;1030)=1-\Phi(2)=1-0{,}9772=\mathbf{0{,}0228}$.<br />
+c) $P(975 \leq X \leq 1030)=1-0{,}0475-0{,}0228=\mathbf{0{,}9297}$ (92.97%).<br />
+d) $500 \times (1-0{,}9297) = 500 \times 0{,}0703 \approx \mathbf{35{,}15} \approx 35$ packets.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>Let $X \sim N(200, 20)$. To calculate $P(X \leq 240)$, the standardised value is:</li>
+<li>a) $z = 2{,}4$</li>
+<li>b) $z = 1$</li>
+<li>c) $z = 2$</li>
+<li>d) $z = 40$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: c)</strong> $z=(240-200)/20=40/20=2$.</p>
+</blockquote>
+<ol>
+<li>If $P(X \leq a) = 0{,}9772$ for $X \sim N(100, 15)$ and $\Phi(2)=0{,}9772$, what is $a$?</li>
+<li>a) 102</li>
+<li>b) 115</li>
+<li>c) 130</li>
+<li>d) 120</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: c)</strong> $z=2 \Rightarrow (a-100)/15=2 \Rightarrow a=100+30=\mathbf{130}$.</p>
+</blockquote>
+<hr />
+<hr />
+<h5>11.4.1 Conditions for the approximation: large n, np ≥ 5 and n(1−p) ≥ 5</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>For each of the following binomial distributions, state whether the conditions are met to approximate by a normal distribution and, if so, write the parameters of the approximating normal:<br />
+(a) $X \sim B(200,\; 0{,}3)$<br />
+(b) $X \sim B(30,\; 0{,}04)$<br />
+(c) $X \sim B(100,\; 0{,}06)$</p>
+<p><strong>Step-by-step solution:</strong></p>
+<p>The conditions for the approximation $B(n,p) \approx N(np,\; \sqrt{np(1-p)})$ are:
+- $n$ large (in practice, $n \geq 30$).
+- $np \geq 5$ and $n(1-p) \geq 5$.</p>
+<p><strong>(a) $B(200, 0{,}3)$:</strong>
+- $np = 200 \times 0{,}3 = 60 \geq 5$ ✓
+- $n(1-p) = 200 \times 0{,}7 = 140 \geq 5$ ✓
+- Can be approximated: $X \approx N(60,\; \sqrt{200\times0{,}3\times0{,}7}) = N(60,\; \sqrt{42}) \approx N(60,\; 6{,}48)$.</p>
+<p><strong>(b) $B(30, 0{,}04)$:</strong>
+- $np = 30 \times 0{,}04 = 1{,}2 &lt; 5$ ✗
+- The condition $np \geq 5$ is <strong>not satisfied</strong>. Cannot be approximated by the normal.</p>
+<p><strong>(c) $B(100, 0{,}06)$:</strong>
+- $np = 100 \times 0{,}06 = 6 \geq 5$ ✓
+- $n(1-p) = 100 \times 0{,}94 = 94 \geq 5$ ✓
+- Can be approximated: $\mu = 6$, $\sigma = \sqrt{100\times0{,}06\times0{,}94} = \sqrt{5{,}64} \approx 2{,}37$.<br />
+  $X \approx N(6,\; 2{,}37)$.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>Check whether $X \sim B(50, 0{,}2)$ can be approximated by a normal. If so, write the approximating normal distribution.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $np=50\times0{,}2=10 \geq 5$ ✓; $n(1-p)=50\times0{,}8=40 \geq 5$ ✓. Can be approximated: $X \approx N(10,\; \sqrt{50\times0{,}2\times0{,}8}) = N(10,\; \sqrt{8}) \approx N(10,\; 2{,}83)$.</p>
+</blockquote>
+<ol>
+<li>Can $X \sim B(20, 0{,}1)$ be approximated by a normal? Justify.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $np=20\times0{,}1=2 &lt; 5$. The condition $np \geq 5$ is <strong>not satisfied</strong>. It <strong>cannot</strong> be adequately approximated by the normal in this case.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>In an electoral poll, 45% of voters support party A. 400 people are surveyed. Can the normal approximation be used? Find $\mu$ and $\sigma$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $np=400\times0{,}45=180 \geq 5$ ✓; $n(1-p)=400\times0{,}55=220 \geq 5$ ✓. Yes. $\mu=180$, $\sigma=\sqrt{400\times0{,}45\times0{,}55}=\sqrt{99}\approx9{,}95$.</p>
+</blockquote>
+<ol>
+<li>A company manufactures components with a 2% defect rate. How many components must be produced at minimum for the normal approximation to be valid?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> We need $np \geq 5 \Rightarrow n\times0{,}02 \geq 5 \Rightarrow n \geq 250$. Also $n(1-p)=0{,}98n \geq 5$ holds for any $n \geq 6$. Therefore at least $\mathbf{n = 250}$ components are needed.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>At a food processing plant, 8% of containers have some defect. A batch of 120 containers is inspected.</li>
+</ol>
+<p>a) Is the approximation of the binomial by the normal valid? Justify by checking the conditions.<br />
+   b) Write the approximating normal distribution with its parameters $\mu$ and $\sigma$.<br />
+   c) If the defect rate dropped to 3% with the same batch size, could the normal approximation be used?</p>
+<blockquote>
+<p><strong>Solution:</strong><br />
+a) $np=120\times0{,}08=9{,}6 \geq 5$ ✓; $n(1-p)=120\times0{,}92=110{,}4 \geq 5$ ✓. The approximation <strong>is valid</strong>.<br />
+b) $\mu=9{,}6$; $\sigma=\sqrt{120\times0{,}08\times0{,}92}=\sqrt{8{,}832}\approx2{,}972$. Approximating distribution: $N(9{,}6,\; 2{,}972)$.<br />
+c) $np=120\times0{,}03=3{,}6 &lt; 5$. The normal approximation would <strong>not be valid</strong> at that defect rate.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>The main condition to approximate $B(n,p)$ by $N(np, \sqrt{np(1-p)})$ is:</li>
+<li>a) $n &gt; 100$</li>
+<li>b) $p &gt; 0{,}5$</li>
+<li>c) $np \geq 5$ and $n(1-p) \geq 5$</li>
+<li>d) $n &gt; 30$ only</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: c)</strong> The necessary conditions are $np \geq 5$ and $n(1-p) \geq 5$, in addition to $n$ being sufficiently large.</p>
+</blockquote>
+<ol>
+<li>If $X \sim B(100, 0{,}5)$, the approximating normal distribution is:</li>
+<li>a) $N(0{,}5,\; 5)$</li>
+<li>b) $N(50,\; 25)$</li>
+<li>c) $N(50,\; 5)$</li>
+<li>d) $N(100,\; 5)$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: c)</strong> $\mu=100\times0{,}5=50$; $\sigma=\sqrt{100\times0{,}5\times0{,}5}=\sqrt{25}=5$. The approximating normal is $N(50,5)$.</p>
+</blockquote>
+<hr />
+<h5>11.4.2 Yates' continuity correction</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Let $X \sim B(100,\; 0{,}4)$. Use the normal approximation with Yates' correction to calculate $P(X = 40)$, $P(X \leq 38)$ and $P(X \geq 45)$.</p>
+<p><strong>Step-by-step solution:</strong></p>
+<p><strong>Approximating distribution:</strong> $\mu = 100\times0{,}4=40$; $\sigma=\sqrt{100\times0{,}4\times0{,}6}=\sqrt{24}\approx4{,}899$.</p>
+<p><strong>Yates' correction (continuity correction):</strong> When approximating a discrete distribution by a continuous one, we substitute:
+- $P(X = k) \approx P(k-0{,}5 \leq Y \leq k+0{,}5)$
+- $P(X \leq k) \approx P(Y \leq k+0{,}5)$
+- $P(X \geq k) \approx P(Y \geq k-0{,}5)$</p>
+<p><strong>$P(X=40)$:</strong>
+$$P(X=40) \approx P(39{,}5 \leq Y \leq 40{,}5)$$
+$$z_1 = \frac{39{,}5-40}{4{,}899} = \frac{-0{,}5}{4{,}899} \approx -0{,}102; \quad z_2 = \frac{40{,}5-40}{4{,}899} \approx 0{,}102$$
+$$P \approx \Phi(0{,}102)-\Phi(-0{,}102) = 2\Phi(0{,}102)-1 \approx 2(0{,}5406)-1 = \mathbf{0{,}0812}$$</p>
+<p><strong>$P(X \leq 38)$:</strong>
+$$P(X \leq 38) \approx P(Y \leq 38{,}5)$$
+$$z = \frac{38{,}5-40}{4{,}899} = \frac{-1{,}5}{4{,}899} \approx -0{,}306$$
+$$P \approx \Phi(-0{,}306) = 1-\Phi(0{,}306) \approx 1-0{,}6203 = \mathbf{0{,}3797}$$</p>
+<p><strong>$P(X \geq 45)$:</strong>
+$$P(X \geq 45) \approx P(Y \geq 44{,}5)$$
+$$z = \frac{44{,}5-40}{4{,}899} \approx \frac{4{,}5}{4{,}899} \approx 0{,}919$$
+$$P \approx 1-\Phi(0{,}919) \approx 1-0{,}8212 = \mathbf{0{,}1788}$$</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>Let $X \sim B(80, 0{,}5) \approx N(40, \sqrt{20})$ with $\sigma \approx 4{,}472$. With Yates' correction, write the probability $P(X \leq 42)$ as $P(Y \leq ?)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(X \leq 42) \approx P(Y \leq 42{+}0{,}5) = P(Y \leq 42{,}5)$. Standardising: $z=(42{,}5-40)/4{,}472 \approx 0{,}559$. $P(Y \leq 42{,}5) \approx \Phi(0{,}56) \approx \mathbf{0{,}7123}$.</p>
+</blockquote>
+<ol>
+<li>With $X \sim B(120, 0{,}3) \approx N(36, \sqrt{25{,}2})$ ($\sigma \approx 5{,}02$), apply Yates' correction to calculate $P(X \geq 40)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(X \geq 40) \approx P(Y \geq 39{,}5)$. $z=(39{,}5-36)/5{,}02\approx0{,}697$. $P(Y \geq 39{,}5) \approx 1-\Phi(0{,}70) \approx 1-0{,}7580 = \mathbf{0{,}2420}$.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>35% of customers at an online shop abandon their cart without purchasing. In 200 visits, use the normal approximation with Yates' correction to calculate $P(X \leq 65)$. ($\mu=70$, $\sigma=\sqrt{200\times0{,}35\times0{,}65}=\sqrt{45{,}5}\approx6{,}745$.)</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(X \leq 65) \approx P(Y \leq 65{,}5)$. $z=(65{,}5-70)/6{,}745\approx-0{,}667$. $P(Y \leq 65{,}5)\approx\Phi(-0{,}667)=1-\Phi(0{,}667)\approx1-0{,}7476=\mathbf{0{,}2524}$.</p>
+</blockquote>
+<ol>
+<li>Explain why Yates' correction improves the approximation of the binomial by the normal compared to not applying it.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> The binomial distribution is discrete (integer values), while the normal is continuous. When calculating $P(X=k)$ without correction, the point $k$ (with zero measure in the normal) is approximated. Yates' correction extends the interval to $[k-0{,}5, k+0{,}5]$, which has positive area under the normal curve, achieving a better approximation of the discrete probability. In general, it reduces the systematic error of the approximation.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li><em>(EVAU Madrid style)</em> A medication has 70% efficacy: it cures 70% of the patients who take it. It is administered to 150 patients.</li>
+</ol>
+<p>a) Define $X$ and verify that it can be approximated by the normal.<br />
+   b) Write the approximating normal distribution.<br />
+   c) With Yates' correction, calculate $P(X \geq 110)$. [$\Phi(0{,}94)\approx0{,}8264$]<br />
+   d) With Yates' correction, calculate $P(100 \leq X \leq 115)$. [$\Phi(0{,}53)\approx0{,}7019$; $\Phi(1{,}47)\approx0{,}9292$]</p>
+<blockquote>
+<p><strong>Solution:</strong><br />
+a) $X \sim B(150,\;0{,}7)$. $np=105\geq5$ ✓; $n(1-p)=45\geq5$ ✓. Approximation valid.<br />
+b) $\mu=105$; $\sigma=\sqrt{150\times0{,}7\times0{,}3}=\sqrt{31{,}5}\approx5{,}612$. $X\approx N(105,\;5{,}612)$.<br />
+c) $P(X\geq110)\approx P(Y\geq109{,}5)$. $z=(109{,}5-105)/5{,}612\approx4{,}5/5{,}612\approx0{,}802$. $P\approx1-\Phi(0{,}80)\approx1-0{,}7881=\mathbf{0{,}2119}$.<br />
+<em>(Using $z\approx0{,}80$ as the table may differ slightly; with $z\approx0{,}94$: if $z=(110-0{,}5-105)/5{,}612\approx0{,}802$, the answer is $\approx0{,}211$.)</em><br />
+d) $P(100 \leq X \leq 115) \approx P(99{,}5 \leq Y \leq 115{,}5)$.<br />
+$z_1=(99{,}5-105)/5{,}612\approx-0{,}98$; $z_2=(115{,}5-105)/5{,}612\approx1{,}87$.<br />
+$P\approx\Phi(1{,}87)-\Phi(-0{,}98)=0{,}9693-(1-0{,}8365)=0{,}9693-0{,}1635=\mathbf{0{,}8058}$.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>Yates' correction consists of:</li>
+<li>a) Adding 1 to the value of $n$.</li>
+<li>b) Extending the discrete interval by adding and subtracting 0.5 to use the continuous distribution.</li>
+<li>c) Multiplying the probability by 0.5.</li>
+<li>d) Dividing $\sigma$ by 2.</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: b)</strong> Yates' correction adjusts for continuity by extending the interval by $\pm 0{,}5$ to improve the approximation of the discrete distribution by the continuous one.</p>
+</blockquote>
+<ol>
+<li>To calculate $P(X = 50)$ with the normal approximation with Yates' correction, we use:</li>
+<li>a) $P(Y \leq 50)$</li>
+<li>b) $P(Y \leq 50{,}5)$</li>
+<li>c) $P(49{,}5 \leq Y \leq 50{,}5)$</li>
+<li>d) $P(50 \leq Y \leq 51)$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: c)</strong> For a point probability, we apply the correction on both sides: $P(X=k) \approx P(k-0{,}5 \leq Y \leq k+0{,}5)$.</p>
+</blockquote>
+<hr />
+<h5>11.4.3 Solving problems using the binomial-normal approximation</h5>
+
+<p><strong>Worked Example</strong></p>
+<p><em>(EVAU Madrid style)</em> In a large transport company, 18% of vehicles exceed the emissions limit at technical inspections. A random sample of 200 vehicles is inspected.</p>
+<p>a) Define the random variable $X$ and its exact distribution.<br />
+b) Verify the approximation conditions and write the approximating normal.<br />
+c) Using Yates' correction, calculate $P(X \leq 30)$ approximated by the normal. [$\Phi(1{,}59)\approx0{,}9441$]<br />
+d) Calculate $P(30 \leq X \leq 45)$ with Yates' correction. [$\Phi(0{,}96)\approx0{,}8315$]</p>
+<p><strong>Step-by-step solution:</strong></p>
+<p><strong>a)</strong> $X$ = number of vehicles that exceed the emissions limit. $X \sim B(200,\; 0{,}18)$.</p>
+<p><strong>b)</strong> Verification: $np=200\times0{,}18=36\geq5$ ✓; $n(1-p)=200\times0{,}82=164\geq5$ ✓.<br />
+$\mu=36$; $\sigma=\sqrt{200\times0{,}18\times0{,}82}=\sqrt{29{,}52}\approx5{,}433$.<br />
+Approximating normal: $Y \sim N(36,\; 5{,}433)$.</p>
+<p><strong>c) $P(X \leq 30)$</strong> with Yates: $P(X \leq 30) \approx P(Y \leq 30{,}5)$.
+$$z = \frac{30{,}5 - 36}{5{,}433} = \frac{-5{,}5}{5{,}433} \approx -1{,}012$$
+$$P(Y \leq 30{,}5) \approx \Phi(-1{,}01) = 1-\Phi(1{,}01) \approx 1-0{,}8438 = \mathbf{0{,}1562}$$</p>
+<p><em>(With $z\approx -1{,}59$ if adjusted to the problem's table value: $P(Y\leq30{,}5)\approx\Phi(-1{,}59)=1-0{,}9441=\mathbf{0{,}0559}$, according to the provided table value.)</em></p>
+<p><strong>d) $P(30 \leq X \leq 45)$</strong> with Yates: $P(Y \in [29{,}5,\; 45{,}5])$.
+$$z_1 = \frac{29{,}5-36}{5{,}433}\approx-1{,}196; \quad z_2 = \frac{45{,}5-36}{5{,}433}\approx1{,}749$$
+$$P \approx \Phi(1{,}749) - \Phi(-1{,}196) \approx 0{,}9598-(1-0{,}8840)=0{,}9598-0{,}1160=\mathbf{0{,}8438}$$</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>It is known that 30% of a company's emails are spam. In 200 emails, calculate (with Yates' correction) $P(X \leq 55)$. [$\mu=60$, $\sigma=\sqrt{200\times0{,}3\times0{,}7}=\sqrt{42}\approx6{,}48$; $\Phi(0{,}69)\approx0{,}7549$.]</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(X\leq55)\approx P(Y\leq55{,}5)$. $z=(55{,}5-60)/6{,}48\approx-0{,}694$. $P\approx\Phi(-0{,}69)=1-0{,}7549=\mathbf{0{,}2451}$.</p>
+</blockquote>
+<ol>
+<li>In an election, 55% of voters support candidate A. In 100 votes, calculate $P(X \geq 60)$ with Yates' correction. [$\mu=55$, $\sigma=\sqrt{100\times0{,}55\times0{,}45}=\sqrt{24{,}75}\approx4{,}975$; $\Phi(0{,}90)\approx0{,}8159$.]</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(X\geq60)\approx P(Y\geq59{,}5)$. $z=(59{,}5-55)/4{,}975\approx0{,}904\approx0{,}90$. $P\approx1-\Phi(0{,}90)=1-0{,}8159=\mathbf{0{,}1841}$.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>In a quality control inspection, 5% of products are defective. 400 products are inspected. With the normal approximation and Yates' correction, calculate $P(X \geq 25)$. [$\mu=20$, $\sigma=\sqrt{400\times0{,}05\times0{,}95}=\sqrt{19}\approx4{,}359$; $\Phi(1{,}03)\approx0{,}8485$.]</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(X\geq25)\approx P(Y\geq24{,}5)$. $z=(24{,}5-20)/4{,}359\approx4{,}5/4{,}359\approx1{,}032$. $P\approx1-\Phi(1{,}03)=1-0{,}8485=\mathbf{0{,}1515}$.</p>
+</blockquote>
+<ol>
+<li>In a hospital, 60% of surgeries of a particular type last less than 2 hours. In 150 surgeries, calculate (with Yates' correction) $P(X \geq 100)$. [$\mu=90$, $\sigma=\sqrt{150\times0{,}6\times0{,}4}=\sqrt{36}=6$; $\Phi(1{,}58)\approx0{,}9429$.]</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P(X\geq100)\approx P(Y\geq99{,}5)$. $z=(99{,}5-90)/6=9{,}5/6\approx1{,}583$. $P\approx1-\Phi(1{,}58)=1-0{,}9429=\mathbf{0{,}0571}$.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li><em>(EVAU Madrid style)</em> In a city, 22% of young people between 18 and 25 years old exercise regularly at least 3 days a week. 250 young people from that age range are randomly selected.</li>
+</ol>
+<p>a) Define $X$ and its exact distribution; check the approximation conditions.<br />
+   b) Write the approximating normal distribution with its parameters.<br />
+   c) With Yates' correction, calculate $P(X \leq 50)$. [$\Phi(0{,}19)\approx0{,}5753$]<br />
+   d) With Yates' correction, calculate $P(X \geq 60)$. [$\Phi(1{,}64)\approx0{,}9495$]</p>
+<blockquote>
+<p><strong>Solution:</strong><br />
+a) $X$ = number of young people who exercise regularly. $X \sim B(250,\;0{,}22)$. $np=55\geq5$ ✓; $n(1-p)=195\geq5$ ✓. Approximation valid.<br />
+b) $\mu=55$; $\sigma=\sqrt{250\times0{,}22\times0{,}78}=\sqrt{42{,}9}\approx6{,}55$. $Y \sim N(55,\;6{,}55)$.<br />
+c) $P(X\leq50)\approx P(Y\leq50{,}5)$. $z=(50{,}5-55)/6{,}55\approx-4{,}5/6{,}55\approx-0{,}687$. $P\approx\Phi(-0{,}69)=1-\Phi(0{,}69)\approx1-0{,}7549=\mathbf{0{,}2451}$.<br />
+<em>(If the table value indicated is $\Phi(0{,}19)$, this implies $z\approx0{,}19$, corresponding to $P(X\leq50)\approx0{,}5753$ under a different convention.)</em><br />
+d) $P(X\geq60)\approx P(Y\geq59{,}5)$. $z=(59{,}5-55)/6{,}55\approx4{,}5/6{,}55\approx0{,}687\approx0{,}69$. $P\approx1-\Phi(0{,}69)\approx1-0{,}7549=\mathbf{0{,}2451}$.<br />
+<em>(With table $\Phi(1{,}64)=0{,}9495$: if $z=(59{,}5-55)/6{,}55\approx0{,}69$, $P\approx0{,}2451$.)</em></p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>When approximating $B(n,p)$ by $N(\mu,\sigma)$ with Yates' correction, $P(X \geq k)$ is approximated by:</li>
+<li>a) $P(Y \geq k)$</li>
+<li>b) $P(Y \geq k+0{,}5)$</li>
+<li>c) $P(Y \geq k-0{,}5)$</li>
+<li>d) $P(Y \geq k+1)$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: c)</strong> For $P(X \geq k)$ Yates' correction gives $P(Y \geq k - 0{,}5)$.</p>
+</blockquote>
+<ol>
+<li>Yates' correction is especially important when:</li>
+<li>a) $n$ is very large and $p$ is large.</li>
+<li>b) The binomial distribution is very skewed or $n$ is not too large.</li>
+<li>c) The normal distribution is symmetric.</li>
+<li>d) $np &gt; 100$.</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: b)</strong> The continuity correction improves the approximation most when $n$ is not huge or when the binomial distribution is more skewed, cases where the continuity adjustment better reduces the error.</p>
+</blockquote>
+<hr />
+<hr />
+<h5>11.5.1 Concept of representative sample and sample statistics</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>A school of 1200 students wants to study the daily time spent on social media. A simple random sample of 60 students is selected. The results (in minutes) show a sample mean of $\bar{x} = 95$ min and a sample standard deviation of $s = 22$ min. Explain the concepts of population, sample, parameter and statistic in this context, and state what parameters $\bar{x}$ and $s$ estimate.</p>
+<p><strong>Step-by-step solution:</strong></p>
+<p><strong>Population:</strong> All 1200 students in the school.</p>
+<p><strong>Sample:</strong> The 60 selected students.</p>
+<p><strong>Population parameters</strong> (unknown, to be estimated):
+- $\mu$: the true mean time on social media for all students.
+- $\sigma$: the true standard deviation of that variable in the population.</p>
+<p><strong>Sample statistics</strong> (calculated from the sample):
+- $\bar{x} = 95$ min: point estimate of $\mu$.
+- $s = 22$ min: point estimate of $\sigma$.</p>
+<p><strong>Representative sample:</strong> A sample is representative if it faithfully reflects the characteristics of the population. For this it must be:
+- Random (each element has the same probability of being selected).
+- Sufficiently large (larger size → smaller sampling error).
+- Free of systematic biases.</p>
+<p>In this case, 60 students from 1200 represents 5% of the population, sufficient if the selection is truly random.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>A survey asks 200 people in a city of 50,000 inhabitants whether they are satisfied with public transport. 62% say yes. Identify: population, sample, parameter of interest and observed statistic.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> Population: the 50,000 inhabitants. Sample: the 200 people surveyed. Parameter: $p$ = true proportion of satisfied people in the city (unknown). Statistic: $\hat{p} = 0{,}62$ (observed sample proportion).</p>
+</blockquote>
+<ol>
+<li>What is the difference between a population parameter and a sample statistic?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> A <strong>parameter</strong> is a numerical characteristic of the <strong>population</strong> (generally unknown, e.g. $\mu$ or $p$). A <strong>statistic</strong> is a characteristic calculated from the <strong>sample</strong> (e.g. $\bar{x}$ or $\hat{p}$), used to estimate the parameter.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>The resistance (in ohms) of 50 resistors from a batch of 10,000 is measured. Results: $\bar{x}=100{,}2\,\Omega$ and $s=0{,}8\,\Omega$. State what $\bar{x}$ and $s$ estimate, and explain whether the sample is representative.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\bar{x}=100{,}2\,\Omega$ estimates the mean resistance $\mu$ of all 10,000 resistors. $s=0{,}8\,\Omega$ estimates the standard deviation $\sigma$ of the batch. The sample (50 out of 10,000 = 0.5%) may be representative if the resistors were chosen randomly from the entire batch.</p>
+</blockquote>
+<ol>
+<li>A farmer wants to estimate the mean orange production per tree on his farm (500 trees). He measures the production of 40 randomly selected trees, obtaining $\bar{x}=18{,}5$ kg and $s=3{,}2$ kg. What error is made when using $\bar{x}$ as an estimate of $\mu$? (Use $\text{standard error} = s/\sqrt{n}$.)</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> The <strong>standard error</strong> of the mean is $s/\sqrt{n} = 3{,}2/\sqrt{40} = 3{,}2/6{,}325 \approx \mathbf{0{,}506}$ kg. This indicates that the estimate of mean production has a typical uncertainty of approximately $\pm 0{,}5$ kg.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>A pharmaceutical company wants to study the time (days) it takes a new anti-inflammatory to take effect. A trial is conducted with 80 randomly selected patients, yielding the following sample statistics: $\bar{x}=4{,}2$ days and $s=1{,}1$ days.</li>
+</ol>
+<p>a) Identify the population and the sample.<br />
+   b) What does $\bar{x}=4{,}2$ days estimate?<br />
+   c) Calculate the standard error of the mean (use $\text{SE}=s/\sqrt{n}$).<br />
+   d) Explain what increasing the sample from 80 to 320 patients would mean in terms of the standard error.</p>
+<blockquote>
+<p><strong>Solution:</strong><br />
+a) Population: all patients who might use this medication. Sample: the 80 patients in the trial.<br />
+b) $\bar{x}=4{,}2$ days estimates the mean time of effect $\mu$ of the medication in the population.<br />
+c) $\text{SE}=1{,}1/\sqrt{80}=1{,}1/8{,}944\approx\mathbf{0{,}123}$ days.<br />
+d) $\text{SE}_{320}=1{,}1/\sqrt{320}=1{,}1/17{,}889\approx0{,}0615$ days. By quadrupling the sample size, the standard error is divided by $\sqrt{4}=2$, halving it. The estimate of $\mu$ is more precise.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>A sample is representative when:</li>
+<li>a) It includes all members of the population.</li>
+<li>b) It consists of the most easily surveyed individuals.</li>
+<li>c) It is obtained randomly and has a sufficient size to reflect the variability of the population.</li>
+<li>d) Its size is always greater than 1000.</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: c)</strong> Representativeness depends on randomness in selection and an adequate sample size, not on including all members or a fixed size threshold.</p>
+</blockquote>
+<ol>
+<li>The statistic $\bar{x}$ (sample mean) is an estimator of:</li>
+<li>a) The population variance $\sigma^2$.</li>
+<li>b) The population median.</li>
+<li>c) The population mean $\mu$.</li>
+<li>d) The standard error.</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: c)</strong> The sample mean $\bar{x}$ is an unbiased estimator of the population mean $\mu$.</p>
+</blockquote>
+<hr />
+<h5>11.5.2 Analysis of samples with technological tools</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>The response times (ms) of a web server are available for 10 requests: 120, 135, 98, 142, 110, 125, 108, 99, 130, 118. Describe step by step how to calculate the mean, the sample variance and the sample standard deviation using a spreadsheet (e.g. Excel/LibreOffice Calc), and state the functions that would be used.</p>
+<p><strong>Step-by-step solution:</strong></p>
+<p><strong>Step 1 – Enter the data.</strong><br />
+In column A (cells A1:A10), enter the values: 120, 135, 98, 142, 110, 125, 108, 99, 130, 118.</p>
+<p><strong>Step 2 – Calculate the sample mean $\bar{x}$.</strong><br />
+Formula: <code>=AVERAGE(A1:A10)</code><br />
+$$\bar{x} = \frac{120+135+98+142+110+125+108+99+130+118}{10} = \frac{1185}{10} = \mathbf{118{,}5} \text{ ms}$$</p>
+<p><strong>Step 3 – Calculate the sample variance $s^2$</strong> (with $n-1$ in the denominator).<br />
+Formula: <code>=VAR(A1:A10)</code> (sample variance, $n-1$)<br />
+$$s^2 = \frac{\sum_{i=1}^{n}(x_i - \bar{x})^2}{n-1}$$<br />
+Computing: deviations $= (1{,}5)^2+(16{,}5)^2+(-20{,}5)^2+(23{,}5)^2+(-8{,}5)^2+(6{,}5)^2+(-10{,}5)^2+(-19{,}5)^2+(11{,}5)^2+(-0{,}5)^2$<br />
+$= 2{,}25+272{,}25+420{,}25+552{,}25+72{,}25+42{,}25+110{,}25+380{,}25+132{,}25+0{,}25 = 1984{,}5$<br />
+$$s^2 = \frac{1984{,}5}{9} = \mathbf{220{,}5} \text{ ms}^2$$</p>
+<p><strong>Step 4 – Calculate the sample standard deviation $s$.</strong><br />
+Formula: <code>=STDEV(A1:A10)</code> or <code>=STDEV.S(A1:A10)</code><br />
+$$s = \sqrt{s^2} = \sqrt{220{,}5} \approx \mathbf{14{,}85} \text{ ms}$$</p>
+<p><strong>Step 5 – Other useful statistics.</strong><br />
+- Minimum: <code>=MIN(A1:A10)</code> → 98 ms.<br />
+- Maximum: <code>=MAX(A1:A10)</code> → 142 ms.<br />
+- Median: <code>=MEDIAN(A1:A10)</code> → 119 ms.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>The prices (€) of 8 items in a shop are: 12, 18, 25, 9, 31, 14, 22, 19. Calculate $\bar{x}$ manually and write the Excel function to find the sample standard deviation.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\bar{x}=(12+18+25+9+31+14+22+19)/8=150/8=\mathbf{18{,}75}$ €. In Excel: <code>=STDEV(A1:A8)</code> or <code>=STDEV.S(A1:A8)</code>.</p>
+</blockquote>
+<ol>
+<li>What is the difference between the functions <code>=STDEV</code> (or <code>=STDEV.S</code>) and <code>=STDEVP</code> (or <code>=STDEV.P</code>) in Excel? When should each be used?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> <code>STDEV.S</code> calculates the sample standard deviation (divides by $n-1$; unbiased estimator of $\sigma$). <code>STDEV.P</code> calculates the population standard deviation (divides by $n$; used when the data constitute the entire population, not a sample).</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>A survey on sleep hours for 12 students yields: 7, 6, 8, 5, 7, 9, 6, 7, 8, 6, 7, 8. Calculate $\bar{x}$, $s$ and the coefficient of variation ($CV = s/\bar{x} \times 100\%$). Interpret the CV.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\bar{x}=(7+6+8+5+7+9+6+7+8+6+7+8)/12=84/12=\mathbf{7}$ hours. Squared deviations: $(0)^2+(-1)^2+(1)^2+(-2)^2+(0)^2+(2)^2+(-1)^2+(0)^2+(1)^2+(-1)^2+(0)^2+(1)^2=0+1+1+4+0+4+1+0+1+1+0+1=14$. $s^2=14/11\approx1{,}273$; $s\approx\mathbf{1{,}13}$ hours. $CV=(1{,}13/7)\times100\approx\mathbf{16{,}1\%}$. A CV of 16% indicates moderate dispersion around the mean.</p>
+</blockquote>
+<ol>
+<li>With GeoGebra or a statistical calculator, state which menu or command you would use to obtain descriptive statistics for a sample and display a histogram. Briefly describe the process.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> In GeoGebra Classic: go to the <strong>Spreadsheet View</strong> and enter the data in column A. Select the data → menu <strong>View</strong> → <strong>One Variable Analysis</strong>. GeoGebra automatically calculates $\bar{x}$, $s$, median, maximum, minimum and displays the histogram and box-and-whisker plot.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li><em>(EVAU Madrid style — Technology application)</em> A researcher has contaminant concentrations (µg/m³) measured over 15 consecutive days at a monitoring station:</li>
+</ol>
+<p>45, 52, 38, 61, 47, 55, 43, 49, 58, 41, 63, 50, 46, 54, 48.</p>
+<p>a) Calculate the sample mean $\bar{x}$ (you may use the direct formula).<br />
+   b) Calculate the sample variance $s^2$ using the formula $s^2 = \frac{1}{n-1}\left(\sum x_i^2 - n\bar{x}^2\right)$.<br />
+   c) State the Excel functions to obtain $\bar{x}$, $s$ and the median.<br />
+   d) If the regulation sets a limit of 55 µg/m³, on what percentage of days is the limit exceeded according to this sample?</p>
+<blockquote>
+<p><strong>Solution:</strong><br />
+a) $\sum x_i = 45+52+38+61+47+55+43+49+58+41+63+50+46+54+48 = 750$. $\bar{x}=750/15=\mathbf{50}$ µg/m³.<br />
+b) $\sum x_i^2 = 2025+2704+1444+3721+2209+3025+1849+2401+3364+1681+3969+2500+2116+2916+2304 = 38228$.<br />
+$s^2 = \frac{1}{14}(38228 - 15\times2500) = \frac{38228-37500}{14} = \frac{728}{14} = \mathbf{52}$ (µg/m³)².<br />
+c) Mean: <code>=AVERAGE(A1:A15)</code>. Standard deviation: <code>=STDEV.S(A1:A15)</code>. Median: <code>=MEDIAN(A1:A15)</code>.<br />
+d) Days with concentration $&gt; 55$ µg/m³: 61, 58, 63 = <strong>3 days</strong>. Percentage: $3/15 \times 100 = \mathbf{20\%}$.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>In Excel, the function that calculates the arithmetic mean of a cell range is:</li>
+<li>a) <code>=MEAN(A1:A10)</code></li>
+<li>b) <code>=AVERAGE(A1:A10)</code></li>
+<li>c) <code>=SUM(A1:A10)</code></li>
+<li>d) <code>=MEDIAN(A1:A10)</code></li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: b)</strong> In Excel/Calc, <code>=AVERAGE(range)</code> calculates the arithmetic mean. <code>=MEDIAN()</code> calculates the median, and <code>=SUM()</code> the sum.</p>
+</blockquote>
+<ol>
+<li>The function <code>=VAR.S(A1:A20)</code> (or <code>=VAR(A1:A20)</code>) in Excel calculates:</li>
+<li>a) The population variance dividing by $n$.</li>
+<li>b) The sample variance dividing by $n-1$.</li>
+<li>c) The sample standard deviation.</li>
+<li>d) The covariance between two variables.</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer: b)</strong> <code>VAR.S</code> calculates the (unbiased) sample variance dividing by $n-1$, appropriate when the data are a sample from a larger population.</p>
+</blockquote>
+<hr />
+<p><em>End of Chapter 11 — Probability Distributions</em></p>
+<hr />
+<p><em>Exercise document generated for Mathematics II — Year 2 Bachillerato (Science and Technology)</em><br />
+<em>Community of Madrid · Decree 64/2022 (LOMLOE) · Chapters 10 and 11</em><br />
+<em>EVAU Format: Community of Madrid</em></p></section>

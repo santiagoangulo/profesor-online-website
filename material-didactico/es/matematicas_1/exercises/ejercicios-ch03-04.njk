@@ -1,0 +1,606 @@
+---
+layout: layouts/base.njk
+title: "Matemáticas II — Ejercicios: Capítulos 3-4 | Profesor Online"
+permalink: "./material-didactico/es/matematicas_1/exercises/ejercicios-ch03-04.html"
+section: material-didactico
+depth: 4
+---
+
+<section class="content-header">
+    <div class="container">
+      <a href="../matematicas_2/index.html" class="back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Volver al índice de Matemáticas II
+      </a>
+      <h1>Ejercicios: Capítulos 3-4 — Sistemas de Ecuaciones y Vectores</h1>
+      <p>Ejercicios resueltos paso a paso sobre Sistemas de Ecuaciones Lineales y Vectores en el Espacio. Incluye problemas de nivel básico, intermedio, estilo EVAU y test de opción múltiple.</p>
+      <div class="course-meta">
+        <span>2.º Bachillerato — Ciencias y Tecnología</span>
+        <span>Comunidad de Madrid</span>
+        <span>Decreto 64/2022 (LOMLOE)</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-page">
+    <div class="container">
+      <nav class="toc-nav">
+        <a href="#cap3">Cap. 3: Sistemas</a>
+        <a href="#cap4">Cap. 4: Vectores</a>
+      </nav>
+
+      <div class="chapter" id="cap3">
+        <h2>Capítulo 3 — Sistemas de Ecuaciones Lineales</h2>
+
+        <div class="subsection">
+          <h3>3.1 Sistemas lineales: conceptos fundamentales</h3>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto</h4>
+            <p>Determina si el par $(x, y) = (2, -1)$ es solución del sistema: $\begin{cases} 3x + 2y = 4 \\ x - 3y = 5 \end{cases}$</p>
+            <div class="solution">
+              <p><strong>Resolución:</strong> Sustituimos $x = 2$, $y = -1$: Ec.1: $3(2) + 2(-1) = 6 - 2 = 4$ ✓; Ec.2: $2 - 3(-1) = 2 + 3 = 5$ ✓. El par $(2, -1)$ es solución. El sistema es <strong>compatible determinado</strong>.</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel Básico</span>
+          <div class="exercise-block">
+            <p><strong>Ejercicio 1:</strong> Comprueba si $(x, y) = (1, 3)$ es solución del sistema: $\begin{cases} 2x + y = 5 \\ x - y = -2 \end{cases}$</p>
+            <div class="solution">
+              <p><strong>Solución:</strong> Ec.1: $2(1) + 3 = 5$ ✓. Ec.2: $1 - 3 = -2$ ✓. Sí es solución. Sistema compatible determinado.</p>
+            </div>
+          </div>
+
+          <div class="exercise-block">
+            <p><strong>Ejercicio 2:</strong> Indica si el sistema $\begin{cases} x + y = 3 \\ 2x + 2y = 7 \end{cases}$ puede tener solución.</p>
+            <div class="solution">
+              <p><strong>Solución:</strong> La segunda ecuación equivale a $x + y = 3{,}5$, que contradice la primera ($x + y = 3$). El sistema es <strong>incompatible</strong>: no tiene solución.</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel Intermedio</span>
+          <div class="exercise-block">
+            <p><strong>Ejercicio 3:</strong> Clasifica los sistemas: (a) $\begin{cases} x + 2y = 4 \\ 3x + 6y = 12 \end{cases}$ (b) $\begin{cases} x - y = 1 \\ 2x - 2y = 5 \end{cases}$</p>
+            <div class="solution">
+              <p><strong>Solución:</strong> (a) La segunda es tres veces la primera: son la misma recta. <strong>Compatible indeterminado</strong>. (b) Segunda equivale a $x - y = 2{,}5$, incompatible con la primera. <strong>Sistema incompatible</strong>.</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel EVAU</span>
+          <div class="exercise-block">
+            <p><strong>Ejercicio 5:</strong> Sea el sistema $\begin{cases} ax + 2y = 6 \\ 3x + by = 9 \end{cases}$. Encuentra valores de $a$ y $b$ para: (a) Compatible determinado, (b) Incompatible, (c) Compatible indeterminado.</p>
+            <div class="solution">
+              <p><strong>Solución:</strong> $|A| = ab - 6$. (a) $|A| \neq 0$, es decir $ab \neq 6$. Ejemplo: $a = 1, b = 1$. (b) $|A| = 0$ ($ab = 6$) y $\text{rang}(A) \neq \text{rang}(A^*)$. Ejemplo: $a = 1, b = 6$. (c) $|A| = 0$ y las ecuaciones proporcionales: $a = 2, b = 3$.</p>
+            </div>
+          </div>
+
+          <div class="test-grid">
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>¿Cuántas soluciones tiene el sistema $\begin{cases} 2x - y = 4 \\ -4x + 2y = -8 \end{cases}$?</p>
+              <ul>
+                <li data-letter="a">Ninguna</li>
+                <li data-letter="b">Exactamente una</li>
+                <li data-letter="c">Exactamente dos</li>
+                <li data-letter="d">Infinitas</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: d) Infinitas (la segunda ecuación es $-2$ veces la primera)</p>
+            </div>
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>Un sistema de dos ecuaciones lineales con dos incógnitas es <strong>incompatible</strong> cuando:</p>
+              <ul>
+                <li data-letter="a">Las dos ecuaciones representan la misma recta</li>
+                <li data-letter="b">Las dos rectas se cortan en un punto</li>
+                <li data-letter="c">Las dos rectas son paralelas y distintas</li>
+                <li data-letter="d">El determinante es distinto de cero</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: c)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>3.1.2 Interpretación geométrica en 2D y 3D</h3>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto</h4>
+            <p>Describe la interpretación geométrica del sistema $\begin{cases} x + y + z = 3 \\ 2x - y + z = 1 \\ x + 2y - z = 4 \end{cases}$</p>
+            <div class="solution">
+              <p><strong>Resolución:</strong> Cada ecuación representa un plano en $\mathbb{R}^3$. Aplicando Gauss: $\text{rang}(A) = \text{rang}(A^*) = 3$. <strong>Compatible determinado:</strong> los tres planos se cortan en un único punto $(x, y, z) = \left(\frac{26}{21}, \frac{31}{21}, \frac{2}{7}\right)$.</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel Intermedio</span>
+          <div class="exercise-block">
+            <p><strong>Ejercicio 3:</strong> Un sistema $3\times 3$ resulta ser compatible indeterminado con infinitas soluciones dependientes de un parámetro. Interpreta geométricamente.</p>
+            <div class="solution">
+              <p><strong>Solución:</strong> Geométricamente significa que los tres planos se cortan en una <strong>recta</strong> común. El conjunto solución es esa recta, parametrizada por un parámetro libre.</p>
+            </div>
+          </div>
+
+          <div class="test-grid">
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>En $\mathbb{R}^3$, un sistema compatible indeterminado con rango 2 corresponde geométricamente a:</p>
+              <ul>
+                <li data-letter="a">Tres planos que se cortan en un único punto</li>
+                <li data-letter="b">Tres planos que se cortan en una recta común</li>
+                <li data-letter="c">Tres planos coincidentes</li>
+                <li data-letter="d">Tres planos paralelos distintos</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: b)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>3.1.3 Representación matricial: forma $A \cdot x = b$</h3>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto</h4>
+            <p>Escribe el sistema $\begin{cases} 2x - y + 3z = 5 \\ x + 4y - z = 2 \\ 3x - 2y + z = -1 \end{cases}$ en forma matricial $A \cdot \mathbf{x} = \mathbf{b}$.</p>
+            <div class="solution">
+              <p><strong>Resolución:</strong> $A = \begin{pmatrix} 2 & -1 & 3 \\ 1 & 4 & -1 \\ 3 & -2 & 1 \end{pmatrix}$, $\mathbf{x} = \begin{pmatrix} x \\ y \\ z \end{pmatrix}$, $\mathbf{b} = \begin{pmatrix} 5 \\ 2 \\ -1 \end{pmatrix}$. La matriz ampliada es: $A^* = \left(\begin{array}{ccc|c} 2 & -1 & 3 & 5 \\ 1 & 4 & -1 & 2 \\ 3 & -2 & 1 & -1 \end{array}\right)$.</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel Intermedio</span>
+          <div class="exercise-block">
+            <p><strong>Ejercicio 4:</strong> Si $A\mathbf{x} = \mathbf{b}$ y $|A| \neq 0$, ¿por qué la solución única es $\mathbf{x} = A^{-1}\mathbf{b}$?</p>
+            <div class="solution">
+              <p><strong>Solución:</strong> Si $|A| \neq 0$, $A$ es invertible. Multiplicando por $A^{-1}$ a la izquierda: $A^{-1}(A\mathbf{x}) = A^{-1}\mathbf{b} \Rightarrow (A^{-1}A)\mathbf{x} = A^{-1}\mathbf{b} \Rightarrow I\mathbf{x} = A^{-1}\mathbf{b} \Rightarrow \mathbf{x} = A^{-1}\mathbf{b}$.</p>
+            </div>
+          </div>
+
+          <div class="test-grid">
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>En el sistema $A\mathbf{x} = \mathbf{b}$, la <strong>matriz ampliada</strong> $A^*$ se forma:</p>
+              <ul>
+                <li data-letter="a">Añadiendo una fila de ceros a $A$</li>
+                <li data-letter="b">Añadiendo la columna $\mathbf{b}$ a la derecha de $A$</li>
+                <li data-letter="c">Multiplicando $A$ por $\mathbf{b}$</li>
+                <li data-letter="d">Transponiendo $A$ y concatenando con $\mathbf{b}$</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: b)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>3.2 Teorema de Rouché-Frobenius</h3>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto</h4>
+            <p>Aplica el teorema de Rouché-Frobenius al sistema: $\begin{cases} x + 2y + z = 3 \\ 2x + 4y + 2z = 6 \\ 3x + y - z = 2 \end{cases}$</p>
+            <div class="solution">
+              <p><strong>Resolución:</strong> Observamos que $F_2 = 2 \cdot F_1$. Escalonando: $\text{rang}(A) = \text{rang}(A^*) = 2 < 3$. Por Rouché-Frobenius: <strong>compatible indeterminado</strong> con $3 - 2 = 1$ grado de libertad. Solución: $\left(\frac{1+3\lambda}{5}, \frac{7-4\lambda}{5}, \lambda\right)$, $\lambda \in \mathbb{R}$.</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel Básico</span>
+          <div class="exercise-block">
+            <p><strong>Ejercicio 1:</strong> Calcula los rangos y clasifica: $\begin{cases} x + y = 2 \\ 2x + 2y = 5 \end{cases}$</p>
+            <div class="solution">
+              <p><strong>Solución:</strong> $A^* = \begin{pmatrix} 1 & 1 & 2 \\ 2 & 2 & 5 \end{pmatrix}$. $F_2 - 2F_1$: $\begin{pmatrix} 1 & 1 & 2 \\ 0 & 0 & 1 \end{pmatrix}$. $\text{rang}(A) = 1$, $\text{rang}(A^*) = 2$. Como $\text{rang}(A) \neq \text{rang}(A^*)$: <strong>incompatible</strong>.</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel EVAU</span>
+          <div class="exercise-block">
+            <p><strong>Ejercicio 5:</strong> Estudia según los valores de $m$ la compatibilidad del sistema $\begin{cases} x + y + z = 3 \\ x + my + 2z = 4 \\ 2x + y + mz = m+3 \end{cases}$ y resuélvelo en los casos compatible.</p>
+            <div class="evau-note">
+              <p><strong>Estilo EVAU Madrid</strong></p>
+            </div>
+            <div class="solution">
+              <p><strong>Solución:</strong> $|A| = m^2 - 3m + 3$. El discriminante es $\Delta = 9 - 12 = -3 < 0$, por tanto $|A| \neq 0$ para todo $m \in \mathbb{R}$. El sistema es <strong>siempre compatible determinado</strong> (para todo $m$).</p>
+            </div>
+          </div>
+
+          <div class="test-grid">
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>El teorema de Rouché-Frobenius afirma que un sistema es compatible si y solo si:</p>
+              <ul>
+                <li data-letter="a">$|A| \neq 0$</li>
+                <li data-letter="b">$\text{rang}(A) = \text{rang}(A^*)$</li>
+                <li data-letter="c">$\text{rang}(A) < n$</li>
+                <li data-letter="d">$\text{rang}(A^*) = n + 1$</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: b)</p>
+            </div>
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>Un sistema $3\times 3$ tiene $\text{rang}(A) = 2$ y $\text{rang}(A^*) = 2$. Entonces es:</p>
+              <ul>
+                <li data-letter="a">Incompatible</li>
+                <li data-letter="b">Compatible determinado</li>
+                <li data-letter="c">Compatible indeterminado con 1 parámetro libre</li>
+                <li data-letter="d">Compatible indeterminado con 2 parámetros libres</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: c)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>3.3 Métodos de resolución</h3>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto — Método de Gauss</h4>
+            <p>Resuelve por el método de Gauss: $\begin{cases} 2x + y - z = 8 \\ -3x - y + 2z = -11 \\ -2x + y + 2z = -3 \end{cases}$</p>
+            <div class="solution">
+              <p><strong>Resolución:</strong> Forma matricial ampliada y eliminación: $F_2 \leftarrow 2F_2 + 3F_1$, $F_3 \leftarrow F_3 + F_1$. Resultado: $z = -1$, $y = 3$, $x = 2$. <strong>Solución:</strong> $(x, y, z) = (2, 3, -1)$.</p>
+            </div>
+          </div>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto — Regla de Cramer</h4>
+            <p>Resuelve por Cramer: $\begin{cases} 2x - y + z = 3 \\ x + 3y - 2z = -2 \\ 3x + y + z = 7 \end{cases}$</p>
+            <div class="solution">
+              <p><strong>Resolución:</strong> $|A| = 9$. $|A_x| = 4$, $|A_y| = 16$, $|A_z| = 35$. $x = \frac{4}{9}$, $y = \frac{16}{9}$, $z = \frac{35}{9}$. <strong>Solución:</strong> $(x,y,z) = \left(\frac{4}{9}, \frac{16}{9}, \frac{35}{9}\right)$.</p>
+            </div>
+          </div>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto — Matriz Inversa</h4>
+            <p>Resuelve $\begin{cases} 2x + y = 5 \\ 5x + 3y = 13 \end{cases}$ usando $A^{-1}$.</p>
+            <div class="solution">
+              <p><strong>Resolución:</strong> $|A| = 1$, $A^{-1} = \begin{pmatrix} 3 & -1 \\ -5 & 2 \end{pmatrix}$. $\mathbf{x} = A^{-1}\mathbf{b} = \begin{pmatrix} 3 & -1 \\ -5 & 2 \end{pmatrix}\begin{pmatrix} 5 \\ 13 \end{pmatrix} = \begin{pmatrix} 2 \\ 1 \end{pmatrix}$. <strong>Solución:</strong> $(x, y) = (2, 1)$.</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel Intermedio</span>
+          <div class="exercise-block">
+            <p><strong>Ejercicio 4:</strong> Explica por qué el método de Gauss es preferible a Cramer para sistemas grandes.</p>
+            <div class="solution">
+              <p><strong>Solución:</strong> Cramer exige calcular $n+1$ determinantes de orden $n$; su coste crece como $O(n \cdot n!)$. Gauss tiene coste $O(n^3)$, mucho más eficiente para $n$ grande. Además Gauss detecta directamente sistemas incompatibles e indeterminados.</p>
+            </div>
+          </div>
+
+          <div class="test-grid">
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>En la regla de Cramer, el valor de $y$ es:</p>
+              <ul>
+                <li data-letter="a">$y = \dfrac{\begin{vmatrix}e&b\\f&d\end{vmatrix}}{\begin{vmatrix}a&b\\c&d\end{vmatrix}}$</li>
+                <li data-letter="b">$y = \dfrac{\begin{vmatrix}a&e\\c&f\end{vmatrix}}{\begin{vmatrix}a&b\\c&d\end{vmatrix}}$</li>
+                <li data-letter="c">$y = \dfrac{\begin{vmatrix}a&b\\c&d\end{vmatrix}}{\begin{vmatrix}e&b\\f&d\end{vmatrix}}$</li>
+                <li data-letter="d">$y = \dfrac{\begin{vmatrix}a&e\\c&f\end{vmatrix}}{\begin{vmatrix}e&b\\f&d\end{vmatrix}}$</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: b)</p>
+            </div>
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>La complejidad computacional del método de Gauss es:</p>
+              <ul>
+                <li data-letter="a">$O(n)$</li>
+                <li data-letter="b">$O(n^2)$</li>
+                <li data-letter="c">$O(n^3)$</li>
+                <li data-letter="d">$O(n!)$</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: c)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>3.4 Ecuaciones matriciales</h3>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto</h4>
+            <p>Resuelve la ecuación matricial $AX = B$ donde $A = \begin{pmatrix}2&1\\3&2\end{pmatrix}$, $B = \begin{pmatrix}1&0\\-1&2\end{pmatrix}$.</p>
+            <div class="solution">
+              <p><strong>Resolución:</strong> $|A| = 1$, $A^{-1} = \begin{pmatrix}2&-1\\-3&2\end{pmatrix}$. $X = A^{-1}B = \begin{pmatrix}3&-2\\-5&4\end{pmatrix}$. <strong>Verificación:</strong> $AX = B$ ✓.</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel EVAU</span>
+          <div class="exercise-block">
+            <p><strong>Ejercicio 5:</strong> Sea $A = \begin{pmatrix}1&2\\1&3\end{pmatrix}$. Calcula $A^{-1}$ y resuelve $AX + A = 3I$.</p>
+            <div class="evau-note">
+              <p><strong>Estilo EVAU Madrid</strong></p>
+            </div>
+            <div class="solution">
+              <p><strong>Solución:</strong> $|A|=1$, $A^{-1}=\begin{pmatrix}3&-2\\-1&1\end{pmatrix}$. $AX = 3I - A$, $X = A^{-1}(3I-A) = \begin{pmatrix}8&-6\\-3&2\end{pmatrix}$.</p>
+            </div>
+          </div>
+
+          <div class="test-grid">
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>Si $AX = B$ y $A$ no es invertible, entonces:</p>
+              <ul>
+                <li data-letter="a">$X = A^{-1}B$ siempre funciona</li>
+                <li data-letter="b">El sistema puede ser incompatible o indeterminado</li>
+                <li data-letter="c">$X = 0$ es siempre la solución</li>
+                <li data-letter="d">No hay solución nunca</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: b)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>3.5 Modelización con sistemas de ecuaciones</h3>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto</h4>
+            <p>En una cafetería, un café y un zumo cuestan 2,70 € en total. Dos cafés y tres zumos cuestan 6,50 €. ¿Cuánto cuesta cada producto?</p>
+            <div class="solution">
+              <p><strong>Resolución:</strong> Variables: $c$ = precio café, $z$ = precio zumo. Sistema: $\begin{cases} c + z = 2{,}70 \\ 2c + 3z = 6{,}50 \end{cases}$. Por Gauss: $z = 1{,}10$ €, $c = 1{,}60$ €. <strong>Solución:</strong> Café: 1,60 €, Zumo: 1,10 €.</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel Intermedio</span>
+          <div class="exercise-block">
+            <p><strong>Ejercicio 4:</strong> La suma de las cifras de un número de dos cifras es 9. Si se invierten las cifras, el número nuevo es 27 más que el original. Halla el número.</p>
+            <div class="solution">
+              <p><strong>Solución:</strong> Sea $d$ la decena y $u$ la unidad. $\begin{cases} d+u=9 \\ 10u+d=10d+u+27 \end{cases}$. Resultado: $d=3$, $u=6$. El número es <strong>36</strong>.</p>
+            </div>
+          </div>
+
+          <div class="test-grid">
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>Al modelizar un problema real con un sistema, la primera etapa es:</p>
+              <ul>
+                <li data-letter="a">Calcular el determinante</li>
+                <li data-letter="b">Identificar las incógnitas y traducir a ecuaciones</li>
+                <li data-letter="c">Aplicar directamente el método de Gauss</li>
+                <li data-letter="d">Comprobar si el sistema es homogéneo</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: b)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chapter" id="cap4">
+        <h2>Capítulo 4 — Vectores en el Espacio</h2>
+
+        <div class="subsection">
+          <h3>4.1 Vectores en ℝ³: conceptos básicos</h3>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto</h4>
+            <p>Dados $A = (1, -2, 3)$ y $B = (4, 1, -1)$, calcula $\overrightarrow{AB}$, su módulo y los cosenos directores.</p>
+            <div class="solution">
+              <p><strong>Resolución:</strong> $\overrightarrow{AB} = (3, 3, -4)$. $|\overrightarrow{AB}| = \sqrt{9+9+16} = \sqrt{34}$. Cosenos directores: $\cos\alpha = \frac{3}{\sqrt{34}}$, $\cos\beta = \frac{3}{\sqrt{34}}$, $\cos\gamma = \frac{-4}{\sqrt{34}}$. Verificación: $\cos^2\alpha + \cos^2\beta + \cos^2\gamma = 1$ ✓.</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel Básico</span>
+          <div class="exercise-block">
+            <p><strong>Ejercicio 1:</strong> Calcula el módulo del vector $\mathbf{u} = (-2, 3, 6)$.</p>
+            <div class="solution">
+              <p><strong>Solución:</strong> $|\mathbf{u}| = \sqrt{4+9+36} = \sqrt{49} = 7$.</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel Intermedio</span>
+          <div class="exercise-block">
+            <p><strong>Ejercicio 3:</strong> Halla el vector unitario en la dirección de $\mathbf{v}=(1,-2,2)$.</p>
+            <div class="solution">
+              <p><strong>Solución:</strong> $|\mathbf{v}| = \sqrt{1+4+4} = 3$. $\hat{\mathbf{v}} = \left(\frac{1}{3}, -\frac{2}{3}, \frac{2}{3}\right)$.</p>
+            </div>
+          </div>
+
+          <div class="test-grid">
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>El módulo del vector $\mathbf{u}=(3, -4, 0)$ es:</p>
+              <ul>
+                <li data-letter="a">$1$</li>
+                <li data-letter="b">$5$</li>
+                <li data-letter="c">$7$</li>
+                <li data-letter="d">$\sqrt{7}$</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: b) $5$</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>4.2 Dependencia e independencia lineal</h3>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto</h4>
+            <p>Estudia si los vectores $\mathbf{u}=(1,2,-1)$, $\mathbf{v}=(2,1,3)$, $\mathbf{w}=(1,-1,4)$ son linealmente independientes.</p>
+            <div class="solution">
+              <p><strong>Resolución:</strong> Calculamos el determinante con los vectores como columnas: $\begin{vmatrix}1&2&1\\2&1&-1\\-1&3&4\end{vmatrix} = 0$. Son <strong>linealmente dependientes</strong>. Relación de dependencia: $\mathbf{u} - \mathbf{v} + \mathbf{w} = \mathbf{0}$, es decir $\mathbf{w} = \mathbf{v} - \mathbf{u}$.</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel Intermedio</span>
+          <div class="exercise-block">
+            <p><strong>Ejercicio 3:</strong> Estudia la independencia lineal de $\mathbf{a}=(1,0,2)$, $\mathbf{b}=(0,1,-1)$, $\mathbf{c}=(2,-1,5)$.</p>
+            <div class="solution">
+              <p><strong>Solución:</strong> $\begin{vmatrix}1&0&2\\0&1&-1\\2&-1&5\end{vmatrix} = 4-4 = 0$. <strong>Linealmente dependientes</strong>. Dependencia: $\mathbf{c} = 2\mathbf{a} - \mathbf{b}$.</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel EVAU</span>
+          <div class="exercise-block">
+            <p><strong>Ejercicio 5:</strong> Estudia la independencia lineal de $\mathbf{u}=(1,1,m)$, $\mathbf{v}=(1,m,1)$, $\mathbf{w}=(m,1,1)$ según los valores de $m$.</p>
+            <div class="evau-note">
+              <p><strong>Estilo EVAU Madrid</strong></p>
+            </div>
+            <div class="solution">
+              <p><strong>Solución:</strong> $|A| = -(m-1)^2(m+2)$. — $m \neq 1$ y $m \neq -2$: <strong>L.I.</strong> — $m = 1$: todos son $(1,1,1)$: <strong>L.D.</strong> — $m = -2$: $\mathbf{u}+\mathbf{v}+\mathbf{w}=(0,0,0)$: <strong>L.D.</strong></p>
+            </div>
+          </div>
+
+          <div class="test-grid">
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>Tres vectores de $\mathbb{R}^3$ son linealmente independientes si y solo si:</p>
+              <ul>
+                <li data-letter="a">Son perpendiculares dos a dos</li>
+                <li data-letter="b">El determinante formado con ellos es distinto de cero</li>
+                <li data-letter="c">Ninguno es múltiplo del otro</li>
+                <li data-letter="d">Su suma es el vector nulo</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: b)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>4.3 Producto escalar</h3>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto</h4>
+            <p>Calcula el producto escalar de $\mathbf{u}=(2,-1,3)$ y $\mathbf{v}=(1,4,-2)$ y el ángulo entre ellos.</p>
+            <div class="solution">
+              <p><strong>Resolución:</strong> $\mathbf{u} \cdot \mathbf{v} = 2 \cdot 1 + (-1) \cdot 4 + 3 \cdot (-2) = 2 - 4 - 6 = -8$. $|\mathbf{u}| = \sqrt{14}$, $|\mathbf{v}| = \sqrt{21}$. $\cos\theta = \frac{-8}{\sqrt{294}} \approx -0{,}467$. $\theta \approx 117{,}8°$. El producto escalar es negativo, indicando ángulo obtuso.</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel Básico</span>
+          <div class="exercise-block">
+            <p><strong>Ejercicio 2:</strong> Dados $\mathbf{u}=(1,1,1)$ y $\mathbf{v}=(2,-3,1)$, calcula $\mathbf{u}\cdot\mathbf{v}$ y determina si son perpendiculares.</p>
+            <div class="solution">
+              <p><strong>Solución:</strong> $\mathbf{u}\cdot\mathbf{v} = 2-3+1 = 0$. Como el producto escalar es cero, los vectores son <strong>perpendiculares (ortogonales)</strong>.</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel Intermedio</span>
+          <div class="exercise-block">
+            <p><strong>Ejercicio 4:</strong> Descompón $\mathbf{a}=(1,2,3)$ en sus componentes paralela y perpendicular a $\mathbf{b}=(1,0,1)$.</p>
+            <div class="solution">
+              <p><strong>Solución:</strong> $\mathbf{a}\cdot\mathbf{b}=4$, $|\mathbf{b}|^2=2$. Paralela: $\mathbf{a}_{\parallel}=\frac{4}{2}(1,0,1)=(2,0,2)$. Perpendicular: $\mathbf{a}_{\perp}=\mathbf{a}-\mathbf{a}_{\parallel}=(-1,2,1)$. Comprobación: $\mathbf{a}_{\perp}\cdot\mathbf{b}=-1+0+1=0$ ✓.</p>
+            </div>
+          </div>
+
+          <div class="test-grid">
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>Si $\mathbf{u}\cdot\mathbf{v}>0$, el ángulo entre $\mathbf{u}$ y $\mathbf{v}$ es:</p>
+              <ul>
+                <li data-letter="a">Exactamente 0°</li>
+                <li data-letter="b">Agudo (entre 0° y 90°)</li>
+                <li data-letter="c">Recto (90°)</li>
+                <li data-letter="d">Obtuso (entre 90° y 180°)</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: b)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>4.4 Producto vectorial</h3>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto</h4>
+            <p>Calcula el producto vectorial $\mathbf{u}\times\mathbf{v}$ con $\mathbf{u}=(2,1,-3)$ y $\mathbf{v}=(-1,4,2)$.</p>
+            <div class="solution">
+              <p><strong>Resolución:</strong> $\mathbf{u}\times\mathbf{v} = \begin{vmatrix}\mathbf{i}&\mathbf{j}&\mathbf{k}\\2&1&-3\\-1&4&2\end{vmatrix} = (14,-1,9)$. <strong>Verificación:</strong> $\mathbf{u}\cdot(\mathbf{u}\times\mathbf{v})=2\cdot14+1\cdot(-1)+(-3)\cdot9=28-1-27=0$ ✓ (el resultado es perpendicular a $\mathbf{u}$).</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel Intermedio</span>
+          <div class="exercise-block">
+            <p><strong>Ejercicio 3:</strong> Calcula el área del paralelogramo con lados $\mathbf{u}=(2,3,0)$ y $\mathbf{v}=(1,0,4)$.</p>
+            <div class="solution">
+              <p><strong>Solución:</strong> $\mathbf{u}\times\mathbf{v} = (12,-8,-3)$. Área $= |\mathbf{u}\times\mathbf{v}| = \sqrt{144+64+9} = \sqrt{217}$.</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel EVAU</span>
+          <div class="exercise-block">
+            <p><strong>Ejercicio 5:</strong> Los vértices de un triángulo son $A=(1,0,2)$, $B=(3,1,0)$ y $C=(0,2,1)$. Calcula el área del triángulo $ABC$.</p>
+            <div class="evau-note">
+              <p><strong>Estilo EVAU Madrid</strong></p>
+            </div>
+            <div class="solution">
+              <p><strong>Solución:</strong> $\overrightarrow{AB}=(2,1,-2)$, $\overrightarrow{AC}=(-1,2,-1)$. $\overrightarrow{AB}\times\overrightarrow{AC}=(3,4,5)$. $S_{\triangle}=\frac{1}{2}|\overrightarrow{AB}\times\overrightarrow{AC}|=\frac{\sqrt{50}}{2}=\frac{5\sqrt{2}}{2}$.</p>
+            </div>
+          </div>
+
+          <div class="test-grid">
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>El área del paralelogramo formado por $\mathbf{u}$ y $\mathbf{v}$ es:</p>
+              <ul>
+                <li data-letter="a">$\mathbf{u}\cdot\mathbf{v}$</li>
+                <li data-letter="b">$|\mathbf{u}||\mathbf{v}|\cos\theta$</li>
+                <li data-letter="c">$|\mathbf{u}\times\mathbf{v}|$</li>
+                <li data-letter="d">$|\mathbf{u}|+|\mathbf{v}|$</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: c)</p>
+            </div>
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>Si $\mathbf{u}\times\mathbf{v}=\mathbf{0}$ y $\mathbf{u}\neq\mathbf{0}$, $\mathbf{v}\neq\mathbf{0}$, entonces:</p>
+              <ul>
+                <li data-letter="a">$\mathbf{u}$ y $\mathbf{v}$ son perpendiculares</li>
+                <li data-letter="b">$\mathbf{u}$ y $\mathbf{v}$ son paralelos</li>
+                <li data-letter="c">$\mathbf{u}$ y $\mathbf{v}$ son coplanares</li>
+                <li data-letter="d">$\mathbf{u}$ y $\mathbf{v}$ son ortogonales</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: b)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>4.5 Producto mixto</h3>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto</h4>
+            <p>Calcula el producto mixto $[\mathbf{u},\mathbf{v},\mathbf{w}]$ con $\mathbf{u}=(1,2,0)$, $\mathbf{v}=(0,1,3)$ y $\mathbf{w}=(2,0,-1)$.</p>
+            <div class="solution">
+              <p><strong>Resolución:</strong> $[\mathbf{u},\mathbf{v},\mathbf{w}] = \mathbf{u}\cdot(\mathbf{v}\times\mathbf{w})$. $\mathbf{v}\times\mathbf{w}=(-1,6,-2)$. $\mathbf{u}\cdot(-1,6,-2)=1\cdot(-1)+2\cdot6+0\cdot(-2)=-1+12=11$. <strong>Producto mixto:</strong> $[\mathbf{u},\mathbf{v},\mathbf{w}]=11$.</p>
+            </div>
+          </div>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto — Volumen del paralelepípedo</h4>
+            <p>Calcula el volumen del paralelepípedo con aristas $\mathbf{a}=(1,0,2)$, $\mathbf{b}=(3,1,0)$ y $\mathbf{c}=(1,-1,1)$.</p>
+            <div class="solution">
+              <p><strong>Resolución:</strong> $V = |[\mathbf{a},\mathbf{b},\mathbf{c}]| = \left|\begin{vmatrix}1&0&2\\3&1&0\\1&-1&1\end{vmatrix}\right| = |-7| = 7$ u.c.</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel EVAU</span>
+          <div class="exercise-block">
+            <p><strong>Ejercicio 5:</strong> Calcula el volumen del tetraedro con vértices $A=(0,0,0)$, $B=(2,0,0)$, $C=(0,3,0)$ y $D=(0,0,4)$.</p>
+            <div class="evau-note">
+              <p><strong>Estilo EVAU Madrid</strong></p>
+            </div>
+            <div class="solution">
+              <p><strong>Solución:</strong> $\overrightarrow{AB}=(2,0,0)$, $\overrightarrow{AC}=(0,3,0)$, $\overrightarrow{AD}=(0,0,4)$. $[\overrightarrow{AB},\overrightarrow{AC},\overrightarrow{AD}]=24$. $V_{\text{tetraedro}}=\frac{1}{6}\cdot24=4$ u.c.</p>
+            </div>
+          </div>
+
+          <div class="test-grid">
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>El volumen del paralelepípedo formado por $\mathbf{u}$, $\mathbf{v}$ y $\mathbf{w}$ es:</p>
+              <ul>
+                <li data-letter="a">$[\mathbf{u},\mathbf{v},\mathbf{w}]$</li>
+                <li data-letter="b">$|[\mathbf{u},\mathbf{v},\mathbf{w}]|$</li>
+                <li data-letter="c">$|\mathbf{u}||\mathbf{v}||\mathbf{w}|$</li>
+                <li data-letter="d">$\frac{1}{6}|[\mathbf{u},\mathbf{v},\mathbf{w}]|$</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: b)</p>
+            </div>
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>El volumen del tetraedro con aristas $\mathbf{u}$, $\mathbf{v}$, $\mathbf{w}$ es:</p>
+              <ul>
+                <li data-letter="a">$|[\mathbf{u},\mathbf{v},\mathbf{w}]|$</li>
+                <li data-letter="b">$\frac{1}{3}|[\mathbf{u},\mathbf{v},\mathbf{w}]|$</li>
+                <li data-letter="c">$\frac{1}{6}|[\mathbf{u},\mathbf{v},\mathbf{w}]|$</li>
+                <li data-letter="d">$\frac{1}{2}|[\mathbf{u},\mathbf{v},\mathbf{w}]|$</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: c)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>

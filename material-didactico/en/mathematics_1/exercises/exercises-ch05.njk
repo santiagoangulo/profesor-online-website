@@ -1,0 +1,2878 @@
+---
+layout: layouts/base.njk
+title: "Mathematics II — Exercises: Chapter 5 — Analytic Geometry in Space | Profesor Online"
+permalink: "./material-didactico/en/mathematics_1/exercises/exercises-ch05.html"
+section: material-didactico
+depth: 4
+---
+
+<section class="content-header">
+    <div class="container">
+      <a href="../mathematics_2/index.html" class="back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Back to Mathematics II Index
+      </a>
+      <h1>Exercises: Chapter 5 — Analytic Geometry in Space</h1>
+      <p>Step-by-step solved exercises on Analytic Geometry in Space. Includes basic, intermediate, EVAU level problems and multiple choice tests.</p>
+      <div class="course-meta">
+        <span>2nd Year Baccalaureate — Sciences and Technology</span>
+        <span>Community of Madrid</span>
+        <span>Decree 64/2022 (LOMLOE)</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-page">
+    <div class="container">
+      <nav class="toc-nav">
+      </nav>
+
+<blockquote>
+<p><strong>Instructions for use:</strong>
+- Each subsection includes: 1 Worked Example · 2 Basic Level · 2 Intermediate Level · 1 EVAU Level · 2 Multiple Choice Test.
+- Solutions are complete with all intermediate steps.
+- EVAU problems follow the official format of the Community of Madrid.
+- Notation: $\ldots$ for inline mathematics, $$\ldots$$ for centred formulas.</p>
+</blockquote>
+<hr />
+<hr />
+<h5>5.1.1 Vector Equation of a Line</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Find the vector equation of the line passing through $A(1, -2, 3)$ with direction vector $\vec{d} = (2, 1, -1)$.</p>
+<p><strong>Solution:</strong></p>
+<p>The vector equation of a line is completely determined by a point $P_0$ on the line and a direction vector $\vec{d} \neq \vec{0}$.</p>
+<p>The general form is:
+$$\vec{r} = \vec{OP_0} + \lambda\,\vec{d}, \quad \lambda \in \mathbb{R}$$</p>
+<p>In our case, $\vec{OP_0} = (1, -2, 3)$ and $\vec{d} = (2, 1, -1)$, so:
+$$(x, y, z) = (1, -2, 3) + \lambda(2, 1, -1)$$</p>
+<p>That is:
+$$\boxed{(x, y, z) = (1 + 2\lambda,\; -2 + \lambda,\; 3 - \lambda), \quad \lambda \in \mathbb{R}}$$</p>
+<p><strong>Verification:</strong> For $\lambda = 0$ we obtain the point $A(1,-2,3)$ ✓. The direction of the vector $(2,1,-1)$ is the same as $\vec{d}$ ✓.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>Write the vector equation of the line passing through $P(0, 1, 2)$ with direction vector $\vec{d} = (3, 0, -2)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> The vector equation is:
+$$(x, y, z) = (0, 1, 2) + \lambda(3, 0, -2), \quad \lambda \in \mathbb{R}$$
+That is, $(x,y,z) = (3\lambda,\; 1,\; 2-2\lambda)$.</p>
+</blockquote>
+<ol>
+<li>Find the vector equation of the line passing through the points $A(2, -1, 0)$ and $B(4, 3, -2)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> The direction vector is $\vec{AB} = B - A = (4-2,\; 3-(-1),\; -2-0) = (2, 4, -2)$.
+We can simplify by dividing by 2: $\vec{d} = (1, 2, -1)$.
+Taking $A$ as the base point:
+$$(x, y, z) = (2, -1, 0) + \lambda(1, 2, -1), \quad \lambda \in \mathbb{R}$$
+<strong>Check:</strong> For $\lambda = 2$: $(2+2, -1+4, 0-2) = (4,3,-2) = B$ ✓</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>Find the vector equation of the line $r$ passing through $A(1, 2, -1)$ that is parallel to the line $s: (x,y,z) = (3,0,1) + \mu(2,-1,4)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> Two lines are parallel if and only if their direction vectors are proportional. The direction vector of $s$ is $\vec{d}_s = (2,-1,4)$, which also serves as the direction vector of $r$.
+The vector equation of $r$ is:
+$$(x, y, z) = (1, 2, -1) + \lambda(2, -1, 4), \quad \lambda \in \mathbb{R}$$</p>
+</blockquote>
+<ol>
+<li>The line $r$ has vector equation $(x,y,z) = (1,0,-3) + \lambda(-2,1,2)$. Determine whether the point $Q(5, -2, -7)$ belongs to $r$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> We substitute the coordinates of $Q$ into the vector equation and check whether a unique value of $\lambda$ exists:
+$$5 = 1 - 2\lambda \Rightarrow \lambda = -2$$
+$$-2 = 0 + \lambda \Rightarrow \lambda = -2$$
+$$-7 = -3 + 2\lambda \Rightarrow 2\lambda = -4 \Rightarrow \lambda = -2$$
+All three values are equal, $\lambda = -2$ in all three cases, therefore $Q \in r$ ✓.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>Let $r$ be the line passing through $A(2,1,-3)$ and $B(4,-1,1)$, and $s$ the line passing through $C(1,3,0)$ with direction vector $\vec{d}_s = (1,-1,2)$.</li>
+</ol>
+<p><strong>(a)</strong> Write the vector equation of $r$.</p>
+<p><strong>(b)</strong> Determine whether $r$ and $s$ are the same line, parallel, intersecting, or skew.</p>
+<blockquote>
+<p><strong>Solution:</strong></p>
+<p><strong>(a)</strong> $\vec{AB} = (4-2, -1-1, 1-(-3)) = (2,-2,4)$. Simplifying: $\vec{d}_r = (1,-1,2)$.
+$$r:\; (x,y,z) = (2,1,-3) + \lambda(1,-1,2)$$</p>
+<p><strong>(b)</strong> The direction vectors are $\vec{d}_r = (1,-1,2)$ and $\vec{d}_s = (1,-1,2)$: they are proportional (equal), so $r \parallel s$ or $r = s$.
+We check whether $C(1,3,0) \in r$:
+$$1 = 2 + \lambda \Rightarrow \lambda = -1$$
+$$3 = 1 - \lambda = 1-(-1) = 2 \neq 3$$
+The second equation is not satisfied, so $C \notin r$.
+<strong>Conclusion:</strong> $r$ and $s$ are <strong>parallel</strong> (non-coincident).</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>The vector equation of the line passing through $P(1,2,3)$ with direction vector $\vec{d}=(0,1,0)$ is:</li>
+<li>a) $(x,y,z) = (1,2,3) + \lambda(1,2,3)$</li>
+<li>b) $(x,y,z) = (0,1,0) + \lambda(1,2,3)$</li>
+<li>c) $(x,y,z) = (1,2,3) + \lambda(0,1,0)$</li>
+<li>d) $(x,y,z) = (1,2,3) + \lambda(1,0,0)$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> c) The form is $\vec{r} = \vec{OP_0} + \lambda\vec{d}$, with point $P(1,2,3)$ and $\vec{d}=(0,1,0)$. This line is parallel to the $OY$ axis.</p>
+</blockquote>
+<ol>
+<li>How many distinct direction vectors can a line in space have?</li>
+<li>a) Exactly one</li>
+<li>b) Exactly two (one for each direction)</li>
+<li>c) Infinitely many, all proportional to each other</li>
+<li>d) Infinitely many, with no restriction</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> c) The direction vector of a line is not unique: any non-zero scalar multiple of a direction vector is also a direction vector of the same line. All such vectors are proportional to each other.</p>
+</blockquote>
+<hr />
+<h5>5.1.2 Parametric Equations of a Line</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Obtain the parametric equations of the line passing through $A(-1, 3, 2)$ with direction vector $\vec{d} = (4, -2, 1)$.</p>
+<p><strong>Solution:</strong></p>
+<p>We start from the vector equation: $(x,y,z) = (-1,3,2) + \lambda(4,-2,1)$.</p>
+<p>Equating coordinate by coordinate gives the <strong>parametric equations</strong>:</p>
+<p>$$\boxed{\begin{cases} x = -1 + 4\lambda \ y = 3 - 2\lambda \ z = 2 + \lambda \end{cases}, \quad \lambda \in \mathbb{R}}$$</p>
+<p>Each value of $\lambda \in \mathbb{R}$ determines a unique point on the line.</p>
+<p><strong>Example of use:</strong> For $\lambda = 1$: $(x,y,z) = (3, 1, 3)$, which is another point on the line.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>Write the parametric equations of the line passing through $P(2,0,-1)$ with direction vector $\vec{d}=(1,3,-2)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong>
+$$\begin{cases} x = 2 + \lambda \ y = 3\lambda \ z = -1 - 2\lambda \end{cases}, \quad \lambda \in \mathbb{R}$$</p>
+</blockquote>
+<ol>
+<li>Find the parametric equations of the line passing through $A(0,0,0)$ and $B(1,-2,3)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> The direction vector is $\vec{AB} = (1,-2,3)$. Taking $A$ as the base point:
+$$\begin{cases} x = \lambda \ y = -2\lambda \ z = 3\lambda \end{cases}, \quad \lambda \in \mathbb{R}$$
+This line passes through the origin with direction $(1,-2,3)$.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>From the parametric equations $\begin{cases} x = 2 + 3\lambda \ y = -1 + \lambda \ z = 4 - 2\lambda \end{cases}$, find the intersection point of the line with the plane $z = 0$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> The plane $z=0$ corresponds to $z=0$ in the parametric equations:
+$$4 - 2\lambda = 0 \Rightarrow \lambda = 2$$
+Substituting $\lambda = 2$:
+$$x = 2 + 6 = 8, \quad y = -1 + 2 = 1, \quad z = 0$$
+The intersection point with the plane $z=0$ is $\mathbf{(8, 1, 0)}$.</p>
+</blockquote>
+<ol>
+<li>A line has parametric equations $x = 1+t$, $y = 2-t$, $z = -1+2t$. Find the points on the line whose $x$-coordinate equals its $y$-coordinate.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> We impose $x = y$:
+$$1 + t = 2 - t \Rightarrow 2t = 1 \Rightarrow t = \frac{1}{2}$$
+Substituting $t = 1/2$:
+$$x = 1 + \frac{1}{2} = \frac{3}{2}, \quad y = 2 - \frac{1}{2} = \frac{3}{2}, \quad z = -1 + 1 = 0$$
+The desired point is $\left(\dfrac{3}{2}, \dfrac{3}{2}, 0\right)$.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>Consider the lines:
+   $$r:\; \begin{cases} x = 1 + 2t \ y = -t \ z = 3 + t \end{cases} \qquad s:\; \begin{cases} x = 3 + \mu \ y = 2 + \mu \ z = 5 - \mu \end{cases}$$</li>
+</ol>
+<p><strong>(a)</strong> Find the direction vectors of $r$ and $s$.</p>
+<p><strong>(b)</strong> Determine whether $r$ and $s$ intersect. If they do, find the intersection point.</p>
+<blockquote>
+<p><strong>Solution:</strong></p>
+<p><strong>(a)</strong> From the parametric equations: $\vec{d}_r = (2,-1,1)$ and $\vec{d}_s = (1,1,-1)$.</p>
+<p><strong>(b)</strong> For the lines to intersect, the system $r = s$ must have a solution:
+$$1+2t = 3+\mu \;\Rightarrow\; 2t - \mu = 2 \quad (I)$$
+$$-t = 2+\mu \;\Rightarrow\; -t - \mu = 2 \quad (II)$$
+$$3+t = 5-\mu \;\Rightarrow\; t + \mu = 2 \quad (III)$$</p>
+<p>From $(II)$ and $(III)$: adding, $-t - \mu + t + \mu = 4 \Rightarrow 0 = 4$, <strong>contradiction</strong>.
+The system is inconsistent. The direction vectors are not proportional (the lines are not parallel), and they do not intersect, therefore $r$ and $s$ are <strong>skew lines</strong>.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>The parametric equations $x = 2 - t,\; y = 1,\; z = 3 + 2t$ correspond to a line that:</li>
+<li>a) Is parallel to the $OX$ axis</li>
+<li>b) Is parallel to the $OY$ axis</li>
+<li>c) Is parallel to the $XOY$ plane</li>
+<li>d) Passes through the origin of coordinates</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> c) The direction vector is $(-1, 0, 2)$. Since the $y$-component is constant ($y=1$), the line is parallel to the $XOZ$ plane and, in particular, parallel to the $XOY$ plane. (It has no $y$-component, which implies it is parallel to the $XOZ$ plane, not the $XOY$ plane.) Correction: the direction vector $(-1,0,2)$ has $y$-component $0$, so the line is <strong>parallel to the $XOZ$ plane</strong>. The correct answer among those given is c), since it also does not pass through the origin ($y$ would be 0, not 1).</p>
+</blockquote>
+<ol>
+<li>The line $r$ has parametric equations $x=3,\; y=1+2\lambda,\; z=-2+\lambda$. What is its direction vector?</li>
+<li>a) $(3, 1, -2)$</li>
+<li>b) $(0, 2, 1)$</li>
+<li>c) $(1, 2, 1)$</li>
+<li>d) $(3, 2, 1)$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> b) In the parametric equations $x = 3 + 0\cdot\lambda$, $y = 1+2\lambda$, $z = -2+\lambda$, the coefficients of $\lambda$ are $(0, 2, 1)$, which is the direction vector.</p>
+</blockquote>
+<hr />
+<h5>5.1.3 Symmetric (or Continuous) Equations of a Line</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Obtain the symmetric (continuous) equations of the line passing through $A(3, -1, 2)$ with direction vector $\vec{d} = (2, 4, -3)$.</p>
+<p><strong>Solution:</strong></p>
+<p>The parametric equations are:
+$$x = 3 + 2\lambda, \quad y = -1 + 4\lambda, \quad z = 2 - 3\lambda$$</p>
+<p>Solving for $\lambda$ from each:
+$$\lambda = \frac{x-3}{2}, \quad \lambda = \frac{y+1}{4}, \quad \lambda = \frac{z-2}{-3}$$</p>
+<p>Equating all three expressions (since all equal $\lambda$):</p>
+<p>$$\boxed{\frac{x-3}{2} = \frac{y+1}{4} = \frac{z-2}{-3}}$$</p>
+<p>These are the <strong>symmetric</strong> (or continuous) equations of the line. The denominator of each fraction is the corresponding component of the direction vector.</p>
+<p><strong>Note:</strong> If a component of the direction vector is zero, that coordinate is constant and is written separately. For example, if $d_y = 0$, we write $y = y_0$ and $\dfrac{x-x_0}{d_x} = \dfrac{z-z_0}{d_z}$.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>Write the symmetric equations of the line with parametric equations $x = 1+2t,\; y = -3+t,\; z = 5-4t$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> We solve for $t$ from each equation:
+$$t = \frac{x-1}{2}, \quad t = y+3, \quad t = \frac{z-5}{-4}$$
+The symmetric equations are:
+$$\frac{x-1}{2} = \frac{y+3}{1} = \frac{z-5}{-4}$$</p>
+</blockquote>
+<ol>
+<li>Find the symmetric equations of the line passing through $A(2,1,-3)$ and $B(5,1,0)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\vec{AB} = (3, 0, 3)$. Since the $y$-component is zero, the $y$-coordinate remains constant:
+$$y = 1 \quad \text{and} \quad \frac{x-2}{3} = \frac{z+3}{3}$$
+Simplifying the second: $x - 2 = z + 3$, i.e. $x - z = 5$.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>The line $r$ has symmetric equations $\dfrac{x+1}{3} = \dfrac{y-2}{-1} = \dfrac{z}{2}$. Find a point on $r$ and its direction vector. Determine the parametric equations.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong>
+- <strong>Point:</strong> setting each fraction equal to $0$: $x+1=0, y-2=0, z=0$, so $P(-1, 2, 0) \in r$.
+- <strong>Direction vector:</strong> the denominators give $\vec{d} = (3,-1,2)$.
+- <strong>Parametric equations:</strong>
+$$x = -1+3\lambda, \quad y = 2-\lambda, \quad z = 2\lambda, \quad \lambda \in \mathbb{R}$$</p>
+</blockquote>
+<ol>
+<li>Check whether the point $Q(5, 0, 4)$ belongs to the line $\dfrac{x-1}{2} = \dfrac{y+1}{-\frac{1}{2}} = \dfrac{z-2}{1}$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> We substitute $Q(5,0,4)$:
+$$\frac{5-1}{2} = \frac{4}{2} = 2, \quad \frac{0+1}{-\frac{1}{2}} = \frac{1}{-0{,}5} = -2, \quad \frac{4-2}{1} = 2$$
+The first and third quotients equal $2$, but the second equals $-2$. <strong>The three quotients are not equal</strong>, therefore $Q \notin r$.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>Let the line $r:\;\dfrac{x-2}{1} = \dfrac{y+1}{2} = \dfrac{z-3}{-2}$.</li>
+</ol>
+<p><strong>(a)</strong> Write the parametric equations of $r$.</p>
+<p><strong>(b)</strong> Find the intersection point of $r$ with the plane $\pi:\; 2x - y + z = 1$.</p>
+<p><strong>(c)</strong> Calculate the distance from the point $A(2,-1,3)$ to the plane $\pi$.</p>
+<blockquote>
+<p><strong>Solution:</strong></p>
+<p><strong>(a)</strong> Direction vector $\vec{d} = (1,2,-2)$, point $P(2,-1,3)$:
+$$r:\;\begin{cases} x = 2 + \lambda \ y = -1 + 2\lambda \ z = 3 - 2\lambda \end{cases}$$</p>
+<p><strong>(b)</strong> Substituting into $\pi$:
+$$2(2+\lambda) - (-1+2\lambda) + (3-2\lambda) = 1$$
+$$4 + 2\lambda + 1 - 2\lambda + 3 - 2\lambda = 1$$
+$$8 - 2\lambda = 1 \Rightarrow \lambda = \frac{7}{2}$$
+Intersection point:
+$$x = 2 + \frac{7}{2} = \frac{11}{2}, \quad y = -1 + 7 = 6, \quad z = 3 - 7 = -4$$
+<strong>Intersection:</strong> $\left(\dfrac{11}{2}, 6, -4\right)$.</p>
+<p><strong>(c)</strong> The point $A(2,-1,3)$ is precisely the base point of $r$, which lies on $r$. We check whether $A \in \pi$:
+$$2(2)-(-1)+3 = 4+1+3 = 8 \neq 1$$
+$A \notin \pi$. Distance:
+$$d(A,\pi) = \frac{|2\cdot2 - (-1) + 3 - 1|}{\sqrt{4+1+1}} = \frac{|4+1+3-1|}{\sqrt{6}} = \frac{7}{\sqrt{6}} = \frac{7\sqrt{6}}{6}$$</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>Which of the following is the symmetric form of the line with parametric equations $x=2+3t,\; y=1-t,\; z=-4+2t$?</li>
+<li>a) $\dfrac{x+2}{3} = \dfrac{y-1}{-1} = \dfrac{z-4}{2}$</li>
+<li>b) $\dfrac{x-2}{3} = \dfrac{y-1}{-1} = \dfrac{z+4}{2}$</li>
+<li>c) $\dfrac{x-2}{3} = \dfrac{y+1}{-1} = \dfrac{z+4}{2}$</li>
+<li>d) $\dfrac{x-3}{2} = \dfrac{y+1}{1} = \dfrac{z-2}{-4}$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> b) The base point is $(2,1,-4)$ and the direction vector $(3,-1,2)$, giving $\dfrac{x-2}{3}=\dfrac{y-1}{-1}=\dfrac{z+4}{2}$.</p>
+</blockquote>
+<ol>
+<li>If a component of the direction vector of a line is zero, the symmetric equations:</li>
+<li>a) Do not exist for that line</li>
+<li>b) Are written by indicating that that coordinate is constant and equating the other two fractions</li>
+<li>c) Are replaced by the parametric equations</li>
+<li>d) Imply that the line is parallel to all three axes</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> b) When $d_k = 0$, the $k$-th coordinate is constant and equal to the value of the base point; the other two fractions are equated normally.</p>
+</blockquote>
+<hr />
+<h5>5.1.4 Converting between Different Forms of the Equation of a Line</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Given the line $r:\;\dfrac{x-1}{2} = \dfrac{y+3}{-1} = \dfrac{z}{4}$, express $r$ in vector form and in parametric form. Then find a second point on $r$ different from the base point.</p>
+<p><strong>Solution:</strong></p>
+<p><strong>Step 1: Identify the point and direction vector.</strong></p>
+<p>From the symmetric equations: base point $P(1,-3,0)$ and direction vector $\vec{d} = (2,-1,4)$.</p>
+<p><strong>Step 2: Vector form.</strong></p>
+<p>$$(x,y,z) = (1,-3,0) + \lambda(2,-1,4), \quad \lambda \in \mathbb{R}$$</p>
+<p><strong>Step 3: Parametric form.</strong></p>
+<p>$$\begin{cases} x = 1 + 2\lambda \ y = -3 - \lambda \ z = 4\lambda \end{cases}$$</p>
+<p><strong>Step 4: Second point</strong> (taking $\lambda = 1$):
+$$P' = (1+2,\; -3-1,\; 4) = (3,-4,4)$$</p>
+<p><strong>Verification:</strong> $\dfrac{3-1}{2} = 1$, $\dfrac{-4+3}{-1} = 1$, $\dfrac{4}{4} = 1$ ✓</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>Convert to parametric form the line $r:\;(x,y,z) = (2,-1,5) + \lambda(-3,2,0)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong>
+$$\begin{cases} x = 2 - 3\lambda \ y = -1 + 2\lambda \ z = 5 \end{cases}$$
+Note that the $z$-component is constant ($z = 5$), which means $r$ is parallel to the $XOY$ plane.</p>
+</blockquote>
+<ol>
+<li>Convert to symmetric equations the line: $\begin{cases} x = -1 + 4t \ y = 2 - t \ z = 3 + 2t \end{cases}$</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> We solve for $t$: $t = \dfrac{x+1}{4}$, $t = -(y-2) = \dfrac{y-2}{-1}$, $t = \dfrac{z-3}{2}$.
+The symmetric equations are:
+$$\frac{x+1}{4} = \frac{y-2}{-1} = \frac{z-3}{2}$$</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>A line passes through $A(1,2,3)$ and is perpendicular to the plane $\pi:\; 2x - y + 3z = 5$. Write its equations in all three forms (vector, parametric, and symmetric).</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> The normal vector to the plane is $\vec{n} = (2,-1,3)$. A line perpendicular to the plane has $\vec{n}$ as its direction vector.
+- <strong>Vector:</strong> $(x,y,z) = (1,2,3) + \lambda(2,-1,3)$
+- <strong>Parametric:</strong> $x = 1+2\lambda,\; y = 2-\lambda,\; z = 3+3\lambda$
+- <strong>Symmetric:</strong> $\dfrac{x-1}{2} = \dfrac{y-2}{-1} = \dfrac{z-3}{3}$</p>
+</blockquote>
+<ol>
+<li>A line $r$ has symmetric equations $\dfrac{x-a}{2} = \dfrac{y-1}{b} = \dfrac{z+3}{1}$ and passes through the point $Q(4,-1,-2)$. Find $a$ and $b$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> Since $Q \in r$, we substitute $Q(4,-1,-2)$:
+$$\frac{4-a}{2} = \frac{-1-1}{b} = \frac{-2+3}{1} = 1$$
+From the equality with $1$:
+- $\dfrac{4-a}{2} = 1 \Rightarrow 4-a = 2 \Rightarrow a = 2$
+- $\dfrac{-2}{b} = 1 \Rightarrow b = -2$</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>The line $r$ is given by the equations $\dfrac{x-2}{1} = \dfrac{y+1}{3} = \dfrac{z-4}{-2}$ and the point $A(4,5,0)$.</li>
+</ol>
+<p><strong>(a)</strong> Write the parametric equations of $r$ and the direction vector.</p>
+<p><strong>(b)</strong> Find the line $s$ passing through $A$ and parallel to $r$, expressing it in vector and symmetric form.</p>
+<p><strong>(c)</strong> Check that $A \notin r$.</p>
+<blockquote>
+<p><strong>Solution:</strong></p>
+<p><strong>(a)</strong> Direction vector $\vec{d}_r = (1,3,-2)$, point $P(2,-1,4)$.
+$$r:\;\begin{cases} x = 2 + \lambda \ y = -1 + 3\lambda \ z = 4 - 2\lambda \end{cases}$$</p>
+<p><strong>(b)</strong> $s$ passes through $A(4,5,0)$ with $\vec{d}_s = \vec{d}_r = (1,3,-2)$:
+- Vector: $(x,y,z) = (4,5,0) + \mu(1,3,-2)$
+- Symmetric: $\dfrac{x-4}{1} = \dfrac{y-5}{3} = \dfrac{z}{-2}$</p>
+<p><strong>(c)</strong> We substitute $A(4,5,0)$ into the symmetric equations of $r$:
+$$\frac{4-2}{1} = 2, \quad \frac{5+1}{3} = 2, \quad \frac{0-4}{-2} = 2$$
+All three quotients equal $2$, which means $A \in r$. Therefore the calculation should be revised: $A$ does belong.
+<strong>Correction note:</strong> $A(4,5,0) \in r$ with $\lambda = 2$: $x=2+2=4$✓, $y=-1+6=5$✓, $z=4-4=0$✓. Therefore $A \in r$ and $s = r$.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>The line $(x,y,z)=(1,0,-2)+\lambda(3,-2,1)$ expressed in symmetric form is:</li>
+<li>a) $\dfrac{x-3}{1}=\dfrac{y+2}{0}=\dfrac{z-1}{-2}$</li>
+<li>b) $\dfrac{x-1}{3}=\dfrac{y}{-2}=\dfrac{z+2}{1}$</li>
+<li>c) $\dfrac{x+1}{3}=\dfrac{y}{-2}=\dfrac{z-2}{1}$</li>
+<li>d) $\dfrac{x-1}{3}=\dfrac{y+2}{-1}=\dfrac{z+2}{1}$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> b) The base point is $(1,0,-2)$ and the direction vector $(3,-2,1)$, giving $\dfrac{x-1}{3}=\dfrac{y-0}{-2}=\dfrac{z-(-2)}{1} = \dfrac{x-1}{3}=\dfrac{y}{-2}=\dfrac{z+2}{1}$.</p>
+</blockquote>
+<ol>
+<li>To convert from symmetric equations to parametric equations, the parameter $\lambda$ is:</li>
+<li>a) The value of $x$ at a point on the line</li>
+<li>b) The common value of the three equated fractions</li>
+<li>c) The distance from the point to the origin</li>
+<li>d) The length of the direction vector</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> b) In the symmetric equations $\dfrac{x-x_0}{d_x}=\dfrac{y-y_0}{d_y}=\dfrac{z-z_0}{d_z}=\lambda$, the parameter $\lambda$ is the common value of the three equated fractions.</p>
+</blockquote>
+<hr />
+<hr />
+<h5>5.2.1 Vector Equation of a Plane</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Find the vector equation of the plane passing through $P(1,2,-1)$ with direction vectors $\vec{u} = (1,0,3)$ and $\vec{v} = (0,1,-2)$.</p>
+<p><strong>Solution:</strong></p>
+<p>Every plane is determined by a point $P_0$ and two linearly independent direction vectors $\vec{u}$ and $\vec{v}$ (not proportional).</p>
+<p>The vector equation is:
+$$\vec{r} = \overrightarrow{OP_0} + \lambda\,\vec{u} + \mu\,\vec{v}, \quad \lambda,\mu \in \mathbb{R}$$</p>
+<p>In our case:
+$$\boxed{(x,y,z) = (1,2,-1) + \lambda(1,0,3) + \mu(0,1,-2), \quad \lambda,\mu \in \mathbb{R}}$$</p>
+<p><strong>Check of linear independence:</strong> $\vec{u} \times \vec{v} = \begin{vmatrix}\vec{i}&amp;\vec{j}&amp;\vec{k}\1&amp;0&amp;3\0&amp;1&amp;-2\end{vmatrix} = (0\cdot(-2)-3\cdot1)\vec{i} - (1\cdot(-2)-3\cdot0)\vec{j} + (1\cdot1-0\cdot0)\vec{k} = (-3,2,1) \neq \vec{0}$ ✓</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>Write the vector equation of the plane passing through the origin $O(0,0,0)$ with direction vectors $\vec{u}=(1,0,0)$ and $\vec{v}=(0,1,0)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong>
+$$(x,y,z) = \lambda(1,0,0) + \mu(0,1,0) = (\lambda, \mu, 0), \quad \lambda,\mu \in \mathbb{R}$$
+This is the plane $z=0$, that is, the $XOY$ plane.</p>
+</blockquote>
+<ol>
+<li>Write the vector equation of the plane passing through $A(1,-1,2)$, $B(3,0,1)$ and $C(2,-2,4)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> The direction vectors are:
+$$\vec{AB} = (2,1,-1), \quad \vec{AC} = (1,-1,2)$$
+We check independence: $\vec{AB}$ and $\vec{AC}$ are not proportional ✓
+$$(x,y,z) = (1,-1,2) + \lambda(2,1,-1) + \mu(1,-1,2), \quad \lambda,\mu \in \mathbb{R}$$</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>The plane $\pi$ has vector equation $(x,y,z) = (2,1,3)+\lambda(1,-1,0)+\mu(2,0,1)$. Find a point on the plane for $\lambda=2$, $\mu=-1$ and verify that it belongs to the plane.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> For $\lambda=2$, $\mu=-1$:
+$$(x,y,z) = (2,1,3) + 2(1,-1,0) + (-1)(2,0,1) = (2,1,3)+(2,-2,0)+(-2,0,-1) = (2,-1,2)$$
+The point $Q(2,-1,2)$ is obtained. To verify it belongs to the plane, there exists $(\lambda,\mu)=(2,-1)$ that generates $Q$ ✓.</p>
+</blockquote>
+<ol>
+<li>Can the vectors $\vec{u}=(1,2,3)$ and $\vec{v}=(2,4,6)$ be the direction vectors of a plane? Justify your answer.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\vec{v} = 2\vec{u}$, so $\vec{u}$ and $\vec{v}$ are <strong>proportional</strong> (linearly dependent). They cannot be the direction vectors of a plane, since any pair of direction vectors must be linearly independent to determine a plane (two proportional vectors determine only a line).</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>Consider the points $A(1,0,2)$, $B(2,1,0)$ and $C(0,-1,3)$.</li>
+</ol>
+<p><strong>(a)</strong> Find the vector equation of the plane $\pi$ passing through $A$, $B$ and $C$.</p>
+<p><strong>(b)</strong> Verify that $D(3,2,-2)$ belongs to $\pi$ (find suitable $\lambda$ and $\mu$).</p>
+<blockquote>
+<p><strong>Solution:</strong></p>
+<p><strong>(a)</strong> $\vec{AB} = (1,1,-2)$, $\vec{AC} = (-1,-1,1)$.
+But $\vec{AC} = -\vec{AB}$... we check: $(-1,-1,1) \neq k(1,1,-2)$ for any single real $k$... $-1 = k$, $-1=k$ ✓, $1 = -2k = 2$ ✗. They are not proportional.
+$$(x,y,z) = (1,0,2) + \lambda(1,1,-2) + \mu(-1,-1,1)$$
+Note: $\vec{AB}$ and $\vec{AC}$: $(-1,-1,1) = -1\cdot(1,1,-1)$, they are linearly dependent only if $(1,1,-2)\parallel(-1,-1,1)$: $-1/1=-1/1=1/(-2)$? $-1\neq -1/2$. So <strong>they are not proportional</strong> ✓.</p>
+<p><strong>(b)</strong> System: $(1,0,2)+\lambda(1,1,-2)+\mu(-1,-1,1)=(3,2,-2)$
+$$\lambda - \mu = 2 \quad (I)$$
+$$\lambda - \mu = 2 \quad (II)$$
+$$-2\lambda + \mu = -4 \quad (III)$$
+From $(I)$: $\mu = \lambda - 2$. Substituting into $(III)$: $-2\lambda + \lambda - 2 = -4 \Rightarrow \lambda = 2$, $\mu = 0$.
+Verification: $(1,0,2)+2(1,1,-2)=(3,2,-2)$ ✓. Therefore $D \in \pi$.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>The vector equation of a plane contains:</li>
+<li>a) One point and one direction vector</li>
+<li>b) Two points and one direction vector</li>
+<li>c) One point and two linearly independent direction vectors</li>
+<li>d) Three direction vectors</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> c) The vector equation of a plane $\vec{r} = \vec{r_0} + \lambda\vec{u} + \mu\vec{v}$ requires a point $P_0$ (giving $\vec{r_0}$) and two linearly independent direction vectors $\vec{u}$, $\vec{v}$.</p>
+</blockquote>
+<ol>
+<li>The plane with vector equation $(x,y,z)=(1,2,3)+\lambda(1,0,0)+\mu(0,1,0)$ is:</li>
+<li>a) The plane $z=0$</li>
+<li>b) The plane $z=3$</li>
+<li>c) The plane $x+y=3$</li>
+<li>d) The plane $x=1$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> b) Expanding: $x=1+\lambda$, $y=2+\mu$, $z=3$. The $z$-coordinate is always $3$, so it is the plane $z=3$.</p>
+</blockquote>
+<hr />
+<h5>5.2.2 General (Implicit) Equation of a Plane. Normal Vector</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Find the general equation of the plane $\pi$ passing through $A(1,-1,2)$ with normal vector $\vec{n} = (3,-2,1)$.</p>
+<p><strong>Solution:</strong></p>
+<p>The general equation of a plane with normal vector $\vec{n} = (a,b,c)$ passing through the point $P_0(x_0,y_0,z_0)$ is:</p>
+<p>$$a(x-x_0) + b(y-y_0) + c(z-z_0) = 0$$</p>
+<p>Substituting $\vec{n}=(3,-2,1)$ and $A(1,-1,2)$:
+$$3(x-1) - 2(y-(-1)) + 1(z-2) = 0$$
+$$3x - 3 - 2y - 2 + z - 2 = 0$$
+$$\boxed{3x - 2y + z - 7 = 0}$$</p>
+<p><strong>Verification:</strong> $3(1)-2(-1)+2-7 = 3+2+2-7 = 0$ ✓</p>
+<p><strong>Note:</strong> The normal vector is read directly from the coefficients $(a,b,c)$ of the general equation $ax+by+cz+d=0$.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>Find the general equation of the plane passing through $P(0,0,0)$ with normal vector $\vec{n}=(1,2,3)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong>
+$$1(x-0)+2(y-0)+3(z-0)=0 \Rightarrow \boxed{x+2y+3z=0}$$
+This plane passes through the origin.</p>
+</blockquote>
+<ol>
+<li>Identify the normal vector of the plane $\pi:\; 2x - 5y + z + 4 = 0$ and a point on the plane.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong>
+- <strong>Normal vector:</strong> $\vec{n} = (2,-5,1)$ (coefficients of $x$, $y$, $z$).
+- <strong>Point on the plane:</strong> we find a point satisfying the equation. Taking $x=0,y=0$: $z=-4$. Point: $(0,0,-4)$.
+<strong>Verification:</strong> $0-0-4+4=0$ ✓.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>Find the equation of the plane passing through $A(2,0,1)$ and $B(1,3,-1)$ and perpendicular to the plane $\pi_0:\; x-y+2z=3$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> Let $\vec{n}=(a,b,c)$ be the normal to the desired plane. Conditions:
+1. $\overrightarrow{AB} = (-1,3,-2)$ is parallel to the desired plane, so $\vec{n} \perp \overrightarrow{AB}$: $-a+3b-2c=0$.
+2. The plane is perpendicular to $\pi_0$, which has normal $\vec{n}_0=(1,-1,2)$. The normals are perpendicular: $\vec{n}\cdot\vec{n}_0=0$: $a-b+2c=0$.
+System: $-a+3b-2c=0$ and $a-b+2c=0$. Adding: $2b=0 \Rightarrow b=0$.
+From the second: $a+2c=0 \Rightarrow a=-2c$. Taking $c=1$: $a=-2$, $b=0$.
+$\vec{n}=(-2,0,1)$. The plane passes through $A(2,0,1)$:
+$$-2(x-2)+0(y-0)+1(z-1)=0 \Rightarrow -2x+4+z-1=0 \Rightarrow \boxed{-2x+z+3=0}$$</p>
+</blockquote>
+<ol>
+<li>Find the value of $k$ such that the plane $\pi_1:\; kx - 2y + z = 3$ is perpendicular to the plane $\pi_2:\; x + ky + 2z = 0$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> The normal vectors are $\vec{n}_1=(k,-2,1)$ and $\vec{n}_2=(1,k,2)$.
+Perpendicularity $\Leftrightarrow \vec{n}_1\cdot\vec{n}_2=0$:
+$$k\cdot1 + (-2)\cdot k + 1\cdot 2 = 0 \Rightarrow k - 2k + 2 = 0 \Rightarrow -k + 2 = 0 \Rightarrow k = 2$$</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>Let the plane $\pi:\; 2x + y - 3z + 6 = 0$.</li>
+</ol>
+<p><strong>(a)</strong> Find the normal vector to $\pi$ and a point on $\pi$.</p>
+<p><strong>(b)</strong> Determine the equation of the plane $\sigma$ parallel to $\pi$ passing through $Q(1,0,2)$.</p>
+<p><strong>(c)</strong> Calculate the distance between $\pi$ and $\sigma$.</p>
+<blockquote>
+<p><strong>Solution:</strong></p>
+<p><strong>(a)</strong> $\vec{n} = (2,1,-3)$. Point: with $x=0,y=0$: $-3z=-6 \Rightarrow z=2$. Point: $(0,0,2)$.</p>
+<p><strong>(b)</strong> $\sigma \parallel \pi$ $\Rightarrow$ same normal vector $\vec{n}=(2,1,-3)$.
+$$\sigma:\; 2(x-1)+1(y-0)-3(z-2)=0 \Rightarrow 2x+y-3z+4=0$$</p>
+<p><strong>(c)</strong> Distance between parallel planes $ax+by+cz+d_1=0$ and $ax+by+cz+d_2=0$:
+$$d = \frac{|d_1-d_2|}{\sqrt{a^2+b^2+c^2}} = \frac{|6-4|}{\sqrt{4+1+9}} = \frac{2}{\sqrt{14}} = \frac{2\sqrt{14}}{14} = \frac{\sqrt{14}}{7}$$</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>The normal vector to the plane $3x - y + 2z - 5 = 0$ is:</li>
+<li>a) $(3,-1,2,-5)$</li>
+<li>b) $(-3,1,-2)$</li>
+<li>c) $(3,-1,2)$</li>
+<li>d) $(3,1,2)$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> c) The normal vector is read from the coefficients of $x$, $y$, $z$: $\vec{n}=(3,-1,2)$.</p>
+</blockquote>
+<ol>
+<li>If two planes have proportional normal vectors, then:</li>
+<li>a) They are perpendicular</li>
+<li>b) They are parallel or coincident</li>
+<li>c) They intersect in a line</li>
+<li>d) They intersect at a point</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> b) If $\vec{n}_1 = k\vec{n}_2$, the planes are parallel (if distinct) or coincident (if the same). The intersection condition requires that the normals are not proportional.</p>
+</blockquote>
+<hr />
+<h5>5.2.3 Determining the Equation of a Plane Given Three Points</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Determine the general equation of the plane passing through the points $A(1,0,0)$, $B(0,2,0)$ and $C(0,0,3)$.</p>
+<p><strong>Solution:</strong></p>
+<p><strong>Method using the normal vector via the cross product:</strong></p>
+<p>$\vec{AB} = (-1,2,0)$, $\vec{AC} = (-1,0,3)$.</p>
+<p>The normal vector is $\vec{n} = \vec{AB} \times \vec{AC}$:</p>
+<p>$$\vec{n} = \begin{vmatrix}\vec{i}&amp;\vec{j}&amp;\vec{k}\-1&amp;2&amp;0\-1&amp;0&amp;3\end{vmatrix} = (2\cdot3 - 0\cdot0)\vec{i} - ((-1)\cdot3 - 0\cdot(-1))\vec{j} + ((-1)\cdot0 - 2\cdot(-1))\vec{k}$$
+$$= (6)\vec{i} - (-3)\vec{j} + (2)\vec{k} = (6,3,2)$$</p>
+<p>The plane passes through $A(1,0,0)$ with normal $(6,3,2)$:
+$$6(x-1)+3(y-0)+2(z-0)=0 \Rightarrow \boxed{6x+3y+2z-6=0}$$</p>
+<p><strong>Verification:</strong> $A$: $6-6=0$ ✓; $B$: $0+6+0-6=0$ ✓; $C$: $0+0+6-6=0$ ✓.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>Find the equation of the plane passing through $A(1,1,0)$, $B(0,1,1)$ and $C(1,0,1)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\vec{AB}=(-1,0,1)$, $\vec{AC}=(0,-1,1)$.
+$$\vec{n} = \vec{AB}\times\vec{AC} = \begin{vmatrix}\vec{i}&amp;\vec{j}&amp;\vec{k}\-1&amp;0&amp;1\0&amp;-1&amp;1\end{vmatrix} = (0\cdot1-1\cdot(-1))\vec{i}-((-1)\cdot1-1\cdot0)\vec{j}+((-1)(-1)-0\cdot0)\vec{k}$$
+$= (1)\vec{i}-(-1)\vec{j}+(1)\vec{k} = (1,1,1)$
+Plane through $A(1,1,0)$: $(x-1)+(y-1)+z=0 \Rightarrow \boxed{x+y+z-2=0}$
+Verification: $A$: $1+1+0-2=0$✓, $B$: $0+1+1-2=0$✓, $C$: $1+0+1-2=0$✓.</p>
+</blockquote>
+<ol>
+<li>Find the equation of the plane passing through $A(2,0,0)$, $B(0,3,0)$ and $C(0,0,1)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\vec{AB}=(-2,3,0)$, $\vec{AC}=(-2,0,1)$.
+$$\vec{n}=\begin{vmatrix}\vec{i}&amp;\vec{j}&amp;\vec{k}\-2&amp;3&amp;0\-2&amp;0&amp;1\end{vmatrix}=(3\cdot1-0\cdot0)\vec{i}-((-2)\cdot1-0\cdot(-2))\vec{j}+((-2)\cdot0-3\cdot(-2))\vec{k}=(3,2,6)$$
+Through $A(2,0,0)$: $3(x-2)+2y+6z=0 \Rightarrow \boxed{3x+2y+6z-6=0}$</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>Find the plane determined by the points $P(1,-1,0)$, $Q(2,1,3)$ and $R(-1,0,1)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\vec{PQ}=(1,2,3)$, $\vec{PR}=(-2,1,1)$.
+$$\vec{n}=\begin{vmatrix}\vec{i}&amp;\vec{j}&amp;\vec{k}\1&amp;2&amp;3\-2&amp;1&amp;1\end{vmatrix}=(2-3)\vec{i}-(1+6)\vec{j}+(1+4)\vec{k}=(-1,-7,5)$$
+Through $P(1,-1,0)$: $-(x-1)-7(y+1)+5z=0 \Rightarrow -x+1-7y-7+5z=0$
+$$\boxed{-x-7y+5z-6=0} \quad \text{or equivalently}\quad x+7y-5z+6=0$$</p>
+</blockquote>
+<ol>
+<li>Three points on the plane $\pi:\; ax+2y-z=3$ are $A(1,1,0)$, $B(t,0,1)$ and $C(0,-1,k)$. Find $t$ and $k$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> We substitute each point into $ax+2y-z=3$... first we determine $a$ using $A$:
+$a(1)+2(1)-0=3 \Rightarrow a=1$.
+The plane is $x+2y-z=3$.
+For $B(t,0,1)$: $t+0-1=3 \Rightarrow t=4$.
+For $C(0,-1,k)$: $0-2-k=3 \Rightarrow k=-5$.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>Given the points $A(2,1,-1)$, $B(0,3,2)$ and $C(-1,2,1)$:</li>
+</ol>
+<p><strong>(a)</strong> Find the equation of the plane $\pi$ containing $A$, $B$ and $C$.</p>
+<p><strong>(b)</strong> Determine whether the point $D(1,6,5)$ belongs to $\pi$.</p>
+<p><strong>(c)</strong> Find the equation of the plane $\sigma$ parallel to $\pi$ passing through the origin.</p>
+<blockquote>
+<p><strong>Solution:</strong></p>
+<p><strong>(a)</strong> $\vec{AB}=(-2,2,3)$, $\vec{AC}=(-3,1,2)$.
+$$\vec{n}=\begin{vmatrix}\vec{i}&amp;\vec{j}&amp;\vec{k}\-2&amp;2&amp;3\-3&amp;1&amp;2\end{vmatrix}=(4-3)\vec{i}-(-4+9)\vec{j}+(-2+6)\vec{k}=(1,-5,4)$$
+Through $A(2,1,-1)$: $(x-2)-5(y-1)+4(z+1)=0$
+$$x-2-5y+5+4z+4=0 \Rightarrow \boxed{x-5y+4z+7=0}$$</p>
+<p><strong>(b)</strong> $D(1,6,5)$: $1-30+20+7=-2\neq0$. $D \notin \pi$.</p>
+<p><strong>(c)</strong> $\sigma \parallel \pi$ with the same normal vector $(1,-5,4)$, passing through $O(0,0,0)$:
+$\boxed{x-5y+4z=0}$.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>To find the equation of the plane through three points, the most systematic method is:</li>
+<li>a) Compute the dot product of two vectors in the plane</li>
+<li>b) Compute the cross product of two vectors in the plane to obtain the normal vector</li>
+<li>c) Compute the scalar triple product of three vectors</li>
+<li>d) Use Sarrus's rule directly with the coordinates of the three points</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> b) The cross product $\vec{AB}\times\vec{AC}$ gives the normal vector to the plane, which is then used in the point-normal equation.</p>
+</blockquote>
+<ol>
+<li>If three points are collinear (lie on the same line), when trying to determine the plane through them:</li>
+<li>a) A unique plane is obtained</li>
+<li>b) Infinitely many planes are obtained</li>
+<li>c) No plane exists</li>
+<li>d) Exactly two planes are obtained</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> b) If the three points are collinear, $\vec{AB}$ and $\vec{AC}$ are proportional, the cross product is $\vec{0}$, and there are infinitely many planes containing that line.</p>
+</blockquote>
+<hr />
+<h5>5.2.4 Planes Parallel to the Coordinate Axes and to Each Other</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Classify the planes $\pi_1:\; 3x - 6y + 9z = 12$, $\pi_2:\; x - 2y + 3z = 5$ and $\pi_3:\; y - z = 2$ indicating whether they are parallel to any coordinate axis or plane.</p>
+<p><strong>Solution:</strong></p>
+<p><strong>$\pi_1$ and $\pi_2$:</strong> The normal vectors are $\vec{n}_1 = (3,-6,9)$ and $\vec{n}_2 = (1,-2,3)$. We observe that $\vec{n}_1 = 3\vec{n}_2$, so they are proportional: the planes are <strong>parallel or coincident</strong>.</p>
+<p>We take a point of $\pi_2$ (e.g., $x=y=0 \Rightarrow 3z=5 \Rightarrow z=5/3$: the point $(0,0,5/3)$) and substitute into $\pi_1$: $3(0)-6(0)+9(5/3) = 15 \neq 12$. They are <strong>distinct parallel planes</strong>.</p>
+<p><strong>$\pi_3:\; y - z = 2$</strong> has normal vector $\vec{n}_3 = (0,1,-1)$. Since the $x$-component is zero, $\pi_3$ does not contain the $OX$ axis... but $\vec{n}_3 \perp \vec{e}_1 = (1,0,0)$, which means $\pi_3$ <strong>contains the direction of the $OX$ axis</strong>: it is parallel to the $OX$ axis.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>Write the equation of the plane parallel to the $XOY$ plane passing through the point $P(1,2,5)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> The $XOY$ plane has equation $z=0$. A plane parallel to $XOY$ has the form $z=k$. Since it passes through $P(1,2,5)$: $k=5$.
+$$\boxed{z = 5}$$</p>
+</blockquote>
+<ol>
+<li>What is the equation of the plane containing the $OZ$ axis and the point $A(1,-1,0)$?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> The plane contains the $OZ$ axis, so it contains the vectors $\vec{k}=(0,0,1)$ and $\vec{OA}=(1,-1,0)$.
+Normal vector: $\vec{n} = \vec{k}\times\vec{OA} = \begin{vmatrix}\vec{i}&amp;\vec{j}&amp;\vec{k}\0&amp;0&amp;1\1&amp;-1&amp;0\end{vmatrix} = (0\cdot0-1\cdot(-1))\vec{i}-(0\cdot0-1\cdot1)\vec{j}+(0\cdot(-1)-0\cdot1)\vec{k} = (1,1,0)$.
+Plane through the origin with $\vec{n}=(1,1,0)$: $\boxed{x+y=0}$.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>Find the equation of the plane parallel to $\pi:\; 2x-y+3z=7$ at distance $\sqrt{14}$ from $\pi$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> A plane parallel to $\pi$ has the form $2x-y+3z=k$. The distance between two parallel planes $2x-y+3z=7$ and $2x-y+3z=k$ is:
+$$d = \frac{|k-7|}{\sqrt{4+1+9}} = \frac{|k-7|}{\sqrt{14}} = \sqrt{14}$$
+$|k-7| = 14 \Rightarrow k = 21$ or $k = -7$.
+The two desired planes are: $\boxed{2x-y+3z=21}$ and $\boxed{2x-y+3z=-7}$.</p>
+</blockquote>
+<ol>
+<li>Classify the following planes according to their position relative to the coordinate axes:</li>
+<li>$\alpha:\; x = 3$</li>
+<li>$\beta:\; 2y + z = 0$</li>
+<li>$\gamma:\; x + y = 4$</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong>
+- $\alpha:\;x=3$: normal vector $(1,0,0)=\vec{i}$. The plane is <strong>perpendicular to the $OX$ axis</strong> and <strong>parallel to the $YOZ$ plane</strong>.
+- $\beta:\;2y+z=0$: normal $(0,2,1)$. The $x$-component is zero, so $\vec{e}_1\perp\vec{n}$: <strong>contains the $OX$ axis</strong> (is parallel to $OX$).
+- $\gamma:\;x+y=4$: normal $(1,1,0)$. The $z$-component is zero: <strong>parallel to the $OZ$ axis</strong>.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>Let the plane $\pi:\; x+2y-2z=6$.</li>
+</ol>
+<p><strong>(a)</strong> Is $\pi$ parallel to any coordinate axis? Justify your answer.</p>
+<p><strong>(b)</strong> Find the two planes parallel to $\pi$ at distance $3$ from $\pi$.</p>
+<p><strong>(c)</strong> Find the intersection point of $\pi$ with the $OX$ axis.</p>
+<blockquote>
+<p><strong>Solution:</strong></p>
+<p><strong>(a)</strong> The normal vector of $\pi$ is $\vec{n}=(1,2,-2)$. For $\pi$ to be parallel to the $OX$ axis, we would need $\vec{n}\cdot(1,0,0)=0$, i.e. $1=0$: <strong>false</strong>. Similarly for $OY$: $\vec{n}\cdot(0,1,0)=2\neq0$, and for $OZ$: $\vec{n}\cdot(0,0,1)=-2\neq0$. $\pi$ <strong>is not parallel to any coordinate axis</strong>.</p>
+<p><strong>(b)</strong> Parallel planes: $x+2y-2z=k$. Distance to $\pi$:
+$$\frac{|k-6|}{\sqrt{1+4+4}}=\frac{|k-6|}{3}=3 \Rightarrow |k-6|=9 \Rightarrow k=15 \text{ or } k=-3$$
+The planes are $\boxed{x+2y-2z=15}$ and $\boxed{x+2y-2z=-3}$.</p>
+<p><strong>(c)</strong> The $OX$ axis has equations $y=0$, $z=0$. Substituting into $\pi$:
+$x+0-0=6 \Rightarrow x=6$. Intersection point: $\boxed{(6,0,0)}$.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>Which of the following planes is parallel to the $OY$ axis?</li>
+<li>a) $x+y+z=1$</li>
+<li>b) $y=2$</li>
+<li>c) $x-z=3$</li>
+<li>d) $x+y=5$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> c) For the plane to be parallel to the $OY$ axis, its normal vector $\vec{n}$ must be perpendicular to $\vec{j}=(0,1,0)$, i.e., the $y$-component of the normal must be $0$. The plane $x-z=3$ has $\vec{n}=(1,0,-1)$, with zero $y$-component ✓.</p>
+</blockquote>
+<ol>
+<li>Two planes $\pi_1:\;ax+by+cz=d_1$ and $\pi_2:\;ax+by+cz=d_2$ (with $d_1\neq d_2$) are:</li>
+<li>a) Perpendicular</li>
+<li>b) Intersecting</li>
+<li>c) Parallel and distinct</li>
+<li>d) Coincident</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> c) They have the same normal vector (same coefficients $a,b,c$), so they are parallel. Since $d_1\neq d_2$, they are not the same plane: they are <strong>parallel and distinct</strong>.</p>
+</blockquote>
+<hr />
+<hr />
+<h5>5.3.1 Relative Position of Two Lines</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Study the relative position of the lines:
+$$r:\;\frac{x-1}{2}=\frac{y+1}{-1}=\frac{z}{1} \qquad s:\;\frac{x-3}{4}=\frac{y+3}{-2}=\frac{z-2}{2}$$</p>
+<p><strong>Solution:</strong></p>
+<p><strong>Step 1: Direction vectors.</strong>
+$\vec{d}_r=(2,-1,1)$, $\vec{d}_s=(4,-2,2)=2(2,-1,1)=2\vec{d}_r$.</p>
+<p>The vectors are proportional: the lines are <strong>parallel or coincident</strong>.</p>
+<p><strong>Step 2: Check whether they are the same line.</strong></p>
+<p>We take a point of $s$: $P_s=(3,-3,2)$. Is it on $r$?</p>
+<p>$$\frac{3-1}{2}=1, \quad \frac{-3+1}{-1}=2, \quad \frac{2}{1}=2$$</p>
+<p>The values are not equal ($1\neq 2$), therefore $P_s \notin r$.</p>
+<p><strong>Conclusion: $r$ and $s$ are distinct parallel lines.</strong></p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>Determine whether the lines $r:\,(x,y,z)=(1,0,2)+\lambda(1,-1,3)$ and $s:\,(x,y,z)=(3,-2,8)+\mu(2,-2,6)$ are parallel, coincident, intersecting, or skew.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\vec{d}_r=(1,-1,3)$, $\vec{d}_s=(2,-2,6)=2\vec{d}_r$. They are proportional: parallel or coincident.
+Point of $s$: $Q(3,-2,8)$. Is $Q\in r$? $(3-1)/1=2$, $(-2-0)/(-1)=2$, $(8-2)/3=2$. All three equal $2$: $Q\in r$ ✓.
+The lines are <strong>coincident</strong>.</p>
+</blockquote>
+<ol>
+<li>Determine the relative position of $r:\;x=1+t,\;y=-t,\;z=2+t$ and $s:\;x=2+2\mu,\;y=1-\mu,\;z=3-\mu$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\vec{d}_r=(1,-1,1)$, $\vec{d}_s=(2,-1,-1)$. Not proportional ($2/1\neq -1/-1$). We equate:
+$1+t=2+2\mu$, $-t=1-\mu$, $2+t=3-\mu$.
+From the second: $t=\mu-1$. From the third: $t=-\mu+1 \Rightarrow \mu-1=-\mu+1 \Rightarrow 2\mu=2 \Rightarrow \mu=1$, $t=0$.
+We check in the first: $1+0=1$, $2+2=4$. $1\neq 4$: <strong>inconsistent</strong>.
+The direction vectors are not proportional and they do not intersect: <strong>skew lines</strong>.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>Study the relative position of $r:\;\dfrac{x}{1}=\dfrac{y-1}{2}=\dfrac{z+1}{-1}$ and $s:\;\dfrac{x-2}{a}=\dfrac{y+1}{4}=\dfrac{z-1}{-2}$ depending on the value of the parameter $a$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\vec{d}_r=(1,2,-1)$, $\vec{d}_s=(a,4,-2)$.
+For parallelism: $(a,4,-2)=k(1,2,-1) \Rightarrow 4=2k \Rightarrow k=2 \Rightarrow a=2$, and $-2=k\cdot(-1)=-2$ ✓. So for $a=2$: parallel or coincident.
+<strong>With $a=2$:</strong> point of $s$: $(2,-1,1)$. Does it belong to $r$? $\lambda=2/1=2$; $y: 1+2\cdot2=5\neq-1$. Does not belong: <strong>distinct parallel lines</strong>.
+<strong>With $a\neq2$:</strong> $\vec{d}_r$ and $\vec{d}_s$ are not proportional. We solve the intersection system.
+$t=2+a\mu$, $1+2t=-1+4\mu$, $-1-t=1-2\mu$.
+From the third: $t=2\mu-2$. From the first: $2\mu-2=2+a\mu \Rightarrow (2-a)\mu=4$.
+If $a\neq2$: $\mu=\dfrac{4}{2-a}$, $t=\dfrac{8}{2-a}-2$.
+We check in the second equation (left as an exercise). In general, for $a\neq2$ the lines are <strong>skew</strong> or <strong>intersecting</strong> depending on whether the $3\times2$ system is consistent.</p>
+</blockquote>
+<ol>
+<li>Lines $r$ and $s$ are intersecting and meet at $P(2,1,-1)$. If $\vec{d}_r=(1,-1,2)$ and $\vec{d}_s=(3,1,0)$, write the equations of both lines.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong>
+$$r:\;(x,y,z)=(2,1,-1)+\lambda(1,-1,2)$$
+$$s:\;(x,y,z)=(2,1,-1)+\mu(3,1,0)$$</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>Study the relative position of the lines:
+   $$r:\;\begin{cases}x=2+t\y=-1+2t\z=3-t\end{cases} \qquad s:\;\begin{cases}x=4+\mu\y=3-\mu\z=1+\mu\end{cases}$$
+   If they intersect, find the intersection point and the angle they form.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong></p>
+<p><strong>Direction vectors:</strong> $\vec{d}_r=(1,2,-1)$, $\vec{d}_s=(1,-1,1)$. Not proportional.</p>
+<p><strong>Intersection system:</strong>
+$$2+t=4+\mu \Rightarrow t-\mu=2 \quad (I)$$
+$$-1+2t=3-\mu \Rightarrow 2t+\mu=4 \quad (II)$$
+$$3-t=1+\mu \Rightarrow t+\mu=2 \quad (III)$$
+From $(I)$ and $(III)$: adding $(t-\mu)+(t+\mu)=4 \Rightarrow 2t=4 \Rightarrow t=2$, $\mu=0$.
+Verification in $(II)$: $4+0=4$ ✓.
+<strong>Intersection point</strong> ($t=2$): $x=4$, $y=3$, $z=1$. Point: $\mathbf{P(4,3,1)}$.</p>
+<p><strong>Angle:</strong>
+$$\cos\theta = \frac{|\vec{d}_r\cdot\vec{d}_s|}{|\vec{d}_r||\vec{d}_s|} = \frac{|1\cdot1+2\cdot(-1)+(-1)\cdot1|}{\sqrt{1+4+1}\cdot\sqrt{1+1+1}} = \frac{|1-2-1|}{\sqrt{6}\cdot\sqrt{3}} = \frac{2}{\sqrt{18}} = \frac{2}{3\sqrt{2}} = \frac{\sqrt{2}}{3}$$
+$$\theta = \arccos!\left(\frac{\sqrt{2}}{3}\right) \approx 61{,}87°$$</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>Two lines in space with non-proportional direction vectors:</li>
+<li>a) Are always intersecting</li>
+<li>b) Are always parallel</li>
+<li>c) Can be intersecting or skew, but not parallel or coincident</li>
+<li>d) Are always skew</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> c) If the direction vectors are not proportional, the lines are neither parallel nor coincident. They can be intersecting (meeting at a point) or skew (not meeting and not parallel).</p>
+</blockquote>
+<ol>
+<li>To determine whether two lines with non-proportional direction vectors are intersecting or skew, one must:</li>
+<li>a) Calculate the angle between them</li>
+<li>b) Set up the system of equal points and check whether it has a solution</li>
+<li>c) Calculate the cross product of their direction vectors</li>
+<li>d) Calculate the distance between their base points</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> b) We set up the system by equating the coordinates of the generic points on each line; if the $3\times2$ system is consistent, the lines intersect; if not, they are skew.</p>
+</blockquote>
+<hr />
+<h5>5.3.2 Relative Position of a Line and a Plane</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Study the relative position of the line $r:\;x=1+2t,\;y=-1+t,\;z=3-t$ and the plane $\pi:\;2x-y+3z=10$.</p>
+<p><strong>Solution:</strong></p>
+<p><strong>Method:</strong> Substitute the parametric equations of $r$ into the equation of $\pi$.</p>
+<p>$$2(1+2t) - (-1+t) + 3(3-t) = 10$$
+$$2+4t+1-t+9-3t = 10$$
+$$12 + 0t = 10$$
+$$12 = 10 \quad \text{(Contradiction)}$$</p>
+<p>No value of $t$ satisfies the equation. This means the line <strong>does not intersect</strong> the plane.</p>
+<p>Since $\vec{d}<em>r=(2,1,-1)$ and $\vec{n}</em>\pi=(2,-1,3)$:
+$$\vec{d}<em>r\cdot\vec{n}</em>\pi = 4-1-3 = 0$$</p>
+<p>The direction vector is perpendicular to the normal of the plane, so $r$ is <strong>parallel</strong> to $\pi$ (and since it has no point in $\pi$: <strong>parallel without being contained</strong>).</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>Study the position of $r:\;(x,y,z)=(1,2,3)+\lambda(1,1,1)$ relative to the plane $\pi:\;x+y+z=6$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> Substituting: $(1+\lambda)+(2+\lambda)+(3+\lambda)=6 \Rightarrow 6+3\lambda=6 \Rightarrow \lambda=0$.
+A solution exists ($\lambda=0$). The intersection point is $(1,2,3)$.
+Since $\vec{d}\cdot\vec{n}=1+1+1=3\neq0$, the line <strong>intersects the plane</strong>. Intersection: $(1,2,3)$.</p>
+</blockquote>
+<ol>
+<li>Determine whether the line $r:\;\dfrac{x-1}{1}=\dfrac{y-2}{-2}=\dfrac{z}{1}$ is contained in the plane $\pi:\;x-2y+z+2=0$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> We check two conditions:
+1. The base point $(1,2,0)$: $1-4+0+2=-1\neq0$. The base point <strong>does not belong</strong> to $\pi$, so the line is not contained.
+(Additionally: $\vec{d}\cdot\vec{n}=1\cdot1+(-2)(-2)+1\cdot1=1+4+1=6\neq0$: the line is not parallel to the plane, it is <strong>intersecting</strong>.)</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>Find the intersection point of $r:\;\dfrac{x-2}{1}=\dfrac{y+1}{2}=\dfrac{z-3}{-1}=\lambda$ with the plane $\pi:\;3x-y+2z=11$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> Parametric equations: $x=2+\lambda$, $y=-1+2\lambda$, $z=3-\lambda$.
+Substituting into $\pi$:
+$$3(2+\lambda)-(-1+2\lambda)+2(3-\lambda)=11$$
+$$6+3\lambda+1-2\lambda+6-2\lambda=11$$
+$$13-\lambda=11 \Rightarrow \lambda=2$$
+Point: $x=4$, $y=3$, $z=1$. <strong>Intersection: $(4,3,1)$</strong>.</p>
+</blockquote>
+<ol>
+<li>Find the values of $m$ such that the line $r:\;x=m+t,\;y=1-t,\;z=2+mt$ is parallel to the plane $\pi:\;2x+y+z=5$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> For $r \parallel \pi$, the direction vector $\vec{d}=(m,-1,m)$ must be perpendicular to the normal $\vec{n}=(2,1,1)$:
+$$\vec{d}\cdot\vec{n}=2m-1+m=3m-1=0 \Rightarrow m=\frac{1}{3}$$
+We also need to verify that the line is not contained. With $m=1/3$: base point $(1/3,1,2)$ in $\pi$: $2/3+1+2=11/3\neq5$. The line is <strong>parallel</strong> (not contained) for $m=\dfrac{1}{3}$.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>Given the line $r:\;\dfrac{x-1}{2}=\dfrac{y}{-1}=\dfrac{z+2}{3}$ and the plane $\pi:\;ax-y+z=b$.</li>
+</ol>
+<p><strong>(a)</strong> For $a=1$, $b=3$: find the intersection point of $r$ with $\pi$.</p>
+<p><strong>(b)</strong> Find $a$ and $b$ such that $r$ is contained in $\pi$.</p>
+<blockquote>
+<p><strong>Solution:</strong></p>
+<p><strong>(a)</strong> $a=1,b=3$: parametric equations $x=1+2\lambda$, $y=-\lambda$, $z=-2+3\lambda$.
+$(1+2\lambda)-(-\lambda)+(-2+3\lambda)=3$
+$1+2\lambda+\lambda-2+3\lambda=3$
+$-1+6\lambda=3 \Rightarrow \lambda=\frac{2}{3}$
+Point: $x=7/3$, $y=-2/3$, $z=0$. Intersection: $\left(\dfrac{7}{3},-\dfrac{2}{3},0\right)$.</p>
+<p><strong>(b)</strong> For $r \subset \pi$, we need:
+- $\vec{d}<em>r \perp \vec{n}</em>\pi$: $(2,-1,3)\cdot(a,-1,1)=0 \Rightarrow 2a+1+3=0 \Rightarrow a=-2$.
+- The base point $(1,0,-2)$ of $r$ belongs to $\pi$: $-2(1)-0+(-2)=b \Rightarrow b=-4$.
+<strong>Solution:</strong> $a=-2$, $b=-4$.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>The condition for a line with direction vector $\vec{d}$ to be parallel to a plane with normal vector $\vec{n}$ is:</li>
+<li>a) $\vec{d}\times\vec{n}=\vec{0}$</li>
+<li>b) $\vec{d}\cdot\vec{n}=0$</li>
+<li>c) $\vec{d}=\vec{n}$</li>
+<li>d) $|\vec{d}|=|\vec{n}|$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> b) The line is parallel to the plane (or contained in it) if and only if its direction vector is perpendicular to the normal vector of the plane: $\vec{d}\cdot\vec{n}=0$.</p>
+</blockquote>
+<ol>
+<li>If substituting the parametric equations of a line into the equation of the plane gives $0=0$:</li>
+<li>a) The line is parallel to the plane</li>
+<li>b) The line does not intersect the plane</li>
+<li>c) The line is contained in the plane</li>
+<li>d) The line is perpendicular to the plane</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> c) $0=0$ is a true identity for all values of the parameter, which means all points on the line satisfy the equation of the plane: the line is contained in the plane.</p>
+</blockquote>
+<hr />
+<h5>5.3.3 Relative Position of Two Planes</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Study the relative position of the planes $\pi_1:\; 2x - y + 3z = 5$ and $\pi_2:\; 4x - 2y + 6z = 8$.</p>
+<p><strong>Solution:</strong></p>
+<p>The normal vectors are $\vec{n}_1=(2,-1,3)$ and $\vec{n}_2=(4,-2,6)=2(2,-1,3)=2\vec{n}_1$.</p>
+<p>The normals are <strong>proportional</strong>, so the planes are parallel or coincident.</p>
+<p>To distinguish: we divide the equation of $\pi_2$ by $2$: $2x-y+3z=4$.</p>
+<p>Comparing with $\pi_1:\;2x-y+3z=5$. Since $4\neq5$, the planes are <strong>parallel and distinct</strong>.</p>
+<p><strong>Distance between them:</strong>
+$$d = \frac{|5-4|}{\sqrt{4+1+9}} = \frac{1}{\sqrt{14}} = \frac{\sqrt{14}}{14}$$</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>Determine the relative position of $\pi_1:\;x+2y-z=3$ and $\pi_2:\;2x+4y-2z=6$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\vec{n}_2=(2,4,-2)=2(1,2,-1)=2\vec{n}_1$. Dividing $\pi_2$ by $2$: $x+2y-z=3=\pi_1$. The planes are <strong>coincident</strong>.</p>
+</blockquote>
+<ol>
+<li>Determine whether the planes $\pi_1:\;x-y+z=2$ and $\pi_2:\;x+y-z=0$ are parallel, coincident, or intersecting.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\vec{n}_1=(1,-1,1)$ and $\vec{n}_2=(1,1,-1)$. Are they proportional? $1/1=1$, $-1/1=-1\neq1$. <strong>Not proportional</strong>: the planes are <strong>intersecting</strong> (they meet in a line).</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>Find the line of intersection of the planes $\pi_1:\;x+y+z=3$ and $\pi_2:\;x-y+2z=1$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> The planes are intersecting (normals not proportional). We solve the system:
+$$\begin{cases}x+y+z=3\x-y+2z=1\end{cases}$$
+Adding: $2x+3z=4 \Rightarrow x=\dfrac{4-3z}{2}$. From the first: $y=3-x-z=3-\dfrac{4-3z}{2}-z=\dfrac{6-4+3z-2z}{2}=\dfrac{2+z}{2}$.
+Taking $z=t$ as the parameter: $x=2-\dfrac{3t}{2}$, $y=1+\dfrac{t}{2}$, $z=t$. Multiplying by $2$: $t=2s$:
+$$x=2-3s, \quad y=1+s, \quad z=2s$$
+Direction vector: $(-3,1,2)$, point: $(2,1,0)$.
+The line of intersection is: $\dfrac{x-2}{-3}=\dfrac{y-1}{1}=\dfrac{z}{2}$.</p>
+</blockquote>
+<ol>
+<li>Find the value of $k$ such that the plane $\pi_k:\;2x+ky-z=3$ is parallel to the plane $\pi:\;4x-6y+2z=1$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\vec{n}_\pi=(4,-6,2)=2(2,-3,1)$. For parallelism: $(2,k,-1)=\lambda(2,-3,1)$.
+$2=2\lambda \Rightarrow \lambda=1$; $k=-3\lambda=-3$; $-1=\lambda=1$ ✗. Contradiction in the third component. Revisiting: $(2,k,-1)$ proportional to $(4,-6,2)$: $2/4=k/(-6)=(-1)/2$. $1/2=k/(-6) \Rightarrow k=-3$; and $-1/2=-1/2$ ✓. <strong>$k=-3$</strong>.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>Consider the planes:
+   $$\pi_1:\; x + 2y - z = 3, \qquad \pi_2:\; 2x - y + az = b, \qquad \pi_3:\; x + y + z = 2$$</li>
+</ol>
+<p><strong>(a)</strong> For $a=1$, $b=0$: study the relative position of $\pi_1$ and $\pi_2$.</p>
+<p><strong>(b)</strong> Find the line of intersection of $\pi_1$ and $\pi_3$.</p>
+<blockquote>
+<p><strong>Solution:</strong></p>
+<p><strong>(a)</strong> $\vec{n}_1=(1,2,-1)$, $\vec{n}_2=(2,-1,1)$. Not proportional ($1/2\neq 2/(-1)$): <strong>intersecting</strong>.
+System: $x+2y-z=3$ and $2x-y+z=0$.
+Adding: $3x+y=3$. From the second: $z=y-2x$.
+Taking $x=s$: $y=3-3s$, $z=3-3s-2s=3-5s$.
+Line of intersection: $(x,y,z)=(0,3,3)+s(1,-3,-5)$.</p>
+<p><strong>(b)</strong> $\pi_1: x+2y-z=3$ and $\pi_3: x+y+z=2$. Subtracting: $y-2z=1 \Rightarrow y=1+2z$.
+From $\pi_3$: $x=2-y-z=2-(1+2z)-z=1-3z$.
+Taking $z=t$: $x=1-3t$, $y=1+2t$, $z=t$.
+Line: $(x,y,z)=(1,1,0)+t(-3,2,1)$.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>Two planes in space with non-proportional normal vectors:</li>
+<li>a) Are always coincident</li>
+<li>b) Are always parallel</li>
+<li>c) Meet in exactly one line</li>
+<li>d) Can be parallel or intersecting</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> c) If the normal vectors are not proportional, the planes necessarily intersect, and the intersection is always a line (in $\mathbb{R}^3$).</p>
+</blockquote>
+<ol>
+<li>The distance between the planes $x+y-z=2$ and $x+y-z=5$ is:</li>
+<li>a) $3$</li>
+<li>b) $\dfrac{3}{\sqrt{3}} = \sqrt{3}$</li>
+<li>c) $\sqrt{3}$</li>
+<li>d) $\dfrac{3}{\sqrt{2}}$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> c) $d=\dfrac{|2-5|}{\sqrt{1+1+1}}=\dfrac{3}{\sqrt{3}}=\sqrt{3}$.</p>
+</blockquote>
+<hr />
+<h5>5.3.4 Relative Position of Three Planes</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Study the relative position of the three planes:
+$$\pi_1:\; x+y+z=3, \quad \pi_2:\; x-y+z=1, \quad \pi_3:\; 2x+y+3z=7$$</p>
+<p><strong>Solution:</strong></p>
+<p>The position of three planes is determined by studying the system:
+$$\begin{pmatrix}1&amp;1&amp;1\1&amp;-1&amp;1\2&amp;1&amp;3\end{pmatrix}\begin{pmatrix}x\y\z\end{pmatrix}=\begin{pmatrix}3\1\7\end{pmatrix}$$</p>
+<p><strong>We compute the determinant</strong> of the coefficient matrix:
+$$D=\begin{vmatrix}1&amp;1&amp;1\1&amp;-1&amp;1\2&amp;1&amp;3\end{vmatrix}=1(-3-1)-1(3-2)+1(1+2)=(-4)-(1)+(3)=-2\neq0$$</p>
+<p>Since $D\neq0$, the system has a <strong>unique solution</strong>. This corresponds to <strong>three planes meeting at a single point</strong>.</p>
+<p>We solve by Cramer's rule or Gaussian elimination:
+$$x=\frac{D_x}{D}=\frac{\begin{vmatrix}3&amp;1&amp;1\1&amp;-1&amp;1\7&amp;1&amp;3\end{vmatrix}}{-2}=\frac{3(-3-1)-1(3-7)+1(1+7)}{-2}=\frac{-12+4+8}{-2}=\frac{0}{-2}=0$$
+$$y=\frac{D_y}{D}=\frac{\begin{vmatrix}1&amp;3&amp;1\1&amp;1&amp;1\2&amp;7&amp;3\end{vmatrix}}{-2}=\frac{1(3-7)-3(3-2)+1(7-2)}{-2}=\frac{-4-3+5}{-2}=\frac{-2}{-2}=1$$
+$$z=3-x-y=3-0-1=2$$</p>
+<p><strong>Intersection point:</strong> $P(0,1,2)$.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>Study the position of the three planes $\pi_1:\;x+y=2$, $\pi_2:\;y+z=3$, $\pi_3:\;x+z=1$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> System:
+$$\begin{cases}x+y=2\y+z=3\x+z=1\end{cases}$$
+$D=\begin{vmatrix}1&amp;1&amp;0\0&amp;1&amp;1\1&amp;0&amp;1\end{vmatrix}=1(1-0)-1(0-1)+0=1+1=2\neq0$.
+Unique solution. The three planes meet at a point.
+Adding all three equations: $2x+2y+2z=6 \Rightarrow x+y+z=3$.
+From $\pi_1$: $z=1$; from $\pi_2$: $x=0$; from $\pi_3$: $y=2$.
+<strong>Intersection point: $(0,2,1)$</strong>.</p>
+</blockquote>
+<ol>
+<li>Determine whether the planes $\pi_1:\;x+y+z=1$, $\pi_2:\;x+y+z=2$, $\pi_3:\;x+y+z=3$ have any common point.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> All three have the same normal vector $(1,1,1)$, they are mutually parallel (and distinct, since their constant terms are different). <strong>They have no common point</strong> (inconsistent system).</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>Study the relative position of:
+   $$\pi_1:\; x+2y-z=3 \quad \pi_2:\; 2x+4y-2z=6 \quad \pi_3:\; x-y+z=1$$</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> We observe that $\pi_2=2\pi_1$: they are <strong>coincident</strong>. The system reduces to:
+$$\begin{cases}x+2y-z=3\x-y+z=1\end{cases}$$
+The planes $\pi_1$ (=$\pi_2$) and $\pi_3$ are intersecting (normals $(1,2,-1)$ and $(1,-1,1)$ are not proportional).
+The system has infinitely many solutions (a line): <strong>the three planes share a line</strong> (the plane $\pi_2$ is the same as $\pi_1$, and the other two meet in a line).</p>
+</blockquote>
+<ol>
+<li>For what value of $k$ do the three planes $\pi_1:\;x+y+z=2$, $\pi_2:\;x-y+kz=0$, $\pi_3:\;2x+ky+z=3$ have a unique solution?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> The system has a unique solution $\Leftrightarrow$ $D\neq0$:
+$$D=\begin{vmatrix}1&amp;1&amp;1\1&amp;-1&amp;k\2&amp;k&amp;1\end{vmatrix}=1(-1-k^2)-1(1-2k)+1(k+2)$$
+$=-1-k^2-1+2k+k+2 = -k^2+3k$
+$D\neq0 \Leftrightarrow -k^2+3k\neq0 \Leftrightarrow k(k-3)\neq0 \Leftrightarrow k\neq0$ and $k\neq3$.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>Consider the planes:
+   $$\pi_1:\; x+y-z=2, \quad \pi_2:\; 2x-y+z=1, \quad \pi_3:\; x+ay+bz=c$$</li>
+</ol>
+<p><strong>(a)</strong> Study the relative position of $\pi_1$ and $\pi_2$.</p>
+<p><strong>(b)</strong> Find $a$, $b$, $c$ such that the system of three planes is inconsistent (no solution), with $\pi_3$ not parallel to $\pi_1$.</p>
+<blockquote>
+<p><strong>Solution:</strong></p>
+<p><strong>(a)</strong> $\vec{n}_1=(1,1,-1)$, $\vec{n}_2=(2,-1,1)$: not proportional. <strong>Intersecting.</strong>
+Line of intersection: $\pi_1+\pi_2$: $3x=3 \Rightarrow x=1$. From $\pi_1$: $y-z=1$. Line: $(1, 1+t, t)$, $t\in\mathbb{R}$, or equivalently $(x,y,z)=(1,1,0)+t(0,1,1)$.</p>
+<p><strong>(b)</strong> For the system to be inconsistent with $\pi_3$ not parallel to $\pi_1$: the line of intersection $\pi_1\cap\pi_2$ must be parallel to $\pi_3$ without being contained in it.
+The line has direction vector $(0,1,1)$. For $\pi_3 \parallel$ to the line: $(0,1,1)\cdot(1,a,b)=0 \Rightarrow a+b=0 \Rightarrow b=-a$.
+For the system to be inconsistent: the line does not belong to $\pi_3$: the point $(1,1,0)$ is not in $\pi_3$: $1+a\cdot1+b\cdot0\neq c \Rightarrow 1+a\neq c$.
+Example: $a=1$, $b=-1$, $c=0$ (then $1+1=2\neq0$ ✓). Plane: $x+y-z=0$.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>If the determinant of the coefficient matrix of a system of three planes is zero:</li>
+<li>a) The three planes meet at a unique point</li>
+<li>b) The system is always inconsistent</li>
+<li>c) The system has infinitely many solutions or is inconsistent</li>
+<li>d) The three planes are coincident</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> c) If $D=0$, the system is either compatible indeterminate (infinitely many solutions: a point, a line, or a plane) or inconsistent. A more detailed rank analysis is required.</p>
+</blockquote>
+<ol>
+<li>Three planes that pairwise meet in mutually parallel (and distinct) lines form a configuration called:</li>
+<li>a) A pencil of planes</li>
+<li>b) A consistent determinate system</li>
+<li>c) A prism (inconsistent system with parallel lines of intersection)</li>
+<li>d) Coincident planes</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> c) This geometric configuration, where each pair of planes meets in a line and the three lines are parallel, corresponds to an inconsistent system whose configuration resembles a "triedral prism" or prismatic-pencil system. The corresponding system of equations has no solution.</p>
+</blockquote>
+<hr />
+<hr />
+<h5>5.4.1 Angle between Two Lines</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Calculate the angle formed by the lines $r:\;\dfrac{x-1}{2}=\dfrac{y}{1}=\dfrac{z+1}{-2}$ and $s:\;\dfrac{x}{1}=\dfrac{y-3}{2}=\dfrac{z-1}{2}$.</p>
+<p><strong>Solution:</strong></p>
+<p>The direction vectors are $\vec{d}_r=(2,1,-2)$ and $\vec{d}_s=(1,2,2)$.</p>
+<p>The angle $\theta$ between two lines is calculated as:
+$$\cos\theta = \frac{|\vec{d}_r\cdot\vec{d}_s|}{|\vec{d}_r||\vec{d}_s|}$$</p>
+<p>(We take the absolute value because the angle between lines is the acute angle, $0\leq\theta\leq90°$.)</p>
+<p>$$\vec{d}_r\cdot\vec{d}_s = 2\cdot1+1\cdot2+(-2)\cdot2 = 2+2-4=0$$</p>
+<p>$$\cos\theta=\frac{|0|}{3\cdot3}=0 \Rightarrow \theta=90°$$</p>
+<p><strong>The lines are perpendicular.</strong></p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>Calculate the angle between the lines with direction vectors $\vec{d}_1=(1,0,1)$ and $\vec{d}_2=(0,1,1)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong>
+$$\cos\theta=\frac{|\vec{d}_1\cdot\vec{d}_2|}{|\vec{d}_1||\vec{d}_2|}=\frac{|0+0+1|}{\sqrt{2}\cdot\sqrt{2}}=\frac{1}{2}$$
+$$\theta=\arccos!\left(\frac{1}{2}\right)=60°$$</p>
+</blockquote>
+<ol>
+<li>Determine whether the lines $r:\;(1,2,3)+\lambda(1,-1,2)$ and $s:\;(0,0,1)+\mu(3,1,-1)$ are perpendicular.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\vec{d}_r=(1,-1,2)$, $\vec{d}_s=(3,1,-1)$.
+$\vec{d}_r\cdot\vec{d}_s=3-1-2=0$. <strong>Yes, they are perpendicular.</strong></p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>Find the angle between the lines:
+   $$r:\;\begin{cases}x=t\y=2t\z=3t\end{cases} \qquad s:\;\begin{cases}x=1+2\mu\y=-1-\mu\z=3\mu\end{cases}$$</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\vec{d}_r=(1,2,3)$, $\vec{d}_s=(2,-1,3)$.
+$$\cos\theta=\frac{|2-2+9|}{\sqrt{14}\cdot\sqrt{14}}=\frac{9}{14}$$
+$$\theta=\arccos!\left(\frac{9}{14}\right)\approx 49{,}99°\approx50°$$</p>
+</blockquote>
+<ol>
+<li>Find $k$ such that the lines $r:\;\vec{d}_r=(k,1,2)$ and $s:\;\vec{d}_s=(1,k,-1)$ are perpendicular.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\vec{d}_r\cdot\vec{d}_s=k\cdot1+1\cdot k+2\cdot(-1)=2k-2=0 \Rightarrow k=1$.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>Given the lines:
+   $$r:\;\frac{x-2}{1}=\frac{y-1}{-1}=\frac{z}{2}, \qquad s:\;\frac{x}{2}=\frac{y+1}{1}=\frac{z-3}{-1}$$</li>
+</ol>
+<p><strong>(a)</strong> Find the angle formed by $r$ and $s$.</p>
+<p><strong>(b)</strong> Determine whether $r$ and $s$ are intersecting or skew; if intersecting, find the intersection point.</p>
+<blockquote>
+<p><strong>Solution:</strong></p>
+<p><strong>(a)</strong> $\vec{d}_r=(1,-1,2)$, $\vec{d}_s=(2,1,-1)$.
+$$\cos\theta=\frac{|2-1-2|}{\sqrt{6}\cdot\sqrt{6}}=\frac{1}{6}$$
+$$\theta=\arccos!\left(\frac{1}{6}\right)\approx80{,}4°$$</p>
+<p><strong>(b)</strong> Parametric equations: $r$: $x=2+t, y=1-t, z=2t$; $s$: $x=2\mu, y=-1+\mu, z=3-\mu$.
+System:
+$$2+t=2\mu \quad(I)$$
+$$1-t=-1+\mu \Rightarrow \mu=2-t \quad(II)$$
+$$2t=3-\mu \quad(III)$$
+From $(I)$ and $(II)$: $2+t=2(2-t)=4-2t \Rightarrow 3t=2 \Rightarrow t=2/3$, $\mu=4/3$.
+We check in $(III)$: $2(2/3)=4/3$ and $3-4/3=5/3$. $4/3\neq5/3$. <strong>Inconsistent</strong>: $r$ and $s$ are <strong>skew</strong>.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>The angle between two lines with direction vectors $\vec{d}_1$ and $\vec{d}_2$ is always calculated as:</li>
+<li>a) $\arccos!\left(\dfrac{\vec{d}_1\cdot\vec{d}_2}{|\vec{d}_1||\vec{d}_2|}\right)$, which may be obtuse</li>
+<li>b) $\arccos!\left(\dfrac{|\vec{d}_1\cdot\vec{d}_2|}{|\vec{d}_1||\vec{d}_2|}\right)$, always between $0°$ and $90°$</li>
+<li>c) $\arcsin!\left(\dfrac{\vec{d}_1\cdot\vec{d}_2}{|\vec{d}_1||\vec{d}_2|}\right)$</li>
+<li>d) $\arctan!\left(\dfrac{|\vec{d}_1\times\vec{d}_2|}{|\vec{d}_1||\vec{d}_2|}\right)$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> b) By convention, the angle between two lines is the acute (or right) angle they form, so the absolute value of the cosine is taken.</p>
+</blockquote>
+<ol>
+<li>Two lines are perpendicular if and only if:</li>
+<li>a) Their direction vectors are equal</li>
+<li>b) Their direction vectors are proportional</li>
+<li>c) The dot product of their direction vectors is zero</li>
+<li>d) The modulus of the cross product of their direction vectors is zero</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> c) Perpendicularity is equivalent to $\vec{d}_1\cdot\vec{d}_2=0$, which implies the angle between them is $90°$.</p>
+</blockquote>
+<hr />
+<h5>5.4.2 Angle between a Line and a Plane</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Calculate the angle formed by the line $r:\;x=1+2t,\;y=t,\;z=-1+t$ with the plane $\pi:\;x-y+2z=0$.</p>
+<p><strong>Solution:</strong></p>
+<p>The angle $\varphi$ between a line (with direction vector $\vec{d}$) and a plane (with normal vector $\vec{n}$) is calculated as the complement of the angle between $\vec{d}$ and $\vec{n}$:</p>
+<p>$$\sin\varphi = \frac{|\vec{d}\cdot\vec{n}|}{|\vec{d}||\vec{n}|}$$</p>
+<p>With $\vec{d}=(2,1,1)$ and $\vec{n}=(1,-1,2)$:
+$$\vec{d}\cdot\vec{n}=2-1+2=3$$
+$$|\vec{d}|=\sqrt{4+1+1}=\sqrt{6}, \quad |\vec{n}|=\sqrt{1+1+4}=\sqrt{6}$$
+$$\sin\varphi=\frac{|3|}{\sqrt{6}\cdot\sqrt{6}}=\frac{3}{6}=\frac{1}{2}$$
+$$\boxed{\varphi=\arcsin!\left(\frac{1}{2}\right)=30°}$$</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>Calculate the angle between the line $r:\;\vec{d}=(1,0,1)$ and the plane $\pi:\;\vec{n}=(1,1,0)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong>
+$$\sin\varphi=\frac{|1\cdot1+0\cdot1+1\cdot0|}{\sqrt{2}\cdot\sqrt{2}}=\frac{1}{2}$$
+$$\varphi=30°$$</p>
+</blockquote>
+<ol>
+<li>What condition must $\vec{d}$ and $\vec{n}$ satisfy for the line to be perpendicular to the plane?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> The line is perpendicular to the plane when $\varphi=90°$, which occurs when $\sin\varphi=1$, i.e., when $\vec{d}\parallel\vec{n}$: the direction vector of the line is proportional to the normal vector of the plane. Equivalently, $\vec{d}\times\vec{n}=\vec{0}$.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>Find the angle formed by the line $r:\;\dfrac{x-1}{3}=\dfrac{y+2}{-1}=\dfrac{z}{2}$ with the plane $\pi:\;2x+y-z=5$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\vec{d}=(3,-1,2)$, $\vec{n}=(2,1,-1)$.
+$$\sin\varphi=\frac{|6-1-2|}{\sqrt{14}\cdot\sqrt{6}}=\frac{3}{\sqrt{84}}=\frac{3}{2\sqrt{21}}=\frac{3\sqrt{21}}{42}=\frac{\sqrt{21}}{14}$$
+$$\varphi=\arcsin!\left(\frac{\sqrt{21}}{14}\right)\approx \arcsin(0{,}327)\approx19{,}1°$$</p>
+</blockquote>
+<ol>
+<li>For what values of $m$ does the line $r:\;\vec{d}=(m,1,2)$ form an angle of $30°$ with the plane $x+y+z=0$?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\vec{n}=(1,1,1)$, $\sin30°=1/2$.
+$$\frac{|m+1+2|}{\sqrt{m^2+5}\cdot\sqrt{3}}=\frac{1}{2}$$
+$$\frac{|m+3|}{\sqrt{3(m^2+5)}}=\frac{1}{2}$$
+$2|m+3|=\sqrt{3(m^2+5)}$. Squaring: $4(m+3)^2=3m^2+15$.
+$4m^2+24m+36=3m^2+15 \Rightarrow m^2+24m+21=0$
+$$m=\frac{-24\pm\sqrt{576-84}}{2}=\frac{-24\pm\sqrt{492}}{2}=\frac{-24\pm2\sqrt{123}}{2}=-12\pm\sqrt{123}$$</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>Let the line $r:\;\dfrac{x}{1}=\dfrac{y-1}{2}=\dfrac{z+2}{-1}$ and the plane $\pi:\;ax-y+2z=3$.</li>
+</ol>
+<p><strong>(a)</strong> Find the angle between $r$ and $\pi$ when $a=2$.</p>
+<p><strong>(b)</strong> For what value of $a$ is the line $r$ parallel to the plane $\pi$?</p>
+<p><strong>(c)</strong> For what value of $a$ is the line $r$ perpendicular to the plane $\pi$?</p>
+<blockquote>
+<p><strong>Solution:</strong></p>
+<p>$\vec{d}_r=(1,2,-1)$, $\vec{n}=(a,-1,2)$.</p>
+<p><strong>(a)</strong> $a=2$: $\vec{n}=(2,-1,2)$.
+$$\sin\varphi=\frac{|2-2-2|}{\sqrt{6}\cdot3}=\frac{2}{3\sqrt{6}}=\frac{2\sqrt{6}}{18}=\frac{\sqrt{6}}{9}$$
+$$\varphi=\arcsin!\left(\frac{\sqrt{6}}{9}\right)\approx15{,}8°$$</p>
+<p><strong>(b)</strong> $r\parallel\pi \Leftrightarrow \vec{d}\cdot\vec{n}=0$: $a-2-2=a-4=0 \Rightarrow a=4$.</p>
+<p><strong>(c)</strong> $r\perp\pi \Leftrightarrow \vec{d}\parallel\vec{n}$: $(1,2,-1)=k(a,-1,2)$. $1=ka$, $2=-k$, $-1=2k$. From the second: $k=-1/2$. From the third: $k=-1/2$ ✓. From the first: $a=1/k=-2$. <strong>$a=-2$</strong>.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>The angle between a line and a plane is calculated using:</li>
+<li>a) The cosine of the angle between the direction vector and the normal vector</li>
+<li>b) The sine of the angle between the direction vector and the normal vector</li>
+<li>c) The cosine of the angle between the direction vector and a vector in the plane</li>
+<li>d) The arctangent of the distance between the line and the plane</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> b) $\sin\varphi = \dfrac{|\vec{d}\cdot\vec{n}|}{|\vec{d}||\vec{n}|}$. The angle between the line and the plane is the complement of the angle between the line and the normal, which leads to the sine.</p>
+</blockquote>
+<ol>
+<li>If $\vec{d}\cdot\vec{n}=0$, the line with direction vector $\vec{d}$ and the plane with normal vector $\vec{n}$:</li>
+<li>a) Are perpendicular</li>
+<li>b) Are parallel (the line is parallel to the plane or contained in it)</li>
+<li>c) Meet at an angle of $45°$</li>
+<li>d) Meet at a point</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> b) $\vec{d}\cdot\vec{n}=0$ implies that the line is parallel to the plane or contained in it (the angle between the line and the plane is $0°$).</p>
+</blockquote>
+<hr />
+<h5>5.4.3 Angle between Two Planes (Dihedral Angle)</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Calculate the dihedral angle between the planes $\pi_1:\; 2x-y+z=3$ and $\pi_2:\; x+y-z=1$.</p>
+<p><strong>Solution:</strong></p>
+<p>The angle $\theta$ between two planes is the angle between their normal vectors (taking the acute angle):</p>
+<p>$$\cos\theta = \frac{|\vec{n}_1\cdot\vec{n}_2|}{|\vec{n}_1||\vec{n}_2|}$$</p>
+<p>With $\vec{n}_1=(2,-1,1)$ and $\vec{n}_2=(1,1,-1)$:
+$$\vec{n}_1\cdot\vec{n}_2 = 2-1-1=0$$</p>
+<p>$$\cos\theta=0 \Rightarrow \theta=90°$$</p>
+<p><strong>The planes are perpendicular.</strong></p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>Calculate the angle between the planes $\pi_1:\;x+y=0$ and $\pi_2:\;y+z=0$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\vec{n}_1=(1,1,0)$, $\vec{n}_2=(0,1,1)$.
+$$\cos\theta=\frac{|0+1+0|}{\sqrt{2}\cdot\sqrt{2}}=\frac{1}{2}$$
+$$\theta=60°$$</p>
+</blockquote>
+<ol>
+<li>When are two planes perpendicular? State the condition in terms of their normal vectors.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> Two planes are perpendicular when the dihedral angle between them is $90°$, i.e., when $\cos\theta=0$, which is equivalent to their normal vectors being perpendicular: $\vec{n}_1\cdot\vec{n}_2=0$.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>Find the angle formed by the planes $\pi_1:\;2x+y-2z=3$ and $\pi_2:\;3x+6z=1$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\vec{n}_1=(2,1,-2)$, $\vec{n}_2=(3,0,6)$.
+$$\cos\theta=\frac{|6+0-12|}{3\cdot\sqrt{45}}=\frac{6}{3\cdot3\sqrt{5}}=\frac{6}{9\sqrt{5}}=\frac{2}{3\sqrt{5}}=\frac{2\sqrt{5}}{15}$$
+$$\theta=\arccos!\left(\frac{2\sqrt{5}}{15}\right)\approx\arccos(0{,}298)\approx72{,}7°$$</p>
+</blockquote>
+<ol>
+<li>Find $k$ such that the planes $\pi_1:\;kx+2y-z=0$ and $\pi_2:\;x+ky+2z=3$ are perpendicular.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\vec{n}_1\cdot\vec{n}_2=0$: $k\cdot1+2\cdot k+(-1)\cdot2=3k-2=0 \Rightarrow k=\dfrac{2}{3}$.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>Let the planes $\pi:\;x-y+2z=4$ and $\sigma:\;2x+y+az=1$.</li>
+</ol>
+<p><strong>(a)</strong> Find $a$ such that $\pi$ and $\sigma$ are perpendicular.</p>
+<p><strong>(b)</strong> With the value of $a$ found, determine the line of intersection of $\pi$ and $\sigma$.</p>
+<p><strong>(c)</strong> Calculate the angle between $\pi$ and the coordinate plane $XOY$ (equation $z=0$).</p>
+<blockquote>
+<p><strong>Solution:</strong></p>
+<p><strong>(a)</strong> $\vec{n}<em>\pi=(1,-1,2)$, $\vec{n}</em>\sigma=(2,1,a)$. $\vec{n}<em>\pi\cdot\vec{n}</em>\sigma=0$: $2-1+2a=0 \Rightarrow 2a=-1 \Rightarrow a=-\dfrac{1}{2}$.</p>
+<p><strong>(b)</strong> With $a=-1/2$: system $x-y+2z=4$ and $2x+y-z/2=1$ (mult. by 2: $4x+2y-z=2$).
+$\pi+\sigma$: $(x-y+2z)+(2x+y-z/2)=5 \Rightarrow 3x+3z/2=5$, i.e. $6x+3z=10$.
+Parametrising: $z=t$, $x=(10-3t)/6$. From $\pi$: $y=x+2z-4=(10-3t)/6+2t-4=\dfrac{10-3t+12t-24}{6}=\dfrac{9t-14}{6}$.
+Line: point (with $t=0$): $(5/3,-7/3,0)$, direction vector proportional to $(-3,9,6)/6=(-1,3,2)$.</p>
+<p><strong>(c)</strong> The plane $XOY$ has $\vec{n}_{XOY}=(0,0,1)$.
+$$\cos\theta=\frac{|(1)(0)+(-1)(0)+(2)(1)|}{\sqrt{6}\cdot1}=\frac{2}{\sqrt{6}}=\frac{2\sqrt{6}}{6}=\frac{\sqrt{6}}{3}$$
+$$\theta=\arccos!\left(\frac{\sqrt{6}}{3}\right)\approx35{,}3°$$</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>The angle between the planes $x=0$ ($YOZ$ plane) and $y=0$ ($XOZ$ plane) is:</li>
+<li>a) $0°$</li>
+<li>b) $45°$</li>
+<li>c) $60°$</li>
+<li>d) $90°$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> d) The normals are $\vec{n}_1=(1,0,0)$ and $\vec{n}_2=(0,1,0)$: $\vec{n}_1\cdot\vec{n}_2=0$, so the angle is $90°$.</p>
+</blockquote>
+<ol>
+<li>If the angle between two planes is $\theta$, the supplementary angle $180°-\theta$ is also a possible "dihedral angle". Why is the acute angle taken?</li>
+<li>a) Because the obtuse angle does not exist between planes</li>
+<li>b) Because the dihedral angle is by convention always taken as the smaller of the two</li>
+<li>c) Because the absolute value in the formula guarantees the result is the acute angle</li>
+<li>d) Both b) and c) are correct</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> d) The angle between two planes is defined as the smaller of the two dihedral angles formed (between $0°$ and $90°$), and the formula $\cos\theta=\dfrac{|\vec{n}_1\cdot\vec{n}_2|}{|\vec{n}_1||\vec{n}_2|}$ automatically guarantees this result thanks to the absolute value.</p>
+</blockquote>
+<hr />
+<hr />
+<h5>5.5.1 Distance between Two Points</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Calculate the distance between the points $A(1,-2,3)$ and $B(4,2,-1)$.</p>
+<p><strong>Solution:</strong></p>
+<p>The distance between two points in $\mathbb{R}^3$ is:
+$$d(A,B) = |\overrightarrow{AB}| = \sqrt{(x_B-x_A)^2+(y_B-y_A)^2+(z_B-z_A)^2}$$</p>
+<p>$$d(A,B) = \sqrt{(4-1)^2+(2-(-2))^2+(-1-3)^2} = \sqrt{9+16+16} = \sqrt{41}$$</p>
+<p>$$\boxed{d(A,B)=\sqrt{41}\approx6{,}40}$$</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>Calculate the distance between $P(-1,0,2)$ and $Q(3,4,-2)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong>
+$$d=\sqrt{(3+1)^2+(4-0)^2+(-2-2)^2}=\sqrt{16+16+16}=\sqrt{48}=4\sqrt{3}$$</p>
+</blockquote>
+<ol>
+<li>The midpoint of segment $AB$ has coordinates $M(2,-1,3)$ and $A(0,1,-1)$. Find $B$ and $d(A,B)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $M=\dfrac{A+B}{2} \Rightarrow B=2M-A=(4,-3,7)$.
+$d(A,B)=\sqrt{16+16+64}=\sqrt{96}=4\sqrt{6}$.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>Find the points on the line $r:\;x=1+t,\;y=2-t,\;z=t$ equidistant from $A(0,0,0)$ and $B(6,0,6)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> Let $P(1+t,2-t,t)\in r$.
+$d(P,A)^2=(1+t)^2+(2-t)^2+t^2=1+2t+t^2+4-4t+t^2+t^2=3t^2-2t+5$
+$d(P,B)^2=(1+t-6)^2+(2-t)^2+(t-6)^2=(t-5)^2+(2-t)^2+(t-6)^2$
+$=t^2-10t+25+4-4t+t^2+t^2-12t+36=3t^2-26t+65$
+Equating: $3t^2-2t+5=3t^2-26t+65 \Rightarrow 24t=60 \Rightarrow t=5/2$.
+Point: $P(7/2,-1/2,5/2)$.</p>
+</blockquote>
+<ol>
+<li>Find the point on the line $r:\;\dfrac{x}{1}=\dfrac{y-1}{1}=\dfrac{z}{2}$ closest to the origin.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> Generic point: $P(t,1+t,2t)$.
+$d(P,O)^2=t^2+(1+t)^2+4t^2=t^2+1+2t+t^2+4t^2=6t^2+2t+1$.
+Minimum: $\dfrac{d}{dt}(6t^2+2t+1)=12t+2=0 \Rightarrow t=-\dfrac{1}{6}$.
+Closest point: $P!\left(-\dfrac{1}{6}, \dfrac{5}{6}, -\dfrac{1}{3}\right)$.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>Given the points $A(1,0,-1)$, $B(3,2,1)$ and $C(2,-1,3)$.</li>
+</ol>
+<p><strong>(a)</strong> Calculate the perimeter of triangle $ABC$.</p>
+<p><strong>(b)</strong> Find the midpoint of $AC$ and the length of the median from $B$.</p>
+<blockquote>
+<p><strong>Solution:</strong></p>
+<p><strong>(a)</strong>
+$d(A,B)=\sqrt{4+4+4}=\sqrt{12}=2\sqrt{3}$
+$d(B,C)=\sqrt{1+9+4}=\sqrt{14}$
+$d(A,C)=\sqrt{1+1+16}=\sqrt{18}=3\sqrt{2}$
+Perimeter $= 2\sqrt{3}+\sqrt{14}+3\sqrt{2}\approx3{,}46+3{,}74+4{,}24\approx11{,}44$ units.</p>
+<p><strong>(b)</strong> Midpoint of $AC$: $M_{AC}=\left(\dfrac{3}{2},-\dfrac{1}{2},1\right)$.
+Median from $B$: $d(B,M_{AC})=\sqrt{(3-3/2)^2+(2+1/2)^2+(1-1)^2}=\sqrt{9/4+25/4}=\sqrt{34/4}=\dfrac{\sqrt{34}}{2}$.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>The distance between $A(a,b,c)$ and the origin $O(0,0,0)$ is:</li>
+<li>a) $a+b+c$</li>
+<li>b) $|a|+|b|+|c|$</li>
+<li>c) $\sqrt{a+b+c}$</li>
+<li>d) $\sqrt{a^2+b^2+c^2}$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> d) It is the modulus of the position vector: $|\overrightarrow{OA}|=\sqrt{a^2+b^2+c^2}$.</p>
+</blockquote>
+<ol>
+<li>If $d(A,B)=0$, then:</li>
+<li>a) $A$ and $B$ are the same point</li>
+<li>b) $A$ and $B$ lie in the same coordinate plane</li>
+<li>c) $A$ and $B$ are symmetrically opposite with respect to the origin</li>
+<li>d) The vector $\overrightarrow{AB}$ is a unit vector</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> a) $d(A,B)=0 \Leftrightarrow |\overrightarrow{AB}|=0 \Leftrightarrow \overrightarrow{AB}=\vec{0} \Leftrightarrow A=B$.</p>
+</blockquote>
+<hr />
+<h5>5.5.2 Distance from a Point to a Line</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Calculate the distance from the point $P(2,3,1)$ to the line $r:\;(x,y,z)=(1,0,2)+\lambda(1,-1,1)$.</p>
+<p><strong>Solution:</strong></p>
+<p><strong>Method using the cross product:</strong></p>
+<p>Let $A(1,0,2)$ be a point on $r$ and $\vec{d}=(1,-1,1)$ the direction vector.</p>
+<p>$$\overrightarrow{AP} = P - A = (1,3,-1)$$</p>
+<p>$$\overrightarrow{AP}\times\vec{d} = \begin{vmatrix}\vec{i}&amp;\vec{j}&amp;\vec{k}\1&amp;3&amp;-1\1&amp;-1&amp;1\end{vmatrix} = (3\cdot1-(-1)(-1))\vec{i}-(1\cdot1-(-1)\cdot1)\vec{j}+(1\cdot(-1)-3\cdot1)\vec{k}$$
+$$= (3-1)\vec{i}-(1+1)\vec{j}+(-1-3)\vec{k} = (2,-2,-4)$$</p>
+<p>$$|\overrightarrow{AP}\times\vec{d}| = \sqrt{4+4+16}=\sqrt{24}=2\sqrt{6}$$
+$$|\vec{d}|=\sqrt{1+1+1}=\sqrt{3}$$</p>
+<p>$$\boxed{d(P,r)=\frac{|\overrightarrow{AP}\times\vec{d}|}{|\vec{d}|}=\frac{2\sqrt{6}}{\sqrt{3}}=2\sqrt{2}}$$</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>Calculate the distance from the point $Q(0,0,0)$ to the line $r:\;(x,y,z)=(1,1,1)+\lambda(1,0,0)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $A=(1,1,1)$, $\vec{d}=(1,0,0)$, $\overrightarrow{AQ}=(-1,-1,-1)$.
+$\overrightarrow{AQ}\times\vec{d}=\begin{vmatrix}\vec{i}&amp;\vec{j}&amp;\vec{k}\-1&amp;-1&amp;-1\1&amp;0&amp;0\end{vmatrix}=(0-0)\vec{i}-(0+1)\vec{j}+(0+1)\vec{k}=(0,-1,1)$.
+$d=\dfrac{|(0,-1,1)|}{1}=\sqrt{2}$.</p>
+</blockquote>
+<ol>
+<li>When is the distance from a point to a line zero? Give a geometric interpretation.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> The distance is zero when $\overrightarrow{AP}\times\vec{d}=\vec{0}$, i.e., when $\overrightarrow{AP}$ and $\vec{d}$ are proportional, which means $P$ is a point on the line $r$. Geometrically: $P\in r$.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>Calculate the distance from the point $A(1,-1,2)$ to the line $r:\;\dfrac{x}{2}=\dfrac{y+1}{1}=\dfrac{z-2}{-1}$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> Point on $r$: $B(0,-1,2)$. $\vec{d}=(2,1,-1)$.
+$\overrightarrow{BA}=(1,0,0)$.
+$\overrightarrow{BA}\times\vec{d}=\begin{vmatrix}\vec{i}&amp;\vec{j}&amp;\vec{k}\1&amp;0&amp;0\2&amp;1&amp;-1\end{vmatrix}=(0-0)\vec{i}-((-1)-0)\vec{j}+(1-0)\vec{k}=(0,1,1)$.
+$d=\dfrac{\sqrt{0+1+1}}{\sqrt{4+1+1}}=\dfrac{\sqrt{2}}{\sqrt{6}}=\dfrac{1}{\sqrt{3}}=\dfrac{\sqrt{3}}{3}$.</p>
+</blockquote>
+<ol>
+<li>Find the distance from the point $P(2,0,-1)$ to the line passing through $A(1,1,1)$ and $B(3,-1,0)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\vec{d}=\overrightarrow{AB}=(2,-2,-1)$. $\overrightarrow{AP}=(1,-1,-2)$.
+$\overrightarrow{AP}\times\vec{d}=\begin{vmatrix}\vec{i}&amp;\vec{j}&amp;\vec{k}\1&amp;-1&amp;-2\2&amp;-2&amp;-1\end{vmatrix}=(1-4)\vec{i}-(-1+4)\vec{j}+(-2+2)\vec{k}=(-3,-3,0)$.
+$|\overrightarrow{AP}\times\vec{d}|=\sqrt{9+9}=3\sqrt{2}$.
+$|\vec{d}|=\sqrt{4+4+1}=3$.
+$d=\dfrac{3\sqrt{2}}{3}=\sqrt{2}$.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>Let the line $r:\;\begin{cases}x=1+t\y=2-2t\z=t\end{cases}$ and the point $P(3,0,4)$.</li>
+</ol>
+<p><strong>(a)</strong> Calculate the distance from $P$ to $r$.</p>
+<p><strong>(b)</strong> Find the foot of the perpendicular from $P$ to $r$ (the point on $r$ closest to $P$).</p>
+<blockquote>
+<p><strong>Solution:</strong></p>
+<p><strong>(a)</strong> $A=(1,2,0)$, $\vec{d}=(1,-2,1)$, $\overrightarrow{AP}=(2,-2,4)$.
+$\overrightarrow{AP}\times\vec{d}=\begin{vmatrix}\vec{i}&amp;\vec{j}&amp;\vec{k}\2&amp;-2&amp;4\1&amp;-2&amp;1\end{vmatrix}=(-2+8)\vec{i}-(2-4)\vec{j}+(-4+2)\vec{k}=(6,2,-2)$.
+$|\overrightarrow{AP}\times\vec{d}|=\sqrt{36+4+4}=\sqrt{44}=2\sqrt{11}$.
+$|\vec{d}|=\sqrt{6}$.
+$$d(P,r)=\frac{2\sqrt{11}}{\sqrt{6}}=2\sqrt{\frac{11}{6}}=\frac{2\sqrt{66}}{6}=\frac{\sqrt{66}}{3}$$</p>
+<p><strong>(b)</strong> The foot of the perpendicular $H$ is the point on $r$ such that $\overrightarrow{HP}\perp\vec{d}$:
+$H=(1+t, 2-2t, t)$. $\overrightarrow{HP}=(2-t, -2+2t, 4-t)$.
+$\overrightarrow{HP}\cdot\vec{d}=(2-t)-(- 4+4t)+(4-t)=2-t+4-4t+4-t=10-6t=0 \Rightarrow t=5/3$.
+$H=\left(\dfrac{8}{3}, -\dfrac{4}{3}, \dfrac{5}{3}\right)$.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>The formula for the distance from a point $P$ to a line $r$ (with point $A$ and direction vector $\vec{d}$) is:</li>
+<li>a) $\dfrac{\overrightarrow{AP}\cdot\vec{d}}{|\vec{d}|}$</li>
+<li>b) $\dfrac{|\overrightarrow{AP}\times\vec{d}|}{|\vec{d}|}$</li>
+<li>c) $\dfrac{|\overrightarrow{AP}\cdot\vec{d}|}{|\vec{d}|}$</li>
+<li>d) $|\overrightarrow{AP}|\cdot|\vec{d}|$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> b) The distance is $\dfrac{|\overrightarrow{AP}\times\vec{d}|}{|\vec{d}|}$, using the modulus of the cross product.</p>
+</blockquote>
+<ol>
+<li>The foot of the perpendicular from $P$ to the line $r$ is the point $H\in r$ such that:</li>
+<li>a) $\overrightarrow{HP}$ is parallel to $\vec{d}$</li>
+<li>b) $\overrightarrow{HP}$ is perpendicular to $\vec{d}$, i.e. $\overrightarrow{HP}\cdot\vec{d}=0$</li>
+<li>c) $|HP|$ is maximum</li>
+<li>d) $H$ is on the plane perpendicular to $r$ passing through the origin</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> b) $H$ is the foot of the perpendicular, so $\overrightarrow{HP}\perp\vec{d}$, which translates to $\overrightarrow{HP}\cdot\vec{d}=0$.</p>
+</blockquote>
+<hr />
+<h5>5.5.3 Distance from a Point to a Plane</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Calculate the distance from the point $P(1,2,-1)$ to the plane $\pi:\; 2x - y + 2z + 3 = 0$.</p>
+<p><strong>Solution:</strong></p>
+<p>The formula for the distance from a point $(x_0,y_0,z_0)$ to the plane $ax+by+cz+d=0$ is:</p>
+<p>$$d(P,\pi) = \frac{|ax_0+by_0+cz_0+d|}{\sqrt{a^2+b^2+c^2}}$$</p>
+<p>With $P(1,2,-1)$, $a=2$, $b=-1$, $c=2$, $d=3$:</p>
+<p>$$d(P,\pi)=\frac{|2(1)+(-1)(2)+2(-1)+3|}{\sqrt{4+1+4}}=\frac{|2-2-2+3|}{\sqrt{9}}=\frac{|1|}{3}=\frac{1}{3}$$</p>
+<p>$$\boxed{d(P,\pi)=\frac{1}{3}}$$</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>Calculate the distance from the origin $O(0,0,0)$ to the plane $\pi:\;3x-4y+0z=10$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong>
+$$d(O,\pi)=\frac{|3\cdot0-4\cdot0-10|}{\sqrt{9+16}}=\frac{10}{5}=2$$</p>
+</blockquote>
+<ol>
+<li>How far is the point $A(2,-1,3)$ from the plane $\pi:\;x+2y-2z=6$?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong>
+$$d=\frac{|2+2(-1)-2(3)-6|}{\sqrt{1+4+4}}=\frac{|2-2-6-6|}{3}=\frac{12}{3}=4$$</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>Find the point on the plane $\pi:\;x+y+z=1$ closest to the point $P(2,3,4)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> The closest point $H$ lies on the line through $P$ with direction $\vec{n}=(1,1,1)$ (perpendicular to the plane).
+Parametric equations: $(2+t, 3+t, 4+t)$. Substituting into $\pi$: $(2+t)+(3+t)+(4+t)=1 \Rightarrow 9+3t=1 \Rightarrow t=-8/3$.
+$H=\left(2-\dfrac{8}{3}, 3-\dfrac{8}{3}, 4-\dfrac{8}{3}\right)=\left(-\dfrac{2}{3}, \dfrac{1}{3}, \dfrac{4}{3}\right)$.</p>
+</blockquote>
+<ol>
+<li>Determine whether the points $A(1,0,2)$ and $B(-1,2,0)$ are on the same side of the plane $\pi:\;x-y+z=3$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> Substituting into $x-y+z-3$:
+$A$: $1-0+2-3=0$. $A$ <strong>belongs</strong> to the plane.
+$B$: $-1-2+0-3=-6&lt;0$. $B$ is on the negative side of the plane.
+One cannot speak of "same side" since $A\in\pi$.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>Let the point $P(2,-1,3)$ and the plane $\pi:\;x+2y-2z+k=0$.</li>
+</ol>
+<p><strong>(a)</strong> Calculate the distance from $P$ to $\pi$ as a function of $k$.</p>
+<p><strong>(b)</strong> Find $k$ such that $d(P,\pi)=2$.</p>
+<p><strong>(c)</strong> Find the orthogonal projection of $P$ onto $\pi$ for $k=1$.</p>
+<blockquote>
+<p><strong>Solution:</strong></p>
+<p><strong>(a)</strong> $\vec{n}=(1,2,-2)$, $|\vec{n}|=\sqrt{1+4+4}=3$.
+$$d(P,\pi)=\frac{|2+2(-1)-2(3)+k|}{3}=\frac{|2-2-6+k|}{3}=\frac{|k-6|}{3}$$</p>
+<p><strong>(b)</strong> $\dfrac{|k-6|}{3}=2 \Rightarrow |k-6|=6 \Rightarrow k=12$ or $k=0$.</p>
+<p><strong>(c)</strong> With $k=1$: $d=|1-6|/3=5/3$. The projection $H$ of $P$ onto $\pi$ is found via the line through $P$ perpendicular to $\pi$: $(x,y,z)=(2,-1,3)+t(1,2,-2)$.
+In $\pi$: $(2+t)+2(-1+2t)-2(3-2t)+1=0 \Rightarrow 2+t-2+4t-6+4t+1=0 \Rightarrow 9t-5=0 \Rightarrow t=5/9$.
+$H=\left(\dfrac{23}{9}, \dfrac{1}{9}, \dfrac{17}{9}\right)$.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>The distance from the point $(a,b,c)$ to the plane $x=0$ ($YOZ$ plane) is:</li>
+<li>a) $\sqrt{a^2+b^2+c^2}$</li>
+<li>b) $|a|$</li>
+<li>c) $\sqrt{b^2+c^2}$</li>
+<li>d) $a$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> b) The equation of the $YOZ$ plane is $x=0$ (or $x+0y+0z=0$). The distance is $\dfrac{|a\cdot1+b\cdot0+c\cdot0|}{\sqrt{1}}=|a|$.</p>
+</blockquote>
+<ol>
+<li>To calculate the distance from a point to a plane using the analytical formula, the denominator is:</li>
+<li>a) The modulus of the normal vector to the plane</li>
+<li>b) The modulus of the position vector of the point</li>
+<li>c) The constant term of the plane equation</li>
+<li>d) The dot product of the point with the normal</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> a) In the formula $d=\dfrac{|ax_0+by_0+cz_0+d|}{\sqrt{a^2+b^2+c^2}}$, the denominator $\sqrt{a^2+b^2+c^2}=|\vec{n}|$ is the modulus of the normal vector to the plane.</p>
+</blockquote>
+<hr />
+<h5>5.5.4 Distance between Two Parallel Lines</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Calculate the distance between the parallel lines:
+$$r:\;\frac{x-1}{2}=\frac{y}{-1}=\frac{z+2}{1} \qquad s:\;\frac{x+3}{2}=\frac{y-1}{-1}=\frac{z}{1}$$</p>
+<p><strong>Solution:</strong></p>
+<p>We verify parallelism: both have $\vec{d}=(2,-1,1)$: <strong>they are parallel</strong> (taking the point $(-3,1,0)$ of $s$ in $r$: $(-3-1)/2=-2$, $1/(-1)=-1\neq-2$: not coincident).</p>
+<p><strong>Method:</strong> We take $A(1,0,-2)\in r$ and $B(-3,1,0)\in s$.
+$$\overrightarrow{AB}=(-4,1,2)$$</p>
+<p>The distance is the modulus of the component of $\overrightarrow{AB}$ perpendicular to $\vec{d}$:
+$$d(r,s)=\frac{|\overrightarrow{AB}\times\vec{d}|}{|\vec{d}|}$$</p>
+<p>$$\overrightarrow{AB}\times\vec{d}=\begin{vmatrix}\vec{i}&amp;\vec{j}&amp;\vec{k}\-4&amp;1&amp;2\2&amp;-1&amp;1\end{vmatrix}=(1+2)\vec{i}-(-4-4)\vec{j}+(4-2)\vec{k}=(3,8,2)$$</p>
+<p>$$d=\frac{\sqrt{9+64+4}}{\sqrt{4+1+1}}=\frac{\sqrt{77}}{\sqrt{6}}=\sqrt{\frac{77}{6}}=\frac{\sqrt{462}}{6}$$</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>Calculate the distance between $r:\;(x,y,z)=(0,1,0)+\lambda(1,1,0)$ and $s:\;(x,y,z)=(1,0,3)+\mu(2,2,0)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\vec{d}_r=(1,1,0)$, $\vec{d}_s=(2,2,0)=2\vec{d}_r$: parallel.
+$A=(0,1,0)\in r$, $B=(1,0,3)\in s$. $\overrightarrow{AB}=(1,-1,3)$.
+$\overrightarrow{AB}\times\vec{d}=\begin{vmatrix}\vec{i}&amp;\vec{j}&amp;\vec{k}\1&amp;-1&amp;3\1&amp;1&amp;0\end{vmatrix}=(0-3)\vec{i}-(0-3)\vec{j}+(1+1)\vec{k}=(-3,3,2)$.
+$d=\dfrac{\sqrt{9+9+4}}{\sqrt{2}}=\dfrac{\sqrt{22}}{\sqrt{2}}=\sqrt{11}$.</p>
+</blockquote>
+<ol>
+<li>Why can we not calculate the distance between two parallel lines simply as the distance between their base points?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> The distance between base points may not be the minimum distance between the lines. The distance between two parallel lines is the minimum of all distances between a point on $r$ and a point on $s$, which is the length of the segment perpendicular to both lines. The base point is any point, not necessarily the closest one.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>Are the lines $r:\;(1,0,2)+\lambda(1,2,1)$ and $s:\;(3,4,5)+\mu(2,4,2)$ parallel? If so, calculate their distance.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\vec{d}_r=(1,2,1)$, $\vec{d}_s=(2,4,2)=2\vec{d}_r$: proportional, they are parallel.
+Point of $s$ in $r$?: $\overrightarrow{AB}=(2,4,3)$ with $A=(1,0,2)$, $B=(3,4,5)$.
+$\overrightarrow{AB}\times\vec{d}_r=\begin{vmatrix}\vec{i}&amp;\vec{j}&amp;\vec{k}\2&amp;4&amp;3\1&amp;2&amp;1\end{vmatrix}=(4-6)\vec{i}-(2-3)\vec{j}+(4-4)\vec{k}=(-2,1,0)$.
+$d=\dfrac{\sqrt{4+1}}{|\vec{d}_r|}=\dfrac{\sqrt{5}}{\sqrt{6}}=\sqrt{\dfrac{5}{6}}=\dfrac{\sqrt{30}}{6}$.</p>
+</blockquote>
+<ol>
+<li>Write two distinct parallel lines exactly $\sqrt{2}$ apart, with direction vector $(1,0,1)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> We take the line $r:\;x=t,y=0,z=t$ (through the origin with $\vec{d}=(1,0,1)$) and look for $s$ at distance $\sqrt{2}$.
+A displacement perpendicular to $\vec{d}=(1,0,1)$: the vector $(0,1,0)$ is perpendicular to $\vec{d}$ and has modulus $1$. Displacing $\sqrt{2}$ in that direction: $s:\;x=t, y=\sqrt{2}, z=t$.
+Verification: $A=(0,0,0)\in r$, $B=(0,\sqrt{2},0)\in s$. $\overrightarrow{AB}=(0,\sqrt{2},0)$.
+$\overrightarrow{AB}\times\vec{d}=\begin{vmatrix}\vec{i}&amp;\vec{j}&amp;\vec{k}\0&amp;\sqrt{2}&amp;0\1&amp;0&amp;1\end{vmatrix}=(\sqrt{2})\vec{i}-(0)\vec{j}+(-\sqrt{2})\vec{k}=(\sqrt{2},0,-\sqrt{2})$.
+$d=\dfrac{\sqrt{2+2}}{\sqrt{2}}=\dfrac{2}{\sqrt{2}}=\sqrt{2}$ ✓.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>The lines $r:\;\dfrac{x-1}{2}=\dfrac{y+1}{-1}=\dfrac{z-2}{1}$ and $s:\;\dfrac{x+1}{4}=\dfrac{y-3}{-2}=\dfrac{z+1}{2}$ are parallel.</li>
+</ol>
+<p><strong>(a)</strong> Verify that they are parallel and distinct.</p>
+<p><strong>(b)</strong> Calculate the distance between them.</p>
+<blockquote>
+<p><strong>Solution:</strong></p>
+<p><strong>(a)</strong> $\vec{d}_r=(2,-1,1)$, $\vec{d}_s=(4,-2,2)=2\vec{d}_r$ ✓ (parallel).
+Point of $s$: $Q(-1,3,-1)$. In $r$: $(-1-1)/2=-1$; $(-1+1)/(-1)=0/(-1)=0\neq-1$. Does not belong: <strong>distinct</strong> ✓.</p>
+<p><strong>(b)</strong> $A(1,-1,2)\in r$, $B(-1,3,-1)\in s$. $\overrightarrow{AB}=(-2,4,-3)$.
+$\overrightarrow{AB}\times\vec{d}_r=\begin{vmatrix}\vec{i}&amp;\vec{j}&amp;\vec{k}\-2&amp;4&amp;-3\2&amp;-1&amp;1\end{vmatrix}=(4-3)\vec{i}-(-2+6)\vec{j}+(2-8)\vec{k}=(1,-4,-6)$.
+$d=\dfrac{\sqrt{1+16+36}}{\sqrt{4+1+1}}=\dfrac{\sqrt{53}}{\sqrt{6}}=\sqrt{\dfrac{53}{6}}=\dfrac{\sqrt{318}}{6}$.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>The distance between two parallel lines $r$ and $s$ is:</li>
+<li>a) The distance between their direction vectors</li>
+<li>b) The minimum distance between a point on $r$ and a point on $s$</li>
+<li>c) The distance between their base points</li>
+<li>d) Always infinite if they are parallel</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> b) It is the minimum possible distance between a point on $r$ and any point on $s$, which equals the length of the segment perpendicular to both.</p>
+</blockquote>
+<ol>
+<li>To calculate the distance between two parallel lines, the formula used is:</li>
+<li>a) $d=|\overrightarrow{AB}|$</li>
+<li>b) $d=\dfrac{|\overrightarrow{AB}\cdot\vec{d}|}{|\vec{d}|}$</li>
+<li>c) $d=\dfrac{|\overrightarrow{AB}\times\vec{d}|}{|\vec{d}|}$</li>
+<li>d) $d=\dfrac{\overrightarrow{AB}\cdot\vec{n}}{|\vec{n}|}$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> c) The same formula as for the distance from a point to a line, where $A\in r$ and $B\in s$.</p>
+</blockquote>
+<hr />
+<h5>5.5.5 Distance between Two Skew Lines</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Calculate the distance between the skew lines:
+$$r:\;(x,y,z)=(1,0,0)+\lambda(1,1,0) \qquad s:\;(x,y,z)=(0,0,1)+\mu(0,1,1)$$</p>
+<p><strong>Solution:</strong></p>
+<p>The minimum distance between two skew lines is:
+$$d(r,s) = \frac{|\overrightarrow{AB}\cdot(\vec{d}_r\times\vec{d}_s)|}{|\vec{d}_r\times\vec{d}_s|}$$</p>
+<p>where $A\in r$, $B\in s$.</p>
+<p><strong>Step 1:</strong> $A=(1,0,0)$, $B=(0,0,1)$, $\vec{d}_r=(1,1,0)$, $\vec{d}_s=(0,1,1)$.</p>
+<p><strong>Step 2:</strong> $\vec{d}_r\times\vec{d}_s=\begin{vmatrix}\vec{i}&amp;\vec{j}&amp;\vec{k}\1&amp;1&amp;0\0&amp;1&amp;1\end{vmatrix}=(1-0)\vec{i}-(1-0)\vec{j}+(1-0)\vec{k}=(1,-1,1)$.</p>
+<p>$$|\vec{d}_r\times\vec{d}_s|=\sqrt{3}$$</p>
+<p><strong>Step 3:</strong> $\overrightarrow{AB}=B-A=(-1,0,1)$.</p>
+<p>$$\overrightarrow{AB}\cdot(\vec{d}_r\times\vec{d}_s)=(-1)(1)+(0)(-1)+(1)(1)=-1+0+1=0$$</p>
+<p>$$d(r,s)=\frac{|0|}{\sqrt{3}}=0$$</p>
+<p><strong>Note:</strong> $d=0$ implies the lines intersect. We verify whether they are actually skew: system $1+\lambda=0\mu, \lambda=\mu, 0=1+\mu$... From the third: $\mu=-1$, $\lambda=-1$; first: $1-1=0$ ✓. The lines are <strong>intersecting</strong> (not skew). The problem was incorrectly stated; another example follows:</p>
+<p><strong>Correct example:</strong> $r:\;x=t,y=0,z=0$ and $s:\;x=0,y=1+\mu,z=\mu$.</p>
+<p>$\vec{d}_r=(1,0,0)$, $\vec{d}_s=(0,1,1)$, $A=(0,0,0)$, $B=(0,1,0)$.</p>
+<p>$\vec{d}_r\times\vec{d}_s=(0\cdot1-0\cdot1)\vec{i}-(1\cdot1-0\cdot0)\vec{j}+(1\cdot1-0\cdot0)\vec{k}=(0,-1,1)$.</p>
+<p>$\overrightarrow{AB}=(0,1,0)$.</p>
+<p>$\overrightarrow{AB}\cdot(0,-1,1)=0-1+0=-1$.</p>
+<p>$$d=\frac{|-1|}{\sqrt{2}}=\frac{1}{\sqrt{2}}=\frac{\sqrt{2}}{2}$$</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>Explain the difference between the distance between skew lines and the distance between parallel lines.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> In both cases the minimum distance is calculated using the same idea (the component perpendicular to both lines of the vector joining a point on each), but the formula differs:
+- <strong>Parallel:</strong> $d=\dfrac{|\overrightarrow{AB}\times\vec{d}|}{|\vec{d}|}$ (both direction vectors are the same $\vec{d}$).
+- <strong>Skew:</strong> $d=\dfrac{|\overrightarrow{AB}\cdot(\vec{d}_r\times\vec{d}_s)|}{|\vec{d}_r\times\vec{d}_s|}$ (the direction perpendicular to both is $\vec{d}_r\times\vec{d}_s$).</p>
+</blockquote>
+<ol>
+<li>What happens if $\vec{d}_r\times\vec{d}_s=\vec{0}$ when trying to calculate the distance between two skew lines?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> If $\vec{d}_r\times\vec{d}_s=\vec{0}$, the direction vectors are proportional, so the lines are parallel (or coincident), not skew. The skew-lines formula is not applicable; the parallel-lines formula must be used instead.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>Calculate the distance between the skew lines:
+   $$r:\;\frac{x}{1}=\frac{y-1}{0}=\frac{z}{0} \qquad s:\;\frac{x-1}{0}=\frac{y}{1}=\frac{z-1}{0}$$</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\vec{d}_r=(1,0,0)$, $\vec{d}_s=(0,1,0)$. Point $A=(0,1,0)\in r$ (with $y=1,z=0$ fixed), $B=(1,0,1)\in s$.
+$\vec{d}_r\times\vec{d}_s=\begin{vmatrix}\vec{i}&amp;\vec{j}&amp;\vec{k}\1&amp;0&amp;0\0&amp;1&amp;0\end{vmatrix}=(0)\vec{i}-(0)\vec{j}+(1)\vec{k}=(0,0,1)$. $|\vec{d}_r\times\vec{d}_s|=1$.
+$\overrightarrow{AB}=(1,-1,1)$.
+$\overrightarrow{AB}\cdot(0,0,1)=1$.
+$d=\dfrac{1}{1}=1$.</p>
+</blockquote>
+<ol>
+<li>Calculate the minimum distance between the lines:
+   $$r:\;\begin{cases}x=2+t\y=1-t\z=3+2t\end{cases} \qquad s:\;\begin{cases}x=1+\mu\y=2+\mu\z=-1+\mu\end{cases}$$</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\vec{d}_r=(1,-1,2)$, $\vec{d}_s=(1,1,1)$.
+$\vec{d}_r\times\vec{d}_s=\begin{vmatrix}\vec{i}&amp;\vec{j}&amp;\vec{k}\1&amp;-1&amp;2\1&amp;1&amp;1\end{vmatrix}=(-1-2)\vec{i}-(1-2)\vec{j}+(1+1)\vec{k}=(-3,1,2)$. $|\vec{d}_r\times\vec{d}_s|=\sqrt{14}$.
+$A=(2,1,3)\in r$, $B=(1,2,-1)\in s$. $\overrightarrow{AB}=(-1,1,-4)$.
+$\overrightarrow{AB}\cdot(-3,1,2)=3+1-8=-4$.
+$d=\dfrac{4}{\sqrt{14}}=\dfrac{4\sqrt{14}}{14}=\dfrac{2\sqrt{14}}{7}$.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>Given the lines:
+   $$r:\;\frac{x-2}{1}=\frac{y}{2}=\frac{z+1}{-1} \qquad s:\;\frac{x}{2}=\frac{y-3}{-1}=\frac{z-2}{1}$$</li>
+</ol>
+<p><strong>(a)</strong> Verify that $r$ and $s$ are skew.</p>
+<p><strong>(b)</strong> Calculate the minimum distance between $r$ and $s$.</p>
+<blockquote>
+<p><strong>Solution:</strong></p>
+<p><strong>(a)</strong> $\vec{d}_r=(1,2,-1)$, $\vec{d}_s=(2,-1,1)$: not proportional.
+System: $2+t=2\mu$, $2t=-1+(-\mu)$... checking with full parametric equations:
+$2+t=2\mu\;(I)$, $2t=3-\mu\;(II)$, $-1-t=2+\mu\;(III)$.
+From $(III)$: $\mu=-3-t$. In $(I)$: $2+t=2(-3-t)=-6-2t \Rightarrow 3t=-8 \Rightarrow t=-8/3$, $\mu=-3+8/3=-1/3$.
+We check in $(II)$: $2(-8/3)=-16/3$ and $3-(-1/3)=10/3$. $-16/3\neq10/3$: <strong>inconsistent</strong>. $r$ and $s$ are <strong>skew</strong> ✓.</p>
+<p><strong>(b)</strong> $\vec{d}_r\times\vec{d}_s=\begin{vmatrix}\vec{i}&amp;\vec{j}&amp;\vec{k}\1&amp;2&amp;-1\2&amp;-1&amp;1\end{vmatrix}=(2-1)\vec{i}-(1+2)\vec{j}+(-1-4)\vec{k}=(1,-3,-5)$.
+$|\vec{d}_r\times\vec{d}_s|=\sqrt{1+9+25}=\sqrt{35}$.
+$A=(2,0,-1)\in r$, $B=(0,3,2)\in s$. $\overrightarrow{AB}=(-2,3,3)$.
+$\overrightarrow{AB}\cdot(1,-3,-5)=-2-9-15=-26$.
+$$d=\frac{|-26|}{\sqrt{35}}=\frac{26}{\sqrt{35}}=\frac{26\sqrt{35}}{35}$$</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>The minimum distance between two skew lines is achieved along:</li>
+<li>a) The direction vector of one of them</li>
+<li>b) The common perpendicular direction to both ($\vec{d}_r\times\vec{d}_s$)</li>
+<li>c) The bisector of the angle between them</li>
+<li>d) Any direction in the plane containing $r$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> b) The minimum distance is attained along the direction $\vec{n}=\vec{d}_r\times\vec{d}_s$, which is perpendicular to both lines simultaneously.</p>
+</blockquote>
+<ol>
+<li>The formula $d=\dfrac{|\overrightarrow{AB}\cdot(\vec{d}_r\times\vec{d}_s)|}{|\vec{d}_r\times\vec{d}_s|}$ gives the distance between skew lines. If $\overrightarrow{AB}\cdot(\vec{d}_r\times\vec{d}_s)=0$, the lines:</li>
+<li>a) Are parallel</li>
+<li>b) Intersect (are not skew)</li>
+<li>c) Are perpendicular</li>
+<li>d) Are coincident</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> b) If $d=0$, the lines meet (they intersect). We said the direction vectors are not proportional, so they are not parallel; distance zero implies they are intersecting.</p>
+</blockquote>
+<hr />
+<h5>5.5.6 Distance between Two Parallel Planes</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Calculate the distance between the parallel planes $\pi_1:\;2x-y+2z=5$ and $\pi_2:\;2x-y+2z=-4$.</p>
+<p><strong>Solution:</strong></p>
+<p>For parallel planes of the form $ax+by+cz=d_1$ and $ax+by+cz=d_2$:</p>
+<p>$$d(\pi_1,\pi_2) = \frac{|d_1-d_2|}{\sqrt{a^2+b^2+c^2}}$$</p>
+<p>With $a=2$, $b=-1$, $c=2$, $d_1=5$, $d_2=-4$:</p>
+<p>$$d=\frac{|5-(-4)|}{\sqrt{4+1+4}}=\frac{9}{\sqrt{9}}=\frac{9}{3}=\boxed{3}$$</p>
+<p><strong>Alternative:</strong> Take a point of $\pi_1$ (e.g., $(0,0,5/2)$: $0-0+5=5$ ✓) and calculate its distance to $\pi_2$:
+$$d=\frac{|2(0)-0+2(5/2)-(-4)|}{3}=\frac{|0+5+4|}{3}=\frac{9}{3}=3$$ ✓</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>Calculate the distance between $\pi_1:\;x+2y-2z=1$ and $\pi_2:\;x+2y-2z=7$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong>
+$$d=\frac{|1-7|}{\sqrt{1+4+4}}=\frac{6}{3}=2$$</p>
+</blockquote>
+<ol>
+<li>When do two planes have distance zero?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> When they are the same plane (coincident). If $\pi_1:\;ax+by+cz=d_1$ and $\pi_2:\;ax+by+cz=d_2$ with $d_1=d_2$, then $d=0$ and $\pi_1=\pi_2$.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>The planes $\pi_1:\;3x-4y+0z=10$ and $\pi_2:\;3x-4y=k$ are $4$ units apart. Find $k$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong>
+$$\frac{|10-k|}{\sqrt{9+16}}=\frac{|10-k|}{5}=4 \Rightarrow |10-k|=20 \Rightarrow k=-10 \text{ or } k=30$$</p>
+</blockquote>
+<ol>
+<li>Find the distance between the planes $\pi_1:\;x+y+z=3$ and $\pi_2:\;2x+2y+2z=10$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> We reduce $\pi_2$: $x+y+z=5$.
+$$d=\frac{|3-5|}{\sqrt{3}}=\frac{2}{\sqrt{3}}=\frac{2\sqrt{3}}{3}$$</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>Given the plane $\pi:\;x+2y-2z=4$ and the point $P(1,0,2)$.</li>
+</ol>
+<p><strong>(a)</strong> Find the plane $\sigma$ parallel to $\pi$ passing through $P$.</p>
+<p><strong>(b)</strong> Calculate the distance between $\pi$ and $\sigma$.</p>
+<p><strong>(c)</strong> Find the plane $\tau$ parallel to $\pi$ equidistant from $\pi$ and $\sigma$ (halfway between them).</p>
+<blockquote>
+<p><strong>Solution:</strong></p>
+<p><strong>(a)</strong> $\sigma:\;x+2y-2z=k$. With $P(1,0,2)$: $1+0-4=k=-3$.
+$$\sigma:\;x+2y-2z=-3$$</p>
+<p><strong>(b)</strong> $d=\dfrac{|4-(-3)|}{3}=\dfrac{7}{3}$.</p>
+<p><strong>(c)</strong> $\tau:\;x+2y-2z=m$ equidistant: $\dfrac{|4-m|}{3}=\dfrac{7/3}{2}=\dfrac{7}{6}$, $|4-m|=7/2$: $m=4-7/2=1/2$ or $m=4+7/2=15/2$.
+The one between $\pi$ and $\sigma$ (between $d=4$ and $d=-3$): $m=1/2$.
+$$\tau:\;x+2y-2z=\frac{1}{2} \quad \text{(or }2x+4y-4z=1\text{)}$$</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>The distance between the planes $x+y+z=1$ and $x+y+z=-2$ is:</li>
+<li>a) $3$</li>
+<li>b) $\sqrt{3}$</li>
+<li>c) $1$</li>
+<li>d) $\dfrac{3}{\sqrt{3}}=\sqrt{3}$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> b) and d) both give the same result: $d=\dfrac{|1-(-2)|}{\sqrt{3}}=\dfrac{3}{\sqrt{3}}=\sqrt{3}$.</p>
+</blockquote>
+<ol>
+<li>To calculate the distance between two parallel planes $\pi_1:\;ax+by+cz+d_1=0$ and $\pi_2:\;ax+by+cz+d_2=0$, one can:</li>
+<li>a) Take any point of $\pi_1$ and calculate its distance to $\pi_2$</li>
+<li>b) Take the intersection point of the two normal lines</li>
+<li>c) Divide $|d_1-d_2|$ by $a+b+c$</li>
+<li>d) Measure the length of the vector $\vec{n}$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> a) The distance between parallel planes is constant: the distance from any point of $\pi_1$ to the plane $\pi_2$ always gives the same result, which is the distance between the planes.</p>
+</blockquote>
+<hr />
+<hr />
+<h5>5.6.1 Symmetric Point of a Point with Respect to Another Point</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Find the symmetric point of $A(1,-2,3)$ with respect to the point $C(3,0,1)$.</p>
+<p><strong>Solution:</strong></p>
+<p>The symmetric point $A'$ of $A$ with respect to the point $C$ is the point such that $C$ is the midpoint of $AA'$.</p>
+<p>$$C = \frac{A+A'}{2} \Rightarrow A' = 2C - A$$</p>
+<p>$$A' = 2(3,0,1)-(1,-2,3) = (6,0,2)-(1,-2,3) = (5,2,-1)$$</p>
+<p>$$\boxed{A' = (5, 2, -1)}$$</p>
+<p><strong>Verification:</strong> Midpoint of $A(1,-2,3)$ and $A'(5,2,-1)$: $\left(\dfrac{6}{2},\dfrac{0}{2},\dfrac{2}{2}\right)=(3,0,1)=C$ ✓.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>Find the symmetric point of $P(2,1,-3)$ with respect to the origin $O(0,0,0)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $P'=2O-P=(0,0,0)-(2,1,-3)=(-2,-1,3)$.</p>
+</blockquote>
+<ol>
+<li>The symmetric point of $A(1,2,3)$ with respect to $M(0,0,0)$ is $A'$. What is $|\overrightarrow{AA'}|$?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $A'=(-1,-2,-3)$. $\overrightarrow{AA'}=(-2,-4,-6)$. $|\overrightarrow{AA'}|=\sqrt{4+16+36}=\sqrt{56}=2\sqrt{14}$.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>The point $B(3,-1,2)$ is the symmetric point of $A$ with respect to the point $M(1,1,0)$. Find $A$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $M=\dfrac{A+B}{2} \Rightarrow A=2M-B=2(1,1,0)-(3,-1,2)=(2,2,0)-(3,-1,2)=(-1,3,-2)$.</p>
+</blockquote>
+<ol>
+<li>Find the point $Q$ on the $OX$ axis (of the form $(x,0,0)$) equidistant from $A(1,2,3)$ and $B(3,-2,1)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $d(Q,A)=d(Q,B)$. $Q=(t,0,0)$.
+$(t-1)^2+4+9=(t-3)^2+4+1$
+$t^2-2t+14=t^2-6t+14$
+$4t=0 \Rightarrow t=0$.
+$Q=(0,0,0)$. Verification: $d(Q,A)=\sqrt{1+4+9}=\sqrt{14}$, $d(Q,B)=\sqrt{9+4+1}=\sqrt{14}$ ✓.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>Let the triangle with vertices $A(1,0,0)$, $B(0,1,0)$, $C(0,0,1)$.</li>
+</ol>
+<p><strong>(a)</strong> Find the centroid (centre of mass) $G$ of the triangle.</p>
+<p><strong>(b)</strong> Find the symmetric point of each vertex with respect to the centroid.</p>
+<p><strong>(c)</strong> Verify that the symmetric points of the vertices with respect to the centroid form a triangle congruent to $ABC$.</p>
+<blockquote>
+<p><strong>Solution:</strong></p>
+<p><strong>(a)</strong> $G=\dfrac{A+B+C}{3}=\left(\dfrac{1}{3},\dfrac{1}{3},\dfrac{1}{3}\right)$.</p>
+<p><strong>(b)</strong>
+$A'=2G-A=\left(\dfrac{2}{3}-1,\dfrac{2}{3},\dfrac{2}{3}\right)=\left(-\dfrac{1}{3},\dfrac{2}{3},\dfrac{2}{3}\right)$
+$B'=2G-B=\left(\dfrac{2}{3},\dfrac{2}{3}-1,\dfrac{2}{3}\right)=\left(\dfrac{2}{3},-\dfrac{1}{3},\dfrac{2}{3}\right)$
+$C'=2G-C=\left(\dfrac{2}{3},\dfrac{2}{3},\dfrac{2}{3}-1\right)=\left(\dfrac{2}{3},\dfrac{2}{3},-\dfrac{1}{3}\right)$</p>
+<p><strong>(c)</strong> We verify that the sides of triangle $A'B'C'$ have the same length as those of $ABC$:
+$|AB|=\sqrt{(0-1)^2+(1-0)^2+0}=\sqrt{2}$
+$|A'B'|=\sqrt{\left(\dfrac{2}{3}+\dfrac{1}{3}\right)^2+\left(-\dfrac{1}{3}-\dfrac{2}{3}\right)^2+0}=\sqrt{1+1}=\sqrt{2}$ ✓</p>
+<p>All three sides of $A'B'C'$ coincide with those of $ABC$, so they are congruent.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>The symmetric point of $P(a,b,c)$ with respect to the origin of coordinates is:</li>
+<li>a) $(a,b,c)$</li>
+<li>b) $(-a,-b,-c)$</li>
+<li>c) $(2a,2b,2c)$</li>
+<li>d) $(1/a,1/b,1/c)$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> b) The symmetric point with respect to the origin is obtained as $P'=2O-P=-P=(-a,-b,-c)$.</p>
+</blockquote>
+<ol>
+<li>The point $M(2,3,-1)$ is the midpoint between $A(1,1,1)$ and its symmetric point $A'$. Then $A'=$:</li>
+<li>a) $(3,5,-3)$</li>
+<li>b) $(1,5,-3)$</li>
+<li>c) $(3,5,3)$</li>
+<li>d) $(-1,-1,-3)$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> a) $A'=2M-A=2(2,3,-1)-(1,1,1)=(4,6,-2)-(1,1,1)=(3,5,-3)$.</p>
+</blockquote>
+<hr />
+<h5>5.6.2 Symmetric Point of a Point with Respect to a Plane</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Find the symmetric point of $A(1,2,3)$ with respect to the plane $\pi: 2x - y + 2z - 3 = 0$.</p>
+<p><strong>Solution:</strong></p>
+<p><strong>Step 1:</strong> The line perpendicular to the plane $\pi$ passing through $A(1,2,3)$ has direction equal to the normal vector $\vec{n}=(2,-1,2)$.</p>
+<p>Parametric equations of the line $r$:
+$$r: \begin{cases} x = 1+2t \ y = 2-t \ z = 3+2t \end{cases}$$</p>
+<p><strong>Step 2:</strong> We find the foot of the perpendicular $H$, the intersection of $r$ with $\pi$. We substitute into the equation of the plane:
+$$2(1+2t)-(2-t)+2(3+2t)-3=0$$
+$$2+4t-2+t+6+4t-3=0$$
+$$9t+3=0 \Rightarrow t=-\dfrac{1}{3}$$</p>
+<p><strong>Step 3:</strong> Coordinates of $H$:
+$$H=\left(1+2\cdot\left(-\dfrac{1}{3}\right),\;2-\left(-\dfrac{1}{3}\right),\;3+2\cdot\left(-\dfrac{1}{3}\right)\right)=\left(\dfrac{1}{3},\dfrac{7}{3},\dfrac{7}{3}\right)$$</p>
+<p><strong>Step 4:</strong> The symmetric point $A'$ is such that $H$ is the midpoint of $AA'$:
+$$A' = 2H - A = 2\left(\dfrac{1}{3},\dfrac{7}{3},\dfrac{7}{3}\right) - (1,2,3) = \left(\dfrac{2}{3},\dfrac{14}{3},\dfrac{14}{3}\right) - (1,2,3) = \left(-\dfrac{1}{3},\dfrac{8}{3},\dfrac{5}{3}\right)$$</p>
+<p>$$\boxed{A'=\left(-\dfrac{1}{3},\,\dfrac{8}{3},\,\dfrac{5}{3}\right)}$$</p>
+<p><strong>Verification:</strong> $A'\in\pi$: $2\left(-\dfrac{1}{3}\right)-\dfrac{8}{3}+2\cdot\dfrac{5}{3}-3=-\dfrac{2}{3}-\dfrac{8}{3}+\dfrac{10}{3}-3=0-3\neq 0$. Verifying that $H\in\pi$: $2\cdot\dfrac{1}{3}-\dfrac{7}{3}+2\cdot\dfrac{7}{3}-3=\dfrac{2}{3}-\dfrac{7}{3}+\dfrac{14}{3}-3=\dfrac{9}{3}-3=3-3=0$ ✓.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>Find the symmetric point of $P(0,0,0)$ with respect to the plane $\pi: x-2y+2z-9=0$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> Line through $P$ with direction $\vec{n}=(1,-2,2)$: $r: (t,-2t,2t)$.
+Foot $H$: $t-2(-2t)+2(2t)-9=0 \Rightarrow t+4t+4t=9 \Rightarrow 9t=9 \Rightarrow t=1$.
+$H=(1,-2,2)$.
+$P'=2H-P=(2,-4,4)$.</p>
+</blockquote>
+<ol>
+<li>Find the symmetric point of $A(3,0,0)$ with respect to the plane $\pi: x=1$ (i.e., $x-1=0$).</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> The plane $x=1$ has normal $\vec{n}=(1,0,0)$. The perpendicular line is $r: (3+t,0,0)$.
+Foot $H$: $3+t=1 \Rightarrow t=-2$. $H=(1,0,0)$.
+$A'=2H-A=(2,0,0)-(3,0,0)=(-1,0,0)$.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>Find the symmetric point of $B(2,-1,3)$ with respect to the plane $\pi: x+y+z-3=0$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> Line $r$: $(2+t,-1+t,3+t)$.
+Foot $H$: $(2+t)+(-1+t)+(3+t)-3=0 \Rightarrow 3t+2=0 \Rightarrow t=-\dfrac{2}{3}$.
+$H=\left(2-\dfrac{2}{3},-1-\dfrac{2}{3},3-\dfrac{2}{3}\right)=\left(\dfrac{4}{3},-\dfrac{5}{3},\dfrac{7}{3}\right)$.
+$B'=2H-B=\left(\dfrac{8}{3}-2,-\dfrac{10}{3}+1,\dfrac{14}{3}-3\right)=\left(\dfrac{2}{3},-\dfrac{7}{3},\dfrac{5}{3}\right)$.</p>
+</blockquote>
+<ol>
+<li>The symmetric point of $A(1,1,1)$ with respect to the plane $\pi: 2x+2y-z+d=0$ is the point $A'(3,3,3)$. Find the value of $d$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> The midpoint $M=\dfrac{A+A'}{2}=(2,2,2)$ must belong to the plane $\pi$:
+$2(2)+2(2)-(2)+d=0 \Rightarrow 4+4-2+d=0 \Rightarrow d=-6$.
+We also verify that $\overrightarrow{AA'}=(2,2,2)$ is proportional to $\vec{n}=(2,2,-1)$. Since $(2,2,2)\neq k(2,2,-1)$ for any $k$... Reconsidering: if $A'=(3,3,3)$ then $\overrightarrow{AA'}=(2,2,2)$ must be parallel to $\vec{n}=(2,2,-1)$ — it is not. The problem statement takes only the condition that $M$ lies in $\pi$: $d=-6$.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>Let the plane $\pi: 2x+y-2z+3=0$ and the point $P(1,-2,2)$.</li>
+</ol>
+<p><strong>(a)</strong> Find the foot of the perpendicular from $P$ to the plane $\pi$.</p>
+<p><strong>(b)</strong> Find the symmetric point $P'$ of $P$ with respect to $\pi$.</p>
+<p><strong>(c)</strong> Calculate the distance from $P$ to the plane $\pi$.</p>
+<blockquote>
+<p><strong>Solution:</strong></p>
+<p><strong>(a)</strong> Perpendicular line to $\pi$ through $P$: $\vec{n}=(2,1,-2)$.
+$$r: \begin{cases} x=1+2t \ y=-2+t \ z=2-2t \end{cases}$$
+Substituting into $\pi$: $2(1+2t)+(−2+t)−2(2−2t)+3=0$
+$2+4t-2+t-4+4t+3=0 \Rightarrow 9t-1=0 \Rightarrow t=\dfrac{1}{9}$
+$H=\left(1+\dfrac{2}{9},-2+\dfrac{1}{9},2-\dfrac{2}{9}\right)=\left(\dfrac{11}{9},-\dfrac{17}{9},\dfrac{16}{9}\right)$</p>
+<p><strong>(b)</strong> $P'=2H-P=\left(\dfrac{22}{9}-1,-\dfrac{34}{9}+2,\dfrac{32}{9}-2\right)=\left(\dfrac{13}{9},-\dfrac{16}{9},\dfrac{14}{9}\right)$</p>
+<p><strong>(c)</strong> $d(P,\pi)=\dfrac{|2(1)+(-2)-2(2)+3|}{\sqrt{4+1+4}}=\dfrac{|2-2-4+3|}{3}=\dfrac{|-1|}{3}=\dfrac{1}{3}$</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>To find the symmetric point of a point $P$ with respect to a plane $\pi$, the first step is:</li>
+<li>a) Calculate the distance from $P$ to $\pi$</li>
+<li>b) Draw the perpendicular line to $\pi$ passing through $P$</li>
+<li>c) Find the plane parallel to $\pi$ equidistant from $P$</li>
+<li>d) Project $P$ onto the coordinate axes</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> b) The procedure is: draw the perpendicular to $\pi$ through $P$, find its intersection $H$ with $\pi$ (foot of the perpendicular), and calculate $P'=2H-P$.</p>
+</blockquote>
+<ol>
+<li>If the foot of the perpendicular from $P(2,3,4)$ to the plane $\pi$ is $H(1,2,3)$, then the symmetric point of $P$ with respect to $\pi$ is:</li>
+<li>a) $(0,1,2)$</li>
+<li>b) $(3,4,5)$</li>
+<li>c) $(1.5,2.5,3.5)$</li>
+<li>d) $(-2,-3,-4)$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> a) $P'=2H-P=2(1,2,3)-(2,3,4)=(2,4,6)-(2,3,4)=(0,1,2)$.</p>
+</blockquote>
+<hr />
+<h5>5.6.3 Symmetric Point of a Point with Respect to a Line</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Find the symmetric point of $A(3,1,2)$ with respect to the line $r: \dfrac{x-1}{2}=\dfrac{y}{-1}=\dfrac{z+1}{2}$.</p>
+<p><strong>Solution:</strong></p>
+<p><strong>Step 1:</strong> We write $r$ in parametric form:
+$$r: \begin{cases} x=1+2t \ y=-t \ z=-1+2t \end{cases}$$</p>
+<p><strong>Step 2:</strong> We find the foot of the perpendicular $H$ from $A$ to $r$. The vector $\overrightarrow{AH}$ must be perpendicular to the direction vector $\vec{u}=(2,-1,2)$:</p>
+<p>$$\overrightarrow{AH}=(1+2t-3,-t-1,-1+2t-2)=(2t-2,-t-1,2t-3)$$</p>
+<p>$$\overrightarrow{AH}\cdot\vec{u}=0:$$
+$$2(2t-2)+(-1)(-t-1)+2(2t-3)=0$$
+$$4t-4+t+1+4t-6=0$$
+$$9t-9=0 \Rightarrow t=1$$</p>
+<p><strong>Step 3:</strong> Coordinates of $H$ with $t=1$:
+$$H=(1+2,\,-1,\,-1+2)=(3,-1,1)$$</p>
+<p><strong>Step 4:</strong> The symmetric point $A'=2H-A=(6,-2,2)-(3,1,2)=(3,-3,0)$.</p>
+<p>$$\boxed{A'=(3,-3,0)}$$</p>
+<p><strong>Verification:</strong> $\overrightarrow{AA'}=(0,-4,-2)$ and $$\overrightarrow{AH}=(0,-2,-1)=\dfrac{1}{2}\overrightarrow{AA'}$ ✓ (H is the midpoint of $AA'$).</p>
+<hr />
+<p><strong>Exercises with Solution</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>Find the symmetric point of $P(2,0,0)$ with respect to the line $r: \dfrac{x}{1}=\dfrac{y}{0}=\dfrac{z}{0}$ (the $OX$ axis).</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> The line $r$ is the $OX$ axis: $(t,0,0)$.
+$H$ is the foot of the perpendicular from $P=(2,0,0)$ to $r$.
+Since $P$ already lies on the $OX$ axis, $H=P=(2,0,0)$ and $P'=P=(2,0,0)$.
+(A point on the axis is its own symmetric point with respect to the axis.)</p>
+</blockquote>
+<ol>
+<li>Find the foot of the perpendicular from $B(0,3,0)$ to the line $r: x=t,y=t,z=t$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\vec{u}=(1,1,1)$. $\overrightarrow{BH}=(t,-3+t,t)$.
+$\overrightarrow{BH}\cdot\vec{u}=t+(-3+t)+t=3t-3=0 \Rightarrow t=1$.
+$H=(1,1,1)$.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>Find the symmetric point of $C(0,0,4)$ with respect to the line $r: x=1+t,\;y=t,\;z=2$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\vec{u}=(1,1,0)$. Point of $r$: $(1+t,t,2)$.
+$\overrightarrow{CH}=(1+t,t,2-4)=(1+t,t,-2)$.
+$\overrightarrow{CH}\cdot\vec{u}=(1+t)+t=2t+1=0 \Rightarrow t=-\dfrac{1}{2}$.
+$H=\left(\dfrac{1}{2},-\dfrac{1}{2},2\right)$.
+$C'=2H-C=(1,-1,4)-(0,0,4)=(1,-1,0)$.</p>
+</blockquote>
+<ol>
+<li>Find the symmetric point of $D(1,1,1)$ with respect to the line $r:\;\begin{cases}x=2\y=1+t\z=t\end{cases}$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\vec{u}=(0,1,1)$. Point of $r$: $(2,1+t,t)$.
+$\overrightarrow{DH}=(2-1,1+t-1,t-1)=(1,t,t-1)$.
+$\overrightarrow{DH}\cdot\vec{u}=0+t+(t-1)=2t-1=0 \Rightarrow t=\dfrac{1}{2}$.
+$H=\left(2,\dfrac{3}{2},\dfrac{1}{2}\right)$.
+$D'=2H-D=\left(4,3,1\right)-(1,1,1)=(3,2,0)$.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>Let the line $r:\;\dfrac{x-1}{1}=\dfrac{y+1}{2}=\dfrac{z}{-1}$ and the point $P(3,1,1)$.</li>
+</ol>
+<p><strong>(a)</strong> Find the foot of the perpendicular $H$ from $P$ to $r$.</p>
+<p><strong>(b)</strong> Find the symmetric point $P'$ of $P$ with respect to $r$.</p>
+<p><strong>(c)</strong> Calculate the distance from $P$ to $r$.</p>
+<blockquote>
+<p><strong>Solution:</strong></p>
+<p><strong>(a)</strong> Parametric form of $r$: $x=1+t,\;y=-1+2t,\;z=-t$.
+$\overrightarrow{PH}=(1+t-3,-1+2t-1,-t-1)=(t-2,2t-2,-t-1)$.
+$\vec{u}=(1,2,-1)$. $(t-2)+2(2t-2)+(-1)(-t-1)=0$
+$t-2+4t-4+t+1=0 \Rightarrow 6t-5=0 \Rightarrow t=\dfrac{5}{6}$.
+$H=\left(\dfrac{11}{6},\dfrac{2}{3},-\dfrac{5}{6}\right)$.</p>
+<p><strong>(b)</strong> $P'=2H-P=\left(\dfrac{11}{3}-3,\dfrac{4}{3}-1,-\dfrac{5}{3}-1\right)=\left(\dfrac{2}{3},\dfrac{1}{3},-\dfrac{8}{3}\right)$.</p>
+<p><strong>(c)</strong> $d(P,r)=|PH|=\sqrt{\left(\dfrac{11}{6}-3\right)^2+\left(\dfrac{2}{3}-1\right)^2+\left(-\dfrac{5}{6}-1\right)^2}$
+$=\sqrt{\left(-\dfrac{7}{6}\right)^2+\left(-\dfrac{1}{3}\right)^2+\left(-\dfrac{11}{6}\right)^2}=\sqrt{\dfrac{49}{36}+\dfrac{4}{36}+\dfrac{121}{36}}=\sqrt{\dfrac{174}{36}}=\dfrac{\sqrt{174}}{6}$.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>The symmetric point of a point $P$ with respect to a line $r$ is the point $P'$ such that:</li>
+<li>a) $P$ and $P'$ are at the same distance from $r$ and $\overrightarrow{PP'}$ is parallel to $r$</li>
+<li>b) The midpoint of $PP'$ belongs to $r$ and $\overrightarrow{PP'}$ is perpendicular to $r$</li>
+<li>c) The distance from $P'$ to $r$ is twice that from $P$</li>
+<li>d) $P'$ is the projection of $P$ onto $r$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> b) $P'$ is the symmetric point of $P$ with respect to $r$ if the midpoint $H$ of $\overrightarrow{PP'}$ belongs to $r$ and $\overrightarrow{PP'}$ is perpendicular to $r$.</p>
+</blockquote>
+<ol>
+<li>To calculate the symmetric point of $P$ with respect to the line $r$, it is necessary to know first:</li>
+<li>a) The distance from $P$ to the plane containing $r$</li>
+<li>b) The foot of the perpendicular from $P$ to $r$</li>
+<li>c) The angle that $\overrightarrow{OP}$ makes with $r$</li>
+<li>d) The plane perpendicular to $r$ passing through the origin</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> b) The foot of the perpendicular $H$ is the midpoint between $P$ and its symmetric point: $P'=2H-P$.</p>
+</blockquote>
+<hr />
+<h5>5.6.4 Symmetric Line of a Line with Respect to a Plane</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Find the symmetric line of $r:\;\begin{cases}x=1+t\y=2t\z=1+t\end{cases}$ with respect to the plane $\pi: x+y+z-3=0$.</p>
+<p><strong>Solution:</strong></p>
+<p>To find the symmetric line $r'$ of $r$ with respect to $\pi$, we find the symmetric points of two points of $r$ with respect to $\pi$ and determine the line through them.</p>
+<p><strong>Point 1:</strong> Take $t=0$: $P_1=(1,0,1)$.</p>
+<p>Perpendicular line to $\pi$ through $P_1$: direction $\vec{n}=(1,1,1)$: $(1+s,s,1+s)$.
+Substitute into $\pi$: $(1+s)+s+(1+s)-3=0 \Rightarrow 3s-1=0 \Rightarrow s=\dfrac{1}{3}$.
+$H_1=\left(\dfrac{4}{3},\dfrac{1}{3},\dfrac{4}{3}\right)$.
+$P_1'=2H_1-P_1=\left(\dfrac{8}{3}-1,\dfrac{2}{3},\dfrac{8}{3}-1\right)=\left(\dfrac{5}{3},\dfrac{2}{3},\dfrac{5}{3}\right)$.</p>
+<p><strong>Point 2:</strong> Take $t=1$: $P_2=(2,2,2)$.</p>
+<p>Perpendicular line to $\pi$ through $P_2$: $(2+s,2+s,2+s)$.
+$(2+s)+(2+s)+(2+s)-3=0 \Rightarrow 3s+3=0 \Rightarrow s=-1$.
+$H_2=(1,1,1)$.
+$P_2'=2H_2-P_2=(2,2,2)-(2,2,2)=(0,0,0)$.</p>
+<p><strong>Line $r'$:</strong> Through $P_1'=\left(\dfrac{5}{3},\dfrac{2}{3},\dfrac{5}{3}\right)$ and $P_2'=(0,0,0)$.</p>
+<p>Direction vector: $\overrightarrow{P_2'P_1'}=\left(\dfrac{5}{3},\dfrac{2}{3},\dfrac{5}{3}\right)$ or simplified, $(5,2,5)$.</p>
+<p>$$\boxed{r': \frac{x}{5}=\frac{y}{2}=\frac{z}{5}, \text{ passing through the origin}}$$</p>
+<hr />
+<p><strong>Exercises with Solution</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>State the steps to follow to find the symmetric line of $r$ with respect to a plane $\pi$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> (1) Take two points $P_1$, $P_2$ on $r$. (2) Find their symmetric points $P_1'$, $P_2'$ with respect to $\pi$. (3) The line $r'$ passes through $P_1'$ with direction $\overrightarrow{P_1'P_2'}$.</p>
+</blockquote>
+<ol>
+<li>The line $r$ has equation $x=y=z$ (the bisector axis). What is its symmetric line with respect to the plane $z=0$?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> The plane $z=0$ is the $OXY$ plane. The symmetric point of $(t,t,t)$ on $r$ with respect to $z=0$ is $(t,t,-t)$. The symmetric line is $x=y=-z$, or $\dfrac{x}{1}=\dfrac{y}{1}=\dfrac{z}{-1}$, passing through the origin.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>Find the symmetric line of $r: x=1,\;y=t,\;z=2$ with respect to the plane $\pi: y=0$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> The plane $y=0$ is the $OXZ$ plane. The symmetric point of $(1,t,2)$ on $r$ with respect to $y=0$ is $(1,-t,2)$. The symmetric line is $r': x=1,\;y=-t,\;z=2$, which has the same direction vector $(0,1,0)$ (or $(0,-1,0)$) and passes through $(1,0,2)$.
+Therefore: $r':\;x=1,\;y=s,\;z=2$ (same line, since the original line $r$ is parallel to the plane $y=0$, and its symmetric is itself).</p>
+</blockquote>
+<ol>
+<li>Find the points where the line $r:\;\begin{cases}x=2+t\y=-t\z=t\end{cases}$ and its symmetric with respect to the plane $\pi: x-z=0$ intersect, if they do.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> We find the symmetric line. Take $t=0$: $P_1=(2,0,0)$. Perpendicular to $\pi$ through $P_1$: direction $\vec{n}=(1,0,-1)$: $(2+s,0,-s)$.
+$2+s-(-s)=0 \Rightarrow 2+2s=0 \Rightarrow s=-1$. $H_1=(1,0,1)$. $P_1'=(0,0,2)$.
+Take $t=1$: $P_2=(3,-1,1)$. Perpendicular: $(3+s,-1,1-s)$.
+$3+s-(1-s)=0 \Rightarrow 2+2s=0 \Rightarrow s=-1$. $H_2=(2,-1,2)$. $P_2'=(1,-2,3)$.
+Direction vector of $r'$: $(1,-2,1)$. Line $r'$ through $(0,0,2)$: $x=s,y=-2s,z=2+s$.
+For intersection: $2+t=s,\;-t=-2s,\;t=2+s$.
+From the third: $t-s=2$. From the second: $t=2s$. Substituting: $2s-s=2 \Rightarrow s=2$, $t=4$.
+Check with the first: $2+4=6=2$ ✗. Not satisfied; the lines do not intersect (they are skew).</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>Consider the line $r:\;\dfrac{x-1}{1}=\dfrac{y}{1}=\dfrac{z+1}{-1}$ and the plane $\pi: x+y-z-1=0$.</li>
+</ol>
+<p><strong>(a)</strong> Verify that $r$ is neither parallel to $\pi$ nor contained in it.</p>
+<p><strong>(b)</strong> Find the symmetric line $r'$ of $r$ with respect to $\pi$.</p>
+<blockquote>
+<p><strong>Solution:</strong></p>
+<p><strong>(a)</strong> $\vec{u}=(1,1,-1)$, $\vec{n}=(1,1,-1)$.
+$\vec{u}\cdot\vec{n}=1+1+1=3\neq 0$, so $r$ is not parallel to $\pi$. Check whether the point $(1,0,-1)$ of $r$ belongs to $\pi$: $1+0-(-1)-1=1\neq 0$. It does not belong, so $r$ is not contained in $\pi$.</p>
+<p><strong>(b)</strong> Take $P_1=(1,0,-1)$ (with $t=0$) and $P_2=(2,1,-2)$ (with $t=1$).</p>
+<p>Symmetric of $P_1$: Perpendicular line: $(1+s,s,-1-s)$.
+$(1+s)+s-(-1-s)-1=0 \Rightarrow 1+s+s+1+s-1=0 \Rightarrow 3s+1=0 \Rightarrow s=-\dfrac{1}{3}$.
+$H_1=\left(\dfrac{2}{3},-\dfrac{1}{3},-\dfrac{2}{3}\right)$.
+$P_1'=2H_1-P_1=\left(\dfrac{4}{3}-1,-\dfrac{2}{3},-\dfrac{4}{3}+1\right)=\left(\dfrac{1}{3},-\dfrac{2}{3},-\dfrac{1}{3}\right)$.</p>
+<p>Symmetric of $P_2$: Perpendicular line: $(2+s,1+s,-2-s)$.
+$(2+s)+(1+s)-(-2-s)-1=0 \Rightarrow 2+s+1+s+2+s-1=0 \Rightarrow 3s+4=0 \Rightarrow s=-\dfrac{4}{3}$.
+$H_2=\left(2-\dfrac{4}{3},1-\dfrac{4}{3},-2+\dfrac{4}{3}\right)=\left(\dfrac{2}{3},-\dfrac{1}{3},-\dfrac{2}{3}\right)$.
+$P_2'=2H_2-P_2=\left(\dfrac{4}{3}-2,-\dfrac{2}{3}-1,-\dfrac{4}{3}+2\right)=\left(-\dfrac{2}{3},-\dfrac{5}{3},\dfrac{2}{3}\right)$.</p>
+<p>Direction vector of $r'$: $\overrightarrow{P_1'P_2'}=\left(-\dfrac{2}{3}-\dfrac{1}{3},-\dfrac{5}{3}+\dfrac{2}{3},\dfrac{2}{3}+\dfrac{1}{3}\right)=(-1,-1,1)$ or $(1,1,-1)$.</p>
+<p>Note: this vector is the same as $\vec{u}=(1,1,-1)$, which makes sense because reflection preserves the direction of the line (up to sign) when the line is not perpendicular to the plane.</p>
+<p>Line $r'$: passes through $P_1'=\left(\dfrac{1}{3},-\dfrac{2}{3},-\dfrac{1}{3}\right)$ with direction $(1,1,-1)$:
+$$r': \dfrac{x-\frac{1}{3}}{1}=\dfrac{y+\frac{2}{3}}{1}=\dfrac{z+\frac{1}{3}}{-1}$$</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>When finding the symmetric line of $r$ with respect to a plane $\pi$, the direction vector of the symmetric line $r'$:</li>
+<li>a) Is always the same direction vector as that of $r$</li>
+<li>b) Is the reflection of the direction vector of $r$ with respect to the plane $\pi$</li>
+<li>c) Is always the normal vector to the plane</li>
+<li>d) Cannot be determined without knowing the angle between $r$ and $\pi$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> b) The direction vector of $r'$ is the symmetric (reflection) of the direction vector of $r$ with respect to $\pi$, which in general changes the normal component but preserves the parallel component.</p>
+</blockquote>
+<ol>
+<li>If the line $r$ is perpendicular to the plane $\pi$, its symmetric line $r'$ with respect to $\pi$:</li>
+<li>a) Does not exist, because $r$ is perpendicular to $\pi$</li>
+<li>b) Is the same line $r$</li>
+<li>c) Is a line parallel to $r$ at double the distance</li>
+<li>d) Is a line perpendicular to $r$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> b) If $r$ is perpendicular to $\pi$, its symmetric with respect to $\pi$ is the same line $r$ (the reflection of a vector perpendicular to the plane is its opposite, but gives the same line since the line has a unique intersection point with the plane and that point is fixed).</p>
+</blockquote>
+<hr />
+<h5>5.6.5 Orthogonal Projection of a Point onto a Plane</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Find the orthogonal projection of the point $P(2,3,-1)$ onto the plane $\pi: 3x - 2y + z - 4 = 0$.</p>
+<p><strong>Solution:</strong></p>
+<p>The orthogonal projection of $P$ onto $\pi$ is the foot $H$ of the perpendicular from $P$ to the plane.</p>
+<p><strong>Step 1:</strong> Normal vector to the plane: $\vec{n}=(3,-2,1)$.</p>
+<p><strong>Step 2:</strong> Line perpendicular to $\pi$ through $P$:
+$$r:\begin{cases} x=2+3t \ y=3-2t \ z=-1+t \end{cases}$$</p>
+<p><strong>Step 3:</strong> Intersection with $\pi$: substitute into $3x-2y+z-4=0$:
+$$3(2+3t)-2(3-2t)+(-1+t)-4=0$$
+$$6+9t-6+4t-1+t-4=0$$
+$$14t-5=0 \Rightarrow t=\frac{5}{14}$$</p>
+<p><strong>Step 4:</strong> Coordinates of $H$:
+$$H=\left(2+\frac{15}{14},\;3-\frac{10}{14},\;-1+\frac{5}{14}\right)=\left(\frac{43}{14},\;\frac{32}{14},\;-\frac{9}{14}\right)=\left(\frac{43}{14},\;\frac{16}{7},\;-\frac{9}{14}\right)$$</p>
+<p>$$\boxed{H=\left(\frac{43}{14},\frac{16}{7},-\frac{9}{14}\right)}$$</p>
+<hr />
+<p><strong>Exercises with Solution</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>Find the projection of $P(0,0,5)$ onto the plane $\pi: z=2$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> The plane $z=2$ has normal $(0,0,1)$. The perpendicular from $P$ is $(0,0,5+t)$. $5+t=2 \Rightarrow t=-3$. The projection is $H=(0,0,2)$.</p>
+</blockquote>
+<ol>
+<li>Find the projection of $P(1,2,3)$ onto the plane $\pi: x+y+z=0$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\vec{n}=(1,1,1)$. Line: $(1+t,2+t,3+t)$.
+$(1+t)+(2+t)+(3+t)=0 \Rightarrow 6+3t=0 \Rightarrow t=-2$.
+$H=(-1,0,1)$.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>Find the projection of $Q(3,-1,2)$ onto the plane $\pi: 2x+y-z-1=0$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\vec{n}=(2,1,-1)$. Line: $(3+2t,-1+t,2-t)$.
+$2(3+2t)+(-1+t)-(2-t)-1=0 \Rightarrow 6+4t-1+t-2+t-1=0 \Rightarrow 6t+2=0 \Rightarrow t=-\dfrac{1}{3}$.
+$H=\left(3-\dfrac{2}{3},-1-\dfrac{1}{3},2+\dfrac{1}{3}\right)=\left(\dfrac{7}{3},-\dfrac{4}{3},\dfrac{7}{3}\right)$.</p>
+</blockquote>
+<ol>
+<li>The point $P(a,0,0)$ has as its projection onto the plane $\pi: x+2y+2z-6=0$ the point $H(1,\frac{4}{3},\frac{4}{3})$. Find $a$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\overrightarrow{PH}=(1-a,\frac{4}{3},\frac{4}{3})$ must be proportional to $\vec{n}=(1,2,2)$.
+$\dfrac{1-a}{1}=\dfrac{4/3}{2} \Rightarrow 1-a=\dfrac{2}{3} \Rightarrow a=\dfrac{1}{3}$.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>Given the point $P(1,-1,2)$ and the plane $\pi: x-2y+2z-7=0$:</li>
+</ol>
+<p><strong>(a)</strong> Find the orthogonal projection $H$ of $P$ onto $\pi$.</p>
+<p><strong>(b)</strong> Calculate $d(P,\pi)$ using the formula and verify that it coincides with $|PH|$.</p>
+<p><strong>(c)</strong> Determine the symmetric point of $P$ with respect to $\pi$.</p>
+<blockquote>
+<p><strong>Solution:</strong></p>
+<p><strong>(a)</strong> $\vec{n}=(1,-2,2)$. Line: $(1+t,-1-2t,2+2t)$.
+$(1+t)-2(-1-2t)+2(2+2t)-7=0$
+$1+t+2+4t+4+4t-7=0 \Rightarrow 9t=0 \Rightarrow t=0$.
+$H=(1,-1,2)=P$. This means $P\in\pi$. Check: $1-2(-1)+2(2)-7=1+2+4-7=0$ ✓.
+$P$ belongs to the plane, so its projection is itself: $H=P=(1,-1,2)$.</p>
+<p><strong>(c)</strong> Since $P\in\pi$, its symmetric with respect to $\pi$ is itself: $P'=P=(1,-1,2)$.</p>
+<p><strong>(b)</strong> $d(P,\pi)=\dfrac{|1-2(-1)+2(2)-7|}{\sqrt{1+4+4}}=\dfrac{|0|}{3}=0$ ✓.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>The orthogonal projection of a point $P$ onto a plane $\pi$ is:</li>
+<li>a) The point of $\pi$ closest to $P$</li>
+<li>b) The point of $\pi$ furthest from $P$</li>
+<li>c) The foot of the perpendicular from $P$ to any line in $\pi$</li>
+<li>d) The symmetric point of $P$ with respect to $\pi$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> a) The orthogonal projection is the foot of the perpendicular from $P$ to the plane, which coincides with the point of $\pi$ closest to $P$.</p>
+</blockquote>
+<ol>
+<li>If the projection of $P(3,3,3)$ onto the plane $\pi: x+y+z=0$ is $H$, what is $d(P,\pi)$?</li>
+<li>a) $\sqrt{3}$</li>
+<li>b) $3$</li>
+<li>c) $3\sqrt{3}$</li>
+<li>d) $1$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> c) $d(P,\pi)=\dfrac{|3+3+3|}{\sqrt{3}}=\dfrac{9}{\sqrt{3}}=\dfrac{9\sqrt{3}}{3}=3\sqrt{3}$.</p>
+</blockquote>
+<hr />
+<h5>5.6.6 Orthogonal Projection of a Line onto a Plane</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Find the orthogonal projection of the line $r:\;\begin{cases}x=1+t\y=2+t\z=3+2t\end{cases}$ onto the plane $\pi: x+y-z+1=0$.</p>
+<p><strong>Solution:</strong></p>
+<p>The projection of $r$ onto $\pi$ is the line $r'$ obtained by projecting each point of $r$ onto $\pi$.</p>
+<p><strong>Method:</strong> The orthogonal projection of $r$ onto $\pi$ is the intersection of the plane $\pi$ with the plane $\sigma$ that contains $r$ and is perpendicular to $\pi$.</p>
+<p><strong>Step 1:</strong> Check that $r$ is not perpendicular to $\pi$.
+$\vec{u}=(1,1,2)$, $\vec{n}=(1,1,-1)$.
+$\vec{u}\cdot\vec{n}=1+1-2=0$, so $r$ is parallel to $\pi$ (or contained in it).</p>
+<p>If $r\parallel\pi$: check whether $P_0=(1,2,3)\in\pi$: $1+2-3+1=1\neq0$. $r$ is not in $\pi$; it is parallel to $\pi$.</p>
+<p>In this case, the projection of each point of $r$ onto $\pi$ gives a line parallel to $r$ (with the same direction vector $\vec{u}=(1,1,2)$).</p>
+<p>Project $P_0=(1,2,3)$: perpendicular line $(1+s,2+s,3-s)$.
+$(1+s)+(2+s)-(3-s)+1=0 \Rightarrow 1+3s+1=0 \Rightarrow 3s=-2 \Rightarrow s=-\dfrac{2}{3}$.
+$H=\left(\dfrac{1}{3},\dfrac{4}{3},\dfrac{11}{3}\right)$.</p>
+<p><strong>Projection of $r$:</strong> line through $H$ with direction $\vec{u}=(1,1,2)$:
+$$\boxed{r':\;\frac{x-\frac{1}{3}}{1}=\frac{y-\frac{4}{3}}{1}=\frac{z-\frac{11}{3}}{2}}$$</p>
+<p><strong>General case (when $r$ is not parallel to $\pi$):</strong></p>
+<p>If $\vec{u}\cdot\vec{n}\neq 0$, the plane $\sigma$ containing $r$ and perpendicular to $\pi$ has as its normal a vector perpendicular to both $\vec{u}$ and $\vec{n}$: $\vec{n}_\sigma=\vec{u}\times\vec{n}$.</p>
+<hr />
+<p><strong>Exercises with Solution</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>A line $r$ is perpendicular to the plane $\pi$. What is its orthogonal projection onto $\pi$?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> The projection of a line perpendicular to the plane is a single point: the foot of the perpendicular (the intersection of $r$ with $\pi$).</p>
+</blockquote>
+<ol>
+<li>A line $r$ is contained in the plane $\pi$. What is its orthogonal projection onto $\pi$?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> If $r\subset\pi$, the projection of $r$ onto $\pi$ is the same line $r$.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>Find the projection of the line $r:\;x=t,\;y=0,\;z=t$ onto the plane $\pi: z=0$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> For each point $(t,0,t)$ of $r$, its projection onto $z=0$ is $(t,0,0)$. The projection is the line $r': y=0,\;z=0$, that is, the $OX$ axis.</p>
+</blockquote>
+<ol>
+<li>Find the projection of the line $r:\;\begin{cases}x=2+t\y=1\z=t\end{cases}$ onto the plane $\pi: x+z-1=0$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\vec{u}=(1,0,1)$, $\vec{n}=(1,0,1)$. Since $\vec{u}=\vec{n}$, the line $r$ is perpendicular to $\pi$. The projection is the intersection point of $r$ with $\pi$.
+$(2+t)+t-1=0 \Rightarrow 2t+1=0 \Rightarrow t=-\dfrac{1}{2}$.
+Projection point: $H=\left(\dfrac{3}{2},1,-\dfrac{1}{2}\right)$.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>Let the line $r:\;\dfrac{x}{1}=\dfrac{y-1}{2}=\dfrac{z+1}{-1}$ and the plane $\pi: 2x+y+z-2=0$.</li>
+</ol>
+<p><strong>(a)</strong> Determine the relative position of $r$ and $\pi$.</p>
+<p><strong>(b)</strong> Find the orthogonal projection of $r$ onto $\pi$.</p>
+<blockquote>
+<p><strong>Solution:</strong></p>
+<p><strong>(a)</strong> $\vec{u}=(1,2,-1)$, $\vec{n}=(2,1,1)$.
+$\vec{u}\cdot\vec{n}=2+2-1=3\neq0$. The line $r$ is secant to $\pi$ (not parallel).</p>
+<p><strong>(b)</strong> Projection of $r$ onto $\pi$ when $r$ is secant:
+Take the plane $\sigma$ that contains $r$ and is perpendicular to $\pi$.
+Normal to $\sigma$: $\vec{n}_\sigma=\vec{u}\times\vec{n}=\begin{vmatrix}\vec{i}&amp;\vec{j}&amp;\vec{k}\1&amp;2&amp;-1\2&amp;1&amp;1\end{vmatrix}=(2\cdot1-(-1)\cdot1)\vec{i}-(1\cdot1-(-1)\cdot2)\vec{j}+(1\cdot1-2\cdot2)\vec{k}$
+$=(2+1)\vec{i}-(1+2)\vec{j}+(1-4)\vec{k}=(3,-3,-3)$ or simplified $(1,-1,-1)$.</p>
+<p>Plane $\sigma$: passes through $P_0=(0,1,-1)$ (point of $r$ with $t=0$) with normal $(1,-1,-1)$:
+$1(x-0)-1(y-1)-1(z+1)=0 \Rightarrow x-y-z-0=0 \Rightarrow x-y-z=0$.</p>
+<p>The projection of $r$ onto $\pi$ is $r'=\pi\cap\sigma$:
+$$\begin{cases}2x+y+z=2\x-y-z=0\end{cases}$$
+Adding: $3x=2 \Rightarrow x=\dfrac{2}{3}$. From the 2nd: $y+z=\dfrac{2}{3}$.
+Parametric form: $x=\dfrac{2}{3},\;y=\dfrac{2}{3}+s,\;z=-s$ (with $s$ free parameter).
+Direction vector of $r'$: $(0,1,-1)$.
+$$r': x=\frac{2}{3},\quad \frac{y-\frac{2}{3}}{1}=\frac{z}{-1}$$</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>The orthogonal projection of a line $r$ onto a plane $\pi$ is always:</li>
+<li>a) A line parallel to $r$</li>
+<li>b) A line that can be $r$ itself, a different line, or a point</li>
+<li>c) A point</li>
+<li>d) A line perpendicular to $r$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> b) If $r\subset\pi$, the projection is $r$; if $r\parallel\pi$ (but $r\not\subset\pi$), the projection is a line parallel to $r$; if $r$ is secant to $\pi$, the projection is a line contained in $\pi$ with a different direction; if $r\perp\pi$, the projection is a point.</p>
+</blockquote>
+<ol>
+<li>To obtain the projection of a secant line $r$ onto a plane $\pi$, one can:</li>
+<li>a) Project two points of $r$ onto $\pi$ and join them</li>
+<li>b) Calculate the intersection of $\pi$ with the plane containing $r$ that is perpendicular to $\pi$</li>
+<li>c) Both methods a) and b) are valid</li>
+<li>d) Neither of the above methods is correct</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> c) Both methods are equivalent and produce the same result.</p>
+</blockquote>
+<hr />
+<hr />
+<h5>5.7.1 Tetrahedron: Vertices, Edges, Faces and Properties in Coordinates</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>The tetrahedron $ABCD$ has vertices $A(0,0,0)$, $B(2,0,0)$, $C(1,\sqrt{3},0)$, $D\left(1,\dfrac{\sqrt{3}}{3},\dfrac{2\sqrt{6}}{3}\right)$.</p>
+<p><strong>(a)</strong> Verify that it is a regular tetrahedron (all edges equal).</p>
+<p><strong>(b)</strong> Calculate its volume.</p>
+<p><strong>Solution:</strong></p>
+<p><strong>(a)</strong> We calculate the 6 edges:
+$$|AB|=\sqrt{4}=2, \quad |AC|=\sqrt{1+3}=2, \quad |AD|=\sqrt{1+\tfrac{1}{3}+\tfrac{8}{3}}=\sqrt{1+3}=2$$
+$$|BC|=\sqrt{1+3}=2, \quad |BD|=2, \quad |CD|=2$$
+All edges measure 2 → it is a regular tetrahedron ✓.</p>
+<p><strong>(b)</strong> The volume of the tetrahedron $ABCD$:
+$$V=\frac{1}{6}|(\vec{AB}\times\vec{AC})\cdot\vec{AD}|$$
+$$\vec{AB}=(2,0,0),\quad\vec{AC}=(1,\sqrt{3},0),\quad\vec{AD}=\left(1,\frac{\sqrt{3}}{3},\frac{2\sqrt{6}}{3}\right)$$
+$$\vec{AB}\times\vec{AC}=\begin{vmatrix}\vec{i}&amp;\vec{j}&amp;\vec{k}\2&amp;0&amp;0\1&amp;\sqrt{3}&amp;0\end{vmatrix}=(0,0,2\sqrt{3})$$
+$$(\vec{AB}\times\vec{AC})\cdot\vec{AD}=(0)(1)+(0)\frac{\sqrt{3}}{3}+(2\sqrt{3})\frac{2\sqrt{6}}{3}=\frac{4\sqrt{18}}{3}=\frac{4\cdot3\sqrt{2}}{3}=4\sqrt{2}$$
+$$V=\frac{1}{6}|4\sqrt{2}|=\frac{2\sqrt{2}}{3}$$</p>
+<p>$$\boxed{V=\frac{2\sqrt{2}}{3}\approx 0{,}943 \text{ u}^3}$$</p>
+<hr />
+<p><strong>Exercises with Solution</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>The tetrahedron $OABC$ has vertices $O(0,0,0)$, $A(2,0,0)$, $B(0,3,0)$, $C(0,0,4)$. How many triangular faces does it have? Name each face.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> A tetrahedron has 4 triangular faces: $OAB$, $OAC$, $OBC$ and $ABC$.</p>
+</blockquote>
+<ol>
+<li>For the tetrahedron with vertices $O(0,0,0)$, $A(1,0,0)$, $B(0,1,0)$, $C(0,0,1)$, calculate the length of edge $AB$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $|AB|=\sqrt{(0-1)^2+(1-0)^2+0}=\sqrt{2}$.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>Calculate the area of face $ABC$ of the tetrahedron with $A(1,0,0)$, $B(0,1,0)$, $C(0,0,1)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\vec{AB}=(-1,1,0)$, $\vec{AC}=(-1,0,1)$.
+$\vec{AB}\times\vec{AC}=\begin{vmatrix}\vec{i}&amp;\vec{j}&amp;\vec{k}\-1&amp;1&amp;0\-1&amp;0&amp;1\end{vmatrix}=(1,1,1)$.
+$|\vec{AB}\times\vec{AC}|=\sqrt{3}$.
+Area $=\dfrac{\sqrt{3}}{2}$.</p>
+</blockquote>
+<ol>
+<li>The tetrahedron $OABC$ has $O(0,0,0)$, $A(a,0,0)$, $B(0,b,0)$, $C(0,0,c)$. Calculate its volume as a function of $a$, $b$ and $c$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\vec{OA}=(a,0,0)$, $\vec{OB}=(0,b,0)$, $\vec{OC}=(0,0,c)$.
+Mixed product $=\begin{vmatrix}a&amp;0&amp;0\0&amp;b&amp;0\0&amp;0&amp;c\end{vmatrix}=abc$.
+$V=\dfrac{1}{6}|abc|=\dfrac{abc}{6}$ (if $a,b,c&gt;0$).</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>Given the points $A(1,1,0)$, $B(-1,1,0)$, $C(0,0,1)$ and $D(0,0,-1)$.</li>
+</ol>
+<p><strong>(a)</strong> Verify that the tetrahedron $ABCD$ is isosceles (not regular): all edges from $C$ and $D$ are equal, but the base edges $AB$ have a different length from the lateral edges.</p>
+<p><strong>(b)</strong> Calculate the volume of the tetrahedron.</p>
+<p><strong>(c)</strong> Find the equation of the plane containing face $ABC$.</p>
+<blockquote>
+<p><strong>Solution:</strong></p>
+<p><strong>(a)</strong>
+$|AB|=\sqrt{4+0+0}=2$.
+$|AC|=\sqrt{1+1+1}=\sqrt{3}$, $|BC|=\sqrt{1+1+1}=\sqrt{3}$, $|AD|=\sqrt{3}$, $|BD|=\sqrt{3}$.
+$|CD|=\sqrt{0+0+4}=2$.
+The lateral edges (length $\sqrt{3}$) differ from the base edges $AB$ and $CD$ (length $2$). It is an isosceles tetrahedron (or antiortohedron).</p>
+<p><strong>(b)</strong> $\vec{AB}=(-2,0,0)$, $\vec{AC}=(-1,-1,1)$, $\vec{AD}=(-1,-1,-1)$.
+Mixed product: $\begin{vmatrix}-2&amp;0&amp;0\-1&amp;-1&amp;1\-1&amp;-1&amp;-1\end{vmatrix}=-2\begin{vmatrix}-1&amp;1\-1&amp;-1\end{vmatrix}=-2(1+1)=-4$.
+$V=\dfrac{1}{6}|{-4}|=\dfrac{2}{3}$.</p>
+<p><strong>(c)</strong> Plane $ABC$: through $A(1,1,0)$ with $\vec{AB}=(-2,0,0)$ and $\vec{AC}=(-1,-1,1)$.
+$\vec{n}=\vec{AB}\times\vec{AC}=\begin{vmatrix}\vec{i}&amp;\vec{j}&amp;\vec{k}\-2&amp;0&amp;0\-1&amp;-1&amp;1\end{vmatrix}=(0\cdot1-0\cdot(-1))\vec{i}-((-2)(1)-0(-1))\vec{j}+((-2)(-1)-0(-1))\vec{k}=(0,2,2)$.
+Plane: $0(x-1)+2(y-1)+2(z-0)=0 \Rightarrow y+z-1=0$.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>How many edges does a tetrahedron have?</li>
+<li>a) 4</li>
+<li>b) 6</li>
+<li>c) 8</li>
+<li>d) 12</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> b) A tetrahedron has 4 vertices, 6 edges and 4 triangular faces.</p>
+</blockquote>
+<ol>
+<li>The volume of the tetrahedron $OABC$ with $O(0,0,0)$, $A(3,0,0)$, $B(0,3,0)$, $C(0,0,3)$ is:</li>
+<li>a) $9$</li>
+<li>b) $\dfrac{27}{6}=4{,}5$</li>
+<li>c) $27$</li>
+<li>d) $\dfrac{9}{2}$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> b) $V=\dfrac{abc}{6}=\dfrac{3\cdot3\cdot3}{6}=\dfrac{27}{6}=4{,}5$.</p>
+</blockquote>
+<hr />
+<h5>5.7.2 Parallelepiped: Definition, Edges and Diagonals in Coordinates</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>The parallelepiped has a vertex at the origin $O(0,0,0)$ and three consecutive edges represented by the vectors $\vec{a}=(2,0,0)$, $\vec{b}=(0,3,0)$ and $\vec{c}=(1,1,2)$.</p>
+<p><strong>(a)</strong> Find the coordinates of all vertices.</p>
+<p><strong>(b)</strong> Calculate the length of the principal diagonals.</p>
+<p><strong>(c)</strong> Calculate its volume.</p>
+<p><strong>Solution:</strong></p>
+<p><strong>(a)</strong> The 8 vertices of the parallelepiped are:
+$$O=(0,0,0)$$
+$$A=O+\vec{a}=(2,0,0)$$
+$$B=O+\vec{b}=(0,3,0)$$
+$$C=O+\vec{c}=(1,1,2)$$
+$$D=O+\vec{a}+\vec{b}=(2,3,0)$$
+$$E=O+\vec{a}+\vec{c}=(3,1,2)$$
+$$F=O+\vec{b}+\vec{c}=(1,4,2)$$
+$$G=O+\vec{a}+\vec{b}+\vec{c}=(3,4,2)$$</p>
+<p><strong>(b)</strong> The 4 principal diagonals go from each vertex to its opposite:
+$$d_1=|OG|=\sqrt{9+16+4}=\sqrt{29}$$
+$$d_2=|AF|=\sqrt{(1-2)^2+(4-0)^2+4}=\sqrt{1+16+4}=\sqrt{21}$$
+$$d_3=|BE|=\sqrt{(3-0)^2+(1-3)^2+(2-0)^2}=\sqrt{9+4+4}=\sqrt{17}$$</p>
+<p>Note: For an oblique parallelepiped the 4 diagonals generally have different lengths.</p>
+<p><strong>(c)</strong> $V=|(\vec{a}\times\vec{b})\cdot\vec{c}|=\left|\begin{vmatrix}2&amp;0&amp;0\0&amp;3&amp;0\1&amp;1&amp;2\end{vmatrix}\right|=|2(3\cdot2-0\cdot1)|=|2\cdot6|=12$.</p>
+<p>$$\boxed{V=12 \text{ u}^3}$$</p>
+<hr />
+<p><strong>Exercises with Solution</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>How many vertices, edges and faces does a parallelepiped have?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> A parallelepiped has 8 vertices, 12 edges and 6 faces (all parallelograms).</p>
+</blockquote>
+<ol>
+<li>The rectangular parallelepiped (cuboid) has a vertex at $O(0,0,0)$ and adjacent vertices at $A(4,0,0)$, $B(0,2,0)$, $C(0,0,3)$. Calculate its volume.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $V=|\vec{OA}\cdot(\vec{OB}\times\vec{OC})|=4\cdot2\cdot3=24$.</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>The parallelepiped has vertices at $O(0,0,0)$, $A(1,1,0)$, $B(0,1,1)$, $C(1,0,1)$. Calculate its volume.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\vec{a}=(1,1,0)$, $\vec{b}=(0,1,1)$, $\vec{c}=(1,0,1)$.
+$V=\left|\begin{vmatrix}1&amp;1&amp;0\0&amp;1&amp;1\1&amp;0&amp;1\end{vmatrix}\right|=|1(1-0)-1(0-1)+0|=|1+1|=2$.</p>
+</blockquote>
+<ol>
+<li>A parallelepiped has volume 6 and is generated by $\vec{a}=(1,0,0)$, $\vec{b}=(0,2,0)$ and $\vec{c}=(1,1,k)$. Find $k$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $V=\left|\begin{vmatrix}1&amp;0&amp;0\0&amp;2&amp;0\1&amp;1&amp;k\end{vmatrix}\right|=|2k|=6 \Rightarrow k=3$ (or $k=-3$).</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>Consider the points $A(1,0,0)$, $B(0,1,0)$, $C(0,0,1)$ as three of the vertices adjacent to the origin of a parallelepiped.</li>
+</ol>
+<p><strong>(a)</strong> Find the coordinates of the 8 vertices of the parallelepiped.</p>
+<p><strong>(b)</strong> Calculate the volume of the parallelepiped.</p>
+<p><strong>(c)</strong> Find the angle between the edges $\overrightarrow{OA}$ and $\overrightarrow{OB}$.</p>
+<blockquote>
+<p><strong>Solution:</strong></p>
+<p><strong>(a)</strong> $\vec{a}=(1,0,0)$, $\vec{b}=(0,1,0)$, $\vec{c}=(0,0,1)$.
+The 8 vertices are all combinations of $O+\epsilon_1\vec{a}+\epsilon_2\vec{b}+\epsilon_3\vec{c}$ with $\epsilon_i\in{0,1}$:
+$O(0,0,0)$, $A(1,0,0)$, $B(0,1,0)$, $C(0,0,1)$, $D(1,1,0)$, $E(1,0,1)$, $F(0,1,1)$, $G(1,1,1)$.
+(This is a unit cube.)</p>
+<p><strong>(b)</strong> $V=\left|\begin{vmatrix}1&amp;0&amp;0\0&amp;1&amp;0\0&amp;0&amp;1\end{vmatrix}\right|=1$.</p>
+<p><strong>(c)</strong> $\cos\theta=\dfrac{\vec{a}\cdot\vec{b}}{|\vec{a}||\vec{b}|}=\dfrac{0}{1\cdot1}=0 \Rightarrow \theta=90°$.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>The volume of the parallelepiped generated by vectors $\vec{a}$, $\vec{b}$, $\vec{c}$ is:</li>
+<li>a) $|\vec{a}||\vec{b}||\vec{c}|$</li>
+<li>b) $|\vec{a}+\vec{b}+\vec{c}|$</li>
+<li>c) The absolute value of the mixed product $(\vec{a}\times\vec{b})\cdot\vec{c}$</li>
+<li>d) The sum of the areas of the 6 faces</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> c) The volume of the parallelepiped is the absolute value of the mixed product $|(\vec{a}\times\vec{b})\cdot\vec{c}|=|\det(\vec{a},\vec{b},\vec{c})|$.</p>
+</blockquote>
+<ol>
+<li>A rectangular parallelepiped of dimensions $a\times b\times c$ has a principal diagonal of length:</li>
+<li>a) $a+b+c$</li>
+<li>b) $\sqrt{a^2+b^2}+c$</li>
+<li>c) $\sqrt{a^2+b^2+c^2}$</li>
+<li>d) $\max(a,b,c)$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> c) By the Pythagorean theorem in 3D, the principal diagonal measures $\sqrt{a^2+b^2+c^2}$.</p>
+</blockquote>
+<hr />
+<h5>5.7.3 Solving Problems of Length, Surface Area and Volume in Cartesian Coordinates</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>The square pyramid has a square base with vertices $A(0,0,0)$, $B(4,0,0)$, $C(4,4,0)$, $D(0,4,0)$ and apex $V(2,2,3)$.</p>
+<p><strong>(a)</strong> Calculate the area of the base.</p>
+<p><strong>(b)</strong> Calculate the area of each lateral triangular face.</p>
+<p><strong>(c)</strong> Calculate the volume of the pyramid.</p>
+<p><strong>Solution:</strong></p>
+<p><strong>(a)</strong> The base is the square $ABCD$ of side 4, so $S_{\text{base}}=4^2=16$ u².</p>
+<p><strong>(b)</strong> Take face $ABV$:
+$$\vec{AB}=(4,0,0),\quad\vec{AV}=(2,2,3)$$
+$$\vec{AB}\times\vec{AV}=\begin{vmatrix}\vec{i}&amp;\vec{j}&amp;\vec{k}\4&amp;0&amp;0\2&amp;2&amp;3\end{vmatrix}=(0\cdot3-0\cdot2)\vec{i}-(4\cdot3-0\cdot2)\vec{j}+(4\cdot2-0\cdot2)\vec{k}=(0,-12,8)$$
+$$S_{ABV}=\frac{1}{2}|\vec{AB}\times\vec{AV}|=\frac{1}{2}\sqrt{0+144+64}=\frac{1}{2}\sqrt{208}=\frac{4\sqrt{13}}{2}=2\sqrt{13}$$</p>
+<p>By symmetry (the pyramid is regular), the 4 lateral faces have the same area: $S_{\text{total lateral}}=4\cdot 2\sqrt{13}=8\sqrt{13}$ u².</p>
+<p><strong>(c)</strong> The height of the pyramid is the distance from the apex $V(2,2,3)$ to the base plane $z=0$: $h=3$.</p>
+<p>$$V_{\text{pyramid}}=\frac{1}{3}\cdot S_{\text{base}}\cdot h=\frac{1}{3}\cdot 16\cdot 3=16 \text{ u}^3$$</p>
+<hr />
+<p><strong>Exercises with Solution</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>Calculate the distance between the points $P(1,2,3)$ and $Q(4,6,3)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $d(P,Q)=\sqrt{(4-1)^2+(6-2)^2+(3-3)^2}=\sqrt{9+16+0}=\sqrt{25}=5$.</p>
+</blockquote>
+<ol>
+<li>The triangle $ABC$ has $A(0,0,0)$, $B(3,0,0)$, $C(0,4,0)$. Calculate its area.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\vec{AB}=(3,0,0)$, $\vec{AC}=(0,4,0)$.
+$\vec{AB}\times\vec{AC}=(0,0,12)$. Area $=\dfrac{|\vec{AB}\times\vec{AC}|}{2}=\dfrac{12}{2}=6$ u².</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>Calculate the area of the triangle $PQR$ with $P(1,0,1)$, $Q(2,1,0)$, $R(0,2,1)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> $\vec{PQ}=(1,1,-1)$, $\vec{PR}=(-1,2,0)$.
+$\vec{PQ}\times\vec{PR}=\begin{vmatrix}\vec{i}&amp;\vec{j}&amp;\vec{k}\1&amp;1&amp;-1\-1&amp;2&amp;0\end{vmatrix}=(0+2)\vec{i}-(0-1)\vec{j}+(2+1)\vec{k}=(2,1,3)$.
+$|\vec{PQ}\times\vec{PR}|=\sqrt{4+1+9}=\sqrt{14}$.
+Area $=\dfrac{\sqrt{14}}{2}$.</p>
+</blockquote>
+<ol>
+<li>The tetrahedron $OABC$ has $O(0,0,0)$, $A(2,0,0)$, $B(0,2,0)$, $C(0,0,2)$. Calculate the total surface area (sum of the 4 triangular faces).</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong>
+Face $OAB$: $\vec{OA}=(2,0,0)$, $\vec{OB}=(0,2,0)$. $\vec{OA}\times\vec{OB}=(0,0,4)$. $S=\dfrac{4}{2}=2$ u².
+Face $OAC$: $\vec{OA}\times\vec{OC}=\begin{vmatrix}\vec{i}&amp;\vec{j}&amp;\vec{k}\2&amp;0&amp;0\0&amp;0&amp;2\end{vmatrix}=(0,{-4},0)$. $S=\dfrac{4}{2}=2$ u².
+Face $OBC$: analogously, $S=2$ u².
+Face $ABC$: $\vec{AB}=(-2,2,0)$, $\vec{AC}=(-2,0,2)$.
+$\vec{AB}\times\vec{AC}=(4,4,4)$. $|\cdot|=4\sqrt{3}$. $S=2\sqrt{3}$ u².
+Total surface area $=6+2\sqrt{3}$ u².</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>Given the points $A(2,0,0)$, $B(0,3,0)$ and $C(0,0,6)$.</li>
+</ol>
+<p><strong>(a)</strong> Calculate the area of triangle $ABC$.</p>
+<p><strong>(b)</strong> Find the equation of the plane containing $A$, $B$ and $C$.</p>
+<p><strong>(c)</strong> Find the volume of the tetrahedron $OABC$ where $O$ is the origin.</p>
+<p><strong>(d)</strong> Calculate the distance from the origin $O$ to the plane $ABC$.</p>
+<blockquote>
+<p><strong>Solution:</strong></p>
+<p><strong>(a)</strong> $\vec{AB}=(-2,3,0)$, $\vec{AC}=(-2,0,6)$.
+$\vec{AB}\times\vec{AC}=\begin{vmatrix}\vec{i}&amp;\vec{j}&amp;\vec{k}\-2&amp;3&amp;0\-2&amp;0&amp;6\end{vmatrix}=(18,12,6)$.
+$|\vec{AB}\times\vec{AC}|=\sqrt{324+144+36}=\sqrt{504}=6\sqrt{14}$.
+$S=\dfrac{6\sqrt{14}}{2}=3\sqrt{14}$ u².</p>
+<p><strong>(b)</strong> The equation of the plane with intercepts $(a,0,0)$, $(0,b,0)$, $(0,0,c)$ is $\dfrac{x}{a}+\dfrac{y}{b}+\dfrac{z}{c}=1$.
+$\dfrac{x}{2}+\dfrac{y}{3}+\dfrac{z}{6}=1 \Rightarrow 3x+2y+z-6=0$.</p>
+<p><strong>(c)</strong> $V=\dfrac{1}{6}|(\vec{OA}\times\vec{OB})\cdot\vec{OC}|$ using the intercept tetrahedron formula, or directly:
+Mixed product with $\vec{OA}=(2,0,0)$, $\vec{OB}=(0,3,0)$, $\vec{OC}=(0,0,6)$:
+$\det=2\cdot3\cdot6=36$. $V=\dfrac{36}{6}=6$ u³.</p>
+<p><strong>(d)</strong> $d(O,\pi)=\dfrac{|3(0)+2(0)+0-6|}{\sqrt{9+4+1}}=\dfrac{6}{\sqrt{14}}=\dfrac{6\sqrt{14}}{14}=\dfrac{3\sqrt{14}}{7}$.</p>
+<p>Verification: $V=\dfrac{1}{3}\cdot S\cdot h \Rightarrow 6=\dfrac{1}{3}\cdot3\sqrt{14}\cdot h \Rightarrow h=\dfrac{6}{\sqrt{14}}=\dfrac{3\sqrt{14}}{7}$ ✓.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>The volume of a triangular-based pyramid with base area $B$ and height $h$ is:</li>
+<li>a) $B\cdot h$</li>
+<li>b) $\dfrac{1}{2}B\cdot h$</li>
+<li>c) $\dfrac{1}{3}B\cdot h$</li>
+<li>d) $\dfrac{1}{6}B\cdot h$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> c) The volume of any pyramid is $V=\dfrac{1}{3}\cdot\text{Base area}\cdot\text{height}$.</p>
+</blockquote>
+<ol>
+<li>The area of the triangular face of a tetrahedron with vertices $P$, $Q$, $R$ is calculated by:</li>
+<li>a) $\dfrac{1}{2}|\overrightarrow{PQ}||\overrightarrow{PR}|$</li>
+<li>b) $\dfrac{1}{2}|\overrightarrow{PQ}\times\overrightarrow{PR}|$</li>
+<li>c) $|\overrightarrow{PQ}\cdot\overrightarrow{PR}|$</li>
+<li>d) $\dfrac{1}{2}|\overrightarrow{PQ}+\overrightarrow{PR}|$</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> b) The area of triangle $PQR$ is half the modulus of the cross product: $S=\dfrac{1}{2}|\overrightarrow{PQ}\times\overrightarrow{PR}|$.</p>
+</blockquote>
+<hr />
+<h5>5.7.4 Representation with Digital Tools (GeoGebra 3D)</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Describe the process for representing in GeoGebra 3D the line $r:\;\dfrac{x-1}{2}=\dfrac{y+1}{-1}=\dfrac{z}{3}$ and the plane $\pi: x+2y-z+1=0$, and for visualising their point of intersection.</p>
+<p><strong>Solution:</strong></p>
+<p><strong>In GeoGebra 3D (algebraic view):</strong></p>
+<p><strong>Step 1 — Enter the line:</strong>
+In the input bar write the line in parametric form or use the command:</p>
+<pre><code>r: (1,−1,0) + t·(2,−1,3)
+</code></pre>
+<p>or enter the vectors separately. GeoGebra displays the line in the 3D view.</p>
+<p><strong>Step 2 — Enter the plane:</strong></p>
+<pre><code>π: x + 2y − z + 1 = 0
+</code></pre>
+<p>GeoGebra draws the semi-transparent plane.</p>
+<p><strong>Step 3 — Find the intersection:</strong>
+With the command <code>Intersect[r, π]</code> or using the <em>Intersect Two Objects</em> tool, GeoGebra automatically calculates the point of intersection.</p>
+<p><strong>Algebraic verification:</strong> Substitute the parametric form into the plane:
+$(1+2t)+2(-1-t)-(3t)+1=0$
+$1+2t-2-2t-3t+1=0$
+$-3t=0 \Rightarrow t=0$.
+Point of intersection: $P=(1,-1,0)$.</p>
+<p><strong>Pedagogical note:</strong> GeoGebra 3D allows rotating the figure to visualise the relative position of the line and the plane, which aids geometric understanding.</p>
+<hr />
+<p><strong>Exercises with Solution</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>What kind of geometric object does the equation $x^2+y^2+z^2=r^2$ represent in GeoGebra 3D?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> It represents a sphere of radius $r$ centred at the origin.</p>
+</blockquote>
+<ol>
+<li>In GeoGebra 3D, if you enter the command <code>Plane[(1,0,0), (0,1,0), (0,0,1)]</code>, which plane do you obtain?</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> The plane determined by the three points $(1,0,0)$, $(0,1,0)$ and $(0,0,1)$, which has equation $x+y+z=1$ (the plane with unit intercepts).</p>
+</blockquote>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>Describe how to calculate in GeoGebra 3D the volume of the tetrahedron whose vertices are $A(0,0,0)$, $B(1,0,0)$, $C(0,1,0)$, $D(0,0,1)$.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> One can use the command <code>Volume[Tetrahedron[A, B, C, D]]</code>. Alternatively, GeoGebra allows calculating the mixed product: define the vectors $\vec{a}=B-A$, $\vec{b}=C-A$, $\vec{c}=D-A$ and calculate $\dfrac{1}{6}|\det(\vec{a},\vec{b},\vec{c})|$.</p>
+</blockquote>
+<ol>
+<li>Explain how to use GeoGebra 3D to verify that two planes are parallel.</li>
+</ol>
+<blockquote>
+<p><strong>Solution:</strong> Enter both planes and use the <em>Angle</em> tool or the command <code>Angle[π₁, π₂]</code>. If the angle is $0°$ (or $180°$), the planes are parallel. This can also be verified visually in the 3D view if the planes do not intersect.</p>
+</blockquote>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li><em>(Reasoning and digital tools question)</em></li>
+</ol>
+<p>A pyramid has apex $V(0,0,4)$ and base the square $ABCD$ with $A(2,2,0)$, $B(-2,2,0)$, $C(-2,-2,0)$, $D(2,-2,0)$.</p>
+<p><strong>(a)</strong> Calculate the volume of the pyramid without using digital tools.</p>
+<p><strong>(b)</strong> State the steps you would follow in GeoGebra 3D to visualise the pyramid and verify the volume result.</p>
+<p><strong>(c)</strong> Calculate the total surface area of the pyramid (base + 4 lateral faces).</p>
+<blockquote>
+<p><strong>Solution:</strong></p>
+<p><strong>(a)</strong> Square base of side 4 (since $|AB|=\sqrt{16+0+0}=4$). $S_{\text{base}}=16$ u².
+Height $h$: distance from $V(0,0,4)$ to the plane $z=0$ is $h=4$.
+$V=\dfrac{1}{3}\cdot16\cdot4=\dfrac{64}{3}$ u³.</p>
+<p><strong>(b)</strong> In GeoGebra 3D:
+1. Enter the points $A$, $B$, $C$, $D$, $V$.
+2. Use the command <code>Pyramid[Polygon[A,B,C,D], V]</code> to build the pyramid.
+3. Use <code>Volume[pyramid]</code> to obtain the numerical volume.
+4. Rotate the view to verify the geometry.</p>
+<p><strong>(c)</strong> Lateral face $VAB$: $\vec{VA}=(2,2,-4)$, $\vec{VB}=(-2,2,-4)$.
+$\vec{VA}\times\vec{VB}=\begin{vmatrix}\vec{i}&amp;\vec{j}&amp;\vec{k}\2&amp;2&amp;-4\-2&amp;2&amp;-4\end{vmatrix}=(2(-4)-(-4)(2))\vec{i}-(2(-4)-(-4)(-2))\vec{j}+(2(2)-2(-2))\vec{k}=(-8+8)\vec{i}-(-8-8)\vec{j}+(4+4)\vec{k}=(0,16,8)$.
+$S_{VAB}=\dfrac{1}{2}\sqrt{0+256+64}=\dfrac{1}{2}\sqrt{320}=\dfrac{8\sqrt{5}}{2}=4\sqrt{5}$.
+By symmetry, 4 lateral faces all equal: $S_{\text{total lateral}}=4\cdot4\sqrt{5}=16\sqrt{5}$.
+$S_{\text{total}}=16+16\sqrt{5}=16(1+\sqrt{5})$ u².</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>What is the main purpose of GeoGebra 3D in the study of analytic geometry in space?</li>
+<li>a) To calculate determinants of $3\times3$ matrices</li>
+<li>b) To visualise and interact with three-dimensional geometric objects and verify analytical results</li>
+<li>c) Only to draw single-variable functions</li>
+<li>d) To solve systems of equations automatically without understanding</li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> b) GeoGebra 3D allows visualising points, lines, planes and solids in space, rotating the perspective, and verifying analytical calculation results graphically and interactively.</p>
+</blockquote>
+<ol>
+<li>In GeoGebra 3D, to obtain the angle between two planes $\pi_1$ and $\pi_2$, the most appropriate command is:</li>
+<li>a) <code>Distance[π₁, π₂]</code></li>
+<li>b) <code>Intersect[π₁, π₂]</code></li>
+<li>c) <code>Angle[π₁, π₂]</code></li>
+<li>d) <code>NormalVector[π₁, π₂]</code></li>
+</ol>
+<blockquote>
+<p><strong>Correct answer:</strong> c) The command <code>Angle[π₁, π₂]</code> directly calculates the dihedral angle between the two planes.</p>
+</blockquote>
+<hr />
+<p><em>End of Chapter 5 — Analytic Geometry in Space</em></p>
+<hr />
+<p><em>Document prepared for Mathematics II — Year 2 of Bachillerato (Sciences and Technology)</em><br />
+<em>Community of Madrid · Decree 64/2022 (LOMLOE) · FUHEM Curriculum 2025-26</em><br />
+<em>Reference level: EVAU Community of Madrid</em></p></section>

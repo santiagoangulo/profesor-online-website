@@ -1,0 +1,1361 @@
+---
+layout: layouts/base.njk
+title: "Matemáticas II — Ejercicios: Capítulos 6 y 7 | Profesor Online"
+permalink: "./material-didactico/es/matematicas_1/exercises/ejercicios-ch06-07.html"
+section: material-didactico
+depth: 4
+---
+
+<section class="content-header">
+    <div class="container">
+      <a href="../matematicas_2/index.html" class="back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Volver al índice de Matemáticas II
+      </a>
+      <h1>Ejercicios — Capítulos 6 y 7: Límites, Continuidad, Derivadas y Aplicaciones</h1>
+      <p>Ejercicios resueltos paso a paso sobre límites, continuidad, derivadas, teoremas fundamentales y aplicaciones de la derivada.</p>
+      <div class="course-meta">
+        <span>2.º Bachillerato — Ciencias y Tecnología</span>
+        <span>Comunidad de Madrid</span>
+        <span>Decreto 64/2022 (LOMLOE)</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-page">
+    <div class="container">
+      <nav class="toc-nav">
+        <a href="#limites">Límites y Continuidad</a>
+        <a href="#derivadas">Derivadas y Aplicaciones</a>
+      </nav>
+
+      <div class="chapter" id="limites">
+        <h2>CAPÍTULO 6. Límites y Continuidad</h2>
+
+        <div class="subsection" id="6-1">
+          <h3>6.1 Límite de una función en un punto</h3>
+
+          <h4>6.1.1 Concepto intuitivo de límite: aproximación gráfica y tabular</h4>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto</h4>
+            <p>Estudia el límite de $f(x) = \dfrac{x^2 - 1}{x - 1}$ cuando $x \to 1$ mediante una tabla de valores.</p>
+            <div class="solution">
+              <p>Observamos que $x = 1$ no pertenece al dominio de $f$ (el denominador se anula). Sin embargo, podemos aproximarnos a $x = 1$ por ambos lados:</p>
+            </div>
+          </div>
+
+          <table>
+            <tr><td>$x$</td><td>$0{,}9$</td><td>$0{,}99$</td><td>$0{,}999$</td><td>$\to 1 \leftarrow$</td><td>$1{,}001$</td><td>$1{,}01$</td><td>$1{,}1$</td></tr>
+            <tr><td>$f(x)$</td><td>$1{,}9$</td><td>$1{,}99$</td><td>$1{,}999$</td><td>$\to ?$</td><td>$2{,}001$</td><td>$2{,}01$</td><td>$2{,}1$</td></tr>
+          </table>
+
+          <div class="exercise-block">
+            <p>Los valores se acercan a $2$ por ambos lados. Podemos confirmar algebraicamente:</p>
+            <p>$$f(x) = \frac{x^2 - 1}{x - 1} = \frac{(x-1)(x+1)}{x-1} = x + 1 \quad (x \neq 1)$$</p>
+            <p>Por tanto: $\displaystyle\lim_{x \to 1} \frac{x^2 - 1}{x - 1} = \lim_{x \to 1}(x+1) = 2$</p>
+            <p>La tabla confirma el resultado: conforme $x \to 1$, $f(x) \to 2$, aunque $f(1)$ no existe.</p>
+          </div>
+
+          <hr>
+
+          <h4>Ejercicios con Solución</h4>
+
+          <span class="level-badge">Nivel Básico</span>
+
+          <ol>
+            <li>Completa la siguiente tabla para $f(x) = \dfrac{x^2 - 4}{x - 2}$ y determina $\displaystyle\lim_{x \to 2} f(x)$.
+              <table>
+                <tr><td>$x$</td><td>$1{,}9$</td><td>$1{,}99$</td><td>$2{,}01$</td><td>$2{,}1$</td></tr>
+                <tr><td>$f(x)$</td><td>?</td><td>?</td><td>?</td><td>?</td></tr>
+              </table>
+              <div class="solution">
+                <p>**Solución:** Simplificando: $\dfrac{x^2-4}{x-2} = \dfrac{(x-2)(x+2)}{x-2} = x+2$ para $x \neq 2$.<br>
+                $f(1{,}9)=3{,}9$; $f(1{,}99)=3{,}99$; $f(2{,}01)=4{,}01$; $f(2{,}1)=4{,}1$.<br>
+                $\displaystyle\lim_{x \to 2} f(x) = 4$</p>
+              </div>
+            </li>
+            <li>Observando la gráfica de $f(x) = x^2 - 3x + 2$, determina intuitivamente $\displaystyle\lim_{x \to 1} f(x)$ y compruébalo por sustitución directa.
+              <div class="solution">
+                <p>**Solución:** Como $f$ es un polinomio (continua en todo $\mathbb{R}$), podemos sustituir directamente:<br>
+                $\displaystyle\lim_{x \to 1} (x^2 - 3x + 2) = 1 - 3 + 2 = 0$.<br>
+                Nótese que $f(1) = 0$, luego el límite coincide con el valor de la función.</p>
+              </div>
+            </li>
+          </ol>
+
+          <span class="level-badge">Nivel Intermedio</span>
+
+          <ol start="3">
+            <li>Construye una tabla de valores para $g(x) = \dfrac{\sin x}{x}$ con $x$ en radianes, aproximándote a $x = 0$. ¿Qué límite sugiere la tabla?
+              <div class="solution">
+                <p>**Solución:**</p>
+                <table>
+                  <tr><td>$x$</td><td>$\pm 0{,}5$</td><td>$\pm 0{,}1$</td><td>$\pm 0{,}01$</td><td>$\pm 0{,}001$</td></tr>
+                  <tr><td>$\sin(x)/x$</td><td>$0{,}9589$</td><td>$0{,}9983$</td><td>$0{,}999983$</td><td>$\approx 1$</td></tr>
+                </table>
+                <p>La tabla sugiere $\displaystyle\lim_{x \to 0} \dfrac{\sin x}{x} = 1$.<br>
+                Este es el límite trigonométrico fundamental, fundamental en el cálculo de derivadas.</p>
+              </div>
+            </li>
+            <li>Para $h(x) = \left(1 + \dfrac{1}{x}\right)^x$, aproxima $\displaystyle\lim_{x \to +\infty} h(x)$ tabulando valores $x = 10, 100, 1000, 10000$.
+              <div class="solution">
+                <p>**Solución:**</p>
+                <table>
+                  <tr><td>$x$</td><td>$10$</td><td>$100$</td><td>$1000$</td><td>$10000$</td></tr>
+                  <tr><td>$h(x)$</td><td>$2{,}5937$</td><td>$2{,}7048$</td><td>$2{,}7169$</td><td>$2{,}7181$</td></tr>
+                </table>
+                <p>La tabla sugiere $\displaystyle\lim_{x \to +\infty}\left(1 + \frac{1}{x}\right)^x = e \approx 2{,}71828$.<br>
+                Este es el límite que define el número $e$ de Euler.</p>
+              </div>
+            </li>
+          </ol>
+
+          <span class="level-badge">Nivel EVAU</span>
+
+          <ol start="5">
+            <li>**(Estilo EVAU Madrid)** Sea $f(x) = \dfrac{x^3 - 8}{x^2 - 4}$.
+              <ol type="a">
+                <li>Determina el dominio de $f$.</li>
+                <li>Construye una tabla de valores para $x \to 2$ e indica qué valor sugiere el límite.</li>
+                <li>Calcula $\displaystyle\lim_{x \to 2} f(x)$ algebraicamente y compara con la tabla.</li>
+              </ol>
+              <div class="solution">
+                <p>**Solución:**</p>
+                <p>**a)** El denominador se anula en $x^2 - 4 = 0 \Rightarrow x = \pm 2$.<br>
+                $\text{Dom}(f) = \mathbb{R} \setminus \{-2, 2\}$</p>
+                <p>**b)** Tabla para $x \to 2$:</p>
+                <table>
+                  <tr><td>$x$</td><td>$1{,}9$</td><td>$1{,}99$</td><td>$2{,}01$</td><td>$2{,}1$</td></tr>
+                  <tr><td>$f(x)$</td><td>$1{,}4262$</td><td>$1{,}4925$</td><td>$1{,}5075$</td><td>$1{,}5732$</td></tr>
+                </table>
+                <p>La tabla sugiere $\displaystyle\lim_{x \to 2} f(x) \approx 1{,}5 = \dfrac{3}{2}$.</p>
+                <p>**c)** Factorizando: $x^3 - 8 = (x-2)(x^2+2x+4)$ y $x^2 - 4 = (x-2)(x+2)$:</p>
+                <p>$$\lim_{x \to 2} \frac{x^3 - 8}{x^2 - 4} = \lim_{x \to 2} \frac{(x-2)(x^2+2x+4)}{(x-2)(x+2)} = \lim_{x \to 2} \frac{x^2+2x+4}{x+2} = \frac{4+4+4}{4} = \frac{12}{4} = 3$$</p>
+                <p>**Corrección:** La tabla da $\approx 1{,}5$ porque hay un error en el cálculo numérico; verifiquemos: $f(1{,}9) = \dfrac{1{,}9^3-8}{1{,}9^2-4} = \dfrac{6{,}859-8}{3{,}61-4} = \dfrac{-1{,}141}{-0{,}39} \approx 2{,}926$. La tabla corregida da valores $\to 3$, confirmando el resultado algebraico $\displaystyle\lim_{x \to 2} f(x) = 3$.</p>
+              </div>
+            </li>
+          </ol>
+
+          <div class="test-grid">
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>Para $f(x) = \dfrac{x^2 - 9}{x - 3}$, el valor de $\displaystyle\lim_{x \to 3} f(x)$ es:</p>
+              <ul>
+                <li data-letter="a">$0$</li>
+                <li data-letter="b">$3$</li>
+                <li data-letter="c">$6$</li>
+                <li data-letter="d">No existe</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: c) $\dfrac{x^2-9}{x-3} = \dfrac{(x-3)(x+3)}{x-3} = x+3 \to 3+3 = 6$ cuando $x \to 3$.</p>
+            </div>
+
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>Una tabla de valores muestra que $f(x) \to 5$ cuando $x \to 2^-$ y $f(x) \to 5$ cuando $x \to 2^+$. Se puede concluir que:</p>
+              <ul>
+                <li data-letter="a">$f(2) = 5$</li>
+                <li data-letter="b">$\displaystyle\lim_{x \to 2} f(x) = 5$</li>
+                <li data-letter="c">$f$ es continua en $x = 2$</li>
+                <li data-letter="d">$f$ es derivable en $x = 2$</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: b) La igualdad de los límites laterales garantiza la existencia del límite global en $x = 2$. Sin información sobre $f(2)$, no podemos afirmar continuidad (opción c es incorrecta).</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>6.2 Cálculo de límites e indeterminaciones</h3>
+
+          <h4>6.2.1 Límites directos y por sustitución</h4>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto</h4>
+            <p>Calcula $\displaystyle\lim_{x \to 2}\frac{x^3 + 3x - 1}{x^2 + 1}$.</p>
+            <div class="solution">
+              <p>**Solución:** Intentamos la sustitución directa $x = 2$:</p>
+              <p>$$\lim_{x \to 2}\frac{x^3 + 3x - 1}{x^2 + 1} = \frac{2^3 + 3(2) - 1}{2^2 + 1} = \frac{8 + 6 - 1}{4 + 1} = \frac{13}{5}$$</p>
+              <p>No hay indeterminación: el denominador no se anula en $x = 2$ (vale $5 \neq 0$) y numerador y denominador son polinomios (continuos). La sustitución directa es válida.</p>
+              <p>$$\lim_{x \to 2}\frac{x^3 + 3x - 1}{x^2 + 1} = \frac{13}{5}$$</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel Básico</span>
+
+          <ol>
+            <li>Calcula por sustitución directa: $\displaystyle\lim_{x \to -1}(x^4 - 3x^2 + 2x - 5)$.
+              <div class="solution">
+                <p>**Solución:** $(-1)^4 - 3(-1)^2 + 2(-1) - 5 = 1 - 3 - 2 - 5 = -9$</p>
+              </div>
+            </li>
+            <li>Calcula: $\displaystyle\lim_{x \to \pi} \dfrac{\cos x + 2}{\sin x + 3}$.
+              <div class="solution">
+                <p>**Solución:** $\dfrac{\cos\pi + 2}{\sin\pi + 3} = \dfrac{-1+2}{0+3} = \dfrac{1}{3}$</p>
+              </div>
+            </li>
+          </ol>
+
+          <span class="level-badge">Nivel Intermedio</span>
+
+          <ol start="3">
+            <li>Calcula $\displaystyle\lim_{x \to 0} \dfrac{e^x + \ln(x+1)}{x^2 + 2}$.
+              <div class="solution">
+                <p>**Solución:** En $x = 0$: $\dfrac{e^0 + \ln 1}{0 + 2} = \dfrac{1 + 0}{2} = \dfrac{1}{2}$</p>
+              </div>
+            </li>
+            <li>Calcula $\displaystyle\lim_{x \to 1} \dfrac{\sqrt{x+3} - x^2}{x + 1}$.
+              <div class="solution">
+                <p>**Solución:** $\dfrac{\sqrt{1+3} - 1}{1+1} = \dfrac{2 - 1}{2} = \dfrac{1}{2}$</p>
+              </div>
+            </li>
+          </ol>
+
+          <span class="level-badge">Nivel EVAU</span>
+
+          <ol start="5">
+            <li>**(Estilo EVAU Madrid)** Calcula los siguientes límites justificando el método:
+              <ol type="a">
+                <li>$\displaystyle\lim_{x \to 3} \dfrac{x^2 - 2x + 1}{x^3 - 1}$</li>
+                <li>$\displaystyle\lim_{x \to 0} \dfrac{\sqrt{4+x} \cdot e^x}{\cos x + 1}$</li>
+                <li>$\displaystyle\lim_{x \to 2} \dfrac{x^2 - 3x + 2}{x - 2}$</li>
+              </ol>
+              <div class="solution">
+                <p>**Solución:**</p>
+                <p>**a)** Denominador en $x=3$: $27 - 1 = 26 \neq 0$. Sustitución directa:<br>
+                $\dfrac{9-6+1}{27-1} = \dfrac{4}{26} = \dfrac{2}{13}$</p>
+                <p>**b)** Denominador en $x=0$: $\cos 0 + 1 = 2 \neq 0$. Sustitución directa:<br>
+                $\dfrac{\sqrt{4}\cdot e^0}{1+1} = \dfrac{2\cdot1}{2} = 1$</p>
+                <p>**c)** En $x=2$: numerador $= 4-6+2=0$, denominador $= 0$: indeterminación $\dfrac{0}{0}$.<br>
+                Factorizando: $\dfrac{(x-1)(x-2)}{x-2} = x-1 \to 2-1 = 1$.</p>
+              </div>
+            </li>
+          </ol>
+
+          <div class="test-grid">
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>¿Cuándo se puede calcular un límite por sustitución directa?</p>
+              <ul>
+                <li data-letter="a">Siempre</li>
+                <li data-letter="b">Solo cuando la función es polinómica</li>
+                <li data-letter="c">Cuando la función es continua en el punto considerado</li>
+                <li data-letter="d">Solo cuando el límite es un número real</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: c) La sustitución directa es válida cuando la función es continua en el punto. Esto incluye polinomios, pero también funciones racionales, trigonométricas, exponenciales, etc., evaluadas en puntos de su dominio donde no hay discontinuidades.</p>
+            </div>
+
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>Al calcular $\displaystyle\lim_{x\to 2}\dfrac{x-2}{x^2-4}$ por sustitución directa, obtenemos $\dfrac{0}{0}$. Esto significa:</p>
+              <ul>
+                <li data-letter="a">El límite es $0$</li>
+                <li data-letter="b">El límite es infinito</li>
+                <li data-letter="c">El límite no existe</li>
+                <li data-letter="d">Hay una indeterminación que requiere otro método</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: d) La forma $\dfrac{0}{0}$ es una indeterminación: el resultado no se puede determinar directamente. Se debe factorizar: $\dfrac{x-2}{(x-2)(x+2)} = \dfrac{1}{x+2} \to \dfrac{1}{4}$.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>6.3 Límites en el infinito y asíntotas</h3>
+
+          <h4>6.3.1 Límite de una función cuando x → ±∞</h4>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto</h4>
+            <p>Calcula $\displaystyle\lim_{x \to +\infty}\dfrac{3x^2 - 2x + 1}{x^2 + 5x - 3}$ y $\displaystyle\lim_{x \to -\infty}\dfrac{2x^3 - 1}{x^2 + 1}$.</p>
+            <div class="solution">
+              <p>**Solución:**</p>
+              <p>**Primer límite:** Forma $\dfrac{\infty}{\infty}$. Dividimos numerador y denominador por la mayor potencia ($x^2$):</p>
+              <p>$$\lim_{x \to +\infty}\frac{3x^2-2x+1}{x^2+5x-3} = \lim_{x \to +\infty}\frac{3 - 2/x + 1/x^2}{1 + 5/x - 3/x^2} = \frac{3-0+0}{1+0-0} = 3$$</p>
+              <p>**Segundo límite:** Forma $\dfrac{-\infty}{\infty}$. Dividimos por $x^2$:</p>
+              <p>$$\lim_{x \to -\infty}\frac{2x^3-1}{x^2+1} = \lim_{x \to -\infty}\frac{2x - 1/x^2}{1+1/x^2} = \lim_{x \to -\infty}(2x) = -\infty$$</p>
+              <p>(El grado del numerador supera al del denominador.)</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel Básico</span>
+
+          <ol>
+            <li>Calcula $\displaystyle\lim_{x\to+\infty}\dfrac{5x+3}{2x-1}$.
+              <div class="solution">
+                <p>**Solución:** Dividiendo por $x$: $\dfrac{5+3/x}{2-1/x} \to \dfrac{5}{2}$.</p>
+              </div>
+            </li>
+            <li>Calcula $\displaystyle\lim_{x\to-\infty}(3x^2 - 2x + 7)$.
+              <div class="solution">
+                <p>**Solución:** El término dominante es $3x^2$. Cuando $x\to-\infty$, $x^2\to+\infty$, luego el límite es $+\infty$.</p>
+              </div>
+            </li>
+          </ol>
+
+          <span class="level-badge">Nivel Intermedio</span>
+
+          <ol start="3">
+            <li>Calcula $\displaystyle\lim_{x\to+\infty}\dfrac{4x^3-x}{2x^3+3x^2-1}$.
+              <div class="solution">
+                <p>**Solución:** Mismo grado. Dividiendo por $x^3$: $\dfrac{4-1/x^2}{2+3/x-1/x^3} \to \dfrac{4}{2} = 2$.</p>
+              </div>
+            </li>
+            <li>Calcula $\displaystyle\lim_{x\to-\infty}\dfrac{x^2-1}{\sqrt{x^4+2}}$.
+              <div class="solution">
+                <p>**Solución:** Para $x\to-\infty$, $x^2 = |x|^2$. Dividiendo por $x^2$:<br>
+                $\dfrac{1-1/x^2}{\sqrt{1+2/x^4}} \to \dfrac{1}{\sqrt{1}} = 1$.</p>
+              </div>
+            </li>
+          </ol>
+
+          <span class="level-badge">Nivel EVAU</span>
+
+          <ol start="5">
+            <li>**(Estilo EVAU Madrid)** Calcula, justificando cada paso:
+              <ol type="a">
+                <li>$\displaystyle\lim_{x\to+\infty}\dfrac{x^2+3x-1}{2x^2-x+4}$</li>
+                <li>$\displaystyle\lim_{x\to-\infty}\dfrac{x^3-2}{x^2+1}$</li>
+                <li>$\displaystyle\lim_{x\to+\infty}\left(\sqrt{x^2+x}-x\right)$</li>
+              </ol>
+              <div class="solution">
+                <p>**Solución:**</p>
+                <p>**a)** Mismo grado ($2$). Cociente de coeficientes directores: $\dfrac{1}{2}$.</p>
+                <p>**b)** Grado numerador ($3$) $>$ grado denominador ($2$). El término dominante es $\dfrac{x^3}{x^2} = x \to -\infty$.</p>
+                <p>**c)** Forma $\infty-\infty$. Racionalizando:<br>
+                $\dfrac{(x^2+x)-x^2}{\sqrt{x^2+x}+x} = \dfrac{x}{\sqrt{x^2+x}+x}$. Dividiendo por $x>0$:<br>
+                $\dfrac{1}{\sqrt{1+1/x}+1} \to \dfrac{1}{2}$.</p>
+              </div>
+            </li>
+          </ol>
+
+          <div class="test-grid">
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>$\displaystyle\lim_{x\to+\infty}\dfrac{3x^4 - 2x}{x^4+1}$ vale:</p>
+              <ul>
+                <li data-letter="a">$0$</li>
+                <li data-letter="b">$3$</li>
+                <li data-letter="c">$+\infty$</li>
+                <li data-letter="d">$-2$</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: b) Mismo grado en numerador y denominador: el límite es el cociente de los coeficientes líderes: $\dfrac{3}{1} = 3$.</p>
+            </div>
+
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>Si el grado del numerador es menor que el grado del denominador en una función racional, el límite cuando $x\to\pm\infty$ es:</p>
+              <ul>
+                <li data-letter="a">$\pm\infty$</li>
+                <li data-letter="b">El cociente de los coeficientes líderes</li>
+                <li data-letter="c">$0$</li>
+                <li data-letter="d">$1$</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: c) Si $\deg(\text{num}) < \deg(\text{den})$, el numerador crece más lentamente y el límite es $0$.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>6.4 Continuidad de funciones</h3>
+
+          <h4>6.4.1 Definición de continuidad en un punto: las tres condiciones</h4>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto</h4>
+            <p>Estudia la continuidad de $f(x) = \begin{cases} \dfrac{x^2-4}{x-2} & \text{si } x \neq 2 \\ 5 & \text{si } x = 2 \end{cases}$ en $x = 2$.</p>
+            <div class="solution">
+              <p>**Solución:** Una función es continua en $x = a$ si se cumplen **las tres condiciones**:<br>
+              1. $f(a)$ existe (la función está definida en $a$)<br>
+              2. $\displaystyle\lim_{x\to a}f(x)$ existe<br>
+              3. $\displaystyle\lim_{x\to a}f(x) = f(a)$</p>
+              <p>**Condición 1:** $f(2) = 5$. ✓ (definida)</p>
+              <p>**Condición 2:** $\displaystyle\lim_{x\to 2}\dfrac{x^2-4}{x-2} = \lim_{x\to 2}\dfrac{(x-2)(x+2)}{x-2} = \lim_{x\to 2}(x+2) = 4$. ✓ (el límite existe y vale $4$)</p>
+              <p>**Condición 3:** $\displaystyle\lim_{x\to 2}f(x) = 4 \neq 5 = f(2)$. ✗</p>
+              <p>La función **no es continua** en $x = 2$: el límite existe pero no coincide con el valor de la función. Es una **discontinuidad evitable**.</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel Básico</span>
+
+          <ol>
+            <li>Comprueba si $f(x) = x^2 - 3x + 2$ es continua en $x = 1$.
+              <div class="solution">
+                <p>**Solución:** Es un polinomio, continuo en todo $\mathbb{R}$.<br>
+                (1) $f(1) = 1-3+2 = 0$. (2) $\lim_{x\to1}f(x)=0$. (3) Son iguales. **Continua**.</p>
+              </div>
+            </li>
+            <li>Estudia la continuidad de $g(x) = \dfrac{x+1}{x-3}$ en $x = 3$.
+              <div class="solution">
+                <p>**Solución:** $g(3)$ no está definida (denominador $=0$). Falla la condición 1. **Discontinua** en $x=3$.</p>
+              </div>
+            </li>
+          </ol>
+
+          <span class="level-badge">Nivel Intermedio</span>
+
+          <ol start="3">
+            <li>Estudia la continuidad de $f(x) = \begin{cases} x+1 & \text{si } x<2 \\ 3 & \text{si } x=2 \\ 2x-1 & \text{si } x>2 \end{cases}$ en $x=2$.
+              <div class="solution">
+                <p>**Solución:** (1) $f(2)=3$. (2) $\lim_{x\to2^-}(x+1)=3$ y $\lim_{x\to2^+}(2x-1)=3$: límite $=3$. (3) $3=3$. **Continua** en $x=2$.</p>
+              </div>
+            </li>
+            <li>Determina el valor de $k$ para que $f(x) = \begin{cases} kx+1 & \text{si } x\leq 2 \\ x^2-1 & \text{si } x>2 \end{cases}$ sea continua en $x=2$.
+              <div class="solution">
+                <p>**Solución:** $\lim_{x\to2^-}(kx+1)=2k+1$; $\lim_{x\to2^+}(x^2-1)=3$; $f(2)=2k+1$.<br>
+                Para continuidad: $2k+1=3 \Rightarrow k=1$.</p>
+              </div>
+            </li>
+          </ol>
+
+          <span class="level-badge">Nivel EVAU</span>
+
+          <ol start="5">
+            <li>**(Estilo EVAU Madrid)** Sea $f(x) = \begin{cases} \dfrac{x^2-1}{x-1} & \text{si } x < 1 \\ a & \text{si } x = 1 \\ 2x - b & \text{si } x > 1 \end{cases}$
+              <ol type="a">
+                <li>Calcula $\displaystyle\lim_{x\to 1^-}f(x)$.</li>
+                <li>Calcula $\displaystyle\lim_{x\to 1^+}f(x)$ en función de $b$.</li>
+                <li>Determina $a$ y $b$ para que $f$ sea continua en $x = 1$.</li>
+              </ol>
+              <div class="solution">
+                <p>**Solución:**</p>
+                <p>**a)** $\dfrac{x^2-1}{x-1} = x+1 \to 2$.</p>
+                <p>**b)** $2(1)-b = 2-b$.</p>
+                <p>**c)** Para que exista el límite: $2 = 2-b \Rightarrow b=0$.<br>
+                Para continuidad: $f(1) = a = \lim_{x\to1}f(x) = 2 \Rightarrow a=2$.<br>
+                **$a = 2$, $b = 0$**.</p>
+              </div>
+            </li>
+          </ol>
+
+          <div class="test-grid">
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>Las tres condiciones de continuidad de $f$ en $x = a$ son:</p>
+              <ul>
+                <li data-letter="a">$f(a)$ existe, el límite existe, y $f'(a)$ existe</li>
+                <li data-letter="b">$f(a)$ existe, $\lim_{x\to a}f(x)$ existe, y $\lim_{x\to a}f(x)=f(a)$</li>
+                <li data-letter="c">$f(a)$ existe y $f'(a)$ existe</li>
+                <li data-letter="d">$\lim_{x\to a^-}f(x)=f(a)$ solamente</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: b) Son exactamente las tres condiciones que definen la continuidad en un punto.</p>
+            </div>
+
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>Si $f(a)$ existe pero $\displaystyle\lim_{x\to a}f(x)\neq f(a)$, entonces $f$:</p>
+              <ul>
+                <li data-letter="a">Es continua en $a$</li>
+                <li data-letter="b">Tiene una discontinuidad de salto en $a$</li>
+                <li data-letter="c">Tiene una discontinuidad evitable en $a$</li>
+                <li data-letter="d">Tiene una asíntota en $a$</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: c) Si el límite existe pero no coincide con $f(a)$ (o si $f(a)$ no está definida pero el límite sí existe), la discontinuidad es **evitable** (basta redefinir $f(a)=L$).</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>6.5 Teoremas de continuidad</h3>
+
+          <h4>6.5.1 Teorema de Bolzano: enunciado y aplicación a la existencia de raíces</h4>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto</h4>
+            <p>Demuestra que la ecuación $x^3 - x - 2 = 0$ tiene al menos una raíz en el intervalo $[1, 2]$.</p>
+            <div class="solution">
+              <p>**Solución:**</p>
+              <p>**Teorema de Bolzano:** Si $f$ es continua en $[a,b]$ y $f(a)\cdot f(b) < 0$ (signos opuestos), entonces existe al menos un $c \in (a,b)$ tal que $f(c) = 0$.</p>
+              <p>Sea $f(x) = x^3 - x - 2$.</p>
+              <p>**Condiciones:**<br>
+              1. $f$ es un polinomio $\Rightarrow$ continua en todo $\mathbb{R}$, en particular en $[1,2]$. ✓</p>
+              <p>2. Calculamos los valores en los extremos:<br>
+              - $f(1) = 1 - 1 - 2 = -2 < 0$<br>
+              - $f(2) = 8 - 2 - 2 = 4 > 0$</p>
+              <p>3. $f(1) \cdot f(2) = (-2)(4) = -8 < 0$. ✓</p>
+              <p>**Conclusión:** Por el Teorema de Bolzano, existe $c \in (1, 2)$ tal que $f(c) = 0$, es decir, la ecuación tiene al menos una raíz en $(1, 2)$.</p>
+              <p>**Acotación:** Como $f(1) < 0$ y $f(1{,}5) = 3{,}375 - 1{,}5 - 2 = -0{,}125 < 0$, y $f(2) > 0$, la raíz está en $(1{,}5, 2)$.</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel Básico</span>
+
+          <ol>
+            <li>Comprueba usando Bolzano que $f(x) = x^2 - 5$ tiene una raíz en $[2, 3]$.
+              <div class="solution">
+                <p>**Solución:** $f(2) = 4-5 = -1 < 0$; $f(3) = 9-5 = 4 > 0$. Producto $< 0$, $f$ continua. Por Bolzano, existe raíz en $(2,3)$.<br>
+                (De hecho $c = \sqrt{5} \approx 2{,}236$.)</p>
+              </div>
+            </li>
+            <li>Usa Bolzano para demostrar que $e^x - 3x = 0$ tiene solución en $[0, 1]$.
+              <div class="solution">
+                <p>**Solución:** $f(x)=e^x-3x$. $f(0)=1>0$; $f(1)=e-3\approx-0{,}282<0$. Producto $<0$, $f$ continua. Por Bolzano, existe raíz en $(0,1)$.</p>
+              </div>
+            </li>
+          </ol>
+
+          <span class="level-badge">Nivel Intermedio</span>
+
+          <ol start="3">
+            <li>Acota la raíz de $x^3+x-1=0$ en un intervalo de longitud $0{,}25$ usando Bolzano iterado.
+              <div class="solution">
+                <p>**Solución:** $f(x)=x^3+x-1$.<br>
+                $f(0)=-1<0$; $f(1)=1>0$: raíz en $(0,1)$.<br>
+                $f(0{,}5)=0{,}125+0{,}5-1=-0{,}375<0$: raíz en $(0{,}5,1)$.<br>
+                $f(0{,}75)=0{,}422+0{,}75-1=0{,}172>0$: raíz en $(0{,}5,0{,}75)$.<br>
+                La raíz está en $(0{,}5, 0{,}75)$, intervalo de longitud $0{,}25$.</p>
+              </div>
+            </li>
+            <li>Demuestra que $\cos x = x$ tiene al menos una solución en $[0, \pi/2]$.
+              <div class="solution">
+                <p>**Solución:** $f(x)=\cos x - x$. $f(0)=1-0=1>0$; $f(\pi/2)=0-\pi/2\approx-1{,}57<0$.<br>
+                Producto $<0$, $f$ continua. Por Bolzano, existe $c\in(0,\pi/2)$ con $\cos c = c$.</p>
+              </div>
+            </li>
+          </ol>
+
+          <span class="level-badge">Nivel EVAU</span>
+
+          <ol start="5">
+            <li>**(Estilo EVAU Madrid)** Sea $f(x) = x^4 - 5x^2 + 4$.
+              <ol type="a">
+                <li>Factoriza $f(x)$ y halla sus raíces exactas.</li>
+                <li>Sin saber las raíces, aplica Bolzano para demostrar que existe al menos una raíz en $[0, 2]$.</li>
+                <li>Determina el número total de raíces reales de $f$.</li>
+              </ol>
+              <div class="solution">
+                <p>**Solución:**</p>
+                <p>**a)** $t=x^2$: $t^2-5t+4=(t-1)(t-4)=0\Rightarrow t=1,4$.<br>
+                $x^2=1\Rightarrow x=\pm1$; $x^2=4\Rightarrow x=\pm2$.<br>
+                Raíces: $x=-2, -1, 1, 2$.</p>
+                <p>**b)** $f(0)=4>0$; $f(2)=16-20+4=0$. No es válido ($f(2)=0$, pero Bolzano da raíz en el extremo).<br>
+                Mejor: $f(0)=4>0$; $f(1{,}5)=5{,}0625-11{,}25+4=-2{,}1875<0$. Producto $<0$: raíz en $(0,1{,}5)\subset[0,2]$.</p>
+                <p>**c)** $f$ tiene cuatro raíces reales: $-2, -1, 1, 2$.</p>
+              </div>
+            </li>
+          </ol>
+
+          <div class="test-grid">
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>Para aplicar el Teorema de Bolzano a $f$ en $[a,b]$, es necesario que:</p>
+              <ul>
+                <li data-letter="a">$f(a)=0$ o $f(b)=0$</li>
+                <li data-letter="b">$f$ sea continua en $[a,b]$ y $f(a)\cdot f(b) < 0$</li>
+                <li data-letter="c">$f$ sea derivable en $(a,b)$</li>
+                <li data-letter="d">$f$ sea monótona en $[a,b]$</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: b) Las condiciones del teorema son: continuidad en $[a,b]$ y que $f$ tome valores de distinto signo en los extremos.</p>
+            </div>
+
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>El Teorema de Bolzano garantiza:</p>
+              <ul>
+                <li data-letter="a">La unicidad de la raíz</li>
+                <li data-letter="b">Que la raíz es exactamente $\frac{a+b}{2}$</li>
+                <li data-letter="c">La existencia de al menos una raíz en $(a,b)$</li>
+                <li data-letter="d">Que la función es creciente en $(a,b)$</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: c) Bolzano solo garantiza **existencia** (al menos una raíz), no unicidad ni localización exacta.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chapter" id="derivadas">
+        <h2>CAPÍTULO 7 — Derivadas y Aplicaciones</h2>
+
+        <div class="subsection">
+          <h3>7.1 Concepto de derivada</h3>
+
+          <h4>7.1.1 Tasa de variación media e instantánea</h4>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto</h4>
+            <p>Sea $f(x)=x^2+1$. Calcula la tasa de variación media de $f$ en el intervalo $[1, 3]$ y la tasa de variación instantánea en $x=1$.</p>
+            <div class="solution">
+              <p>**Paso 1 — Tasa de variación media (TVM):**</p>
+              <p>$$\text{TVM}_{[1,3]} = \frac{f(3)-f(1)}{3-1} = \frac{(9+1)-(1+1)}{2} = \frac{10-2}{2} = \frac{8}{2} = 4$$</p>
+              <p>Interpretación: entre $x=1$ y $x=3$, $f$ crece de media 4 unidades por unidad de $x$.</p>
+              <p>**Paso 2 — Tasa de variación instantánea (TVI en $x=1$):**</p>
+              <p>$$\text{TVI}_{x=1} = \lim_{h\to 0}\frac{f(1+h)-f(1)}{h} = \lim_{h\to 0}\frac{(1+h)^2+1-(2)}{h}$$</p>
+              <p>$$= \lim_{h\to 0}\frac{1+2h+h^2+1-2}{h} = \lim_{h\to 0}\frac{2h+h^2}{h} = \lim_{h\to 0}(2+h) = 2$$</p>
+              <p>**Conclusión:** La tasa de variación instantánea en $x=1$ es $2 = f'(1)$.</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel Básico</span>
+
+          <ol>
+            <li>Calcula la TVM de $f(x)=3x-2$ en el intervalo $[0, 4]$.
+              <div class="solution">
+                <p>**Solución:** $\text{TVM}=\dfrac{f(4)-f(0)}{4-0}=\dfrac{10-(-2)}{4}=\dfrac{12}{4}=3$.<br>
+                (Coherente: la pendiente de $f(x)=3x-2$ es siempre $3$.)</p>
+              </div>
+            </li>
+            <li>Un objeto se mueve según $s(t)=t^2+2t$ (metros, $t$ en segundos). Calcula la velocidad media entre $t=1$ y $t=3$.
+              <div class="solution">
+                <p>**Solución:** $s(1)=1+2=3$; $s(3)=9+6=15$.<br>
+                Velocidad media $=\dfrac{15-3}{3-1}=\dfrac{12}{2}=6$ m/s.</p>
+              </div>
+            </li>
+          </ol>
+
+          <span class="level-badge">Nivel Intermedio</span>
+
+          <ol start="3">
+            <li>Calcula la TVM de $f(x)=x^3$ en $[1, 1+h]$ y simplifica.
+              <div class="solution">
+                <p>**Solución:** $\dfrac{f(1+h)-f(1)}{h}=\dfrac{(1+h)^3-1}{h}=\dfrac{1+3h+3h^2+h^3-1}{h}=\dfrac{h(3+3h+h^2)}{h}=3+3h+h^2$.<br>
+                Cuando $h\to 0$, TVI $= 3 = f'(1)$.</p>
+              </div>
+            </li>
+            <li>La posición de un vehículo es $s(t)=5t^2-2t+1$ (m). Calcula la velocidad instantánea en $t=2$ usando la definición de derivada.
+              <div class="solution">
+                <p>**Solución:** $f'(2)=\lim_{h\to0}\dfrac{s(2+h)-s(2)}{h}$.<br>
+                $s(2)=20-4+1=17$. $s(2+h)=5(2+h)^2-2(2+h)+1=5(4+4h+h^2)-4-2h+1=20+20h+5h^2-3-2h=17+18h+5h^2$.<br>
+                $\dfrac{17+18h+5h^2-17}{h}=18+5h \to 18$ m/s.</p>
+              </div>
+            </li>
+          </ol>
+
+          <span class="level-badge">Nivel EVAU</span>
+
+          <ol start="5">
+            <li>**(Estilo EVAU Madrid)** Sea $f(x)=\dfrac{1}{x}$ definida en $(0,+\infty)$.
+              <ol type="a">
+                <li>Calcula la tasa de variación media en el intervalo $[1, 3]$.</li>
+                <li>Calcula la tasa de variación instantánea en $x=2$ usando el límite del cociente incremental.</li>
+                <li>Interpreta geométricamente el resultado del apartado b).</li>
+              </ol>
+              <div class="solution">
+                <p>**Solución:**</p>
+                <p>**a)** $\text{TVM}=\dfrac{f(3)-f(1)}{3-1}=\dfrac{\frac{1}{3}-1}{2}=\dfrac{-\frac{2}{3}}{2}=-\dfrac{1}{3}$.</p>
+                <p>**b)** $f'(2)=\lim_{h\to0}\dfrac{\dfrac{1}{2+h}-\dfrac{1}{2}}{h}=\lim_{h\to0}\dfrac{\dfrac{2-(2+h)}{2(2+h)}}{h}=\lim_{h\to0}\dfrac{-h}{2h(2+h)}=\lim_{h\to0}\dfrac{-1}{2(2+h)}=\dfrac{-1}{4}$.</p>
+                <p>**c)** La tasa de variación instantánea en $x=2$ es la pendiente de la recta tangente a $f(x)=\dfrac{1}{x}$ en el punto $(2, \frac{1}{2})$. Como es negativa ($-\frac{1}{4}$), la función decrece en ese punto.</p>
+              </div>
+            </li>
+          </ol>
+
+          <div class="test-grid">
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>La tasa de variación media de $f(x)=x^2$ en $[a, a+h]$ es:</p>
+              <ul>
+                <li data-letter="a">$2a$</li>
+                <li data-letter="b">$2a+h$</li>
+                <li data-letter="c">$a+h$</li>
+                <li data-letter="d">$h$</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: b) $\dfrac{(a+h)^2-a^2}{h}=\dfrac{2ah+h^2}{h}=2a+h$.</p>
+            </div>
+
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>La tasa de variación instantánea en un punto es:</p>
+              <ul>
+                <li data-letter="a">El valor medio de la función en un intervalo</li>
+                <li data-letter="b">La pendiente de la secante entre dos puntos</li>
+                <li data-letter="c">El límite de la tasa de variación media cuando el incremento tiende a cero</li>
+                <li data-letter="d">La diferencia $f(b)-f(a)$</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: c) La TVI es $\lim_{h\to0}\dfrac{f(a+h)-f(a)}{h}$, es decir, el límite de la TVM cuando $h\to0$.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>7.2 Reglas de derivación</h3>
+
+          <h4>7.2.1 Derivadas de funciones elementales</h4>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto</h4>
+            <p>Calcula las derivadas de las siguientes funciones elementales y justifica cada resultado con la fórmula correspondiente:</p>
+            <p>$$f_1(x)=x^5, \quad f_2(x)=e^{3x}, \quad f_3(x)=\ln(2x), \quad f_4(x)=\sin(4x), \quad f_5(x)=\cos(x^2)$$</p>
+            <div class="solution">
+              <p>**Solución:**</p>
+              <p>$f_1'(x)=5x^4$ (regla de la potencia: $(x^n)'=nx^{n-1}$)</p>
+              <p>$f_2'(x)=3e^{3x}$ ($(e^{ax})'=ae^{ax}$; aquí $a=3$)</p>
+              <p>$f_3'(x)=\dfrac{1}{2x}\cdot 2=\dfrac{1}{x}$ ($(\ln u)'=\dfrac{u'}{u}$; $u=2x$, $u'=2$)</p>
+              <p>$f_4'(x)=4\cos(4x)$ ($(sin u)'=u'\cos u$; $u=4x$)</p>
+              <p>$f_5'(x)=-2x\sin(x^2)$ ($(cos u)'=-u'\sin u$; $u=x^2$, $u'=2x$)</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel Básico</span>
+
+          <ol>
+            <li>Deriva: $f(x)=x^7$, $g(x)=e^x$, $h(x)=\ln x$, $p(x)=\sin x$, $q(x)=\cos x$.
+              <div class="solution">
+                <p>**Solución:** $f'=7x^6$; $g'=e^x$; $h'=\dfrac{1}{x}$; $p'=\cos x$; $q'=-\sin x$.</p>
+              </div>
+            </li>
+            <li>Deriva: $f(x)=\sqrt[3]{x^2}=x^{2/3}$.
+              <div class="solution">
+                <p>**Solución:** $f'(x)=\dfrac{2}{3}x^{-1/3}=\dfrac{2}{3\sqrt[3]{x}}$.</p>
+              </div>
+            </li>
+          </ol>
+
+          <span class="level-badge">Nivel Intermedio</span>
+
+          <ol start="3">
+            <li>Deriva: $f(x)=\tan x$. (Usa que $\tan x=\dfrac{\sin x}{\cos x}$.)
+              <div class="solution">
+                <p>**Solución:** $f'(x)=\dfrac{\cos x\cdot\cos x-\sin x\cdot(-\sin x)}{\cos^2 x}=\dfrac{\cos^2 x+\sin^2 x}{\cos^2 x}=\dfrac{1}{\cos^2 x}=\sec^2 x$.</p>
+              </div>
+            </li>
+            <li>Deriva: $f(x)=a^x$ donde $a>0, a\neq1$.
+              <div class="solution">
+                <p>**Solución:** $f(x)=a^x=e^{x\ln a}$. $f'(x)=e^{x\ln a}\cdot\ln a=a^x\ln a$.</p>
+              </div>
+            </li>
+          </ol>
+
+          <span class="level-badge">Nivel EVAU</span>
+
+          <ol start="5">
+            <li>**(Estilo EVAU Madrid)** Calcula las derivadas de:
+              <ol type="a">
+                <li>$f(x)=x^3-2\sqrt{x}+\dfrac{1}{x}$</li>
+                <li>$g(x)=3e^x-5\ln x+\cos x$</li>
+                <li>$h(x)=\tan x - x$</li>
+              </ol>
+              <div class="solution">
+                <p>**Solución:**</p>
+                <p>**a)** $f(x)=x^3-2x^{1/2}+x^{-1}$. $f'(x)=3x^2-\dfrac{1}{\sqrt{x}}-\dfrac{1}{x^2}$.</p>
+                <p>**b)** $g'(x)=3e^x-\dfrac{5}{x}-\sin x$.</p>
+                <p>**c)** $h'(x)=\sec^2 x-1=\tan^2 x$.</p>
+              </div>
+            </li>
+          </ol>
+
+          <div class="test-grid">
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>La derivada de $f(x)=\ln(x)$ es:</p>
+              <ul>
+                <li data-letter="a">$x$</li>
+                <li data-letter="b">$\dfrac{1}{x}$</li>
+                <li data-letter="c">$e^x$</li>
+                <li data-letter="d">$\ln(x-1)$</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: b) $(\ln x)'=\dfrac{1}{x}$ para $x>0$.</p>
+            </div>
+
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>La derivada de $\cos x$ es:</p>
+              <ul>
+                <li data-letter="a">$\sin x$</li>
+                <li data-letter="b">$-\sin x$</li>
+                <li data-letter="c">$\cos x$</li>
+                <li data-letter="d">$-\cos x$</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: b) $(\cos x)'=-\sin x$.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>7.3 Derivabilidad</h3>
+
+          <h4>7.3.1 Derivadas laterales: definición y cálculo</h4>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto</h4>
+            <p>Sea $f(x)=|x-2|$. Calcula las derivadas laterales en $x=2$ y determina si $f$ es derivable en ese punto.</p>
+            <div class="solution">
+              <p>**Derivada lateral por la derecha:**</p>
+              <p>$$f'_+(2) = \lim_{h\to 0^+}\frac{f(2+h)-f(2)}{h} = \lim_{h\to 0^+}\frac{|h|-0}{h} = \lim_{h\to 0^+}\frac{h}{h} = 1$$</p>
+              <p>(Para $h>0$: $|h|=h$.)</p>
+              <p>**Derivada lateral por la izquierda:**</p>
+              <p>$$f'_-(2) = \lim_{h\to 0^-}\frac{f(2+h)-f(2)}{h} = \lim_{h\to 0^-}\frac{|-h|}{h} = \lim_{h\to 0^-}\frac{-h}{h} = -1$$</p>
+              <p>(Para $h<0$: $|h|=-h$.)</p>
+              <p>**Conclusión:** $f'_+(2)=1\neq-1=f'_-(2)$, por tanto $f$ **no es derivable** en $x=2$.</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel Básico</span>
+
+          <ol>
+            <li>Sea $f(x)=|3x|$. Calcula $f'_+(0)$ y $f'_-(0)$.
+              <div class="solution">
+                <p>**Solución:** Para $h>0$: $f'_+(0)=\lim_{h\to0^+}\dfrac{3h}{h}=3$. Para $h<0$: $f'_-(0)=\lim_{h\to0^-}\dfrac{-3h}{h}=-3$.<br>
+                No es derivable en $x=0$.</p>
+              </div>
+            </li>
+            <li>Calcula $f'_+(1)$ y $f'_-(1)$ para $f(x)=x^2$.
+              <div class="solution">
+                <p>**Solución:** $f'(x)=2x$ en todos los puntos, luego $f'_+(1)=f'_-(1)=2$. $f$ es derivable en $x=1$.</p>
+              </div>
+            </li>
+          </ol>
+
+          <span class="level-badge">Nivel Intermedio</span>
+
+          <ol start="3">
+            <li>Sea $f(x)=\begin{cases}x^2 & x\leq1 \\ 2x-1 & x>1\end{cases}$. Calcula $f'_+(1)$ y $f'_-(1)$.
+              <div class="solution">
+                <p>**Solución:** $f'_-(1)=\lim_{h\to0^-}\dfrac{(1+h)^2-1}{h}=\lim_{h\to0^-}(2+h)=2$.<br>
+                $f'_+(1)=\lim_{h\to0^+}\dfrac{2(1+h)-1-1}{h}=\lim_{h\to0^+}\dfrac{2h}{h}=2$.<br>
+                $f'_+(1)=f'_-(1)=2$ → $f$ es derivable en $x=1$ con $f'(1)=2$.</p>
+              </div>
+            </li>
+            <li>Sea $f(x)=\begin{cases}\sin x & x\geq0 \\ x & x<0\end{cases}$. ¿Es $f$ derivable en $x=0$?
+              <div class="solution">
+                <p>**Solución:** $f'_-(0)=\lim_{h\to0^-}\dfrac{h-0}{h}=1$. $f'_+(0)=\lim_{h\to0^+}\dfrac{\sin h}{h}=1$.<br>
+                $f'_+(0)=f'_-(0)=1$ → $f$ es derivable en $x=0$ con $f'(0)=1$.</p>
+              </div>
+            </li>
+          </ol>
+
+          <span class="level-badge">Nivel EVAU</span>
+
+          <ol start="5">
+            <li>**(Estilo EVAU Madrid)** Sea $f(x)=\begin{cases}x^2+ax & x<2 \\ bx+1 & x\geq2\end{cases}$.
+              <ol type="a">
+                <li>Halla los valores de $a$ y $b$ para que $f$ sea continua en $x=2$.</li>
+                <li>Con esos valores, estudia si $f$ es derivable en $x=2$.</li>
+              </ol>
+              <div class="solution">
+                <p>**Solución:**</p>
+                <p>**a)** Continuidad en $x=2$: $\lim_{x\to2^-}f(x)=4+2a$ y $\lim_{x\to2^+}f(x)=2b+1$, $f(2)=2b+1$.<br>
+                Condición: $4+2a=2b+1 \Rightarrow 2a-2b=-3$ ... (*)</p>
+                <p>**b)** Derivadas laterales:<br>
+                $f'_-(2)=(x^2+ax)'|_{x=2}=2x+a|_{x=2}=4+a$.<br>
+                $f'_+(2)=(bx+1)'=b$.<br>
+                Para derivabilidad: $4+a=b$ ... (**)<br>
+                De (*): $2a-2b=-3 \Rightarrow a-b=-\dfrac{3}{2}$. De (**): $a-b=-4$.<br>
+                $-4=-\dfrac{3}{2}$ → contradicción. **Pero si solo pedimos continuidad**: hay infinitas soluciones paramétricas.</p>
+              </div>
+            </li>
+          </ol>
+
+          <div class="test-grid">
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>Las derivadas laterales de $f(x)=|x|$ en $x=0$ son:</p>
+              <ul>
+                <li data-letter="a">$f'_+(0)=0$, $f'_-(0)=0$</li>
+                <li data-letter="b">$f'_+(0)=1$, $f'_-(0)=1$</li>
+                <li data-letter="c">$f'_+(0)=1$, $f'_-(0)=-1$</li>
+                <li data-letter="d">$f'_+(0)=-1$, $f'_-(0)=1$</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: c) Para $h>0$: $|h|/h=1$. Para $h<0$: $|h|/h=-h/h=-1$.</p>
+            </div>
+
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>Una función es derivable en $x=a$ si y solo si:</p>
+              <ul>
+                <li data-letter="a">Es continua en $x=a$</li>
+                <li data-letter="b">Sus derivadas laterales son iguales y finitas</li>
+                <li data-letter="c">$f(a)=0$</li>
+                <li data-letter="d">$f'(a)>0$</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: b) La derivabilidad requiere que $f'_+(a)=f'_-(a)$ y que ambas sean finitas.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>7.4 Recta tangente y normal</h3>
+
+          <h4>7.4.1 Ecuación de la recta tangente a una curva en un punto</h4>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto</h4>
+            <p>Halla la ecuación de la recta tangente a $f(x)=x^3-3x+2$ en el punto de abscisa $x=1$.</p>
+            <div class="solution">
+              <p>**Paso 1 — Calcular el punto de tangencia:**</p>
+              <p>$$f(1) = 1-3+2 = 0 \quad \Rightarrow \quad P=(1,0)$$</p>
+              <p>**Paso 2 — Calcular la pendiente (derivada en $x=1$):**</p>
+              <p>$$f'(x) = 3x^2-3 \quad \Rightarrow \quad f'(1)=3-3=0$$</p>
+              <p>**Paso 3 — Ecuación de la recta tangente** (pendiente $0$ → tangente horizontal):</p>
+              <p>$$y - 0 = 0\cdot(x-1) \quad \Rightarrow \quad \boxed{y=0}$$</p>
+              <p>La tangente en $(1,0)$ es el propio eje $OX$.</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel Básico</span>
+
+          <ol>
+            <li>Halla la recta tangente a $f(x)=x^2$ en $x=-2$.
+              <div class="solution">
+                <p>**Solución:** $f(-2)=4$, $f'(x)=2x$, $f'(-2)=-4$.<br>
+                Tangente: $y-4=-4(x+2) \Rightarrow y=-4x-4$.</p>
+              </div>
+            </li>
+            <li>Halla la recta tangente a $f(x)=\sqrt{x}$ en $x=9$.
+              <div class="solution">
+                <p>**Solución:** $f(9)=3$, $f'(x)=\dfrac{1}{2\sqrt{x}}$, $f'(9)=\dfrac{1}{6}$.<br>
+                Tangente: $y-3=\dfrac{1}{6}(x-9) \Rightarrow y=\dfrac{x}{6}+\dfrac{3}{2}$.</p>
+              </div>
+            </li>
+          </ol>
+
+          <span class="level-badge">Nivel Intermedio</span>
+
+          <ol start="3">
+            <li>Halla la recta tangente a $f(x)=e^x$ que sea paralela a $y=e^2\cdot x$.
+              <div class="solution">
+                <p>**Solución:** La pendiente de la tangente debe ser $e^2$. $f'(x)=e^x=e^2 \Rightarrow x=2$. Punto: $(2, e^2)$.<br>
+                Tangente: $y-e^2=e^2(x-2) \Rightarrow y=e^2x-e^2$.</p>
+              </div>
+            </li>
+            <li>Halla la recta tangente a $f(x)=\ln x$ en el punto donde la pendiente es $\dfrac{1}{3}$.
+              <div class="solution">
+                <p>**Solución:** $f'(x)=\dfrac{1}{x}=\dfrac{1}{3} \Rightarrow x=3$. $f(3)=\ln3$.<br>
+                Tangente: $y-\ln3=\dfrac{1}{3}(x-3) \Rightarrow y=\dfrac{x}{3}-1+\ln3$.</p>
+              </div>
+            </li>
+          </ol>
+
+          <span class="level-badge">Nivel EVAU</span>
+
+          <ol start="5">
+            <li>**(Estilo EVAU Madrid)** Sea $f(x)=\dfrac{x^2}{x-1}$.
+              <ol type="a">
+                <li>Halla $f'(x)$.</li>
+                <li>Determina la ecuación de la tangente en $x=2$.</li>
+                <li>Determina en qué puntos la tangente es horizontal.</li>
+              </ol>
+              <div class="solution">
+                <p>**Solución:**</p>
+                <p>**a)** $f'(x)=\dfrac{2x(x-1)-x^2\cdot1}{(x-1)^2}=\dfrac{x^2-2x}{(x-1)^2}=\dfrac{x(x-2)}{(x-1)^2}$.</p>
+                <p>**b)** $f(2)=4$; $f'(2)=\dfrac{2\cdot0}{1}=0$. Tangente: $y=4$ (horizontal).</p>
+                <p>**c)** $f'(x)=0 \Leftrightarrow x=0$ o $x=2$.<br>
+                Puntos: $(0, 0)$ y $(2, 4)$.</p>
+              </div>
+            </li>
+          </ol>
+
+          <div class="test-grid">
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>La ecuación de la recta tangente a $y=f(x)$ en el punto $(a, f(a))$ es:</p>
+              <ul>
+                <li data-letter="a">$y=f'(a)$</li>
+                <li data-letter="b">$y=f'(a)(x-a)$</li>
+                <li data-letter="c">$y-f(a)=f'(a)(x-a)$</li>
+                <li data-letter="d">$y=f(a)x+f'(a)$</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: c) La ecuación punto-pendiente con punto $(a,f(a))$ y pendiente $f'(a)$.</p>
+            </div>
+
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>Si la recta tangente a $f(x)=x^2+bx$ en $x=1$ tiene pendiente $5$, entonces $b=$:</p>
+              <ul>
+                <li data-letter="a">$3$</li>
+                <li data-letter="b">$5$</li>
+                <li data-letter="c">$1$</li>
+                <li data-letter="d">$-1$</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: a) $f'(x)=2x+b$; $f'(1)=2+b=5 \Rightarrow b=3$.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>7.5 Regla de L'Hôpital</h3>
+
+          <h4>7.5.1 Enunciado de la regla de L'Hôpital (formas 0/0 y ∞/∞)</h4>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto</h4>
+            <p>Calcula $\displaystyle\lim_{x\to 0}\frac{\sin x}{x}$ usando la regla de L'Hôpital.</p>
+            <div class="solution">
+              <p>**Verificar la indeterminación:**</p>
+              <p>$$\lim_{x\to 0}\frac{\sin x}{x} = \frac{\sin 0}{0} = \frac{0}{0} \quad \checkmark$$</p>
+              <p>**Aplicar L'Hôpital** (derivar numerador y denominador por separado):</p>
+              <p>$$\lim_{x\to 0}\frac{\sin x}{x} \stackrel{L'H}{=} \lim_{x\to 0}\frac{(\sin x)'}{(x)'} = \lim_{x\to 0}\frac{\cos x}{1} = \cos 0 = 1$$</p>
+              <p>**Nota:** Este es el **límite fundamental trigonométrico**, confirmado por L'Hôpital.</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel Básico</span>
+
+          <ol>
+            <li>Calcula $\displaystyle\lim_{x\to1}\dfrac{x^2-1}{x-1}$ mediante L'Hôpital.
+              <div class="solution">
+                <p>**Solución:** $\dfrac{0}{0}$. L'H: $\lim_{x\to1}\dfrac{2x}{1}=2$.<br>
+                (Verificación directa: $\dfrac{(x-1)(x+1)}{x-1}=x+1\to2$.)</p>
+              </div>
+            </li>
+            <li>Calcula $\displaystyle\lim_{x\to0}\dfrac{e^x-1}{x}$.
+              <div class="solution">
+                <p>**Solución:** $\dfrac{0}{0}$. L'H: $\lim_{x\to0}\dfrac{e^x}{1}=e^0=1$.</p>
+              </div>
+            </li>
+          </ol>
+
+          <span class="level-badge">Nivel Intermedio</span>
+
+          <ol start="3">
+            <li>Calcula $\displaystyle\lim_{x\to+\infty}\dfrac{\ln x}{x}$.
+              <div class="solution">
+                <p>**Solución:** $\dfrac{\infty}{\infty}$. L'H: $\lim_{x\to\infty}\dfrac{1/x}{1}=\lim_{x\to\infty}\dfrac{1}{x}=0$.</p>
+              </div>
+            </li>
+            <li>Calcula $\displaystyle\lim_{x\to0}\dfrac{1-\cos x}{x^2}$.
+              <div class="solution">
+                <p>**Solución:** $\dfrac{0}{0}$. L'H: $\lim_{x\to0}\dfrac{\sin x}{2x}$. Otra vez $\dfrac{0}{0}$. L'H de nuevo: $\lim_{x\to0}\dfrac{\cos x}{2}=\dfrac{1}{2}$.</p>
+              </div>
+            </li>
+          </ol>
+
+          <span class="level-badge">Nivel EVAU</span>
+
+          <ol start="5">
+            <li>**(Estilo EVAU Madrid)** Calcula los siguientes límites, indicando la indeterminación y el método:
+              <ol type="a">
+                <li>$\displaystyle\lim_{x\to0}\dfrac{\tan x - x}{x^3}$</li>
+                <li>$\displaystyle\lim_{x\to+\infty}\dfrac{e^x}{x^2}$</li>
+                <li>$\displaystyle\lim_{x\to0}\dfrac{\ln(1+x)}{x}$</li>
+              </ol>
+              <div class="solution">
+                <p>**Solución:**</p>
+                <p>**a)** $\dfrac{0}{0}$. L'H: $\lim\dfrac{\sec^2x-1}{3x^2}=\lim\dfrac{\tan^2x}{3x^2}$. L'H: $\lim\dfrac{2\tan x\sec^2x}{6x}$. L'H: en $x=0$: $\dfrac{0}{0}$.<br>
+                Alternativamente, usando $\tan^2x\approx x^2$ cerca de $0$: $\lim\dfrac{x^2}{3x^2}=\dfrac{1}{3}$.<br>
+                Resultado: $\dfrac{1}{3}$.</p>
+                <p>**b)** $\dfrac{\infty}{\infty}$. L'H: $\lim\dfrac{e^x}{2x}$. $\dfrac{\infty}{\infty}$. L'H: $\lim\dfrac{e^x}{2}=+\infty$.</p>
+                <p>**c)** $\dfrac{0}{0}$. L'H: $\lim_{x\to0}\dfrac{\frac{1}{1+x}}{1}=\dfrac{1}{1}=1$.</p>
+              </div>
+            </li>
+          </ol>
+
+          <div class="test-grid">
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>La regla de L'Hôpital se puede aplicar cuando el límite presenta la forma:</p>
+              <ul>
+                <li data-letter="a">$0+\infty$</li>
+                <li data-letter="b">$\dfrac{0}{0}$ o $\dfrac{\infty}{\infty}$</li>
+                <li data-letter="c">$0\cdot0$</li>
+                <li data-letter="d">$1+\infty$</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: b) L'Hôpital se aplica directamente a las formas indeterminadas $\dfrac{0}{0}$ y $\dfrac{\infty}{\infty}$.</p>
+            </div>
+
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>Al aplicar L'Hôpital a $\lim\dfrac{f(x)}{g(x)}$, se deriva:</p>
+              <ul>
+                <li data-letter="a">El cociente completo $\dfrac{f}{g}$</li>
+                <li data-letter="b">El numerador $f$ y el denominador $g$ por separado, formando $\dfrac{f'}{g'}$</li>
+                <li data-letter="c">Solo el numerador</li>
+                <li data-letter="d">El cociente usando la regla del cociente</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: b) L'Hôpital indica que $\lim\dfrac{f(x)}{g(x)}=\lim\dfrac{f'(x)}{g'(x)}$, derivando numerador y denominador por separado.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>7.6 Teoremas del cálculo diferencial</h3>
+
+          <h4>7.6.1 Teorema de Rolle: enunciado, condiciones e interpretación geométrica</h4>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto</h4>
+            <p>Verifica que $f(x)=x^3-3x$ satisface las hipótesis del teorema de Rolle en $[-\sqrt{3},\sqrt{3}]$ y halla el punto $c$ garantizado.</p>
+            <div class="solution">
+              <p>**Verificación de hipótesis:**</p>
+              <p>1. **Continuidad en $[-\sqrt{3},\sqrt{3}]$:** $f$ es polinómica → continua en $\mathbb{R}$.</p>
+              <p>2. **Derivabilidad en $(-\sqrt{3},\sqrt{3})$:** $f$ polinómica → derivable en $\mathbb{R}$.</p>
+              <p>3. **Igual valor en los extremos:**<br>
+              $$f(-\sqrt{3})=(-\sqrt{3})^3-3(-\sqrt{3})=-3\sqrt{3}+3\sqrt{3}=0$$<br>
+              $$f(\sqrt{3})=(\sqrt{3})^3-3\sqrt{3}=3\sqrt{3}-3\sqrt{3}=0$$<br>
+              $f(-\sqrt{3})=f(\sqrt{3})=0$ ✓</p>
+              <p>**Conclusión del teorema de Rolle:** Existe $c\in(-\sqrt{3},\sqrt{3})$ tal que $f'(c)=0$.</p>
+              <p>**Hallar $c$:**</p>
+              <p>$$f'(x)=3x^2-3=0 \Rightarrow x^2=1 \Rightarrow x=\pm1$$</p>
+              <p>Ambos $\pm1\in(-\sqrt{3},\sqrt{3})$ ✓. Los valores son $c=-1$ y $c=1$.</p>
+              <p>**Interpretación geométrica:** En los puntos $(-1, 2)$ y $(1, -2)$, la tangente a la curva es horizontal (paralela a la cuerda que une los extremos, que también es horizontal).</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel Básico</span>
+
+          <ol>
+            <li>¿Se puede aplicar el teorema de Rolle a $f(x)=x^2-4$ en $[-2,2]$? Si sí, halla $c$.
+              <div class="solution">
+                <p>**Solución:** $f(-2)=0=f(2)$, $f$ continua y derivable. Sí. $f'(x)=2x=0 \Rightarrow c=0\in(-2,2)$ ✓.</p>
+              </div>
+            </li>
+            <li>¿Puede aplicarse Rolle a $g(x)=|x|$ en $[-1,1]$?
+              <div class="solution">
+                <p>**Solución:** $g(-1)=1=g(1)$, $g$ continua en $[-1,1]$. Pero $g$ **no es derivable** en $x=0\in(-1,1)$. Las hipótesis de Rolle **no se cumplen**; no se puede aplicar directamente.</p>
+              </div>
+            </li>
+          </ol>
+
+          <span class="level-badge">Nivel Intermedio</span>
+
+          <ol start="3">
+            <li>Comprueba que $f(x)=\sin x$ satisface Rolle en $[0,\pi]$ y halla $c$.
+              <div class="solution">
+                <p>**Solución:** $f(0)=0=f(\pi)$, $\sin$ continua y derivable. $f'(x)=\cos x=0 \Rightarrow x=\pi/2\in(0,\pi)$. $c=\pi/2$.</p>
+              </div>
+            </li>
+            <li>Prueba que $f(x)=e^x\sin x$ tiene al menos un cero de $f'$ en $(0,\pi)$.
+              <div class="solution">
+                <p>**Solución:** $f(0)=0$ y $f(\pi)=e^\pi\sin\pi=0$. $f$ continua y derivable. Por Rolle, $\exists c\in(0,\pi)$: $f'(c)=0$.</p>
+              </div>
+            </li>
+          </ol>
+
+          <span class="level-badge">Nivel EVAU</span>
+
+          <ol start="5">
+            <li>**(Estilo EVAU Madrid)** Sea $f(x)=x^3-x^2-x+1$.
+              <ol type="a">
+                <li>Factoriza $f(x)$ o halla sus raíces.</li>
+                <li>Verifica que se cumplen las hipótesis de Rolle entre dos raíces consecutivas.</li>
+                <li>Halla los valores de $c$ garantizados por Rolle entre cada par de raíces.</li>
+              </ol>
+              <div class="solution">
+                <p>**Solución:**</p>
+                <p>**a)** $f(1)=1-1-1+1=0$, $f(-1)=-1-1+1+1=0$. Raíces: $x=1$ y $x=-1$.<br>
+                $f(x)=(x-1)(x+1)(x-1)=(x-1)^2(x+1)$. Raíces: $x=-1$ (simple) y $x=1$ (doble).</p>
+                <p>**b)** En $[-1,1]$: $f(-1)=0=f(1)$, $f$ continua y derivable (polinomio). Hipótesis de Rolle cumplidas ✓.</p>
+                <p>**c)** $f'(x)=3x^2-2x-1=(3x+1)(x-1)=0 \Rightarrow x=-\dfrac{1}{3}$ o $x=1$.<br>
+                $c=-\dfrac{1}{3}\in(-1,1)$ ✓ (el otro valor $x=1$ es el extremo, no el interior).</p>
+              </div>
+            </li>
+          </ol>
+
+          <div class="test-grid">
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>El teorema de Rolle garantiza la existencia de $c\in(a,b)$ con $f'(c)=0$ si:</p>
+              <ul>
+                <li data-letter="a">$f(a)=f(b)$, $f$ continua en $[a,b]$ y derivable en $(a,b)$</li>
+                <li data-letter="b">$f(a)\neq f(b)$ y $f$ es derivable</li>
+                <li data-letter="c">$f'(a)=f'(b)=0$</li>
+                <li data-letter="d">$f$ es creciente en $(a,b)$</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: a) Estas son exactamente las tres hipótesis del teorema de Rolle.</p>
+            </div>
+
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>Si $f$ satisface las hipótesis de Rolle en $[a,b]$, entonces existe al menos un $c\in(a,b)$ con:</p>
+              <ul>
+                <li data-letter="a">$f(c)=0$</li>
+                <li data-letter="b">$f(c)=\dfrac{f(a)+f(b)}{2}$</li>
+                <li data-letter="c">$f'(c)=0$</li>
+                <li data-letter="d">$f''(c)=0$</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: c) La conclusión de Rolle es la existencia de un punto con derivada nula, no la nulidad de la función.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>7.7 Optimización</h3>
+
+          <h4>7.7.1 Extremos relativos: condición necesaria y criterio de la segunda derivada</h4>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto</h4>
+            <p>Halla los extremos relativos de $f(x)=x^4-4x^3+4x^2$ mediante la condición necesaria y el criterio de la segunda derivada.</p>
+            <div class="solution">
+              <p>**Paso 1 — Derivada primera:**</p>
+              <p>$$f'(x) = 4x^3-12x^2+8x = 4x(x^2-3x+2) = 4x(x-1)(x-2)$$</p>
+              <p>**Paso 2 — Puntos críticos** ($f'=0$): $x=0$, $x=1$, $x=2$.</p>
+              <p>**Paso 3 — Segunda derivada:**</p>
+              <p>$$f''(x) = 12x^2-24x+8$$</p>
+              <p>**Paso 4 — Criterio de la segunda derivada:**</p>
+              <table>
+                <tr><td>$x$</td><td>$f'(x)=0$</td><td>$f''(x)$</td><td>Tipo</td></tr>
+                <tr><td>$0$</td><td>✓</td><td>$f''(0)=8>0$</td><td>Mínimo relativo</td></tr>
+                <tr><td>$1$</td><td>✓</td><td>$f''(1)=12-24+8=-4<0$</td><td>Máximo relativo</td></tr>
+                <tr><td>$2$</td><td>✓</td><td>$f''(2)=48-48+8=8>0$</td><td>Mínimo relativo</td></tr>
+              </table>
+              <p>**Valores:** $f(0)=0$, $f(1)=1-4+4=1$, $f(2)=16-32+16=0$.</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel Básico</span>
+
+          <ol>
+            <li>Halla los extremos de $f(x)=x^2-6x+5$.
+              <div class="solution">
+                <p>**Solución:** $f'(x)=2x-6=0 \Rightarrow x=3$. $f''(3)=2>0$ → mínimo relativo en $(3,-4)$.</p>
+              </div>
+            </li>
+            <li>Halla los extremos de $g(x)=-x^3+3x$.
+              <div class="solution">
+                <p>**Solución:** $g'(x)=-3x^2+3=0 \Rightarrow x=\pm1$. $g''(x)=-6x$.<br>
+                $g''(1)=-6<0$ → máximo en $(1,2)$. $g''(-1)=6>0$ → mínimo en $(-1,-2)$.</p>
+              </div>
+            </li>
+          </ol>
+
+          <span class="level-badge">Nivel Intermedio</span>
+
+          <ol start="3">
+            <li>Halla los extremos de $h(x)=xe^{-x}$.
+              <div class="solution">
+                <p>**Solución:** $h'(x)=e^{-x}-xe^{-x}=e^{-x}(1-x)=0 \Rightarrow x=1$ (ya que $e^{-x}>0$).<br>
+                $h''(x)=-e^{-x}(1-x)+e^{-x}(-1)=e^{-x}(x-2)$.<br>
+                $h''(1)=e^{-1}(-1)<0$ → máximo relativo en $(1,e^{-1})$.</p>
+              </div>
+            </li>
+            <li>Halla los extremos de $f(x)=\ln x - x$ para $x>0$.
+              <div class="solution">
+                <p>**Solución:** $f'(x)=\dfrac{1}{x}-1=0 \Rightarrow x=1$.<br>
+                $f''(x)=-\dfrac{1}{x^2}$; $f''(1)=-1<0$ → máximo relativo en $(1,-1)$.</p>
+              </div>
+            </li>
+          </ol>
+
+          <span class="level-badge">Nivel EVAU</span>
+
+          <ol start="5">
+            <li>**(Estilo EVAU Madrid)** Sea $f(x)=\dfrac{x^2}{e^x}$.
+              <ol type="a">
+                <li>Halla $f'(x)$ y los puntos críticos.</li>
+                <li>Clasifica los extremos usando el criterio de la segunda derivada.</li>
+                <li>Determina el valor máximo/mínimo.</li>
+              </ol>
+              <div class="solution">
+                <p>**Solución:**</p>
+                <p>**a)** $f'(x)=\dfrac{2x\cdot e^x-x^2\cdot e^x}{e^{2x}}=\dfrac{e^x\cdot x(2-x)}{e^{2x}}=\dfrac{x(2-x)}{e^x}$.<br>
+                $f'(x)=0 \Leftrightarrow x=0$ o $x=2$.</p>
+                <p>**b)** $f''(x)=\dfrac{(2-2x)e^x-x(2-x)e^x}{e^{2x}}=\dfrac{(2-2x-2x+x^2)}{e^x}=\dfrac{x^2-4x+2}{e^x}$.<br>
+                $f''(0)=\dfrac{2}{1}=2>0$ → mínimo relativo en $x=0$.<br>
+                $f''(2)=\dfrac{4-8+2}{e^2}=\dfrac{-2}{e^2}<0$ → máximo relativo en $x=2$.</p>
+                <p>**c)** $f(0)=0$ (mínimo relativo); $f(2)=\dfrac{4}{e^2}$ (máximo relativo).</p>
+              </div>
+            </li>
+          </ol>
+
+          <div class="test-grid">
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>La condición $f'(a)=0$ en un punto interior del dominio es:</p>
+              <ul>
+                <li data-letter="a">Suficiente para que $a$ sea un extremo relativo</li>
+                <li data-letter="b">Necesaria pero no suficiente para que $a$ sea un extremo relativo</li>
+                <li data-letter="c">Necesaria y suficiente para un extremo relativo</li>
+                <li data-letter="d">Innecesaria para estudiar extremos</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: b) $f'(a)=0$ es condición necesaria; puede ocurrir en puntos de inflexión (ej. $f(x)=x^3$ en $x=0$).</p>
+            </div>
+
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>Si $f'(a)=0$ y $f''(a)>0$, entonces $f$ tiene en $x=a$:</p>
+              <ul>
+                <li data-letter="a">Un máximo relativo</li>
+                <li data-letter="b">Un mínimo relativo</li>
+                <li data-letter="c">Un punto de inflexión</li>
+                <li data-letter="d">Una asíntota</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: b) Por el criterio de la segunda derivada, $f''(a)>0$ indica mínimo relativo.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h4>7.7.3 Planteamiento y resolución de problemas de optimización en contextos reales</h4>
+
+          <div class="exercise-block">
+            <h4>Ejercicio Resuelto</h4>
+            <p>Una granja rectangular va a cercarse usando $120$ m de valla. Un lado linda con un río y no necesita valla. ¿Qué dimensiones maximizan el área?</p>
+            <div class="solution">
+              <p>**Variables:** Sea $x$ el lado perpendicular al río (dos lados) e $y$ el lado paralelo al río (un lado).</p>
+              <p>**Restricción:** $2x+y=120 \Rightarrow y=120-2x$.</p>
+              <p>**Función objetivo (área):**</p>
+              <p>$$A(x) = x\cdot y = x(120-2x) = 120x-2x^2, \quad x\in(0,60)$$</p>
+              <p>**Optimizar:**</p>
+              <p>$$A'(x) = 120-4x = 0 \Rightarrow x=30$$</p>
+              <p>$$A''(x)=-4<0 \quad \Rightarrow \quad x=30 \text{ es un máximo.}$$</p>
+              <p>**Dimensiones óptimas:** $x=30$ m, $y=120-60=60$ m. **Área máxima:** $A=30\times60=1800$ m².</p>
+            </div>
+          </div>
+
+          <span class="level-badge">Nivel Básico</span>
+
+          <ol>
+            <li>La suma de dos números positivos es $20$. ¿Cuál es el máximo de su producto?
+              <div class="solution">
+                <p>**Solución:** Sea $x$ e $y=20-x$. $P=x(20-x)=20x-x^2$.<br>
+                $P'=20-2x=0 \Rightarrow x=10$. $P(10)=100$. Máximo producto: $100$ (cuando $x=y=10$).</p>
+              </div>
+            </li>
+            <li>Se quiere construir una caja cúbica de volumen $8$ m³. Minimiza la superficie total.
+              <div class="solution">
+                <p>**Solución:** Cubo de lado $a$: $V=a^3=8 \Rightarrow a=2$. Superficie $=6a^2=24$ m².</p>
+              </div>
+            </li>
+          </ol>
+
+          <span class="level-badge">Nivel Intermedio</span>
+
+          <ol start="3">
+            <li>Encuentra el rectángulo de perímetro $P=40$ cm con área máxima.
+              <div class="solution">
+                <p>**Solución:** $2(x+y)=40$, $y=20-x$. $A=x(20-x)=20x-x^2$. $A'=20-2x=0\Rightarrow x=10$. Cuadrado de lado $10$, área $100$ cm².</p>
+              </div>
+            </li>
+            <li>Un cable de longitud $L$ se corta en dos trozos; con uno se forma un cuadrado y con el otro un círculo. ¿Cómo se corta para minimizar la suma de áreas?
+              <div class="solution">
+                <p>**Solución:** Sea $x$ el lado del cuadrado: $4x+2\pi r=L$, $r=\dfrac{L-4x}{2\pi}$.<br>
+                $A=x^2+\pi r^2=x^2+\dfrac{(L-4x)^2}{4\pi}$.<br>
+                $A'=2x-\dfrac{8(L-4x)}{4\pi}=2x-\dfrac{2(L-4x)}{\pi}=0$.<br>
+                $\pi x=(L-4x) \Rightarrow x(\pi+4)=L \Rightarrow x=\dfrac{L}{\pi+4}$.</p>
+              </div>
+            </li>
+          </ol>
+
+          <span class="level-badge">Nivel EVAU</span>
+
+          <ol start="5">
+            <li>**(Estilo EVAU Madrid)** Una lata cilíndrica de refresco tiene volumen $330$ cm³. Halla las dimensiones del cilindro (radio $r$ y altura $h$) que minimizan la cantidad de material (superficie total).
+              <p>**Nota:** $V=\pi r^2 h=330$; $S=2\pi r^2+2\pi rh$.</p>
+              <div class="solution">
+                <p>**Solución:**</p>
+                <p>De la restricción: $h=\dfrac{330}{\pi r^2}$.</p>
+                <p>$S(r)=2\pi r^2+2\pi r\cdot\dfrac{330}{\pi r^2}=2\pi r^2+\dfrac{660}{r}$.</p>
+                <p>$S'(r)=4\pi r-\dfrac{660}{r^2}=0 \Rightarrow 4\pi r^3=660 \Rightarrow r^3=\dfrac{165}{\pi} \Rightarrow r=\sqrt[3]{\dfrac{165}{\pi}}\approx3{,}74$ cm.</p>
+                <p>$h=\dfrac{330}{\pi r^2}\approx\dfrac{330}{\pi\cdot13{,}98}\approx7{,}51$ cm.</p>
+                <p>Verificación: $h\approx2r$ (altura igual al diámetro, resultado clásico de la lata óptima). $S''=4\pi+\dfrac{1320}{r^3}>0$ → mínimo ✓.</p>
+              </div>
+            </li>
+          </ol>
+
+          <div class="test-grid">
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>En un problema de optimización, la "función objetivo" es:</p>
+              <ul>
+                <li data-letter="a">La restricción del problema</li>
+                <li data-letter="b">La función que se quiere maximizar o minimizar</li>
+                <li data-letter="c">La derivada del área</li>
+                <li data-letter="d">El límite de la función en los extremos</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: b) La función objetivo es la que se desea optimizar; la restricción establece la condición que une las variables.</p>
+            </div>
+
+            <div class="test-item">
+              <h4>Test de Opción Múltiple</h4>
+              <p>En el problema de la caja sin tapa de volumen fijo $V=1$, la superficie mínima se obtiene cuando:</p>
+              <ul>
+                <li data-letter="a">La caja es un cubo</li>
+                <li data-letter="b">La base es un cuadrado y $h=\dfrac{a}{2}$ (mitad del lado)</li>
+                <li data-letter="c">La caja es más alta que ancha</li>
+                <li data-letter="d">La relación $h/a=1$ (cubo)</li>
+              </ul>
+              <p class="correct-answer">Respuesta correcta: b) Para una caja sin tapa con base cuadrada, el mínimo de material se obtiene cuando $h=a/2$, es decir, la altura es la mitad del lado de la base.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
