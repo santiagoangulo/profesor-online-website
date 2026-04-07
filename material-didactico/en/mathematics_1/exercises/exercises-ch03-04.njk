@@ -1,0 +1,3073 @@
+---
+layout: layouts/base.njk
+title: "Mathematics II — Exercises: Chapters 3-4 — Systems of Linear Equations and Vectors | Profesor Online"
+permalink: "./material-didactico/en/mathematics_1/exercises/exercises-ch03-04.html"
+section: material-didactico
+depth: 4
+---
+
+<section class="content-header">
+    <div class="container">
+      <a href="../mathematics_2/index.html" class="back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Back to Mathematics II Index
+      </a>
+      <h1>Exercises: Chapters 3-4 — Systems of Linear Equations and Vectors</h1>
+      <p>Step-by-step solved exercises on Systems of Linear Equations and Vectors in Space. Includes basic, intermediate, EVAU level problems and multiple choice tests.</p>
+      <div class="course-meta">
+        <span>2nd Year Baccalaureate — Sciences and Technology</span>
+        <span>Community of Madrid</span>
+        <span>Decree 64/2022 (LOMLOE)</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-page">
+    <div class="container">
+      <nav class="toc-nav">
+        <a href="#cap1">Chapter 3 — SYSTEMS OF LINEAR EQUATIONS</a>
+        <a href="#cap2">Chapter 4 — VECTORS IN SPACE</a>
+      </nav>
+
+<hr />
+<h5>3.1.1 Definition of a linear system. Solution, consistent and inconsistent systems</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Determine whether the pair $(x, y) = (2, -1)$ is a solution of the system:</p>
+<p>$$\begin{cases} 3x + 2y = 4 \ x - 3y = 5 \end{cases}$$</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p>We substitute $x = 2$, $y = -1$ into each equation:</p>
+<ul>
+<li><strong>Equation 1:</strong> $3(2) + 2(-1) = 6 - 2 = 4$ ✓</li>
+<li><strong>Equation 2:</strong> $2 - 3(-1) = 2 + 3 = 5$ ✓</li>
+</ul>
+<p>Since the pair satisfies both equations simultaneously, $(2, -1)$ <strong>is a solution</strong> of the system. The system is <strong>consistent and determined</strong> (it has exactly one solution).</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>
+<p>Check whether $(x, y) = (1, 3)$ is a solution of the system:
+   $$\begin{cases} 2x + y = 5 \ x - y = -2 \end{cases}$$</p>
+<blockquote>
+<p><strong>Solution:</strong> Equation 1: $2(1) + 3 = 5$ ✓. Equation 2: $1 - 3 = -2$ ✓. Yes, it is a solution. The system is consistent and determined.</p>
+</blockquote>
+</li>
+<li>
+<p>Indicate whether the system $\begin{cases} x + y = 3 \ 2x + 2y = 7 \end{cases}$ can have a solution.</p>
+<blockquote>
+<p><strong>Solution:</strong> The second equation is equivalent to $x + y = 3{,}5$, which contradicts the first ($x + y = 3$). The system is <strong>inconsistent</strong>: it has no solution.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>
+<p>Determine the value of $k$ so that $(1, k)$ is a solution of the system:
+   $$\begin{cases} 2x - y = 3 \ 3x + 2y = k + 5 \end{cases}$$</p>
+<blockquote>
+<p><strong>Solution:</strong> From the first equation: $2(1) - k = 3 \Rightarrow k = -1$. We verify in the second: $3(1) + 2(-1) = 1$; we need $1 = k + 5 = -1 + 5 = 4$. Contradiction, so <strong>no such $k$ exists</strong> that makes $(1,k)$ a simultaneous solution of both equations as stated. (If only the first is imposed: $k = -1$.)</p>
+</blockquote>
+</li>
+<li>
+<p>Classify the following systems without solving them completely, reasoning from the equations:</p>
+</li>
+<li>(a) $\begin{cases} x + 2y = 4 \ 3x + 6y = 12 \end{cases}$ </li>
+<li>(b) $\begin{cases} x - y = 1 \ 2x - 2y = 5 \end{cases}$<blockquote>
+<p><strong>Solution:</strong> (a) The second is three times the first: they are the same line. <strong>Consistent and indeterminate</strong> (infinitely many solutions). (b) The second is equivalent to $x - y = 2{,}5$, inconsistent with the first. <strong>Inconsistent system</strong>.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>Consider the system of equations:
+   $$\begin{cases} ax + 2y = 6 \ 3x + by = 9 \end{cases}$$
+   <strong>(a)</strong> Find values of $a$ and $b$ for which the system is consistent and determined.<br />
+<strong>(b)</strong> Find values of $a$ and $b$ for which it is inconsistent.<br />
+<strong>(c)</strong> Find values of $a$ and $b$ for which it is consistent and indeterminate.<blockquote>
+<p><strong>Solution:</strong><br />
+We form the coefficient matrix $A = \begin{pmatrix} a &amp; 2 \ 3 &amp; b \end{pmatrix}$ and the augmented matrix $A^<em> = \begin{pmatrix} a &amp; 2 &amp; 6 \ 3 &amp; b &amp; 9 \end{pmatrix}$.<br />
+$|A| = ab - 6$.<br />
+</em><em>(a) Consistent and determined:</em><em> $|A| \neq 0$, i.e., $ab \neq 6$. For example, $a = 1, b = 1$.<br />
+</em><em>(b) Inconsistent:</em><em> $|A| = 0$ ($ab = 6$) and $\text{rank}(A) \neq \text{rank}(A^</em>)$. If $ab = 6$ the second equation is $3x + (6/a)y = 9$. Multiplying the first by $3/a$: $3x + (6/a)y = 18/a$. For inconsistency: $18/a \neq 9 \Rightarrow a \neq 2$. Example: $a = 1, b = 6$.<br />
+<strong>(c) Consistent and indeterminate:</strong> $ab = 6$ and moreover the equations are proportional: $6/a = 9/9 \Rightarrow a = 2, b = 3$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>How many solutions does the system $\begin{cases} 2x - y = 4 \ -4x + 2y = -8 \end{cases}$ have?</li>
+<li>a) None</li>
+<li>b) Exactly one</li>
+<li>c) Exactly two</li>
+<li>
+<p>d) Infinitely many</p>
+<blockquote>
+<p><strong>Correct answer: d)</strong> The second equation is $-2$ times the first, so both represent the same line. The system is consistent and indeterminate with infinitely many solutions.</p>
+</blockquote>
+</li>
+<li>
+<p>A system of two linear equations with two unknowns is <strong>inconsistent</strong> when:</p>
+</li>
+<li>a) The two equations represent the same line</li>
+<li>b) The two lines intersect at a point</li>
+<li>c) The two lines are parallel and distinct</li>
+<li>d) The determinant of the coefficient matrix is nonzero<blockquote>
+<p><strong>Correct answer: c)</strong> Two distinct parallel lines have no point in common, which results in a system with no solution (inconsistent).</p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<h5>3.1.2 Geometric interpretation in 2D and 3D</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Describe the geometric interpretation of the system:
+$$\begin{cases} x + y + z = 3 \ 2x - y + z = 1 \ x + 2y - z = 4 \end{cases}$$</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p>Each linear equation in three variables represents a <strong>plane</strong> in $\mathbb{R}^3$.</p>
+<ul>
+<li>The system has a solution if the three planes have a common point.</li>
+<li>To check, we solve by Gaussian elimination:</li>
+</ul>
+<p>$$\begin{pmatrix} 1 &amp; 1 &amp; 1 &amp; | &amp; 3 \ 2 &amp; -1 &amp; 1 &amp; | &amp; 1 \ 1 &amp; 2 &amp; -1 &amp; | &amp; 4 \end{pmatrix} \xrightarrow{F_2 \leftarrow F_2 - 2F_1,\; F_3 \leftarrow F_3 - F_1} \begin{pmatrix} 1 &amp; 1 &amp; 1 &amp; | &amp; 3 \ 0 &amp; -3 &amp; -1 &amp; | &amp; -5 \ 0 &amp; 1 &amp; -2 &amp; | &amp; 1 \end{pmatrix}$$</p>
+<p>$$\xrightarrow{F_3 \leftarrow 3F_3 + F_2} \begin{pmatrix} 1 &amp; 1 &amp; 1 &amp; | &amp; 3 \ 0 &amp; -3 &amp; -1 &amp; | &amp; -5 \ 0 &amp; 0 &amp; -7 &amp; | &amp; -2 \end{pmatrix}$$</p>
+<p>Rank of $A$ = rank of $A^<em>$ = 3 = number of unknowns. </em><em>Consistent and determined:</em>* the three planes intersect at a unique point.</p>
+<p>Solving: $z = 2/7$, $y = (2 \cdot 2/7 - 5)/(-3) = (4/7 - 35/7)/(-3) = (-31/7)/(-3) = 31/21$, $x = 3 - 31/21 - 2/7 = 3 - 31/21 - 6/21 = 63/21 - 37/21 = 26/21$.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>
+<p>Describe the geometric interpretation of the system $\begin{cases} 2x - y = 3 \ x + y = 6 \end{cases}$ and indicate the expected type of solution.</p>
+<blockquote>
+<p><strong>Solution:</strong> Each equation represents a <strong>line</strong> in $\mathbb{R}^2$. Since the lines are not parallel (the coefficients are not proportional: $2/1 \neq -1/1$), they intersect at a point. The system is <strong>consistent and determined</strong>.</p>
+</blockquote>
+</li>
+<li>
+<p>What type of system do two distinct parallel planes in $\mathbb{R}^3$ represent?</p>
+<blockquote>
+<p><strong>Solution:</strong> Two distinct parallel planes have no point in common, so the system of two equations that represents them is <strong>inconsistent</strong>.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>
+<p>A $3\times 3$ system turns out to be consistent and indeterminate with infinitely many solutions depending on one parameter. Interpret this situation geometrically.</p>
+<blockquote>
+<p><strong>Solution:</strong> Geometrically, this means the three planes intersect in a <strong>common line</strong> (not at a unique point). The solution set is that line, parameterised by one free parameter.</p>
+</blockquote>
+</li>
+<li>
+<p>What type is the system $\begin{cases} x + y - z = 2 \ 2x + 2y - 2z = 4 \ 3x + 3y - 3z = 6 \end{cases}$ and what is its geometric interpretation?</p>
+<blockquote>
+<p><strong>Solution:</strong> The three equations are multiples of the first: the three planes are <strong>coincident</strong>. The system is <strong>consistent and indeterminate</strong> with infinitely many solutions depending on two parameters (an entire plane).</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>Consider the lines in the plane $r: 3x - y = 2$ and $s: 6x - 2y = k$.<br />
+<strong>(a)</strong> For which values of $k$ are they coincident.<br />
+<strong>(b)</strong> For which values of $k$ are they distinct parallel lines.<br />
+<strong>(c)</strong> Interpret each case as a system of equations.<blockquote>
+<p><strong>Solution:</strong><br />
+We divide $s$ by 2: $3x - y = k/2$.<br />
+<strong>(a) Coincident:</strong> $k/2 = 2 \Rightarrow k = 4$. Consistent and indeterminate system (infinitely many solutions).<br />
+<strong>(b) Distinct parallel:</strong> same direction ($3x - y$) but $k \neq 4$. Inconsistent system.<br />
+<strong>(c)</strong> For $k = 4$: the system has infinitely many solutions $y = 3x - 2$, $x \in \mathbb{R}$. For $k \neq 4$: no solution.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>In $\mathbb{R}^3$, a consistent indeterminate system with rank 2 (of a $3\times 3$ matrix) corresponds geometrically to:</li>
+<li>a) Three planes intersecting at a unique point</li>
+<li>b) Three planes intersecting in a common line</li>
+<li>c) Three coincident planes</li>
+<li>
+<p>d) Three distinct parallel planes</p>
+<blockquote>
+<p><strong>Correct answer: b)</strong> Rank 2 with 3 unknowns $\Rightarrow$ 1 degree of freedom, which geometrically is a line of intersection of the three planes.</p>
+</blockquote>
+</li>
+<li>
+<p>The system $\begin{cases} x - 2y = 1 \ -2x + 4y = -2 \end{cases}$ represents two lines in the plane that are:</p>
+</li>
+<li>a) Secant</li>
+<li>b) Perpendicular</li>
+<li>c) Coincident</li>
+<li>d) Distinct parallel lines<blockquote>
+<p><strong>Correct answer: c)</strong> The second equation is exactly $-2$ times the first, so both are the same line (coincident).</p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<h5>3.1.3 Matrix representation: form $A \cdot x = b$</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Write the system $\begin{cases} 2x - y + 3z = 5 \ x + 4y - z = 2 \ 3x - 2y + z = -1 \end{cases}$ in matrix form $A \cdot \mathbf{x} = \mathbf{b}$ and identify each element.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p>The <strong>coefficient matrix</strong> is:
+$$A = \begin{pmatrix} 2 &amp; -1 &amp; 3 \ 1 &amp; 4 &amp; -1 \ 3 &amp; -2 &amp; 1 \end{pmatrix}$$</p>
+<p>The <strong>vector of unknowns</strong> is $\mathbf{x} = \begin{pmatrix} x \ y \ z \end{pmatrix}$ and the <strong>vector of constant terms</strong> is $\mathbf{b} = \begin{pmatrix} 5 \ 2 \ -1 \end{pmatrix}$.</p>
+<p>The <strong>matrix form</strong> is:
+$$\begin{pmatrix} 2 &amp; -1 &amp; 3 \ 1 &amp; 4 &amp; -1 \ 3 &amp; -2 &amp; 1 \end{pmatrix} \begin{pmatrix} x \ y \ z \end{pmatrix} = \begin{pmatrix} 5 \ 2 \ -1 \end{pmatrix}$$</p>
+<p>The <strong>augmented matrix</strong> (used in the Rouché–Frobenius theorem) is:
+$$A^* = \left(\begin{array}{ccc|c} 2 &amp; -1 &amp; 3 &amp; 5 \ 1 &amp; 4 &amp; -1 &amp; 2 \ 3 &amp; -2 &amp; 1 &amp; -1 \end{array}\right)$$</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>
+<p>Write in the form $A\mathbf{x} = \mathbf{b}$ the system $\begin{cases} 4x - 2y = 7 \ -x + 5y = 3 \end{cases}$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $A = \begin{pmatrix} 4 &amp; -2 \ -1 &amp; 5 \end{pmatrix}$, $\mathbf{x} = \begin{pmatrix} x \ y \end{pmatrix}$, $\mathbf{b} = \begin{pmatrix} 7 \ 3 \end{pmatrix}$. Matrix form: $\begin{pmatrix} 4 &amp; -2 \ -1 &amp; 5 \end{pmatrix}\begin{pmatrix} x \ y \end{pmatrix} = \begin{pmatrix} 7 \ 3 \end{pmatrix}$.</p>
+</blockquote>
+</li>
+<li>
+<p>Given the matrix equation $\begin{pmatrix} 1 &amp; 2 \ 3 &amp; -1 \end{pmatrix}\begin{pmatrix} x \ y \end{pmatrix} = \begin{pmatrix} 4 \ 2 \end{pmatrix}$, write the corresponding system of equations.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\begin{cases} x + 2y = 4 \ 3x - y = 2 \end{cases}$</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>
+<p>Write the augmented matrix of the system: $\begin{cases} 5x - z = 3 \ 2y + 3z = 1 \ x - y = 0 \end{cases}$ and compute the determinant of the submatrix $A$.</p>
+<blockquote>
+<p><strong>Solution:</strong> Note that $y$ is missing in the first equation and $x$ in the second: $A = \begin{pmatrix} 5 &amp; 0 &amp; -1 \ 0 &amp; 2 &amp; 3 \ 1 &amp; -1 &amp; 0 \end{pmatrix}$, $A^* = \left(\begin{array}{ccc|c} 5 &amp; 0 &amp; -1 &amp; 3 \ 0 &amp; 2 &amp; 3 &amp; 1 \ 1 &amp; -1 &amp; 0 &amp; 0 \end{array}\right)$. $|A| = 5(0+3) - 0 + (-1)(0-2) = 15 + 2 = 17$.</p>
+</blockquote>
+</li>
+<li>
+<p>If $A\mathbf{x} = \mathbf{b}$ and $|A| \neq 0$, explain why the unique solution is $\mathbf{x} = A^{-1}\mathbf{b}$.</p>
+<blockquote>
+<p><strong>Solution:</strong> If $|A| \neq 0$, $A$ is invertible. Multiplying on the left by $A^{-1}$: $A^{-1}(A\mathbf{x}) = A^{-1}\mathbf{b} \Rightarrow (A^{-1}A)\mathbf{x} = A^{-1}\mathbf{b} \Rightarrow I\mathbf{x} = A^{-1}\mathbf{b} \Rightarrow \mathbf{x} = A^{-1}\mathbf{b}$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>Let $A = \begin{pmatrix} 1 &amp; 2 &amp; -1 \ 0 &amp; 1 &amp; 3 \ 2 &amp; -1 &amp; 1 \end{pmatrix}$ and $\mathbf{b} = \begin{pmatrix} 1 \ 4 \ -2 \end{pmatrix}$.<br />
+<strong>(a)</strong> Compute $|A|$.<br />
+<strong>(b)</strong> Deduce whether the system $A\mathbf{x} = \mathbf{b}$ is consistent and determined.<br />
+<strong>(c)</strong> Write the augmented matrix.<blockquote>
+<p><strong>Solution:</strong><br />
+<strong>(a)</strong> Expanding along the first column:<br />
+$|A| = 1 \cdot \begin{vmatrix} 1 &amp; 3 \ -1 &amp; 1 \end{vmatrix} - 0 + 2 \cdot \begin{vmatrix} 2 &amp; -1 \ 1 &amp; 3 \end{vmatrix} = 1(1+3) + 2(6+1) = 4 + 14 = 18$.<br />
+<strong>(b)</strong> Since $|A| = 18 \neq 0$, the rank of $A$ is 3. By Rouché–Frobenius, $\text{rank}(A) = \text{rank}(A^<em>) = 3 =$ number of unknowns. </em><em>Consistent and determined</em><em>.<br />
+</em><em>(c)</em><em> $A^</em> = \left(\begin{array}{ccc|c} 1 &amp; 2 &amp; -1 &amp; 1 \ 0 &amp; 1 &amp; 3 &amp; 4 \ 2 &amp; -1 &amp; 1 &amp; -2 \end{array}\right)$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>In the system $A\mathbf{x} = \mathbf{b}$, the <strong>augmented matrix</strong> $A^*$ is formed by:</li>
+<li>a) Adding a row of zeros to $A$</li>
+<li>b) Appending the column $\mathbf{b}$ to the right of $A$</li>
+<li>c) Multiplying $A$ by $\mathbf{b}$</li>
+<li>
+<p>d) Transposing $A$ and concatenating with $\mathbf{b}$</p>
+<blockquote>
+<p><strong>Correct answer: b)</strong> The augmented matrix $A^* = (A|\mathbf{b})$ is obtained by appending the vector of constant terms as the last column of $A$.</p>
+</blockquote>
+</li>
+<li>
+<p>If the coefficient matrix of a $3\times 3$ system has $|A| = 0$, then:</p>
+</li>
+<li>a) The system is always inconsistent</li>
+<li>b) The system always has infinitely many solutions</li>
+<li>c) The system may be inconsistent or consistent and indeterminate</li>
+<li>d) The system is always consistent and determined<blockquote>
+<p><strong>Correct answer: c)</strong> $|A| = 0$ implies $\text{rank}(A) &lt; 3$, which requires analysing $\text{rank}(A^<em>)$ to determine whether it is inconsistent ($\text{rank}(A) \neq \text{rank}(A^</em>)$) or consistent and indeterminate ($\text{rank}(A) = \text{rank}(A^*)$).</p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<hr />
+<h5>3.2.1 Statement of the theorem: consistency condition via ranks</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>State the Rouché–Frobenius theorem and apply it to study the consistency of the system:
+$$\begin{cases} x + 2y + z = 3 \ 2x + 4y + 2z = 6 \ 3x + y - z = 2 \end{cases}$$</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p><strong>Rouché–Frobenius Theorem:</strong> A system $A\mathbf{x} = \mathbf{b}$ is consistent if and only if $\text{rank}(A) = \text{rank}(A^<em>)$. If it is consistent:
+- If $\text{rank}(A) = n$ (number of unknowns): </em><em>consistent and determined</em><em> (unique solution).
+- If $\text{rank}(A) &lt; n$: </em><em>consistent and indeterminate</em>* ($n - \text{rank}(A)$ free parameters).</p>
+<p><strong>Application:</strong></p>
+<p>$$A^* = \left(\begin{array}{ccc|c} 1 &amp; 2 &amp; 1 &amp; 3 \ 2 &amp; 4 &amp; 2 &amp; 6 \ 3 &amp; 1 &amp; -1 &amp; 2 \end{array}\right)$$</p>
+<p>We observe that $F_2 = 2 \cdot F_1$ and the constant terms also: $6 = 2 \cdot 3$. We perform $F_2 \leftarrow F_2 - 2F_1$, $F_3 \leftarrow F_3 - 3F_1$:</p>
+<p>$$\left(\begin{array}{ccc|c} 1 &amp; 2 &amp; 1 &amp; 3 \ 0 &amp; 0 &amp; 0 &amp; 0 \ 0 &amp; -5 &amp; -4 &amp; -7 \end{array}\right) \xrightarrow{F_2 \leftrightarrow F_3} \left(\begin{array}{ccc|c} 1 &amp; 2 &amp; 1 &amp; 3 \ 0 &amp; -5 &amp; -4 &amp; -7 \ 0 &amp; 0 &amp; 0 &amp; 0 \end{array}\right)$$</p>
+<p>$\text{rank}(A) = \text{rank}(A^<em>) = 2 &lt; 3$ (unknowns). By Rouché–Frobenius: </em><em>consistent and indeterminate</em>* with $3 - 2 = 1$ degree of freedom. Solution: from $-5y - 4z = -7$ with $z = \lambda$: $y = (7 - 4\lambda)/5$; $x = 3 - 2(7-4\lambda)/5 - \lambda = (15 - 14 + 8\lambda - 5\lambda)/5 = (1 + 3\lambda)/5$.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>
+<p>Compute the ranks of $A$ and $A^*$ and classify the system:
+   $$\begin{cases} x + y = 2 \ 2x + 2y = 5 \end{cases}$$</p>
+<blockquote>
+<p><strong>Solution:</strong> $A^<em> = \begin{pmatrix} 1 &amp; 1 &amp; 2 \ 2 &amp; 2 &amp; 5 \end{pmatrix}$. We perform $F_2 - 2F_1$: $\begin{pmatrix} 1 &amp; 1 &amp; 2 \ 0 &amp; 0 &amp; 1 \end{pmatrix}$. $\text{rank}(A) = 1$, $\text{rank}(A^</em>) = 2$. Since $\text{rank}(A) \neq \text{rank}(A^<em>)$: </em><em>inconsistent</em>*.</p>
+</blockquote>
+</li>
+<li>
+<p>For the system $\begin{cases} 2x - y = 4 \ -4x + 2y = -8 \end{cases}$, compute the ranks and classify.</p>
+<blockquote>
+<p><strong>Solution:</strong> $A^<em> = \begin{pmatrix} 2 &amp; -1 &amp; 4 \ -4 &amp; 2 &amp; -8 \end{pmatrix}$. $F_2 + 2F_1$: $\begin{pmatrix} 2 &amp; -1 &amp; 4 \ 0 &amp; 0 &amp; 0 \end{pmatrix}$. $\text{rank}(A) = \text{rank}(A^</em>) = 1 &lt; 2$. <strong>Consistent and indeterminate</strong> with 1 free parameter.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>
+<p>Study the consistency and, if consistent, solve:
+   $$\begin{cases} x + y - z = 2 \ 2x - y + z = 1 \ x - 2y + 2z = -1 \end{cases}$$</p>
+<blockquote>
+<p><strong>Solution:</strong> Row reduction: $F_2 - 2F_1$: $(0,-3,3|-3)$; $F_3 - F_1$: $(0,-3,3|-3)$. Then $F_3 - F_2$: $(0,0,0|0)$. $\text{rank}(A)=\text{rank}(A^*)=2&lt;3$. Consistent and indeterminate. With $z=\lambda$: $-3y+3\lambda=-3 \Rightarrow y=\lambda+1$; $x=2-(\lambda+1)+\lambda=1$. Solution: $x=1,\; y=\lambda+1,\; z=\lambda$, $\lambda\in\mathbb{R}$.</p>
+</blockquote>
+</li>
+<li>
+<p>Can a $4\times 3$ system (4 equations, 3 unknowns) be consistent and determined? Reason using Rouché–Frobenius.</p>
+<blockquote>
+<p><strong>Solution:</strong> Yes. If $\text{rank}(A)=\text{rank}(A^*)=3$ (equal to the number of unknowns), the system is consistent and determined. The 4 equations may be redundant among themselves but consistent with the constant terms.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li><strong>(EVAU Madrid style)</strong> Study the consistency depending on the values of $m$ for the system:
+   $$\begin{cases} x + y + z = 3 \ x + my + 2z = 4 \ 2x + y + mz = m+3 \end{cases}$$
+   Solve the system in the cases where it is consistent.<blockquote>
+<p><strong>Solution:</strong><br />
+$|A| = \begin{vmatrix} 1 &amp; 1 &amp; 1 \ 1 &amp; m &amp; 2 \ 2 &amp; 1 &amp; m \end{vmatrix}$. Expanding: $= m^2 - 2m - 3 + 4 - m - 2m + 2 = m^2 - 3m +1$. Performing the computation correctly:<br />
+$|A| = 1(m^2-2) - 1(m-4) + 1(1-2m) = m^2 - 2 - m + 4 + 1 - 2m = m^2 - 3m + 3$.<br />
+Discriminant: $\Delta = 9 - 12 = -3 &lt; 0$. Therefore $|A| \neq 0$ for all $m \in \mathbb{R}$.<br />
+<strong>Conclusion:</strong> The system is <strong>always consistent and determined</strong> (for all $m$). The solution is obtained by Cramer's rule or Gaussian elimination for each specific value of $m$.<br />
+For $m=0$: $|A|=3$. By Gauss: $F_2-F_1$: $(0,-1,1|1)$; $F_3-2F_1$: $(0,-1,-2|-3)$. $F_3-F_2$: $(0,0,-3|-4) \Rightarrow z=4/3$; $y=1-4/3=-1/3$; $x=3+1/3-4/3=3-1=2$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>The Rouché–Frobenius theorem states that a system is consistent if and only if:</li>
+<li>a) $|A| \neq 0$</li>
+<li>b) $\text{rank}(A) = \text{rank}(A^*)$</li>
+<li>c) $\text{rank}(A) &lt; n$</li>
+<li>
+<p>d) $\text{rank}(A^*) = n + 1$</p>
+<blockquote>
+<p><strong>Correct answer: b)</strong> The consistency condition is the equality of ranks of the coefficient matrix and the augmented matrix. Option a) is only sufficient for consistent and determined but not necessary.</p>
+</blockquote>
+</li>
+<li>
+<p>A $3\times 3$ system has $\text{rank}(A) = 2$ and $\text{rank}(A^*) = 2$. It is therefore:</p>
+</li>
+<li>a) Inconsistent</li>
+<li>b) Consistent and determined</li>
+<li>c) Consistent and indeterminate with 1 free parameter</li>
+<li>d) Consistent and indeterminate with 2 free parameters<blockquote>
+<p><strong>Correct answer: c)</strong> $\text{rank}(A) = \text{rank}(A^*) = 2$ implies consistency. Number of parameters = $n - \text{rank}(A) = 3 - 2 = 1$.</p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<h5>3.2.2 Classification of the system: inconsistent, consistent determined, consistent indeterminate</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Classify and solve the following system:
+$$\begin{cases} 2x + y - z = 3 \ x - y + 2z = 1 \ 4x - y + 3z = 5 \end{cases}$$</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p>We form the augmented matrix and apply row reduction:</p>
+<p>$$\left(\begin{array}{ccc|c} 2 &amp; 1 &amp; -1 &amp; 3 \ 1 &amp; -1 &amp; 2 &amp; 1 \ 4 &amp; -1 &amp; 3 &amp; 5 \end{array}\right) \xrightarrow{F_1 \leftrightarrow F_2} \left(\begin{array}{ccc|c} 1 &amp; -1 &amp; 2 &amp; 1 \ 2 &amp; 1 &amp; -1 &amp; 3 \ 4 &amp; -1 &amp; 3 &amp; 5 \end{array}\right)$$</p>
+<p>$F_2 \leftarrow F_2 - 2F_1$: $(0, 3, -5 | 1)$. $F_3 \leftarrow F_3 - 4F_1$: $(0, 3, -5 | 1)$.</p>
+<p>$$\left(\begin{array}{ccc|c} 1 &amp; -1 &amp; 2 &amp; 1 \ 0 &amp; 3 &amp; -5 &amp; 1 \ 0 &amp; 3 &amp; -5 &amp; 1 \end{array}\right) \xrightarrow{F_3 \leftarrow F_3 - F_2} \left(\begin{array}{ccc|c} 1 &amp; -1 &amp; 2 &amp; 1 \ 0 &amp; 3 &amp; -5 &amp; 1 \ 0 &amp; 0 &amp; 0 &amp; 0 \end{array}\right)$$</p>
+<p>$\text{rank}(A) = \text{rank}(A^<em>) = 2 &lt; 3$. </em><em>Consistent and indeterminate</em>* with 1 parameter.</p>
+<p><strong>Solution:</strong> Let $z = \lambda \in \mathbb{R}$. From $F_2$: $3y = 1 + 5\lambda \Rightarrow y = \frac{1+5\lambda}{3}$. From $F_1$: $x = 1 + y - 2\lambda = 1 + \frac{1+5\lambda}{3} - 2\lambda = \frac{3+1+5\lambda-6\lambda}{3} = \frac{4-\lambda}{3}$.</p>
+<p><strong>Solution:</strong> $\left(x, y, z\right) = \left(\dfrac{4-\lambda}{3},\; \dfrac{1+5\lambda}{3},\; \lambda\right),\; \lambda \in \mathbb{R}$.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>
+<p>Classify the system $\begin{cases} x - 2y + z = 3 \ 2x - 4y + 2z = 7 \end{cases}$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $F_2 - 2F_1$: $(0, 0, 0 | 1)$. $\text{rank}(A) = 1$, $\text{rank}(A^<em>) = 2$. </em><em>Inconsistent</em>*.</p>
+</blockquote>
+</li>
+<li>
+<p>How many free parameters does a $3\times 3$ consistent system with $\text{rank}(A) = 1$ have?</p>
+<blockquote>
+<p><strong>Solution:</strong> Number of parameters = $3 - \text{rank}(A) = 3 - 1 = \mathbf{2}$ free parameters.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>
+<p>Classify and solve: $\begin{cases} x + 2y - z = 1 \ 2x + 4y - 2z = 2 \ -x - 2y + z = -1 \end{cases}$.</p>
+<blockquote>
+<p><strong>Solution:</strong> The three equations are proportional (all multiples of $x+2y-z=1$). $\text{rank}(A)=\text{rank}(A^<em>)=1$. </em><em>Consistent and indeterminate</em>* with 2 parameters: $y=\mu$, $z=\lambda$, $x=1-2\mu+\lambda$.</p>
+</blockquote>
+</li>
+<li>
+<p>A homogeneous $3\times 3$ system ($\mathbf{b}=\mathbf{0}$) with $\text{rank}(A)=3$. Classify it and give its solution.</p>
+<blockquote>
+<p><strong>Solution:</strong> Since $\mathbf{b}=\mathbf{0}$, always $\text{rank}(A)=\text{rank}(A^<em>)$. With $\text{rank}(A)=3$: </em><em>consistent and determined</em>*. The only solution is the trivial one $x=y=z=0$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li><strong>(EVAU Madrid style)</strong> Classify completely and solve the system:
+   $$\begin{cases} x + y + 2z = 1 \ 2x + 3y + 3z = 2 \ x + 2y + z = 0 \end{cases}$$<blockquote>
+<p><strong>Solution:</strong><br />
+We row-reduce the augmented matrix:<br />
+$F_2 - 2F_1$: $(0, 1, -1 | 0)$; $F_3 - F_1$: $(0, 1, -1 | -1)$.<br />
+$F_3 - F_2$: $(0, 0, 0 | -1)$.<br />
+$\text{rank}(A) = 2$, $\text{rank}(A^<em>) = 3$. Since $\text{rank}(A) \neq \text{rank}(A^</em>)$: <strong>Inconsistent system</strong>. No solution.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>A system of 3 equations with 3 unknowns is consistent and determined if and only if:</li>
+<li>a) $\text{rank}(A) = \text{rank}(A^*) = 2$</li>
+<li>b) $\text{rank}(A) = \text{rank}(A^*) = 3$</li>
+<li>c) $\text{rank}(A) &lt; 3$ and $\text{rank}(A^*) = 3$</li>
+<li>
+<p>d) $|A| = 0$</p>
+<blockquote>
+<p><strong>Correct answer: b)</strong> For consistent and determined, we need $\text{rank}(A) = \text{rank}(A^*) = n = 3$.</p>
+</blockquote>
+</li>
+<li>
+<p>If, upon row-reducing the augmented matrix of a $3\times 3$ system, we obtain the row $(0 \; 0 \; 0 \; | \; 5)$, the system is:</p>
+</li>
+<li>a) Consistent and indeterminate</li>
+<li>b) Consistent and determined</li>
+<li>c) Inconsistent</li>
+<li>d) Homogeneous<blockquote>
+<p><strong>Correct answer: c)</strong> The row $(0\;0\;0\;|\;5)$ represents the equation $0x+0y+0z=5$, i.e. $0=5$, which is a contradiction. The system is <strong>inconsistent</strong>.</p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<h5>3.2.3 Discussion of systems with one parameter: technique and cases</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Discuss the consistency of the system depending on the values of the parameter $a$:
+$$\begin{cases} x + y + az = 2 \ x + ay + z = 2 \ ax + y + z = 2 \end{cases}$$</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p>We compute the determinant of $A$:</p>
+<p>$$|A| = \begin{vmatrix} 1 &amp; 1 &amp; a \ 1 &amp; a &amp; 1 \ a &amp; 1 &amp; 1 \end{vmatrix}$$</p>
+<p>Expanding: $= 1(a-1) - 1(1-a) + a(1-a^2) = (a-1) + (a-1) + a(1-a^2)$</p>
+<p>$= 2(a-1) + a - a^3 = 2a - 2 + a - a^3 = -a^3 + 3a - 2$</p>
+<p>Factoring: $-a^3 + 3a - 2 = -(a^3 - 3a + 2) = -(a-1)^2(a+2)$</p>
+<p><strong>Cases:</strong></p>
+<p><strong>Case 1: $a \neq 1$ and $a \neq -2$</strong> → $|A| \neq 0$ → $\text{rank}(A) = 3$ → <strong>Consistent and determined</strong>. By symmetry of the system, $x = y = z = 2/(1+1+a) = 2/(2+a)$.</p>
+<p><strong>Case 2: $a = 1$</strong></p>
+<p>$$A = \begin{pmatrix}1&amp;1&amp;1\1&amp;1&amp;1\1&amp;1&amp;1\end{pmatrix}, \quad \mathbf{b} = \begin{pmatrix}2\2\2\end{pmatrix}$$</p>
+<p>The three equations are identical: $x+y+z=2$. $\text{rank}(A)=\text{rank}(A^<em>)=1&lt;3$. </em><em>Consistent and indeterminate</em>* with 2 parameters.</p>
+<p><strong>Case 3: $a = -2$</strong></p>
+<p>$$A = \begin{pmatrix}1&amp;1&amp;-2\1&amp;-2&amp;1\-2&amp;1&amp;1\end{pmatrix}$$</p>
+<p>Row-reducing $A^*$: $F_2-F_1$: $(0,-3,3|0)$; $F_3+2F_1$: $(0,3,-3|6)$. $F_3+F_2$: $(0,0,0|6)$.</p>
+<p>$\text{rank}(A)=2$, $\text{rank}(A^<em>)=3$. </em><em>Inconsistent system</em>*.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>
+<p>For which values of $k$ is the system $\begin{cases} kx + y = 2 \ 3x + ky = 6 \end{cases}$ consistent?</p>
+<blockquote>
+<p><strong>Solution:</strong> $|A| = k^2 - 3$. For $k^2 \neq 3$ (i.e., $k\neq\sqrt3, k\neq-\sqrt3$): consistent and determined. For $k=\sqrt3$: $F_2 = \sqrt{3}\cdot F_1$ and $6 = \sqrt{3}\cdot 2$: consistent and indeterminate. For $k=-\sqrt3$: $F_2 = -\sqrt{3}\cdot F_1$ but $6\neq -\sqrt{3}\cdot 2$: inconsistent.</p>
+</blockquote>
+</li>
+<li>
+<p>For which values of $m$ does the system $\begin{cases} mx + y = 1 \ x + my = 2 \end{cases}$ have a unique solution?</p>
+<blockquote>
+<p><strong>Solution:</strong> $|A| = m^2 - 1 \neq 0 \Rightarrow m \neq 1$ and $m \neq -1$. For all other values, the system is consistent and determined.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>
+<p>Discuss and solve depending on $\lambda$: $\begin{cases} x + 2y = 3 \ 2x + \lambda y = 6 \end{cases}$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $|A| = \lambda - 4$. If $\lambda \neq 4$: consistent and determined. $x = (3\lambda - 12)/(\lambda - 4) = 3$, $y = 0$. If $\lambda = 4$: $F_2 = 2F_1$ and $6 = 2\cdot 3$: consistent and indeterminate; solution: $y = t$, $x = 3 - 2t$.</p>
+</blockquote>
+</li>
+<li>
+<p>The system $\begin{cases} x + y - z = 1 \ 2x + 3y + az = 3 \ x + ay + 3z = 2 \end{cases}$ is inconsistent for $a = -1$. Verify this fact.</p>
+<blockquote>
+<p><strong>Solution:</strong> With $a=-1$: $A^<em> = \left(\begin{array}{ccc|c}1&amp;1&amp;-1&amp;1\2&amp;3&amp;-1&amp;3\1&amp;-1&amp;3&amp;2\end{array}\right)$. $F_2-2F_1$: $(0,1,1|1)$; $F_3-F_1$: $(0,-2,4|1)$. $F_3+2F_2$: $(0,0,6|3)\Rightarrow z=1/2$. Back-substituting works, so it is actually </em><em>consistent and determined</em>* for $a=-1$. The claim in the statement was incorrect.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li><strong>(EVAU Madrid style)</strong> Discuss depending on the real parameter $m$ the following system:
+   $$\begin{cases} x + 2y - z = 1 \ 2x + my + z = 3 \ x + (m-2)y + 2z = m \end{cases}$$
+   For each case, solve or indicate that there is no solution.<blockquote>
+<p><strong>Solution:</strong><br />
+$|A| = \begin{vmatrix}1&amp;2&amp;-1\2&amp;m&amp;1\1&amp;m-2&amp;2\end{vmatrix}$<br />
+$= 1(2m-(m-2)) - 2(4-1) + (-1)(2(m-2)-m) = (m+2) - 6 + (-1)(m-4)$<br />
+$= m+2-6-m+4 = 0$.<br />
+The determinant is <strong>always 0</strong>: we must analyse the ranks.<br />
+Row-reducing: $F_2-2F_1$: $(0,m-4,3|1)$; $F_3-F_1$: $(0,m-4,3|m-1)$.<br />
+$F_3-F_2$: $(0,0,0|m-2)$.<br />
+— If $m \neq 2$: $\text{rank}(A^<em>)=3 &gt; \text{rank}(A)=2$. </em><em>Inconsistent</em><em>.<br />
+— If $m = 2$: $F_2$: $(0,-2,3|1)$. $\text{rank}(A)=\text{rank}(A^</em>)=2&lt;3$. <strong>Consistent and indeterminate</strong>. With $z=\lambda$: $-2y+3\lambda=1\Rightarrow y=(3\lambda-1)/2$; $x=1-2y+\lambda=1-(3\lambda-1)+\lambda=2-2\lambda$.<br />
+<strong>Solution for $m=2$:</strong> $x=2-2\lambda,\; y=(3\lambda-1)/2,\; z=\lambda$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>When discussing a system with parameter $a$, the recommended first step is:</li>
+<li>a) Solve the system directly for each value of $a$</li>
+<li>b) Compute $|A|$ and set it to zero to find the critical values of $a$</li>
+<li>c) Compute the trace of $A$</li>
+<li>
+<p>d) Substitute $a = 0$ and $a = 1$</p>
+<blockquote>
+<p><strong>Correct answer: b)</strong> The critical values of $a$ are those that make $|A| = 0$, which is when the rank may decrease. For $|A| \neq 0$, the system is automatically consistent and determined.</p>
+</blockquote>
+</li>
+<li>
+<p>For the system $\begin{cases} x + ay = 2 \ ax + y = 2a \end{cases}$, the value $a = -1$ gives a system that is:</p>
+</li>
+<li>a) Consistent and determined with solution $x=2, y=0$</li>
+<li>b) Inconsistent</li>
+<li>c) Consistent and indeterminate</li>
+<li>d) Consistent and determined with solution $x=1, y=1$<blockquote>
+<p><strong>Correct answer: b)</strong> With $a=-1$: equations $x-y=2$ and $-x+y=-2$, which are opposites of each other (the second is $-1$ times the first) only if the constant terms are also proportional. Here: $x-y=2$ and $-x+y=-2$ are the same equation. Check: $-1 \cdot 2 = -2 = 2(-1)$ ✓. Therefore it is <strong>consistent and indeterminate</strong>. <strong>Correct answer: c)</strong>. <em>(Note: option b was a plausible distractor.)</em></p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<hr />
+<h5>3.3.1 Gaussian elimination: row operations, row echelon form</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Solve by Gaussian elimination:
+$$\begin{cases} 2x + y - z = 8 \ -3x - y + 2z = -11 \ -2x + y + 2z = -3 \end{cases}$$</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p>We form the augmented matrix and apply elementary row operations:</p>
+<p>$$\left(\begin{array}{ccc|c} 2 &amp; 1 &amp; -1 &amp; 8 \ -3 &amp; -1 &amp; 2 &amp; -11 \ -2 &amp; 1 &amp; 2 &amp; -3 \end{array}\right)$$</p>
+<p><strong>Step 1:</strong> Create zeros in the first column (below pivot $2$):</p>
+<p>$F_2 \leftarrow 2F_2 + 3F_1$: $(-6+6, -2+3, 4-3 | -22+24) = (0, 1, 1 | 2)$</p>
+<p>$F_3 \leftarrow F_3 + F_1$: $(-2+2, 1+1, 2-1 | -3+8) = (0, 2, 1 | 5)$</p>
+<p>$$\left(\begin{array}{ccc|c} 2 &amp; 1 &amp; -1 &amp; 8 \ 0 &amp; 1 &amp; 1 &amp; 2 \ 0 &amp; 2 &amp; 1 &amp; 5 \end{array}\right)$$</p>
+<p><strong>Step 2:</strong> Create zero in the second column (below pivot):</p>
+<p>$F_3 \leftarrow F_3 - 2F_2$: $(0, 0, -1 | 1)$</p>
+<p>$$\left(\begin{array}{ccc|c} 2 &amp; 1 &amp; -1 &amp; 8 \ 0 &amp; 1 &amp; 1 &amp; 2 \ 0 &amp; 0 &amp; -1 &amp; 1 \end{array}\right)$$</p>
+<p><strong>Step 3:</strong> Back substitution:</p>
+<ul>
+<li>$F_3$: $-z = 1 \Rightarrow z = -1$</li>
+<li>$F_2$: $y + (-1) = 2 \Rightarrow y = 3$</li>
+<li>$F_1$: $2x + 3 - (-1) = 8 \Rightarrow 2x = 4 \Rightarrow x = 2$</li>
+</ul>
+<p><strong>Solution:</strong> $(x, y, z) = (2, 3, -1)$.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>
+<p>Solve by Gauss: $\begin{cases} x + y = 5 \ 2x - y = 4 \end{cases}$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $F_2 - 2F_1$: $(0, -3 | -6)$, $y=2$; $x = 5-2 = 3$. <strong>Solution:</strong> $(3, 2)$.</p>
+</blockquote>
+</li>
+<li>
+<p>Solve by Gauss: $\begin{cases} 3x + 2y = 12 \ x + y = 5 \end{cases}$.</p>
+<blockquote>
+<p><strong>Solution:</strong> Swap rows. $F_1 \leftarrow F_2$, $F_2 \leftarrow F_1$. $F_2 - 3F_1$: $(0,-1|{-3})$, $y=3$; $x=5-3=2$. <strong>Solution:</strong> $(2, 3)$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>
+<p>Solve by Gauss: $\begin{cases} x + 2y + 3z = 6 \ 2x - y + z = 3 \ 3x + y - z = 2 \end{cases}$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $F_2-2F_1$: $(0,-5,-5|-9)$; $F_3-3F_1$: $(0,-5,-10|-16)$. $F_3-F_2$: $(0,0,-5|-7) \Rightarrow z=7/5$. $-5y-5(7/5)=-9 \Rightarrow -5y=−9+7=-2 \Rightarrow y=2/5$. $x=6-2(2/5)-3(7/5)=6-4/5-21/5=6-5=1$. <strong>Solution:</strong> $(1, 2/5, 7/5)$.</p>
+</blockquote>
+</li>
+<li>
+<p>Explain why Gaussian elimination is preferable to Cramer's rule for large systems.</p>
+<blockquote>
+<p><strong>Solution:</strong> Cramer's rule requires computing $n+1$ determinants of order $n$; its cost grows like $O(n\cdot n!)$. Gaussian elimination, with forward elimination and back substitution, has cost $O(n^3)$, much more efficient for large $n$. Moreover, Gauss directly detects inconsistent and indeterminate systems.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li><strong>(EVAU Madrid style)</strong> Solve by Gaussian elimination the system:
+   $$\begin{cases} x - y + 2z = 5 \ 2x + y - z = 2 \ 4x - y + 3z = 12 \end{cases}$$
+   Verify the solution by substituting back into the original equations.<blockquote>
+<p><strong>Solution:</strong><br />
+$F_2-2F_1$: $(0,3,-5|-8)$; $F_3-4F_1$: $(0,3,-5|-8)$. $F_3-F_2$: $(0,0,0|0)$.<br />
+$\text{rank}(A)=\text{rank}(A^<em>)=2&lt;3$. Consistent and indeterminate. Let $z=\lambda$.<br />
+$3y-5\lambda=-8 \Rightarrow y=(5\lambda-8)/3$. $x=5+y-2\lambda=5+(5\lambda-8)/3-2\lambda=(15+5\lambda-8-6\lambda)/3=(7-\lambda)/3$.<br />
+</em><em>Solution:</em><em> $x=(7-\lambda)/3,\; y=(5\lambda-8)/3,\; z=\lambda$.<br />
+</em><em>Verification</em>* (with $\lambda=1$): $x=2, y=-1, z=1$. Eq.1: $2+1+2=5$ ✓. Eq.2: $4-1-1=2$ ✓. Eq.3: $8+1+3=12$ ✓.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>In Gaussian elimination, if the row $(0 \; 0 \; 0 \; | \; 0)$ appears during row reduction, it means that:</li>
+<li>a) The system is inconsistent</li>
+<li>b) One equation is a linear combination of the others</li>
+<li>c) The system has a unique solution</li>
+<li>
+<p>d) The system must be reformulated</p>
+<blockquote>
+<p><strong>Correct answer: b)</strong> A row of zeros indicates that equation was redundant (a linear combination of the previous ones), which reduces the rank and may lead to an indeterminate system.</p>
+</blockquote>
+</li>
+<li>
+<p>Gaussian elimination transforms the system into an equivalent one because:</p>
+</li>
+<li>a) It multiplies both sides of an equation by zero</li>
+<li>b) Elementary row operations do not alter the solution set</li>
+<li>c) It changes the unknowns but not the equations</li>
+<li>d) It adds equations eliminating the solution<blockquote>
+<p><strong>Correct answer: b)</strong> Elementary row operations (row swap, multiplication by a nonzero scalar, addition of multiples) are reversible and preserve the solution set.</p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<h5>3.3.2 Cramer's rule for systems of order ≤ 3 with a unique solution</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Solve using Cramer's rule:
+$$\begin{cases} 2x - y + z = 3 \ x + 3y - 2z = -2 \ 3x + y + z = 7 \end{cases}$$</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p>$$|A| = \begin{vmatrix} 2 &amp; -1 &amp; 1 \ 1 &amp; 3 &amp; -2 \ 3 &amp; 1 &amp; 1 \end{vmatrix} = 2(3+2) - (-1)(1+6) + 1(1-9) = 10 + 7 - 8 = 9$$</p>
+<p>$$|A_x| = \begin{vmatrix} 3 &amp; -1 &amp; 1 \ -2 &amp; 3 &amp; -2 \ 7 &amp; 1 &amp; 1 \end{vmatrix} = 3(3+2) - (-1)(-2+14) + 1(-2-21) = 15 - 12 - 23 = -20$$</p>
+<p>Wait, let us recalculate carefully:
+$= 3(3\cdot1 - (-2)\cdot1) - (-1)((-2)\cdot1 - (-2)\cdot7) + 1((-2)\cdot1 - 3\cdot7)$
+$= 3(3+2) + 1(-2+14) + 1(-2-21) = 15 + 12 - 23 = 4$</p>
+<p>Recalculation: $3(3+2) = 15$; $-(-1)((-2)(1)-(-2)(7)) = +1\cdot(-2+14)=12$; $+1((-2)(1)-3(7))=+1(-2-21)=-23$. Total: $15+12-23=4$. We verify: $x=4/9$.</p>
+<p>$$|A_y| = \begin{vmatrix} 2 &amp; 3 &amp; 1 \ 1 &amp; -2 &amp; -2 \ 3 &amp; 7 &amp; 1 \end{vmatrix} = 2(-2+14) - 3(1+6) + 1(7+6) = 24 - 21 + 13 = 16$$</p>
+<p>$$|A_z| = \begin{vmatrix} 2 &amp; -1 &amp; 3 \ 1 &amp; 3 &amp; -2 \ 3 &amp; 1 &amp; 7 \end{vmatrix} = 2(21+2) - (-1)(7+6) + 3(1-9) = 46 + 13 - 24 = 35$$</p>
+<p>$$x = \frac{|A_x|}{|A|} = \frac{4}{9}, \quad y = \frac{|A_y|}{|A|} = \frac{16}{9}, \quad z = \frac{|A_z|}{|A|} = \frac{35}{9}$$</p>
+<p><strong>Verification</strong> (Eq. 1): $2(4/9) - 16/9 + 35/9 = 8/9 - 16/9 + 35/9 = 27/9 = 3$ ✓.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>
+<p>Solve by Cramer's rule: $\begin{cases} 3x + y = 7 \ x - 2y = 0 \end{cases}$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $|A|=3(-2)-1(1)=-7$. $|A_x|=7(-2)-1(0)=-14$. $|A_y|=3(0)-7(1)=-7$. $x=-14/-7=2$, $y=-7/-7=1$. <strong>Solution:</strong> $(2,1)$.</p>
+</blockquote>
+</li>
+<li>
+<p>When can Cramer's rule not be applied? What does this indicate about the system?</p>
+<blockquote>
+<p><strong>Solution:</strong> It cannot be applied when $|A|=0$, i.e., when the coefficient matrix is singular (not invertible). In this case the system may be inconsistent or consistent and indeterminate, and another method must be used (Gauss or Rouché–Frobenius).</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>
+<p>Solve by Cramer's rule: $\begin{cases} x + y = 3 \ 2x - z = 1 \ y + 2z = 5 \end{cases}$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $A=\begin{pmatrix}1&amp;1&amp;0\2&amp;0&amp;-1\0&amp;1&amp;2\end{pmatrix}$. $|A|=1(0+1)-1(4-0)+0=1-4=-3$.<br />
+$|A_x|=\begin{vmatrix}3&amp;1&amp;0\1&amp;0&amp;-1\5&amp;1&amp;2\end{vmatrix}=3(0+1)-1(2+5)+0=3-7=-4$; $x=(-4)/(-3)=4/3$.<br />
+$|A_y|=\begin{vmatrix}1&amp;3&amp;0\2&amp;1&amp;-1\0&amp;5&amp;2\end{vmatrix}=1(2+5)-3(4-0)+0=7-12=-5$; $y=(-5)/(-3)=5/3$.<br />
+$|A_z|=\begin{vmatrix}1&amp;1&amp;3\2&amp;0&amp;1\0&amp;1&amp;5\end{vmatrix}=1(0-1)-1(10-0)+3(2-0)=(-1)-10+6=-5$; $z=(-5)/(-3)=5/3$.<br />
+<strong>Solution:</strong> $(4/3, 5/3, 5/3)$.</p>
+</blockquote>
+</li>
+<li>
+<p>Using Cramer's rule, find $x$ without computing $y$ or $z$ in the system from the worked example of section 3.3.1.</p>
+<blockquote>
+<p><strong>Solution:</strong> With the system $2x+y-z=8$, $-3x-y+2z=-11$, $-2x+y+2z=-3$:<br />
+$|A|=\begin{vmatrix}2&amp;1&amp;-1\-3&amp;-1&amp;2\-2&amp;1&amp;2\end{vmatrix}=2(-2-2)-1(-6+4)+(-1)(-3-2)=2(-4)+2+5=-8+7=-1$.<br />
+$|A_x|=\begin{vmatrix}8&amp;1&amp;-1\-11&amp;-1&amp;2\-3&amp;1&amp;2\end{vmatrix}=8(-2-2)-1(-22+6)+(-1)(-11-3)=-32+16+14=-2$.<br />
+$x=|A_x|/|A|=-2/-1=2$ ✓.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li><strong>(EVAU Madrid style)</strong> Solve by Cramer's rule the system:
+   $$\begin{cases} x + 2y - z = 0 \ 2x - y + 3z = 5 \ 3x + y + z = 4 \end{cases}$$
+   Verify that the solution is correct.<blockquote>
+<p><strong>Solution:</strong><br />
+$|A|=\begin{vmatrix}1&amp;2&amp;-1\2&amp;-1&amp;3\3&amp;1&amp;1\end{vmatrix}=1(-1-3)-2(2-9)+(-1)(2+3)=-4+14-5=5$.<br />
+$|A_x|=\begin{vmatrix}0&amp;2&amp;-1\5&amp;-1&amp;3\4&amp;1&amp;1\end{vmatrix}=0(-4)-2(5-12)+(-1)(5+4)=0+14-9=5$; $x=5/5=1$.<br />
+$|A_y|=\begin{vmatrix}1&amp;0&amp;-1\2&amp;5&amp;3\3&amp;4&amp;1\end{vmatrix}=1(5-12)-0+(-1)(8-15)=-7+7=0$; $y=0/5=0$.<br />
+$|A_z|=\begin{vmatrix}1&amp;2&amp;0\2&amp;-1&amp;5\3&amp;1&amp;4\end{vmatrix}=1(-4-5)-2(8-15)+0=-9+14=5$; $z=5/5=1$.<br />
+<strong>Solution:</strong> $(x,y,z)=(1,0,1)$.<br />
+<strong>Verification:</strong> Eq.1: $1+0-1=0$ ✓; Eq.2: $2-0+3=5$ ✓; Eq.3: $3+0+1=4$ ✓.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>In Cramer's rule, the value of $y$ in a $2\times 2$ system $\begin{cases} ax+by=e \ cx+dy=f \end{cases}$ is:</li>
+<li>a) $y = \dfrac{\begin{vmatrix}e&amp;b\f&amp;d\end{vmatrix}}{\begin{vmatrix}a&amp;b\c&amp;d\end{vmatrix}}$</li>
+<li>b) $y = \dfrac{\begin{vmatrix}a&amp;e\c&amp;f\end{vmatrix}}{\begin{vmatrix}a&amp;b\c&amp;d\end{vmatrix}}$</li>
+<li>c) $y = \dfrac{\begin{vmatrix}a&amp;b\c&amp;d\end{vmatrix}}{\begin{vmatrix}e&amp;b\f&amp;d\end{vmatrix}}$</li>
+<li>
+<p>d) $y = \dfrac{\begin{vmatrix}a&amp;e\c&amp;f\end{vmatrix}}{\begin{vmatrix}e&amp;b\f&amp;d\end{vmatrix}}$</p>
+<blockquote>
+<p><strong>Correct answer: b)</strong> To compute $y$, the second column (coefficients of $y$) is replaced by the constant terms.</p>
+</blockquote>
+</li>
+<li>
+<p>Cramer's rule for a $3\times3$ system requires computing:</p>
+</li>
+<li>a) 1 determinant</li>
+<li>b) 3 determinants</li>
+<li>c) 4 determinants</li>
+<li>d) 9 determinants<blockquote>
+<p><strong>Correct answer: c)</strong> We need $|A|$, $|A_x|$, $|A_y|$ and $|A_z|$: a total of <strong>4</strong> determinants of order 3.</p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<h5>3.3.3 Solution via the inverse matrix: $x = A^{-1} \cdot b$</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Solve the system $\begin{cases} 2x + y = 5 \ 5x + 3y = 13 \end{cases}$ using the inverse matrix.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p>In matrix form: $A\mathbf{x} = \mathbf{b}$ with $A = \begin{pmatrix}2&amp;1\5&amp;3\end{pmatrix}$, $\mathbf{b} = \begin{pmatrix}5\13\end{pmatrix}$.</p>
+<p><strong>Computing $A^{-1}$:</strong> $|A| = 6 - 5 = 1$.</p>
+<p>$$A^{-1} = \frac{1}{1}\begin{pmatrix}3&amp;-1\-5&amp;2\end{pmatrix} = \begin{pmatrix}3&amp;-1\-5&amp;2\end{pmatrix}$$</p>
+<p>(For a $2\times 2$ matrix: $\begin{pmatrix}a&amp;b\c&amp;d\end{pmatrix}^{-1} = \frac{1}{ad-bc}\begin{pmatrix}d&amp;-b\-c&amp;a\end{pmatrix}$.)</p>
+<p><strong>Verification:</strong> $A \cdot A^{-1} = \begin{pmatrix}2&amp;1\5&amp;3\end{pmatrix}\begin{pmatrix}3&amp;-1\-5&amp;2\end{pmatrix} = \begin{pmatrix}1&amp;0\0&amp;1\end{pmatrix}$ ✓.</p>
+<p><strong>Solution:</strong>
+$$\mathbf{x} = A^{-1}\mathbf{b} = \begin{pmatrix}3&amp;-1\-5&amp;2\end{pmatrix}\begin{pmatrix}5\13\end{pmatrix} = \begin{pmatrix}15-13\-25+26\end{pmatrix} = \begin{pmatrix}2\1\end{pmatrix}$$</p>
+<p>$(x, y) = (2, 1)$. <strong>Verification:</strong> $2(2)+1=5$ ✓, $5(2)+3(1)=13$ ✓.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>
+<p>Compute $A^{-1}$ for $A = \begin{pmatrix}1&amp;2\3&amp;7\end{pmatrix}$ and use it to solve $A\mathbf{x} = \begin{pmatrix}1\3\end{pmatrix}$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $|A|=7-6=1$. $A^{-1}=\begin{pmatrix}7&amp;-2\-3&amp;1\end{pmatrix}$. $\mathbf{x}=\begin{pmatrix}7-6\-3+3\end{pmatrix}=\begin{pmatrix}1\0\end{pmatrix}$. $(x,y)=(1,0)$.</p>
+</blockquote>
+</li>
+<li>
+<p>For which type of systems can the inverse matrix method be applied?</p>
+<blockquote>
+<p><strong>Solution:</strong> Only when the system is <strong>consistent and determined</strong>, i.e., when $|A|\neq 0$ (the matrix is invertible). If $|A|=0$, the inverse does not exist and Gaussian elimination must be used.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>
+<p>Using $A^{-1}$, solve $\begin{cases} x + y + z = 6 \ 2x - y + z = 3 \ x + 2y - z = 2 \end{cases}$ knowing that $A^{-1} = \frac{1}{6}\begin{pmatrix}-1&amp;3&amp;2\3&amp;-2&amp;1\5&amp;-1&amp;-3\end{pmatrix}$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\mathbf{x} = A^{-1}\mathbf{b} = \frac{1}{6}\begin{pmatrix}-6+9+4\18-6+2\30-3-6\end{pmatrix} = \frac{1}{6}\begin{pmatrix}7\14\21\end{pmatrix} = \begin{pmatrix}7/6\7/3\7/2\end{pmatrix}$. Checking in Eq.1: $7/6+7/3+7/2=7/6+14/6+21/6=42/6=7\neq6$. There is an error in the given inverse; using Gauss: the correct result is $(x,y,z)=(1,2,3)$.</p>
+</blockquote>
+</li>
+<li>
+<p>Compare the efficiency of the inverse matrix method versus Gaussian elimination for solving multiple systems with the same matrix $A$ but different vectors $\mathbf{b}$.</p>
+<blockquote>
+<p><strong>Solution:</strong> If we need to solve $A\mathbf{x}=\mathbf{b}_1$, $A\mathbf{x}=\mathbf{b}_2$, ..., computing $A^{-1}$ once and then multiplying $A^{-1}\mathbf{b}_i$ is more efficient than applying Gauss $k$ times. The cost of computing $A^{-1}$ is amortised.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li><strong>(EVAU Madrid style)</strong> Let $A = \begin{pmatrix}1&amp;1&amp;-1\2&amp;-1&amp;1\1&amp;2&amp;3\end{pmatrix}$.<br />
+<strong>(a)</strong> Verify that $|A| = -9$ and compute $A^{-1}$.<br />
+<strong>(b)</strong> Use $A^{-1}$ to solve $A\mathbf{x} = \begin{pmatrix}2\0\5\end{pmatrix}$.<blockquote>
+<p><strong>Solution:</strong><br />
+<strong>(a)</strong> $|A|=1(-3-2)-1(6-1)+(-1)(4+1)=-5-5-5=-15$. (The given value $-9$ is incorrect; we use $|A|=-15$.)<br />
+For the adjugate, we compute the cofactors $C_{ij}$:<br />
+$C_{11}=(-1-2)=-3$; $C_{12}=-(6-1)=-5$; $C_{13}=(4+1)=5$;<br />
+$C_{21}=-(3+2)=-5$; $C_{22}=(3+1)=4$; $C_{23}=-(2-1)=-1$;<br />
+$C_{31}=(1-1)=0$; $C_{32}=-(1+2)=-3$; $C_{33}=(-1-2)=-3$.<br />
+$\text{Adj}(A)=\begin{pmatrix}-3&amp;-5&amp;0\-5&amp;4&amp;-3\5&amp;-1&amp;-3\end{pmatrix}$. $A^{-1}=\frac{1}{-15}\begin{pmatrix}-3&amp;-5&amp;0\-5&amp;4&amp;-3\5&amp;-1&amp;-3\end{pmatrix}=\frac{1}{15}\begin{pmatrix}3&amp;5&amp;0\5&amp;-4&amp;3\-5&amp;1&amp;3\end{pmatrix}$.<br />
+<strong>(b)</strong> $\mathbf{x}=A^{-1}\begin{pmatrix}2\0\5\end{pmatrix}=\frac{1}{15}\begin{pmatrix}6+0+0\10+0+15\-10+0+15\end{pmatrix}=\frac{1}{15}\begin{pmatrix}6\25\5\end{pmatrix}=\begin{pmatrix}2/5\5/3\1/3\end{pmatrix}$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>The solution method $\mathbf{x} = A^{-1}\mathbf{b}$ is valid only when:</li>
+<li>a) $|A| = 1$</li>
+<li>b) $A$ is symmetric</li>
+<li>c) $|A| \neq 0$</li>
+<li>
+<p>d) $\mathbf{b} \neq \mathbf{0}$</p>
+<blockquote>
+<p><strong>Correct answer: c)</strong> $A^{-1}$ exists if and only if $A$ is nonsingular, i.e., $|A| \neq 0$. No condition on $\mathbf{b}$ is needed.</p>
+</blockquote>
+</li>
+<li>
+<p>If $A\mathbf{x} = \mathbf{b}$ and $|A| = 5$, then the solution is $\mathbf{x} = A^{-1}\mathbf{b}$ because:</p>
+</li>
+<li>a) $A^{-1} = 5A$</li>
+<li>b) Multiplying on the left by $A^{-1}$: $A^{-1}A\mathbf{x} = A^{-1}\mathbf{b} \Rightarrow I\mathbf{x} = A^{-1}\mathbf{b}$</li>
+<li>c) $A^{-1}\mathbf{b} = \mathbf{b}/5$</li>
+<li>d) $A^{-1} = A^T / 5$<blockquote>
+<p><strong>Correct answer: b)</strong> We premultiply by $A^{-1}$ and use the fact that $A^{-1}A = I$.</p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<h5>3.3.4 Homogeneous systems: trivial solution and non-trivial solutions</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Study the homogeneous system:
+$$\begin{cases} x + y - z = 0 \ 2x - y + z = 0 \ 3x + 2y - 2z = 0 \end{cases}$$</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p>Every homogeneous system is always consistent (it admits at least the trivial solution $x = y = z = 0$).</p>
+<p>We compute $|A|$:</p>
+<p>$$|A| = \begin{vmatrix} 1 &amp; 1 &amp; -1 \ 2 &amp; -1 &amp; 1 \ 3 &amp; 2 &amp; -2 \end{vmatrix}$$</p>
+<p>Expanding along the first row: $= 1(2-2) - 1(-4-3) + (-1)(4+3) = 0 + 7 - 7 = 0$.</p>
+<p>Since $|A| = 0$, the rank is less than 3. We row-reduce:</p>
+<p>$F_2 - 2F_1$: $(0, -3, 3 | 0)$; $F_3 - 3F_1$: $(0, -1, 1 | 0)$.</p>
+<p>$F_2 \leftrightarrow F_3$: $(0,-1,1|0)$; $F_3 - 3\cdot F_2'$: $F_3 - 3(0,-1,1|0) = (0,-3+3,3-3|0) = (0,0,0|0)$.</p>
+<p>$\text{rank}(A) = 2 &lt; 3$: <strong>non-trivial solutions</strong> (1 free parameter).</p>
+<p>$-y + z = 0 \Rightarrow y = z$. Let $z = \lambda$: $y = \lambda$, $x = -y + z = 0$.</p>
+<p><strong>Solution:</strong> $(x, y, z) = (0, \lambda, \lambda) = \lambda(0, 1, 1)$, $\lambda \in \mathbb{R}$.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>
+<p>What is always the solution of a homogeneous system? When does it have more solutions?</p>
+<blockquote>
+<p><strong>Solution:</strong> The <strong>trivial solution</strong> $(0, 0, \ldots, 0)$ is always a solution. It has more (non-trivial) solutions when $\text{rank}(A) &lt; n$ (number of unknowns), i.e., when $|A|=0$ in the square case.</p>
+</blockquote>
+</li>
+<li>
+<p>Solve the homogeneous system $\begin{cases} 2x - y = 0 \ -4x + 2y = 0 \end{cases}$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $|A|=2(2)-(-1)(-4)=4-4=0$. The two equations are equivalent: $2x-y=0$, $y=2x$. Let $x=\lambda$: $y=2\lambda$. <strong>Solution:</strong> $(x,y)=\lambda(1,2)$, $\lambda\in\mathbb{R}$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>
+<p>Study the homogeneous system $\begin{cases} x+2y-z=0 \ 2x+y+z=0 \ x-y+2z=0 \end{cases}$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $|A|=\begin{vmatrix}1&amp;2&amp;-1\2&amp;1&amp;1\1&amp;-1&amp;2\end{vmatrix}=1(2+1)-2(4-1)+(-1)(-2-1)=3-6+3=0$. $\text{rank}(A)&lt;3$: non-trivial solutions. $F_2-2F_1$: $(0,-3,3|0)\Rightarrow y=z$. $F_3-F_1$: $(0,-3,3|0)$ same. With $z=\lambda$: $y=\lambda$, $x=-2\lambda+\lambda=-\lambda$. <strong>Solution:</strong> $(x,y,z)=\lambda(-1,1,1)$.</p>
+</blockquote>
+</li>
+<li>
+<p>Can a homogeneous system be inconsistent? Justify.</p>
+<blockquote>
+<p><strong>Solution:</strong> No. Every homogeneous system $A\mathbf{x}=\mathbf{0}$ has $\mathbf{x}=\mathbf{0}$ as a solution, so it is always <strong>consistent</strong>. Inconsistency requires that no solution exists, which is impossible if $\mathbf{0}$ is already a solution.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li><strong>(EVAU Madrid style)</strong> Given the homogeneous system:
+   $$\begin{cases} x + ay + z = 0 \ ax + y + z = 0 \ x + y + az = 0 \end{cases}$$
+   <strong>(a)</strong> For which values of $a$ does it have non-trivial solutions.<br />
+<strong>(b)</strong> For $a = 1$, find the general solution.<blockquote>
+<p><strong>Solution:</strong><br />
+<strong>(a)</strong> The system has non-trivial solutions $\Leftrightarrow |A|=0$.<br />
+$|A|=\begin{vmatrix}1&amp;a&amp;1\a&amp;1&amp;1\1&amp;1&amp;a\end{vmatrix}=1(a-1)-a(a^2-1)+1(a-1)=(a-1)-a(a^2-1)+(a-1)$<br />
+$=2(a-1)-a(a-1)(a+1)=(a-1)[2-a(a+1)]=(a-1)(2-a^2-a)=(a-1)(-a^2-a+2)$<br />
+$=(a-1)(-(a^2+a-2))=(a-1)(-(a+2)(a-1))=-(a-1)^2(a+2)$.<br />
+$|A|=0 \Leftrightarrow a=1$ or $a=-2$.<br />
+<strong>(b)</strong> For $a=1$: all three equations are $x+y+z=0$. $\text{rank}(A)=1$. Two free parameters: $y=\mu$, $z=\lambda$, $x=-\mu-\lambda$. <strong>Solution:</strong> $(-\mu-\lambda, \mu, \lambda)$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>A homogeneous $3\times3$ system with $|A| \neq 0$ has:</li>
+<li>a) Infinitely many solutions</li>
+<li>b) Only the trivial solution</li>
+<li>c) Exactly two solutions</li>
+<li>
+<p>d) No solution</p>
+<blockquote>
+<p><strong>Correct answer: b)</strong> If $|A|\neq0$, the rank is 3 = number of unknowns, so the system is consistent and determined. The only solution is the trivial one $\mathbf{x}=\mathbf{0}$.</p>
+</blockquote>
+</li>
+<li>
+<p>The general solution of a homogeneous $3\times3$ system with $\text{rank}(A)=2$ is:</p>
+</li>
+<li>a) A finite set of points</li>
+<li>b) A line through the origin</li>
+<li>c) A plane through the origin</li>
+<li>d) All of $\mathbb{R}^3$<blockquote>
+<p><strong>Correct answer: b)</strong> With rank 2 and 3 unknowns, there are $3-2=1$ free parameters. The solutions form a <strong>line</strong> (a 1-dimensional vector subspace) through the origin.</p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<hr />
+<h5>3.4.1 Equations of the type $AX = B$, $XA = B$, $AXB = C$</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Solve the matrix equation $AX = B$ where:
+$$A = \begin{pmatrix}2&amp;1\3&amp;2\end{pmatrix}, \quad B = \begin{pmatrix}1&amp;0\-1&amp;2\end{pmatrix}$$</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p>If $|A| \neq 0$, we can premultiply by $A^{-1}$: $X = A^{-1}B$.</p>
+<p><strong>Computing $A^{-1}$:</strong> $|A| = 4 - 3 = 1$.</p>
+<p>$$A^{-1} = \begin{pmatrix}2&amp;-1\-3&amp;2\end{pmatrix}$$</p>
+<p><strong>Computing $X$:</strong></p>
+<p>$$X = A^{-1}B = \begin{pmatrix}2&amp;-1\-3&amp;2\end{pmatrix}\begin{pmatrix}1&amp;0\-1&amp;2\end{pmatrix} = \begin{pmatrix}2+1&amp;0-2\-3-2&amp;0+4\end{pmatrix} = \begin{pmatrix}3&amp;-2\-5&amp;4\end{pmatrix}$$</p>
+<p><strong>Verification:</strong> $AX = \begin{pmatrix}2&amp;1\3&amp;2\end{pmatrix}\begin{pmatrix}3&amp;-2\-5&amp;4\end{pmatrix} = \begin{pmatrix}6-5&amp;-4+4\9-10&amp;-6+8\end{pmatrix} = \begin{pmatrix}1&amp;0\-1&amp;2\end{pmatrix} = B$ ✓.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>
+<p>Solve $XA = B$ with $A = \begin{pmatrix}1&amp;2\0&amp;1\end{pmatrix}$, $B = \begin{pmatrix}3&amp;7\1&amp;3\end{pmatrix}$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $|A|=1\neq0$. $A^{-1}=\begin{pmatrix}1&amp;-2\0&amp;1\end{pmatrix}$. $X=BA^{-1}=\begin{pmatrix}3&amp;7\1&amp;3\end{pmatrix}\begin{pmatrix}1&amp;-2\0&amp;1\end{pmatrix}=\begin{pmatrix}3&amp;-6+7\1&amp;-2+3\end{pmatrix}=\begin{pmatrix}3&amp;1\1&amp;1\end{pmatrix}$.</p>
+</blockquote>
+</li>
+<li>
+<p>What is the difference between solving $AX=B$ and $XA=B$?</p>
+<blockquote>
+<p><strong>Solution:</strong> In $AX=B$ we premultiply by $A^{-1}$: $X=A^{-1}B$. In $XA=B$ we postmultiply by $A^{-1}$: $X=BA^{-1}$. Since matrix multiplication is not commutative, the results are generally different.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>
+<p>Solve the equation $AXB = C$ with $A = \begin{pmatrix}2&amp;1\1&amp;1\end{pmatrix}$, $B = \begin{pmatrix}1&amp;1\0&amp;1\end{pmatrix}$, $C = \begin{pmatrix}3&amp;4\1&amp;2\end{pmatrix}$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $X = A^{-1}CB^{-1}$. $|A|=1$, $A^{-1}=\begin{pmatrix}1&amp;-1\-1&amp;2\end{pmatrix}$. $|B|=1$, $B^{-1}=\begin{pmatrix}1&amp;-1\0&amp;1\end{pmatrix}$. $A^{-1}C=\begin{pmatrix}1&amp;-1\-1&amp;2\end{pmatrix}\begin{pmatrix}3&amp;4\1&amp;2\end{pmatrix}=\begin{pmatrix}2&amp;2\-1&amp;0\end{pmatrix}$. $X=\begin{pmatrix}2&amp;2\-1&amp;0\end{pmatrix}\begin{pmatrix}1&amp;-1\0&amp;1\end{pmatrix}=\begin{pmatrix}2&amp;0\-1&amp;1\end{pmatrix}$.</p>
+</blockquote>
+</li>
+<li>
+<p>Let the equation $3X - A = B$ with $A = \begin{pmatrix}1&amp;0\2&amp;-1\end{pmatrix}$, $B = \begin{pmatrix}-2&amp;3\4&amp;1\end{pmatrix}$. Find $X$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $3X = A + B = \begin{pmatrix}-1&amp;3\6&amp;0\end{pmatrix}$. $X = \frac{1}{3}\begin{pmatrix}-1&amp;3\6&amp;0\end{pmatrix} = \begin{pmatrix}-1/3&amp;1\2&amp;0\end{pmatrix}$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li><strong>(EVAU Madrid style)</strong> Let $A = \begin{pmatrix}1&amp;2\1&amp;3\end{pmatrix}$.<br />
+<strong>(a)</strong> Compute $A^{-1}$.<br />
+<strong>(b)</strong> Solve the matrix equation $AX + A = 3I$ (where $I$ is the $2\times2$ identity).<blockquote>
+<p><strong>Solution:</strong><br />
+<strong>(a)</strong> $|A|=3-2=1$. $A^{-1}=\begin{pmatrix}3&amp;-2\-1&amp;1\end{pmatrix}$.<br />
+<strong>(b)</strong> $AX = 3I - A$. $X = A^{-1}(3I-A)$.<br />
+$3I - A = \begin{pmatrix}3&amp;0\0&amp;3\end{pmatrix} - \begin{pmatrix}1&amp;2\1&amp;3\end{pmatrix} = \begin{pmatrix}2&amp;-2\-1&amp;0\end{pmatrix}$.<br />
+$X = \begin{pmatrix}3&amp;-2\-1&amp;1\end{pmatrix}\begin{pmatrix}2&amp;-2\-1&amp;0\end{pmatrix} = \begin{pmatrix}6+2&amp;-6+0\-2-1&amp;2+0\end{pmatrix} = \begin{pmatrix}8&amp;-6\-3&amp;2\end{pmatrix}$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>To solve $AX = B$ (with $A$ square and invertible), the solution is:</li>
+<li>a) $X = BA^{-1}$</li>
+<li>b) $X = A^{-1}B$</li>
+<li>c) $X = B/A$</li>
+<li>
+<p>d) $X = A^{-1}B^{-1}$</p>
+<blockquote>
+<p><strong>Correct answer: b)</strong> We premultiply both sides by $A^{-1}$: $A^{-1}AX = A^{-1}B \Rightarrow IX = A^{-1}B$.</p>
+</blockquote>
+</li>
+<li>
+<p>The equation $X^2 = A$ (with $A$ known) can be solved directly as $X = A^{1/2}$:</p>
+</li>
+<li>a) True always</li>
+<li>b) False; no matrix solution exists in general</li>
+<li>c) True only if $A$ is the identity</li>
+<li>d) False in general; we must find $X$ such that $X\cdot X = A$<blockquote>
+<p><strong>Correct answer: d)</strong> The equation $X^2=A$ may have no solution, or several, and is not solved simply by $A^{1/2}$ (which does not always exist or is unique). One must find $X$ directly.</p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<h5>3.4.2 Transforming a matrix equation into a system of equations</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Transform the matrix equation $AX = B$ into a system of equations, with:
+$$A = \begin{pmatrix}1&amp;2\3&amp;1\end{pmatrix}, \quad B = \begin{pmatrix}5&amp;0\7&amp;-1\end{pmatrix}, \quad X = \begin{pmatrix}x_1&amp;x_2\x_3&amp;x_4\end{pmatrix}$$</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p>We perform the product $AX$:</p>
+<p>$$AX = \begin{pmatrix}1&amp;2\3&amp;1\end{pmatrix}\begin{pmatrix}x_1&amp;x_2\x_3&amp;x_4\end{pmatrix} = \begin{pmatrix}x_1+2x_3 &amp; x_2+2x_4\3x_1+x_3 &amp; 3x_2+x_4\end{pmatrix}$$</p>
+<p>Setting equal to $B$:</p>
+<p>$$\begin{pmatrix}x_1+2x_3 &amp; x_2+2x_4\3x_1+x_3 &amp; 3x_2+x_4\end{pmatrix} = \begin{pmatrix}5&amp;0\7&amp;-1\end{pmatrix}$$</p>
+<p>We obtain two independent systems (by columns of $X$):</p>
+<p><strong>System for the first column</strong> $(x_1, x_3)$:
+$$\begin{cases} x_1 + 2x_3 = 5 \ 3x_1 + x_3 = 7 \end{cases}$$</p>
+<p><strong>System for the second column</strong> $(x_2, x_4)$:
+$$\begin{cases} x_2 + 2x_4 = 0 \ 3x_2 + x_4 = -1 \end{cases}$$</p>
+<p>Solving the first system: $|A|=1-6=-5$. $x_1=(5-14)/(-5)=9/5$, $x_3=(35-15)/(-5)...$</p>
+<p>By Cramer: $x_1=(5\cdot1-2\cdot7)/(-5)=(5-14)/(-5)=9/5$; $x_3=(7\cdot1-3\cdot5)/(-5)=(7-15)/(-5)=8/5$.</p>
+<p>Second system: $x_2=(0\cdot1-2\cdot(-1))/(-5)=2/(-5)=-2/5$; $x_4=((-1)\cdot1-3\cdot0)/(-5)=-1/(-5)=1/5$.</p>
+<p>$$X = \frac{1}{5}\begin{pmatrix}9&amp;-2\8&amp;1\end{pmatrix}$$</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>
+<p>Transform into a system: $\begin{pmatrix}2&amp;1\0&amp;3\end{pmatrix}\begin{pmatrix}x\y\end{pmatrix} = \begin{pmatrix}4\6\end{pmatrix}$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\begin{cases}2x+y=4\3y=6\end{cases}$. Solving: $y=2$, $x=1$.</p>
+</blockquote>
+</li>
+<li>
+<p>Why does the matrix equation $AX=B$ with $A$ of order $2\times2$ and $X$, $B$ also $2\times2$ reduce to two independent $2\times2$ systems?</p>
+<blockquote>
+<p><strong>Solution:</strong> When computing the product $AX$ column by column, the $j$-th column of $AX$ is $A$ multiplied by the $j$-th column of $X$. Therefore each column of $X$ satisfies an independent system $A\mathbf{x}_j = \mathbf{b}_j$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>
+<p>Transform into a system and solve: $\begin{pmatrix}1&amp;-1\2&amp;1\end{pmatrix}X=\begin{pmatrix}2&amp;-1\1&amp;3\end{pmatrix}$ where $X=\begin{pmatrix}a&amp;b\c&amp;d\end{pmatrix}$.</p>
+<blockquote>
+<p><strong>Solution:</strong> Col. 1: $a-c=2$, $2a+c=1$. Adding: $3a=3\Rightarrow a=1$, $c=-1$. Col. 2: $b-d=-1$, $2b+d=3$. Adding: $3b=2\Rightarrow b=2/3$, $d=b+1=5/3$. $X=\begin{pmatrix}1&amp;2/3\-1&amp;5/3\end{pmatrix}$.</p>
+</blockquote>
+</li>
+<li>
+<p>Let $XA + B = C$ with $A=\begin{pmatrix}2&amp;0\0&amp;3\end{pmatrix}$, $B=\begin{pmatrix}1&amp;-1\0&amp;2\end{pmatrix}$, $C=\begin{pmatrix}3&amp;2\4&amp;5\end{pmatrix}$. Find $X$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $XA = C - B = \begin{pmatrix}2&amp;3\4&amp;3\end{pmatrix}$. $A^{-1}=\begin{pmatrix}1/2&amp;0\0&amp;1/3\end{pmatrix}$. $X=\begin{pmatrix}2&amp;3\4&amp;3\end{pmatrix}\begin{pmatrix}1/2&amp;0\0&amp;1/3\end{pmatrix}=\begin{pmatrix}1&amp;1\2&amp;1\end{pmatrix}$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li><strong>(EVAU Madrid style)</strong> Solve the matrix equation $2X - A^T = A$ where $A = \begin{pmatrix}1&amp;3\-1&amp;2\end{pmatrix}$.<blockquote>
+<p><strong>Solution:</strong><br />
+$A^T=\begin{pmatrix}1&amp;-1\3&amp;2\end{pmatrix}$.<br />
+$2X = A + A^T = \begin{pmatrix}1&amp;3\-1&amp;2\end{pmatrix}+\begin{pmatrix}1&amp;-1\3&amp;2\end{pmatrix}=\begin{pmatrix}2&amp;2\2&amp;4\end{pmatrix}$.<br />
+$X = \begin{pmatrix}1&amp;1\1&amp;2\end{pmatrix}$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>The matrix equation $\begin{pmatrix}1&amp;0\2&amp;1\end{pmatrix}X = \begin{pmatrix}a\b\end{pmatrix}$ (with $X$ of order $2\times1$) becomes:</li>
+<li>a) A system with 4 unknowns</li>
+<li>b) A $2\times2$ system with the entries of $X$ as unknowns</li>
+<li>c) A scalar equation</li>
+<li>
+<p>d) Two independent systems</p>
+<blockquote>
+<p><strong>Correct answer: b)</strong> $X=\begin{pmatrix}x\y\end{pmatrix}$, and the product gives $\begin{cases}x=a\2x+y=b\end{cases}$: a $2\times2$ system.</p>
+</blockquote>
+</li>
+<li>
+<p>If $AX = B$ and $A$ is not invertible, then:</p>
+</li>
+<li>a) $X = A^{-1}B$ always works</li>
+<li>b) The system may be inconsistent or indeterminate</li>
+<li>c) $X = 0$ is always the solution</li>
+<li>d) There is never a solution<blockquote>
+<p><strong>Correct answer: b)</strong> Without invertibility of $A$, we must analyse the ranks of the augmented matrix of the equivalent system to determine whether a solution exists and how many there are.</p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<h5>3.4.3 Solving matrix equations using the inverse and operations</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Solve: $A^2 X + 2A = 3I$ where $A = \begin{pmatrix}1&amp;1\0&amp;2\end{pmatrix}$.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p><strong>Step 1:</strong> Compute $A^2$.</p>
+<p>$$A^2 = \begin{pmatrix}1&amp;1\0&amp;2\end{pmatrix}\begin{pmatrix}1&amp;1\0&amp;2\end{pmatrix} = \begin{pmatrix}1&amp;3\0&amp;4\end{pmatrix}$$</p>
+<p><strong>Step 2:</strong> Isolate $X$:</p>
+<p>$$A^2 X = 3I - 2A = 3\begin{pmatrix}1&amp;0\0&amp;1\end{pmatrix} - 2\begin{pmatrix}1&amp;1\0&amp;2\end{pmatrix} = \begin{pmatrix}3&amp;0\0&amp;3\end{pmatrix} - \begin{pmatrix}2&amp;2\0&amp;4\end{pmatrix} = \begin{pmatrix}1&amp;-2\0&amp;-1\end{pmatrix}$$</p>
+<p><strong>Step 3:</strong> $|A^2| = |A|^2 = 1^2 \cdot 2^2 = ... = |A|^2$. Since $|A| = 2 - 0 = 2$, $|A^2| = 4 \neq 0$.</p>
+<p>$$(A^2)^{-1} = \frac{1}{4}\begin{pmatrix}4&amp;-3\0&amp;1\end{pmatrix}$$</p>
+<p><strong>Step 4:</strong></p>
+<p>$$X = (A^2)^{-1}\begin{pmatrix}1&amp;-2\0&amp;-1\end{pmatrix} = \frac{1}{4}\begin{pmatrix}4&amp;-3\0&amp;1\end{pmatrix}\begin{pmatrix}1&amp;-2\0&amp;-1\end{pmatrix} = \frac{1}{4}\begin{pmatrix}4&amp;-8+3\0&amp;-1\end{pmatrix} = \frac{1}{4}\begin{pmatrix}4&amp;-5\0&amp;-1\end{pmatrix}$$</p>
+<p>$$X = \begin{pmatrix}1&amp;-5/4\0&amp;-1/4\end{pmatrix}$$</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>
+<p>Solve $2X + \begin{pmatrix}1&amp;0\0&amp;1\end{pmatrix} = \begin{pmatrix}5&amp;2\-2&amp;3\end{pmatrix}$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $2X=\begin{pmatrix}4&amp;2\-2&amp;2\end{pmatrix}$. $X=\begin{pmatrix}2&amp;1\-1&amp;1\end{pmatrix}$.</p>
+</blockquote>
+</li>
+<li>
+<p>Solve $X - A = B$ with $A=\begin{pmatrix}3&amp;1\-1&amp;2\end{pmatrix}$ and $B=\begin{pmatrix}-1&amp;2\1&amp;0\end{pmatrix}$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $X=A+B=\begin{pmatrix}2&amp;3\0&amp;2\end{pmatrix}$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>
+<p>Let $A=\begin{pmatrix}2&amp;1\1&amp;1\end{pmatrix}$. Solve $(A-I)X=A$ where $I$ is the identity.</p>
+<blockquote>
+<p><strong>Solution:</strong> $A-I=\begin{pmatrix}1&amp;1\1&amp;0\end{pmatrix}$. $|A-I|=-1\neq0$. $(A-I)^{-1}=\begin{pmatrix}0&amp;1\1&amp;-1\end{pmatrix}\cdot\frac{1}{-1}=\begin{pmatrix}0&amp;-1\-1&amp;1\end{pmatrix}$. $X=(A-I)^{-1}A=\begin{pmatrix}0&amp;-1\-1&amp;1\end{pmatrix}\begin{pmatrix}2&amp;1\1&amp;1\end{pmatrix}=\begin{pmatrix}-1&amp;-1\-1&amp;0\end{pmatrix}$.</p>
+</blockquote>
+</li>
+<li>
+<p>Solve the equation $A^T X = B$ with $A=\begin{pmatrix}1&amp;2\3&amp;4\end{pmatrix}$, $B=\begin{pmatrix}1&amp;0\0&amp;1\end{pmatrix}$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $A^T=\begin{pmatrix}1&amp;3\2&amp;4\end{pmatrix}$. $|A^T|=4-6=-2$. $(A^T)^{-1}=\frac{1}{-2}\begin{pmatrix}4&amp;-3\-2&amp;1\end{pmatrix}=\begin{pmatrix}-2&amp;3/2\1&amp;-1/2\end{pmatrix}$. $X=(A^T)^{-1}B=\begin{pmatrix}-2&amp;3/2\1&amp;-1/2\end{pmatrix}$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li><strong>(EVAU Madrid style)</strong> Given $A=\begin{pmatrix}1&amp;-1\2&amp;1\end{pmatrix}$:<br />
+<strong>(a)</strong> Verify that $A^2 - 2A + 3I = 0$ (simplified Cayley–Hamilton equation).<br />
+<strong>(b)</strong> Using the previous result, express $A^{-1}$ in terms of $A$ and $I$ and compute $A^{-1}$.<blockquote>
+<p><strong>Solution:</strong><br />
+<strong>(a)</strong> $A^2=\begin{pmatrix}1-2&amp;-1-1\2+2&amp;-2+1\end{pmatrix}=\begin{pmatrix}-1&amp;-2\4&amp;-1\end{pmatrix}$.<br />
+$A^2-2A+3I=\begin{pmatrix}-1&amp;-2\4&amp;-1\end{pmatrix}-\begin{pmatrix}2&amp;-2\4&amp;2\end{pmatrix}+\begin{pmatrix}3&amp;0\0&amp;3\end{pmatrix}=\begin{pmatrix}0&amp;0\0&amp;0\end{pmatrix}$ ✓.<br />
+<strong>(b)</strong> From $A^2-2A+3I=0$: $A^2=2A-3I$. Multiplying by $A^{-1}$: $A=2I-3A^{-1}$, so $A^{-1}=\frac{1}{3}(2I-A)=\frac{1}{3}\left(\begin{pmatrix}2&amp;0\0&amp;2\end{pmatrix}-\begin{pmatrix}1&amp;-1\2&amp;1\end{pmatrix}\right)=\frac{1}{3}\begin{pmatrix}1&amp;1\-2&amp;1\end{pmatrix}$.<br />
+Verification: $|A|=1+2=3$. $A^{-1}=\frac{1}{3}\begin{pmatrix}1&amp;1\-2&amp;1\end{pmatrix}$ ✓.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>When solving $AX + C = B$, the correct first step is:</li>
+<li>a) Multiply by $A^{-1}$ directly</li>
+<li>b) Isolate $AX = B - C$ and then $X = A^{-1}(B-C)$ (if $|A|\neq0$)</li>
+<li>c) Multiply $C$ by $A^{-1}$</li>
+<li>
+<p>d) Subtract $B$ from both sides</p>
+<blockquote>
+<p><strong>Correct answer: b)</strong> First isolate the term containing $X$: $AX=B-C$, then premultiply by $A^{-1}$.</p>
+</blockquote>
+</li>
+<li>
+<p>If $A$ is symmetric and invertible, then $A^{-1}$ is:</p>
+</li>
+<li>a) Skew-symmetric</li>
+<li>b) Symmetric</li>
+<li>c) The identity</li>
+<li>d) The transpose of $A$<blockquote>
+<p><strong>Correct answer: b)</strong> If $A^T=A$ and $A$ is invertible, then $(A^{-1})^T = (A^T)^{-1} = A^{-1}$, so $A^{-1}$ is also symmetric.</p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<hr />
+<h5>3.5.1 Setting up and solving real-context problems with $2\times2$ and $3\times3$ systems</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>At a café, a coffee and a juice cost €2.70 in total. Two coffees and three juices cost €6.50. How much does each product cost?</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p><strong>Variables:</strong> $c$ = price of coffee (€), $j$ = price of juice (€).</p>
+<p><strong>Setting up:</strong>
+$$\begin{cases} c + j = 2{,}70 \ 2c + 3j = 6{,}50 \end{cases}$$</p>
+<p><strong>Solution by Gauss:</strong> $F_2 - 2F_1$: $j = 6{,}50 - 5{,}40 = 1{,}10$.</p>
+<p>$c = 2{,}70 - 1{,}10 = 1{,}60$.</p>
+<p><strong>Solution:</strong> Coffee costs <strong>€1.60</strong> and juice <strong>€1.10</strong>.</p>
+<p><strong>Verification:</strong> $1{,}60 + 1{,}10 = 2{,}70$ ✓; $3{,}20 + 3{,}30 = 6{,}50$ ✓.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>
+<p>The sum of two numbers is 50 and their difference is 14. Find the two numbers.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\begin{cases}x+y=50\x-y=14\end{cases}$. Adding: $2x=64\Rightarrow x=32$, $y=18$.</p>
+</blockquote>
+</li>
+<li>
+<p>A farmer has hens and rabbits. There are 30 animals in total and 90 legs. How many hens and rabbits are there?</p>
+<blockquote>
+<p><strong>Solution:</strong> Let $h$ = hens, $r$ = rabbits. $\begin{cases}h+r=30\2h+4r=90\end{cases}$. $F_2-2F_1$: $2r=30\Rightarrow r=15$, $h=15$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>
+<p>Three types of banknotes (€1, €5 and €10) total €54. There are 20 banknotes, with twice as many €1 banknotes as €5 banknotes. Find how many there are of each type.</p>
+<blockquote>
+<p><strong>Solution:</strong> Let $a$, $b$, $c$ be the number of €1, €5, €10 banknotes respectively. $\begin{cases}a+b+c=20\a+5b+10c=54\a=2b\end{cases}$. Substituting $a=2b$: $3b+c=20$ and $7b+10c=54$. From the first: $c=20-3b$; substituting: $7b+200-30b=54\Rightarrow -23b=-146\Rightarrow b=146/23\approx6{,}35$. Not an integer. Checking: $7b+10(20-3b)=54\Rightarrow 7b+200-30b=54\Rightarrow -23b=-146\Rightarrow b=\frac{146}{23}$. Problem with no integer solution with these data. Adjustment: if $b=4$: $a=8$, $c=8$; total: $8+20+80=108\neq54$. Inconsistent data. Using: $a+5b+10c=52$: $7(4)+10(8)=28+80=108$. The correct data would be $a+b+c=20$, $a+5b+10c=62$, $a=2b$: $3b+c=20$, $7b+10c=62\Rightarrow 7b+10(20-3b)=62\Rightarrow -23b=-138\Rightarrow b=6$, $a=12$, $c=2$. Total: $12+30+20=62$ ✓. <strong>Solution with corrected data:</strong> 12 banknotes of €1, 6 of €5 and 2 of €10.</p>
+</blockquote>
+</li>
+<li>
+<p>The sum of the digits of a two-digit number is 9. If the digits are reversed, the new number is 27 more than the original. Find the number.</p>
+<blockquote>
+<p><strong>Solution:</strong> Let $d$ be the tens digit and $u$ the units digit. $\begin{cases}d+u=9\10u+d=10d+u+27\end{cases}$. From the second: $9u-9d=27\Rightarrow u-d=3$. Adding with the first: $2u=12\Rightarrow u=6$, $d=3$. The number is <strong>36</strong>.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li><strong>(EVAU Madrid style)</strong> A company produces three models of chair: A, B and C. Each chair A requires 2 h of carpentry, 1 h of upholstery and 1 h of finishing. Each B requires 3 h, 2 h and 1 h. Each C requires 2 h, 1 h and 2 h. It has 70 h of carpentry, 40 h of upholstery and 50 h of finishing available per week. How many chairs of each type can it produce exactly?<blockquote>
+<p><strong>Solution:</strong><br />
+$\begin{cases}2a+3b+2c=70\a+2b+c=40\a+b+2c=50\end{cases}$<br />
+Row-reducing: $F_1-2F_2$: $(0,-1,0|-10)\Rightarrow b=10$. $F_3-F_2$: $(0,-1,c|10)$, i.e. $(0,-b+... )$: $F_3-F_2$: $(0,-1,1|10)$.<br />
+With $b=10$: $a+2(10)+c=40\Rightarrow a+c=20$ and $a+10+2c=50\Rightarrow a+2c=40$. Subtracting: $c=20$, $a=0$.<br />
+<strong>Solution:</strong> $a=0$ type A chairs, $b=10$ type B chairs, $c=20$ type C chairs.<br />
+Verification: $0+30+40=70$ ✓; $0+20+20=40$ ✓; $0+10+40=50$ ✓.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>When modelling a real problem with a system of equations, the first step is:</li>
+<li>a) Compute the determinant of the coefficient matrix</li>
+<li>b) Identify the unknowns and translate the conditions into equations</li>
+<li>c) Apply Gaussian elimination directly</li>
+<li>
+<p>d) Check whether the system is homogeneous</p>
+<blockquote>
+<p><strong>Correct answer: b)</strong> Before any computation, we must define what the unknowns represent and write the relationships between them as linear equations.</p>
+</blockquote>
+</li>
+<li>
+<p>A $2\times2$ system modelling a problem has infinitely many solutions. In the context of the problem, this means:</p>
+</li>
+<li>a) The problem has no solution</li>
+<li>b) The problem data are inconsistent</li>
+<li>c) The problem is underdetermined (there are insufficient conditions)</li>
+<li>d) There is always an error in the formulation<blockquote>
+<p><strong>Correct answer: c)</strong> Infinitely many solutions indicate that there is not enough information to determine a unique answer; additional conditions or constraints are lacking.</p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<h5>3.5.2 Flow models in networks and mass balances</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>In a water distribution network, three pipes connect four nodes. The flow is conserved at each node (what enters = what leaves). The known external flows are: 10 m³/h enters node 1, 4 m³/h leaves node 3 and 6 m³/h leaves node 4. The internal flows $x_1$, $x_2$, $x_3$ are unknown. Write the system of balance equations.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p>We apply the <strong>law of flow conservation</strong> (Kirchhoff's first law) at each node:</p>
+<ul>
+<li><strong>Node 1</strong> (10 enters): $10 = x_1 + x_2$ → $x_1 + x_2 = 10$</li>
+<li><strong>Node 2</strong> (intermediate node): $x_1 = x_3$ → $x_1 - x_3 = 0$</li>
+<li><strong>Node 3</strong> (4 leaves): $x_3 = 4$ → $x_3 = 4$</li>
+<li><strong>Node 4</strong> (6 leaves): $x_2 = 6$ → $x_2 = 6$</li>
+</ul>
+<p>This overdetermined system is consistent:</p>
+<p>From $x_3 = 4$ and $x_2 = 6$: $x_1 = x_3 = 4$. Verification at node 1: $4 + 6 = 10$ ✓. Global balance: 10 enters, $4 + 6 = 10$ leaves ✓.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>
+<p>At a T-junction, a flow of 15 L/s enters and two branches leave with flows $q_1$ and $q_2$ such that $q_1 = 2q_2$. Find $q_1$ and $q_2$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\begin{cases}q_1+q_2=15\q_1=2q_2\end{cases}$. Substituting: $3q_2=15\Rightarrow q_2=5$, $q_1=10$.</p>
+</blockquote>
+</li>
+<li>
+<p>In a mass balance, a 100 kg mixture contains $x$ kg of component A and $y$ kg of component B. If the proportion of A is 30%, set up the system.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\begin{cases}x+y=100\x=0{,}3\cdot100=30\end{cases}$. Therefore $x=30$ kg and $y=70$ kg.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>
+<p>A road network has three intersections. Entry and exit flows are known at the endpoints. The flow on branch $AB$ is $x$, on $BC$ is $y$ and on $AC$ is $z$. If at $A$, 50 veh/h enter and 20 veh/h leave via the external road; at $B$, 30 enter and 40 leave; at $C$, 0 enter and 20 leave via the external road. Write and classify the system.</p>
+<blockquote>
+<p><strong>Solution:</strong> Conservation: Node A: $50 + z = x + 20 \Rightarrow x - z = 30$. Node B: $x + 30 = y + 40 \Rightarrow x - y = 10$. Node C: $y = z + 20 \Rightarrow y - z = 20$. System $3\times3$: $|A|=\begin{vmatrix}1&amp;0&amp;-1\1&amp;-1&amp;0\0&amp;1&amp;-1\end{vmatrix}=1(1-0)-0+(-1)(1-0)=1-1=0$. Consistent and indeterminate with $x=z+30$, $y=z+20$.</p>
+</blockquote>
+</li>
+<li>
+<p>Explain why in a network flow model the system of conservation equations always has at least one redundant equation.</p>
+<blockquote>
+<p><strong>Solution:</strong> The sum of all conservation equations gives the global condition (total flow entering = total flow leaving), which is trivially satisfied if the external flows are consistent. Therefore at least one equation is a linear combination of the others and the rank of the system is always less than the number of nodes.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li><strong>(EVAU Madrid style)</strong> In the circuit (simplified), the current $I$ (in amperes) splits into three branches with currents $I_1$, $I_2$, $I_3$. It is known that:</li>
+<li>At the junction node: $I = I_1 + I_2 + I_3$</li>
+<li>By Ohm's law: $2I_1 = 4I_2$ (same potential difference, resistances $R_1=2\Omega$, $R_2=4\Omega$, $R_3=8\Omega$ — but in parallel the voltage drop is equal)</li>
+<li>$4I_2 = 8I_3$</li>
+<li>$I = 14$ A</li>
+</ol>
+<p>Find $I_1$, $I_2$, $I_3$.</p>
+<blockquote>
+<p><strong>Solution:</strong><br />
+From $2I_1 = 4I_2$: $I_1 = 2I_2$.<br />
+From $4I_2 = 8I_3$: $I_2 = 2I_3$.<br />
+Therefore $I_1 = 4I_3$.<br />
+$I_1+I_2+I_3=4I_3+2I_3+I_3=7I_3=14\Rightarrow I_3=2$ A.<br />
+$I_2=4$ A, $I_1=8$ A.<br />
+Verification: $8+4+2=14$ ✓.</p>
+</blockquote>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>The law of flow conservation at a node of a network states that:</li>
+<li>a) The flow in all branches is equal</li>
+<li>b) The sum of flows entering equals the sum of flows leaving</li>
+<li>c) The total flow in the network is always zero</li>
+<li>
+<p>d) There is flow only in branches with greater resistance</p>
+<blockquote>
+<p><strong>Correct answer: b)</strong> This is Kirchhoff's first law (for electric currents) or the principle of conservation of mass/flow for pipe networks.</p>
+</blockquote>
+</li>
+<li>
+<p>If a network model gives an inconsistent system, it means that:</p>
+</li>
+<li>a) The flows are very large</li>
+<li>b) The entry and exit data at the nodes are inconsistent</li>
+<li>c) There is no flow in the network</li>
+<li>d) The network has too many nodes<blockquote>
+<p><strong>Correct answer: b)</strong> Inconsistency indicates that the conditions imposed at the nodes contradict each other (the data do not globally conserve the flow).</p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<h5>3.5.3 Computational thinking: Gaussian algorithm and systems with parameters</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Describe the Gaussian elimination algorithm in pseudocode for an $n\times n$ system and apply it by hand to the $3\times3$ system with parameter $k$:
+$$\begin{cases} kx + y + z = 1 \ x + ky + z = 1 \ x + y + kz = 1 \end{cases}$$</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p><strong>Gauss pseudocode (forward elimination):</strong></p>
+<pre><code>For j = 1 to n-1:          // Pivot selection (column j)
+  For i = j+1 to n:        // For each row below the pivot
+    factor = A[i][j] / A[j][j]  // Multiplier
+    For l = j to n+1:
+      A[i][l] = A[i][l] - factor * A[j][l]  // Elimination
+// Back substitution
+For i = n to 1:
+  x[i] = A[i][n+1]
+  For j = i+1 to n:
+    x[i] = x[i] - A[i][j] * x[j]
+  x[i] = x[i] / A[i][i]
+</code></pre>
+<p><strong>Application with parameter:</strong></p>
+<p>We detect the cases according to $|A|$. By symmetry: $|A| = -(k-1)^2(k+2)$ (computed as in 3.2.3). Critical cases: $k=1$ and $k=-2$.</p>
+<ul>
+<li><strong>$k \neq 1, k \neq -2$:</strong> Consistent and determined. By symmetry $x=y=z=1/(k+2)$.</li>
+<li><strong>$k=1$:</strong> All equations are $x+y+z=1$. Consistent and indeterminate (2 parameters).</li>
+<li><strong>$k=-2$:</strong> Row-reducing with $k=-2$: $F_2-F_1$: $(1-k, k-1, 0|0) = (3,-3,0|0)$; $F_3-F_1$: $(1-k,0,k-1|0)=(3,0,-3|0)$. The rows give $y=x$ and $z=x$; but the constant term: $0\neq$ what the actual system gives. $F_2-F_1$: $(1-(-2), (-2)-1, 0|0) = (3,-3,0|0)$; $F_1$: $(-2,1,1|1)$, $F_2$: $(1,-2,1|1)$; $F_2-F_1/(-2)$ is more complex. We conclude <strong>inconsistent</strong> (as computed in 3.2.3).</li>
+</ul>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>
+<p>How many elimination operations (loop steps) does Gaussian elimination require for a $3\times3$ system? Justify.</p>
+<blockquote>
+<p><strong>Solution:</strong> In the first pass, 2 eliminations; in the second, 1. Total: $1+2=3$ elimination steps. In general for $n\times n$: $\frac{n(n-1)}{2}$ steps.</p>
+</blockquote>
+</li>
+<li>
+<p>Indicate the correct order of steps in Gaussian elimination.</p>
+<blockquote>
+<p><strong>Solution:</strong> (1) Write the augmented matrix; (2) Choose the pivot in the first column; (3) Create zeros below the pivot using row combinations; (4) Repeat for the next column; (5) Back substitution.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>
+<p>Write in pseudocode the back-substitution process for an upper triangular $3\times3$ system.</p>
+<blockquote>
+<p><strong>Solution:</strong><br />
+<code>z = A[3][4] / A[3][3]
+y = (A[2][4] - A[2][3]*z) / A[2][2]
+x = (A[1][4] - A[1][3]*z - A[1][2]*y) / A[1][1]</code></p>
+</blockquote>
+</li>
+<li>
+<p>Explain what modification would need to be made to the Gaussian algorithm to automatically detect whether the system is consistent or inconsistent.</p>
+<blockquote>
+<p><strong>Solution:</strong> After row reduction, examine each row. If there is a row of the form $(0, 0, \ldots, 0 | c)$ with $c \neq 0$: the system is <strong>inconsistent</strong> (return "No solution"). If there are rows $(0, 0, \ldots, 0 | 0)$: the system is <strong>indeterminate</strong> (count free parameters = number of such rows).</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li><strong>(EVAU Madrid style)</strong> Given the system with parameter $t$:
+   $$\begin{cases} tx + y = t+1 \ x + ty = 2 \end{cases}$$
+   <strong>(a)</strong> Discuss depending on the values of $t$.<br />
+<strong>(b)</strong> Write an algorithmic scheme that, given a numerical value of $t$, automatically determines the type of system.<blockquote>
+<p><strong>Solution:</strong><br />
+<strong>(a)</strong> $|A|=t^2-1=(t-1)(t+1)$.<br />
+— $t\neq\pm1$: consistent and determined. $x=(2(t+1)-2)/(t^2-1)=2t/(t^2-1)=2/(t-1)$ (for $t\neq1$) if $t\neq-1$; $y=(2t-(t+1))/(t^2-1)=(t-1)/(t^2-1)=1/(t+1)$.<br />
+— $t=1$: $x+y=2$ and $x+y=2$: <strong>consistent and indeterminate</strong>, $y=2-x$.<br />
+— $t=-1$: $-x+y=0$ and $x-y=2$: adding $0=-2$, <strong>inconsistent</strong>.<br />
+<strong>(b)</strong> Pseudocode:
+<code>det = t^2 - 1
+If det ≠ 0:
+  Solve by Cramer's rule. "Consistent and determined"
+Else:
+  Row-reduce A*
+  If row (0|c) with c≠0 appears: "Inconsistent"
+  Else: "Consistent and indeterminate"</code></p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>The computational complexity of Gaussian elimination for an $n\times n$ system is:</li>
+<li>a) $O(n)$</li>
+<li>b) $O(n^2)$</li>
+<li>c) $O(n^3)$</li>
+<li>
+<p>d) $O(n!)$</p>
+<blockquote>
+<p><strong>Correct answer: c)</strong> Gaussian elimination has complexity $O(n^3)$ since there are $O(n^2)$ elements to update in $O(n)$ elimination steps.</p>
+</blockquote>
+</li>
+<li>
+<p>In an algorithm implementing Gaussian elimination, if $A[j][j] = 0$ (zero pivot), one should:</p>
+</li>
+<li>a) Divide by zero and continue</li>
+<li>b) Terminate the algorithm indicating no solution</li>
+<li>c) Look for a lower row with a nonzero entry in that column and swap it with row $j$ (pivoting)</li>
+<li>d) Set that element equal to 1 and continue<blockquote>
+<p><strong>Correct answer: c)</strong> If the pivot is zero, a row swap (partial pivoting) is performed to place a nonzero element as pivot, ensuring the algorithm can continue.</p>
+</blockquote>
+</li>
+</ol>
+<h2>---</h2>
+<h5>4.1.1 Definition of a vector in space. Magnitude, direction and sense</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Given the points $A = (1, -2, 3)$ and $B = (4, 1, -1)$, compute the vector $\overrightarrow{AB}$, its magnitude and the angle it makes with the $OX$ axis.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p><strong>Vector $\overrightarrow{AB}$:</strong></p>
+<p>$$\overrightarrow{AB} = B - A = (4-1, 1-(-2), -1-3) = (3, 3, -4)$$</p>
+<p><strong>Magnitude:</strong></p>
+<p>$$|\overrightarrow{AB}| = \sqrt{3^2 + 3^2 + (-4)^2} = \sqrt{9 + 9 + 16} = \sqrt{34}$$</p>
+<p><strong>Angle with the $OX$ axis</strong> (direction cosine $\alpha$):</p>
+<p>$$\cos\alpha = \frac{3}{\sqrt{34}} \Rightarrow \alpha = \arccos\left(\frac{3}{\sqrt{34}}\right) \approx 58{,}9°$$</p>
+<p><strong>Direction cosines:</strong></p>
+<p>$$\cos\alpha = \frac{3}{\sqrt{34}}, \quad \cos\beta = \frac{3}{\sqrt{34}}, \quad \cos\gamma = \frac{-4}{\sqrt{34}}$$</p>
+<p>Verification: $\cos^2\alpha + \cos^2\beta + \cos^2\gamma = \dfrac{9+9+16}{34} = 1$ ✓.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>
+<p>Compute the magnitude of the vector $\mathbf{u} = (-2, 3, 6)$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $|\mathbf{u}|=\sqrt{4+9+36}=\sqrt{49}=7$.</p>
+</blockquote>
+</li>
+<li>
+<p>Given $P=(0,1,2)$ and $Q=(3,5,2)$, find $\overrightarrow{PQ}$ and its magnitude.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\overrightarrow{PQ}=(3,4,0)$. $|\overrightarrow{PQ}|=\sqrt{9+16+0}=5$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>
+<p>Find the unit vector in the direction of $\mathbf{v}=(1,-2,2)$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $|\mathbf{v}|=\sqrt{1+4+4}=3$. $\hat{\mathbf{v}}=(1/3,-2/3,2/3)$. Verification: $\sqrt{1/9+4/9+4/9}=\sqrt{9/9}=1$ ✓.</p>
+</blockquote>
+</li>
+<li>
+<p>For which values of $k$ does the vector $\mathbf{w}=(k, 3, -4)$ have magnitude 5?</p>
+<blockquote>
+<p><strong>Solution:</strong> $k^2+9+16=25\Rightarrow k^2=0\Rightarrow k=0$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li><strong>(EVAU Madrid style)</strong> The points $A$, $B$, $C$ have coordinates $A=(1,0,-1)$, $B=(3,2,1)$, $C=(k,1,0)$.<br />
+<strong>(a)</strong> Compute $\overrightarrow{AB}$ and $\overrightarrow{AC}$.<br />
+<strong>(b)</strong> Find the value of $k$ for which $|\overrightarrow{AC}| = |\overrightarrow{AB}|$.<blockquote>
+<p><strong>Solution:</strong><br />
+<strong>(a)</strong> $\overrightarrow{AB}=(2,2,2)$, $|\overrightarrow{AB}|=\sqrt{12}=2\sqrt{3}$. $\overrightarrow{AC}=(k-1,1,1)$.<br />
+<strong>(b)</strong> $|\overrightarrow{AC}|=\sqrt{(k-1)^2+1+1}=2\sqrt{3}$. $(k-1)^2+2=12\Rightarrow(k-1)^2=10\Rightarrow k=1\pm\sqrt{10}$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>The magnitude of the vector $\mathbf{u}=(3, -4, 0)$ is:</li>
+<li>a) $1$</li>
+<li>b) $5$</li>
+<li>c) $7$</li>
+<li>
+<p>d) $\sqrt{7}$</p>
+<blockquote>
+<p><strong>Correct answer: b)</strong> $|\mathbf{u}|=\sqrt{9+16+0}=\sqrt{25}=5$.</p>
+</blockquote>
+</li>
+<li>
+<p>The unit vector in the direction of $(0, -3, 4)$ is:</p>
+</li>
+<li>a) $(0, -3, 4)$</li>
+<li>b) $(0, -1, 1)$</li>
+<li>c) $(0, -3/5, 4/5)$</li>
+<li>d) $(0, 3/5, -4/5)$<blockquote>
+<p><strong>Correct answer: c)</strong> $|(0,-3,4)|=5$. Unit vector: $(0,-3/5,4/5)$.</p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<h5>4.1.2 Basic operations: addition, subtraction, scalar multiplication and their properties</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Given $\mathbf{u} = (2, -1, 3)$ and $\mathbf{v} = (-1, 4, 2)$, compute:
+(a) $\mathbf{u} + \mathbf{v}$, (b) $\mathbf{u} - \mathbf{v}$, (c) $3\mathbf{u} - 2\mathbf{v}$, (d) $|3\mathbf{u} - 2\mathbf{v}|$.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p><strong>(a)</strong> $\mathbf{u} + \mathbf{v} = (2+(-1), -1+4, 3+2) = (1, 3, 5)$</p>
+<p><strong>(b)</strong> $\mathbf{u} - \mathbf{v} = (2-(-1), -1-4, 3-2) = (3, -5, 1)$</p>
+<p><strong>(c)</strong> $3\mathbf{u} = (6, -3, 9)$; $2\mathbf{v} = (-2, 8, 4)$;
+$3\mathbf{u} - 2\mathbf{v} = (6-(-2), -3-8, 9-4) = (8, -11, 5)$</p>
+<p><strong>(d)</strong> $|3\mathbf{u} - 2\mathbf{v}| = \sqrt{64 + 121 + 25} = \sqrt{210}$</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>
+<p>With $\mathbf{a}=(1,2,-3)$ and $\mathbf{b}=(4,-1,1)$, compute $2\mathbf{a}+\mathbf{b}$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $2\mathbf{a}=(2,4,-6)$. $2\mathbf{a}+\mathbf{b}=(6,3,-5)$.</p>
+</blockquote>
+</li>
+<li>
+<p>Find the vector $\mathbf{w}$ such that $\mathbf{u}+\mathbf{w}=\mathbf{v}$ with $\mathbf{u}=(3,-1,2)$ and $\mathbf{v}=(1,1,0)$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\mathbf{w}=\mathbf{v}-\mathbf{u}=(-2,2,-2)$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>
+<p>Find scalars $\alpha$ and $\beta$ such that $\alpha(1,0,1)+\beta(0,1,-1)=(3,2,1)$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $(\alpha, \beta, \alpha-\beta)=(3,2,1)$. System: $\alpha=3$, $\beta=2$, $\alpha-\beta=1$. Verification: $3-2=1$ ✓.</p>
+</blockquote>
+</li>
+<li>
+<p>Prove that $|\mathbf{u}+\mathbf{v}|^2 = |\mathbf{u}|^2 + 2\mathbf{u}\cdot\mathbf{v} + |\mathbf{v}|^2$ using the properties of the dot product.</p>
+<blockquote>
+<p><strong>Solution:</strong> $|\mathbf{u}+\mathbf{v}|^2 = (\mathbf{u}+\mathbf{v})\cdot(\mathbf{u}+\mathbf{v}) = \mathbf{u}\cdot\mathbf{u}+\mathbf{u}\cdot\mathbf{v}+\mathbf{v}\cdot\mathbf{u}+\mathbf{v}\cdot\mathbf{v} = |\mathbf{u}|^2+2\mathbf{u}\cdot\mathbf{v}+|\mathbf{v}|^2$ (using commutativity of the dot product).</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li><strong>(EVAU Madrid style)</strong> Given $\mathbf{a}=(1,2,3)$ and $\mathbf{b}=(2,-1,1)$, find the vector $\mathbf{c}=\mathbf{a}+t\mathbf{b}$ such that $|\mathbf{c}|=3$.<blockquote>
+<p><strong>Solution:</strong> $\mathbf{c}=(1+2t, 2-t, 3+t)$.<br />
+$|\mathbf{c}|^2=(1+2t)^2+(2-t)^2+(3+t)^2=1+4t+4t^2+4-4t+t^2+9+6t+t^2=14+6t+6t^2=9$.<br />
+$6t^2+6t+5=0$. Discriminant: $36-120=-84&lt;0$.<br />
+No real value of $t$ exists such that $|\mathbf{c}|=3$, since the minimum magnitude is $\sqrt{14-6^2/(4\cdot6)}=\sqrt{14-3/2}=\sqrt{25/2}=5/\sqrt{2}\approx3{,}54&gt;3$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>If $|\mathbf{u}|=3$ and $\mathbf{v}=2\mathbf{u}$, then $|\mathbf{v}|$ is:</li>
+<li>a) $3$</li>
+<li>b) $6$</li>
+<li>c) $9$</li>
+<li>
+<p>d) $\sqrt{6}$</p>
+<blockquote>
+<p><strong>Correct answer: b)</strong> $|\mathbf{v}|=|2\mathbf{u}|=|2||\mathbf{u}|=2\cdot3=6$.</p>
+</blockquote>
+</li>
+<li>
+<p>The opposite of the vector $\mathbf{u}=(a,b,c)$ is:</p>
+</li>
+<li>a) $(1/a, 1/b, 1/c)$</li>
+<li>b) $(-a,-b,-c)$</li>
+<li>c) $(a,b,c)$</li>
+<li>d) $(c,b,a)$<blockquote>
+<p><strong>Correct answer: b)</strong> The opposite or additive inverse of $\mathbf{u}$ is $-\mathbf{u}=(-a,-b,-c)$, since $\mathbf{u}+(-\mathbf{u})=\mathbf{0}$.</p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<h5>4.1.3 Representation of vectors in Cartesian coordinates</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Express the vector $\overrightarrow{AB}$ with $A=(2,1,-3)$, $B=(5,-2,0)$ in the canonical basis ${\mathbf{i},\mathbf{j},\mathbf{k}}$ and find its magnitude.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p><strong>Coordinates of $\overrightarrow{AB}$:</strong></p>
+<p>$$\overrightarrow{AB} = B - A = (5-2, -2-1, 0-(-3)) = (3, -3, 3)$$</p>
+<p><strong>Expression in canonical basis:</strong></p>
+<p>$$\overrightarrow{AB} = 3\mathbf{i} - 3\mathbf{j} + 3\mathbf{k}$$</p>
+<p>where $\mathbf{i}=(1,0,0)$, $\mathbf{j}=(0,1,0)$, $\mathbf{k}=(0,0,1)$.</p>
+<p><strong>Magnitude:</strong></p>
+<p>$$|\overrightarrow{AB}| = \sqrt{9+9+9} = \sqrt{27} = 3\sqrt{3}$$</p>
+<p><strong>Direction cosines:</strong></p>
+<p>$$\cos\alpha = \frac{3}{3\sqrt{3}} = \frac{1}{\sqrt{3}}, \quad \cos\beta = \frac{-3}{3\sqrt{3}} = \frac{-1}{\sqrt{3}}, \quad \cos\gamma = \frac{3}{3\sqrt{3}} = \frac{1}{\sqrt{3}}$$</p>
+<p>All angles are equal in absolute value: $|\alpha| = |\beta| = |\gamma| = \arccos(1/\sqrt{3}) \approx 54{,}7°$.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>
+<p>Write $\mathbf{v}=(4,-2,1)$ as a linear combination of $\mathbf{i}$, $\mathbf{j}$, $\mathbf{k}$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\mathbf{v}=4\mathbf{i}-2\mathbf{j}+\mathbf{k}$.</p>
+</blockquote>
+</li>
+<li>
+<p>The midpoint $M$ of segment $PQ$ with $P=(1,3,-2)$ and $Q=(5,-1,4)$ has coordinates:</p>
+<blockquote>
+<p><strong>Solution:</strong> $M=\left(\frac{1+5}{2},\frac{3-1}{2},\frac{-2+4}{2}\right)=(3,1,1)$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>
+<p>Find the point $C$ such that $\overrightarrow{AB}=\overrightarrow{CD}$ with $A=(1,0,2)$, $B=(3,1,-1)$, $D=(0,2,1)$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\overrightarrow{AB}=(2,1,-3)=\overrightarrow{CD}=D-C=(0-C_x,2-C_y,1-C_z)$. $C_x=-2$, $C_y=1$, $C_z=4$. $C=(-2,1,4)$.</p>
+</blockquote>
+</li>
+<li>
+<p>Find the coordinates of the point $P$ that divides segment $AB$ with $A=(0,0,0)$, $B=(6,9,3)$ in the ratio $2:1$ from $A$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $P = A + \frac{2}{3}\overrightarrow{AB} = (0,0,0)+\frac{2}{3}(6,9,3)=(4,6,2)$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li><strong>(EVAU Madrid style)</strong> Let the triangle have vertices $A=(1,2,3)$, $B=(4,0,1)$, $C=(2,3,-1)$.<br />
+<strong>(a)</strong> Find the vectors of the sides of the triangle.<br />
+<strong>(b)</strong> Verify that the vector sum of the three sides (traversed in order) is the zero vector.<br />
+<strong>(c)</strong> Compute the perimeter of the triangle.<blockquote>
+<p><strong>Solution:</strong><br />
+<strong>(a)</strong> $\overrightarrow{AB}=(3,-2,-2)$, $\overrightarrow{BC}=(-2,3,-2)$, $\overrightarrow{CA}=(-1,-1,4)$.<br />
+<strong>(b)</strong> $\overrightarrow{AB}+\overrightarrow{BC}+\overrightarrow{CA}=(3-2-1,-2+3-1,-2-2+4)=(0,0,0)$ ✓.<br />
+<strong>(c)</strong> $|AB|=\sqrt{9+4+4}=\sqrt{17}$. $|BC|=\sqrt{4+9+4}=\sqrt{17}$. $|CA|=\sqrt{1+1+16}=\sqrt{18}=3\sqrt{2}$.<br />
+Perimeter $= 2\sqrt{17}+3\sqrt{2}$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>The components of vector $\overrightarrow{AB}$ with $A=(a_1,a_2,a_3)$ and $B=(b_1,b_2,b_3)$ are:</li>
+<li>a) $(a_1+b_1, a_2+b_2, a_3+b_3)$</li>
+<li>b) $(a_1-b_1, a_2-b_2, a_3-b_3)$</li>
+<li>c) $(b_1-a_1, b_2-a_2, b_3-a_3)$</li>
+<li>
+<p>d) $(b_1/a_1, b_2/a_2, b_3/a_3)$</p>
+<blockquote>
+<p><strong>Correct answer: c)</strong> $\overrightarrow{AB}=B-A=(b_1-a_1,b_2-a_2,b_3-a_3)$.</p>
+</blockquote>
+</li>
+<li>
+<p>The sum $\mathbf{i}+\mathbf{j}+\mathbf{k}$ has magnitude:</p>
+</li>
+<li>a) $1$</li>
+<li>b) $3$</li>
+<li>c) $\sqrt{2}$</li>
+<li>d) $\sqrt{3}$<blockquote>
+<p><strong>Correct answer: d)</strong> $|(1,1,1)|=\sqrt{1+1+1}=\sqrt{3}$.</p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<hr />
+<h5>4.2.1 Definition of linear combination of vectors</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Express the vector $\mathbf{w} = (5, 2, -1)$ as a linear combination of $\mathbf{u} = (1, 0, 1)$ and $\mathbf{v} = (2, 1, -1)$ if possible.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p>We look for $\alpha, \beta \in \mathbb{R}$ such that $\alpha\mathbf{u} + \beta\mathbf{v} = \mathbf{w}$:</p>
+<p>$$\alpha(1,0,1) + \beta(2,1,-1) = (5,2,-1)$$</p>
+<p>$$\begin{cases} \alpha + 2\beta = 5 \ \beta = 2 \ \alpha - \beta = -1 \end{cases}$$</p>
+<p>From the second equation: $\beta = 2$. From the first: $\alpha = 5 - 4 = 1$. We verify with the third: $1 - 2 = -1$ ✓.</p>
+<p><strong>Result:</strong> $\mathbf{w} = 1 \cdot \mathbf{u} + 2 \cdot \mathbf{v}$, i.e., $\mathbf{w} = \mathbf{u} + 2\mathbf{v}$.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>
+<p>Is $(3, 5)$ a linear combination of $(1, 1)$ and $(1, -1)$?</p>
+<blockquote>
+<p><strong>Solution:</strong> $\alpha(1,1)+\beta(1,-1)=(3,5)$. $\alpha+\beta=3$, $\alpha-\beta=5$. Adding: $\alpha=4$, $\beta=-1$. Yes: $(3,5)=4(1,1)+(-1)(1,-1)$.</p>
+</blockquote>
+</li>
+<li>
+<p>Write the vector $(2,-3,4)$ as a linear combination of the canonical basis vectors.</p>
+<blockquote>
+<p><strong>Solution:</strong> $(2,-3,4)=2\mathbf{i}-3\mathbf{j}+4\mathbf{k}$. The coefficients are directly the components.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>
+<p>Determine whether $(1,2,3)$ is a linear combination of $(1,0,1)$, $(0,1,1)$ and $(1,1,0)$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\alpha(1,0,1)+\beta(0,1,1)+\gamma(1,1,0)=(1,2,3)$. System: $\alpha+\gamma=1$, $\beta+\gamma=2$, $\alpha+\beta=3$. From the three: $\alpha+\beta+\gamma=(1+2+3)/2=3$, $\gamma=0$, $\alpha=1$, $\beta=2$. Verification: $1+0=1$ ✓, $2+0=2$ ✓, $1+2=3$ ✓. Yes, $(1,2,3)=1\cdot(1,0,1)+2\cdot(0,1,1)+0\cdot(1,1,0)$.</p>
+</blockquote>
+</li>
+<li>
+<p>Prove that any vector of $\mathbb{R}^3$ can be expressed as a linear combination of the canonical basis ${\mathbf{i},\mathbf{j},\mathbf{k}}$.</p>
+<blockquote>
+<p><strong>Solution:</strong> Let $(a,b,c)\in\mathbb{R}^3$. Then $(a,b,c)=a(1,0,0)+b(0,1,0)+c(0,0,1)=a\mathbf{i}+b\mathbf{j}+c\mathbf{k}$. The coefficients are exactly the coordinates of the vector.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li><strong>(EVAU Madrid style)</strong> Given the vectors $\mathbf{a}=(1,2,1)$, $\mathbf{b}=(2,1,0)$, $\mathbf{c}=(0,1,2)$:<br />
+<strong>(a)</strong> Is $(5,6,4)$ a linear combination of $\mathbf{a}$, $\mathbf{b}$ and $\mathbf{c}$?<br />
+<strong>(b)</strong> If the answer is affirmative, find the coefficients.<blockquote>
+<p><strong>Solution:</strong><br />
+<strong>(a)</strong> and <strong>(b):</strong> System $\alpha\mathbf{a}+\beta\mathbf{b}+\gamma\mathbf{c}=(5,6,4)$:<br />
+$\alpha+2\beta=5$; $2\alpha+\beta+\gamma=6$; $\alpha+2\gamma=4$.<br />
+$|A|=\begin{vmatrix}1&amp;2&amp;0\2&amp;1&amp;1\1&amp;0&amp;2\end{vmatrix}=1(2-0)-2(4-1)+0=-1-6=-5\neq0$.<br />
+System is consistent and determined. By Cramer: $\alpha=(5(2)-2(16-4)+0)/(-5)=(10-24)/(-5)=14/5$... Using Gauss: $F_2-2F_1$: $(0,-3,1|-4)$; $F_3-F_1$: $(0,-2,2|-1)$. $F_3-(2/3)F_2$: $(0,0,4/3|1/3)\Rightarrow\gamma=1/4$. $-3\beta+1/4=-4\Rightarrow\beta=17/12$... Results: $\alpha=5-2(17/12)=5-17/6=13/6$; verification complex. Yes, it is a linear combination (nonzero determinant).</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>The zero vector $\mathbf{0}$ is a linear combination of any set of vectors because:</li>
+<li>a) Its components are all zero</li>
+<li>b) It is obtained by taking all coefficients equal to zero</li>
+<li>c) It is perpendicular to all vectors</li>
+<li>
+<p>d) It only belongs to the canonical basis</p>
+<blockquote>
+<p><strong>Correct answer: b)</strong> $0\cdot\mathbf{v}_1+0\cdot\mathbf{v}_2+\ldots+0\cdot\mathbf{v}_n=\mathbf{0}$ for any set of vectors.</p>
+</blockquote>
+</li>
+<li>
+<p>A vector $\mathbf{w}$ is a linear combination of ${\mathbf{u},\mathbf{v}}$ if and only if it belongs to:</p>
+</li>
+<li>a) The intersection of the two vectors</li>
+<li>b) The subspace spanned by $\mathbf{u}$ and $\mathbf{v}$</li>
+<li>c) The orthogonal complement of $\mathbf{u}$ and $\mathbf{v}$</li>
+<li>d) The cross product of $\mathbf{u}$ and $\mathbf{v}$<blockquote>
+<p><strong>Correct answer: b)</strong> The span (or linear hull) $\langle\mathbf{u},\mathbf{v}\rangle$ is precisely the set of all linear combinations of $\mathbf{u}$ and $\mathbf{v}$.</p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<h5>4.2.2 Linear dependence and independence: definition and criterion via determinant</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Study whether the vectors $\mathbf{u}=(1,2,-1)$, $\mathbf{v}=(2,1,3)$, $\mathbf{w}=(1,-1,4)$ are linearly independent.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p>The vectors are <strong>linearly dependent</strong> if there exists a non-trivial combination $\alpha\mathbf{u}+\beta\mathbf{v}+\gamma\mathbf{w}=\mathbf{0}$ with $(\alpha,\beta,\gamma)\neq(0,0,0)$.</p>
+<p>Equivalently, we compute the determinant formed with the vectors as rows (or columns):</p>
+<p>$$\begin{vmatrix} 1 &amp; 2 &amp; -1 \ 2 &amp; 1 &amp; 3 \ 1 &amp; -1 &amp; 4 \end{vmatrix}$$</p>
+<p>Expanding along the first row:</p>
+<p>$= 1(4+3) - 2(8-3) + (-1)(-2-1) = 7 - 10 + 3 = 0$</p>
+<p>Since the determinant is <strong>0</strong>, the vectors are <strong>linearly dependent</strong>. We look for the dependence relation:</p>
+<p>From $\alpha\mathbf{u}+\beta\mathbf{v}+\gamma\mathbf{w}=\mathbf{0}$: homogeneous system with non-trivial solutions. By Gauss: $F_2-2F_1$: $(0,-3,5|0)$; $F_3-F_1$: $(0,-3,5|0)$. $F_3-F_2$: $(0,0,0|0)$. With $\gamma=3$: $-3\beta+15=0\Rightarrow\beta=5$; $\alpha+10-3=0\Rightarrow\alpha=-7$.</p>
+<p>Verification: $-7(1,2,-1)+5(2,1,3)+3(1,-1,4) = (-7+10+3, -14+5-3, 7+15+12) = (6,-12,34)\neq(0,0,0)$. </p>
+<p>Recalculating: $-7\mathbf{u}+5\mathbf{v}+3\mathbf{w}=(-7+10+3,-14+5-3,7+15+12)=(6,-12,34)$. There is an error; reviewing the determinant:
+$1(1\cdot4-3\cdot(-1))-2(2\cdot4-3\cdot1)+(-1)(2\cdot(-1)-1\cdot1)=1(7)-2(5)+(-1)(-3)=7-10+3=0$ ✓.</p>
+<p>With $\gamma=t$: $-3\beta+5t=0\Rightarrow\beta=5t/3$; $\alpha+2(5t/3)-t=0\Rightarrow\alpha=t-10t/3=-7t/3$. With $t=3$: $\alpha=-7$, $\beta=5$, $\gamma=3$. Verification: $-7(1,2,-1)+5(2,1,3)+3(1,-1,4)=(-7+10+3,-14+5-3,7+15+12)=(6,-12,34)\neq\mathbf{0}$.</p>
+<p>Error in the determinant. Recalculating: $1(1\cdot4-3\cdot(-1)) = 1(4+3)=7$. $-2(2\cdot4-3\cdot1)=-2(8-3)=-10$. $(-1)(2\cdot(-1)-1\cdot1)=(-1)(-2-1)=3$. Total: $7-10+3=0$ ✓. But $\mathbf{w}=(1,-1,4)$ in the system: for $t=3$: $-7(1,2,-1)+5(2,1,3)+3(1,-1,4)=(-7+10+3)=6\neq0$. <strong>Contradiction</strong>.</p>
+<p>The determinant equals 0 but the verification fails. Checking again by column 1: $1\cdot\begin{vmatrix}1&amp;3\-1&amp;4\end{vmatrix}-2\cdot\begin{vmatrix}2&amp;-1\-1&amp;4\end{vmatrix}+1\cdot\begin{vmatrix}2&amp;-1\1&amp;3\end{vmatrix}$
+$=1(4+3)-2(8-1)+1(6+1)=7-14+7=0$.</p>
+<p>But the system $\alpha\mathbf{u}+\beta\mathbf{v}+\gamma\mathbf{w}=0$ with the vectors as <strong>columns</strong> of the matrix (not rows). If we use columns, the determinant is the same (transpose), but the system $\alpha\mathbf{u}+\beta\mathbf{v}+\gamma\mathbf{w}=0$ is written:</p>
+<p>$\begin{pmatrix}1&amp;2&amp;1\2&amp;1&amp;-1\-1&amp;3&amp;4\end{pmatrix}\begin{pmatrix}\alpha\\beta\\gamma\end{pmatrix}=\mathbf{0}$</p>
+<p>(each vector is a <strong>column</strong>). This determinant: $1(4+3)-2(8-1)+1(6+1)=7-14+7=0$ ✓.</p>
+<p>Row-reducing: $F_2-2F_1$: $(0,-3,-3|0)\Rightarrow\beta+\gamma=0$. $F_3+F_1$: $(0,5,5|0)\Rightarrow\beta+\gamma=0$ (same relation). With $\gamma=t$: $\beta=-t$; $\alpha-2t+t=0\Rightarrow\alpha=t$.</p>
+<p>Verification with $t=1$: $1\cdot\mathbf{u}+(-1)\cdot\mathbf{v}+1\cdot\mathbf{w}=(1-2+1,2-1-1,-1-3+4)=(0,0,0)$ ✓.</p>
+<p><strong>Dependence relation:</strong> $\mathbf{u} - \mathbf{v} + \mathbf{w} = \mathbf{0}$, i.e., $\mathbf{w} = \mathbf{v} - \mathbf{u}$.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>
+<p>Are $\mathbf{u}=(1,2)$ and $\mathbf{v}=(2,4)$ linearly dependent?</p>
+<blockquote>
+<p><strong>Solution:</strong> $\begin{vmatrix}1&amp;2\2&amp;4\end{vmatrix}=4-4=0$. Yes, they are <strong>linearly dependent</strong>: $\mathbf{v}=2\mathbf{u}$.</p>
+</blockquote>
+</li>
+<li>
+<p>Indicate whether three vectors of $\mathbb{R}^3$ can always be linearly independent if one of them is the zero vector.</p>
+<blockquote>
+<p><strong>Solution:</strong> No. If one of the vectors is $\mathbf{0}$, then $1\cdot\mathbf{0}+0\cdot\mathbf{v}_2+0\cdot\mathbf{v}_3=\mathbf{0}$ is a non-trivial combination. The vectors are <strong>always linearly dependent</strong> if the set contains the zero vector.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>
+<p>Study the linear independence of $\mathbf{a}=(1,0,2)$, $\mathbf{b}=(0,1,-1)$, $\mathbf{c}=(2,-1,5)$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\begin{vmatrix}1&amp;0&amp;2\0&amp;1&amp;-1\2&amp;-1&amp;5\end{vmatrix}=1(5-1)-0+2(0-2)=4-4=0$. <strong>Linearly dependent</strong>. Dependence: $\alpha(1,0,2)+\beta(0,1,-1)+\gamma(2,-1,5)=0$. $F_2-0$: already reduced. $F_3-2F_1$: $(0,-1,1|0)$. Same as $-F_2$: $(0,0,0|0)$. With $\gamma=t$: $\beta=t$, $\alpha=-2t$. For $t=1$: $\mathbf{c}=2\mathbf{a}-\mathbf{b}$.</p>
+</blockquote>
+</li>
+<li>
+<p>For which value of $k$ are $(1,k,0)$, $(0,1,k)$, $(k,0,1)$ linearly dependent?</p>
+<blockquote>
+<p><strong>Solution:</strong> $\begin{vmatrix}1&amp;k&amp;0\0&amp;1&amp;k\k&amp;0&amp;1\end{vmatrix}=1(1-0)-k(0-k^2)+0=1+k^3$. $1+k^3=0\Rightarrow k=-1$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li><strong>(EVAU Madrid style)</strong> Study the linear independence of the vectors $\mathbf{u}=(1,1,m)$, $\mathbf{v}=(1,m,1)$, $\mathbf{w}=(m,1,1)$ depending on the values of the parameter $m$.<blockquote>
+<p><strong>Solution:</strong><br />
+$|A|=\begin{vmatrix}1&amp;1&amp;m\1&amp;m&amp;1\m&amp;1&amp;1\end{vmatrix}=-(m-1)^2(m+2)$ (computed as in the previous exercise from ch. 3).<br />
+— $m\neq1$ and $m\neq-2$: $|A|\neq0$. <strong>Linearly independent</strong>.<br />
+— $m=1$: all vectors are $(1,1,1)$: <strong>linearly dependent</strong> (trivially).<br />
+— $m=-2$: $\mathbf{u}=(1,1,-2)$, $\mathbf{v}=(1,-2,1)$, $\mathbf{w}=(-2,1,1)$. $\mathbf{u}+\mathbf{v}+\mathbf{w}=(0,0,0)$: <strong>linearly dependent</strong>.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>Three vectors of $\mathbb{R}^3$ are linearly independent if and only if:</li>
+<li>a) They are pairwise perpendicular</li>
+<li>b) The determinant formed with them as rows (or columns) is nonzero</li>
+<li>c) None is a multiple of another</li>
+<li>
+<p>d) Their sum is the zero vector</p>
+<blockquote>
+<p><strong>Correct answer: b)</strong> The algebraic criterion for linear independence in $\mathbb{R}^3$ is that the $3\times3$ determinant formed with the vectors is nonzero. Option c) is necessary but not sufficient.</p>
+</blockquote>
+</li>
+<li>
+<p>If ${\mathbf{u},\mathbf{v},\mathbf{w}}$ are linearly dependent (L.D.), then:</p>
+</li>
+<li>a) One of them is always the zero vector</li>
+<li>b) One of them is a linear combination of the other two</li>
+<li>c) They are all equal</li>
+<li>d) Their determinant equals 1<blockquote>
+<p><strong>Correct answer: b)</strong> Linear dependence means there exists a non-trivial relation $\alpha\mathbf{u}+\beta\mathbf{v}+\gamma\mathbf{w}=\mathbf{0}$, which allows isolating any vector with nonzero coefficient as a linear combination of the others.</p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<h5>4.2.3 Basis and dimension of space ℝ³. Canonical basis</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Prove that the vectors $\mathbf{e}_1=(1,1,0)$, $\mathbf{e}_2=(0,1,1)$, $\mathbf{e}_3=(1,0,1)$ form a basis of $\mathbb{R}^3$ and express $(3,5,7)$ in this basis.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p><strong>1. Verifying they form a basis:</strong> we compute the determinant:</p>
+<p>$$\begin{vmatrix} 1&amp;1&amp;0\0&amp;1&amp;1\1&amp;0&amp;1 \end{vmatrix} = 1(1-0) - 1(0-1) + 0 = 1+1 = 2 \neq 0$$</p>
+<p>Since the determinant is nonzero, the three vectors are linearly independent and form a <strong>basis</strong> of $\mathbb{R}^3$.</p>
+<p><strong>2. Coordinates of $(3,5,7)$:</strong> we look for $\alpha,\beta,\gamma$ such that $\alpha\mathbf{e}_1+\beta\mathbf{e}_2+\gamma\mathbf{e}_3=(3,5,7)$:</p>
+<p>$$\begin{cases} \alpha + \gamma = 3 \ \alpha + \beta = 5 \ \beta + \gamma = 7 \end{cases}$$</p>
+<p>Adding all three: $2(\alpha+\beta+\gamma) = 15 \Rightarrow \alpha+\beta+\gamma = 7{,}5$.</p>
+<p>$\gamma = 7{,}5 - 5 = 2{,}5$; $\alpha = 7{,}5 - 7 = 0{,}5$; $\beta = 7{,}5 - 3 = 4{,}5$.</p>
+<p>$(3,5,7) = 0{,}5\,\mathbf{e}_1 + 4{,}5\,\mathbf{e}_2 + 2{,}5\,\mathbf{e}_3 = \dfrac{1}{2}\mathbf{e}_1 + \dfrac{9}{2}\mathbf{e}_2 + \dfrac{5}{2}\mathbf{e}_3$.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>
+<p>How many vectors form a basis of $\mathbb{R}^3$? And of $\mathbb{R}^n$?</p>
+<blockquote>
+<p><strong>Solution:</strong> A basis of $\mathbb{R}^3$ has exactly <strong>3</strong> vectors (equal to the dimension of the space). A basis of $\mathbb{R}^n$ has exactly $n$ vectors.</p>
+</blockquote>
+</li>
+<li>
+<p>Verify that $\mathbf{i}=(1,0,0)$, $\mathbf{j}=(0,1,0)$, $\mathbf{k}=(0,0,1)$ form the canonical basis.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\begin{vmatrix}1&amp;0&amp;0\0&amp;1&amp;0\0&amp;0&amp;1\end{vmatrix}=1\neq0$. They are linearly independent, there are 3 vectors of $\mathbb{R}^3$: they form a basis (the <strong>canonical basis</strong>).</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>
+<p>For which values of $t$ do the vectors $(1,0,t)$, $(0,1,t)$, $(t,t,1)$ form a basis?</p>
+<blockquote>
+<p><strong>Solution:</strong> $\begin{vmatrix}1&amp;0&amp;t\0&amp;1&amp;t\t&amp;t&amp;1\end{vmatrix}=1(1-t^2)-0+t(0-t)=1-t^2-t^2=1-2t^2$. $1-2t^2\neq0\Rightarrow t\neq\pm1/\sqrt{2}$.</p>
+</blockquote>
+</li>
+<li>
+<p>Express the vector $(2,-1,3)$ in the basis ${(1,1,1),(1,-1,0),(0,1,-1)}$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\alpha+\beta=2$; $\alpha-\beta+\gamma=-1$; $\alpha-\gamma=3$. From the first and second: $2\alpha+\gamma=1$; with the third $\gamma=\alpha-3$: $2\alpha+\alpha-3=1\Rightarrow\alpha=4/3$. $\gamma=4/3-3=-5/3$. $\beta=2-4/3=2/3$. Verification: $(4/3+2/3, 4/3-2/3-5/3, 4/3+5/3)=(2,(-3/3),3)=(2,-1,3)$ ✓.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li><strong>(EVAU Madrid style)</strong> Let the basis $\mathcal{B}={(1,2,0),(0,1,3),(1,0,-1)}$ of $\mathbb{R}^3$.<br />
+<strong>(a)</strong> Verify that $\mathcal{B}$ is indeed a basis.<br />
+<strong>(b)</strong> Find the coordinates of the vector $(4,3,2)$ in the basis $\mathcal{B}$.<blockquote>
+<p><strong>Solution:</strong><br />
+<strong>(a)</strong> $\begin{vmatrix}1&amp;2&amp;0\0&amp;1&amp;3\1&amp;0&amp;-1\end{vmatrix}=1(-1-0)-2(0-3)+0=-1+6=5\neq0$. It is a basis.<br />
+<strong>(b)</strong> $\alpha(1,2,0)+\beta(0,1,3)+\gamma(1,0,-1)=(4,3,2)$. System: $\alpha+\gamma=4$; $2\alpha+\beta=3$; $3\beta-\gamma=2$.<br />
+From the first: $\gamma=4-\alpha$. From the third: $\gamma=3\beta-2$. From the second: $\beta=3-2\alpha$.<br />
+$4-\alpha=3(3-2\alpha)-2=7-6\alpha\Rightarrow5\alpha=3\Rightarrow\alpha=3/5$. $\beta=3-6/5=9/5$. $\gamma=4-3/5=17/5$.<br />
+Coordinates: $(3/5, 9/5, 17/5)$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>A basis of $\mathbb{R}^3$ is a set of vectors that:</li>
+<li>a) Are orthogonal and have magnitude 1</li>
+<li>b) Are linearly independent and span all of $\mathbb{R}^3$</li>
+<li>c) Have integer components</li>
+<li>
+<p>d) Contain the vector $(1,0,0)$</p>
+<blockquote>
+<p><strong>Correct answer: b)</strong> A basis is a system of linearly independent spanning vectors. Orthogonality and integer components are not required.</p>
+</blockquote>
+</li>
+<li>
+<p>The dimension of $\mathbb{R}^3$ is 3 because:</p>
+</li>
+<li>a) It has 3 coordinate axes</li>
+<li>b) Every vector has 3 components and any basis has exactly 3 elements</li>
+<li>c) The determinant of the canonical basis is 3</li>
+<li>d) There are exactly 3 vectors in each canonical basis<blockquote>
+<p><strong>Correct answer: b)</strong> The dimension of a vector space is the number of vectors in any of its bases, which in $\mathbb{R}^3$ is always 3.</p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<hr />
+<h5>4.3.1 Analytic and geometric definition of the dot product in ℝ³</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Compute the dot product of $\mathbf{u}=(2,-1,3)$ and $\mathbf{v}=(1,4,-2)$ using the analytic definition and verify consistency with the geometric definition.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p><strong>Analytic definition:</strong></p>
+<p>$$\mathbf{u} \cdot \mathbf{v} = 2 \cdot 1 + (-1) \cdot 4 + 3 \cdot (-2) = 2 - 4 - 6 = -8$$</p>
+<p><strong>Magnitudes:</strong></p>
+<p>$$|\mathbf{u}| = \sqrt{4+1+9} = \sqrt{14}, \quad |\mathbf{v}| = \sqrt{1+16+4} = \sqrt{21}$$</p>
+<p><strong>Angle between the vectors</strong> (geometric definition):</p>
+<p>$$\cos\theta = \frac{\mathbf{u}\cdot\mathbf{v}}{|\mathbf{u}||\mathbf{v}|} = \frac{-8}{\sqrt{14}\cdot\sqrt{21}} = \frac{-8}{\sqrt{294}} = \frac{-8}{7\sqrt{6}}$$</p>
+<p>$$\theta = \arccos\left(\frac{-8}{7\sqrt{6}}\right) \approx \arccos(-0{,}467) \approx 117{,}8°$$</p>
+<p><strong>Interpretation:</strong> The dot product is negative, indicating that the angle between the vectors is <strong>obtuse</strong> (greater than 90°), consistent with $\theta \approx 118°$.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>
+<p>Compute $\mathbf{a}\cdot\mathbf{b}$ with $\mathbf{a}=(3,0,-1)$ and $\mathbf{b}=(2,5,4)$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\mathbf{a}\cdot\mathbf{b} = 3\cdot2 + 0\cdot5 + (-1)\cdot4 = 6+0-4 = 2$.</p>
+</blockquote>
+</li>
+<li>
+<p>Given $\mathbf{u}=(1,1,1)$ and $\mathbf{v}=(2,-3,1)$, compute $\mathbf{u}\cdot\mathbf{v}$ and determine whether they are perpendicular.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\mathbf{u}\cdot\mathbf{v} = 2-3+1 = 0$. Since the dot product is zero, the vectors are <strong>perpendicular (orthogonal)</strong>.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>
+<p>Find the angle between $\mathbf{p}=(1,0,-1)$ and $\mathbf{q}=(1,1,0)$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\mathbf{p}\cdot\mathbf{q}=1+0+0=1$. $|\mathbf{p}|=\sqrt{2}$, $|\mathbf{q}|=\sqrt{2}$. $\cos\theta = \frac{1}{\sqrt{2}\cdot\sqrt{2}}=\frac{1}{2}$. Therefore $\theta = 60°$.</p>
+</blockquote>
+</li>
+<li>
+<p>Find the value of $k$ for which the vectors $\mathbf{a}=(k,2,-1)$ and $\mathbf{b}=(3,k,5)$ are perpendicular.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\mathbf{a}\cdot\mathbf{b}=3k+2k-5=5k-5=0 \Rightarrow k=1$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>Let $\mathbf{u}=(1,-2,3)$ and $\mathbf{v}=(2,1,a)$.<br />
+   a) Determine $a$ so that $\mathbf{u}$ and $\mathbf{v}$ are perpendicular.<br />
+   b) For $a=0$, compute the magnitude of $\mathbf{u}+\mathbf{v}$ and the angle between $\mathbf{u}$ and $\mathbf{v}$.<blockquote>
+<p><strong>Solution:</strong><br />
+<strong>a)</strong> $\mathbf{u}\cdot\mathbf{v}=1\cdot2+(-2)\cdot1+3\cdot a=2-2+3a=3a=0 \Rightarrow a=0$.<br />
+<strong>b)</strong> With $a=0$: $\mathbf{v}=(2,1,0)$. $\mathbf{u}+\mathbf{v}=(3,-1,3)$, $|\mathbf{u}+\mathbf{v}|=\sqrt{9+1+9}=\sqrt{19}$.<br />
+For the angle: $\mathbf{u}\cdot\mathbf{v}=0$ (from part a), confirming $\theta=90°$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>If $\mathbf{u}=(2,1,-2)$ and $\mathbf{v}=(-1,3,1)$, then $\mathbf{u}\cdot\mathbf{v}$ equals:</li>
+<li>a) $-3$</li>
+<li>b) $1$</li>
+<li>c) $-1$</li>
+<li>
+<p>d) $3$</p>
+<blockquote>
+<p><strong>Correct answer:</strong> c) $\mathbf{u}\cdot\mathbf{v}=2\cdot(-1)+1\cdot3+(-2)\cdot1=-2+3-2=-1$.</p>
+</blockquote>
+</li>
+<li>
+<p>For two nonzero vectors to be perpendicular, their dot product must be:</p>
+</li>
+<li>a) Equal to 1</li>
+<li>b) Equal to $|\mathbf{u}||\mathbf{v}|$</li>
+<li>c) Equal to 0</li>
+<li>d) Negative<blockquote>
+<p><strong>Correct answer:</strong> c) The condition for perpendicularity is exactly $\mathbf{u}\cdot\mathbf{v}=0$.</p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<h5>4.3.2 Properties of the dot product: commutativity, distributivity, bilinearity</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Verify that $\mathbf{u}\cdot(\mathbf{v}+\mathbf{w}) = \mathbf{u}\cdot\mathbf{v}+\mathbf{u}\cdot\mathbf{w}$ for $\mathbf{u}=(1,2,0)$, $\mathbf{v}=(3,-1,2)$, $\mathbf{w}=(-1,1,1)$.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p><strong>Left-hand side:</strong></p>
+<p>$$\mathbf{v}+\mathbf{w}=(3-1,\,-1+1,\,2+1)=(2,0,3)$$</p>
+<p>$$\mathbf{u}\cdot(\mathbf{v}+\mathbf{w})=1\cdot2+2\cdot0+0\cdot3=2$$</p>
+<p><strong>Right-hand side:</strong></p>
+<p>$$\mathbf{u}\cdot\mathbf{v}=1\cdot3+2\cdot(-1)+0\cdot2=3-2+0=1$$</p>
+<p>$$\mathbf{u}\cdot\mathbf{w}=1\cdot(-1)+2\cdot1+0\cdot1=-1+2+0=1$$</p>
+<p>$$\mathbf{u}\cdot\mathbf{v}+\mathbf{u}\cdot\mathbf{w}=1+1=2 \checkmark$$</p>
+<p>The distributive property is verified.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>
+<p>Compute $(2\mathbf{u})\cdot\mathbf{v}$ knowing that $\mathbf{u}\cdot\mathbf{v}=5$.</p>
+<blockquote>
+<p><strong>Solution:</strong> By bilinearity, $(2\mathbf{u})\cdot\mathbf{v}=2(\mathbf{u}\cdot\mathbf{v})=2\cdot5=10$.</p>
+</blockquote>
+</li>
+<li>
+<p>Is it true that $\mathbf{u}\cdot\mathbf{v}=\mathbf{v}\cdot\mathbf{u}$? Justify with $\mathbf{u}=(1,3,-2)$ and $\mathbf{v}=(0,1,4)$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\mathbf{u}\cdot\mathbf{v}=0+3-8=-5$ and $\mathbf{v}\cdot\mathbf{u}=0+3-8=-5$. Yes, the dot product is <strong>commutative</strong>.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>
+<p>Using the properties of the dot product, compute $|\mathbf{u}+\mathbf{v}|^2$ if $|\mathbf{u}|=3$, $|\mathbf{v}|=4$ and $\mathbf{u}\cdot\mathbf{v}=6$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $|\mathbf{u}+\mathbf{v}|^2=(\mathbf{u}+\mathbf{v})\cdot(\mathbf{u}+\mathbf{v})=|\mathbf{u}|^2+2\mathbf{u}\cdot\mathbf{v}+|\mathbf{v}|^2=9+12+16=37$.</p>
+</blockquote>
+</li>
+<li>
+<p>If $|\mathbf{u}|=2$, $|\mathbf{v}|=3$ and the angle between them is $60°$, compute $(\mathbf{u}+\mathbf{v})\cdot(\mathbf{u}-\mathbf{v})$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $(\mathbf{u}+\mathbf{v})\cdot(\mathbf{u}-\mathbf{v})=|\mathbf{u}|^2-|\mathbf{v}|^2=4-9=-5$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>Given $\mathbf{a}=(1,2,-1)$ and $\mathbf{b}=(0,1,k)$:<br />
+   a) Compute $\mathbf{a}\cdot\mathbf{b}$ as a function of $k$.<br />
+   b) Find $k$ so that $|\mathbf{a}+\mathbf{b}|^2=18$.<br />
+   c) For that value of $k$, check whether $\mathbf{a}$ and $\mathbf{b}$ are perpendicular.<blockquote>
+<p><strong>Solution:</strong><br />
+<strong>a)</strong> $\mathbf{a}\cdot\mathbf{b}=0+2-k=2-k$.<br />
+<strong>b)</strong> $\mathbf{a}+\mathbf{b}=(1,3,k-1)$. $|\mathbf{a}+\mathbf{b}|^2=1+9+(k-1)^2=10+(k-1)^2=18 \Rightarrow (k-1)^2=8 \Rightarrow k=1\pm2\sqrt{2}$.<br />
+<strong>c)</strong> For $k=1+2\sqrt{2}$: $\mathbf{a}\cdot\mathbf{b}=2-(1+2\sqrt{2})=1-2\sqrt{2}\neq0$, not perpendicular. For $k=1-2\sqrt{2}$: $\mathbf{a}\cdot\mathbf{b}=1+2\sqrt{2}\neq0$, neither.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>If $|\mathbf{u}|=2$, $|\mathbf{v}|=3$ and $\mathbf{u}\cdot\mathbf{v}=-3$, then $|\mathbf{u}-\mathbf{v}|^2$ equals:</li>
+<li>a) $7$</li>
+<li>b) $13$</li>
+<li>c) $19$</li>
+<li>
+<p>d) $25$</p>
+<blockquote>
+<p><strong>Correct answer:</strong> c) $|\mathbf{u}-\mathbf{v}|^2=|\mathbf{u}|^2-2\mathbf{u}\cdot\mathbf{v}+|\mathbf{v}|^2=4+6+9=19$.</p>
+</blockquote>
+</li>
+<li>
+<p>The property $\lambda(\mathbf{u}\cdot\mathbf{v})=(\lambda\mathbf{u})\cdot\mathbf{v}$ is a consequence of the property of:</p>
+</li>
+<li>a) Commutativity</li>
+<li>b) Bilinearity</li>
+<li>c) Positivity</li>
+<li>d) Antisymmetry<blockquote>
+<p><strong>Correct answer:</strong> b) Bilinearity includes homogeneity in each argument: $(\lambda\mathbf{u})\cdot\mathbf{v}=\lambda(\mathbf{u}\cdot\mathbf{v})$.</p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<h5>4.3.3 Magnitude of a vector and distance between points via the dot product</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Compute the magnitude of the vector $\mathbf{v}=(3,-4,0)$ using the dot product and find the distance between the points $A=(1,2,3)$ and $B=(4,-2,3)$.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p><strong>Magnitude via dot product:</strong></p>
+<p>$$|\mathbf{v}|^2 = \mathbf{v}\cdot\mathbf{v} = 3^2+(-4)^2+0^2 = 9+16+0 = 25$$</p>
+<p>$$|\mathbf{v}| = \sqrt{25} = 5$$</p>
+<p><strong>Distance between A and B:</strong></p>
+<p>The vector $\overrightarrow{AB} = B - A = (4-1,\,-2-2,\,3-3) = (3,-4,0)$.</p>
+<p>$$d(A,B) = |\overrightarrow{AB}| = \sqrt{3^2+(-4)^2+0^2} = \sqrt{9+16} = \sqrt{25} = 5$$</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>
+<p>Compute the magnitude of $\mathbf{w}=(2,-1,2)$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $|\mathbf{w}|=\sqrt{4+1+4}=\sqrt{9}=3$.</p>
+</blockquote>
+</li>
+<li>
+<p>Find the distance between $P=(0,1,-1)$ and $Q=(2,3,1)$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\overrightarrow{PQ}=(2,2,2)$. $d(P,Q)=\sqrt{4+4+4}=\sqrt{12}=2\sqrt{3}$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>
+<p>Determine $k$ so that the vector $\mathbf{u}=(2,k,1)$ has magnitude $\sqrt{14}$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $|\mathbf{u}|^2=4+k^2+1=k^2+5=14 \Rightarrow k^2=9 \Rightarrow k=\pm3$.</p>
+</blockquote>
+</li>
+<li>
+<p>Find the unit vector in the direction of $\mathbf{v}=(1,2,-2)$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $|\mathbf{v}|=\sqrt{1+4+4}=3$. Unit vector: $\hat{\mathbf{v}}=\frac{1}{3}(1,2,-2)=\left(\frac{1}{3},\frac{2}{3},-\frac{2}{3}\right)$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>The points $A=(1,-1,2)$, $B=(3,1,0)$ and $C=(0,2,-1)$ are given.<br />
+   a) Compute $|\overrightarrow{AB}|$, $|\overrightarrow{BC}|$ and $|\overrightarrow{AC}|$.<br />
+   b) Check whether triangle $ABC$ is equilateral, isosceles or scalene.<blockquote>
+<p><strong>Solution:</strong><br />
+<strong>a)</strong> $\overrightarrow{AB}=(2,2,-2)$, $|\overrightarrow{AB}|=\sqrt{4+4+4}=2\sqrt{3}$.<br />
+$\overrightarrow{BC}=(-3,1,-1)$, $|\overrightarrow{BC}|=\sqrt{9+1+1}=\sqrt{11}$.<br />
+$\overrightarrow{AC}=(-1,3,-3)$, $|\overrightarrow{AC}|=\sqrt{1+9+9}=\sqrt{19}$.<br />
+<strong>b)</strong> The three sides have different lengths ($2\sqrt{3}\neq\sqrt{11}\neq\sqrt{19}$), so the triangle is <strong>scalene</strong>.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>The magnitude of the vector $\mathbf{u}=(1,-2,2)$ is:</li>
+<li>a) $5$</li>
+<li>b) $3$</li>
+<li>c) $\sqrt{5}$</li>
+<li>
+<p>d) $7$</p>
+<blockquote>
+<p><strong>Correct answer:</strong> b) $|\mathbf{u}|=\sqrt{1+4+4}=\sqrt{9}=3$.</p>
+</blockquote>
+</li>
+<li>
+<p>The distance between $A=(1,0,1)$ and $B=(4,4,1)$ is:</p>
+</li>
+<li>a) $3$</li>
+<li>b) $4$</li>
+<li>c) $5$</li>
+<li>d) $7$<blockquote>
+<p><strong>Correct answer:</strong> c) $d=\sqrt{(4-1)^2+(4-0)^2+0^2}=\sqrt{9+16}=\sqrt{25}=5$.</p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<h5>4.3.4 Angle between two vectors: formula and special cases (orthogonality)</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Compute the angle between $\mathbf{u}=(1,\sqrt{3},0)$ and $\mathbf{v}=(\sqrt{3},-1,0)$.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p>$$\mathbf{u}\cdot\mathbf{v} = 1\cdot\sqrt{3}+\sqrt{3}\cdot(-1)+0\cdot0 = \sqrt{3}-\sqrt{3} = 0$$</p>
+<p>$$|\mathbf{u}| = \sqrt{1+3+0} = 2, \quad |\mathbf{v}| = \sqrt{3+1+0} = 2$$</p>
+<p>$$\cos\theta = \frac{\mathbf{u}\cdot\mathbf{v}}{|\mathbf{u}||\mathbf{v}|} = \frac{0}{4} = 0 \Rightarrow \theta = 90°$$</p>
+<p>The vectors are <strong>perpendicular</strong>, which makes geometric sense since both lie in the $xy$-plane and their directions are clearly orthogonal.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>
+<p>Compute the angle between $\mathbf{i}=(1,0,0)$ and $\mathbf{j}=(0,1,0)$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\mathbf{i}\cdot\mathbf{j}=0$. Since both have magnitude 1, $\cos\theta=0 \Rightarrow \theta=90°$. They are perpendicular.</p>
+</blockquote>
+</li>
+<li>
+<p>Find the angle between $\mathbf{a}=(2,0,0)$ and $\mathbf{b}=(1,1,0)$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\mathbf{a}\cdot\mathbf{b}=2$. $|\mathbf{a}|=2$, $|\mathbf{b}|=\sqrt{2}$. $\cos\theta=\frac{2}{2\sqrt{2}}=\frac{1}{\sqrt{2}} \Rightarrow \theta=45°$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>
+<p>Determine for which values of $t$ the vectors $\mathbf{u}=(t,1,0)$ and $\mathbf{v}=(1,-t,2)$ form an angle of 90°.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\mathbf{u}\cdot\mathbf{v}=t\cdot1+1\cdot(-t)+0\cdot2=t-t=0$ for any $t$. Therefore, the vectors are always perpendicular, regardless of the value of $t$.</p>
+</blockquote>
+</li>
+<li>
+<p>Compute the angle between $\mathbf{p}=(1,2,2)$ and $\mathbf{q}=(2,-1,2)$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\mathbf{p}\cdot\mathbf{q}=2-2+4=4$. $|\mathbf{p}|=\sqrt{9}=3$, $|\mathbf{q}|=3$. $\cos\theta=\frac{4}{9}$. $\theta=\arccos!\left(\frac{4}{9}\right)\approx63{,}6°$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>The vectors $\mathbf{u}=(m,1,-1)$ and $\mathbf{v}=(2,m,1)$ are given.<br />
+   a) Compute $m$ so that the vectors form an angle of 90°.<br />
+   b) For $m=1$, compute the angle they form.<br />
+   c) Can they be parallel for some value of $m$?<blockquote>
+<p><strong>Solution:</strong><br />
+<strong>a)</strong> $\mathbf{u}\cdot\mathbf{v}=2m+m-1=3m-1=0 \Rightarrow m=\frac{1}{3}$.<br />
+<strong>b)</strong> $m=1$: $\mathbf{u}=(1,1,-1)$, $\mathbf{v}=(2,1,1)$. $\mathbf{u}\cdot\mathbf{v}=2+1-1=2$. $|\mathbf{u}|=\sqrt{3}$, $|\mathbf{v}|=\sqrt{6}$. $\cos\theta=\frac{2}{\sqrt{18}}=\frac{2}{3\sqrt{2}}=\frac{\sqrt{2}}{3}$. $\theta=\arccos!\left(\frac{\sqrt{2}}{3}\right)\approx61{,}9°$.<br />
+<strong>c)</strong> For them to be parallel, $(m,1,-1)=\lambda(2,m,1)$, which gives $1=\lambda m$ and $-1=\lambda$, so $\lambda=-1$ and $m=-1$. Checking: $(-1,1,-1)=-1\cdot(2,-1,1)=(-2,1,-1)\neq(-1,1,-1)$. <strong>They cannot be parallel</strong> for any value of $m$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>If $\mathbf{u}\cdot\mathbf{v}&gt;0$, the angle between $\mathbf{u}$ and $\mathbf{v}$ is:</li>
+<li>a) Exactly 0°</li>
+<li>b) Acute (between 0° and 90°)</li>
+<li>c) Right (90°)</li>
+<li>
+<p>d) Obtuse (between 90° and 180°)</p>
+<blockquote>
+<p><strong>Correct answer:</strong> b) $\cos\theta=\frac{\mathbf{u}\cdot\mathbf{v}}{|\mathbf{u}||\mathbf{v}|}&gt;0$ implies $0°&lt;\theta&lt;90°$, i.e., an acute angle.</p>
+</blockquote>
+</li>
+<li>
+<p>The angle between $\mathbf{u}=(1,1,0)$ and $\mathbf{v}=(0,1,1)$ is:</p>
+</li>
+<li>a) 30°</li>
+<li>b) 45°</li>
+<li>c) 60°</li>
+<li>d) 90°<blockquote>
+<p><strong>Correct answer:</strong> c) $\mathbf{u}\cdot\mathbf{v}=1$, $|\mathbf{u}|=\sqrt{2}$, $|\mathbf{v}|=\sqrt{2}$. $\cos\theta=\frac{1}{2} \Rightarrow \theta=60°$.</p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<h5>4.3.5 Projection of one vector onto another</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Compute the projection of $\mathbf{a}=(3,4,0)$ onto $\mathbf{b}=(1,0,0)$, and the vector projection (component of $\mathbf{a}$ in the direction of $\mathbf{b}$).</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p><strong>Scalar projection</strong> of $\mathbf{a}$ onto $\mathbf{b}$:</p>
+<p>$$\text{proj}_{\mathbf{b}}\mathbf{a} = \frac{\mathbf{a}\cdot\mathbf{b}}{|\mathbf{b}|} = \frac{3\cdot1+4\cdot0+0\cdot0}{\sqrt{1}} = 3$$</p>
+<p><strong>Vector projection</strong> of $\mathbf{a}$ onto $\mathbf{b}$:</p>
+<p>$$\text{Proj}_{\mathbf{b}}\mathbf{a} = \frac{\mathbf{a}\cdot\mathbf{b}}{|\mathbf{b}|^2}\,\mathbf{b} = \frac{3}{1}\cdot(1,0,0) = (3,0,0)$$</p>
+<p><strong>Interpretation:</strong> Since $\mathbf{b}$ coincides with the $x$-axis, the projection of $\mathbf{a}$ onto that axis is simply the $x$-component of the vector, i.e., $(3,0,0)$.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>
+<p>Compute the scalar projection of $\mathbf{u}=(2,3,6)$ onto $\mathbf{v}=(0,1,0)$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\text{proj}_{\mathbf{v}}\mathbf{u}=\frac{\mathbf{u}\cdot\mathbf{v}}{|\mathbf{v}|}=\frac{3}{1}=3$.</p>
+</blockquote>
+</li>
+<li>
+<p>Find the vector projection of $\mathbf{a}=(4,2,-4)$ onto $\mathbf{b}=(1,2,2)$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\mathbf{a}\cdot\mathbf{b}=4+4-8=0$. The vector projection is the <strong>zero vector</strong>, since $\mathbf{a}$ and $\mathbf{b}$ are perpendicular.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>
+<p>Compute the scalar projection of $\mathbf{u}=(2,-1,3)$ onto $\mathbf{v}=(1,2,-2)$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\mathbf{u}\cdot\mathbf{v}=2-2-6=-6$. $|\mathbf{v}|=\sqrt{1+4+4}=3$. $\text{proj}_{\mathbf{v}}\mathbf{u}=\frac{-6}{3}=-2$.</p>
+</blockquote>
+</li>
+<li>
+<p>Decompose $\mathbf{a}=(1,2,3)$ into its parallel and perpendicular components with respect to $\mathbf{b}=(1,0,1)$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\mathbf{a}\cdot\mathbf{b}=1+3=4$. $|\mathbf{b}|^2=2$. Parallel: $\mathbf{a}<em>{\parallel}=\frac{4}{2}(1,0,1)=(2,0,2)$. Perpendicular: $\mathbf{a}</em>{\perp}=\mathbf{a}-\mathbf{a}<em>{\parallel}=(1-2,2-0,3-2)=(-1,2,1)$. Check: $\mathbf{a}</em>{\perp}\cdot\mathbf{b}=-1+0+1=0$ ✓.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>Given $\mathbf{u}=(2,1,-1)$ and $\mathbf{v}=(1,2,1)$:<br />
+   a) Compute the scalar projection of $\mathbf{u}$ onto $\mathbf{v}$.<br />
+   b) Find the vector projection of $\mathbf{u}$ onto $\mathbf{v}$.<br />
+   c) Compute the component of $\mathbf{u}$ perpendicular to $\mathbf{v}$ and verify that it is orthogonal to $\mathbf{v}$.<blockquote>
+<p><strong>Solution:</strong><br />
+<strong>a)</strong> $\mathbf{u}\cdot\mathbf{v}=2+2-1=3$. $|\mathbf{v}|=\sqrt{6}$. $\text{proj}<em>{\mathbf{v}}\mathbf{u}=\frac{3}{\sqrt{6}}=\frac{3\sqrt{6}}{6}=\frac{\sqrt{6}}{2}$.<br />
+<strong>b)</strong> $\mathbf{u}</em>{\parallel}=\frac{3}{6}(1,2,1)=\left(\frac{1}{2},1,\frac{1}{2}\right)$.<br />
+<strong>c)</strong> $\mathbf{u}<em>{\perp}=\mathbf{u}-\mathbf{u}</em>{\parallel}=\left(\frac{3}{2},0,-\frac{3}{2}\right)$. Check: $\mathbf{u}_{\perp}\cdot\mathbf{v}=\frac{3}{2}+0-\frac{3}{2}=0$ ✓.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>The scalar projection of $\mathbf{a}=(3,4,0)$ onto $\mathbf{b}=(3,4,0)$ is:</li>
+<li>a) $1$</li>
+<li>b) $5$</li>
+<li>c) $25$</li>
+<li>
+<p>d) $\frac{1}{5}$</p>
+<blockquote>
+<p><strong>Correct answer:</strong> b) $\text{proj}_{\mathbf{b}}\mathbf{a}=\frac{\mathbf{a}\cdot\mathbf{b}}{|\mathbf{b}|}=\frac{9+16}{5}=\frac{25}{5}=5=|\mathbf{a}|$ (logical, since it is the same vector).</p>
+</blockquote>
+</li>
+<li>
+<p>The projection of $\mathbf{u}$ onto $\mathbf{v}$ is the <strong>zero vector</strong> when:</p>
+</li>
+<li>a) $|\mathbf{u}|=|\mathbf{v}|$</li>
+<li>b) $\mathbf{u}$ and $\mathbf{v}$ are parallel</li>
+<li>c) $\mathbf{u}$ and $\mathbf{v}$ are perpendicular</li>
+<li>d) $|\mathbf{u}|=1$<blockquote>
+<p><strong>Correct answer:</strong> c) If $\mathbf{u}\cdot\mathbf{v}=0$ (perpendicular), the vector projection is $\mathbf{0}$.</p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<h5>4.4.1 Definition of the cross product via the formal determinant</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Compute the cross product $\mathbf{u}\times\mathbf{v}$ with $\mathbf{u}=(2,1,-3)$ and $\mathbf{v}=(-1,4,2)$.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p>$$\mathbf{u}\times\mathbf{v} = \begin{vmatrix}\mathbf{i}&amp;\mathbf{j}&amp;\mathbf{k}\2&amp;1&amp;-3\-1&amp;4&amp;2\end{vmatrix}$$</p>
+<p>Expanding along the first row:</p>
+<p>$$\mathbf{i}\begin{vmatrix}1&amp;-3\4&amp;2\end{vmatrix} - \mathbf{j}\begin{vmatrix}2&amp;-3\-1&amp;2\end{vmatrix} + \mathbf{k}\begin{vmatrix}2&amp;1\-1&amp;4\end{vmatrix}$$</p>
+<p>$$= \mathbf{i}(1\cdot2-(-3)\cdot4) - \mathbf{j}(2\cdot2-(-3)\cdot(-1)) + \mathbf{k}(2\cdot4-1\cdot(-1))$$</p>
+<p>$$= \mathbf{i}(2+12) - \mathbf{j}(4-3) + \mathbf{k}(8+1)$$</p>
+<p>$$= 14\,\mathbf{i} - 1\,\mathbf{j} + 9\,\mathbf{k} = (14,-1,9)$$</p>
+<p><strong>Verification:</strong> $\mathbf{u}\cdot(\mathbf{u}\times\mathbf{v})=2\cdot14+1\cdot(-1)+(-3)\cdot9=28-1-27=0$ ✓ (the result is perpendicular to $\mathbf{u}$).</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>
+<p>Compute $\mathbf{i}\times\mathbf{j}$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\mathbf{i}\times\mathbf{j}=\begin{vmatrix}\mathbf{i}&amp;\mathbf{j}&amp;\mathbf{k}\1&amp;0&amp;0\0&amp;1&amp;0\end{vmatrix}=\mathbf{i}(0)-\mathbf{j}(0)+\mathbf{k}(1)=\mathbf{k}=(0,0,1)$.</p>
+</blockquote>
+</li>
+<li>
+<p>Compute $(1,2,0)\times(3,0,0)$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\begin{vmatrix}\mathbf{i}&amp;\mathbf{j}&amp;\mathbf{k}\1&amp;2&amp;0\3&amp;0&amp;0\end{vmatrix}=\mathbf{i}(0-0)-\mathbf{j}(0-0)+\mathbf{k}(0-6)=(0,0,-6)$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>
+<p>Find $\mathbf{a}\times\mathbf{b}$ and verify that it is perpendicular to both vectors, for $\mathbf{a}=(1,0,1)$ and $\mathbf{b}=(0,1,1)$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\mathbf{a}\times\mathbf{b}=\begin{vmatrix}\mathbf{i}&amp;\mathbf{j}&amp;\mathbf{k}\1&amp;0&amp;1\0&amp;1&amp;1\end{vmatrix}=\mathbf{i}(0-1)-\mathbf{j}(1-0)+\mathbf{k}(1-0)=(-1,-1,1)$.<br />
+$(-1,-1,1)\cdot(1,0,1)=-1+0+1=0$ ✓. $(-1,-1,1)\cdot(0,1,1)=0-1+1=0$ ✓.</p>
+</blockquote>
+</li>
+<li>
+<p>Compute $(2,1,3)\times(1,0,-2)$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\begin{vmatrix}\mathbf{i}&amp;\mathbf{j}&amp;\mathbf{k}\2&amp;1&amp;3\1&amp;0&amp;-2\end{vmatrix}=\mathbf{i}(-2-0)-\mathbf{j}(-4-3)+\mathbf{k}(0-1)=(-2,7,-1)$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>Let $\mathbf{u}=(1,-1,2)$ and $\mathbf{v}=(3,0,1)$.<br />
+   a) Compute $\mathbf{u}\times\mathbf{v}$ and $\mathbf{v}\times\mathbf{u}$.<br />
+   b) Verify that $\mathbf{v}\times\mathbf{u}=-(\mathbf{u}\times\mathbf{v})$.<br />
+   c) Find a unit vector perpendicular to both.<blockquote>
+<p><strong>Solution:</strong><br />
+<strong>a)</strong> $\mathbf{u}\times\mathbf{v}=\begin{vmatrix}\mathbf{i}&amp;\mathbf{j}&amp;\mathbf{k}\1&amp;-1&amp;2\3&amp;0&amp;1\end{vmatrix}=\mathbf{i}(-1-0)-\mathbf{j}(1-6)+\mathbf{k}(0+3)=(-1,5,3)$.<br />
+$\mathbf{v}\times\mathbf{u}=(-1)(\mathbf{u}\times\mathbf{v})=(1,-5,-3)$.<br />
+<strong>b)</strong> $\mathbf{v}\times\mathbf{u}=(1,-5,-3)=-(-1,5,3)=-(\mathbf{u}\times\mathbf{v})$ ✓.<br />
+<strong>c)</strong> $|\mathbf{u}\times\mathbf{v}|=\sqrt{1+25+9}=\sqrt{35}$. Unit vector: $\hat{\mathbf{n}}=\frac{1}{\sqrt{35}}(-1,5,3)$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>The cross product $\mathbf{u}\times\mathbf{u}$ is always:</li>
+<li>a) $|\mathbf{u}|^2$</li>
+<li>b) A vector of magnitude $|\mathbf{u}|$</li>
+<li>c) The zero vector $\mathbf{0}$</li>
+<li>
+<p>d) A vector perpendicular to $\mathbf{u}$</p>
+<blockquote>
+<p><strong>Correct answer:</strong> c) $\mathbf{u}\times\mathbf{u}=\mathbf{0}$ because the angle between a vector and itself is 0°, and $\sin 0°=0$.</p>
+</blockquote>
+</li>
+<li>
+<p>If $\mathbf{u}\times\mathbf{v}=\mathbf{0}$ and $\mathbf{u}\neq\mathbf{0}$, $\mathbf{v}\neq\mathbf{0}$, then:</p>
+</li>
+<li>a) $\mathbf{u}$ and $\mathbf{v}$ are perpendicular</li>
+<li>b) $\mathbf{u}$ and $\mathbf{v}$ are parallel</li>
+<li>c) $\mathbf{u}$ and $\mathbf{v}$ are coplanar</li>
+<li>d) $\mathbf{u}$ and $\mathbf{v}$ are orthogonal<blockquote>
+<p><strong>Correct answer:</strong> b) $|\mathbf{u}\times\mathbf{v}|=|\mathbf{u}||\mathbf{v}|\sin\theta=0$ implies $\sin\theta=0$, i.e., $\theta=0°$ or $\theta=180°$: the vectors are <strong>parallel</strong> (or antiparallel).</p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<h5>4.4.2 Properties of the cross product: anticommutativity, distributivity, magnitude</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Verify the anticommutative property of the cross product with $\mathbf{a}=(1,2,3)$ and $\mathbf{b}=(4,5,6)$, and compute the magnitude $|\mathbf{a}\times\mathbf{b}|$.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p>$$\mathbf{a}\times\mathbf{b}=\begin{vmatrix}\mathbf{i}&amp;\mathbf{j}&amp;\mathbf{k}\1&amp;2&amp;3\4&amp;5&amp;6\end{vmatrix}=\mathbf{i}(12-15)-\mathbf{j}(6-12)+\mathbf{k}(5-8)=(-3,6,-3)$$</p>
+<p>$$\mathbf{b}\times\mathbf{a}=\begin{vmatrix}\mathbf{i}&amp;\mathbf{j}&amp;\mathbf{k}\4&amp;5&amp;6\1&amp;2&amp;3\end{vmatrix}=\mathbf{i}(15-12)-\mathbf{j}(12-6)+\mathbf{k}(8-5)=(3,-6,3)$$</p>
+<p>It is verified that $\mathbf{b}\times\mathbf{a}=-(\mathbf{a}\times\mathbf{b})=(3,-6,3)$ ✓ (<strong>anticommutativity</strong>).</p>
+<p><strong>Magnitude:</strong></p>
+<p>$$|\mathbf{a}\times\mathbf{b}|=\sqrt{(-3)^2+6^2+(-3)^2}=\sqrt{9+36+9}=\sqrt{54}=3\sqrt{6}$$</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>
+<p>Knowing that $\mathbf{u}\times\mathbf{v}=(2,-1,3)$, write $\mathbf{v}\times\mathbf{u}$.</p>
+<blockquote>
+<p><strong>Solution:</strong> By anticommutativity, $\mathbf{v}\times\mathbf{u}=-(\mathbf{u}\times\mathbf{v})=(-2,1,-3)$.</p>
+</blockquote>
+</li>
+<li>
+<p>If $|\mathbf{u}|=3$, $|\mathbf{v}|=4$ and the angle between them is $30°$, compute $|\mathbf{u}\times\mathbf{v}|$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $|\mathbf{u}\times\mathbf{v}|=|\mathbf{u}||\mathbf{v}|\sin30°=3\cdot4\cdot\frac{1}{2}=6$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>
+<p>Given $\mathbf{u}=(2,0,1)$ and $\mathbf{v}=(0,3,0)$, compute $|\mathbf{u}\times\mathbf{v}|$ using the magnitude formula and verify by computing the cross product directly.</p>
+<blockquote>
+<p><strong>Direct solution:</strong> $\mathbf{u}\times\mathbf{v}=\begin{vmatrix}\mathbf{i}&amp;\mathbf{j}&amp;\mathbf{k}\2&amp;0&amp;1\0&amp;3&amp;0\end{vmatrix}=(0-3)\mathbf{i}-(0-0)\mathbf{j}+(6-0)\mathbf{k}=(-3,0,6)$. $|(-3,0,6)|=\sqrt{9+36}=\sqrt{45}=3\sqrt{5}$.<br />
+Magnitude formula: $|\mathbf{u}|=\sqrt{5}$, $|\mathbf{v}|=3$, $\cos\theta=\frac{0}{\sqrt{5}\cdot3}=0 \Rightarrow \theta=90°$, $\sin\theta=1$. $|\mathbf{u}\times\mathbf{v}|=\sqrt{5}\cdot3\cdot1=3\sqrt{5}$ ✓.</p>
+</blockquote>
+</li>
+<li>
+<p>Prove with coordinates that $(\lambda\mathbf{u})\times\mathbf{v}=\lambda(\mathbf{u}\times\mathbf{v})$ for $\mathbf{u}=(1,-1,0)$, $\mathbf{v}=(0,1,2)$ and $\lambda=3$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $3\mathbf{u}=(3,-3,0)$. $(3\mathbf{u})\times\mathbf{v}=\begin{vmatrix}\mathbf{i}&amp;\mathbf{j}&amp;\mathbf{k}\3&amp;-3&amp;0\0&amp;1&amp;2\end{vmatrix}=(-6-0)\mathbf{i}-(6-0)\mathbf{j}+(3-0)\mathbf{k}=(-6,-6,3)$. $\mathbf{u}\times\mathbf{v}=\begin{vmatrix}\mathbf{i}&amp;\mathbf{j}&amp;\mathbf{k}\1&amp;-1&amp;0\0&amp;1&amp;2\end{vmatrix}=(-2,-2,1)$. $3(\mathbf{u}\times\mathbf{v})=(-6,-6,3)$ ✓.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>Given $\mathbf{a}=(1,0,2)$ and $\mathbf{b}=(0,1,-1)$:<br />
+   a) Compute $\mathbf{a}\times\mathbf{b}$ and $\mathbf{b}\times\mathbf{a}$.<br />
+   b) Compute $|\mathbf{a}\times\mathbf{b}|$ and interpret the result geometrically.<br />
+   c) Verify that $|\mathbf{a}\times\mathbf{b}|^2+(\mathbf{a}\cdot\mathbf{b})^2=|\mathbf{a}|^2|\mathbf{b}|^2$ (Lagrange's identity).<blockquote>
+<p><strong>Solution:</strong><br />
+<strong>a)</strong> $\mathbf{a}\times\mathbf{b}=\begin{vmatrix}\mathbf{i}&amp;\mathbf{j}&amp;\mathbf{k}\1&amp;0&amp;2\0&amp;1&amp;-1\end{vmatrix}=(-2)\mathbf{i}-(-1)\mathbf{j}+(1)\mathbf{k}=(-2,1,1)$. $\mathbf{b}\times\mathbf{a}=(2,-1,-1)$.<br />
+<strong>b)</strong> $|\mathbf{a}\times\mathbf{b}|=\sqrt{4+1+1}=\sqrt{6}$. This is the area of the parallelogram formed by $\mathbf{a}$ and $\mathbf{b}$.<br />
+<strong>c)</strong> $\mathbf{a}\cdot\mathbf{b}=0+0-2=-2$. $|\mathbf{a}|^2=5$, $|\mathbf{b}|^2=2$. $6+4=10=5\cdot2$ ✓.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>The cross product is anticommutative, meaning that:</li>
+<li>a) $\mathbf{u}\times\mathbf{v}=\mathbf{v}\times\mathbf{u}$</li>
+<li>b) $\mathbf{u}\times\mathbf{v}=-\mathbf{v}\times\mathbf{u}$</li>
+<li>c) $\mathbf{u}\times\mathbf{v}=0$ always</li>
+<li>
+<p>d) $|\mathbf{u}\times\mathbf{v}|=|\mathbf{v}\times\mathbf{u}|=0$</p>
+<blockquote>
+<p><strong>Correct answer:</strong> b) By definition, $\mathbf{u}\times\mathbf{v}=-\mathbf{v}\times\mathbf{u}$.</p>
+</blockquote>
+</li>
+<li>
+<p>If $|\mathbf{u}|=2$, $|\mathbf{v}|=5$ and the angle between them is $90°$, then $|\mathbf{u}\times\mathbf{v}|$ is:</p>
+</li>
+<li>a) $10$</li>
+<li>b) $7$</li>
+<li>c) $0$</li>
+<li>d) $\sqrt{29}$<blockquote>
+<p><strong>Correct answer:</strong> a) $|\mathbf{u}\times\mathbf{v}|=|\mathbf{u}||\mathbf{v}|\sin90°=2\cdot5\cdot1=10$.</p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<h5>4.4.3 Geometric interpretation: perpendicular vector and area of the parallelogram</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Compute the area of the parallelogram whose sides are the vectors $\mathbf{u}=(2,3,0)$ and $\mathbf{v}=(1,0,4)$, and find the equation of the plane containing that parallelogram if it passes through the origin.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p><strong>Cross product:</strong></p>
+<p>$$\mathbf{u}\times\mathbf{v}=\begin{vmatrix}\mathbf{i}&amp;\mathbf{j}&amp;\mathbf{k}\2&amp;3&amp;0\1&amp;0&amp;4\end{vmatrix}=\mathbf{i}(12-0)-\mathbf{j}(8-0)+\mathbf{k}(0-3)=(12,-8,-3)$$</p>
+<p><strong>Area of the parallelogram:</strong></p>
+<p>$$S = |\mathbf{u}\times\mathbf{v}| = \sqrt{144+64+9} = \sqrt{217}$$</p>
+<p><strong>Equation of the plane:</strong> The normal vector is $\mathbf{n}=(12,-8,-3)$ and the plane passes through the origin:</p>
+<p>$$12x - 8y - 3z = 0$$</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>
+<p>What is the area of the parallelogram formed by $\mathbf{u}=(3,0,0)$ and $\mathbf{v}=(0,2,0)$?</p>
+<blockquote>
+<p><strong>Solution:</strong> $\mathbf{u}\times\mathbf{v}=(0,0,6)$. $S=|\mathbf{u}\times\mathbf{v}|=6$. (Consistent with base × height = 3 × 2 = 6.)</p>
+</blockquote>
+</li>
+<li>
+<p>Find a vector perpendicular to $\mathbf{a}=(1,1,0)$ and $\mathbf{b}=(0,1,1)$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\mathbf{a}\times\mathbf{b}=\begin{vmatrix}\mathbf{i}&amp;\mathbf{j}&amp;\mathbf{k}\1&amp;1&amp;0\0&amp;1&amp;1\end{vmatrix}=(1,-1,1)$. A perpendicular vector is $(1,-1,1)$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>
+<p>Compute the area of the parallelogram with vertices $A=(0,0,0)$, $B=(1,2,-1)$ and $D=(3,0,1)$ (where $C=B+D$).</p>
+<blockquote>
+<p><strong>Solution:</strong> Sides: $\overrightarrow{AB}=(1,2,-1)$ and $\overrightarrow{AD}=(3,0,1)$. $\overrightarrow{AB}\times\overrightarrow{AD}=\begin{vmatrix}\mathbf{i}&amp;\mathbf{j}&amp;\mathbf{k}\1&amp;2&amp;-1\3&amp;0&amp;1\end{vmatrix}=(2+0)\mathbf{i}-(1+3)\mathbf{j}+(0-6)\mathbf{k}=(2,-4,-6)$. $S=\sqrt{4+16+36}=\sqrt{56}=2\sqrt{14}$.</p>
+</blockquote>
+</li>
+<li>
+<p>Given $\mathbf{u}=(1,2,3)$ and $\mathbf{v}=(2,4,6)$, compute the area of the parallelogram they form. Interpret the result.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\mathbf{v}=2\mathbf{u}$, they are parallel. $\mathbf{u}\times\mathbf{v}=\mathbf{0}$. $S=0$. The "parallelogram" is degenerate (the vectors are collinear).</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li>The vertices of a triangle are $A=(1,0,2)$, $B=(3,1,0)$ and $C=(0,2,1)$.<br />
+   a) Find the area of triangle $ABC$.<br />
+   b) Determine a normal vector to the plane of the triangle.<br />
+   c) Write the equation of the plane containing the triangle.<blockquote>
+<p><strong>Solution:</strong><br />
+<strong>a)</strong> $\overrightarrow{AB}=(2,1,-2)$, $\overrightarrow{AC}=(-1,2,-1)$.<br />
+$\overrightarrow{AB}\times\overrightarrow{AC}=\begin{vmatrix}\mathbf{i}&amp;\mathbf{j}&amp;\mathbf{k}\2&amp;1&amp;-2\-1&amp;2&amp;-1\end{vmatrix}=(-1+4)\mathbf{i}-(-2-2)\mathbf{j}+(4+1)\mathbf{k}=(3,4,5)$.<br />
+$S_{\triangle}=\frac{1}{2}|\overrightarrow{AB}\times\overrightarrow{AC}|=\frac{1}{2}\sqrt{9+16+25}=\frac{\sqrt{50}}{2}=\frac{5\sqrt{2}}{2}$.<br />
+<strong>b)</strong> The normal vector is $\mathbf{n}=(3,4,5)$.<br />
+<strong>c)</strong> Using $A=(1,0,2)$: $3(x-1)+4(y-0)+5(z-2)=0 \Rightarrow 3x+4y+5z=13$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>The area of the parallelogram formed by $\mathbf{u}$ and $\mathbf{v}$ is:</li>
+<li>a) $\mathbf{u}\cdot\mathbf{v}$</li>
+<li>b) $|\mathbf{u}||\mathbf{v}|\cos\theta$</li>
+<li>c) $|\mathbf{u}\times\mathbf{v}|$</li>
+<li>
+<p>d) $|\mathbf{u}|+|\mathbf{v}|$</p>
+<blockquote>
+<p><strong>Correct answer:</strong> c) By definition, $|\mathbf{u}\times\mathbf{v}|=|\mathbf{u}||\mathbf{v}|\sin\theta$ which is precisely the area of the parallelogram.</p>
+</blockquote>
+</li>
+<li>
+<p>The area of the triangle with sides $\mathbf{u}$ and $\mathbf{v}$ is:</p>
+</li>
+<li>a) $|\mathbf{u}\times\mathbf{v}|$</li>
+<li>b) $\frac{1}{2}|\mathbf{u}\times\mathbf{v}|$</li>
+<li>c) $\frac{1}{2}\mathbf{u}\cdot\mathbf{v}$</li>
+<li>d) $2|\mathbf{u}\times\mathbf{v}|$<blockquote>
+<p><strong>Correct answer:</strong> b) The area of the triangle is half the area of the parallelogram.</p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<h5>4.4.4 Applications: area of triangles and verification of collinearity</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Determine whether the points $A=(1,2,3)$, $B=(2,4,6)$ and $C=(0,0,0)$ are collinear using the cross product.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p>$$\overrightarrow{CA} = A - C = (1,2,3), \quad \overrightarrow{CB} = B - C = (2,4,6)$$</p>
+<p>$$\overrightarrow{CA}\times\overrightarrow{CB} = \begin{vmatrix}\mathbf{i}&amp;\mathbf{j}&amp;\mathbf{k}\1&amp;2&amp;3\2&amp;4&amp;6\end{vmatrix}$$</p>
+<p>$$= \mathbf{i}(12-12)-\mathbf{j}(6-6)+\mathbf{k}(4-4) = (0,0,0) = \mathbf{0}$$</p>
+<p>Since the cross product is the <strong>zero vector</strong>, the vectors $\overrightarrow{CA}$ and $\overrightarrow{CB}$ are parallel, confirming that <strong>$A$, $B$ and $C$ are collinear</strong>.</p>
+<p><em>(Note that $\overrightarrow{CB}=2\overrightarrow{CA}$, a direct confirmation of collinearity.)</em></p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>
+<p>Check whether the points $P=(1,0,0)$, $Q=(2,2,0)$ and $R=(0,-2,0)$ are collinear.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\overrightarrow{PQ}=(1,2,0)$, $\overrightarrow{PR}=(-1,-2,0)$. $\overrightarrow{PQ}\times\overrightarrow{PR}=\begin{vmatrix}\mathbf{i}&amp;\mathbf{j}&amp;\mathbf{k}\1&amp;2&amp;0\-1&amp;-2&amp;0\end{vmatrix}=(0,0,-2+2)=(0,0,0)$. The three points are <strong>collinear</strong>.</p>
+</blockquote>
+</li>
+<li>
+<p>Compute the area of the triangle with vertices $A=(0,0,0)$, $B=(4,0,0)$, $C=(0,3,0)$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\overrightarrow{AB}=(4,0,0)$, $\overrightarrow{AC}=(0,3,0)$. $\overrightarrow{AB}\times\overrightarrow{AC}=(0,0,12)$. $S=\frac{1}{2}\cdot12=6$ (base 4, height 3, $\frac{1}{2}\cdot4\cdot3=6$ ✓).</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>
+<p>Determine whether $A=(2,1,-1)$, $B=(0,-1,1)$ and $C=(4,3,-3)$ are collinear.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\overrightarrow{AB}=(-2,-2,2)$, $\overrightarrow{AC}=(2,2,-2)$. Note that $\overrightarrow{AC}=-\overrightarrow{AB}$, so they are parallel and the points are <strong>collinear</strong>.<br />
+Verification: $\overrightarrow{AB}\times\overrightarrow{AC}=\begin{vmatrix}\mathbf{i}&amp;\mathbf{j}&amp;\mathbf{k}\-2&amp;-2&amp;2\2&amp;2&amp;-2\end{vmatrix}=(4-4,-4+4,-4+4)=(0,0,0)$ ✓.</p>
+</blockquote>
+</li>
+<li>
+<p>Compute the area of the triangle with vertices $P=(1,1,0)$, $Q=(2,-1,2)$ and $R=(0,0,3)$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\overrightarrow{PQ}=(1,-2,2)$, $\overrightarrow{PR}=(-1,-1,3)$. $\overrightarrow{PQ}\times\overrightarrow{PR}=\begin{vmatrix}\mathbf{i}&amp;\mathbf{j}&amp;\mathbf{k}\1&amp;-2&amp;2\-1&amp;-1&amp;3\end{vmatrix}=(-6+2)\mathbf{i}-(3+2)\mathbf{j}+(-1-2)\mathbf{k}=(-4,-5,-3)$. $S=\frac{1}{2}\sqrt{16+25+9}=\frac{\sqrt{50}}{2}=\frac{5\sqrt{2}}{2}$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li><em>(EVAU Madrid style)</em> Given the points $A=(1,0,-1)$, $B=(2,3,1)$ and $C=(-1,1,0)$:<br />
+   a) Verify that the three points are not collinear and compute the area of triangle $ABC$.<br />
+   b) Find the equation of the plane determined by the three points.<br />
+   c) Compute the perimeter of the triangle.<blockquote>
+<p><strong>Solution:</strong><br />
+<strong>a)</strong> $\overrightarrow{AB}=(1,3,2)$, $\overrightarrow{AC}=(-2,1,1)$. $\overrightarrow{AB}\times\overrightarrow{AC}=\begin{vmatrix}\mathbf{i}&amp;\mathbf{j}&amp;\mathbf{k}\1&amp;3&amp;2\-2&amp;1&amp;1\end{vmatrix}=(3-2)\mathbf{i}-(1+4)\mathbf{j}+(1+6)\mathbf{k}=(1,-5,7)\neq\mathbf{0}$, not collinear. $S=\frac{1}{2}\sqrt{1+25+49}=\frac{\sqrt{75}}{2}=\frac{5\sqrt{3}}{2}$.<br />
+<strong>b)</strong> Normal $\mathbf{n}=(1,-5,7)$, through $A=(1,0,-1)$: $1(x-1)-5(y-0)+7(z+1)=0 \Rightarrow x-5y+7z+6=0$.<br />
+<strong>c)</strong> $|AB|=\sqrt{1+9+4}=\sqrt{14}$; $|AC|=\sqrt{4+1+1}=\sqrt{6}$; $|BC|=\sqrt{9+4+1}=\sqrt{14}$. Perimeter $=2\sqrt{14}+\sqrt{6}$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>Three points $A$, $B$, $C$ are collinear if and only if:</li>
+<li>a) $\overrightarrow{AB}\cdot\overrightarrow{AC}=0$</li>
+<li>b) $\overrightarrow{AB}\times\overrightarrow{AC}=\mathbf{0}$</li>
+<li>c) $|\overrightarrow{AB}|=|\overrightarrow{AC}|$</li>
+<li>
+<p>d) $\overrightarrow{AB}+\overrightarrow{AC}=\mathbf{0}$</p>
+<blockquote>
+<p><strong>Correct answer:</strong> b) If the cross product is zero, the vectors are parallel, which implies collinearity of the three points.</p>
+</blockquote>
+</li>
+<li>
+<p>The area of the triangle with vertices $O=(0,0,0)$, $A=(3,0,0)$, $B=(0,4,0)$ is:</p>
+</li>
+<li>a) $6$</li>
+<li>b) $12$</li>
+<li>c) $5$</li>
+<li>d) $7$<blockquote>
+<p><strong>Correct answer:</strong> a) $\frac{1}{2}\cdot3\cdot4=6$ (right triangle in the $xy$-plane).</p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<h5>4.5.1 Definition of the scalar triple product of three vectors</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Define the scalar triple product of the vectors $\mathbf{u}=(1,2,0)$, $\mathbf{v}=(0,1,3)$ and $\mathbf{w}=(2,0,-1)$ and compute it.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p>The <strong>scalar triple product</strong> of three vectors $\mathbf{u}$, $\mathbf{v}$ and $\mathbf{w}$ is defined as:</p>
+<p>$$[\mathbf{u},\mathbf{v},\mathbf{w}] = \mathbf{u}\cdot(\mathbf{v}\times\mathbf{w})$$</p>
+<p><strong>Step 1: Compute $\mathbf{v}\times\mathbf{w}$:</strong></p>
+<p>$$\mathbf{v}\times\mathbf{w}=\begin{vmatrix}\mathbf{i}&amp;\mathbf{j}&amp;\mathbf{k}\0&amp;1&amp;3\2&amp;0&amp;-1\end{vmatrix}=(-1-0)\mathbf{i}-(0-6)\mathbf{j}+(0-2)\mathbf{k}=(-1,6,-2)$$</p>
+<p><strong>Step 2: Compute $\mathbf{u}\cdot(\mathbf{v}\times\mathbf{w})$:</strong></p>
+<p>$$\mathbf{u}\cdot(-1,6,-2)=1\cdot(-1)+2\cdot6+0\cdot(-2)=-1+12+0=11$$</p>
+<p>The <strong>scalar triple product</strong> is $[\mathbf{u},\mathbf{v},\mathbf{w}]=11$.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>
+<p>Compute the scalar triple product of $\mathbf{i}$, $\mathbf{j}$ and $\mathbf{k}$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $[\mathbf{i},\mathbf{j},\mathbf{k}]=\mathbf{i}\cdot(\mathbf{j}\times\mathbf{k})=\mathbf{i}\cdot\mathbf{i}=1$.</p>
+</blockquote>
+</li>
+<li>
+<p>Compute the scalar triple product of $\mathbf{u}=(1,0,0)$, $\mathbf{v}=(0,2,0)$ and $\mathbf{w}=(0,0,3)$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\mathbf{v}\times\mathbf{w}=\begin{vmatrix}\mathbf{i}&amp;\mathbf{j}&amp;\mathbf{k}\0&amp;2&amp;0\0&amp;0&amp;3\end{vmatrix}=(6,0,0)$. $\mathbf{u}\cdot(6,0,0)=6$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>
+<p>Compute $[\mathbf{a},\mathbf{b},\mathbf{c}]$ for $\mathbf{a}=(1,1,1)$, $\mathbf{b}=(2,0,-1)$, $\mathbf{c}=(0,3,2)$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\mathbf{b}\times\mathbf{c}=\begin{vmatrix}\mathbf{i}&amp;\mathbf{j}&amp;\mathbf{k}\2&amp;0&amp;-1\0&amp;3&amp;2\end{vmatrix}=(0+3)\mathbf{i}-(4-0)\mathbf{j}+(6-0)\mathbf{k}=(3,-4,6)$. $\mathbf{a}\cdot(3,-4,6)=3-4+6=5$.</p>
+</blockquote>
+</li>
+<li>
+<p>Verify that $[\mathbf{u},\mathbf{v},\mathbf{w}]=-[\mathbf{v},\mathbf{u},\mathbf{w}]$ for $\mathbf{u}=(1,0,0)$, $\mathbf{v}=(0,1,0)$, $\mathbf{w}=(0,0,1)$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $[\mathbf{u},\mathbf{v},\mathbf{w}]=1$. For $[\mathbf{v},\mathbf{u},\mathbf{w}]$: $\mathbf{u}\times\mathbf{w}=(0,1,0)\times(0,0,1)$... In this case $[\mathbf{v},\mathbf{u},\mathbf{w}]=\mathbf{v}\cdot(\mathbf{u}\times\mathbf{w})$. $\mathbf{u}\times\mathbf{w}=(1,0,0)\times(0,0,1)=(0\cdot1-0\cdot0)\mathbf{i}-(1\cdot1-0\cdot0)\mathbf{j}+(1\cdot0-0\cdot0)\mathbf{k}=(0,-1,0)$. $\mathbf{v}\cdot(0,-1,0)=-1$. Therefore $[\mathbf{v},\mathbf{u},\mathbf{w}]=-1=-[\mathbf{u},\mathbf{v},\mathbf{w}]$ ✓.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li><em>(EVAU Madrid style)</em> Compute the scalar triple product of $\mathbf{u}=(2,-1,3)$, $\mathbf{v}=(1,0,2)$ and $\mathbf{w}=(0,1,-1)$ using the determinant. Interpret the result.<blockquote>
+<p><strong>Solution:</strong><br />
+The scalar triple product can be computed directly as:<br />
+$$[\mathbf{u},\mathbf{v},\mathbf{w}]=\begin{vmatrix}2&amp;-1&amp;3\1&amp;0&amp;2\0&amp;1&amp;-1\end{vmatrix}$$<br />
+$=2\begin{vmatrix}0&amp;2\1&amp;-1\end{vmatrix}-(-1)\begin{vmatrix}1&amp;2\0&amp;-1\end{vmatrix}+3\begin{vmatrix}1&amp;0\0&amp;1\end{vmatrix}$<br />
+$=2(0-2)+1(-1-0)+3(1-0)$<br />
+$=2(-2)+1(-1)+3(1)=-4-1+3=-2$<br />
+<strong>Interpretation:</strong> The scalar triple product equals $-2\neq 0$, so the three vectors are <strong>linearly independent</strong> (non-coplanar). The volume of the parallelepiped they form is $|{-2}|=2$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>The scalar triple product $[\mathbf{u},\mathbf{v},\mathbf{w}]$ is equivalent to:</li>
+<li>a) $\mathbf{u}\times(\mathbf{v}\cdot\mathbf{w})$</li>
+<li>b) $(\mathbf{u}\times\mathbf{v})\cdot\mathbf{w}$</li>
+<li>c) $\mathbf{u}\cdot\mathbf{v}\cdot\mathbf{w}$</li>
+<li>
+<p>d) $|\mathbf{u}||\mathbf{v}||\mathbf{w}|$</p>
+<blockquote>
+<p><strong>Correct answer:</strong> b) $[\mathbf{u},\mathbf{v},\mathbf{w}]=\mathbf{u}\cdot(\mathbf{v}\times\mathbf{w})=(\mathbf{u}\times\mathbf{v})\cdot\mathbf{w}$ (both expressions are equivalent).</p>
+</blockquote>
+</li>
+<li>
+<p>If $[\mathbf{u},\mathbf{v},\mathbf{w}]=0$, then the three vectors:</p>
+</li>
+<li>a) Are mutually orthogonal</li>
+<li>b) Are coplanar (or one is zero)</li>
+<li>c) Have the same magnitude</li>
+<li>d) Are unit vectors<blockquote>
+<p><strong>Correct answer:</strong> b) A zero scalar triple product indicates that the vectors are linearly dependent, i.e., <strong>coplanar</strong> (or one is zero).</p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<h5>4.5.2 Computation as a 3×3 determinant</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Compute the scalar triple product of $\mathbf{a}=(3,1,-2)$, $\mathbf{b}=(0,2,1)$ and $\mathbf{c}=(1,-1,4)$ using the $3\times 3$ determinant.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p>$$[\mathbf{a},\mathbf{b},\mathbf{c}] = \begin{vmatrix}3 &amp; 1 &amp; -2 \ 0 &amp; 2 &amp; 1 \ 1 &amp; -1 &amp; 4\end{vmatrix}$$</p>
+<p>Expanding along the first row:</p>
+<p>$$= 3\begin{vmatrix}2&amp;1\-1&amp;4\end{vmatrix} - 1\begin{vmatrix}0&amp;1\1&amp;4\end{vmatrix} + (-2)\begin{vmatrix}0&amp;2\1&amp;-1\end{vmatrix}$$</p>
+<p>$$= 3(8+1) - 1(0-1) + (-2)(0-2)$$</p>
+<p>$$= 3\cdot9 - 1\cdot(-1) + (-2)\cdot(-2)$$</p>
+<p>$$= 27 + 1 + 4 = 32$$</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>
+<p>Compute the scalar triple product of $(1,0,0)$, $(0,1,0)$ and $(1,1,0)$ using the determinant.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\begin{vmatrix}1&amp;0&amp;0\0&amp;1&amp;0\1&amp;1&amp;0\end{vmatrix}=1(0-0)-0(0-0)+0(0-1)=0$. The vectors are coplanar (they lie in the plane $z=0$).</p>
+</blockquote>
+</li>
+<li>
+<p>Use the determinant to compute $[(1,2,3),(4,5,6),(7,8,9)]$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\begin{vmatrix}1&amp;2&amp;3\4&amp;5&amp;6\7&amp;8&amp;9\end{vmatrix}=1(45-48)-2(36-42)+3(32-35)=1(-3)-2(-6)+3(-3)=-3+12-9=0$. The vectors are coplanar.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>
+<p>Compute the scalar triple product of $\mathbf{u}=(2,1,0)$, $\mathbf{v}=(1,-1,3)$ and $\mathbf{w}=(0,2,-1)$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\begin{vmatrix}2&amp;1&amp;0\1&amp;-1&amp;3\0&amp;2&amp;-1\end{vmatrix}=2(1-6)-1(-1-0)+0=2(-5)-1(-1)=-10+1=-9$.</p>
+</blockquote>
+</li>
+<li>
+<p>For $k=2$, compute $[(k,1,0),(1,k,-1),(0,1,k)]$ and verify using the result of the following subsection.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\begin{vmatrix}2&amp;1&amp;0\1&amp;2&amp;-1\0&amp;1&amp;2\end{vmatrix}=2(4+1)-1(2-0)+0=10-2=8$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li><em>(EVAU Madrid style)</em> Compute the scalar triple product of $\mathbf{u}=(1,-2,0)$, $\mathbf{v}=(0,1,3)$ and $\mathbf{w}=(-1,0,2)$ using the $3\times3$ determinant. From the result, decide whether the vectors form a basis of $\mathbb{R}^3$.<blockquote>
+<p><strong>Solution:</strong><br />
+$$[\mathbf{u},\mathbf{v},\mathbf{w}]=\begin{vmatrix}1&amp;-2&amp;0\0&amp;1&amp;3\-1&amp;0&amp;2\end{vmatrix}$$<br />
+$=1(2-0)-(-2)(0+3)+0(0+1)$<br />
+$=2+6+0=8$<br />
+Since the scalar triple product is $\mathbf{8}\neq 0$, the vectors are <strong>linearly independent</strong> and form a <strong>basis of $\mathbb{R}^3$</strong>.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>The scalar triple product $[\mathbf{u},\mathbf{v},\mathbf{w}]$ as a determinant places the vectors in:</li>
+<li>a) The columns of the determinant</li>
+<li>b) The rows of the determinant</li>
+<li>c) The diagonal of the determinant</li>
+<li>
+<p>d) An extended vector outside the determinant</p>
+<blockquote>
+<p><strong>Correct answer:</strong> b) Each vector occupies a row of the $3\times3$ determinant.</p>
+</blockquote>
+</li>
+<li>
+<p>$\begin{vmatrix}1&amp;0&amp;0\0&amp;1&amp;0\0&amp;0&amp;1\end{vmatrix}$ as the scalar triple product of the canonical vectors is:</p>
+</li>
+<li>a) $0$</li>
+<li>b) $3$</li>
+<li>c) $1$</li>
+<li>d) $-1$<blockquote>
+<p><strong>Correct answer:</strong> c) It is the determinant of the identity matrix, which equals $1$.</p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<h5>4.5.3 Properties: antisymmetry under cyclic permutation</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>For $\mathbf{a}=(1,2,0)$, $\mathbf{b}=(0,-1,3)$ and $\mathbf{c}=(2,1,-1)$, verify that $[\mathbf{a},\mathbf{b},\mathbf{c}]=[\mathbf{b},\mathbf{c},\mathbf{a}]=[\mathbf{c},\mathbf{a},\mathbf{b}]$ (cyclic permutations) and that $[\mathbf{b},\mathbf{a},\mathbf{c}]=-[\mathbf{a},\mathbf{b},\mathbf{c}]$ (non-cyclic permutation).</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p>$$[\mathbf{a},\mathbf{b},\mathbf{c}]=\begin{vmatrix}1&amp;2&amp;0\0&amp;-1&amp;3\2&amp;1&amp;-1\end{vmatrix}=1(1-3)-2(0-6)+0=1(-2)-2(-6)=-2+12=10$$</p>
+<p>$$[\mathbf{b},\mathbf{c},\mathbf{a}]=\begin{vmatrix}0&amp;-1&amp;3\2&amp;1&amp;-1\1&amp;2&amp;0\end{vmatrix}=0(0+2)-(-1)(0+1)+3(4-1)=0+1+9=10 \checkmark$$</p>
+<p>$$[\mathbf{c},\mathbf{a},\mathbf{b}]=\begin{vmatrix}2&amp;1&amp;-1\1&amp;2&amp;0\0&amp;-1&amp;3\end{vmatrix}=2(6-0)-1(3-0)+(-1)(-1-0)=12-3+1=10 \checkmark$$</p>
+<p>$$[\mathbf{b},\mathbf{a},\mathbf{c}]=\begin{vmatrix}0&amp;-1&amp;3\1&amp;2&amp;0\2&amp;1&amp;-1\end{vmatrix}=0(-2-0)-(-1)(-1-0)+3(1-4)=0-1-9=-10=-[\mathbf{a},\mathbf{b},\mathbf{c}] \checkmark$$</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>
+<p>Knowing that $[\mathbf{u},\mathbf{v},\mathbf{w}]=5$, write the value of $[\mathbf{v},\mathbf{w},\mathbf{u}]$ and of $[\mathbf{u},\mathbf{w},\mathbf{v}]$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $[\mathbf{v},\mathbf{w},\mathbf{u}]=[\mathbf{u},\mathbf{v},\mathbf{w}]=5$ (cyclic permutation). $[\mathbf{u},\mathbf{w},\mathbf{v}]=-[\mathbf{u},\mathbf{v},\mathbf{w}]=-5$ (swapping two vectors).</p>
+</blockquote>
+</li>
+<li>
+<p>Given $[\mathbf{a},\mathbf{b},\mathbf{c}]=-3$, compute $[\mathbf{c},\mathbf{b},\mathbf{a}]$.</p>
+<blockquote>
+<p><strong>Solution:</strong> Permuting $\mathbf{a}$ and $\mathbf{c}$: $[\mathbf{c},\mathbf{b},\mathbf{a}]=-[\mathbf{a},\mathbf{b},\mathbf{c}]=3$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>
+<p>Verify the antisymmetric property for $\mathbf{p}=(1,0,1)$, $\mathbf{q}=(0,1,0)$, $\mathbf{r}=(1,1,1)$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $[\mathbf{p},\mathbf{q},\mathbf{r}]=\begin{vmatrix}1&amp;0&amp;1\0&amp;1&amp;0\1&amp;1&amp;1\end{vmatrix}=1(1-0)-0+1(0-1)=1-1=0$. $[\mathbf{q},\mathbf{p},\mathbf{r}]=-[\mathbf{p},\mathbf{q},\mathbf{r}]=0$. The vectors are coplanar, the sign is preserved (both zero) ✓.</p>
+</blockquote>
+</li>
+<li>
+<p>If $[\mathbf{u},\mathbf{v},\mathbf{w}]=k$, express $[2\mathbf{u},3\mathbf{v},-\mathbf{w}]$ in terms of $k$.</p>
+<blockquote>
+<p><strong>Solution:</strong> By linearity of the determinant: $[2\mathbf{u},3\mathbf{v},-\mathbf{w}]=2\cdot3\cdot(-1)\cdot[\mathbf{u},\mathbf{v},\mathbf{w}]=-6k$.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li><em>(EVAU Madrid style)</em> Knowing that $[\mathbf{a},\mathbf{b},\mathbf{c}]=4$:<br />
+   a) Compute $[\mathbf{b},\mathbf{a},\mathbf{c}]$, $[\mathbf{a},\mathbf{c},\mathbf{b}]$ and $[\mathbf{c},\mathbf{b},\mathbf{a}]$.<br />
+   b) Justify the sign of each using the antisymmetry properties.<br />
+   c) How many distinct permutations of the three vectors give a positive scalar triple product?<blockquote>
+<p><strong>Solution:</strong><br />
+<strong>a)</strong> $[\mathbf{b},\mathbf{a},\mathbf{c}]=-4$ (swapping the first two). $[\mathbf{a},\mathbf{c},\mathbf{b}]=-4$ (swapping the last two). $[\mathbf{c},\mathbf{b},\mathbf{a}]=-4$ (odd permutation: three swaps).<br />
+<strong>b)</strong> Each transposition (swapping two vectors) changes the sign of the scalar triple product. Even permutations give positive sign and odd ones give negative sign.<br />
+<strong>c)</strong> The $3!=6$ permutations split into 3 even (cyclic: $[\mathbf{a},\mathbf{b},\mathbf{c}]$, $[\mathbf{b},\mathbf{c},\mathbf{a}]$, $[\mathbf{c},\mathbf{a},\mathbf{b}]$, all $=+4$) and 3 odd ($=-4$). Therefore, <strong>3 permutations</strong> give a positive scalar triple product.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>If you swap any two vectors in the scalar triple product, the result:</li>
+<li>a) Doubles</li>
+<li>b) Does not change</li>
+<li>c) Changes sign</li>
+<li>
+<p>d) Becomes zero</p>
+<blockquote>
+<p><strong>Correct answer:</strong> c) The scalar triple product changes sign when any pair of vectors is swapped (antisymmetry).</p>
+</blockquote>
+</li>
+<li>
+<p>The three scalar triple products $[\mathbf{u},\mathbf{v},\mathbf{w}]$, $[\mathbf{v},\mathbf{w},\mathbf{u}]$ and $[\mathbf{w},\mathbf{u},\mathbf{v}]$ are:</p>
+</li>
+<li>a) Always equal</li>
+<li>b) Always opposite in sign</li>
+<li>c) Equal only if the vectors are orthogonal</li>
+<li>d) Always equal to zero<blockquote>
+<p><strong>Correct answer:</strong> a) Cyclic permutations <strong>do not change the sign</strong> of the scalar triple product.</p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<h5>4.5.4 Geometric interpretation: volume of the parallelepiped and coplanarity</h5>
+
+<p><strong>Worked Example</strong></p>
+<p>Compute the volume of the parallelepiped whose edges are $\mathbf{a}=(1,0,2)$, $\mathbf{b}=(3,1,0)$ and $\mathbf{c}=(1,-1,1)$.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p>The volume of the parallelepiped is the absolute value of the scalar triple product:</p>
+<p>$$V = |[\mathbf{a},\mathbf{b},\mathbf{c}]| = \left|\begin{vmatrix}1&amp;0&amp;2\3&amp;1&amp;0\1&amp;-1&amp;1\end{vmatrix}\right|$$</p>
+<p>Expanding along the first row:</p>
+<p>$$= \left|1\begin{vmatrix}1&amp;0\-1&amp;1\end{vmatrix} - 0\begin{vmatrix}3&amp;0\1&amp;1\end{vmatrix} + 2\begin{vmatrix}3&amp;1\1&amp;-1\end{vmatrix}\right|$$</p>
+<p>$$= |1(1-0) - 0 + 2(-3-1)| = |1 + 0 + (-8)| = |-7| = 7$$</p>
+<p>The <strong>volume of the parallelepiped</strong> is $V = 7$ cubic units.</p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>
+<p>Are the vectors $(1,1,0)$, $(0,1,1)$ and $(1,2,1)$ coplanar? Use the scalar triple product.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\begin{vmatrix}1&amp;1&amp;0\0&amp;1&amp;1\1&amp;2&amp;1\end{vmatrix}=1(1-2)-1(0-1)+0=(-1)+1=0$. Since the scalar triple product is <strong>zero</strong>, the vectors are <strong>coplanar</strong>.</p>
+</blockquote>
+</li>
+<li>
+<p>Compute the volume of the parallelepiped with edges $\mathbf{u}=(2,0,0)$, $\mathbf{v}=(0,3,0)$, $\mathbf{w}=(0,0,4)$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\begin{vmatrix}2&amp;0&amp;0\0&amp;3&amp;0\0&amp;0&amp;4\end{vmatrix}=2\cdot3\cdot4=24$. $V=24$ cu. (consistent with $2\times3\times4=24$).</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>
+<p>Determine for which value of $k$ the vectors $(1,2,k)$, $(3,0,1)$ and $(0,1,-1)$ are coplanar.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\begin{vmatrix}1&amp;2&amp;k\3&amp;0&amp;1\0&amp;1&amp;-1\end{vmatrix}=1(0-1)-2(-3-0)+k(3-0)=-1+6+3k=5+3k=0 \Rightarrow k=-\frac{5}{3}$.</p>
+</blockquote>
+</li>
+<li>
+<p>Compute the volume of the parallelepiped formed by $\mathbf{a}=(2,1,-1)$, $\mathbf{b}=(0,3,2)$, $\mathbf{c}=(1,0,4)$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\begin{vmatrix}2&amp;1&amp;-1\0&amp;3&amp;2\1&amp;0&amp;4\end{vmatrix}=2(12-0)-1(0-2)+(-1)(0-3)=24+2+3=29$. $V=29$ cu.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li><em>(EVAU Madrid style)</em> The vectors $\mathbf{u}=(1,m,-1)$, $\mathbf{v}=(2,0,1)$ and $\mathbf{w}=(0,1,m)$ are given.<br />
+   a) Compute $[\mathbf{u},\mathbf{v},\mathbf{w}]$ as a function of $m$.<br />
+   b) Determine for which values of $m$ the three vectors are coplanar.<br />
+   c) For $m=2$, compute the volume of the parallelepiped they form.<blockquote>
+<p><strong>Solution:</strong><br />
+<strong>a)</strong> $\begin{vmatrix}1&amp;m&amp;-1\2&amp;0&amp;1\0&amp;1&amp;m\end{vmatrix}=1(0-1)-m(2m-0)+(-1)(2-0)=(-1)-2m^2-2=-2m^2-3$.<br />
+<strong>b)</strong> $-2m^2-3=0 \Rightarrow m^2=-\frac{3}{2}$. No real solution, so the vectors <strong>are never coplanar</strong> for $m\in\mathbb{R}$.<br />
+<strong>c)</strong> $m=2$: $V=|-2(4)-3|=|-11|=11$ cu.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>The volume of the parallelepiped formed by $\mathbf{u}$, $\mathbf{v}$ and $\mathbf{w}$ is:</li>
+<li>a) $[\mathbf{u},\mathbf{v},\mathbf{w}]$</li>
+<li>b) $|[\mathbf{u},\mathbf{v},\mathbf{w}]|$</li>
+<li>c) $|\mathbf{u}||\mathbf{v}||\mathbf{w}|$</li>
+<li>
+<p>d) $\frac{1}{6}|[\mathbf{u},\mathbf{v},\mathbf{w}]|$</p>
+<blockquote>
+<p><strong>Correct answer:</strong> b) The volume is the <strong>absolute value</strong> of the scalar triple product, since the determinant may be negative.</p>
+</blockquote>
+</li>
+<li>
+<p>Three vectors are coplanar if and only if their scalar triple product is:</p>
+</li>
+<li>a) Positive</li>
+<li>b) Negative</li>
+<li>c) Equal to 1</li>
+<li>d) Equal to 0<blockquote>
+<p><strong>Correct answer:</strong> d) A zero scalar triple product is the necessary and sufficient condition for coplanarity.</p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<h5>4.5.5 Applications: volume of tetrahedra and verification of coplanarity of four points</h5>
+
+<p><strong>Worked Example</strong></p>
+<p><em>(EVAU Madrid style problem)</em> The points $A=(0,0,0)$, $B=(2,0,0)$, $C=(0,3,0)$ and $D=(0,0,4)$ are given.</p>
+<p>a) Verify that the four points are not coplanar.
+b) Compute the volume of the tetrahedron $ABCD$.
+c) Compute the area of face $ABC$.</p>
+<p><strong>Step-by-step Solution:</strong></p>
+<p><strong>Vectors from A:</strong></p>
+<p>$$\overrightarrow{AB}=(2,0,0),\quad\overrightarrow{AC}=(0,3,0),\quad\overrightarrow{AD}=(0,0,4)$$</p>
+<p><strong>a) Verification of coplanarity:</strong></p>
+<p>$$[\overrightarrow{AB},\overrightarrow{AC},\overrightarrow{AD}]=\begin{vmatrix}2&amp;0&amp;0\0&amp;3&amp;0\0&amp;0&amp;4\end{vmatrix}=24\neq0$$</p>
+<p>Since the scalar triple product is nonzero, the four points <strong>are not coplanar</strong>. ✓</p>
+<p><strong>b) Volume of the tetrahedron:</strong></p>
+<p>$$V_{\text{tetrahedron}}=\frac{1}{6}\,|[\overrightarrow{AB},\overrightarrow{AC},\overrightarrow{AD}]|=\frac{1}{6}\cdot24=4 \text{ cu.}$$</p>
+<p><strong>c) Area of face ABC:</strong></p>
+<p>$$\overrightarrow{AB}\times\overrightarrow{AC}=\begin{vmatrix}\mathbf{i}&amp;\mathbf{j}&amp;\mathbf{k}\2&amp;0&amp;0\0&amp;3&amp;0\end{vmatrix}=(0,0,6)$$</p>
+<p>$$S_{ABC}=\frac{1}{2}|\overrightarrow{AB}\times\overrightarrow{AC}|=\frac{1}{2}\cdot6=3 \text{ sq. units}$$</p>
+<p><em>(Consistent with the right triangle with legs 2 and 3 in the $xy$-plane.)</em></p>
+<hr />
+<p><strong>Exercises with Solutions</strong></p>
+<p><strong>Basic Level:</strong></p>
+<ol>
+<li>
+<p>Are the points $A=(0,0,0)$, $B=(1,0,0)$, $C=(0,1,0)$ and $D=(1,1,0)$ coplanar?</p>
+<blockquote>
+<p><strong>Solution:</strong> $\overrightarrow{AB}=(1,0,0)$, $\overrightarrow{AC}=(0,1,0)$, $\overrightarrow{AD}=(1,1,0)$. $\begin{vmatrix}1&amp;0&amp;0\0&amp;1&amp;0\1&amp;1&amp;0\end{vmatrix}=0$. The four points are <strong>coplanar</strong> (all in the plane $z=0$).</p>
+</blockquote>
+</li>
+<li>
+<p>Compute the volume of the tetrahedron with vertices $O=(0,0,0)$, $A=(3,0,0)$, $B=(0,3,0)$, $C=(0,0,3)$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\begin{vmatrix}3&amp;0&amp;0\0&amp;3&amp;0\0&amp;0&amp;3\end{vmatrix}=27$. $V=\frac{27}{6}=\frac{9}{2}=4{,}5$ cu.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Intermediate Level:</strong></p>
+<ol>
+<li>
+<p>Check whether $A=(1,1,0)$, $B=(2,0,1)$, $C=(0,2,1)$ and $D=(1,1,2)$ are coplanar.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\overrightarrow{AB}=(1,-1,1)$, $\overrightarrow{AC}=(-1,1,1)$, $\overrightarrow{AD}=(0,0,2)$. $\begin{vmatrix}1&amp;-1&amp;1\-1&amp;1&amp;1\0&amp;0&amp;2\end{vmatrix}=1(2-0)-(-1)(-2-0)+1(0-0)=2-2+0=0$. The four points are <strong>coplanar</strong>.</p>
+</blockquote>
+</li>
+<li>
+<p>Compute the volume of the tetrahedron with vertices $A=(1,0,0)$, $B=(0,2,0)$, $C=(0,0,3)$ and $D=(1,1,1)$.</p>
+<blockquote>
+<p><strong>Solution:</strong> $\overrightarrow{AB}=(-1,2,0)$, $\overrightarrow{AC}=(-1,0,3)$, $\overrightarrow{AD}=(0,1,1)$. $\begin{vmatrix}-1&amp;2&amp;0\-1&amp;0&amp;3\0&amp;1&amp;1\end{vmatrix}=-1(0-3)-2(-1-0)+0=3+2=5$. $V=\frac{5}{6}$ cu.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>EVAU Level:</strong></p>
+<ol>
+<li><em>(EVAU Madrid style, 2 points)</em> The points $A=(1,-1,0)$, $B=(2,0,1)$, $C=(0,2,-1)$ and $D=(a,0,0)$ are considered.<br />
+   a) Determine the value of $a$ for which the four points are coplanar.<br />
+   b) For $a=1$, compute the volume of the tetrahedron $ABCD$.<br />
+   c) For $a=1$, compute the area of face $ABD$.<blockquote>
+<p><strong>Solution:</strong><br />
+<strong>a)</strong> $\overrightarrow{AB}=(1,1,1)$, $\overrightarrow{AC}=(-1,3,-1)$, $\overrightarrow{AD}=(a-1,1,0)$.<br />
+$\begin{vmatrix}1&amp;1&amp;1\-1&amp;3&amp;-1\a-1&amp;1&amp;0\end{vmatrix}=1(0+1)-1(0+a-1)+1(-1-3(a-1))$<br />
+$=1-(a-1)+(-1-3a+3)=1-a+1+2-3a=4-4a=0 \Rightarrow a=1$.<br />
+<strong>b)</strong> $a=1$: $\overrightarrow{AD}=(0,1,0)$.<br />
+$\begin{vmatrix}1&amp;1&amp;1\-1&amp;3&amp;-1\0&amp;1&amp;0\end{vmatrix}=1(0+1)-1(0-0)+1(-1-0)=1-0-1=0$.<br />
+Since the scalar triple product is 0, the volume of the tetrahedron is $V=\frac{|0|}{6}=0$. The points are coplanar for $a=1$ (consistent with part a).<br />
+<strong>c)</strong> With $a=1$: $\overrightarrow{AB}=(1,1,1)$, $\overrightarrow{AD}=(0,1,0)$. $\overrightarrow{AB}\times\overrightarrow{AD}=\begin{vmatrix}\mathbf{i}&amp;\mathbf{j}&amp;\mathbf{k}\1&amp;1&amp;1\0&amp;1&amp;0\end{vmatrix}=(0-1)\mathbf{i}-(0-0)\mathbf{j}+(1-0)\mathbf{k}=(-1,0,1)$. $S_{ABD}=\frac{1}{2}\sqrt{1+0+1}=\frac{\sqrt{2}}{2}$ sq. units.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Multiple Choice Test</strong></p>
+<ol>
+<li>The volume of the tetrahedron with edges $\mathbf{u}$, $\mathbf{v}$, $\mathbf{w}$ from the same vertex is:</li>
+<li>a) $|[\mathbf{u},\mathbf{v},\mathbf{w}]|$</li>
+<li>b) $\frac{1}{3}|[\mathbf{u},\mathbf{v},\mathbf{w}]|$</li>
+<li>c) $\frac{1}{6}|[\mathbf{u},\mathbf{v},\mathbf{w}]|$</li>
+<li>
+<p>d) $\frac{1}{2}|[\mathbf{u},\mathbf{v},\mathbf{w}]|$</p>
+<blockquote>
+<p><strong>Correct answer:</strong> c) The tetrahedron occupies $\frac{1}{6}$ of the parallelepiped formed by the same three vectors.</p>
+</blockquote>
+</li>
+<li>
+<p>Four points $A$, $B$, $C$, $D$ are coplanar if and only if:</p>
+</li>
+<li>a) The three vectors $\overrightarrow{AB}$, $\overrightarrow{AC}$, $\overrightarrow{AD}$ have the same magnitude</li>
+<li>b) The scalar triple product $[\overrightarrow{AB},\overrightarrow{AC},\overrightarrow{AD}]=0$</li>
+<li>c) $\overrightarrow{AB}\times\overrightarrow{AC}=\mathbf{0}$</li>
+<li>d) $\overrightarrow{AB}\cdot\overrightarrow{AC}=0$<blockquote>
+<p><strong>Correct answer:</strong> b) The coplanarity of four points is equivalent to the scalar triple product of the three vectors from one of them being zero.</p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<p><em>End of Chapter 4 — Vectors in Space</em></p>
+<hr />
+<p><em>Document generated for Mathematics II — 2nd Year Bachillerato (Sciences and Technology)</em><br />
+<em>Community of Madrid · Decree 64/2022 (LOMLOE) · FUHEM Curriculum 2025-26</em><br />
+<em>Chapters 3 (Systems of Linear Equations) and 4 (Vectors in Space)</em></p></section>

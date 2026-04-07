@@ -1,0 +1,43 @@
+<header class="site-header" id="site-header">
+  <div class="container">
+    <nav class="nav">
+      <a href="/index.html" class="nav-logo" aria-label="Inicio">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+          <rect width="36" height="36" rx="9" fill="var(--color-primary)"/>
+          <path d="M10 26 L10 10 L18 10 C22 10 25 13 25 17 C25 21 22 24 18 24 L14 24 L14 26 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M14 17 L18 17" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="26" cy="26" r="4" fill="var(--color-accent)"/>
+          <path d="M25 26 L27 26 M26 25 L26 27" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <div class="nav-logo-text">
+          <span data-es="Matemáticas &amp; Ciencias" data-en="Math &amp; Science">Matemáticas &amp; Ciencias</span>
+          <span data-es="Clases online" data-en="Online tutoring">Clases online</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="/index.html" class="nav-home" data-es="Inicio" data-en="Home">Inicio</a></li>
+        <li><a href="/services.html" class="nav-services" data-es="Servicios" data-en="Services">Servicios</a></li>
+        <li><a href="/booking.html" class="nav-booking" data-es="Reservar clase" data-en="Book a class">Reservar clase</a></li>
+        <li><a href="/testimonials.html" class="nav-testimonials" data-es="Testimonios" data-en="Testimonials">Testimonios</a></li>
+        <li><a href="/material-didactico/index.html" class="nav-resources" data-es="Recursos" data-en="Resources">Recursos</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button id="lang-es" onclick="setLang('es')">ES</button>
+          <button id="lang-en" onclick="setLang('en')">EN</button>
+        </div>
+        <button class="theme-toggle" data-theme-toggle aria-label="Cambiar tema">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+        <a href="/booking.html" class="btn btn-primary btn-cta-nav" data-es="Reservar clase" data-en="Book a class">Reservar clase</a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% set year = 2026 %}
+<html lang="{{ lang | default("es") }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+  {% if description %}<meta name="description" content="{{ description }}">{% endif %}
+  {% if canonical %}<link rel="canonical" href="{{ canonical }}">{% endif %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+{% set assetDepth = depth | default(2) %}
+{% set up = "" %}{% for i in range(0, assetDepth) %}{% set up = up + "../" %}{% endfor %}
+  {% if "/material-didactico/" in page.url %}
+  <link rel="stylesheet" href="{{ up }}base.css">
+  <link rel="stylesheet" href="{{ up }}style.css">
+  <link rel="stylesheet" href="{{ up }}inner-pages.css">
+{% else %}
+  <link rel="stylesheet" href="./base.css">
+  <link rel="stylesheet" href="./style.css">
+{% endif %}
+{% if extrastyles %}
+{% for style in extrastyles %}
+  <link rel="stylesheet" href="{{ style }}">
+{% endfor %}
+{% endif %}
+  {% block head %}{% endblock %}
+  {% if redirectTo %}<meta http-equiv="refresh" content="0; url={{ redirectTo }}">{% endif %}
+</head>
+<body>
+  {% if redirectTo %}
+  {% else %}
+  {% include "partials/header.njk" %}
+
+  <main>
+    {{ content | safe }}
+  </main>
+
+  {% include "partials/footer.njk" %}
+  {% endif %}
+
+{% if "/material-didactico/" in page.url %}
+  <script src="{{ up }}app.js"></script>
+{% else %}
+  <script src="./app.js"></script>
+{% endif %}
+  {% block scripts %}{% endblock %}
+</body>
+</html>

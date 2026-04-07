@@ -51,8 +51,10 @@ function setLang(lang) {
   const active = document.getElementById('lang-' + lang);
   if (active) active.classList.add('active');
 }
-// Apply persisted language on load
-if (currentLang !== 'es') setLang(currentLang);
+// Apply language on load (runs before paint to avoid flash)
+(function initLang() {
+  setLang(currentLang);
+})();
 window.setLang = setLang;
 
 // ── Mobile menu ──────────────────────────────
@@ -102,8 +104,13 @@ if (revealEls.length > 0) {
 }
 
 // ── Active nav link ───────────────────────────
-const currentPath = location.pathname.split('/').pop() || 'index.html';
+const currentPath = location.pathname;
 document.querySelectorAll('.nav-links a').forEach(a => {
-  const href = a.getAttribute('href').split('/').pop();
-  a.classList.toggle('active', href === currentPath);
+  const href = a.getAttribute('href');
+  // Match current path against nav link href
+  // Handle both absolute paths and paths ending with /
+  const isActive = currentPath === href || 
+                   (href !== '/' && currentPath.endsWith(href)) ||
+                   (href === '/index.html' && (currentPath === '/' || currentPath.endsWith('/index.html')));
+  a.classList.toggle('active', isActive);
 });

@@ -3,6 +3,20 @@
    (services, booking, testimonials, resources)
 ───────────────────────────────────────────── */
 
+/* ── LANGUAGE VISIBILITY (Material Didáctico) ── */
+.lang-es-only,
+.lang-en-only {
+  /* Default: both visible */
+}
+
+html[lang="en"] .lang-es-only {
+  display: none;
+}
+
+html[lang="es"] .lang-en-only {
+  display: none;
+}
+
 /* ── SERVICES PAGE ── */
 
 .subjects-detail-grid {
@@ -704,6 +718,59 @@
   padding: var(--space-12);
 }
 
+/* ── MATERIAL DIDÁCTICO PAGES ── */
+
+.content-header {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  color: white;
+  padding: var(--space-12) 0;
+  margin-bottom: var(--space-10);
+}
+.content-header h1 { color: white; margin-bottom: var(--space-3); }
+.content-header p { color: rgba(255,255,255,0.85); max-width: 70ch; }
+.back-link { display: inline-flex; align-items: center; gap: var(--space-2); color: rgba(255,255,255,0.7); margin-bottom: var(--space-4); font-size: 0.9rem; }
+.back-link:hover { color: white; }
+.course-meta { display: flex; flex-wrap: wrap; gap: var(--space-4); margin-top: var(--space-4); }
+.course-meta span { background: rgba(255,255,255,0.15); padding: var(--space-2) var(--space-4); border-radius: var(--radius-full); font-size: 0.85rem; }
+
+.content-page { padding: var(--space-10) 0 var(--space-15); }
+
+.chapter { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-6); margin-bottom: var(--space-6); }
+.chapter h2 { color: var(--color-primary); font-size: 1.5rem; margin-bottom: var(--space-6); padding-bottom: var(--space-3); border-bottom: 2px solid var(--color-primary); }
+.chapter h2 a { color: inherit; opacity: 0.85; transition: opacity 0.2s; }
+.chapter h2 a:hover { opacity: 1; }
+.chapter h3 { color: var(--color-text); font-size: 1.1rem; margin-top: var(--space-5); margin-bottom: var(--space-3); }
+.chapter ul { list-style: none; padding: 0; }
+.chapter li { padding: var(--space-2) 0; border-bottom: 1px solid var(--color-border); display: flex; align-items: flex-start; gap: var(--space-3); }
+.chapter li:last-child { border-bottom: none; }
+.topic-num { color: var(--color-primary); font-weight: 600; min-width: 60px; flex-shrink: 0; }
+.topic-content { flex: 1; }
+.topic-block { display: inline-block; background: var(--color-primary); color: white; font-size: 0.7rem; padding: 2px 8px; border-radius: var(--radius-sm); margin-top: var(--space-1); margin-left: var(--space-2); }
+.topic-block.margin-left { margin-left: var(--space-2); }
+
+/* Exercise page styles */
+.exercise-block { background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: var(--space-4); margin-bottom: var(--space-4); }
+.exercise-block h4 { color: var(--color-primary); font-size: 0.95rem; margin-bottom: var(--space-3); }
+.exercise-block p, .exercise-block li { font-size: 0.95rem; line-height: 1.6; }
+.exercise-block ul { padding-left: var(--space-5); }
+.exercise-block li { margin-bottom: var(--space-2); border-bottom: none; padding: 0; }
+.subsection { margin-bottom: var(--space-6); padding-bottom: var(--space-6); border-bottom: 1px solid var(--color-border); }
+.subsection:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.subsection h3 { color: var(--color-text); font-size: 1.1rem; margin-bottom: var(--space-4); }
+.solution { background: rgba(46, 204, 113, 0.1); border-left: 3px solid var(--color-accent); padding: var(--space-3); margin-top: var(--space-3); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
+.solution p { color: var(--color-text-secondary); margin: 0; }
+.level-badge { display: inline-block; background: var(--color-primary); color: white; font-size: 0.7rem; padding: 2px 8px; border-radius: var(--radius-sm); margin-bottom: var(--space-3); }
+.test-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-4); }
+.test-item { background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: var(--space-4); }
+.test-item h4 { font-size: 0.9rem; margin-bottom: var(--space-3); color: var(--color-text); }
+.test-item ul { list-style: none; padding: 0; }
+.test-item li { font-size: 0.85rem; padding: var(--space-1) 0; }
+.test-item li::before { content: attr(data-letter) ") "; font-weight: 600; color: var(--color-primary); }
+.correct-answer { color: var(--color-accent); font-weight: 600; }
+.evau-note { background: var(--color-accent-highlight); border: 1px solid color-mix(in oklab, var(--color-accent) 30%, transparent); border-radius: var(--radius-lg); padding: var(--space-4); margin-bottom: var(--space-6); }
+.evau-note p { color: var(--color-accent); font-size: 0.9rem; font-weight: 500; }
+.toc-nav { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-4) var(--space-6); margin-bottom: var(--space-8); }
+
 /* Newsletter */
 .newsletter-form {
   display: flex;
@@ -734,6 +801,117 @@
   font-weight: 600;
   color: var(--color-success);
   padding: var(--space-4);
+}
+
+/* ── MATERIAL DIDÁCTICO LANDING PAGE ── */
+
+.material-hero {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  color: white;
+  padding: var(--space-12) 0;
+  margin-bottom: var(--space-8);
+}
+.material-hero h1 { color: white; margin-bottom: var(--space-4); }
+.material-hero p { color: rgba(255,255,255,0.85); max-width: 65ch; font-size: 1.05rem; }
+
+.courses-section { 
+  padding-bottom: var(--space-8);
+  background: var(--color-bg);
+}
+
+.courses-section + .exercises-section {
+  margin-top: var(--space-12);
+}
+.courses-section h2 { margin-bottom: var(--space-6); }
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--space-5);
+  margin-top: var(--space-6);
+}
+
+.course-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  transition: all var(--transition-interactive);
+}
+.course-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-primary-highlight);
+}
+.course-card h3 { font-size: 1rem; font-weight: 700; color: var(--color-text); }
+.course-card p { color: var(--color-text-muted); font-size: 0.875rem; flex: 1; line-height: 1.6; }
+.course-card .btn { margin-top: auto; align-self: flex-start; }
+
+.lang-badge {
+  display: inline-block;
+  background: var(--color-primary);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 2px var(--space-3);
+  border-radius: var(--radius-full);
+  width: fit-content;
+}
+
+.exercises-section { padding: var(--space-12) 0 var(--space-15); background-color: var(--color-surface); }
+.exercises-section h2 { margin-bottom: var(--space-4); }
+
+.exercises-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+}
+
+.exercise-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-4) var(--space-5);
+  text-decoration: none;
+  transition: all var(--transition-interactive);
+}
+.exercise-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+  border-color: var(--color-primary);
+}
+.exercise-card .icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-lg);
+  background: var(--color-primary-highlight);
+  color: var(--color-primary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.exercise-card h4 { font-size: 0.875rem; font-weight: 700; color: var(--color-text); margin-bottom: 2px; }
+.exercise-card span { font-size: 0.8rem; color: var(--color-text-muted); }
+
+/* ── RESPONSIVE — LANDING PAGE ── */
+
+@media (max-width: 768px) {
+  .course-grid { grid-template-columns: 1fr 1fr; }
+  .exercises-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 480px) {
+  .course-grid { grid-template-columns: 1fr; }
+  .exercises-grid { grid-template-columns: 1fr; }
 }
 
 /* ── RESPONSIVE — INNER PAGES ── */
